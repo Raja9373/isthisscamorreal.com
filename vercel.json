@@ -58,6 +58,15 @@
           "value": "text/plain; charset=UTF-8"
         }
       ]
+    },
+    {
+      "source": "/og-image.jpg",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/jpeg"
+        }
+      ]
     }
   ]
 }
