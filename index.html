@@ -44,6 +44,15 @@
   <meta name="twitter:description" id="twDescTag" content="Is this message a scam or real? Paste any SMS, WhatsApp message, link, number or email. Free scam checker gives instant answer in your language." />
   <meta name="twitter:image" content="https://isthisscamorreal.com/favicon.svg" />
 
+    <!-- Suppress premature 0-width AdSense layout calculation errors -->
+  <script>
+    window.addEventListener('error', function(e) {
+      if (e && e.message && (e.message.indexOf('availableWidth=0') !== -1 || e.message.indexOf('No slot size') !== -1)) {
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+        return true;
+      }
+    }, true);
+  </script>
   <!-- Google AdSense Verification Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9048615701580913" crossorigin="anonymous"></script>
 
@@ -447,6 +456,9 @@
         </nav>
 
         <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="toggleMobileMenu()" class="md:hidden w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white flex items-center justify-center text-base transition" aria-label="Toggle Mobile Menu">
+            ☰
+          </button>
           <button onclick="openAddToHomeScreen()" class="hidden sm:inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold px-3 py-2 rounded-full transition" data-i18n="addHome">
             📱 Add to Home Screen
           </button>
@@ -467,6 +479,30 @@
         </div>
       </div>
     </header>
+
+    <!-- MOBILE OVERLAY MENU -->
+    <div id="mobileMenuOverlay" class="hidden fixed inset-0 z-50 bg-[#0A1931]/98 backdrop-blur-xl flex flex-col p-6 animate-fadeIn">
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-vgreen flex items-center justify-center text-white shadow">🛡️</div>
+          <span class="text-white font-extrabold text-base">IsThisScamOrReal<span class="text-vgreen">.com</span></span>
+        </div>
+        <button onclick="toggleMobileMenu()" class="w-9 h-9 rounded-full bg-white/10 text-white flex items-center justify-center font-bold text-lg">✕</button>
+      </div>
+      <div class="flex flex-col gap-4 py-8 text-base font-bold text-white/90">
+        <a href="#top" onclick="toggleMobileMenu(); showView('home');" class="hover:text-vgreen transition flex items-center gap-2" data-i18n="home">🏠 Home</a>
+        <a href="#checker" onclick="toggleMobileMenu(); showView('home');" class="hover:text-vgreen transition flex items-center gap-2" data-i18n="check">⚡ Check Message</a>
+        <a href="#scam-database" onclick="toggleMobileMenu(); showView('scam-database');" class="hover:text-vgreen transition flex items-center gap-2" data-i18n="navDatabase">📚 Scampedia (300+ Scams)</a>
+        <a href="#blog" onclick="toggleMobileMenu(); showView('blog');" class="hover:text-vgreen transition flex items-center gap-2" data-i18n="navBlog">📖 Security Blog</a>
+        <a href="#report" onclick="toggleMobileMenu(); showView('home');" class="hover:text-vgreen transition flex items-center gap-2" data-i18n="report">🚨 Report Scam</a>
+        <a href="#backlink-outreach" onclick="toggleMobileMenu(); showView('backlink-outreach');" class="hover:text-vgreen transition flex items-center gap-2 text-emerald-300">🤝 Media Kit & Outreach</a>
+        <a href="#admin" onclick="toggleMobileMenu(); showView('admin');" class="hover:text-vgreen transition flex items-center gap-2 text-slate-400">⚙️ Admin Threat Intel</a>
+      </div>
+      <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-3">
+        <button onclick="toggleMobileMenu(); openAddToHomeScreen();" class="w-full bg-white/10 hover:bg-white/20 text-white py-3 rounded-xl font-bold text-xs transition" data-i18n="addHome">📱 Add to Home Screen</button>
+        <button onclick="toggleMobileMenu(); showView('home'); document.getElementById('checker').scrollIntoView({behavior:'smooth'});" class="w-full bg-vgreen hover:bg-vgreenDark text-white py-3 rounded-xl font-extrabold text-xs transition">⚡ Instant Scam Check</button>
+      </div>
+    </div>
 
     <!-- 1. LIVE SCAM FEED / TICKER BAR (Auto-scrolling / 5s Rotating Ticker) -->
     <div id="liveScamTickerBar" class="bg-[#050E1F] border-b border-white/10 text-white py-2 px-4 text-xs font-semibold overflow-hidden shadow-inner">
@@ -493,8 +529,15 @@
       <div class="bg-white border border-slate-200 rounded-2xl p-2.5 text-center shadow-sm">
         <div class="text-[9px] text-slate-400 uppercase tracking-widest mb-1">Advertisement</div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9048615701580913" crossorigin="anonymous"></script>
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9048615701580913" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <ins class="adsbygoogle" style="display:block; min-height:90px; width:100%;" data-ad-client="ca-pub-9048615701580913" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          try {
+            var adEl1 = document.currentScript && document.currentScript.previousElementSibling;
+            if (!adEl1 || adEl1.offsetWidth > 0) {
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            }
+          } catch (e) {}
+        </script>
       </div>
     </div>
 
@@ -644,7 +687,12 @@
                 <span>✍️</span> <span data-i18n="msgLabel">Paste Your Message Here...</span>
               </label>
               <div class="relative">
-                <textarea id="messageInput" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="msgPh" placeholder="Paste your message, link, number or email here..."></textarea>
+                
+            <div id="sensitiveInputWarning" class="hidden mb-2 p-2.5 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-800 text-[11px] font-bold text-red-700 dark:text-red-300 flex items-center gap-2 animate-bounce">
+              <span>🚨</span>
+              <span>Warning: Do not paste real OTPs, passwords, or bank PINs! Please delete them before scanning.</span>
+            </div>
+            <textarea id="messageInput" oninput="checkSensitiveInput(this)" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="msgPh" placeholder="Paste your message, link, number or email here..."></textarea>
                 <button type="button" onclick="startVoiceInput('messageInput', this)" class="absolute bottom-3 right-3 bg-white hover:bg-emerald-50 text-slate-700 px-3 py-1.5 rounded-xl border border-slate-300 shadow-sm flex items-center gap-1.5 text-xs font-bold transition" title="Voice Input (Speak in English, Hindi, or Urdu)" aria-label="Voice input">
                   <span class="mic-icon">🎤</span>
                   <span class="mic-label hidden sm:inline" data-i18n="voiceMic">Speak</span>
@@ -874,8 +922,15 @@
           <div class="bg-white border border-slate-200 rounded-2xl p-3 text-center shadow-sm">
             <div class="text-[9px] text-slate-400 uppercase tracking-widest mb-1">Sponsored Advertisement</div>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9048615701580913" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9048615701580913" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            <ins class="adsbygoogle" style="display:block; min-height:90px; width:100%;" data-ad-client="ca-pub-9048615701580913" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              try {
+                var adEl2 = document.currentScript && document.currentScript.previousElementSibling;
+                if (!adEl2 || adEl2.offsetWidth > 0) {
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                }
+              } catch (e) {}
+            </script>
           </div>
         </div>
 
@@ -1251,7 +1306,7 @@
           </div>
         </section>
 
-        <!-- ================= NEW DEDICATED SECTION: PAISA KAT GAYA? + KAHAN REPORT KAREIN ================= -->
+        <!-- ================= NEW DEDICATED SECTION: EMERGENCY MONEY LOST & OFFICIAL REPORTING ================= -->
         <section id="victim-help" class="mt-16 space-y-8">
           <!-- PART A - RED BOX -->
           <div class="border-2 border-red-500 bg-red-50/90 dark:bg-red-950/25 rounded-[24px] p-6 sm:p-10 card3d shadow-xl relative overflow-hidden">
@@ -1263,7 +1318,7 @@
                   <span>🚨</span> <span data-i18n="victimBadge">EMERGENCY ACTION • 2 MINUTE DRILL</span>
                 </span>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-[#990000] dark:text-red-400 mt-2.5 leading-tight" data-i18n="victimTitle">
-                  Paisa Kat Gaya? Ghabrao Mat - Abhi Ye 3 Kaam Karo (2 Minute Me)
+                  Money Lost? Don't Panic - Do These 3 Things Now (In 2 Minutes)
                 </h2>
                 <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1 font-medium" data-i18n="victimSub">
                   Do not panic. Every minute counts to freeze the transaction before scammers withdraw the cash.
@@ -1302,19 +1357,19 @@
                     <span>📞</span> <span id="victimStep1BtnText">CALL 1930 NOW</span>
                   </a>
                   <p id="victimStep1Note" class="text-[11px] text-slate-500 dark:text-slate-400 mt-2 text-center font-semibold">
-                    Ye call bank ko paisa freeze karwata hai. Pehle ye karo.
+                    This call directly alerts the nodal bank officer to freeze the fraudulent transfer. Do this first.
                   </p>
                 </div>
               </div>
 
-              <!-- Step 2: Bank ko block karwao -->
+              <!-- Step 2: Block Bank & Card -->
               <div class="bg-white dark:bg-[#0E1E38] rounded-2xl p-5 border-2 border-amber-300 dark:border-amber-900/60 flex flex-col justify-between shadow-sm">
                 <div>
                   <div class="flex items-center justify-between mb-3">
                     <span class="w-8 h-8 rounded-xl bg-amber-500 text-white font-extrabold text-sm grid place-items-center">2</span>
                     <span class="text-xs font-bold text-amber-600 uppercase tracking-wider" data-i18n="step2Label">STEP 2: BLOCK BANK</span>
                   </div>
-                  <h3 class="font-extrabold text-base text-navy dark:text-white" data-i18n="step2Title">Bank Ko Block Karwao</h3>
+                  <h3 class="font-extrabold text-base text-navy dark:text-white" data-i18n="step2Title">Block Your Bank / Card</h3>
                   <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed" data-i18n="step2Sub">
                     Open your bank mobile app or dial bank 24x7 emergency fraud line to freeze all active payment rails:
                   </p>
@@ -1335,18 +1390,18 @@
                   </div>
                 </div>
                 <div class="mt-4 pt-3 border-t border-slate-100 dark:border-white/10 text-[11px] text-amber-800 dark:text-amber-300 font-bold">
-                  <span>💡 Note:</span> <span data-i18n="rbiNote">RBI Guidelines: 3 din ke andar report kiya to paisa wapas milne ke chance zyada hain.</span>
+                  <span>💡 Note:</span> <span data-i18n="rbiNote">Bank Refund Rule: Report within 3 days for the highest probability of recovering your money.</span>
                 </div>
               </div>
 
-              <!-- Step 3: Report karo -->
+              <!-- Step 3: Report Fraud -->
               <div class="bg-white dark:bg-[#0E1E38] rounded-2xl p-5 border-2 border-slate-300 dark:border-slate-700 flex flex-col justify-between shadow-sm">
                 <div>
                   <div class="flex items-center justify-between mb-3">
                     <span class="w-8 h-8 rounded-xl bg-navy text-white font-extrabold text-sm grid place-items-center">3</span>
                     <span class="text-xs font-bold text-slate-500 uppercase tracking-wider" data-i18n="step3Label">STEP 3: REPORT FRAUD</span>
                   </div>
-                  <h3 class="font-extrabold text-base text-navy dark:text-white" data-i18n="step3Title">Report Karvaayein</h3>
+                  <h3 class="font-extrabold text-base text-navy dark:text-white" data-i18n="step3Title">Report Fraud</h3>
                   <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed" data-i18n="step3Sub">
                     Formal complaint logs an official cyber acknowledgement number required for banking dispute settlements.
                   </p>
@@ -1359,21 +1414,21 @@
                     <span>📝</span> <span data-i18n="victimStep3SiteBtn">Report on This Site</span>
                   </a>
                   <p class="text-[10px] text-slate-500 dark:text-slate-400 text-center font-semibold mt-1">
-                    "1930 pe call + cybercrime.gov.in pe complaint - dono karo."
+                    "Call national helpline immediately and lodge a complaint on the official portal."
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- PART B - YELLOW BOX: Paisa Nahi Kata, Par Scam Tha? Kahan Block / Report Karein? -->
+          <!-- PART B - YELLOW BOX: Money Not Lost, But It Was a Scam? Where to Block / Report? -->
           <div class="border-2 border-amber-400 bg-amber-50/90 dark:bg-amber-950/25 rounded-[24px] p-6 sm:p-10 card3d shadow-lg">
             <div class="mb-6">
               <span class="bg-amber-500 text-white text-xs font-extrabold uppercase px-3.5 py-1 rounded-full tracking-wider inline-flex items-center gap-1.5">
                 <span>🛡️</span> <span data-i18n="yellowBadge">PREVENTION & REPORTING</span>
               </span>
               <h2 class="text-2xl sm:text-3xl font-extrabold text-[#7A4B00] dark:text-amber-400 mt-2.5" data-i18n="yellowTitle">
-                Paisa Nahi Kata, Par Scam Tha? Kahan Block / Report Karein?
+                Money Not Lost, But It Was a Scam? Where to Block / Report?
               </h2>
               <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-1" data-i18n="yellowSub">
                 Help stop the scam from spreading to friends and elderly family members by reporting it directly through official channels:
@@ -1461,7 +1516,7 @@
                     <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 grid place-items-center text-base shrink-0">🪙</span>
                     <div>
                       <b class="text-sm">5. Fake Job, Fake Online Store, or Crypto Scheme</b>
-                      <p class="text-xs text-slate-500 dark:text-slate-400 font-normal">Block: Domain block | Report: Isi site pe Report + cybercrime.gov.in</p>
+                      <p class="text-xs text-slate-500 dark:text-slate-400 font-normal">Block: Domain block | Report: Report on this site + cybercrime.gov.in</p>
                     </div>
                   </div>
                   <span class="text-vgreen text-xs font-bold bg-emerald-50 px-2.5 py-1 rounded-full group-open:rotate-90 transition-transform">How to Block ▾</span>
@@ -1476,7 +1531,7 @@
             <!-- PART C - ACTION SITES LIST -->
             <div class="mt-8 pt-6 border-t border-amber-200 dark:border-amber-900/40">
               <h3 class="text-sm font-extrabold text-[#7A4B00] dark:text-amber-400 uppercase tracking-wider mb-3 flex items-center gap-1.5" data-i18n="actionSitesHeading">
-                <span>🏛️</span> <span>Kaun Si Site Action Leti Hai? (Official Portals)</span>
+                <span>🏛️</span> <span data-i18n="portalSectionTitle">Which Official Portal Takes Action?</span>
               </h3>
               <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
                 <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="bg-white dark:bg-[#0E1E38] p-3 rounded-xl border border-amber-200 hover:border-vgreen shadow-sm flex flex-col justify-between transition">
@@ -1827,10 +1882,10 @@
               </p>
               <div class="flex flex-wrap gap-3 mt-4">
                 <button onclick="answerQuiz(0, true, this)" class="btn-scam px-5 py-2.5 rounded-xl font-bold text-xs bg-red-500 hover:bg-red-600 text-white shadow transition flex items-center gap-1.5">
-                  <span>🚨 Scam Hai (Scam)</span>
+                  <span data-i18n="quizBtnScam">🚨 Scam</span>
                 </button>
                 <button onclick="answerQuiz(0, false, this)" class="btn-real px-5 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow transition flex items-center gap-1.5">
-                  <span>✅ Real Hai (Legit)</span>
+                  <span data-i18n="quizBtnReal">✅ Real</span>
                 </button>
               </div>
               <div id="quizFeedback0" class="hidden mt-3 p-3.5 rounded-xl text-xs font-semibold"></div>
@@ -1848,10 +1903,10 @@
               </p>
               <div class="flex flex-wrap gap-3 mt-4">
                 <button onclick="answerQuiz(1, true, this)" class="btn-scam px-5 py-2.5 rounded-xl font-bold text-xs bg-red-500 hover:bg-red-600 text-white shadow transition flex items-center gap-1.5">
-                  <span>🚨 Scam Hai (Scam)</span>
+                  <span data-i18n="quizBtnScam">🚨 Scam</span>
                 </button>
                 <button onclick="answerQuiz(1, false, this)" class="btn-real px-5 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow transition flex items-center gap-1.5">
-                  <span>✅ Real Hai (Legit)</span>
+                  <span data-i18n="quizBtnReal">✅ Real</span>
                 </button>
               </div>
               <div id="quizFeedback1" class="hidden mt-3 p-3.5 rounded-xl text-xs font-semibold"></div>
@@ -1868,10 +1923,10 @@
               </p>
               <div class="flex flex-wrap gap-3 mt-4">
                 <button onclick="answerQuiz(2, true, this)" class="btn-scam px-5 py-2.5 rounded-xl font-bold text-xs bg-red-500 hover:bg-red-600 text-white shadow transition flex items-center gap-1.5">
-                  <span>🚨 Scam Hai (Scam)</span>
+                  <span data-i18n="quizBtnScam">🚨 Scam</span>
                 </button>
                 <button onclick="answerQuiz(2, false, this)" class="btn-real px-5 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow transition flex items-center gap-1.5">
-                  <span>✅ Real Hai (Legit)</span>
+                  <span data-i18n="quizBtnReal">✅ Real</span>
                 </button>
               </div>
               <div id="quizFeedback2" class="hidden mt-3 p-3.5 rounded-xl text-xs font-semibold"></div>
@@ -1888,10 +1943,10 @@
               </p>
               <div class="flex flex-wrap gap-3 mt-4">
                 <button onclick="answerQuiz(3, true, this)" class="btn-scam px-5 py-2.5 rounded-xl font-bold text-xs bg-red-500 hover:bg-red-600 text-white shadow transition flex items-center gap-1.5">
-                  <span>🚨 Scam Hai (Scam)</span>
+                  <span data-i18n="quizBtnScam">🚨 Scam</span>
                 </button>
                 <button onclick="answerQuiz(3, false, this)" class="btn-real px-5 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow transition flex items-center gap-1.5">
-                  <span>✅ Real Hai (Legit)</span>
+                  <span data-i18n="quizBtnReal">✅ Real</span>
                 </button>
               </div>
               <div id="quizFeedback3" class="hidden mt-3 p-3.5 rounded-xl text-xs font-semibold"></div>
@@ -1909,10 +1964,10 @@
               </p>
               <div class="flex flex-wrap gap-3 mt-4">
                 <button onclick="answerQuiz(4, true, this)" class="btn-scam px-5 py-2.5 rounded-xl font-bold text-xs bg-red-500 hover:bg-red-600 text-white shadow transition flex items-center gap-1.5">
-                  <span>🚨 Scam Hai (Scam)</span>
+                  <span data-i18n="quizBtnScam">🚨 Scam</span>
                 </button>
                 <button onclick="answerQuiz(4, false, this)" class="btn-real px-5 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow transition flex items-center gap-1.5">
-                  <span>✅ Real Hai (Legit)</span>
+                  <span data-i18n="quizBtnReal">✅ Real</span>
                 </button>
               </div>
               <div id="quizFeedback4" class="hidden mt-3 p-3.5 rounded-xl text-xs font-semibold"></div>
@@ -2674,6 +2729,28 @@
     </main>
 
 
+      
+      <!-- ================= VIEW: 404 NOT FOUND ================= -->
+      <div id="view-404" class="view-section hidden">
+        <div class="bg-white dark:bg-[#0E1E38] rounded-[24px] p-8 sm:p-14 card3d mt-4 border border-slate-100 dark:border-white/10 text-center max-w-xl mx-auto space-y-4">
+          <div class="w-16 h-16 rounded-3xl bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400 text-3xl font-extrabold grid place-items-center mx-auto">
+            404
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-navy dark:text-white">Page Not Found</h1>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+            The page you are looking for does not exist or has been moved. Check suspicious messages, numbers, or links for free on our homepage.
+          </p>
+          <div class="pt-4 flex flex-wrap items-center justify-center gap-3">
+            <button onclick="showView('home')" class="bg-vgreen hover:bg-vgreenDark text-white font-extrabold px-6 py-3 rounded-full text-xs transition shadow-md">
+              ⚡ Go to Main Scam Checker
+            </button>
+            <button onclick="showView('scam-database')" class="bg-navy hover:bg-[#12284C] text-white font-extrabold px-6 py-3 rounded-full text-xs transition border border-white/20">
+              📚 Browse Scampedia (300+ Scams)
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- ================= VIEW: ADMIN DASHBOARD (THREAT INTEL & USER REPORTS) ================= -->
       <div id="view-admin" class="view-section hidden">
         <div class="bg-white dark:bg-[#0E1E38] rounded-[24px] p-6 sm:p-10 card3d mt-4 border border-slate-100 dark:border-white/10 space-y-8">
@@ -2779,7 +2856,7 @@
             <b class="text-lg">IsThisScamOrReal.com</b>
           </div>
           <p class="text-white/60 text-sm leading-relaxed mt-4 max-w-[620px]" data-i18n="footerText">
-            IsThisScamOrReal.com helps people pause, check and stay safe. It is not a bank, police service or legal advisor. If money is already sent, contact your bank and local cyber help centre immediately.
+            IsThisScamOrReal.com is an independent security project. We are not affiliated with any government agency. If money is already sent, contact your bank and local cyber help centre immediately.
           </p>
           <p class="text-xs font-bold text-emerald-300 mt-3">
             Official Contact Email: <a href="mailto:info@isthisscamorreal.com" class="underline hover:text-white">info@isthisscamorreal.com</a>
@@ -2925,7 +3002,7 @@
     </div>
   </div>
 
-  <!-- ================= SCAM DETAIL MODAL (Red Flags, Vectors, Kaise Hota Hai, Helplines) ================= -->
+  <!-- ================= SCAM DETAIL MODAL (Red Flags, Vectors, How It Works, Helplines) ================= -->
   <div id="scamDetailModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/75 backdrop-blur-md overflow-y-auto" onclick="onScamModalBackdropClick(event)">
     <div id="scamModalDialog" class="bg-white dark:bg-[#0A1931] text-navy dark:text-white rounded-[28px] max-w-2xl w-full p-6 sm:p-8 card3d shadow-2xl border border-slate-200 dark:border-white/10 relative my-auto max-h-[92vh] overflow-y-auto">
       <!-- Close button -->
@@ -2952,10 +3029,10 @@
       </div>
 
       <div class="mt-6 space-y-5 text-xs sm:text-sm">
-        <!-- Section 1: Kaise Hota Hai? -->
+        <!-- Section 1: How It Works -->
         <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-black/25 border border-slate-200 dark:border-white/10">
           <h3 class="font-extrabold text-navy dark:text-emerald-300 flex items-center gap-2 text-sm mb-2">
-            <span>💡</span> <span>Kaise Hota Hai? (How the Scam Works)</span>
+            <span>💡</span> <span data-i18n="modalHowItWorks">How This Scam Works</span>
           </h3>
           <div id="modalKaiseHotaHai" class="text-slate-600 dark:text-slate-300 leading-relaxed space-y-1.5 whitespace-pre-line"></div>
         </div>
@@ -2981,18 +3058,18 @@
           <ul id="modalRedFlags" class="space-y-2 text-slate-700 dark:text-slate-200 font-medium"></ul>
         </div>
 
-        <!-- Section 4: Kya Karein? -->
+        <!-- Section 4: Immediate Actions -->
         <div class="p-4 sm:p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
           <h3 class="font-extrabold text-emerald-900 dark:text-emerald-300 flex items-center gap-2 text-sm mb-2.5">
-            <span>🛡️</span> <span>Kya Karein? (Immediate Safety Actions)</span>
+            <span>🛡️</span> <span data-i18n="modalWhatToDo">Immediate Safety Actions</span>
           </h3>
           <ol id="modalKyaKarein" class="space-y-2 text-slate-700 dark:text-slate-200 font-medium list-decimal list-inside"></ol>
         </div>
 
-        <!-- Section 5: Kahan Report Karein? -->
+        <!-- Section 5: Official Helplines -->
         <div class="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-black/25 border border-slate-200 dark:border-white/10">
           <h3 class="font-extrabold text-navy dark:text-white flex items-center gap-2 text-sm mb-2">
-            <span>🏛️</span> <span>Kahan Report Karein? (Official Helplines)</span>
+            <span>🏛️</span> <span data-i18n="modalHelplines">Official Reporting Helplines</span>
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
             <div class="p-2.5 rounded-xl bg-white dark:bg-black/20 border border-slate-200 dark:border-white/5">
@@ -3047,6 +3124,29 @@
   <script>
         const translations = {
       en: {
+        // Emergency and Prevention Keys
+        victimTitle: "Money Lost? Don't Panic - Do These 3 Things Now (In 2 Minutes)",
+        victimBadge: "EMERGENCY ACTION • 2 MINUTE PROTOCOL",
+        victimSub: "Do not panic. Every minute counts to freeze the transaction before scammers withdraw the cash.",
+        step1Label: "STEP 1: CALL HELPLINE NOW",
+        step2Label: "STEP 2: BLOCK BANK / CARD",
+        step2Title: "Block Your Bank / Card",
+        step2Sub: "Open your bank mobile app or dial bank 24x7 emergency fraud line to freeze all active payment rails:",
+        step3Label: "STEP 3: REPORT FRAUD",
+        step3Title: "Report Fraud",
+        step3Sub: "Formal complaint logs an official cyber acknowledgement number required for banking dispute settlements.",
+        yellowBadge: "PREVENTION & REPORTING",
+        yellowTitle: "Money Not Lost, But It Was a Scam? Where to Block / Report?",
+        yellowSub: "Help stop the scam from spreading to friends and elderly family members by reporting it directly through official channels:",
+        victimCountryLabel: "Your Country:",
+        victimStep3SiteBtn: "Report on This Site",
+        rbiNote: "Bank Refund Rule: Report within 3 days for the highest probability of recovering your money.",
+        portalSectionTitle: "Which Official Portal Takes Action?",
+        modalHowItWorks: "How This Scam Works",
+        modalWhatToDo: "Immediate Safety Actions",
+        modalHelplines: "Official Reporting Helplines",
+        quizBtnScam: "🚨 Scam",
+        quizBtnReal: "✅ Real",
         seoTitle: "Is This a Scam? Free Scam Checker & World Scampedia | IsThisScamOrReal.com",
         seoDesc: "Is this message a scam or real? Paste any SMS, WhatsApp message, link, number or email. Free scam checker gives instant answer in your language. No signup needed.",
         home: "Home", check: "Check", report: "Report Scam", tools: "Tools", reportBtn: "🚨 Report Scam",
@@ -3108,7 +3208,7 @@
         typeLabel: "What kind of scam was it?", platformLabel: "Where did it arrive?", countryLabel: "Country referenced in message", detailLabel: "What happened?",
         detailPh: "Describe the threat or what the sender requested. Do not include personal banking details.",
         preview: "Preview report", clearDraft: "Clear draft",
-        footerText: "IsThisScamOrReal.com is a free global threat intelligence platform helping consumers verify suspicious messages. It is not a financial institution, law enforcement agency, or legal advisor. If money has been lost, contact your bank and cybercrime helpline immediately.",
+        footerText: "IsThisScamOrReal.com is an independent security project. We are not affiliated with any government agency. If money is already sent, contact your bank and local cyber help centre immediately.",
         rights: "© 2026 IsThisScamOrReal.com • Stay alert. Stay safe.",
         needPaste: "Please paste a message or enter email details first!",
         copied: "Copied ✓",
@@ -3151,6 +3251,29 @@
         trendingLabel: "Trending Searches:"
       },
       hi: {
+        // Emergency and Prevention Keys (Natural Bolchal Hindi)
+        victimTitle: "Paisa Kat Gaya? Ghabrao Mat - Abhi Ye 3 Kaam Karo (2 Minute Me)",
+        victimBadge: "EMERGENCY ACTION • 2 MINUTE ME KAREIN",
+        victimSub: "Ghabrayein nahi. Fraudster paisa nikalne se pehle transfer freeze karwana zaroori hai.",
+        step1Label: "STEP 1: TURANT CALL KAREIN",
+        step2Label: "STEP 2: BANK / CARD BLOCK KAREIN",
+        step2Title: "Bank Aur Card Block Karayein",
+        step2Sub: "Apne bank app ya emergency helpline par call karke saare payments freeze karein:",
+        step3Label: "STEP 3: COMPLAINT REGISTER KAREIN",
+        step3Title: "Official Report Darj Karein",
+        step3Sub: "Cyber complaint se official acknowledgement number milta hai jo bank dispute ke liye zaroori hai.",
+        yellowBadge: "BACHAV AUR REPORT",
+        yellowTitle: "Paisa Nahi Kata, Par Scam Tha? Kahan Block / Report Karein?",
+        yellowSub: "Doosron ko bachane ke liye aur number block karwane ke liye official tareeqe se report karein:",
+        victimCountryLabel: "Aapka Desh:",
+        victimStep3SiteBtn: "Isi Site Par Report Karein",
+        rbiNote: "Bank Niyam: 3 din ke andar report karne par paisa wapas milne ke chance sabse zyada hote hain.",
+        portalSectionTitle: "Kaun Si Site Action Leti Hai?",
+        modalHowItWorks: "Kaise Hota Hai? (Scam Ka Tareeqa)",
+        modalWhatToDo: "Abhi Kya Karein? (Zaroori Qadam)",
+        modalHelplines: "Official Helplines Aur Complaints",
+        quizBtnScam: "🚨 Scam Hai",
+        quizBtnReal: "✅ Asli Hai",
         seoTitle: "Ye Message Jhootha Hai Ya Sachha? Free Scam Checker - SMS, Link, Number, Email Check Karein",
         seoDesc: "Koi bhi SMS, WhatsApp message, link, phone number ya email yahan paste karein. Free scam checker se aasaan Hindi me turant jawab payein.",
         home: "होम", check: "जांच", report: "स्कैम रिपोर्ट करें", tools: "टूल्स", reportBtn: "🚨 स्कैम रिपोर्ट करें",
@@ -3255,6 +3378,29 @@
         trendingLabel: "Log Kya Khoj Rahe Hain:"
       },
       ur: {
+        // Emergency and Prevention Keys (Bolchal Urdu)
+        victimTitle: "Paisa Kat Gaya? Pareshan Na Hon - Foran Ye 3 Kaam Karein (2 Minute Me)",
+        victimBadge: "EMERGENCY ACTION • 2 MINUTE PROTOCOL",
+        victimSub: "Pareshan na hon. Fraudster raqam nikalne se pehle transfer rokna zaroori hai.",
+        step1Label: "STEP 1: FORAN CALL KAREIN",
+        step2Label: "STEP 2: BANK / CARD BLOCK KAREIN",
+        step2Title: "Bank Aur Card Block Karwayein",
+        step2Sub: "Apne bank app ya emergency helpline par call karke saare payments freeze karein:",
+        step3Label: "STEP 3: COMPLAINT REGISTER KAREIN",
+        step3Title: "Official Report Darj Karein",
+        step3Sub: "Cyber complaint se official acknowledgement number milta hai jo bank dispute ke liye zaroori hai.",
+        yellowBadge: "BACHAV AUR REPORT",
+        yellowTitle: "Raqam Nahi Katti, Magar Scam Tha? Kahan Block / Report Karein?",
+        yellowSub: "Doosron ko bachane ke liye aur number block karwane ke liye official tareeqe se report karein:",
+        victimCountryLabel: "Aapka Mulk:",
+        victimStep3SiteBtn: "Isi Site Par Report Karein",
+        rbiNote: "Bank Qanoon: 3 din ke andar report karne par raqam wapas milne ke chance sabse zyada hote hain.",
+        portalSectionTitle: "Kaun Si Site Action Leti Hai?",
+        modalHowItWorks: "Yeh Fraud Kaise Hota Hai?",
+        modalWhatToDo: "Foran Kya Karein?",
+        modalHelplines: "Official Reporting Helplines",
+        quizBtnScam: "🚨 Scam Hai",
+        quizBtnReal: "✅ Asli Hai",
         seoTitle: "Ye Message Jhootha Hai Ya Sachha? Free Scam Checker & Scampedia | IsThisScamOrReal.com",
         seoDesc: "Koi bhi SMS, WhatsApp message, link, number ya email yahan likhein. Free scam checker se aasaan Urdu me foran jawab paayein.",
         home: "هوم", check: "چیک", report: "Scam Report Karein", tools: "ٹولز", reportBtn: "🚨 Scam Report Karein",
@@ -3448,6 +3594,7 @@
     // FEATURE 12: DARK MODE TOGGLE & PERSISTENCE
     function toggleDarkMode() {
       const isDark = document.documentElement.classList.toggle('dark');
+      if (document.body) document.body.classList.toggle('dark', isDark);
       localStorage.setItem('scam_theme', isDark ? 'dark' : 'light');
       const btn = document.getElementById('darkModeBtn');
       if (btn) btn.textContent = isDark ? '☀️' : '🌙';
@@ -3459,8 +3606,10 @@
       const isDark = saved === 'dark' || (!saved && prefersDark);
       if (isDark) {
         document.documentElement.classList.add('dark');
+        if (document.body) document.body.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
+        if (document.body) document.body.classList.remove('dark');
       }
       const btn = document.getElementById('darkModeBtn');
       if (btn) btn.textContent = isDark ? '☀️' : '🌙';
@@ -3917,14 +4066,28 @@
         switchLanguage(saved);
         return;
       }
-      let navLang = (navigator.language || 'en').toLowerCase();
-      if (navLang.startsWith('hi')) {
-        switchLanguage('hi');
-      } else if (navLang.startsWith('ur')) {
-        switchLanguage('ur');
-      } else {
-        switchLanguage('en');
+
+      // Advanced browser language auto-detection across navigator.languages
+      const browserLocales = navigator.languages ? Array.from(navigator.languages) : [navigator.language || 'en'];
+      let targetLang = 'en';
+      for (let locale of browserLocales) {
+        if (!locale) continue;
+        const lower = locale.toLowerCase();
+        if (lower.startsWith('hi') || lower.includes('hindi')) {
+          targetLang = 'hi';
+          break;
+        } else if (lower.startsWith('ur') || lower.includes('urdu')) {
+          targetLang = 'ur';
+          break;
+        } else {
+          const primary = lower.split('-')[0];
+          if (translations[primary]) {
+            targetLang = primary;
+            break;
+          }
+        }
       }
+      switchLanguage(targetLang);
     }
 
     // ================= GLOBAL SCAM DATABASE (300+ SCAMS ACROSS 10 WORLD CATEGORIES) =================
@@ -5005,6 +5168,17 @@
         document.getElementById('reportDetail').focus();
         return;
       }
+      try {
+        const existing = JSON.parse(localStorage.getItem('user_scams_reports') || '[]');
+        existing.push({
+          type: reportType || 'Scam',
+          detail: detail,
+          date: new Date().toISOString()
+        });
+        localStorage.setItem('user_scams_reports', JSON.stringify(existing));
+      } catch (e) {
+        console.warn('Failed to save report to localStorage', e);
+      }
       document.getElementById('reportSuccessBox').classList.remove('hidden');
       document.getElementById('reportDetail').value = '';
     }
@@ -5028,25 +5202,101 @@
       });
     }
 
-    function handleHashRouting() {
-      if (!window.location.hash) return;
-      const hash = window.location.hash.replace('#', '');
-      if (hash.startsWith('scam/')) {
-        const slug = hash.replace('scam/', '');
-        showView('scam-database');
-        setTimeout(() => openScamDetail(slug), 100);
-      } else if (hash === 'scam-timeline-2016-2026') {
-        showView('scam-database');
-        setDbViewMode('timeline');
-      } else {
-        const validViews = ['scam-database', 'blog', 'how-to-check-scam', 'link-checker', 'number-lookup', 'email-checker', 'job-checker', 'free-tools', 'privacy', 'terms', 'about', 'backlink-outreach', 'admin'];
-        if (validViews.includes(hash)) {
-          showView(hash);
+    const routeMap = {
+      '': 'home',
+      'home': 'home',
+      'scam-database': 'scam-database',
+      'scampedia': 'scam-database',
+      'link-checker': 'link-checker',
+      'number-lookup': 'number-lookup',
+      'email-checker': 'email-checker',
+      'job-checker': 'job-checker',
+      'how-to-check-scam': 'how-to-check-scam',
+      'blog': 'blog',
+      'privacy': 'privacy',
+      'privacy-policy': 'privacy',
+      'terms': 'terms',
+      'terms-and-conditions': 'terms',
+      'about': 'about',
+      'free-tools': 'free-tools',
+      'backlink-outreach': 'backlink-outreach',
+      'admin': 'admin',
+      '404': '404'
+    };
+
+    function handleRouting() {
+      let hash = window.location.hash ? window.location.hash.replace('#', '').trim() : '';
+      let pathname = window.location.pathname.replace(/^\/+|\/+$/g, '').trim();
+
+      // Normalize common/default hashes to home
+      if (hash === 'top' || hash === 'home' || hash === 'checker' || hash === '') {
+        if (hash === 'top') {
+          window.history.replaceState(null, '', '#home');
+          hash = 'home';
         }
+      }
+
+      if (hash) {
+        if (hash.startsWith('scam/')) {
+          const slug = hash.replace('scam/', '');
+          showView('scam-database');
+          setTimeout(() => openScamDetail(slug), 100);
+          return;
+        }
+        if (hash === 'scam-timeline-2016-2026') {
+          showView('scam-database');
+          setDbViewMode('timeline');
+          return;
+        }
+        if (routeMap[hash]) {
+          showView(routeMap[hash]);
+        } else {
+          // Fallback for unknown hash: show home, NEVER 404 for hash routes
+          showView('home');
+        }
+        return;
+      }
+
+      // If no hash, inspect pathname
+      if (pathname && routeMap[pathname]) {
+        showView(routeMap[pathname]);
+      } else if (pathname) {
+        // Unknown pathname -> 404
+        showView('404');
+      } else {
+        // Root pathname and no hash -> home
+        showView('home');
       }
     }
 
-    window.addEventListener('hashchange', handleHashRouting);
+    function checkSensitiveInput(el) {
+      const val = (el.value || '').toLowerCase();
+      const warning = document.getElementById('sensitiveInputWarning');
+      if (!warning) return;
+      const sensitiveKeywords = ["otp", "password", "cvv", "card number", "pin", "aadhaar", "passcode"];
+      const isSensitive = sensitiveKeywords.some(k => val.includes(k));
+      if (isSensitive) {
+        warning.classList.remove('hidden');
+      } else {
+        warning.classList.add('hidden');
+      }
+    }
+
+    function updateAutoUpdateTimestamps() {
+      const now = new Date();
+      const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const fullStr = dateStr + " at " + timeStr;
+      const homeEl = document.getElementById('homeAutoUpdateTime');
+      if (homeEl) homeEl.textContent = fullStr;
+      const dbEl = document.getElementById('dbAutoUpdateTime');
+      if (dbEl) dbEl.textContent = fullStr;
+      const adminEl = document.getElementById('adminLastCheckedTime');
+      if (adminEl) adminEl.textContent = fullStr + ' (Auto-Sync Active)';
+    }
+
+    window.addEventListener('hashchange', handleRouting);
+    window.addEventListener('popstate', handleRouting);
 
     window.addEventListener('DOMContentLoaded', () => {
       initDarkMode();
@@ -5057,7 +5307,8 @@
       renderScampediaCategories();
       renderScamOfTheDay();
       fetchLiveScamFeeds();
-      handleHashRouting();
+      updateAutoUpdateTimestamps();
+      handleRouting();
     });
 </script>
 </body>
