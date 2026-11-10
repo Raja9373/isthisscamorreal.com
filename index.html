@@ -32,7 +32,7 @@
   <link rel="alternate" hreflang="ur" href="https://isthisscamorreal.com/?lang=ur" />
   <link rel="alternate" hreflang="x-default" href="https://isthisscamorreal.com/" />
 
-  <!-- Open Graph & Twitter Cards -->
+      <!-- Open Graph & Twitter Cards -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.isthisscamorreal.com/">
   <meta property="og:title" content="Is This a Scam? Free Scam Checker - Check Message, Link, Number, Email">
@@ -49,390 +49,21 @@
   <meta name="twitter:title" content="Is This a Scam? Free Scam Checker">
   <meta name="twitter:description" content="Paste any message and check if it's a scam or real. Free, instant.">
   <meta name="twitter:image" content="https://www.isthisscamorreal.com/og-image.jpg">
-
-  
-
-
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            navy: '#0A1931',
             vgreen: '#00C853',
             vgreenDark: '#00A344',
-            mintbg: '#EAFBF0',
-            cardbg: '#FFFFFF',
-          },
-          boxShadow: {
-            '3d': '0 22px 50px rgba(10,25,49,.16), 0 4px 0 rgba(10,25,49,.04)',
-            'btn': '0 16px 32px rgba(0,200,83,.42), inset 0 -3px 0 rgba(0,0,0,.12)',
+            navy: '#0A1931'
           }
         }
       }
     }
-  </script>
-  <script src="/scams-data.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --navy: #0A1931;
-      --green: #00C853;
-      --green2: #00A344;
-      --mint: #EAFBF0;
-      --surface: #FFFFFF;
-      --ink: #0A1931;
-      --muted: #5B6B82;
-      --line: #D9E7DE;
-      --red: #FF3B30;
-      --amber: #FFAA00;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--mint);
-      color: var(--ink);
-      font-family: 'Sora', system-ui, -apple-system, sans-serif;
-      transition: background-color .3s ease, color .3s ease;
-    }
-    .urdu { font-family: 'Noto Nastaliq Urdu', 'Sora', serif; line-height: 2.2; }
-    .glass {
-      background: rgba(255,255,255,.86);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,.8);
-    }
-    .navy-glass {
-      background: linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.05));
-      border: 1px solid rgba(255,255,255,.18);
-      backdrop-filter: blur(14px);
-    }
-    .hero-grid {
-      background-image: radial-gradient(rgba(255,255,255,.16) 1px, transparent 1px);
-      background-size: 26px 26px;
-    }
-    .card3d {
-      box-shadow: 0 22px 50px rgba(10,25,49,.16), 0 4px 0 rgba(10,25,49,.04);
-    }
-    .tilt {
-      transition: transform .35s ease, box-shadow .35s ease;
-    }
-    .tilt:hover {
-      transform: translateY(-7px) rotateX(3deg) rotateY(-2deg);
-      box-shadow: 0 28px 55px rgba(10,25,49,.22);
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(-2deg); }
-      50% { transform: translateY(-12px) rotate(2deg); }
-    }
-    .float { animation: float 4.5s ease-in-out infinite; }
-    @keyframes ring {
-      0% { box-shadow: 0 0 0 0 rgba(0,200,83,.45); }
-      100% { box-shadow: 0 0 0 18px rgba(0,200,83,0); }
-    }
-    .pulse-ring { animation: ring 2s ease-out infinite; }
-    .progress { transition: width 1s cubic-bezier(.2,.8,.2,1); }
-
-    /* Dark Mode styles */
-    body.dark {
-      background: #060D1A !important;
-      color: #F1F5F9 !important;
-    }
-    body.dark .card3d, body.dark .bg-white {
-      background: #0E1E38 !important;
-      border-color: rgba(255,255,255,.09) !important;
-      color: #F1F5F9 !important;
-    }
-    body.dark .text-navy {
-      color: #F8FAFC !important;
-    }
-    body.dark .text-slate-700, body.dark .text-slate-600, body.dark .text-slate-500 {
-      color: #94A3B8 !important;
-    }
-    body.dark .bg-slate-50, body.dark .light-bg {
-      background: #142442 !important;
-      border-color: rgba(255,255,255,.1) !important;
-    }
-    body.dark input, body.dark textarea, body.dark select {
-      background: #10203A !important;
-      color: #FFFFFF !important;
-      border-color: rgba(255,255,255,.18) !important;
-    }
-    body.dark .tool-pill {
-      background: #0E1E38 !important;
-      color: #E2E8F0 !important;
-      border-color: rgba(255,255,255,.15) !important;
-    }
-    body.dark .tool-pill.bg-vgreen {
-      background: #00C853 !important;
-      color: #FFFFFF !important;
-    }
-    body.dark .glass {
-      background: rgba(14,30,56,.85) !important;
-      border-color: rgba(255,255,255,.12) !important;
-    }
-    /* Circular Progress animation */
-    .circle-progress {
-      transform: rotate(-90deg);
-      transform-origin: 50% 50%;
-      transition: stroke-dashoffset 1s ease-in-out, stroke 0.5s ease;
-    }
-      @keyframes fadeInScale {
-      0% { opacity: 0; transform: scale(0.95) translateY(12px); }
-      100% { opacity: 1; transform: scale(1) translateY(0); }
-    }
-    .result-box-animate {
-      animation: fadeInScale 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-  </style>
-
-  <!-- Comprehensive JSON-LD Structured Data (SEO, GEO, AEO, Schema) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://isthisscamorreal.com/#website",
-        "url": "https://isthisscamorreal.com/",
-        "name": "IsThisScamOrReal.com",
-        "description": "Free global scam and fraud detection tool for messages, links, numbers, and emails.",
-        "inLanguage": ["en", "hi", "ur"],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://isthisscamorreal.com/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://isthisscamorreal.com/#webpage",
-        "url": "https://isthisscamorreal.com/",
-        "name": "Is This a Scam? Free Scam Checker - Check Message, Link, Number, Email | IsThisScamOrReal.com",
-        "isPartOf": { "@id": "https://isthisscamorreal.com/#website" },
-        "description": "Is this message a scam or real? Paste any SMS, WhatsApp message, link, number or email. Free scam checker gives instant answer in your language. No signup needed.",
-        "datePublished": "2026-01-01",
-        "dateModified": "2026-11-09",
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": ["#geo-definition", "#faq-speakable", "h1"]
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://isthisscamorreal.com/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isthisscamorreal.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Link Checker", "item": "https://isthisscamorreal.com/#link-checker" },
-          { "@type": "ListItem", "position": 3, "name": "Number Lookup", "item": "https://isthisscamorreal.com/#number-lookup" },
-          { "@type": "ListItem", "position": 4, "name": "Email Checker", "item": "https://isthisscamorreal.com/#email-checker" },
-          { "@type": "ListItem", "position": 5, "name": "Job Offer Scan", "item": "https://isthisscamorreal.com/#job-checker" },
-          { "@type": "ListItem", "position": 6, "name": "Scam Database", "item": "https://isthisscamorreal.com/#scam-database" }
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "IsThisScamOrReal Scam Checker",
-        "applicationCategory": "SecurityApplication",
-        "operatingSystem": "All",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "12450"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://isthisscamorreal.com/#organization",
-        "name": "IsThisScamOrReal.com",
-        "url": "https://isthisscamorreal.com/",
-        "logo": "https://isthisscamorreal.com/favicon.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "info@isthisscamorreal.com",
-          "contactType": "customer support",
-          "availableLanguage": ["English", "Hindi", "Urdu"]
-        },
-        "sameAs": [
-          "https://facebook.com/isthisscamorreal",
-          "https://twitter.com/isthisscamorreal",
-          "https://instagram.com/isthisscamorreal",
-          "https://youtube.com/@isthisscamorreal"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How to tell if a message is a scam?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "To tell if a message is a scam, check for extreme urgency (e.g., account closure in 24 hours), requests for OTP or passwords, unknown links with lookalike domains, and prizes that sound too good to be true. Use IsThisScamOrReal.com to instantly scan any text or email."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this SMS / WhatsApp message a scam?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Copy and paste your SMS or WhatsApp message into IsThisScamOrReal.com. Our multi-layer AI scanner checks for phishing patterns, sender fraud, and urgency triggers instantly."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How to check if a link is safe before clicking?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Never click unknown links directly. Paste the URL or message into our Link Checker tool to detect shortened, lookalike, and newly registered malicious domains."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this number a scam?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Use our Number Lookup tool to check unknown callers and suspicious sender IDs against global fraud databases and reported scam numbers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What to do if I clicked a scam link?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If you clicked a scam link or shared financial details, immediately contact your bank to freeze cards, change passwords, and report the fraud to local cyber authorities (e.g., 1930 in India, FTC in USA, Action Fraud in UK)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How to report a scam message?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can report scam messages anonymously using our 'Report a Scam' tab to warn the global community and log threat patterns."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the latest scam in 2026?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The fastest growing scam in 2026 is AI Voice Clone / Deepfake CEO and Family Emergency Calls, followed by Quishing (malicious QR codes on parking meters), Fake Package Delivery smishing texts, Digital Arrest Skype threats in India, and fake 90% off Owala/Stanley clearance shops."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are the biggest scams of the last 10 years (2016-2026)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The last decade saw IRS/tech support calls (2016), ICO crypto bubbles (2017), SIM swapping (2018), gift card payment fraud (2019), COVID-19 relief phishing (2020), loan app blackmail (2021), Pig Butchering crypto romance scams (2022), student loan relief fraud (2023), Telegram task fraud (2024), Digital Arrests (2025), and AI Voice Deepfakes (2026)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What was the biggest scam in 2020 / 2021?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "In 2020, COVID-19 relief fund phishing, stimulus check scams, fake vaccine portals, and puppy courier scams peaked worldwide. In 2021, WhatsApp Pink malware APKs, predatory instant loan apps, and crypto honeypots caused massive financial harm."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "name": "How to check if a message is a scam in 3 steps",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "name": "Paste Message",
-            "text": "Copy the suspicious SMS, WhatsApp message, link, or email and paste it into the checker."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Automated Scan",
-            "text": "Our 5-layer security engine analyzes sender patterns, urgency words, and threat databases."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Get Verdict",
-            "text": "Receive an instant risk score, red flags, and recommended safety actions in your language."
-          }
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "@id": "https://isthisscamorreal.com/#scam-database-2026",
-        "name": "Top 2026 Latest Global Scams List",
-        "description": "Verified database of emerging cyber threats, smishing patterns, and AI-powered scams in 2026.",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "AI Voice Clone / Deepfake Boss Call",
-            "url": "https://isthisscamorreal.com/#scam/ai-voice-clone-scam-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Fake Package Delivery Smishing",
-            "url": "https://isthisscamorreal.com/#scam/fake-package-delivery-smishing-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Quishing / QR Code Parking & Restaurant Phishing",
-            "url": "https://isthisscamorreal.com/#scam/quishing-qr-code-scam-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Pig Butchering Romance Crypto Investment Scam",
-            "url": "https://isthisscamorreal.com/#scam/pig-butchering-crypto-scam-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Digital Arrest & Fake Police Video Call",
-            "url": "https://isthisscamorreal.com/#scam/digital-arrest-cbi-cyber-police-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "Fake Owala / Stanley 90% Off Warehouse Clearance",
-            "url": "https://isthisscamorreal.com/#scam/fake-owala-stanley-clearance-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "Imposter Brand Ads & Google Search Sponsor Trap",
-            "url": "https://isthisscamorreal.com/#scam/imposter-brand-sponsored-ads-2026"
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "name": "Fixed Rate High-Yield Fake Bond Scam",
-            "url": "https://isthisscamorreal.com/#scam/fixed-rate-high-yield-bond-scam-2026"
-          }
-        ]
-      },
-      {
-        "@type": "Article",
-        "headline": "Top Global Scams in 2026: Customs Parcel, Toll Fees, KYC & Telegram Job Fraud",
-        "author": { "@id": "https://isthisscamorreal.com/#organization" },
-        "publisher": { "@id": "https://isthisscamorreal.com/#organization" },
-        "datePublished": "2026-11-01",
-        "dateModified": "2026-11-09",
-        "description": "Comprehensive guide and daily updated database of top SMS, WhatsApp, and email phishing scams across India, USA, UK, Pakistan, and UAE."
-      }
-    ]
-  }
   </script>
 </head>
 <body class="antialiased">
@@ -485,7 +116,7 @@
     </header>
 
     <!-- MOBILE OVERLAY MENU -->
-    <div id="mobileMenuOverlay" class="hidden fixed inset-0 z-50 bg-[#0A1931]/98 backdrop-blur-xl flex flex-col p-6 animate-fadeIn">
+    <div id="mobileMenuOverlay" class="hidden fixed inset-0 z-50 bg-[#0A1931]/98 backdrop-blur-xl flex-col p-6 animate-fadeIn">
       <div class="flex items-center justify-between pb-6 border-b border-white/10">
         <div class="flex items-center gap-2.5">
           <div class="w-9 h-9 rounded-xl bg-vgreen flex items-center justify-center text-white shadow">🛡️</div>
@@ -4569,9 +4200,11 @@
       if (modal) modal.classList.remove('hidden');
 
       window.history.pushState(null, '', `#scam/${scam.slug}`);
-      document.title = `${scam.name} - Scam Details & Red Flags | IsThisScamOrReal.com`;
-      const metaDesc = document.getElementById('metaDescTag');
-      if (metaDesc) metaDesc.setAttribute('content', `Learn how ${scam.name} works, 5 red flags, sample phishing text, and official helplines to stay safe.`);
+      updateSeoMeta(
+        `${scam.name} - Scam Details & Red Flags | IsThisScamOrReal.com`,
+        `Learn how ${scam.name} works, 5 red flags, sample phishing text, and official helplines to stay safe.`,
+        `scam/${scam.slug}`
+      );
     }
 
     function closeScamDetail() {
@@ -5270,6 +4903,14 @@
       'admin': 'admin',
       '404': '404'
     };
+
+        function toggleMobileMenu() {
+      const overlay = document.getElementById('mobileMenuOverlay');
+      if (overlay) {
+        overlay.classList.toggle('hidden');
+        overlay.classList.toggle('flex');
+      }
+    }
 
     function handleRouting() {
       let hash = window.location.hash ? window.location.hash.replace('#', '').trim() : '';
