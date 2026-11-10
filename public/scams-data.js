@@ -1,4010 +1,8899 @@
-// IS THIS SCAM OR REAL - GLOBAL SCAM DATABASE (2016 - 2026)
-// Over 150+ Verified Threat Patterns, Incident Histories, Red Flags & Mitigation Steps
+// IS THIS SCAM OR REAL - ULTIMATE WORLD SCAM DATABASE FOR SCAMPEDIA
+// 300+ Verified Scams from Wikipedia, FBI IC3, FTC, Action Fraud, I4C India, Scamwatch, CAFC, Interpol, Google News
+// Sources: Wikipedia, FBI IC3, FTC, Action Fraud, I4C India, Scamwatch - For education only.
 
-window.GLOBAL_SCAMS_DATABASE = [
-  // ================= 2026 - LATEST =================
+window.SCAMPEDIA_SOURCES = [
   {
-    id: "ai-voice-clone-scam-2026",
-    slug: "ai-voice-clone-scam-2026",
-    icon: "🎙️",
-    name: "AI Voice Clone / Deepfake Boss Call",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Call",
-    score: 98,
-    desc: "Scammers clone family member or company CEO voice using 3-second audio clips to demand immediate money transfers.",
-    sampleMsg: "Emergency: I lost my wallet abroad, send $2,500 immediately to this account. Don't call me, signal is bad.",
-    kaiseHotaHai: "1. Scammers scrape voice audio from Instagram, YouTube or TikTok.\n2. AI generative voice models replicate tone, accent and urgency.\n3. Victim receives frantic call demanding immediate wire transfer.",
-    redFlags: [
-      "Caller sounds like someone you know but refuses direct callback",
-      "Extreme emergency pressure to transfer funds within 15 minutes",
-      "Demands wire transfer, cryptocurrency or gift card payment",
-      "Claims connection is bad or meeting is in progress to avoid 2-way conversation",
-      "Receiving account is under an unfamiliar third-party name"
-    ],
-    kyaKarein: [
-      "Hang up immediately and call back on the person's known personal phone number",
-      "Establish a family safe passphrase that scammers cannot mimic",
-      "Report incident immediately to cyber police and freeze banking transfers"
-    ]
+    "id": "all",
+    "name": "All Sources"
   },
   {
-    id: "fake-package-delivery-smishing-2026",
-    slug: "fake-package-delivery-smishing-2026",
-    icon: "📦",
-    name: "Fake Package Delivery Smishing",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Message",
-    score: 95,
-    desc: "Fake SMS claiming your parcel cannot be delivered due to missing house number or unpaid $1.99 redelivery fee.",
-    sampleMsg: "USPS/RoyalMail: Your parcel cannot be delivered due to incomplete address. Update at https://post-redelivery-notice.top within 12h.",
-    kaiseHotaHai: "1. Smishing bots mass-text thousands of mobile numbers.\n2. Link mimics official postal service tracking page.\n3. User enters card details for small fee, which scammers use for recurring unauthorized charges.",
-    redFlags: [
-      "Unofficial domain with strange extension (.top, .xyz, .cc)",
-      "Vague parcel tracking number that doesn't match your orders",
-      "Demands credit card payment for redelivery",
-      "Urgent deadline threatening parcel return to sender",
-      "Received even when you haven't ordered any physical package"
-    ],
-    kyaKarein: [
-      "Never click links inside delivery SMS messages",
-      "Track package directly inside official carrier app (USPS, FedEx, Royal Mail, India Post)",
-      "Forward scam SMS to 7726 (SPAM) to block carrier-wide"
-    ]
+    "id": "Wikipedia",
+    "name": "Wikipedia"
   },
   {
-    id: "quishing-qr-code-scam-2026",
-    slug: "quishing-qr-code-scam-2026",
-    icon: "🏁",
-    name: "Quishing - Fake QR Code Scam",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Link",
-    score: 93,
-    desc: "Malicious QR codes pasted over parking meters, restaurant menus, or emailed invoices to steal credentials.",
-    sampleMsg: "Scan this QR code to claim your $50 electricity rebate or pay parking fee before tow truck arrives.",
-    kaiseHotaHai: "1. Scammers stick fake QR stickers over authentic parking or payment meters.\n2. Scanning opens typosquatted credential harvester or initiates UPI debit request.\n3. User authorizes payment thinking it is a legitimate merchant.",
-    redFlags: [
-      "QR code sticker physically stuck over another sign or display",
-      "Scanning opens an unknown URL without HTTPS padlock",
-      "Demands entering UPI PIN to 'receive' money",
-      "Urgent warning of parking fine or electric disconnect",
-      "Email invoice containing only an image QR code with no plaintext details"
-    ],
-    kyaKarein: [
-      "Inspect physical QR stickers to ensure they are not pasted over original signage",
-      "Always preview the destination URL in your camera scanner before opening",
-      "Remember: entering your UPI PIN always DEDUCTS money, never credits it"
-    ]
+    "id": "FBI IC3",
+    "name": "FBI IC3 (USA)"
   },
   {
-    id: "pig-butchering-crypto-romance-2026",
-    slug: "pig-butchering-crypto-romance-2026",
-    icon: "🐖",
-    name: "Pig Butchering Crypto Romance Scam",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Romance",
-    score: 97,
-    desc: "Elaborate long-term romance trap grooming victims on WhatsApp/Tinder into investing life savings on fake crypto platforms.",
-    sampleMsg: "My uncle is a senior analyst in Singapore. I can teach you guaranteed 15% daily returns on this VIP trading portal.",
-    kaiseHotaHai: "1. 'Wrong number' message builds friendly rapport over weeks.\n2. Convinces victim to deposit small amount, showing simulated massive profits.\n3. When victim deposits life savings, withdrawals are frozen and massive 'tax fees' are demanded.",
-    redFlags: [
-      "Stranger contacts you via wrong number SMS or dating app and insists on moving to WhatsApp or Telegram",
-      "Flaunts lavish lifestyle, luxury cars, and claims insider financial expertise",
-      "Guides you to register on an unfamiliar crypto exchange URL not listed on CoinMarketCap",
-      "Early small withdrawal is allowed to build fake trust",
-      "Refuses video calls or makes excuses about poor network connection"
-    ],
-    kyaKarein: [
-      "Never invest money based on recommendations from online acquaintances",
-      "Only trade cryptocurrency on regulated, globally recognized exchanges",
-      "Report fraud immediately to local cyber police and FBI IC3"
-    ]
+    "id": "FTC",
+    "name": "FTC (USA)"
   },
   {
-    id: "fake-owala-brumate-clearance-2026",
-    slug: "fake-owala-brumate-clearance-2026",
-    icon: "🥤",
-    name: "Fake Owala / Brumate Clearance Stores",
-    year: 2026,
-    isLatest: true,
-    country: "USA",
-    category: "Shop",
-    score: 90,
-    desc: "Social media ads advertising 90% off clearance sales on popular water bottles and tumblers using clone storefronts.",
-    sampleMsg: "Owala Warehouse Clearance: All 40oz tumblers only $4.99! Limited stock, closing down sale ends today.",
-    kaiseHotaHai: "1. Sponsored ads on Instagram, Facebook and TikTok show authentic brand video.\n2. Clicking takes user to clone site (e.g. owala-clearance-sale.shop).\n3. Stolen card info is sold on dark web and ordered items are never shipped.",
-    redFlags: [
-      "Prices discounted by 80% to 95% on high-demand trending products",
-      "Domain registered within the last 30 days using odd TLDs (.shop, .store, .vip)",
-      "Only payment method accepted is unverified credit card or gift card",
-      "No physical headquarters address or telephone customer support",
-      "Spelling errors in terms and return policy"
-    ],
-    kyaKarein: [
-      "Only purchase through official brand domains or authorized retail partners",
-      "Check domain registration age on Whois before buying from social media ads",
-      "Use credit cards with chargeback dispute protection for online purchases"
-    ]
+    "id": "Action Fraud",
+    "name": "Action Fraud (UK)"
   },
   {
-    id: "imposter-ads-govt-brand-2026",
-    slug: "imposter-ads-govt-brand-2026",
-    icon: "📢",
-    name: "Imposter Sponsored Ads (Govt / Brand)",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Link",
-    score: 92,
-    desc: "Paid search engine and social ads impersonating government agencies or airlines to siphon login credentials.",
-    sampleMsg: "FTC Official Settlement Refund: Claim your $1,400 consumer redress payout now before funds lapse.",
-    kaiseHotaHai: "1. Scammers purchase Google Search Ads targeting high-volume keywords like 'Delta customer care' or 'SBI netbanking'.\n2. Ad leads to perfect visual clone of authentic login screen.\n3. Captures username, password and 2FA OTP in real-time.",
-    redFlags: [
-      "URL has 'Sponsored' tag but points to unofficial domain",
-      "Domain differs by one letter (e.g. delt-air1ines.com)",
-      "Demands full social security number or netbanking transaction password",
-      "Phone numbers listed on the page connect to third-party call centers",
-      "Prompts downloading remote support software like AnyDesk"
-    ],
-    kyaKarein: [
-      "Skip sponsored ads and scroll down to organic official government/brand links",
-      "Type official web addresses directly into your browser address bar",
-      "Enable browser phishing protection and security warning banners"
-    ]
+    "id": "I4C India",
+    "name": "I4C / Cybercrime.gov.in"
   },
   {
-    id: "fake-gift-card-walmart-amazon-2026",
-    slug: "fake-gift-card-walmart-amazon-2026",
-    icon: "🎁",
-    name: "Fake Gift Card Walmart / Amazon Payment",
-    year: 2026,
-    isLatest: true,
-    country: "USA",
-    category: "Shop",
-    score: 91,
-    desc: "Scammers pose as utility companies, IRS, or tech support and demand payment exclusively via retail gift cards.",
-    sampleMsg: "Power company notice: Settle your $350 overdue bill with Walmart gift card within 1 hour to avoid disconnection.",
-    kaiseHotaHai: "1. Caller creates fake emergency regarding unpaid electricity or law enforcement fine.\n2. Convinces victim to purchase physical gift cards at target or Walmart.\n3. Asks victim to read back the 16-digit card number and PIN over the phone.",
-    redFlags: [
-      "Any caller claiming to be a company or government agency demanding gift cards",
-      "Instructs you to keep the phone line open while you drive to retail store",
-      "Warns you to lie to the store cashier if they ask why you are buying gift cards",
-      "Promises to refund extra money later through wire transfer",
-      "Extreme urgency threatening police arrival at your doorstep"
-    ],
-    kyaKarein: [
-      "Hang up immediately — NO legitimate business or government agency accepts gift cards as payment",
-      "Never share gift card scratch-off PIN numbers with anyone over the phone",
-      "Report extortion attempts to local police and FTC at ReportFraud.ftc.gov"
-    ]
+    "id": "Scamwatch",
+    "name": "Scamwatch (Australia)"
   },
   {
-    id: "fixed-rate-bond-investment-2026",
-    slug: "fixed-rate-bond-investment-2026",
-    icon: "📈",
-    name: "Fixed Rate Bond Investment Scam",
-    year: 2026,
-    isLatest: true,
-    country: "UK",
-    category: "Investment",
-    score: 94,
-    desc: "Comparison websites promising guaranteed 12% to 15% fixed returns on treasury bonds backed by major banking names.",
-    sampleMsg: "Barclays 2026 Green Energy Bond: Guaranteed 14.5% annual yield with zero capital risk. Register brochure.",
-    kaiseHotaHai: "1. Victim enters contact details on fake financial comparison website.\n2. Professional 'wealth managers' call with high-end counterfeit brochures.\n3. Money is wired into fraudulent corporate offshore account and founders vanish.",
-    redFlags: [
-      "Promises returns significantly higher than current central bank base rates",
-      "Claims 100% capital guarantee with zero market volatility",
-      "High-pressure sales calls urging immediate wire before bond issue closes",
-      "Bank transfer instructions specify an account name different from the bank issuing the bond",
-      "Entity is not listed on the FCA Financial Services Register"
-    ],
-    kyaKarein: [
-      "Verify the firm on the official FCA (UK) or SEC register before investing",
-      "Never wire funds based on unsolicited phone calls or comparison websites",
-      "Cross-check bond offerings directly on official bank investor relations websites"
-    ]
+    "id": "Canadian Anti-Fraud Centre",
+    "name": "Canadian Anti-Fraud"
   },
   {
-    id: "digital-arrest-scam-2026",
-    slug: "digital-arrest-scam-2026",
-    icon: "👮",
-    name: "Digital Arrest Scam (Police / CBI / Customs)",
-    year: 2026,
-    isLatest: true,
-    country: "India",
-    category: "Call",
-    score: 99,
-    desc: "Fraudsters in counterfeit police uniforms place Skype video calls placing victims under 'digital arrest' for money laundering.",
-    sampleMsg: "CBI Cyber Cell: A parcel containing MDMA drugs & fake passports has been seized in your name. You are under digital arrest.",
-    kaiseHotaHai: "1. IVR call claims your mobile number or parcel is linked to illegal narcotics.\n2. Victim is connected on Skype video with fraudsters in fake police uniforms sitting in mockup police stations.\n3. Demands transferring total bank balance into 'RBI secret verification escrow' to clear their name.",
-    redFlags: [
-      "Claims you are under 'Digital Arrest' — NO such legal concept exists under Indian law",
-      "Orders you not to inform family or disconnect video call",
-      "Displays counterfeit Supreme Court warrants, CBI letterheads, and ID cards",
-      "Demands transferring money into private bank accounts for 'government clearance'",
-      "Call originates over WhatsApp, Skype or unknown VOIP numbers"
-    ],
-    kyaKarein: [
-      "Disconnect the video call immediately. Real police NEVER conduct interrogations over Skype or WhatsApp",
-      "Dial 1930 immediately or visit cybercrime.gov.in to report cyber extortion",
-      "Notify your bank manager and freeze any outgoing RTGS/NEFT transfers"
-    ]
+    "id": "Interpol",
+    "name": "Interpol / Europol"
   },
   {
-    id: "harvey-norman-impersonation-2026",
-    slug: "harvey-norman-impersonation-2026",
-    icon: "📺",
-    name: "Harvey Norman Appliance Winner Scam",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Message",
-    score: 90,
-    desc: "SMS claiming recipient has won an 85-inch Smart OLED TV or kitchen bundle from retail giant, asking for processing fee.",
-    sampleMsg: "Congratulations! Your loyalty invoice #HN-998 won an 85' Samsung OLED TV. Claim your prize at https://harveynorman-reward.top before 6 PM.",
-    kaiseHotaHai: "1. Mass SMS sent impersonating prominent electronics retailers.\n2. Phishing link shows simulated lottery wheel spin.\n3. Requests $14.99 shipping fee which signs user up for $89 monthly hidden subscriptions.",
-    redFlags: [
-      "Winning contests or sweepstakes you never entered",
-      "Demands credit card payment for shipping a 'free' prize",
-      "Countdown timer creating artificial panic to claim within 10 minutes",
-      "Domain name is not official retailer website",
-      "Fake Facebook comments embedded on the prize page"
-    ],
-    kyaKarein: [
-      "Delete unsolicited prize notification messages",
-      "Never enter debit or credit card details to receive free promotional rewards",
-      "Verify promotional campaigns directly on the retailer's official corporate social handles"
-    ]
-  },
-  {
-    id: "fake-ai-investment-app-2026",
-    slug: "fake-ai-investment-app-2026",
-    icon: "🤖",
-    name: "Fake AI Trading Bot / Quantum Wealth",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Crypto",
-    score: 94,
-    desc: "Deepfake celebrity endorsements (Elon Musk, prominent news anchors) promoting algorithmic automated trading apps.",
-    sampleMsg: "Revolutionary AI quantum trading bot generates $1,200 daily on autopilot. Deposit $250 to start your account.",
-    kaiseHotaHai: "1. Deepfake news report video on Facebook shows news anchor endorsing AI algorithm.\n2. User deposits $250 initial investment.\n3. Account dashboard shows fabricated skyrocketing balance, but withdrawal requests demand hefty taxes.",
-    redFlags: [
-      "Claims algorithm has 99.8% win rate with zero possibility of losing money",
-      "Deepfake video where mouth movements do not match audio cadence",
-      "Aggressive phone calls from offshore account managers urging larger deposits",
-      "Platform cannot be found on standard regulated broker directories",
-      "Refusal of withdrawal requests unless additional funds are wired"
-    ],
-    kyaKarein: [
-      "Ignore sensationalist claims of algorithmic guaranteed wealth",
-      "Never transfer funds to platforms discovered through social media video ads",
-      "File complaints with national financial regulators (SEBI, SEC, FCA)"
-    ]
-  },
-  {
-    id: "fake-chatgpt-premium-2026",
-    slug: "fake-chatgpt-premium-2026",
-    icon: "🧠",
-    name: "Fake ChatGPT Premium / OpenAi Pro Clone",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Link",
-    score: 88,
-    desc: "Counterfeit ChatGPT apps and browser extensions containing infostealer malware that drains crypto wallets and stored passwords.",
-    sampleMsg: "Download ChatGPT Pro 5 desktop edition for free lifetime access. No subscription required: https://openai-desktop-installer.cc",
-    kaiseHotaHai: "1. Phishing site advertises cracked/free version of premium AI models.\n2. Executable .exe or .dmg downloads Lumma or RedLine stealer malware.\n3. Malware extracts saved browser passwords, session cookies, and crypto seed phrases.",
-    redFlags: [
-      "Offers free lifetime access to services that normally require monthly subscriptions",
-      "Installer asks to disable Windows Defender or antivirus software",
-      "Download comes from unofficial GitHub fork or third-party file hosting link",
-      "Asks for administrator system privileges upon running",
-      "Contains typo in domain (e.g. opneai, chat-gpt-desktop.org)"
-    ],
-    kyaKarein: [
-      "Only access AI tools through official web portals (openai.com, claude.ai)",
-      "Never install third-party browser extensions requesting permissions to read all site data",
-      "Run regular system scans with updated antivirus software"
-    ]
-  },
-  {
-    id: "fake-election-voting-scam-2026",
-    slug: "fake-election-voting-scam-2026",
-    icon: "🗳️",
-    name: "Fake Election / Voter Registration Verification",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Govt",
-    score: 90,
-    desc: "Smishing messages claiming voter registration has been invalidated, directing citizens to phishing sites to harvest identity info.",
-    sampleMsg: "Election Commission: Your voter status is flagged as inactive. Confirm your SSN/Aadhaar at https://voter-registry-check.org within 24h.",
-    kaiseHotaHai: "1. Coincides with national or state election cycles.\n2. Phishing form requests full name, date of birth, mother's maiden name and national ID.\n3. Identity theft syndicate uses data to open fraudulent loan accounts.",
-    redFlags: [
-      "Received via SMS from random 10-digit mobile number",
-      "Threatens loss of democratic voting rights within 24 hours",
-      "Requests highly sensitive financial or biometric identifiers",
-      "Domain is not an official .gov or .gov.in domain",
-      "Grammatical and formatting discrepancies in legal notices"
-    ],
-    kyaKarein: [
-      "Verify voter status exclusively through official election portals (e.g. voters.eci.gov.in, vote.gov)",
-      "Never share national ID details in response to text messages",
-      "Report election phishing to national cyber defense portals"
-    ]
-  },
-  {
-    id: "fake-concert-ticket-2026",
-    slug: "fake-concert-ticket-2026",
-    icon: "🎟️",
-    name: "Fake Coldplay / Taylor Swift Concert Tickets",
-    year: 2026,
-    isLatest: true,
-    country: "Global",
-    category: "Shop",
-    score: 89,
-    desc: "Social media sellers offering VIP lounge tickets to sold-out stadium concerts, demanding non-refundable peer-to-peer payments.",
-    sampleMsg: "Selling 2 VIP standing Coldplay Mumbai tickets at MRP because I have family emergency. WhatsApp me now.",
-    kaiseHotaHai: "1. Scalpers advertise sold-out concert tickets on Twitter/X, Instagram or Reddit.\n2. Show edited photos of booking confirmations to prove legitimacy.\n3. Once payment is sent via UPI or Zelle, seller blocks the buyer and deletes profile.",
-    redFlags: [
-      "Seller insists on payment via non-reversible peer-to-peer transfer (UPI, Zelle, Venmo)",
-      "Price offered is suspiciously low or at original MRP for sold-out mega concert",
-      "Account was created recently with low follower count and no mutual connections",
-      "Refuses to meet in person or use protected resale ticket platforms (StubHub, BookMyShow)",
-      "Creates artificial urgency claiming multiple other buyers are waiting"
-    ],
-    kyaKarein: [
-      "Only purchase resale tickets through verified fan-to-fan exchange platforms with buyer guarantees",
-      "Never send advance deposits to strangers on social media",
-      "Use credit cards that offer fraud protection"
-    ]
-  },
-
-  // ================= 2025 =================
-  {
-    id: "telegram-task-liking-job-2025",
-    slug: "telegram-task-liking-job-2025",
-    icon: "💼",
-    name: "Telegram YouTube Liking / Merchant Task Scam",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 90,
-    desc: "Work-from-home trap paying small amounts for liking videos, then demanding escalating deposits for high-tier merchant tasks.",
-    sampleMsg: "Part-time job: Like 5 YouTube videos, earn Rs 300 immediately. Send screenshot to Telegram receptionist.",
-    kaiseHotaHai: "1. Victim receives initial Rs 300 to build false trust.\n2. Added to VIP Telegram group showing fake members earning massive sums.\n3. Coerced into depositing Rs 10,000 to Rs 5,00,000 for 'prepaid investment tasks' which can never be withdrawn.",
-    redFlags: [
-      "Unsolicited job offer sent via WhatsApp or SMS",
-      "Promises high daily pay (Rs 3,000 - 8,000) for trivial activities like watching or liking videos",
-      "Communication shifted exclusively to anonymous Telegram groups",
-      "Demands depositing your own money to unlock your salary",
-      "Fake Telegram group members cheering fabricated high earnings"
-    ],
-    kyaKarein: [
-      "Block the sender immediately — legitimate companies never pay employees through Telegram tasks",
-      "Never pay any registration fee or prepaid task deposit for employment",
-      "Report the Telegram group to abuse@telegram.org and national cybercrime helplines"
-    ]
-  },
-  {
-    id: "fake-trading-app-stock-tips-2025",
-    slug: "fake-trading-app-stock-tips-2025",
-    icon: "📊",
-    name: "Fake Trading App / Institutional Stock Tips",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 94,
-    desc: "WhatsApp groups claiming to be SEBI-registered institutional advisors offering exclusive upper-circuit stock allotments.",
-    sampleMsg: "Goldman Sachs Institutional VIP Club: Get guaranteed 400% profit on pre-IPO institutional allotment today.",
-    kaiseHotaHai: "1. Victim joins WhatsApp group via Facebook stock tips ad.\n2. Guided to download counterfeit trading APK not available on Google Play.\n3. App displays fake astronomical profits, but withdrawal requests trigger extortionate 30% tax demands.",
-    redFlags: [
-      "Guaranteed upper circuit stock gains with zero risk",
-      "Instructs you to sideload third-party APK application",
-      "Demands transferring funds to individual current bank accounts rather than recognized clearing corporation",
-      "Fake customer support claims SEBI regulations prevent direct withdrawals",
-      "High-pressure investment countdowns"
-    ],
-    kyaKarein: [
-      "Only trade through SEBI-registered brokers listed on NSE and BSE websites",
-      "Never install APK files sent through WhatsApp or Telegram",
-      "Report illegal investment groups to SEBI Complaints Redress System (SCORES)"
-    ]
-  },
-  {
-    id: "fake-work-from-home-data-entry-2025",
-    slug: "fake-work-from-home-data-entry-2025",
-    icon: "⌨️",
-    name: "Fake Work From Home Data Entry / Form Filling",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 89,
-    desc: "Offers online form filling jobs, then sends legal notices claiming breach of contract and demanding penalty fees.",
-    sampleMsg: "Earn Rs 25 per form filling. Work 2 hours daily from mobile. No skills required. Immediate joining.",
-    kaiseHotaHai: "1. Victim signs fake digital agreement and fills thousands of complex forms.\n2. Scammers fabricate errors in submission, claiming accuracy fell below 90%.\n3. Fake lawyers call threatening police arrest and court warrants unless Rs 25,000 penalty is paid.",
-    redFlags: [
-      "Unrealistic pay for basic typing or captcha solving",
-      "Demands upfront security deposit for providing assignment files",
-      "Threatens legal lawsuit, police FIR, or credit score damage for incomplete work",
-      "Fake legal notices with bogus advocate stamps and court seals",
-      "Refusal to provide verified company registration number"
-    ],
-    kyaKarein: [
-      "Ignore fake legal threats — scammers use intimidation to extort innocent job seekers",
-      "Never pay penalty fees to online data entry companies",
-      "File an online harassment report on cybercrime.gov.in"
-    ]
-  },
-  {
-    id: "fake-courier-india-post-2025",
-    slug: "fake-courier-india-post-2025",
-    icon: "📮",
-    name: "Fake India Post / Courier Customs Duty",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 98,
-    desc: "Phishing SMS claiming India Post parcel cannot be delivered without paying Rs 1,999 customs duty online.",
-    sampleMsg: "India Post: Your package #IN91024 is held at customs warehouse due to unpaid duty of Rs 1,999. Pay at https://indiapost-parcel.top",
-    kaiseHotaHai: "1. Mass SMS campaign targets citizens with fake delivery notices.\n2. Phishing link mimics India Post portal.\n3. Harvesting card details and OTP, draining the victim's bank account.",
-    redFlags: [
-      "SMS arrives from private 10-digit mobile number instead of official sender header (e.g. IP-INDPOST)",
-      "Link does not end in official government domain: indiapost.gov.in",
-      "Demands immediate duty payment for an order you never placed",
-      "Phishing portal asks for netbanking password or debit card CVV",
-      "Urgency notice threatening destruction of parcel within 24 hours"
-    ],
-    kyaKarein: [
-      "Track consignments exclusively on the official portal: indiapost.gov.in",
-      "Never pay customs duty through third-party SMS links",
-      "Forward fraudulent SMS to 1909 (TRAI DND Fraud registry)"
-    ]
-  },
-  {
-    id: "fake-electricity-smart-meter-2025",
-    slug: "fake-electricity-smart-meter-2025",
-    icon: "⚡",
-    name: "Fake Electricity / Smart Meter Disconnection",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 93,
-    desc: "Urgent SMS threatening electricity disconnection tonight at 9:30 PM due to unpaid bill, giving fake officer contact.",
-    sampleMsg: "Dear consumer, your electricity power will be disconnected tonight at 9:30 PM because previous month bill was not updated. Call 91040 immediately.",
-    kaiseHotaHai: "1. Evening SMS creates panic regarding power outage.\n2. Victim calls provided mobile number.\n3. Scammer instructs victim to install AnyDesk or pay Rs 10 on a malicious portal, draining accounts.",
-    redFlags: [
-      "Threatens disconnection tonight at a specific time (usually 9:30 PM)",
-      "Gives a personal 10-digit mobile number to contact electricity officer",
-      "Arrives from an unverified mobile number, not official discom header (e.g. BSES, TATA, MSEDCL)",
-      "Asks to install QuickSupport, AnyDesk or download an APK file",
-      "Demands test recharge of small amount (Rs 10) through unfamiliar link"
-    ],
-    kyaKarein: [
-      "Verify bill payment status directly inside official discom utility mobile app",
-      "Never call unknown numbers sent in utility threat messages",
-      "Block the sender and report to state electricity board vigilance helpline"
-    ]
-  },
-  {
-    id: "fake-loan-app-harassment-2025",
-    slug: "fake-loan-app-harassment-2025",
-    icon: "💳",
-    name: "Illegal Chinese Micro-Loan App Extortion",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 92,
-    desc: "Instant paperless loan apps that steal contact lists and photos to blackmail borrowers with morphed nude pictures.",
-    sampleMsg: "Instant loan of Rs 50,000 approved in 2 minutes without CIBIL score! Download SpeedyCash APK now.",
-    kaiseHotaHai: "1. App requests dangerous permissions: Contacts, Camera, and Photo Gallery upon installation.\n2. Disburses only Rs 3,000 while deducting 40% processing fee, demanding Rs 10,000 repayment in 7 days.\n3. When borrower resists, morphed compromising pictures are sent to entire phone contact list.",
-    redFlags: [
-      "Offers instant loan without KYC verification or CIBIL credit score check",
-      "App is downloaded via direct APK link or shady third-party app store",
-      "Demands full access to your photo gallery, contacts, and call history",
-      "Repayment tenure is less than 90 days (illegal under RBI regulations)",
-      "Aggressive recovery agents use abusive language and death threats"
-    ],
-    kyaKarein: [
-      "Never install unverified loan APKs that demand gallery or contact permissions",
-      "Only borrow from RBI-registered NBFCs and commercial banks",
-      "If blackmailed, do NOT pay money; file an immediate FIR with local cyber police"
-    ]
-  },
-  {
-    id: "fake-crypto-airdrop-2025",
-    slug: "fake-crypto-airdrop-2025",
-    icon: "🪙",
-    name: "Fake Web3 Crypto Airdrop Wallet Drainer",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 91,
-    desc: "X (Twitter) bot mentions claiming free $5,000 token airdrops that execute wallet drainer smart contracts.",
-    sampleMsg: "Major airdrop: Connect MetaMask wallet at https://claim-arbitrum-tokens.xyz to claim 1,200 FREE governance tokens.",
-    kaiseHotaHai: "1. Automated bot accounts tag thousands of crypto users on social platforms.\n2. Connecting decentralized wallet pops up 'Permit' signature request.\n3. Signing gives unlimited token allowance, draining all USDT, Ethereum, and NFTs within seconds.",
-    redFlags: [
-      "Unsolicited tag on Twitter/X or Discord promising free valuable tokens",
-      "Wallet interaction asks for 'SetApprovalForAll' or unlimited token spending approval",
-      "Domain uses unofficial misspelled domain ending in .xyz, .cc or .live",
-      "Claim timer shows false countdown to trigger FOMO urgency",
-      "Comments on the post are restricted or disabled"
-    ],
-    kyaKarein: [
-      "Never connect your primary crypto wallet to unverified airdrop websites",
-      "Use hardware wallets or burner wallets with zero balance for minting",
-      "Revoke malicious token approvals immediately on revoke.cash"
-    ]
-  },
-  {
-    id: "fake-instagram-blue-tick-2025",
-    slug: "fake-instagram-blue-tick-2025",
-    icon: "📸",
-    name: "Fake Instagram Blue Tick Verification",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 87,
-    desc: "Direct messages claiming your profile has qualified for verified blue badge, stealing credentials upon login.",
-    sampleMsg: "Instagram Support: Your account has been approved for badge verification. Confirm identity at https://meta-verify-badge.top",
-    kaiseHotaHai: "1. DM arrives from account posing as Meta Help Desk.\n2. Phishing form asks for username, password, and two-factor SMS backup code.\n3. Account is immediately hijacked and used to propagate crypto investment scams to all followers.",
-    redFlags: [
-      "Instagram NEVER contacts creators via Direct Message regarding verification",
-      "Link does not lead to official instagram.com or meta.com domain",
-      "Threatens account deletion or badge cancellation if you don't respond in 24h",
-      "Sender account has no official verification badge and strange posting history",
-      "Asks for your account password (Meta employees never request passwords)"
-    ],
-    kyaKarein: [
-      "Check official verification status exclusively inside Instagram App Settings > Meta Verified",
-      "Enable app-based two-factor authentication (Google Authenticator) instead of SMS",
-      "Report phishing DMs directly inside the Instagram app"
-    ]
-  },
-  {
-    id: "fake-ayushman-card-2025",
-    slug: "fake-ayushman-card-2025",
-    icon: "🏥",
-    name: "Fake Hospital / Ayushman Card Benefit",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 90,
-    desc: "WhatsApp messages claiming government has approved Rs 5,00,000 cash health balance, asking for processing fee.",
-    sampleMsg: "Ayushman Bharat: Your family card has Rs 5,00,000 ready to withdraw. Pay Rs 499 registration fee at https://pmjay-card.info",
-    kaiseHotaHai: "1. Fraudsters exploit healthcare anxiety in rural and semi-urban communities.\n2. Demands nominal processing fee or Aadhaar biometric authentication.\n3. Steals Aadhaar-linked payment bank balances.",
-    redFlags: [
-      "Claims Ayushman Bharat gives 'cash money to withdraw' (PM-JAY only covers hospital treatment cashless)",
-      "Demands fee to issue government health card (cards are issued 100% free)",
-      "Unofficial portal not hosted on the official national domain: pmjay.gov.in",
-      "Asks for bank account numbers, ATM card details, or UPI PIN",
-      "Spread through chain forwarding on WhatsApp groups"
-    ],
-    kyaKarein: [
-      "Apply for or verify Ayushman cards only on official portal: pmjay.gov.in or at Common Service Centers (CSC)",
-      "Never pay fees for free government public health welfare schemes",
-      "Report illegal agents to national health authority helpline 14555"
-    ]
-  },
-  {
-    id: "fake-school-admission-2025",
-    slug: "fake-school-admission-2025",
-    icon: "🏫",
-    name: "Fake School Admission Fee Portal",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 88,
-    desc: "Clone websites of elite private schools demanding seat reservation deposits during peak nursery admission seasons.",
-    sampleMsg: "Delhi Public School: Your ward is shortlisted for nursery seat. Submit admission booking fee Rs 45,000 at https://dps-nursery-fee.org",
-    kaiseHotaHai: "1. Scammers purchase lookalike domains during school admission months.\n2. SMS and emails sent to parents on waiting lists.\n3. Parents wire admission fees directly into fraudulent bank accounts.",
-    redFlags: [
-      "Shortlisted notification arrives without physical interaction or formal interview",
-      "Demands immediate fee payment via UPI or direct bank transfer instead of school portal",
-      "Email address is a free Gmail or Yahoo account rather than official school domain",
-      "School administration office denies issuing the notification when contacted in person",
-      "Grammatical and formatting errors in the admission letter"
-    ],
-    kyaKarein: [
-      "Always verify seat allotments in person at the school's physical administrative office",
-      "Only pay tuition and admission fees through official school ERP portals",
-      "Never transfer funds to personal savings accounts given over WhatsApp"
-    ]
-  },
-  {
-    id: "fake-whatsapp-gold-pink-2025",
-    slug: "fake-whatsapp-gold-pink-2025",
-    icon: "💬",
-    name: "WhatsApp Gold / Pink WhatsApp Spyware APK",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 89,
-    desc: "Viral forwarded messages advertising secret 'WhatsApp Gold' with extra features that secretly installs Android spyware.",
-    sampleMsg: "WhatsApp Pink version officially released with new themes and status download features! Upgrade now: https://whatsapp-pink.apk",
-    kaiseHotaHai: "1. Forwarded link encourages installing unverified .apk file.\n2. App gains accessibility permissions and SMS reading capabilities.\n3. Automatically forwards malicious link to all contacts and captures banking OTPs in the background.",
-    redFlags: [
-      "Offers unofficial features like reading deleted messages, hidden themes, or gold interface",
-      "Requires manual APK installation and enabling 'Install Unknown Apps' in Android settings",
-      "Requests excessive permissions: read SMS, access accessibility service, monitor keystrokes",
-      "App icon disappears from home screen after installation while running in background",
-      "Battery drains rapidly due to constant background telemetry upload"
-    ],
-    kyaKarein: [
-      "Only install or update WhatsApp from the official Google Play Store or Apple App Store",
-      "If already installed, immediately boot phone into Safe Mode and uninstall the rogue APK",
-      "Reset your primary banking and email passwords from another device"
-    ]
-  },
-  {
-    id: "fake-5g-tower-job-2025",
-    slug: "fake-5g-tower-job-2025",
-    icon: "🗼",
-    name: "Fake 5G Tower Installation & Rent Scam",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 86,
-    desc: "Promises Rs 50,000 monthly rent and Rs 25 Lakh advance for installing a 5G mobile tower on your plot or terrace.",
-    sampleMsg: "Jio/Airtel 5G Tower Installation: Get Rs 45,000 monthly rent + 1 family job. Pay Rs 2,500 NOC registration fee.",
-    kaiseHotaHai: "1. Classified newspaper ad or WhatsApp message promises lucrative passive rental income.\n2. Scammer visits or sends counterfeit structural approval certificates.\n3. Demands multiple escalating payments: NOC fee, government tax, equipment insurance fee.",
-    redFlags: [
-      "Promises astronomical rental returns for empty rooftop or plot",
-      "Demands registration fee, government stamp fee, or NOC charges upfront",
-      "Uses forged letters bearing telecom ministry (DoT) or TRAI emblems",
-      "Official telecom companies NEVER charge landowners any fee to install towers",
-      "Contact details belong to private mobile numbers or personal email IDs"
-    ],
-    kyaKarein: [
-      "TRAI and telecom companies NEVER issue tower installation permissions or charge NOC fees",
-      "Do not send money or land ownership documents to unsolicited tower agents",
-      "Report illegal tower advertisements to local police"
-    ]
-  },
-  {
-    id: "fake-railway-recruitment-2025",
-    slug: "fake-railway-recruitment-2025",
-    icon: "🚆",
-    name: "Fake Railway Recruitment / TTE Job",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 90,
-    desc: "Syndicates running fake railway training programs and issuing counterfeit appointment letters for TTE and Group D posts.",
-    sampleMsg: "Indian Railways direct recruitment 2025: 1,450 TTE posts without exam. Pay Rs 15,000 medical and badge fee.",
-    kaiseHotaHai: "1. Fraudsters set up fake websites resembling RRB (Railway Recruitment Board).\n2. Unemployed youths are called for fake medical tests at regional hospitals.\n3. Extort Rs 2 Lakh to Rs 5 Lakh before handing over worthless forged joining letters.",
-    redFlags: [
-      "Claims 'direct appointment' without clearing official RRB computer-based exams",
-      "Interviews conducted in private hotel rooms or outside railway headquarters",
-      "Demands cash or bank transfer for medical fitness certificate or uniform badge",
-      "Domain does not end in official Indian government domain: indianrailways.gov.in",
-      "Offers to bypass reservation or merit lists through internal political quota"
-    ],
-    kyaKarein: [
-      "All Indian Railway jobs are advertised exclusively on official RRB websites (rrbcdg.gov.in)",
-      "Never pay bribes or agency fees for government public employment",
-      "Report job racket syndicates to Railway Protection Force (RPF) Helpline 139"
-    ]
-  },
-
-  // ================= 2024 =================
-  {
-    id: "kyc-update-bank-block-2024",
-    slug: "kyc-update-bank-block-2024",
-    icon: "🏦",
-    name: "KYC Update / Bank Account Block Scam",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 95,
-    desc: "Phishing SMS claiming bank account will be suspended within 24 hours due to missing Aadhaar/PAN re-KYC.",
-    sampleMsg: "Dear SBI User, your account has been blocked today due to pending KYC. Click http://sbi-kyc-verify.net to update PAN.",
-    kaiseHotaHai: "1. Urgent SMS creates fear of bank account freeze.\n2. Link mimics official netbanking portal.\n3. Captures customer ID, password, and mobile OTP to transfer entire balance.",
-    redFlags: [
-      "Threatens immediate 24-hour account suspension or freeze",
-      "Contains an external link with lookalike domain (.net, .org, .info)",
-      "Sent from a regular 10-digit phone number, not official bank sender ID",
-      "Asks you to enter your debit card CVV, ATM PIN or netbanking password",
-      "Official banks NEVER request KYC submission through SMS links"
-    ],
-    kyaKarein: [
-      "Do not click the link or reply to the message",
-      "Check account status inside your official bank app (YONO, iMobile, HDFC)",
-      "Visit your home bank branch physically to complete re-KYC if required"
-    ]
-  },
-  {
-    id: "upi-collect-request-pin-2024",
-    slug: "upi-collect-request-pin-2024",
-    icon: "💸",
-    name: "UPI Collect Request / Reverse Money Trap",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 94,
-    desc: "Scammers send a UPI payment request disguised as a cash prize or refund, claiming entering your PIN will credit money.",
-    sampleMsg: "PhonePe Reward: You have won Rs 2,000 cashback! Tap 'Pay' and enter your UPI PIN to claim money into your bank.",
-    kaiseHotaHai: "1. Scammer sends a UPI 'Collect Request' on Google Pay or PhonePe.\n2. Tells victim over phone that entering PIN is necessary to verify account and receive funds.\n3. Entering PIN immediately deducts money from victim's account.",
-    redFlags: [
-      "Claiming you must enter your UPI PIN to RECEIVE money",
-      "Button says 'PAY' instead of receive",
-      "Caller stays on the phone aggressively instructing you not to read screen prompts",
-      "Promises unexpected cashback, lottery winnings, or OLX buyer deposit",
-      "Caller claims to be a merchant or customer care executive"
-    ],
-    kyaKarein: [
-      "GOLDEN RULE: You NEVER enter UPI PIN to receive money. PIN is only needed to SEND money",
-      "Decline the collect request inside your UPI app immediately",
-      "Block the sender's UPI ID and mobile number"
-    ]
-  },
-  {
-    id: "fake-customer-care-google-2024",
-    slug: "fake-customer-care-google-2024",
-    icon: "📞",
-    name: "Fake Customer Care Google Maps Number",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 91,
-    desc: "Scammers edit Google Maps contact numbers for banks, courier offices, and airlines to intercept customer service calls.",
-    sampleMsg: "Swiggy/Zomato refund helpline: Contact customer care manager directly at 9876543210 for failed order refund.",
-    kaiseHotaHai: "1. User Googles customer care phone number for courier, airline, or food app.\n2. Scammer answers, pretending to be official support agent.\n3. Instructs user to install remote support app (AnyDesk) or transfer token fee to initiate refund.",
-    redFlags: [
-      "Customer care number is a mobile phone (+91 9xxxx / +91 8xxxx) instead of toll-free 1800 number",
-      "Agent asks you to install AnyDesk, RustDesk or TeamViewer on your phone",
-      "Agent asks for your full debit card number, expiry date and CVV",
-      "Agent asks you to transfer a small test amount to an individual UPI ID",
-      "Customer service handles financial refunds via WhatsApp chat"
-    ],
-    kyaKarein: [
-      "Never trust phone numbers found on Google search results or Google Maps listings",
-      "Only use in-app help/support chat within the official application",
-      "Never install screen sharing applications upon instruction from anyone"
-    ]
-  },
-  {
-    id: "olx-marketplace-qr-code-2024",
-    slug: "olx-marketplace-qr-code-2024",
-    icon: "🛒",
-    name: "OLX / Marketplace Reverse QR Code",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 88,
-    desc: "Fake buyer agrees to buy your listing immediately without bargaining, then sends a QR code claiming it will transfer money to you.",
-    sampleMsg: "I am ready to buy your sofa for Rs 15,000. Scan this QR code on Google Pay to receive instant advance payment.",
-    kaiseHotaHai: "1. Scammer contacts seller within 10 minutes of posting an OLX listing.\n2. Claims to be army officer or out of town; promises to send truck for pickup.\n3. Sends QR code on WhatsApp saying 'Scan to receive payment' which actually deducts funds.",
-    redFlags: [
-      "Buyer agrees to purchase high-value item instantly without seeing or bargaining",
-      "Buyer claims to be military personnel or police officer to establish false integrity",
-      "Sends a QR code image on WhatsApp and insists you must scan it to get paid",
-      "Claims their company bank account only works through automated QR scanning",
-      "Refuses to meet in person or pay cash upon physical pickup"
-    ],
-    kyaKarein: [
-      "Never scan QR codes to receive money from a buyer",
-      "Insist on physical inspection and cash on delivery or direct bank account NEFT/IMPS transfer",
-      "Report fraudulent buyers directly on the OLX/Facebook Marketplace app"
-    ]
-  },
-  {
-    id: "fake-amazon-flipkart-order-2024",
-    slug: "fake-amazon-flipkart-order-2024",
-    icon: "📦",
-    name: "Fake Amazon / Flipkart Order Confirmation",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 90,
-    desc: "Email or SMS notifying you of an expensive order you didn't place, providing a fake cancellation helpline to capture banking credentials.",
-    sampleMsg: "Amazon Order: Rs 74,999 debited for Apple iPhone 15 Pro. If you did not make this purchase, call fraud desk at 1800-XXX-XXXX immediately.",
-    kaiseHotaHai: "1. Panic-inducing invoice creates urgent desire to cancel unauthorized purchase.\n2. Victim calls fake toll-free cancellation number.\n3. Scammer guides victim through 'cancellation procedure' which steals bank credentials.",
-    redFlags: [
-      "Notification mentions an expensive purchase you have no knowledge of",
-      "Extreme urgency urging you to call within 30 minutes to prevent shipping",
-      "Phone number provided connects directly without automated IVR greeting",
-      "Support representative asks for your credit card number to process cancellation",
-      "Sender email address is not from @amazon.in or @flipkart.com"
-    ],
-    kyaKarein: [
-      "Open your official Amazon/Flipkart app and check your actual Order History",
-      "If no order exists in your account, delete the message — it is 100% fake",
-      "Never call phone numbers listed in unverified email invoices"
-    ]
-  },
-  {
-    id: "fake-sebi-telegram-stock-syndicate-2024",
-    slug: "fake-sebi-telegram-stock-syndicate-2024",
-    icon: "📈",
-    name: "Fake SEBI Registered Telegram Stock Syndicate",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 93,
-    desc: "Telegram channels sharing forged SEBI certificates claiming to run institutional investment pools with zero downside risk.",
-    sampleMsg: "SEBI Registered RA-9012: Join our exclusive high-net-worth institutional portfolio. Guaranteed 300% quarterly growth.",
-    kaiseHotaHai: "1. Victim joins Telegram channel showing fake screenshots of multimillion-rupee profits.\n2. Guided to transfer funds to mule accounts for portfolio management.\n3. Channel admins block victim once substantial deposits are accumulated.",
-    redFlags: [
-      "Guaranteed returns in equity and derivative stock trading (illegal under SEBI rules)",
-      "Admin uses a fake certificate with forged signatures of SEBI officials",
-      "Demands profit-sharing fee before releasing withdrawal requests",
-      "Channel members cannot post messages or view member lists",
-      "Transfers are requested to private individual savings accounts"
-    ],
-    kyaKarein: [
-      "Verify registration number directly on SEBI's official portal: sebi.gov.in",
-      "Remember that all equity investments carry inherent market risk; guarantees are always fraudulent",
-      "Never transfer trading capital to individual third-party bank accounts"
-    ]
-  },
-  {
-    id: "fake-cbi-narcotics-call-2024",
-    slug: "fake-cbi-narcotics-call-2024",
-    icon: "🚨",
-    name: "Fake Police / CBI Narcotics Threat Call",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 95,
-    desc: "Robocall claiming your parcel sent from Mumbai to Taiwan was intercepted with 16 passports and 200g of MDMA drugs.",
-    sampleMsg: "FedEx Security: A parcel in your name containing illegal contraband has been seized. Press 1 to speak with Mumbai Crime Branch.",
-    kaiseHotaHai: "1. Automated IVR call initiates psychological shock.\n2. Transfer to fake police officer who demands Aadhaar details and bank account balance.\n3. Orders victim to transfer money into 'reserve account' for anti-money laundering verification.",
-    redFlags: [
-      "Call claims a courier parcel was sent in your name to an international destination",
-      "Connecting to 'police' happens instantly over the same phone call",
-      "Caller demands you maintain strict secrecy from family members",
-      "Demands money transfer to prove you are innocent",
-      "Threatens arrest within 2 hours if money is not sent"
-    ],
-    kyaKarein: [
-      "Hang up immediately — courier companies and police do not collaborate to transfer calls",
-      "Real law enforcement agencies do not conduct investigations or demand money over the phone",
-      "Dial 1930 or submit details on cybercrime.gov.in"
-    ]
-  },
-  {
-    id: "fake-aadhaar-pan-update-2024",
-    slug: "fake-aadhaar-pan-update-2024",
-    icon: "🪪",
-    name: "Fake Aadhaar / PAN Biometric Link Alert",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 92,
-    desc: "SMS claiming your PAN card will be declared invalid unless you pay a Rs 1,000 late fee on a counterfeit income tax portal.",
-    sampleMsg: "Income Tax Alert: Your PAN will be deactivated on 31st Dec due to pending Aadhaar link. Pay fine at https://incometax-pan-link.org",
-    kaiseHotaHai: "1. Exploits government deadlines for mandatory PAN-Aadhaar linkage.\n2. Phishing portal mimics Income Tax e-filing design.\n3. Steals netbanking logins, debit card details and Aadhaar numbers.",
-    redFlags: [
-      "SMS arrives from unknown private sender or random shortcode",
-      "Website URL does not end in official government domain: incometax.gov.in",
-      "Demands entering full netbanking password or ATM PIN to pay linkage fine",
-      "Threatens bank account freezing within 24 hours",
-      "Page contains broken navigation links and non-functional footer items"
-    ],
-    kyaKarein: [
-      "Check PAN-Aadhaar linkage status only on official portal: incometax.gov.in",
-      "Never pay government fines or fees through third-party SMS links",
-      "Lock your Aadhaar biometrics inside the official mAadhaar application"
-    ]
-  },
-  {
-    id: "fake-fastag-toll-recharge-2024",
-    slug: "fake-fastag-toll-recharge-2024",
-    icon: "🚗",
-    name: "Fake FASTag Toll Fee / Blacklist Alert",
-    year: 2024,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 95,
-    desc: "SMS warning that your vehicle FASTag is blacklisted due to missing KYC, threatening double toll charges unless updated.",
-    sampleMsg: "NHAI FASTag Alert: Your vehicle FASTag is blacklisted due to incomplete KYC. Update at https://fastag-kyc-update.com to avoid double toll.",
-    kaiseHotaHai: "1. Targets vehicle owners who travel frequently across toll plazas.\n2. Counterfeit NHAI/IHMCL webpage asks for vehicle number, bank login, and OTP.\n3. Drains linked bank wallet or primary savings account.",
-    redFlags: [
-      "Arrives via SMS with an urgent threat of FASTag suspension",
-      "Link does not lead to official issuing bank or ihmcl.co.in",
-      "Demands entering netbanking credentials or UPI PIN to 'verify' FASTag",
-      "Vehicle registration number is not mentioned in the SMS text",
-      "Sender ID is a private mobile number"
-    ],
-    kyaKarein: [
-      "Check FASTag status directly in your official banking or UPI app (Paytm, Google Pay, ICICI, SBI)",
-      "Never enter banking credentials on SMS links",
-      "Report scam numbers to the National Highway Authority helpline 1033"
-    ]
-  },
-  {
-    id: "fake-dubai-job-offer-2024",
-    slug: "fake-dubai-job-offer-2024",
-    icon: "🏙️",
-    name: "Fake Dubai / Gulf Job Offer & Visa Scam",
-    year: 2024,
-    isLatest: false,
-    country: "UAE",
-    category: "Job",
-    score: 89,
-    desc: "Unsolicited emails offering luxury hotel or airport jobs in Dubai, demanding advance fees for medical fitness and entry permits.",
-    sampleMsg: "Emirates Group: Selected for Airport Ground Staff Dubai. Salary AED 8,500 + free housing. Submit AED 1,200 visa processing fee.",
-    kaiseHotaHai: "1. Bogus appointment letter issued on counterfeit letterhead.\n2. Scammer claims UAE immigration law requires job seekers to pay permit fee upfront.\n3. Once fee is paid via international wire, the agency vanishes.",
-    redFlags: [
-      "Job offer received without undergoing rigorous formal interview rounds",
-      "Company demands candidate pay for work visa or employment permit (UAE law mandates employer pays all visa costs)",
-      "Sender email uses free domain (gmail.com, yahoo.com) or misspelled corporate domain",
-      "Salary offered is disproportionately high for basic skill level",
-      "Recruiting agency is not registered with Indian Ministry of External Affairs (eMigrate)"
-    ],
-    kyaKarein: [
-      "Under UAE labor law, employers must bear 100% of visa and recruitment expenses",
-      "Verify recruiting agents on official Indian government portal: emigrate.gov.in",
-      "Verify UAE entry permits on the official GDRFA or ICP government website"
-    ]
-  },
-  {
-    id: "fake-immigration-student-visa-2024",
-    slug: "fake-immigration-student-visa-2024",
-    icon: "✈️",
-    name: "Fake UK / Canada Student Visa Consultant",
-    year: 2024,
-    isLatest: false,
-    country: "UK",
-    category: "Govt",
-    score: 90,
-    desc: "Unlicensed agents offering guaranteed study visas and work permits to UK and Canada without IELTS or financial proof.",
-    sampleMsg: "Canada Study Visa 100% guarantee without IELTS! Special university quota. Pay Rs 50,000 document assessment fee.",
-    kaiseHotaHai: "1. Exploits students seeking higher education abroad.\n2. Agency submits forged bank statements or fake admission letters.\n3. Student faces permanent 5-year visa ban by immigration authorities and loses lakhs in non-refundable agent fees.",
-    redFlags: [
-      "Guarantees visa approval (no genuine agent can guarantee visa decisions made by sovereign embassies)",
-      "Offers to create fake bank financial balance certificates or fake work experience",
-      "Agent is not regulated by ICCRC (Canada) or OISC (UK)",
-      "Refuses to provide official fee receipts with valid GST number",
-      "Demands cash payments or transfers to individual accounts"
-    ],
-    kyaKarein: [
-      "Only work with certified, legally regulated immigration advisors (verify on official embassy websites)",
-      "Never submit fabricated bank statements or forged credentials to embassies",
-      "Apply directly through official portals: canada.ca or gov.uk"
-    ]
-  },
-
-  // ================= 2023 =================
-  {
-    id: "instant-loan-app-blackmail-2023",
-    slug: "instant-loan-app-blackmail-2023",
-    icon: "📱",
-    name: "Instant Micro-Loan App Blackmail Syndicate",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 92,
-    desc: "Predatory apps providing small 7-day loans, then using harvested contact lists and morphed photos for violent extortion.",
-    sampleMsg: "Fast loan Rs 10,000 deposited. Repay Rs 18,000 in 6 days or we will send your morphed nude photos to all family contacts.",
-    kaiseHotaHai: "1. Sideloaded APK copies user contacts and gallery.\n2. Auto-credits small amount without clear terms.\n3. Recovery agents issue death threats and broadcast edited photos to relatives.",
-    redFlags: [
-      "7-day short repayment window with 100%+ hidden interest",
-      "Demands permission to access phone contacts and photo gallery",
-      "App not available on Google Play Store or removed for policy violations",
-      "Recovery agents contact your parents, spouse and friends",
-      "Refuses to provide RBI NBFC registration license"
-    ],
-    kyaKarein: [
-      "Do NOT pay extortion demands; paying once leads to endless escalating threats",
-      "File an immediate complaint with your local cyber police station and on cybercrime.gov.in",
-      "Inform close contacts that your device was compromised by malware"
-    ]
-  },
-  {
-    id: "double-money-telegram-pool-2023",
-    slug: "double-money-telegram-pool-2023",
-    icon: "💰",
-    name: "Double Money Ponzi Telegram Pool",
-    year: 2023,
-    isLatest: false,
-    country: "Global",
-    category: "Investment",
-    score: 94,
-    desc: "Telegram investment pools promising 100% profit within 24 hours through high-frequency forex or algorithmic crypto trading.",
-    sampleMsg: "Special 24-hour doubling scheme: Deposit Rs 5,000, get back Rs 10,000 guaranteed! Tested and verified by 2,000 members.",
-    kaiseHotaHai: "1. Victim deposits small test amount (Rs 1,000) and receives Rs 2,000 back from initial pool funds.\n2. Convinced of authenticity, victim invests Rs 50,000.\n3. Admin blocks victim and deletes chat history.",
-    redFlags: [
-      "Promises to double or triple your money in hours or days",
-      "Claims zero risk and 100% guarantee",
-      "Uses screenshots of fabricated banking transaction SMS",
-      "Admin uses a fake foreign profile photo and luxury car avatar",
-      "Transfers requested to personal UPI accounts or crypto wallets"
-    ],
-    kyaKarein: [
-      "Any scheme promising to double money quickly is ALWAYS a financial scam",
-      "Never transfer funds to anonymous Telegram administrators",
-      "Report fraudulent financial channels to Telegram abuse"
-    ]
-  },
-  {
-    id: "sextortion-honey-trap-video-2023",
-    slug: "sextortion-honey-trap-video-2023",
-    icon: "📹",
-    name: "Sextortion / Honey Trap Video Call",
-    year: 2023,
-    isLatest: false,
-    country: "Global",
-    category: "Romance",
-    score: 95,
-    desc: "Unsolicited WhatsApp video call showing a nude woman, which screen-records the victim's face to extort money with threats of leaking.",
-    sampleMsg: "We recorded your nude video call. Pay Rs 50,000 within 30 minutes or we will upload this video to your YouTube and Facebook.",
-    kaiseHotaHai: "1. Friendly stranger initiates WhatsApp or Facebook video call.\n2. When answered, a pre-recorded adult video clip plays while recording victim's facial reaction.\n3. Impersonator calling as 'Delhi Police Cyber Cell' demands money to delete video from YouTube.",
-    redFlags: [
-      "Video call from unknown attractive female profile",
-      "Call disconnects within 5 to 10 seconds of answering",
-      "Immediate follow-up message with screenshots of your face next to explicit video",
-      "Call from fake 'YouTube Manager' or 'Cyber Police' threatening public upload",
-      "Demands urgent payment via Google Pay or UPI"
-    ],
-    kyaKarein: [
-      "Never answer video calls from unknown phone numbers",
-      "Do NOT pay any money — paying guarantees they will continue demanding more",
-      "Block the number, lock your social media profiles, and lodge an immediate complaint on cybercrime.gov.in"
-    ]
-  },
-  {
-    id: "fake-army-defence-job-2023",
-    slug: "fake-army-defence-job-2023",
-    icon: "🪖",
-    name: "Fake Indian Army / Defence Canteen Job",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 90,
-    desc: "Recruitment syndicates issuing forged appointment letters for Army CSD Canteen clerks and defense storekeepers.",
-    sampleMsg: "Indian Army Canteen Direct Bharti 2023: 850 Clerk posts. Salary Rs 35,000 + army quota. Pay Rs 1,500 gate pass fee.",
-    kaiseHotaHai: "1. Advertised through fake employment circulars.\n2. Fake medical exams held outside cantonment gates.\n3. Collects lakhs for forged appointment letter stamped with counterfeit defense insignia.",
-    redFlags: [
-      "Offers defense recruitment without clearing official Agniveer / UPSC / SSB exams",
-      "Interviews conducted in rented offices or hotels near cantonment borders",
-      "Demands cash payment for uniform, identity badge, or medical pass",
-      "Official defense recruitment circulars are never published on WhatsApp",
-      "Guarantees selection through 'discretionary colonel quota'"
-    ],
-    kyaKarein: [
-      "Official defense recruitment is conducted exclusively through joinindianarmy.nic.in",
-      "Never pay touts or recruitment agencies promising defense jobs",
-      "Report fraudulent touts to Military Intelligence and local police"
-    ]
-  },
-  {
-    id: "fake-recharge-cashback-apk-2023",
-    slug: "fake-recharge-cashback-apk-2023",
-    icon: "📱",
-    name: "Fake Mobile Recharge Cashback APK",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 88,
-    desc: "Malicious APK offering free 1-year unlimited 5G recharge for all telecom networks that steals banking SMS in the background.",
-    sampleMsg: "Government Azadi Offer: Get Free 1-Year Unlimited Recharge for Jio, Airtel, Vi! Download app to claim: https://free-recharge.apk",
-    kaiseHotaHai: "1. Forwarded message lures user with free recharge promise.\n2. Sideloaded APK acts as an SMS-forwarding trojan.\n3. Intercepts bank login OTPs and initiates unauthorized balance withdrawals.",
-    redFlags: [
-      "Claims to offer 100% free multi-month mobile recharges",
-      "Requires downloading an APK file instead of using official app store",
-      "Requests SMS reading and phone call handling permissions upon launch",
-      "Instructs you to forward the link to 10 WhatsApp groups to activate recharge",
-      "Telecom companies NEVER offer free year-long recharges via third-party APKs"
-    ],
-    kyaKarein: [
-      "Recharge exclusively through official telecom apps (MyJio, Airtel Thanks, Vi App)",
-      "Never install APK files sent in WhatsApp forwards",
-      "Uninstall suspicious sideloaded apps immediately and verify bank SMS alerts"
-    ]
-  },
-  {
-    id: "kbc-lottery-whatsapp-2023",
-    slug: "kbc-lottery-whatsapp-2023",
-    icon: "🎟️",
-    name: "KBC / WhatsApp Lottery Winner Letter",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 91,
-    desc: "Counterfeit letters bearing Kaun Banega Crorepati logos and audio recordings claiming you have won a Rs 25 Lakh lottery.",
-    sampleMsg: "Congratulations! Your mobile number won Rs 25,00,000 in KBC All-India Lucky Draw. Contact Manager Rana Pratap Singh on WhatsApp.",
-    kaiseHotaHai: "1. WhatsApp image shows fake certificate with Amitabh Bachchan and KBC logos.\n2. Audio note in Pakistani accent explains how to claim money.\n3. Victim is coerced into paying escalating 'tax', 'RBI processing' and 'customs clearance' fees.",
-    redFlags: [
-      "Winning a lottery in a contest you never purchased a ticket for or participated in",
-      "Manager contact number has a foreign country code (+92 Pakistan or +93 Afghanistan)",
-      "Audio note sounds unprofessional with background ambient noise",
-      "Demands paying processing charges upfront before prize money can be released",
-      "KBC officially states they NEVER conduct lottery draws or demand money"
-    ],
-    kyaKarein: [
-      "Sony Entertainment Television and KBC NEVER run lucky draws or ask for money",
-      "Block and report the sender on WhatsApp",
-      "Never transfer processing fees to claim unexpected lottery prizes"
-    ]
-  },
-  {
-    id: "fake-disaster-relief-charity-2023",
-    slug: "fake-disaster-relief-charity-2023",
-    icon: "🤝",
-    name: "Fake Disaster Relief / Flood Donation Scam",
-    year: 2023,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 85,
-    desc: "Counterfeit charitable fundraising campaigns set up within hours of major earthquakes, floods, or humanitarian crises.",
-    sampleMsg: "Emergency Earthquake Relief: Hundreds trapped without food. Donate now via UPI to save innocent lives: help-disaster@upi",
-    kaiseHotaHai: "1. Scammers copy photos from legitimate news broadcasts.\n2. Create fake websites or social media pages with private UPI/crypto addresses.\n3. Stolen donations are pocketed by scammers without aiding any victims.",
-    redFlags: [
-      "Fundraiser set up by an unknown individual with no established charity registration",
-      "Only accepts untraceable payment methods: personal UPI, cryptocurrency, gift cards",
-      "Emotional pressure with graphic images demanding immediate transfers",
-      "Refuses to provide Section 80G tax exemption receipts",
-      "Organization name closely mimics famous international charities (e.g. Red Crosss)"
-    ],
-    kyaKarein: [
-      "Only donate through established, legally registered charitable organizations",
-      "Verify NGO registration on government portals (e.g. DARPAN portal in India)",
-      "Ensure donation receipts include official NGO registration number and tax exemption validity"
-    ]
-  },
-  {
-    id: "matrimonial-nri-romance-2023",
-    slug: "matrimonial-nri-romance-2023",
-    icon: "💍",
-    name: "Matrimonial NRI Doctor / Engineer Trap",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Romance",
-    score: 90,
-    desc: "Suitor posing as UK/US doctor on matrimonial sites promises marriage, then claims custom authorities seized gold jewelry sent for victim.",
-    sampleMsg: "Darling, I have sent you a gift box containing a diamond watch and £50,000 cash for our wedding. Customs officer will call you.",
-    kaiseHotaHai: "1. Scammer targets matrimonial profiles, professing deep love within weeks.\n2. Claims to send valuable gifts or fly down to meet victim.\n3. Fake 'Customs Officer' calls from Delhi airport demanding Rs 45,000 clearance duty to release parcel.",
-    redFlags: [
-      "Profile claims to be wealthy overseas professional (doctor, pilot, marine engineer)",
-      "Expresses desire for immediate marriage without video call or in-person meeting",
-      "Claims to have sent expensive jewelry, foreign currency, or gold parcels",
-      "Fake airport customs officer calls demanding clearance fees",
-      "Threatens that failing to pay will result in police arresting victim for illegal foreign parcel"
-    ],
-    kyaKarein: [
-      "Customs department NEVER demands duty payment into private individual bank accounts",
-      "Do not send money to online matrimonial contacts you have never met in person",
-      "Conduct strict background checks before committing to online proposals"
-    ]
-  },
-  {
-    id: "fake-flat-rental-booking-2023",
-    slug: "fake-flat-rental-booking-2023",
-    icon: "🏠",
-    name: "Fake Flat Rental Booking Deposit Scam",
-    year: 2023,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 88,
-    desc: "Stolen photos of luxury apartments listed at below-market rent, demanding advance booking tokens before physical viewing.",
-    sampleMsg: "Furnished 2BHK flat in prime location for only Rs 18,000/mo. Owner transferred to Bangalore. Pay Rs 5,000 gate pass fee to visit.",
-    kaiseHotaHai: "1. Listings posted on 99acres, Magicbricks, or Craigslist with stolen interior photos.\n2. 'Landlord' claims high demand and insists on booking token before visiting.\n3. Once token is transferred, landlord disappears and real flat owner has no idea.",
-    redFlags: [
-      "Rent is 40% lower than prevailing neighborhood market rates",
-      "Landlord claims to be out of town, in army, or unable to meet in person",
-      "Demands visiting fee, gate pass charge, or refundable security deposit before physical tour",
-      "Pressures you that other tenants are about to book it right now",
-      "Refuses to provide society maintenance receipt or ownership deed copy"
-    ],
-    kyaKarein: [
-      "NEVER pay any token, gate pass, or booking deposit before physically entering and inspecting the property",
-      "Verify landlord's ownership with building society office or security staff",
-      "Always sign a registered rental agreement before transferring deposits"
-    ]
-  },
-  {
-    id: "fake-gst-refund-phishing-2023",
-    slug: "fake-gst-refund-phishing-2023",
-    icon: "📑",
-    name: "Fake GST Refund / Input Tax Credit Phishing",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 90,
-    desc: "Emails targeting business owners claiming approved GST refund of Rs 84,500 with malicious spreadsheet attachment.",
-    sampleMsg: "CBIC Notice: Your GST input tax credit refund of Rs 84,500 has been sanctioned. Download attached refund order to verify account.",
-    kaiseHotaHai: "1. Targets accountants and business finance departments.\n2. Attached Excel (.xlsm) file contains macro malware.\n3. Once opened, macro executes Trojan that steals banking tokens and ERP credentials.",
-    redFlags: [
-      "Official government tax department sending notices from non-.gov.in email addresses",
-      "Email contains macro-enabled spreadsheet (.xlsm) or password-protected zip file",
-      "Demands enabling macros or editing permissions in Microsoft Office",
-      "GSTIN number mentioned in notice does not match your business",
-      "Urgent deadline warning that refund will lapse in 48 hours"
-    ],
-    kyaKarein: [
-      "Access GST notices and refund status exclusively on official portal: gst.gov.in",
-      "Never enable macros on email attachments from external sources",
-      "Maintain active endpoint security protection on all accounting workstations"
-    ]
-  },
-  {
-    id: "fake-income-tax-refund-email-2023",
-    slug: "fake-income-tax-refund-email-2023",
-    icon: "💵",
-    name: "Fake Income Tax Refund Direct Deposit Phishing",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 92,
-    desc: "Emails claiming an unexpected tax refund of Rs 24,890 has been calculated, asking for bank card details to process payment.",
-    sampleMsg: "Income Tax Department: Refund of Rs 24,890 is approved. Please confirm your bank account and debit card to disburse payment.",
-    kaiseHotaHai: "1. Sent during tax filing season.\n2. Phishing portal asks for bank account number, card CVV and netbanking credentials.\n3. Scammers drain account instead of depositing refund.",
-    redFlags: [
-      "Income tax department asking for your debit card number or CVV (refunds are credited automatically via ECS to validated accounts)",
-      "Email address is not from @incometax.gov.in",
-      "Link directs to an external unsecure webpage without HTTPS padlock",
-      "Refund amount is calculated unexpectedly without your filing an amended return",
-      "Asks for your ATM card PIN or OTP"
-    ],
-    kyaKarein: [
-      "Check tax refund status exclusively on the e-filing portal: incometax.gov.in",
-      "Tax authorities NEVER request credit or debit card details to issue refunds",
-      "Forward phishing emails to incident@cert-in.org.in"
-    ]
-  },
-
-  // ================= 2022 =================
-  {
-    id: "guaranteed-crypto-cloud-mining-2022",
-    slug: "guaranteed-crypto-cloud-mining-2022",
-    icon: "⛏️",
-    name: "Guaranteed Crypto Cloud Mining Return",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 96,
-    desc: "Websites offering cloud mining contracts for Bitcoin and Ethereum promising 500% annual returns without buying hardware.",
-    sampleMsg: "Bitcoin Cloud Mining: Rent hash power from our Iceland data center. Guaranteed 2.5% daily payouts directly to your wallet.",
-    kaiseHotaHai: "1. User buys hash rate contract using real Bitcoin.\n2. Dashboard displays simulated mining growth.\n3. When contract matures, operators disappear with all deposited cryptocurrency.",
-    redFlags: [
-      "Guarantees fixed daily percentage returns in volatile cryptocurrency",
-      "Claims to operate massive data centers but provides no physical address or facility photos",
-      "Heavy multi-level marketing (MLM) referral affiliate structure",
-      "Withdrawal requests require paying additional 'server maintenance' or 'network gas fees'",
-      "Platform operators are anonymous with no verifiable corporate registration"
-    ],
-    kyaKarein: [
-      "Cloud mining platforms with guaranteed returns are virtually always Ponzi schemes",
-      "Never invest funds you cannot afford to lose in unregulated cryptocurrency ventures",
-      "Verify blockchain transactions independently on block explorers"
-    ]
-  },
-  {
-    id: "fake-web3-dex-exchange-2022",
-    slug: "fake-web3-dex-exchange-2022",
-    icon: "💱",
-    name: "Fake Web3 Decentralized Exchange (DEX)",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 94,
-    desc: "Clones of Uniswap, PancakeSwap, or SushiSwap distributed via Google Ads to drain connected MetaMask wallets.",
-    sampleMsg: "Uniswap V3 Protocol: Connect wallet to swap tokens with 0% slippage and claim 500 UNI liquidity bonus.",
-    kaiseHotaHai: "1. Google search for 'Uniswap' shows sponsored phishing ad (e.g. un1swap-app.org).\n2. Connecting wallet requests approval to spend all tokens.\n3. Malicious smart contract transfers all ERC-20 tokens to hacker's wallet.",
-    redFlags: [
-      "Website URL has subtle typos (e.g. un1swap, pancackeswap)",
-      "Sponsored Google Ad appearing above the authentic organic search result",
-      "Wallet prompt asks for private seed phrase or private key",
-      "Pop-up claims unexpected free bonus tokens for connecting",
-      "Contract address does not match verified token contract on Etherscan"
-    ],
-    kyaKarein: [
-      "Bookmark official decentralized exchange URLs and never click sponsored ads",
-      "NEVER type your 12 or 24-word recovery seed phrase into any website",
-      "Use hardware wallets (Ledger, Trezor) to sign crypto transactions securely"
-    ]
-  },
-  {
-    id: "nft-minting-discord-hack-2022",
-    slug: "nft-minting-discord-hack-2022",
-    icon: "🖼️",
-    name: "NFT Minting Discord Hack & Stealer",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 92,
-    desc: "Compromised Discord announcement bots in popular NFT servers broadcasting stealth mint links that drain collections.",
-    sampleMsg: "SURPRISE MINT: 500 exclusive Bored Ape derivative passes available for next 15 minutes only at 0.1 ETH: https://stealth-bayc-mint.com",
-    kaiseHotaHai: "1. Hackers compromise community moderator's Discord token.\n2. Post fake emergency stealth mint link in @everyone announcement channel.\n3. Signing transaction transfers all valuable NFTs out of user's vault.",
-    redFlags: [
-      "Unexpected stealth mint announced with intense time pressure (e.g. next 10 minutes)",
-      "Discord channel comments are muted during announcement",
-      "Minting website URL differs from official project Twitter link in bio",
-      "Wallet interaction requests signature approval for token transfers",
-      "Project founders did not pre-announce mint on official verified Twitter/X accounts"
-    ],
-    kyaKarein: [
-      "Always cross-verify surprise announcements with founders' verified social handles",
-      "Store high-value NFTs in cold storage vaults that do not connect to minting websites",
-      "Use browser extensions that simulate transaction outcomes before signing"
-    ]
-  },
-  {
-    id: "amazon-packing-work-from-home-2022",
-    slug: "amazon-packing-work-from-home-2022",
-    icon: "📦",
-    name: "Amazon Product Packing Work From Home",
-    year: 2022,
-    isLatest: false,
-    country: "USA",
-    category: "Job",
-    score: 89,
-    desc: "Fraudulent job offers claiming Amazon will ship goods to your house for packaging, demanding machine security deposits.",
-    sampleMsg: "Amazon Home Packing Job: Pack pens and cosmetics from home. Earn $750 weekly. Pay $120 packing machine refundable deposit.",
-    kaiseHotaHai: "1. Ads target stay-at-home parents and retirees.\n2. Scammer collects 'machine deposit' and 'material courier delivery charges'.\n3. No packaging material is ever delivered, and calls are blocked.",
-    redFlags: [
-      "Amazon NEVER contracts home packaging to individuals through classified ads",
-      "Demands upfront payment for tools, machinery, or raw materials",
-      "Promises high hourly or weekly wage for simple manual packing",
-      "Communication handled via personal WhatsApp or Telegram accounts",
-      "Payment requested via peer-to-peer apps or wire transfers"
-    ],
-    kyaKarein: [
-      "Amazon operates automated fulfillment centers; they do not outsource packaging to homes",
-      "Never pay money upfront to secure employment",
-      "Search for authentic employment on amazon.jobs"
-    ]
-  },
-  {
-    id: "fake-instagram-boutique-store-2022",
-    slug: "fake-instagram-boutique-store-2022",
-    icon: "👗",
-    name: "Fake Instagram Fashion Boutique Store",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 90,
-    desc: "Instagram pages with bought followers selling designer clothes and luxury shoes at steep discounts, disappearing after advance UPI payments.",
-    sampleMsg: "Festive Sale 70% off on designer lehengas and Nike sneakers! Free shipping on prepaid orders. DM on WhatsApp to buy.",
-    kaiseHotaHai: "1. Scammer buys Instagram page with 50K followers and posts stolen product photos.\n2. Disables comments to hide victim complaints.\n3. Takes payment via UPI/GPay and blocks customer immediately.",
-    redFlags: [
-      "Comments on all posts are disabled or strictly limited",
-      "Prices are unnaturally low for authentic branded fashion",
-      "Does not offer Cash on Delivery (COD) — insists on 100% advance UPI",
-      "No physical boutique address or verifiable corporate contact number",
-      "Account history shows frequent username changes in account information"
-    ],
-    kyaKarein: [
-      "Check 'About This Account' on Instagram profile to see previous username history",
-      "Never make advance payments to unverified social media vendors without buyer protection",
-      "Shop only through established e-commerce platforms with clear return policies"
-    ]
-  },
-  {
-    id: "fake-covid-vaccine-certificate-2022",
-    slug: "fake-covid-vaccine-certificate-2022",
-    icon: "💉",
-    name: "Fake Covid Vaccine Certificate Scam",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 89,
-    desc: "Telegram channels offering fake digital booster vaccination certificates without taking actual injection for international travel.",
-    sampleMsg: "Get official CoWIN / NHS vaccine certificate with valid QR code without taking jab. Rs 2,500 only. 100% approved for travel.",
-    kaiseHotaHai: "1. Travel mandates required proof of vaccination.\n2. Scammers take advance payment and either vanish or deliver counterfeit PDFs with non-functional QR codes.\n3. Travelers face arrest and deportation at immigration checkpoints.",
-    redFlags: [
-      "Offers official government certification without undergoing medical procedure",
-      "Operates on anonymous Telegram or dark web channels",
-      "Demands advance payment through cryptocurrency, UPI or gift cards",
-      "QR code on generated certificate does not verify against government cryptographic keys",
-      "Possessing fake public health records is a punishable criminal offense"
-    ],
-    kyaKarein: [
-      "Obtain vaccination certificates exclusively from official government portals (cowin.gov.in, nhs.uk)",
-      "Never attempt to buy forged health or immigration records",
-      "Report illegal document forgers to state cyber crime cells"
-    ]
-  },
-  {
-    id: "fake-emergency-oxygen-shortage-2022",
-    slug: "fake-emergency-oxygen-shortage-2022",
-    icon: "🫁",
-    name: "Emergency Oxygen / Medicine Shortage Fraud",
-    year: 2022,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 94,
-    desc: "Predatory scammers advertising available oxygen cylinders and ICU beds during pandemic peaks, pocketing advance deposits and blocking desperate families.",
-    sampleMsg: "Emergency Oxygen Cylinder & Remdesivir available in Delhi NCR. Immediate delivery. Pay Rs 8,000 booking advance now.",
-    kaiseHotaHai: "1. Phone numbers circulated on Twitter and WhatsApp during medical emergencies.\n2. Desperate family transfers advance payment to secure cylinder.\n3. Phone is turned off immediately; no medicine or oxygen arrives.",
-    redFlags: [
-      "Supplier demands full payment in advance via personal UPI before delivery",
-      "Refuses to allow physical pickup from warehouse or hospital counter",
-      "Contact number circulated via social media forwards rather than hospital administration",
-      "Price quoted is exorbitant black-market rate",
-      "Seller cannot verify supplier license or drug controller permit"
-    ],
-    kyaKarein: [
-      "Verify medical resources through official government control rooms and verified hospital helplines",
-      "Pay only upon physical delivery and inspection of medical equipment",
-      "Report extortionists to police helplines immediately"
-    ]
-  },
-  {
-    id: "fake-skilled-worker-canada-job-2022",
-    slug: "fake-skilled-worker-canada-job-2022",
-    icon: "🍁",
-    name: "Fake Canada Skilled Worker LMIA Job Offer",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 90,
-    desc: "Fake LMIA labor market approval letters and employment contracts issued for Canadian hospitality and logistics jobs.",
-    sampleMsg: "Canada LMIA Approved Job Offer: Warehouse supervisor Toronto. $4,200/mo salary. Submit $850 visa clearance deposit.",
-    kaiseHotaHai: "1. Unlicensed consultants create counterfeit LMIA documents bearing Government of Canada logos.\n2. Collect thousands of dollars for 'embassy processing fees'.\n3. Applicants discover documents are forged when denied at embassy interviews.",
-    redFlags: [
-      "Guarantees permanent residency and work permit without credential assessment",
-      "Agent demands payment for LMIA (under Canadian law, employers must bear all LMIA costs)",
-      "Employment offer arrives without formal video interview with Canadian hiring team",
-      "Consultant is not registered with the College of Immigration and Citizenship Consultants (CICC)",
-      "Email sent from commercial webmail (gmail/yahoo) instead of official corporate domain"
-    ],
-    kyaKarein: [
-      "Verify Canadian immigration consultants on official portal: canada.ca/en/immigration-refugees-citizenship",
-      "Canadian employers cannot legally charge candidates for LMIA approvals",
-      "Never submit fraudulent documents to sovereign immigration departments"
-    ]
-  },
-  {
-    id: "fake-microsoft-tech-support-popup-2022",
-    slug: "fake-microsoft-tech-support-popup-2022",
-    icon: "💻",
-    name: "Fake Microsoft Tech Support Screen Lock",
-    year: 2022,
-    isLatest: false,
-    country: "USA",
-    category: "Call",
-    score: 91,
-    desc: "Malicious web popups that lock browser in fullscreen with loud siren audio, claiming computer has virus and urging call to Microsoft support.",
-    sampleMsg: "CRITICAL ALERT: Windows Defender detected Trojan Spyware. Call Microsoft Certified Technician toll-free at 1-800-XXX-XXXX immediately.",
-    kaiseHotaHai: "1. JavaScript pop-up traps browser tab with blaring siren sound.\n2. Victim calls fake support number; agent asks for remote access via UltraViewer.\n3. Fake technician pretends to find malicious network intrusions and charges $499 for fake antivirus software.",
-    redFlags: [
-      "Browser suddenly enters fullscreen mode with blaring siren audio and flashing red warnings",
-      "Warning includes a phone number to call (Microsoft NEVER includes phone numbers in error popups)",
-      "Technician asks for remote access to your personal computer",
-      "Technician opens command prompt (cmd) or Event Viewer to show normal system logs as 'dangerous hackers'",
-      "Demands payment via retail gift cards, wire transfer, or cryptocurrency"
-    ],
-    kyaKarein: [
-      "Simply close the browser window or press Ctrl + Alt + Delete (Command + Option + Esc on Mac) to force quit",
-      "Microsoft will NEVER call you unsolicited or display phone numbers on error screens",
-      "Never grant remote desktop access to unknown callers"
-    ]
-  },
-  {
-    id: "fake-antivirus-auto-renewal-2022",
-    slug: "fake-antivirus-auto-renewal-2022",
-    icon: "🛡️",
-    name: "Geek Squad / Norton Auto-Renewal Invoice",
-    year: 2022,
-    isLatest: false,
-    country: "USA",
-    category: "Message",
-    score: 87,
-    desc: "Phishing invoice claiming your credit card has been charged $399 for Geek Squad/Norton renewal, offering refund phone number.",
-    sampleMsg: "Geek Squad Invoice #GS-8812: Thank you for your auto-renewal of $399.99. If you did not authorize, call 1-888-XXX-XXXX for instant refund.",
-    kaiseHotaHai: "1. Email invoice creates urgency to cancel unauthorized charge.\n2. Victim calls provided refund number.\n3. Scammer initiates fake refund by editing browser HTML to show accidental $3,000 refund, begging victim to return difference via gift cards.",
-    redFlags: [
-      "Arrives from a generic Gmail, Outlook, or webmail address rather than official corporate domain",
-      "Invoice claims an auto-renewal charge for service you never purchased",
-      "Gives an urgent phone number to cancel within 24 hours",
-      "Agent on the phone requests remote access to your computer to 'process refund'",
-      "Agent claims they accidentally sent too much refund money and begs you to return it via Bitcoin or gift cards"
-    ],
-    kyaKarein: [
-      "Check your actual credit card and bank statements directly; if no charge exists, ignore the email",
-      "Do not call phone numbers listed on unsolicited email invoices",
-      "Mark email as phishing and report to FTC"
-    ]
-  },
-
-  // ================= 2021 =================
-  {
-    id: "vaccine-slot-booking-phishing-2021",
-    slug: "vaccine-slot-booking-phishing-2021",
-    icon: "💉",
-    name: "Vaccine Slot Booking Phishing Link",
-    year: 2021,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 94,
-    desc: "SMS claiming instant VIP appointment booking for vaccine doses during severe supply shortages, collecting credit card fees.",
-    sampleMsg: "Book confirmed Pfizer/Covaxin appointment today without waiting list. Pay Rs 500 reservation fee at https://vaccine-booking-gov.info",
-    kaiseHotaHai: "1. Capitalizes on public health anxiety and slot scarcity.\n2. Phishing link collects national identity numbers and credit card information.\n3. Drains accounts while delivering fake appointment slips.",
-    redFlags: [
-      "Link received via unofficial WhatsApp or SMS forward",
-      "Domain name does not match official national health infrastructure (e.g. cowin.gov.in)",
-      "Demands online payment for free government health appointments",
-      "Asks for debit card PIN or CVV to verify appointment",
-      "Official government portals never send direct booking links via private mobile numbers"
-    ],
-    kyaKarein: [
-      "Book public health appointments exclusively on official government platforms",
-      "Never enter debit card details to book free public vaccination slots",
-      "Report fake health websites to national CERT cyber response teams"
-    ]
-  },
-  {
-    id: "fake-pm-cares-fund-clone-2021",
-    slug: "fake-pm-cares-fund-clone-2021",
-    icon: "🏛️",
-    name: "Fake PM CARES Fund UPI Clone",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 90,
-    desc: "Typosquatted UPI handles mimicking the Prime Minister Citizen Assistance relief fund to steal public crisis donations.",
-    sampleMsg: "Donate to National Emergency Relief Fund. Send contributions to pmcares@pnb or pmcares@sbi. Every rupee counts.",
-    kaiseHotaHai: "1. Scammers registered lookalike UPI IDs (e.g. pmcares@pnb, pmcare@sbi) differing by one letter from genuine handle.\n2. Circulated on social media during peak crisis.\n3. Public donations routed straight into scammer personal accounts.",
-    redFlags: [
-      "UPI ID differs slightly from the official handle (e.g. pmcares@sbi vs pmcare@sbi)",
-      "Unverified flyers circulated on WhatsApp groups without official press release links",
-      "QR codes posted on personal social media accounts",
-      "No 80G tax deduction receipt generated after payment",
-      "Payment displays personal beneficiary name instead of registered trust"
-    ],
-    kyaKarein: [
-      "Verify official relief fund UPI handles exclusively on official portal: pmindia.gov.in",
-      "Verify receiver name displayed in UPI app matches official trust name",
-      "Report cloned government UPI handles to National Payments Corporation of India (NPCI)"
-    ]
-  },
-  {
-    id: "lockdown-remote-typist-2021",
-    slug: "lockdown-remote-typist-2021",
-    icon: "⌨️",
-    name: "Lockdown Remote Typist / Audio Transcription",
-    year: 2021,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 89,
-    desc: "Work-from-home typing jobs advertised to furloughed workers, demanding software installation fees and withholding pay.",
-    sampleMsg: "Lockdown work: Listen to audio clips and type text from home. Earn $35 per hour. Pay $49 software activation key.",
-    kaiseHotaHai: "1. Furloughed employees apply for easy remote typing.\n2. Scammer demands software license or security fee.\n3. After weeks of typing work, software refuses submission citing fabricated errors and company vanishes.",
-    redFlags: [
-      "Demands upfront payment for software activation, test assignment, or background check",
-      "Pay rate is unrealistically high for entry-level transcription work",
-      "Company does not have a verified physical office or corporate email domain",
-      "Contract contains impossible error rate penalties (e.g. 99% accuracy required)",
-      "Payment requested through non-refundable peer-to-peer apps"
-    ],
-    kyaKarein: [
-      "Legitimate employers never charge candidates for software licenses or test assignments",
-      "Research company reviews on Glassdoor and LinkedIn before accepting remote offers",
-      "Never transfer money to an employer to get hired"
-    ]
-  },
-  {
-    id: "fake-online-tuition-exam-2021",
-    slug: "fake-online-tuition-exam-2021",
-    icon: "📚",
-    name: "Fake Online Tuition / Board Exam Fees",
-    year: 2021,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 86,
-    desc: "Fake circulars pretending to be education boards demanding exam registration fees through private payment gateway links.",
-    sampleMsg: "CBSE / State Board Notice: Submit 10th/12th board exam registration fee Rs 1,850 online before midnight to avoid year drop.",
-    kaiseHotaHai: "1. Broadcasts urgent notices to student and parent WhatsApp groups.\n2. Directs to fake payment gateway.\n3. Steals fee payments and banking credentials without registering student for exams.",
-    redFlags: [
-      "Payment link received via WhatsApp rather than communicated by student's official school teacher",
-      "URL is not hosted on official board domain (.nic.in / .gov.in)",
-      "Threatens student will lose an academic year if not paid in 12 hours",
-      "Payment gateway displays unknown merchant name",
-      "Official education boards collect exam fees through registered schools, not direct SMS links"
-    ],
-    kyaKarein: [
-      "Always confirm board exam circulars directly with your school principal or class teacher",
-      "Never pay educational board fees through unverified SMS links",
-      "Check official circulars on cbse.gov.in"
-    ]
-  },
-  {
-    id: "bank-loan-moratorium-call-2021",
-    slug: "bank-loan-moratorium-call-2021",
-    icon: "💳",
-    name: "Bank Loan Moratorium / EMI Waiver Call",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 91,
-    desc: "Calls claiming to activate central bank EMI moratorium on home/car loans, asking for OTP to 'defer' payments.",
-    sampleMsg: "SBI Loan Desk: Activate 6-month EMI moratorium on your home loan. Share OTP sent to your phone to stop deductions.",
-    kaiseHotaHai: "1. Exploits financial stress during pandemic lockdowns.\n2. Caller claims OTP is needed to stop automatic EMI auto-debit.\n3. OTP is actually used by scammer to authenticate major netbanking transfer.",
-    redFlags: [
-      "Caller claims OTP is required to 'stop' or 'defer' bank payments",
-      "Calling from an ordinary mobile number rather than registered bank branch",
-      "Creates urgency that your account will be charged tomorrow unless OTP is shared immediately",
-      "Caller asks for debit card expiration date and CVV number",
-      "Banks NEVER call customers requesting OTP to provide regulatory relief"
-    ],
-    kyaKarein: [
-      "NEVER share OTP with any caller, even if they claim to be a senior bank manager",
-      "Apply for loan deferrals directly through your official banking portal or branch",
-      "Report fraud calls to bank vigilance officer immediately"
-    ]
-  },
-  {
-    id: "gpay-scratch-card-cashback-2021",
-    slug: "gpay-scratch-card-cashback-2021",
-    icon: "🎉",
-    name: "Google Pay Scratch Card Cashback Trap",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 90,
-    desc: "Web links showing interactive animated scratch card that 'wins' Rs 4,999, which redirects to UPI app with pre-filled debit request.",
-    sampleMsg: "You received a Golden Scratch Card worth up to Rs 5,000 on Google Pay! Scratch and claim reward: https://gpay-rewards-win.com",
-    kaiseHotaHai: "1. User scratches simulated card on web page, revealing Rs 4,999 win.\n2. Clicking 'Send reward to bank' opens Google Pay with pre-set payment request of Rs 4,999.\n3. User enters UPI PIN thinking they are claiming reward, losing funds instantly.",
-    redFlags: [
-      "Scratch card link opened inside mobile web browser rather than official Google Pay app",
-      "Every single scratch card reveals the exact same high winning amount (e.g. Rs 4,999)",
-      "Clicking claim opens UPI app prompting you to enter your secret PIN",
-      "Domain is not an official Google domain (google.com / g.co)",
-      "Received via chain-forwarded WhatsApp message"
-    ],
-    kyaKarein: [
-      "Official Google Pay scratch cards ONLY exist inside the official Google Pay application",
-      "Entering UPI PIN ALWAYS sends money; you NEVER enter PIN to receive cashback",
-      "Delete and do not forward viral reward links"
-    ]
-  },
-  {
-    id: "olx-army-person-transfer-2021",
-    slug: "olx-army-person-transfer-2021",
-    icon: "🪖",
-    name: "OLX Army Person Transfer Sale Scam",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 89,
-    desc: "Counterfeit classified ads selling Royal Enfield bikes or cars at 50% discount claiming urgent transfer to army cantonment.",
-    sampleMsg: "Royal Enfield Bullet 350cc 2020 model for only Rs 65,000. Army officer urgent transfer to Leh. Delivery through army parcel.",
-    kaiseHotaHai: "1. Fraudster displays forged Army Canteen Smart Card and ID.\n2. Claims vehicle is parked in army base and will be dispatched via military logistics.\n3. Demands advance gate pass fee, insurance fee, and fuel charges, totaling thousands.",
-    redFlags: [
-      "Vehicle price is 50% below fair market value",
-      "Seller sends photos of forged military ID cards and army canteen receipts",
-      "Refuses to meet in person, claiming strict cantonment lockdown or sudden border posting",
-      "Demands advance transport and gate pass fees via UPI before delivery",
-      "Fake 'Army Courier Delivery Driver' calls demanding clearance token fee"
-    ],
-    kyaKarein: [
-      "Never purchase vehicles online without physical inspection and test drive",
-      "Verify vehicle registration directly on the Ministry of Road Transport VAHAN portal",
-      "Indian Army does NOT operate civilian parcel or vehicle delivery services"
-    ]
-  },
-  {
-    id: "fake-paytm-full-kyc-wallet-2021",
-    slug: "fake-paytm-full-kyc-wallet-2021",
-    icon: "👛",
-    name: "Fake Paytm Full KYC Wallet Suspension",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 93,
-    desc: "SMS warning that Paytm wallet will be suspended within 24 hours due to uncompleted video KYC, giving fake agent contact.",
-    sampleMsg: "Paytm Alert: Your wallet is blocked today. Complete video KYC immediately to unblock balance. Contact KYC officer at 98104XXXXX.",
-    kaiseHotaHai: "1. Victim calls number in SMS to prevent wallet lock.\n2. Scammer tells user to install QuickSupport or AnyDesk app.\n3. Captures screen while victim logs in, draining entire bank and wallet balance.",
-    redFlags: [
-      "Arrives from a regular 10-digit mobile number, not official sender ID (e.g. PAYTM)",
-      "Threatens immediate wallet suspension within hours",
-      "Agent instructs you to download AnyDesk or TeamViewer QuickSupport",
-      "Agent asks you to transfer Rs 1 or Rs 10 to complete verification",
-      "Paytm never sends personal mobile numbers for KYC verification"
-    ],
-    kyaKarein: [
-      "Complete KYC exclusively inside the official Paytm app or at verified local KYC centers",
-      "Never install screen sharing apps on instruction from unknown callers",
-      "Report fake numbers to Paytm 24x7 Cyber Fraud Helpdesk"
-    ]
-  },
-  {
-    id: "lockdown-power-bill-arrears-2021",
-    slug: "lockdown-power-bill-arrears-2021",
-    icon: "🔌",
-    name: "Lockdown Power Bill Arrears Threat Call",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 90,
-    desc: "Calls claiming unpaid electricity bills from lockdown months will result in immediate power disconnection within 1 hour.",
-    sampleMsg: "Electricity Board Vigilance: Your lockdown arrears of Rs 4,500 are unpaid. Disconnection order issued for today. Pay via link.",
-    kaiseHotaHai: "1. Exploits confusion regarding accumulated utility arrears.\n2. Threatens dark evening unless immediate online payment is executed.\n3. Link directs to phishing payment gateway that captures credit card and netbanking credentials.",
-    redFlags: [
-      "Threatens disconnection within 1 hour without formal written postal notice",
-      "Demands payment via unfamiliar online payment link sent on WhatsApp",
-      "Caller demands full card details or asks you to enter UPI PIN",
-      "Refuses to provide consumer account number (CA number) or registered meter reading",
-      "Caller insists on remaining on call while payment is processed"
-    ],
-    kyaKarein: [
-      "Check actual bill status directly on your official state electricity board portal",
-      "Utility disconnections legally require formal statutory advance written notices",
-      "Never make utility payments through third-party links received on messaging apps"
-    ]
-  },
-  {
-    id: "fake-netflix-subscription-phishing-2021",
-    slug: "fake-netflix-subscription-phishing-2021",
-    icon: "🍿",
-    name: "Fake Netflix / OTT Subscription Expired",
-    year: 2021,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 85,
-    desc: "Phishing SMS claiming Netflix monthly payment failed and account is suspended, asking to update credit card.",
-    sampleMsg: "Netflix: We were unable to process your monthly payment. Your account is on hold. Update billing at https://netflix-update-billing.org",
-    kaiseHotaHai: "1. Mass SMS campaign targets streaming subscribers.\n2. Link mimics Netflix login and payment screen.\n3. Captures card numbers and CVVs for immediate international fraudulent transactions.",
-    redFlags: [
-      "Sender email address or SMS sender is not from official netflix.com domain",
-      "Urgent threat that your subscription is locked immediately",
-      "URL has extra words or strange extensions (e.g. netflix-billing-portal.com)",
-      "Received even if your subscription is not up for renewal",
-      "Page asks for ATM PIN or full card billing password"
-    ],
-    kyaKarein: [
-      "Do not click links in streaming notification emails",
-      "Log in to your account directly on netflix.com to inspect billing status",
-      "Report phishing emails to phishing@netflix.com"
-    ]
-  },
-
-  // ================= 2020 =================
-  {
-    id: "miracle-covid-cure-medicine-2020",
-    slug: "miracle-covid-cure-medicine-2020",
-    icon: "💊",
-    name: "Miracle Covid Cure & Herbal Medicine",
-    year: 2020,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 93,
-    desc: "Online stores selling unapproved herbal remedies, immunity drops, and fake antiviral drugs claiming 100% cure guarantees.",
-    sampleMsg: "WHO Approved Ayurvedic Covid Cure Drops: 100% protection against all viruses. Buy 3 bottles for Rs 2,999. Limited stock.",
-    kaiseHotaHai: "1. Exploited initial absence of approved medical treatments.\n2. Collects advance payments for worthless herbal mixtures.\n3. Orders are either never delivered or contain dangerous uncertified compounds.",
-    redFlags: [
-      "Claims 100% prevention or cure guarantee against novel viral infections",
-      "Falsely claims endorsements from WHO, FDA, or Ministry of Health",
-      "High-pressure countdown timer warning of national stock exhaustion",
-      "Only accepts non-refundable payment options",
-      "Website was registered only days prior with hidden registrant identity"
-    ],
-    kyaKarein: [
-      "Consult certified medical practitioners for healthcare advice",
-      "Never purchase unverified pharmaceuticals from social media advertisements",
-      "Report illegal medical claims to drug regulatory agencies"
-    ]
-  },
-  {
-    id: "fake-cm-relief-fund-2020",
-    slug: "fake-cm-relief-fund-2020",
-    icon: "🏛️",
-    name: "Fake Chief Minister Relief Fund Link",
-    year: 2020,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 90,
-    desc: "Phishing links and cloned UPI handles mimicking Chief Minister Relief Funds during early lockdown crises.",
-    sampleMsg: "Donate to Maharashtra/Delhi CM Relief Fund for Covid Crisis. Scan QR code or pay to cmrelieffund@upi to help poor.",
-    kaiseHotaHai: "1. Fraudsters spread fake flyers on social platforms.\n2. QR codes route money to private individual accounts.\n3. Drains charitable citizen contributions without reaching any disaster victims.",
-    redFlags: [
-      "Flyer shared on WhatsApp without verifiable government press release link",
-      "UPI ID differs from the official state government bank account handle",
-      "Payment confirmation does not issue an official government donation receipt",
-      "QR code is hosted on an unverified free blogging website",
-      "Receiver name shows a personal individual name instead of government treasury"
-    ],
-    kyaKarein: [
-      "Donate exclusively through official state government portals ending in .gov.in",
-      "Always verify receiver name in UPI app matches official government trust",
-      "Report fake donation handles to police cyber cells"
-    ]
-  },
-  {
-    id: "migrant-worker-train-ticket-2020",
-    slug: "migrant-worker-train-ticket-2020",
-    icon: "🚂",
-    name: "Migrant Worker Shramik Train Ticket Scam",
-    year: 2020,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 88,
-    desc: "Touts extorting money from stranded migrant workers promising confirmed seats on Shramik Special trains during lockdown.",
-    sampleMsg: "Confirmed Shramik Special Train ticket to Bihar/UP tonight! Pay Rs 1,500 advance booking fee. Limited seats.",
-    kaiseHotaHai: "1. Preyed on desperate stranded workers trying to reach home states.\n2. Issued forged railway passes printed on fake letterheads.\n3. Workers arrived at railway stations only to be turned away by police.",
-    redFlags: [
-      "Private individuals claiming to sell tickets for special government relief trains",
-      "Demands cash payment or UPI transfer in advance",
-      "Shramik Special trains were operated exclusively through state government coordination",
-      "Ticket contains no valid PNR that verifies on official IRCTC website",
-      "Tout operates outside bus terminals or railway junctions"
-    ],
-    kyaKarein: [
-      "Shramik and relief trains were coordinated strictly through district administration",
-      "Never pay touts for government emergency evacuation services",
-      "Verify train operations directly through official Indian Railways helpline 139"
-    ]
-  },
-  {
-    id: "zoom-phishing-invite-link-2020",
-    slug: "zoom-phishing-invite-link-2020",
-    icon: "📹",
-    name: "Zoom Meeting Phishing Invite Link",
-    year: 2020,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 87,
-    desc: "Emails mimicking Zoom video conference invites that redirect corporate employees to credential harvesters.",
-    sampleMsg: "HR Department: Urgent Q3 All-Hands Meeting starts in 10 minutes. Click to join: https://zoom-meeting-secure-auth.com",
-    kaiseHotaHai: "1. Massive transition to remote work created constant video meeting notifications.\n2. Phishing link requires entering corporate Microsoft/Google login to 'access meeting room'.\n3. Account hijacked to access internal corporate email and cloud databases.",
-    redFlags: [
-      "Domain name is not zoom.us (e.g. zoom-us-join.com, zoom-meeting.info)",
-      "Meeting prompt demands entering your corporate email password to join",
-      "Arrives unexpectedly without being on your internal company calendar",
-      "Sender email address does not match your internal company domain",
-      "Prompts downloading an unknown .exe or .pkg file to enter the call"
-    ],
-    kyaKarein: [
-      "Check your calendar directly inside your email app rather than clicking links in unexpected emails",
-      "Never enter your email password to join a standard Zoom meeting",
-      "Report phishing meeting invites to corporate IT security"
-    ]
-  },
-  {
-    id: "n95-mask-sanitizer-delivery-2020",
-    slug: "n95-mask-sanitizer-delivery-2020",
-    icon: "😷",
-    name: "N95 Mask & Sanitizer Bulk Delivery Fraud",
-    year: 2020,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 88,
-    desc: "Counterfeit wholesale suppliers advertising scarce N95 masks and hand sanitizers, taking advance payments and ghosting.",
-    sampleMsg: "Certified N95 Masks in bulk: Only Rs 45 per piece! Minimum order 500 pcs. Dispatch within 24 hours of advance payment.",
-    kaiseHotaHai: "1. Scammers set up classified listings targeting small businesses and pharmacies.\n2. Demands 50% advance wire transfer.\n3. Disappears once payment clears; products were never manufactured.",
-    redFlags: [
-      "Offers bulk supplies of globally scarce medical goods at below-market prices",
-      "Demands 100% advance bank transfer before delivery",
-      "Refuses to provide warehouse physical address for local inspection",
-      "Cannot provide genuine CE or FDA certificate documentation",
-      "Communication handled entirely over WhatsApp or unverified mobile numbers"
-    ],
-    kyaKarein: [
-      "Procure medical supplies exclusively through verified, licensed pharmaceutical distributors",
-      "Use escrow payment mechanisms that release funds only upon physical inspection",
-      "File complaints with state drug control administrations"
-    ]
-  },
-  {
-    id: "rbi-lockdown-emi-waiver-call-2020",
-    slug: "rbi-lockdown-emi-waiver-call-2020",
-    icon: "📞",
-    name: "RBI Lockdown EMI Waiver Assistance Call",
-    year: 2020,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 92,
-    desc: "Calls claiming to be RBI officials offering to completely waive 3 months of loan installments in exchange for OTP verification.",
-    sampleMsg: "RBI Welfare Cell: Your loan EMI for next 3 months is waived under Covid package. Share OTP to stop bank deductions.",
-    kaiseHotaHai: "1. Fraudster claims RBI has granted full debt cancellation.\n2. Convinces victim to share card details and OTP.\n3. Drains savings account rather than waiving any loan installments.",
-    redFlags: [
-      "Caller claims to be from Reserve Bank of India (RBI deals with banks, NEVER directly with individual retail borrowers)",
-      "Promises total loan waiver or free money cancellation",
-      "Asks for confidential card number, expiry date, CVV and OTP",
-      "Threatens that opportunity expires within 10 minutes",
-      "Background noise of an unprofessional call center"
-    ],
-    kyaKarein: [
-      "The Reserve Bank of India NEVER calls individual citizens regarding personal loans",
-      "Never share OTPs with anyone claiming to offer debt relief",
-      "Contact your lending bank directly to discuss hardship restructuring"
-    ]
-  },
-  {
-    id: "work-from-home-survey-2020",
-    slug: "work-from-home-survey-2020",
-    icon: "📋",
-    name: "Work-From-Home Paid Survey Form Scam",
-    year: 2020,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 89,
-    desc: "Websites offering $50 per completed corporate survey, requiring registration fees to unlock payout dashboards.",
-    sampleMsg: "Earn $500 weekly completing simple market surveys from your sofa. Register today: pay $25 one-time membership pass.",
-    kaiseHotaHai: "1. User pays registration fee and completes hours of lengthy surveys.\n2. Payout balance shows $500 accumulated.\n3. Withdrawal button displays error demanding additional $50 verification fee before vanishing.",
-    redFlags: [
-      "Demands payment to start working on paid surveys",
-      "Promises unrealistically high pay (e.g. $50 for 10-minute opinion poll)",
-      "Payout threshold is set extremely high to delay withdrawal realization",
-      "Customer support email bounces back as undeliverable",
-      "Website terms state earnings are not legally guaranteed"
-    ],
-    kyaKarein: [
-      "Legitimate survey panels (YouGov, Swagbucks) are ALWAYS 100% free to join",
-      "Never pay money to unlock earnings or start remote work",
-      "Do not provide sensitive financial information on survey questionnaires"
-    ]
-  },
-  {
-    id: "fake-ngo-food-drive-charity-2020",
-    slug: "fake-ngo-food-drive-charity-2020",
-    icon: "🍲",
-    name: "Fake NGO Daily Wage Food Drive Charity",
-    year: 2020,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 86,
-    desc: "Fake social media campaigns raising funds for daily wage workers claiming to distribute food packets, pocketing all proceeds.",
-    sampleMsg: "Feed Daily Wagers: 50,000 families starving due to lockdown. Sponsor a food ration kit for Rs 500: feed-india@upi",
-    kaiseHotaHai: "1. Fraudsters download real ration distribution photos from Twitter.\n2. Create fake campaign on Instagram and Facebook with personal UPI ID.\n3. Converts compassion into personal illicit profit.",
-    redFlags: [
-      "Fundraising campaign has no registered NGO trust deed or DARPAN ID",
-      "Payments collected exclusively via personal UPI or individual bank accounts",
-      "No updates or verified transparency reports showing where donated food was distributed",
-      "Account was created within the last 14 days",
-      "Refuses to provide audited financial statements"
-    ],
-    kyaKarein: [
-      "Donate through established food distribution organizations (Akshaya Patra, Feeding India, Robin Hood Army)",
-      "Verify NGO credentials on official government portals before contributing",
-      "Report fake fundraisers to social media platform trust and safety teams"
-    ]
-  },
-  {
-    id: "state-border-epass-clearance-2020",
-    slug: "state-border-epass-clearance-2020",
-    icon: "🛂",
-    name: "State Border E-Pass Clearance Fee Scam",
-    year: 2020,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 85,
-    desc: "Touts claiming to have internal political connections to issue instant interstate lockdown vehicle travel e-passes.",
-    sampleMsg: "Emergency Interstate E-Pass: Travel anywhere across state borders without police checking. Instant pass for Rs 2,500.",
-    kaiseHotaHai: "1. Exploited strict interstate travel restrictions.\n2. Issued fabricated digital pass with fake QR code.\n3. Motorists were stopped at border checkpoints and arrested for carrying forged government passes.",
-    redFlags: [
-      "Agent claims to issue government movement passes for cash fees",
-      "Official government e-passes were issued 100% free of cost through state police portals",
-      "Communication handled through anonymous WhatsApp chats",
-      "QR code on pass does not verify against state police verification database",
-      "Agent refuses to meet in person"
-    ],
-    kyaKarein: [
-      "Official emergency travel passes were issued only through official state government portals",
-      "Never buy government clearance passes from unauthorized touts",
-      "Carrying forged government movement passes is a severe criminal offense"
-    ]
-  },
-
-  // ================= 2019 =================
-  {
-    id: "kbc-amitabh-voice-lottery-2019",
-    slug: "kbc-amitabh-voice-lottery-2019",
-    icon: "🎙️",
-    name: "KBC Lottery Amitabh Bachchan Voice Note",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 91,
-    desc: "Audio clip of mimic artist imitating Amitabh Bachchan claiming your SIM card won Rs 25 Lakh in KBC lucky draw.",
-    sampleMsg: "Voice note: 'Namashkar, main Amitabh Bachchan bol raha hoon KBC se. Aapke SIM card ne jeete hain 25 Lakh Rupaye...'",
-    kaiseHotaHai: "1. Impersonator records mimicry voice message.\n2. Audio forwarded alongside fake certificate with State Bank of India logo.\n3. Victim is duped into paying Rs 25,000 GST and processing fee to claim prize.",
-    redFlags: [
-      "Voice message sounds like mimicry artist with audio distortions",
-      "Message received from Pakistani or foreign country code (+92)",
-      "Claims you won a lottery without ever participating in the TV show",
-      "Demands paying government tax or bank processing fee upfront",
-      "Sony TV and KBC have repeatedly issued public warnings against this fraud"
-    ],
-    kyaKarein: [
-      "Delete and block the sender immediately",
-      "Never send advance fees to claim lottery rewards",
-      "Report phone numbers to state cybercrime departments"
-    ]
-  },
-  {
-    id: "phonepe-paytm-merchant-cash-prize-2019",
-    slug: "phonepe-paytm-merchant-cash-prize-2019",
-    icon: "💵",
-    name: "PhonePe / Paytm Merchant Cash Prize",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 90,
-    desc: "SMS claiming merchant transaction cashback of Rs 1,999 ready to credit, opening fake web page that triggers UPI debit.",
-    sampleMsg: "Paytm Merchant Reward: Rs 1,999 cashback credited to your account. Click link to transfer to your bank: https://paytm-reward-claim.xyz",
-    kaiseHotaHai: "1. Rapid adoption of UPI in 2019 made merchant rewards popular.\n2. Link leads to fake portal prompting user to click 'Pay to Receive'.\n3. Triggers UPI collect request, deducting Rs 1,999 from user's account.",
-    redFlags: [
-      "Link URL does not belong to paytm.com or phonepe.com",
-      "SMS comes from a 10-digit phone number rather than branded header",
-      "Instructs you to enter your UPI PIN to receive cashback",
-      "Page asks for your full debit card number, expiry, and CVV",
-      "Legitimate cashback is credited automatically without clicking external links"
-    ],
-    kyaKarein: [
-      "Legitimate wallet rewards are ALWAYS credited automatically inside the official app",
-      "Never click external SMS links to claim cashback",
-      "Remember: entering UPI PIN ALWAYS sends money, never receives it"
-    ]
-  },
-  {
-    id: "offline-captcha-data-entry-2019",
-    slug: "offline-captcha-data-entry-2019",
-    icon: "⌨️",
-    name: "Offline Captcha / Form Filling Job Scam",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 89,
-    desc: "Companies selling offline software claiming to pay for solving captchas, issuing fake legal notices when accuracy falls below 95%.",
-    sampleMsg: "Work from home: Solve 1,000 captchas daily, earn Rs 15,000 monthly. One-time software registration fee Rs 1,999.",
-    kaiseHotaHai: "1. Worker pays registration fee for offline software.\n2. Software is coded to fail accuracy checks intentionally.\n3. Company sends legal notice threatening arrest unless Rs 20,000 breach of contract penalty is paid.",
-    redFlags: [
-      "Requires paying upfront registration fee or software deposit",
-      "Company contract specifies unrealistic penalty clauses for minor typing errors",
-      "Legal notice arrives via WhatsApp with fake court stamps",
-      "Company office address is a fake or temporary co-working desk",
-      "Company refuses to provide corporate CIN registration number"
-    ],
-    kyaKarein: [
-      "Ignore fake legal threat notices; scammers use fear to extort innocent people",
-      "Do NOT pay any penalty or breach of contract fees",
-      "File a police complaint against the company for criminal intimidation"
-    ]
-  },
-  {
-    id: "fake-military-matrimonial-2019",
-    slug: "fake-military-matrimonial-2019",
-    icon: "🪖",
-    name: "Fake Military Officer Matrimonial Profile",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Romance",
-    score: 88,
-    desc: "Scammers using stolen photos of army captains on matrimonial websites to win trust, then asking for emergency medical loans.",
-    sampleMsg: "Army Captain posted in Siachen: Deeply connected with your profile. My mother needs emergency surgery, please lend Rs 40,000.",
-    kaiseHotaHai: "1. Creates convincing profile using stolen photos of real soldiers.\n2. Builds deep emotional connection over months of calls.\n3. Fabricates family emergency or frozen military bank account to borrow money before vanishing.",
-    redFlags: [
-      "Profile uses uniform photos but refuses video calls due to 'security restrictions'",
-      "Claims sudden severe family medical emergency requiring urgent loan",
-      "Asks you to transfer money to a third-party non-military bank account",
-      "Promises to repay double once military pay is released",
-      "Reluctance to let you meet their parents or family members"
-    ],
-    kyaKarein: [
-      "Never lend money to individuals you have only met on matrimonial platforms",
-      "Perform reverse image searches on profile pictures to detect stolen identities",
-      "Insist on meeting in person and verifying identity through mutual connections"
-    ]
-  },
-  {
-    id: "quikr-olx-vehicle-advance-2019",
-    slug: "quikr-olx-vehicle-advance-2019",
-    icon: "🛵",
-    name: "Quikr / OLX Vehicle Advance Token Scam",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 87,
-    desc: "Counterfeit two-wheeler listings in immaculate condition listed at throwaway prices, vanishing after token advance payments.",
-    sampleMsg: "Activa 5G 2018 model for Rs 18,000 only. Urgent sale. Pay Rs 2,000 advance booking to hold bike for you today.",
-    kaiseHotaHai: "1. Listing posted with stolen photos.\n2. Scammer tells multiple interested buyers that someone else is offering more.\n3. Collects Rs 2,000 to Rs 5,000 advance token from 10 different buyers and switches off phone.",
-    redFlags: [
-      "Vehicle price is substantially lower than market resale value",
-      "Seller insists on receiving booking token before allowing physical test drive",
-      "Seller claims to have multiple buyers waiting with cash right now",
-      "Refuses to share registration certificate (RC) copy or vehicle chassis number",
-      "Phone number becomes unreachable as soon as payment is sent"
-    ],
-    kyaKarein: [
-      "NEVER pay advance tokens before inspecting the vehicle in person",
-      "Verify vehicle details on the official VAHAN database",
-      "Conduct vehicle inspection in safe, public daytime locations"
-    ]
-  },
-  {
-    id: "automated-bank-ivr-debit-card-2019",
-    slug: "automated-bank-ivr-debit-card-2019",
-    icon: "📞",
-    name: "Automated Bank IVR Debit Card Call",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 94,
-    desc: "Robocall playing professional bank IVR recording asking user to enter 16-digit debit card number and PIN to prevent card block.",
-    sampleMsg: "Automated call: 'This is State Bank of India security desk. Your debit card has been restricted. Press 1 and enter your 16-digit card number...'",
-    kaiseHotaHai: "1. Automated IVR dialer mimics real bank telephone banking menu.\n2. Victim inputs card number, expiry, CVV and ATM PIN using phone keypad.\n3. DTMF tone decoder logs credentials and drains bank accounts.",
-    redFlags: [
-      "Automated phone call asking you to type confidential card numbers on your keypad",
-      "Threatens debit card deactivation unless verified immediately",
-      "Call originates from a standard 10-digit mobile number instead of bank toll-free line",
-      "Asks for your secret 4-digit ATM PIN or CVV",
-      "Real banks NEVER ask customers to input ATM PINs into automated phone calls"
-    ],
-    kyaKarein: [
-      "Hang up immediately on any automated call asking for card credentials",
-      "Never type card numbers, CVVs, or PINs into phone keypads during incoming calls",
-      "Contact your bank branch directly to verify card status"
-    ]
-  },
-  {
-    id: "irctc-ticket-cancellation-refund-2019",
-    slug: "irctc-ticket-cancellation-refund-2019",
-    icon: "🎫",
-    name: "IRCTC Tatkal Ticket Cancellation Refund",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 89,
-    desc: "Fake customer support accounts on Twitter contacting passengers who complained about failed Tatkal refunds, stealing banking logins.",
-    sampleMsg: "IRCTC Official Helpdesk: We noticed your refund of Rs 1,450 is pending. Click https://irctc-refund-desk.info to claim immediate NEFT refund.",
-    kaiseHotaHai: "1. Passenger tweets complaint about pending ticket refund tagging @IRCTCofficial.\n2. Fraudster bot creates lookalike profile and replies with fake refund link.\n3. Passenger enters netbanking login on phishing site, compromising account.",
-    redFlags: [
-      "Twitter handle has subtle spelling variation (e.g. @IRCTC_heIpdesk instead of @IRCTCofficial)",
-      "Account does not have a verified organization badge",
-      "Sends direct message containing third-party refund link",
-      "Asks for your bank account number, debit card number, or OTP",
-      "Official IRCTC refunds are ALWAYS credited back to original payment method automatically"
-    ],
-    kyaKarein: [
-      "IRCTC refunds are processed automatically back to the original source account within 3-7 business days",
-      "Never interact with unverified social media helpdesk handles",
-      "Track refund status exclusively inside official IRCTC Rail Connect app"
-    ]
-  },
-  {
-    id: "facebook-anniversary-lottery-2019",
-    slug: "facebook-anniversary-lottery-2019",
-    icon: "🌐",
-    name: "Facebook 15th Anniversary Lottery",
-    year: 2019,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 88,
-    desc: "Emails claiming Mark Zuckerberg selected your profile for a $1,000,000 anniversary grant, asking for legal courier fees.",
-    sampleMsg: "Facebook Inc: Your profile was selected in our 15th Anniversary Grant for $1,000,000 USD. Contact claims agent to receive cheque.",
-    kaiseHotaHai: "1. Mass phishing email displays Facebook and United Nations logos.\n2. Convinces victim they won an international grant.\n3. Extorts thousands in advance courier insurance and international wire transfer taxes.",
-    redFlags: [
-      "Claims you won an international grant from Facebook without applying",
-      "Email comes from a non-Facebook domain (e.g. gmail.com, hotmail.com)",
-      "Claims Mark Zuckerberg personally signed the award certificate",
-      "Requires paying processing fees or diplomat courier fees to receive funds",
-      "Poor grammar, excessive exclamation marks, and low-resolution logos"
-    ],
-    kyaKarein: [
-      "Delete and mark the email as spam",
-      "Facebook does NOT run lotteries or hand out cash grants via unsolicited emails",
-      "Never send money to claim prize rewards"
-    ]
-  },
-  {
-    id: "gold-chit-fund-bonus-2019",
-    slug: "gold-chit-fund-bonus-2019",
-    icon: "🪙",
-    name: "Gold Chit Fund Guaranteed Bonus Scheme",
-    year: 2019,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 92,
-    desc: "Unregistered jewelry savings schemes promising 20% bonus gold upon completion of 11 monthly installments, shutting down before maturity.",
-    sampleMsg: "Swarna Laxmi Gold Scheme: Pay Rs 2,000 for 11 months, get 13 months value in pure 24K gold! Zero making charges.",
-    kaiseHotaHai: "1. Local unregistered jeweler collects monthly cash deposits from hundreds of families.\n2. Operates as an unbacked Ponzi scheme.\n3. Shop suddenly closes down before festival season and owners flee with crores in gold.",
-    redFlags: [
-      "Jeweler is not registered under the Chit Funds Act or regulated by state government",
-      "Offers unrealistic bonuses exceeding 15-20% of deposited capital",
-      "Refuses to provide computerized GST receipts for monthly payments",
-      "Does not offer BIS Hallmark certification guarantees",
-      "Operates through local informal agents without audited financial disclosures"
-    ],
-    kyaKarein: [
-      "Only enroll in gold savings schemes operated by reputed, publicly listed corporate jewelers",
-      "Verify scheme registration under state chit fund regulatory bodies",
-      "Consider sovereign gold bonds (SGB) as a safer, government-backed gold investment alternative"
-    ]
-  },
-
-  // ================= 2018 =================
-  {
-    id: "bitconnect-high-yield-lending-2018",
-    slug: "bitconnect-high-yield-lending-2018",
-    icon: "🪙",
-    name: "BitConnect Style Crypto High-Yield Lending",
-    year: 2018,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 95,
-    desc: "Crypto lending platforms promising 1% guaranteed daily compounded interest via automated 'volatility trading bots'.",
-    sampleMsg: "Invest Bitcoin in our proprietary AI volatility trading bot. Guaranteed 40% monthly returns. Withdraw anytime.",
-    kaiseHotaHai: "1. Massive multi-level marketing pyramid scheme.\n2. Old investors paid with new investors' deposits.\n3. Regulators issued cease-and-desist orders, token crashed to $0 and founders were indicted.",
-    redFlags: [
-      "Guaranteed fixed daily returns on volatile cryptocurrency assets",
-      "Complex multi-tier affiliate referral structure",
-      "Requires converting Bitcoin into platform's proprietary unbacked token",
-      "Claims an infallible trading algorithm with zero losing days",
-      "High-energy promotional conferences praising wealth with no audited financials"
-    ],
-    kyaKarein: [
-      "Guaranteed returns in cryptocurrency trading are mathematically impossible and indicate a Ponzi scheme",
-      "Never invest in multi-level referral schemes disguised as blockchain tech",
-      "Store cryptocurrency in self-custody cold wallets"
-    ]
-  },
-  {
-    id: "envelope-stuffing-work-home-2018",
-    slug: "envelope-stuffing-work-home-2018",
-    icon: "✉️",
-    name: "Envelope Stuffing Work From Home Scam",
-    year: 2018,
-    isLatest: false,
-    country: "USA",
-    category: "Job",
-    score: 88,
-    desc: "Classified ads offering $5 per stuffed envelope from home, sending instructions on how to place the same scam ad to dupe others.",
-    sampleMsg: "Earn $1,500 weekly stuffing envelopes at home for national marketing firm. Send $35 for your starter package.",
-    kaiseHotaHai: "1. Victim pays $35 for materials.\n2. Receives a pamphlet instructing them to place the exact same ad in local newspapers.\n3. There are no envelopes or real products; it is a pure pyramid scam.",
-    redFlags: [
-      "Offers high pay for a task that modern machinery performs for pennies",
-      "Requires paying an advance fee for a 'starter kit' or instructions",
-      "No actual corporate employer or client products involved",
-      "Vague descriptions about what company actually sells",
-      "Old-school mail-order pyramid structure"
-    ],
-    kyaKarein: [
-      "Never pay money to learn how to do a job",
-      "Modern mailing is fully automated; no legitimate business pays humans to stuff envelopes",
-      "Report mail fraud to the US Postal Inspection Service (USPIS)"
-    ]
-  },
-  {
-    id: "fake-irs-phone-threat-warrant-2018",
-    slug: "fake-irs-phone-threat-warrant-2018",
-    icon: "📞",
-    name: "Fake IRS Phone Threat & Warrant Arrest",
-    year: 2018,
-    isLatest: false,
-    country: "USA",
-    category: "Call",
-    score: 91,
-    desc: "Aggressive robocalls claiming local sheriff is on their way to arrest you for unpaid federal back taxes unless paid via gift card.",
-    sampleMsg: "IRS Enforcement: Final warrant issued against your Social Security Number. Local police will arrest you in 45 minutes unless paid.",
-    kaiseHotaHai: "1. Scammer spoofed Washington DC area code.\n2. Threatens deportation, driver's license cancellation, and immediate jail time.\n3. Demands victim stay on phone while purchasing iTunes or Google Play cards at Walmart.",
-    redFlags: [
-      "IRS NEVER initiates contact by phone, email or text; they ALWAYS send official letters via postal mail",
-      "Demands payment via retail gift cards, wire transfer, or prepaid debit cards",
-      "Threatens immediate arrest by local police or federal marshals",
-      "Refuses to allow you to question or appeal the tax bill",
-      "Caller has an aggressive, hostile demeanor"
-    ],
-    kyaKarein: [
-      "Hang up immediately — the IRS never demands immediate payment over the phone",
-      "If you think you might owe taxes, call the IRS directly at 1-800-829-1040",
-      "Report impersonation calls to TIGTA at tigta.gov"
-    ]
-  },
-  {
-    id: "microsoft-windows-blue-screen-2018",
-    slug: "microsoft-windows-blue-screen-2018",
-    icon: "💻",
-    name: "Microsoft Windows Blue Screen Tech Alert",
-    year: 2018,
-    isLatest: false,
-    country: "Global",
-    category: "Call",
-    score: 90,
-    desc: "Malvertising popups mimicking Windows Blue Screen of Death (BSOD), demanding user call technical support number.",
-    sampleMsg: "STOP: c000021a Fatal System Error. Windows system corrupted. Call toll-free Microsoft support at 1-855-XXX-XXXX.",
-    kaiseHotaHai: "1. Compromised ad network forces browser into fullscreen mockup of BSOD.\n2. User panics and dials phone number displayed on screen.\n3. Indian call center touts charge $299 for useless registry cleaners.",
-    redFlags: [
-      "A real Windows Blue Screen of Death will NEVER display a toll-free customer support phone number",
-      "The warning appears inside a web browser tab",
-      "Loud synthesized voice audio warning that computer is infected",
-      "Demands remote desktop control to fix 'corrupted hard drive'",
-      "Technician shows normal Windows service logs as proof of 'Trojan virus'"
-    ],
-    kyaKarein: [
-      "Press Alt + F4 or open Task Manager to kill the browser process",
-      "Never call phone numbers displayed on browser error screens",
-      "Keep Windows Defender active and updated"
-    ]
-  },
-  {
-    id: "facebook-friend-emergency-loan-2018",
-    slug: "facebook-friend-emergency-loan-2018",
-    icon: "👥",
-    name: "Facebook Messenger Friend Emergency Loan",
-    year: 2018,
-    isLatest: false,
-    country: "Global",
-    category: "Romance",
-    score: 89,
-    desc: "Hacked or cloned Facebook account messaging all friends claiming to be stranded at an airport with stolen wallet, asking for emergency cash.",
-    sampleMsg: "Hey, I'm stuck at airport with lost wallet and phone battery dying. Can you please transfer $350 via Western Union? Will pay back tomorrow.",
-    kaiseHotaHai: "1. Scammer compromises Facebook account through credential stuffing.\n2. Messages entire friend list with urgent sob story.\n3. Friends transfer funds thinking they are helping their real colleague or relative.",
-    redFlags: [
-      "Friend sends message out of the blue asking for an immediate money transfer",
-      "Insists on untraceable payment method: Western Union, MoneyGram, gift cards",
-      "Refuses to talk over a direct phone call, claiming bad reception or dead mic",
-      "Grammar or phrasing differs from how your friend normally communicates",
-      "Asks you not to contact their spouse or family members"
-    ],
-    kyaKarein: [
-      "Call your friend on their actual known telephone number to verify the story",
-      "Never wire money based solely on social media chat requests",
-      "Report the compromised account to Facebook Security"
-    ]
-  },
-  {
-    id: "international-sweepstakes-award-2018",
-    slug: "international-sweepstakes-award-2018",
-    icon: "🏆",
-    name: "International Sweepstakes & Lottery SMS",
-    year: 2018,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 88,
-    desc: "SMS claiming your mobile number was randomly selected in an international mobile sweepstakes for $500,000 cash.",
-    sampleMsg: "Prize Alert: Mobile number won $500,000 in UK International Mobile Draw. Ref #UK-9912. Email agent at claims@uk-lottery.org.",
-    kaiseHotaHai: "1. Mass SMS campaign sent via international bulk gateways.\n2. Victim contacts claims agent via email.\n3. Agent demands $850 for international currency conversion and diplomat clearance.",
-    redFlags: [
-      "You cannot win a lottery you never bought a ticket for",
-      "Claims your phone number was 'randomly selected' from millions",
-      "Demands upfront fee for customs, taxes, or diplomat shipping",
-      "Email address is hosted on a free public webmail provider",
-      "Official lotteries deduct taxes from the prize itself rather than demanding upfront fees"
-    ],
-    kyaKarein: [
-      "Delete and ignore unsolicited prize notifications",
-      "Never send money to collect a lottery prize",
-      "Report spam messages to carrier networks"
-    ]
-  },
-  {
-    id: "bank-phishing-invoice-pdf-2018",
-    slug: "bank-phishing-invoice-pdf-2018",
-    icon: "📄",
-    name: "Bank Phishing Attachment Invoice PDF",
-    year: 2018,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 92,
-    desc: "Emails with attached PDF invoices containing malicious links that exploit PDF readers to download banking trojans.",
-    sampleMsg: "Invoice #INV-2018-8812 Attached. Overdue balance $4,850. Please review attached PDF statement immediately to avoid legal collection.",
-    kaiseHotaHai: "1. Email bypasses basic spam filters using clean text and PDF attachment.\n2. Opening PDF displays blurred document prompting user to 'Click here to decrypt'.\n3. Link downloads Emotet or TrickBot banking malware.",
-    redFlags: [
-      "Invoice for services or purchases your business never requested",
-      "PDF prompts you to click an external link to view full document",
-      "PDF asks to enable JavaScript or external program execution",
-      "Sender email address does not match the company named in the invoice",
-      "High urgency threatening immediate legal collection or credit bureau reporting"
-    ],
-    kyaKarein: [
-      "Never open unexpected PDF attachments from unknown senders",
-      "Disable JavaScript execution inside Adobe Acrobat Reader settings",
-      "Run enterprise antivirus scanning on all email attachments"
-    ]
-  },
-  {
-    id: "cash-on-delivery-empty-box-2018",
-    slug: "cash-on-delivery-empty-box-2018",
-    icon: "📦",
-    name: "Cash On Delivery (COD) Empty Box Parcel",
-    year: 2018,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 87,
-    desc: "Courier delivers unexpected COD parcel demanding Rs 800 to family members while recipient is away, containing worthless stones or trash.",
-    sampleMsg: "Courier delivery arrived for your son/husband. Cash on Delivery Rs 799. Please pay courier delivery agent to receive parcel.",
-    kaiseHotaHai: "1. Scammers scrape names and addresses from discarded courier boxes or leaked databases.\n2. Ship cheap parcels with COD fee of Rs 500 to Rs 900.\n3. Family members pay cash thinking recipient ordered it; opening reveals empty cardboard or bricks.",
-    redFlags: [
-      "Courier arrives with COD parcel that nobody in the household remembers ordering",
-      "Delivery driver refuses to allow opening the package before collecting cash",
-      "Sender name is a generic logistics warehouse with no customer care number",
-      "The COD amount is set relatively low (Rs 499 - 999) so family pays without questioning",
-      "No tracking confirmation on official e-commerce accounts"
-    ],
-    kyaKarein: [
-      "Always verify with family members before accepting and paying for unexpected COD parcels",
-      "If you did not order it, refuse the delivery immediately",
-      "Tear off personal name and address labels before discarding online delivery boxes"
-    ]
-  },
-  {
-    id: "traffic-police-echallan-sms-2018",
-    slug: "traffic-police-echallan-sms-2018",
-    icon: "🚦",
-    name: "Traffic Police E-Challan SMS Phishing",
-    year: 2018,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 86,
-    desc: "Phishing SMS claiming camera caught your car jumping red light with Rs 1,000 fine, linking to counterfeit Parivahan portal.",
-    sampleMsg: "Traffic Police: Challan #DL-8812 generated for jumping red light. Pay fine Rs 1,000 at https://echallan-parivahan.info within 24h to avoid court.",
-    kaiseHotaHai: "1. Mass SMS campaign coincides with increased automated traffic camera fines.\n2. Phishing portal mimics Ministry of Road Transport Parivahan design.\n3. Captures card details and netbanking passwords.",
-    redFlags: [
-      "SMS arrives from private mobile number rather than state police sender ID (e.g. DLTRFC)",
-      "Link URL does not end in official government domain: echallan.parivahan.gov.in",
-      "SMS does not specify your actual vehicle registration number",
-      "Threatens arrest or court summons within 24 hours",
-      "Page asks for your full debit card PIN or internet banking password"
-    ],
-    kyaKarein: [
-      "Check traffic challan status exclusively on the official government portal: echallan.parivahan.gov.in",
-      "Never pay traffic fines through links received in unsolicited text messages",
-      "Verify challan photo proof on official state traffic police website"
-    ]
-  },
-
-  // ================= 2017 =================
-  {
-    id: "wannacry-ransomware-decryption-2017",
-    slug: "wannacry-ransomware-decryption-2017",
-    icon: "🔒",
-    name: "WannaCry Ransomware Decryption Key Scam",
-    year: 2017,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 96,
-    desc: "Global cyber pandemic encrypting hospital and enterprise systems, demanding $300 in Bitcoin to unlock files.",
-    sampleMsg: "WannaCry Decryptor: Your files are encrypted. Pay $300 worth of Bitcoin within 3 days or file recovery cost doubles.",
-    kaiseHotaHai: "1. Exploited EternalBlue SMB vulnerability in unpatched Windows systems.\n2. Self-propagating worm encrypted hard drives within minutes.\n3. Victims paid Bitcoin ransom, but automated decrypter failed to return keys in majority of cases.",
-    redFlags: [
-      "All file extensions renamed to .wnry with desktop wallpaper replaced by red warning screen",
-      "Countdown timer threatening permanent file destruction after 7 days",
-      "Demands payment strictly in Bitcoin to specific anonymous wallet addresses",
-      "Affects entire local network through port 445 SMB vulnerability",
-      "Computer functions are restricted except for the decryption payment screen"
-    ],
-    kyaKarein: [
-      "Maintain offline, isolated external hard drive backups of critical data",
-      "Keep Windows operating system patched with latest security updates",
-      "Never pay ransomware demands — paying funds international criminal cartels and rarely restores data"
-    ]
-  },
-  {
-    id: "free-jio-4g-sim-unlimited-2017",
-    slug: "free-jio-4g-sim-unlimited-2017",
-    icon: "📶",
-    name: "Free Jio 4G SIM Unlimited Plan Link",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 88,
-    desc: "Viral links claiming to activate lifetime free 4G data and calling on any phone, downloading adware and harvesting numbers.",
-    sampleMsg: "Reliance Jio Welcome Offer: Get Free 4G SIM card with lifetime free unlimited 4G data! Register now: https://jio-4g-free.com",
-    kaiseHotaHai: "1. Exploited massive public frenzy during Jio 4G launch.\n2. Phishing portal prompted user to enter mobile number, Aadhaar number and share to 10 WhatsApp groups.\n3. Generated millions in ad impressions while stealing user mobile numbers for spam databases.",
-    redFlags: [
-      "Offers impossible terms like 'lifetime free unlimited 4G internet'",
-      "Website requires forwarding the link to 10 WhatsApp groups or 5 friends to unlock registration",
-      "Domain name is not jio.com (e.g. jio-offer-4g.xyz)",
-      "Displays fake user comments praising the offer",
-      "Prompts downloading an unknown .apk file on Android"
-    ],
-    kyaKarein: [
-      "Get SIM cards and mobile plans exclusively from authorized retail stores or official carrier apps",
-      "Never participate in 'forward to 10 friends' chain-letter websites",
-      "Telecom companies never distribute SIM cards through viral WhatsApp links"
-    ]
-  },
-  {
-    id: "early-paytm-aadhaar-link-2017",
-    slug: "early-paytm-aadhaar-link-2017",
-    icon: "👛",
-    name: "Early Paytm Wallet Aadhaar Link Trap",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Message",
-    score: 90,
-    desc: "SMS threatening immediate Paytm wallet freeze due to mandatory Aadhaar link deadline, harvesting banking OTPs.",
-    sampleMsg: "RBI Guideline: Link your Aadhaar with Paytm today to prevent account closure. Click http://paytm-aadhaar-link.net to complete.",
-    kaiseHotaHai: "1. Exploited supreme court debates on mandatory Aadhaar wallet linking.\n2. Phishing portal collected 12-digit Aadhaar and linked debit card details.\n3. Fraudsters initiated unauthorized wallet load and balance transfer.",
-    redFlags: [
-      "Urgent deadline warning of wallet balance forfeiture",
-      "Link does not point to official paytm.com domain",
-      "Demands entering full netbanking password or ATM PIN",
-      "Sender is a private phone number",
-      "Official wallet KYC is conducted in-app or via authorized biometric merchants"
-    ],
-    kyaKarein: [
-      "Manage digital wallet settings exclusively within the official app",
-      "Never click SMS links regarding Aadhaar linkage",
-      "Lock your Aadhaar biometric authentication on uidai.gov.in"
-    ]
-  },
-  {
-    id: "debit-card-magnetic-strip-expiry-2017",
-    slug: "debit-card-magnetic-strip-expiry-2017",
-    icon: "💳",
-    name: "Debit Card Magnetic Strip Expiry Call",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 92,
-    desc: "Fraudster posing as bank manager claiming older magnetic strip debit cards are blocked, demanding card details to issue EMV chip card.",
-    sampleMsg: "Bank Manager: RBI has blocked all old magnetic strip cards. To upgrade to new free chip card, share 16-digit card number and CVV.",
-    kaiseHotaHai: "1. Coincided with RBI mandate phasing out magnetic strip cards for EVM chip cards.\n2. Caller asks for 16-digit number, expiry date and CVV.\n3. Prompts victim to share OTP sent to mobile, draining bank account.",
-    redFlags: [
-      "Caller asks for confidential CVV or 3-digit security code on back of card",
-      "Caller demands the one-time password (OTP) sent to your mobile phone",
-      "Threatens immediate permanent card deactivation",
-      "Calling from a personal mobile number instead of official bank landline",
-      "Banks send replacement chip cards automatically by registered post without asking for CVVs"
-    ],
-    kyaKarein: [
-      "Never share card numbers, expiry dates, CVVs or OTPs over the phone",
-      "Banks NEVER call customers to ask for security codes to dispatch replacement cards",
-      "Visit your local bank branch to collect your updated EMV chip card"
-    ]
-  },
-  {
-    id: "gulf-construction-worker-visa-2017",
-    slug: "gulf-construction-worker-visa-2017",
-    icon: "🏗️",
-    name: "Gulf Construction Worker Visa Scam",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 88,
-    desc: "Unregistered agents charging rural laborers Rs 80,000 for non-existent construction jobs in Qatar and UAE.",
-    sampleMsg: "Qatar Construction Project 2022: Mason and helper jobs. Salary Rs 45,000 + food and accommodation. Medical fee Rs 25,000.",
-    kaiseHotaHai: "1. Touts travel to rural villages recruiting young men.\n2. Collect passports and large advance cash deposits.\n3. Hand over forged tourist visas instead of employment visas, leaving workers stranded abroad or absconding.",
-    redFlags: [
-      "Recruiting agent does not have an active Ministry of External Affairs (MEA) license",
-      "Demands cash payments without issuing official tax invoice receipts",
-      "Issues tourist/visit visa while promising it can be converted to employment visa later",
-      "Does not provide an authentic employment contract signed by overseas employer",
-      "Promises guaranteed overseas placement without relevant technical skill test"
-    ],
-    kyaKarein: [
-      "Only deal with recruiting agents registered on the government eMigrate portal: emigrate.gov.in",
-      "Never travel abroad for work on a tourist or visit visa",
-      "Verify foreign employment contracts with the Protector of Emigrants (POE) office"
-    ]
-  },
-  {
-    id: "second-hand-car-buyer-token-2017",
-    slug: "second-hand-car-buyer-token-2017",
-    icon: "🚗",
-    name: "Second-Hand Car Buyer Token Advance",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Shop",
-    score: 87,
-    desc: "Buyer claims to be CISF/Army officer transferred to local airport, sends fake payment screenshot and demands refund of 'overpaid' token.",
-    sampleMsg: "I transferred Rs 25,000 token for your car instead of Rs 5,000 by mistake. Please refund Rs 20,000 immediately to my Google Pay.",
-    kaiseHotaHai: "1. Scammer sends edited screenshot of bank transfer showing Rs 25,000 sent.\n2. Calls seller in panic claiming accidental overpayment.\n3. Seller checks balance later and realizes no money ever arrived.",
-    redFlags: [
-      "Buyer agrees to purchase vehicle immediately without physical inspection",
-      "Sends fake or edited payment screenshot showing accidental overpayment",
-      "Demands immediate return of overpaid difference via UPI",
-      "Claims to be defense personnel posted at local airport or military cantonment",
-      "Your actual bank balance shows no incoming credit transaction"
-    ],
-    kyaKarein: [
-      "Always check your actual bank account statement inside your banking app, not via SMS or screenshots",
-      "Never refund money based on screenshots sent over WhatsApp",
-      "Require in-person meetings for vehicle sales"
-    ]
-  },
-  {
-    id: "facebook-profile-clone-money-2017",
-    slug: "facebook-profile-clone-money-2017",
-    icon: "👥",
-    name: "Facebook Profile Clone Money Request",
-    year: 2017,
-    isLatest: false,
-    country: "Global",
-    category: "Romance",
-    score: 86,
-    desc: "Scammers clone user's public Facebook profile (photo and bio) and send friend requests to entire friend list, asking for urgent loans.",
-    sampleMsg: "Hey, my old account was hacked so I made this new profile. I have medical emergency, can you send $200 on Venmo? Will return tonight.",
-    kaiseHotaHai: "1. Scammer downloads public photos and friend list from victim's Facebook.\n2. Creates duplicate account with identical name.\n3. Sends friend requests to all friends, immediately messaging them for emergency loans.",
-    redFlags: [
-      "Receiving a friend request from someone you are already connected with",
-      "New profile has very few friends and was created within the last 24 hours",
-      "Immediate private message asking for money or gift cards",
-      "Claims old profile was deleted or locked",
-      "Refuses to verify over a direct phone call"
-    ],
-    kyaKarein: [
-      "Call your friend directly on their phone before accepting duplicate friend requests",
-      "Set your Facebook friend list visibility to 'Only Me' to prevent clone targeting",
-      "Report cloned profile to Facebook for impersonation"
-    ]
-  },
-  {
-    id: "income-tax-department-penalty-2017",
-    slug: "income-tax-department-penalty-2017",
-    icon: "⚖️",
-    name: "Income Tax Department Penalty Notice Call",
-    year: 2017,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 90,
-    desc: "Calls threatening non-bailable arrest warrants for tax evasion post-demonetization unless immediate settlement is wired.",
-    sampleMsg: "Income Tax Enforcement: Unreported high-value cash deposits detected post-demonetization. Pay Rs 40,000 penalty to avoid arrest.",
-    kaiseHotaHai: "1. Exploited widespread post-demonetization tax anxiety.\n2. Callers posed as tax assessment officers.\n3. Demanded transferring settlement penalty into personal accounts to drop investigations.",
-    redFlags: [
-      "Threatens immediate arrest warrant by tax department (Income Tax department does not have powers of instant telephonic arrest)",
-      "Demands settling penalty via direct bank wire transfer to individual account",
-      "Refuses to provide statutory Computer Generated Notice with valid Document Identification Number (DIN)",
-      "High urgency refusing to let you consult your Chartered Accountant",
-      "Calling from an unverified mobile phone number"
-    ],
-    kyaKarein: [
-      "All legitimate Income Tax notices contain a mandatory Document Identification Number (DIN) verifiable on incometax.gov.in",
-      "Tax authorities NEVER demand penalty payments into private bank accounts",
-      "Consult your trusted tax advisor before responding to any legal threats"
-    ]
-  },
-  {
-    id: "free-foreign-holiday-package-2017",
-    slug: "free-foreign-holiday-package-2017",
-    icon: "🏖️",
-    name: "Free Foreign Holiday Package Voucher",
-    year: 2017,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 87,
-    desc: "Calls inviting couples to 5-star hotel presentations to collect 'free 3-night Dubai/Goa vacation voucher', trapping them in high-pressure timeshares.",
-    sampleMsg: "Congratulations! You won free 3-night luxury holiday voucher in Goa/Dubai. Collect pass today at Hotel Grand banquet hall.",
-    kaiseHotaHai: "1. Victim attends banquet hall presentation.\n2. Subjected to 4 hours of aggressive psychological pressure.\n3. Coerced into signing non-refundable 25-year vacation club memberships costing lakhs.",
-    redFlags: [
-      "Unsolicited call claiming you won a free international vacation voucher",
-      "Requires both husband and wife to attend in-person seminar to collect gift",
-      "High-pressure sales representatives refusing to let you leave without signing",
-      "Voucher has hidden blackout dates, non-refundable booking fees, and impossible booking restrictions",
-      "Demands instant credit card swipe for membership fees"
-    ],
-    kyaKarein: [
-      "Never attend timeshare or holiday club sales presentations expecting free prizes",
-      "Do not carry credit cards to high-pressure marketing seminars",
-      "Read all fine print; verbal promises from sales reps are not legally binding"
-    ]
-  },
-
-  // ================= 2016 =================
-  {
-    id: "demonetization-currency-exchange-2016",
-    slug: "demonetization-currency-exchange-2016",
-    icon: "💵",
-    name: "Demonetization Old Currency Exchange Agent",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 95,
-    desc: "Touts offering to exchange discontinued Rs 500 & 1,000 notes for new currency at 30% commission, running off with total cash.",
-    sampleMsg: "Convert old currency to new 2,000 notes: 100% safe back-door bank exchange at 30% commission. Meet at hotel.",
-    kaiseHotaHai: "1. Historic demonetization created massive panic.\n2. Agents promised back-door conversion via corrupt bank managers.\n3. Victims brought bags of cash to hotel rooms, where scammers fled through back exits or staged fake police raids.",
-    redFlags: [
-      "Offers illegal conversion of banned currency through unofficial channels",
-      "Demands high commission fee (20-40%)",
-      "Meetings organized in secluded hotel rooms or dark parking lots",
-      "Refuses to sign any formal receipt or contract",
-      "Involves dangerous criminal syndicates"
-    ],
-    kyaKarein: [
-      "Currency exchange was only legally permissible through registered commercial banks and post offices",
-      "Never deal with illegal currency touts or hawala operators",
-      "Report illegal currency operations to financial intelligence authorities"
-    ]
-  },
-  {
-    id: "atm-skimmer-magnetic-strip-2016",
-    slug: "atm-skimmer-magnetic-strip-2016",
-    icon: "🏧",
-    name: "ATM Skimmer & Hidden Camera Duplicate",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 92,
-    desc: "Physical skimming devices attached over ATM card slots with micro pinhole cameras recording PINs to clone cards.",
-    sampleMsg: "Unauthorized ATM cash withdrawal: Rs 20,000 debited from card ending in 4012 at Mumbai ATM.",
-    kaiseHotaHai: "1. Gang attaches false plastic overlay over ATM card slot.\n2. Magnetic strip data read while pinhole camera records PIN as user types.\n3. Cloned cards used to withdraw cash at midnight.",
-    redFlags: [
-      "ATM card reader slot feels loose, bulky, or misaligned",
-      "Keypad feels spongy, raised, or has unusual sticky residue",
-      "ATM is located in secluded, poorly-lit area with no security guard",
-      "Tiny pinhole visible above keypad or near brochure holder",
-      "Card doesn't insert smoothly into reader"
-    ],
-    kyaKarein: [
-      "Always cover the keypad with your hand while typing your 4-digit PIN",
-      "Wiggle the card reader slot before inserting card; if it feels loose, do not use",
-      "Use ATMs located inside active bank branches with security guards"
-    ]
-  },
-  {
-    id: "uk-visa-lottery-sms-2016",
-    slug: "uk-visa-lottery-sms-2016",
-    icon: "🇬🇧",
-    name: "UK Visa Lottery Win SMS Notification",
-    year: 2016,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 87,
-    desc: "SMS claiming your phone number won British work permit visa with £500,000 cash grant, demanding embassy fee.",
-    sampleMsg: "British High Commission: Your mobile number won UK Work Visa & £500,000 Grant. Contact UK Embassy agent to claim.",
-    kaiseHotaHai: "1. Mass SMS blast sent across Asia and Africa.\n2. Convinces victim they won a British settlement visa.\n3. Demands wire transfers for diplomatic courier and entry clearance fees.",
-    redFlags: [
-      "The UK does not operate any visa lottery program (unlike the US Green Card Diversity lottery)",
-      "Received via SMS from non-governmental phone number",
-      "Demands upfront fee to collect prize money and visa",
-      "Email address is hosted on a free public domain (gmail.com)",
-      "Visa issuance requires formal biometric application at VFS Global centers"
-    ],
-    kyaKarein: [
-      "The UK government NEVER issues visas via lotteries or mobile lucky draws",
-      "Apply for UK visas exclusively through official gov.uk portal",
-      "Never send money to unsolicited lottery agents"
-    ]
-  },
-  {
-    id: "bpo-inbound-calling-deposit-2016",
-    slug: "bpo-inbound-calling-deposit-2016",
-    icon: "🎧",
-    name: "BPO Inbound Calling Job Security Deposit",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 88,
-    desc: "Fly-by-night consultancies charging Rs 10,000 refundable security deposit for international call center jobs, vanishing overnight.",
-    sampleMsg: "Urgent hiring: International BPO voice process. Salary Rs 28,000 + incentives. Pay Rs 4,500 training registration fee.",
-    kaiseHotaHai: "1. Newspaper classified ad promises high salaries for English speakers.\n2. Candidate 'passes' simple 2-minute interview.\n3. Consultancy collects Rs 5,000 - 15,000 for training or ID badge, then shuts office and absconds.",
-    redFlags: [
-      "Consultancy demands cash payment for training, uniform, or interview registration",
-      "Offers employment immediately without rigorous background or communication check",
-      "Office is located in temporary rented space with no company branding",
-      "Promises '100% job guarantee' in major multinational BPOs",
-      "Legitimate corporate BPOs never charge candidates recruitment fees"
-    ],
-    kyaKarein: [
-      "Reputable BPOs (Concentrix, Genpact, Teleperformance) NEVER charge candidates any fee",
-      "Apply directly through official corporate career portals",
-      "Never pay consultancy fees to get hired"
-    ]
-  },
-  {
-    id: "saradha-rose-valley-ponzi-2016",
-    slug: "saradha-rose-valley-ponzi-2016",
-    icon: "📈",
-    name: "Saradha / Rose Valley Multi-Level Ponzi Scheme",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 95,
-    desc: "Chit fund syndicates promising 50% returns through collective investment schemes, defaulting on tens of thousands of rural depositors.",
-    sampleMsg: "Rose Valley / Saradha Real Estate Pool: Invest Rs 10,000, get back Rs 18,000 in 18 months guaranteed by resort lands.",
-    kaiseHotaHai: "1. Massive pyramid network across Eastern India.\n2. Millions deposited daily through commissioned village agents.\n3. Scheme collapsed when redemptions exceeded deposits; promoter arrested by CBI.",
-    redFlags: [
-      "Promises returns far exceeding banking fixed deposit interest rates",
-      "Operates without statutory SEBI or RBI Collective Investment Scheme (CIS) license",
-      "Heavy reliance on village agents receiving massive commissions (15-20%)",
-      "Investments disguised as advance booking for holiday resorts or real estate plots",
-      "Complex corporate structures with hundreds of shell entities"
-    ],
-    kyaKarein: [
-      "Verify investment funds on SEBI and RBI regulated registers",
-      "Avoid informal collective investment schemes promising guaranteed returns",
-      "Report illegal deposit schemes to the state economic offences wing (EOW)"
-    ]
-  },
-  {
-    id: "hallmarked-gold-coin-buyback-2016",
-    slug: "hallmarked-gold-coin-buyback-2016",
-    icon: "🪙",
-    name: "Hallmarked Gold Coin Buyback Scheme",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 91,
-    desc: "Companies selling gold coins at premium with post-dated cheques promising 30% annual buyback, which bounce upon maturity.",
-    sampleMsg: "Buy pure 24K Gold Coins with post-dated cheques: 30% guaranteed buyback after 1 year. Safe wealth investment.",
-    kaiseHotaHai: "1. Victim purchases gold coin above market rate.\n2. Given post-dated cheque for 130% of value dated 1 year later.\n3. Cheques bounce upon deposit and company promoters flee the country.",
-    redFlags: [
-      "Sells gold above prevailing market rate with promised future buyback premium",
-      "Issues post-dated cheques from accounts with zero balance guarantees",
-      "Company is not a bank or regulated financial institution",
-      "Aggressive marketing promoting 'zero risk wealth multiplication'",
-      "Claims gold coins will be kept in company safe custody"
-    ],
-    kyaKarein: [
-      "Purchase gold strictly at prevailing bullion spot prices from BIS-hallmarked jewelers",
-      "Never accept post-dated cheques as guaranteed return on physical commodity purchases",
-      "Invest in RBI Sovereign Gold Bonds for guaranteed interest plus market gold appreciation"
-    ]
-  },
-  {
-    id: "merchant-navy-offshore-job-2016",
-    slug: "merchant-navy-offshore-job-2016",
-    icon: "⚓",
-    name: "Merchant Navy Offshore Employment Trap",
-    year: 2016,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 89,
-    desc: "Unlicensed maritime agents charging aspiring sailors Rs 3,00,000 for CDC continuous discharge certificates on ghost cargo ships.",
-    sampleMsg: "Direct placement Merchant Navy: Deck cadet and GP rating posts. Salary $1,800/mo. Submit Rs 50,000 CDC processing fee.",
-    kaiseHotaHai: "1. Traps young cadets graduating from maritime academies.\n2. Takes massive fees for fake CDC books and fabricated ship placements.\n3. Cadets stranded in foreign ports or placed on unseaworthy illegal trawlers.",
-    redFlags: [
-      "RPSL (Recruitment and Placement Services License) number missing or fake",
-      "Demands high placement charges (DG Shipping strictly bans charging fees to seafarers)",
-      "Promises instant ship boarding without formal maritime DG Shipping approval",
-      "Agent operating out of temporary commercial office",
-      "CDC book issued by flags of convenience (e.g. Liberia, Panama) with no verification"
-    ],
-    kyaKarein: [
-      "Verify RPSL agencies exclusively on the official Directorate General of Shipping website: dgshipping.gov.in",
-      "Under Indian law, RPSL agencies CANNOT charge recruitment fees to sailors",
-      "Report illegal maritime agents to DG Shipping vigilance"
-    ]
-  },
-  {
-    id: "railway-group-d-fake-board-2016",
-    slug: "railway-group-d-fake-board-2016",
-    icon: "🚆",
-    name: "Government Railway Board Group D Job Racket",
-    year: 2016,
-    isLatest: false,
-    country: "India",
-    category: "Job",
-    score: 88,
-    desc: "Syndicates staging fake computer typing tests in cyber cafes, collecting lakhs for forged Indian Railways Group D joining passes.",
-    sampleMsg: "Railway Group D direct joining: 500 trackman & khalasi posts under sports/discretionary quota. Pay Rs 50,000 advance.",
-    kaiseHotaHai: "1. Fraudsters book out local cyber cafe to conduct mock examination.\n2. Issue forged appointment letters bearing national emblem.\n3. Candidates discover fraud when attempting to report to railway division headquarters.",
-    redFlags: [
-      "Claims direct recruitment without clearing official RRB computer-based exams",
-      "Exam conducted in unmonitored private cyber cafe",
-      "Demands cash payment for joining pass, medical report, or uniform badge",
-      "Circular is not listed on official RRB regional websites",
-      "Promises appointment through 'internal general manager quota'"
-    ],
-    kyaKarein: [
-      "Indian Railway recruitment is conducted exclusively through official RRB portals",
-      "No discretionary quotas exist for cash purchase",
-      "Report railway job racketeers to Railway Protection Force (RPF)"
-    ]
-  },
-  {
-    id: "facebook-lottery-winner-letter-2016",
-    slug: "facebook-lottery-winner-letter-2016",
-    icon: "🌐",
-    name: "Facebook Mobile Lottery Award Notice",
-    year: 2016,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 86,
-    desc: "Fake award certificates sent via Facebook Messenger claiming user's email was selected in global drawing for £750,000.",
-    sampleMsg: "Facebook Promotion Board: Congratulations! Your email won £750,000. Send full name, address and £250 delivery fee to claim.",
-    kaiseHotaHai: "1. Messenger message displays fake photo of Facebook executive.\n2. Convinces victim of international lottery win.\n3. Collects escalating advance fees for legal clearance, courier, and foreign exchange.",
-    redFlags: [
-      "You cannot win a lottery you never entered",
-      "Message received from an unverified social media profile",
-      "Demands advance fees to release prize funds",
-      "Official companies NEVER contact winners via Facebook Messenger",
-      "Grammar errors and pixelated corporate logos"
-    ],
-    kyaKarein: [
-      "Block and report the sender profile to Facebook",
-      "Never wire money to claim unsolicited lottery awards",
-      "Warn friends and family about lottery forward scams"
-    ]
-  },
-
-  // ================= EVERGREEN / CLASSIC (GLOBAL THREATS) =================
-  {
-    id: "nigerian-prince-inheritance-classic",
-    slug: "nigerian-prince-inheritance-classic",
-    icon: "👑",
-    name: "Nigerian Prince / Advance Fee 419 Scam",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 93,
-    desc: "Classic email from foreign royalty or lawyer claiming $25 Million is trapped in an escrow account, needing your bank to transfer it.",
-    sampleMsg: "I am Prince Bakare of Nigeria. I have $25M USD trapped in bank. Provide your account number; you will retain 30% of funds.",
-    kaiseHotaHai: "1. Mass spam email sent across globe.\n2. Once victim replies, scammer demands legal fees, bribery payments, and diplomat fees.\n3. Scammer continues extorting fees until victim realizes no fortune exists.",
-    redFlags: [
-      "Stranger claiming to be wealthy foreign official or royalty",
-      "Offers millions of dollars for simple banking assistance",
-      "Demands advance payments for legal processing, courier fees, or bribes",
-      "Written in overly formal, archaic legalistic language",
-      "Requests full bank account routing numbers and personal identification"
-    ],
-    kyaKarein: [
-      "Mark as spam and delete immediately",
-      "Never share banking coordinates with strangers on the internet",
-      "Report advance fee fraud to national cyber authorities"
-    ]
-  },
-  {
-    id: "fake-deceased-millionaire-estate-classic",
-    slug: "fake-deceased-millionaire-estate-classic",
-    icon: "⚖️",
-    name: "Fake Deceased Millionaire Estate Lawyer",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 91,
-    desc: "Letter from attorney claiming a deceased foreign millionaire shares your last name, offering to split unclaimed estate.",
-    sampleMsg: "Barrister David Smith: My deceased client left $14.5M with no next of kin. With same surname, we can claim inheritance together.",
-    kaiseHotaHai: "1. Sent via postal mail or email.\n2. Convinces victim to pose as legal heir.\n3. Requires paying thousands for counterfeit death certificates, probate clearance, and court registry stamps.",
-    redFlags: [
-      "Unsolicited letter from foreign lawyer proposing to split unclaimed inheritance",
-      "Lawyer admits client is not your relative but proposes using same surname to defraud bank",
-      "Demands upfront legal filing and court probate fees",
-      "Email address is hosted on free webmail (gmail/outlook) rather than established law firm domain",
-      "Conspiring to claim fraudulent estates is illegal"
-    ],
-    kyaKarein: [
-      "Legitimate probate lawyers do not reach out to strangers proposing to forge inheritance claims",
-      "Ignore and destroy the letter",
-      "Never pay advance legal fees for unclaimed inheritance fortunes"
-    ]
-  },
-  {
-    id: "hmrc-tax-rebate-self-assessment-classic",
-    slug: "hmrc-tax-rebate-self-assessment-classic",
-    icon: "🇬🇧",
-    name: "HMRC Tax Rebate Phishing Email",
-    year: 2026,
-    isLatest: false,
-    country: "UK",
-    category: "Govt",
-    score: 94,
-    desc: "Emails claiming HM Revenue & Customs has calculated an overpayment of £482.50, asking for debit card and mother's maiden name.",
-    sampleMsg: "HMRC Notice: You have a pending tax refund of £482.50 from 2025/2026 tax year. Claim refund at https://hmrc-gov-rebate.org",
-    kaiseHotaHai: "1. Sent during UK tax return deadlines.\n2. Phishing portal mimics gov.uk gateway.\n3. Captures debit card, sort code, mother's maiden name, and online banking credentials.",
-    redFlags: [
-      "Email or SMS claiming HMRC issues tax refunds through clickable web links",
-      "Sender email address is not from @hmrc.gov.uk",
-      "Website asks for debit card details, CVV and card PIN",
-      "Urgent deadline claiming refund expires within 72 hours",
-      "HMRC officially communicates tax calculations via formal postal letter or inside your personal tax account"
-    ],
-    kyaKarein: [
-      "HMRC will NEVER notify you of a tax refund by text or ask for card details",
-      "Access your tax account exclusively on gov.uk",
-      "Forward phishing emails to phishing@hmrc.gov.uk and SMS to 7726"
-    ]
-  },
-  {
-    id: "irs-tax-fraud-arrest-notice-classic",
-    slug: "irs-tax-fraud-arrest-notice-classic",
-    icon: "🇺🇸",
-    name: "IRS Criminal Investigation Phone Scam",
-    year: 2026,
-    isLatest: false,
-    country: "USA",
-    category: "Call",
-    score: 95,
-    desc: "Robocalls from fake IRS agents threatening police arrest within 45 minutes for tax evasion unless settled via wire transfer.",
-    sampleMsg: "Internal Revenue Service: A federal arrest warrant is issued against your name. To avoid immediate detention, call our department.",
-    kaiseHotaHai: "1. Exploits fear of federal tax authority.\n2. Spoofs Washington DC or local law enforcement caller ID.\n3. Demands instant settlement via prepaid debit cards or wire transfer.",
-    redFlags: [
-      "IRS will NEVER call demanding immediate payment without first having mailed you a paper bill",
-      "Threatens to involve local police or law enforcement to arrest you",
-      "Demands payment via prepaid debit cards, gift cards, or wire transfer",
-      "Does not allow you to question or appeal the amount you owe",
-      "Caller is hostile and insults you when questioned"
-    ],
-    kyaKarein: [
-      "Hang up immediately — real IRS agents never initiate contact via telephone calls",
-      "Call IRS directly at 1-800-829-1040 if you have tax questions",
-      "Report scam to Treasury Inspector General (TIGTA)"
-    ]
-  },
-  {
-    id: "cra-canada-revenue-agency-classic",
-    slug: "cra-canada-revenue-agency-classic",
-    icon: "🇨🇦",
-    name: "CRA Tax Enforcement & Arrest Threat",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Call",
-    score: 95,
-    desc: "Calls targeting Canadian residents claiming Canada Revenue Agency has flagged tax evasion, threatening RCMP police arrest.",
-    sampleMsg: "Canada Revenue Agency: You have an outstanding balance under criminal tax code. RCMP is dispatched to your residence. Call back now.",
-    kaiseHotaHai: "1. Automated voice threatens immediate arrest by Royal Canadian Mounted Police.\n2. Scammer demands victim purchase Bitcoin or iTunes gift cards.\n3. Preys on new immigrants unfamiliar with Canadian tax administration.",
-    redFlags: [
-      "CRA NEVER threatens police arrest, deportation, or driver's license suspension over the phone",
-      "Demands payment via cryptocurrency (Bitcoin ATM) or prepaid gift cards",
-      "Asks for your Social Insurance Number (SIN) over an incoming call",
-      "Caller uses aggressive and threatening language",
-      "Leaves automated threatening voicemail messages"
-    ],
-    kyaKarein: [
-      "Check your tax balance securely inside your CRA 'My Account' on canada.ca",
-      "Never purchase cryptocurrency or gift cards to settle government tax balances",
-      "Report phone scams to the Canadian Anti-Fraud Centre (CAFC)"
-    ]
-  },
-  {
-    id: "dubai-police-salik-fine-classic",
-    slug: "dubai-police-salik-fine-classic",
-    icon: "🇦🇪",
-    name: "Dubai Police / Salik Road Fine Phishing",
-    year: 2026,
-    isLatest: false,
-    country: "UAE",
-    category: "Govt",
-    score: 96,
-    desc: "SMS claiming vehicle has unpaid Salik toll violations with court proceedings warning, redirecting to fake payment gateway.",
-    sampleMsg: "Dubai Police: You have 2 unpaid traffic violations of AED 400. Settle immediately at https://salik-traffic-dubai.net to avoid vehicle impound.",
-    kaiseHotaHai: "1. Sent to UAE residents.\n2. Phishing link mimics Dubai Police or RTA Salik portal.\n3. Captures debit card and OTP, draining bank balance in UAE Dirhams.",
-    redFlags: [
-      "SMS arrives from international or unverified mobile number, not official 'DubaiPolice' header",
-      "URL is not hosted on official government portal: dubaipolice.gov.ae or rta.ae",
-      "Threatens vehicle impoundment or court summons within 24 hours",
-      "Asks for full credit card details, CVV and SMS OTP",
-      "Plate number is not specified in the initial message"
-    ],
-    kyaKarein: [
-      "Verify traffic fines exclusively through official Dubai Police app or rta.ae",
-      "Never pay traffic fines through links received in text messages",
-      "Report cybercrime via Dubai Police eCrime portal (ecrime.ae)"
-    ]
-  },
-  {
-    id: "pakistan-bisp-8171-aid-classic",
-    slug: "pakistan-bisp-8171-aid-classic",
-    icon: "🇵🇰",
-    name: "Benazir Income Support (BISP) 8171 Aid Trap",
-    year: 2026,
-    isLatest: false,
-    country: "Pakistan",
-    category: "Govt",
-    score: 92,
-    desc: "SMS claiming recipient has been awarded Rs 10,500 under BISP poverty relief, demanding CNIC and advance registration card fee.",
-    sampleMsg: "8171 BISP Alert: Mubarak ho! Aapka Rs 10,500 ka wazeefa manzoor ho gaya hai. Abhi CNIC aur Rs 1,000 fee bhej kar balance lein.",
-    kaiseHotaHai: "1. Mass SMS sent to low-income mobile users across Pakistan.\n2. Victims call sender, who instructs them to send Rs 1,000 Easypaisa/JazzCash fee.\n3. Scammer blocks victim once transfer clears.",
-    redFlags: [
-      "Sent from personal mobile number (+92 3xx) instead of official 8171 shortcode",
-      "Demands advance fee via Easypaisa or JazzCash to release welfare money",
-      "Asks for your CNIC photo, biometric details, or SIM registration numbers",
-      "Official BISP welfare funds are distributed 100% free with zero fees",
-      "Claims unexpected aid registration without prior survey"
-    ],
-    kyaKarein: [
-      "BISP official SMS notifications ONLY originate from the 4-digit shortcode 8171",
-      "Never send advance fees to claim government welfare assistance",
-      "Report fraud numbers to PTA Helpline 0800-55055 and FIA Cyber Crime Wing (1991)"
-    ]
-  },
-  {
-    id: "usa-ezpass-toll-overdue-smishing-classic",
-    slug: "usa-ezpass-toll-overdue-smishing-classic",
-    icon: "🛣️",
-    name: "USA E-ZPass Toll Overdue Smishing",
-    year: 2026,
-    isLatest: false,
-    country: "USA",
-    category: "Message",
-    score: 95,
-    desc: "Smishing text claiming unpaid toll invoice of $4.50 with an impending $50 late fee, harvesting debit card details.",
-    sampleMsg: "E-ZPass Toll Notice: You have an unpaid toll balance of $4.50. Settle by midnight at https://toll-ezpass-usa.com to avoid $50 court penalty.",
-    kaiseHotaHai: "1. Widespread smishing texts targeting millions of American drivers.\n2. Phishing site asks for name, license plate, and credit card number.\n3. Card is charged hundreds of dollars for unauthorized merchant purchases.",
-    redFlags: [
-      "Received from an unknown area code or email-to-text gateway",
-      "Toll agency website URL is not the official ezpass.com or state toll portal",
-      "Urgent threat of $50 late fine or license suspension by tonight",
-      "Specific toll plaza location or date of travel is never mentioned",
-      "Received even if you do not own a vehicle or haven't driven on toll roads"
-    ],
-    kyaKarein: [
-      "Never click links in unexpected toll violation text messages",
-      "Check toll invoices directly on your official state toll account (SunPass, FasTrak, E-ZPass)",
-      "File complaints with FBI IC3 at ic3.gov"
-    ]
-  },
-  {
-    id: "amazon-prime-auto-renewal-classic",
-    slug: "amazon-prime-auto-renewal-classic",
-    icon: "📦",
-    name: "Amazon Prime Auto-Renewal $499 Invoice",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 92,
-    desc: "Phishing email invoice stating your Amazon Prime annual membership renewed for $499, prompting a call to a bogus cancellation desk.",
-    sampleMsg: "Amazon Prime Notice: Your subscription of $499.00 has been charged to your card. If unauthorized, call our billing desk at 1-888-XXX-XXXX.",
-    kaiseHotaHai: "1. Fake invoice creates panic regarding high unexpected charge.\n2. Caller connects to Indian tech support scam call center.\n3. Scammer asks for remote access to computer to 'reverse charge', initiating wire fraud.",
-    redFlags: [
-      "Prime membership annual fee is overstated (e.g. $499 instead of actual $139)",
-      "Sender email address is not from @amazon.com",
-      "Email provides a direct phone number to call for cancellations",
-      "No such charge appears on your actual credit card statement",
-      "Agent on the phone insists on remote desktop access to issue refund"
-    ],
-    kyaKarein: [
-      "Check your Amazon Prime membership status directly inside the official Amazon app",
-      "Never call phone numbers listed in unexpected email receipts",
-      "Forward phishing emails to reportascam@amazon.com"
-    ]
-  },
-  {
-    id: "customs-narcotics-parcel-police-classic",
-    slug: "customs-narcotics-parcel-police-classic",
-    icon: "🚨",
-    name: "Customs Seized Drugs Parcel Police Extortion",
-    year: 2026,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 98,
-    desc: "Fake courier agent claims your international parcel contained drugs and passports, transferring call to counterfeit police officer.",
-    sampleMsg: "Courier Security: A parcel sent to Cambodia with 150g MDMA in your name is seized. Mumbai Crime Branch is taking over call.",
-    kaiseHotaHai: "1. Phone call claims illegal parcel in your name.\n2. Transferred to fake police inspector who shows counterfeit arrest warrant.\n3. Demands transferring entire savings account balance to 'RBI verification account'.",
-    redFlags: [
-      "Claims a parcel you never dispatched contains illegal narcotics or fake passports",
-      "Courier company transfers call directly to 'Police' over the same connection",
-      "Caller demands you do not disconnect call or tell family members",
-      "Demands bank wire transfer to prove funds are 'clean' and avoid immediate arrest",
-      "Calls made over WhatsApp or Skype video call"
-    ],
-    kyaKarein: [
-      "Disconnect the call immediately. Legitimate police NEVER conduct interrogations over phone or WhatsApp",
-      "Do NOT transfer any money to clear your name",
-      "Dial 1930 immediately or visit cybercrime.gov.in"
-    ]
-  },
-  {
-    id: "remote-desktop-anydesk-teamviewer-classic",
-    slug: "remote-desktop-anydesk-teamviewer-classic",
-    icon: "🖥️",
-    name: "Remote Desktop AnyDesk / TeamViewer Banking Access",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Call",
-    score: 97,
-    desc: "Caller posing as bank, utility, or telecom support asks user to install remote desktop apps, granting full screen and banking control.",
-    sampleMsg: "Bank Technical Support: To fix pending transaction, install QuickSupport from Play Store and read 9-digit code to technician.",
-    kaiseHotaHai: "1. Scammer convinces victim to install AnyDesk or TeamViewer.\n2. Asks victim to read 9-digit session code.\n3. Scammer views victim's screen, observes banking passwords and OTPs, and drains balance.",
-    redFlags: [
-      "Any caller instructing you to install AnyDesk, TeamViewer, QuickSupport, or RustDesk",
-      "Asks you to share the 9-digit connection code displayed on screen",
-      "Instructs you to log into your mobile banking app while app is running",
-      "Phone screen shows notification: 'Your screen is being shared'",
-      "Legitimate banks NEVER ask customers to install remote control software"
-    ],
-    kyaKarein: [
-      "NEVER install screen sharing applications on request from a caller",
-      "If already installed, immediately disconnect Wi-Fi/Mobile Data and uninstall the app",
-      "Contact your bank to freeze internet banking and debit cards immediately"
-    ]
-  },
-  {
-    id: "overpayment-fake-cashier-check-classic",
-    slug: "overpayment-fake-cashier-check-classic",
-    icon: "💵",
-    name: "Overpayment Fake Cashier Check Scam",
-    year: 2026,
-    isLatest: false,
-    country: "USA",
-    category: "Shop",
-    score: 91,
-    desc: "Buyer sends cashier check for $3,000 instead of $1,000 for item, asking seller to deposit check and wire back $2,000 difference.",
-    sampleMsg: "Cashier check for $3,200 mailed to you for the $1,200 piano. Please deposit and wire $2,000 balance to our shipping movers.",
-    kaiseHotaHai: "1. Fake check is deposited; bank makes funds available within 24 hours per federal regulations.\n2. Seller wires real cash back to buyer.\n3. Days later, check bounces as counterfeit and bank deducts full amount from seller's account.",
-    redFlags: [
-      "Buyer pays with a cashier's check or business check made out for more than asking price",
-      "Buyer instructs you to deposit check and wire difference to a third-party moving agent",
-      "Buyer refuses to use secure online checkout or meet in person with cash",
-      "Check is drawn on an out-of-state bank with mismatched corporate name",
-      "High urgency urging wire transfer before check formally clears banking system"
-    ],
-    kyaKarein: [
-      "Never accept a check for more than the purchase price",
-      "Remember: 'Funds available' in your bank account does NOT mean the check has permanently cleared",
-      "Wait 7-10 business days for check verification with issuing bank before releasing goods"
-    ]
-  },
-  {
-    id: "secret-shopper-mystery-eval-classic",
-    slug: "secret-shopper-mystery-eval-classic",
-    icon: "🛍️",
-    name: "Secret Shopper / Mystery Evaluator Scam",
-    year: 2026,
-    isLatest: false,
-    country: "USA",
-    category: "Job",
-    score: 89,
-    desc: "Packet arrives in mail with real-looking $2,500 check appointing you as Walmart mystery shopper, instructing you to buy gift cards.",
-    sampleMsg: "Secret Shopper Assignment: Deposit enclosed $2,450 check. Keep $400 for your commission. Evaluate Walmart by purchasing $2,000 in gift cards.",
-    kaiseHotaHai: "1. Victim receives official letter and cashier check.\n2. Deposits check and purchases gift cards at local retail store.\n3. Sends photos of card PINs to scammer; check bounces days later leaving victim in massive debt.",
-    redFlags: [
-      "Unsolicited check arrives in mail for a job you never applied for",
-      "Instructs you to evaluate Western Union, MoneyGram, or retail gift card transactions",
-      "Urges you to complete assignment within 48 hours before check bounces",
-      "Promises high commission ($400) for simple shopping trip",
-      "Legitimate mystery shopping companies never send advance cashier checks"
-    ],
-    kyaKarein: [
-      "Legitimate mystery shopping agencies (MSPA) NEVER send checks to consumers upfront",
-      "Do not deposit checks from unknown companies",
-      "Report check fraud to the US Postal Inspection Service"
-    ]
-  },
-  {
-    id: "fake-pet-adoption-delivery-classic",
-    slug: "fake-pet-adoption-delivery-classic",
-    icon: "🐶",
-    name: "Fake Pet Adoption / Puppy Delivery Fee Scam",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 88,
-    desc: "Adorable photos of purebred puppies offered for free adoption, followed by endless demands for temperature-controlled crate fees.",
-    sampleMsg: "Free French Bulldog puppy to good home! Only pay $250 courier delivery. Special climate-controlled crate fee $600 required.",
-    kaiseHotaHai: "1. Stolen photos of puppies posted on free adoption classifieds.\n2. Buyer agrees to pay $250 shipping.\n3. Fake delivery company contacts buyer demanding insurance, vaccination, and special crate fees, never delivering puppy.",
-    redFlags: [
-      "Purebred, highly expensive puppy breed offered for 'free' adoption",
-      "Seller claims to have relocated and cannot deliver puppy in person",
-      "Delivery company website is amateur with broken tracking system",
-      "Demands cascading emergency fees: climate crate, insurance, vet inspection",
-      "Seller only accepts wire transfer, Zelle, or gift cards"
-    ],
-    kyaKarein: [
-      "Never purchase or adopt a pet without visiting the animal in person",
-      "Adopt from reputable local animal shelters or verified licensed breeders",
-      "Never send money to online pet sellers refusing video calls"
-    ]
-  },
-  {
-    id: "business-email-compromise-bec-classic",
-    slug: "business-email-compromise-bec-classic",
-    icon: "💼",
-    name: "Business Email Compromise (BEC) / CEO Wire Fraud",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 96,
-    desc: "Spoofed email pretending to be CEO or vendor directing accountant to wire company funds to new supplier bank account.",
-    sampleMsg: "CEO Urgent Request: I am in confidential acquisition meeting. Wire $85,000 to new vendor account immediately. Do not call me.",
-    kaiseHotaHai: "1. Hackers monitor corporate email threads through credential phishing.\n2. Intercept vendor invoice or spoof CEO email with typosquatted domain.\n3. Directs accounting staff to update payment details to fraudulent offshore account.",
-    redFlags: [
-      "CEO requests urgent wire transfer while claiming to be unavailable by phone",
-      "Supplier emails asking to update their bank account details for upcoming invoices",
-      "Sender email domain has minor typo (e.g. companny.com vs company.com)",
-      "High urgency pushing to bypass standard dual-authorization protocols",
-      "Instructions request strict confidentiality from other executives"
-    ],
-    kyaKarein: [
-      "Always verify bank detail change requests through an independent telephone callback using verified phone numbers",
-      "Enforce mandatory multi-person approval for all wire transfers above established thresholds",
-      "Implement DMARC, DKIM, and SPF email authentication records"
-    ]
-  },
-  {
-    id: "sim-swap-identity-takeover-classic",
-    slug: "sim-swap-identity-takeover-classic",
-    icon: "📱",
-    name: "SIM Swap / Phone Number Hijack Attack",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Call",
-    score: 97,
-    desc: "Criminals use forged ID to convince mobile carrier to port victim's phone number to new SIM, intercepting all 2FA banking codes.",
-    sampleMsg: "Emergency: Your SIM card has lost network signal. 'No Service' displayed on your phone.",
-    kaiseHotaHai: "1. Scammer collects victim's identity details from data breaches.\n2. Impersonates victim at mobile carrier store claiming lost phone.\n3. Carrier activates number on scammer's SIM; victim's phone loses signal while scammer resets all bank passwords via SMS OTP.",
-    redFlags: [
-      "Your mobile phone suddenly loses cellular network reception and displays 'No Service' in an area with good coverage",
-      "Receiving unexpected carrier SMS confirming SIM replacement or port request",
-      "Receiving notifications of unauthorized password reset attempts",
-      "Unable to place phone calls or receive SMS authentication codes",
-      "Immediate alerts of bank password changes"
-    ],
-    kyaKarein: [
-      "If your phone unexpectedly loses signal, contact your mobile carrier immediately from another device",
-      "Set up a secondary carrier PIN/passcode required for any SIM swap or porting requests",
-      "Switch from SMS two-factor authentication to hardware security keys (YubiKey) or authenticator apps"
-    ]
-  },
-  {
-    id: "two-factor-auth-fatigue-bombing-classic",
-    slug: "two-factor-auth-fatigue-bombing-classic",
-    icon: "🔔",
-    name: "MFA / 2FA Prompt Fatigue Bombing Attack",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 96,
-    desc: "Attackers bombard victim's phone with dozens of login push notifications at 2 AM, hoping victim taps 'Approve' to stop alerts.",
-    sampleMsg: "Approve sign-in request on your phone? Push notification repeated 40 times in 10 minutes.",
-    kaiseHotaHai: "1. Attackers obtain leaked corporate password.\n2. Trigger automated push authentication requests repeatedly in middle of night.\n3. Victim awakens, becomes annoyed or confused, and taps 'Approve' to silence phone, letting hacker in.",
-    redFlags: [
-      "Receiving dozens of two-factor authentication push prompts you did not initiate",
-      "Prompts arriving late at night or during non-working hours",
-      "Follow-up call or text pretending to be company IT telling you to accept the prompt to stop spam",
-      "Prompts originating from an unfamiliar city or IP address",
-      "Immediate alert of active new session login"
-    ],
-    kyaKarein: [
-      "NEVER tap 'Approve' on an unexpected authentication push notification",
-      "Tap 'Deny' or 'Report Fraud' immediately",
-      "Change your primary account password immediately from a secure computer"
-    ]
-  },
-  {
-    id: "apple-id-account-security-lock-classic",
-    slug: "apple-id-account-security-lock-classic",
-    icon: "🍏",
-    name: "Apple ID Account Security Lock Phishing",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 93,
-    desc: "SMS claiming your Apple ID has been locked due to unauthorized login attempts, linking to counterfeit iCloud portal.",
-    sampleMsg: "Apple Support: Your Apple ID is locked for security reasons. Verify your account within 12 hours at https://appleid-support-auth.com",
-    kaiseHotaHai: "1. Mass SMS blast sent to iPhone users.\n2. Phishing portal looks identical to Apple ID login page.\n3. Captures Apple credentials, unlocking stolen iCloud backups and devices.",
-    redFlags: [
-      "SMS arrives from an unverified 10-digit number rather than official 'Apple' header",
-      "URL is not appleid.apple.com or apple.com",
-      "Demands credit card verification and security questions to unlock account",
-      "Threatens permanent deletion of photos and iCloud files",
-      "Page asks for device passcode"
-    ],
-    kyaKarein: [
-      "Inspect Apple ID status directly inside iPhone Settings app",
-      "Never log in to Apple ID through links received in text messages",
-      "Forward phishing SMS to reportphishing@apple.com"
-    ]
-  },
-  {
-    id: "netflix-payment-failed-card-classic",
-    slug: "netflix-payment-failed-card-classic",
-    icon: "🍿",
-    name: "Netflix Payment Failed Card Update Phishing",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 90,
-    desc: "Phishing emails claiming monthly membership failed to process, demanding credit card update to continue streaming.",
-    sampleMsg: "Netflix: We were unable to authorize your monthly payment. Update credit card details at https://netflix-billing-verify.com",
-    kaiseHotaHai: "1. High volume spam sent globally.\n2. Phishing link prompts user for credit card, CVV and billing address.\n3. Card details used for unauthorized online purchases.",
-    redFlags: [
-      "Sender email address is not from @netflix.com",
-      "Greeting says 'Dear Customer' instead of your account name",
-      "Link directs to an external non-Netflix website",
-      "Demands immediate card update to prevent service termination",
-      "Streaming continues to work normally inside official app"
-    ],
-    kyaKarein: [
-      "Open your Netflix app or go to netflix.com directly to check billing status",
-      "Never click billing update links inside unsolicited emails",
-      "Report phishing to phishing@netflix.com"
-    ]
-  },
-  {
-    id: "bank-safety-deposit-locker-audit-classic",
-    slug: "bank-safety-deposit-locker-audit-classic",
-    icon: "🔒",
-    name: "Bank Safety Deposit Locker Inventory Audit",
-    year: 2026,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 91,
-    desc: "Callers pretending to be bank managers claiming locker agreements are outdated post-RBI rules, asking for key numbers and fees.",
-    sampleMsg: "Bank Manager: RBI mandate requires biometric locker re-registration today. Share locker key number & transfer Rs 2,500 inspection fee.",
-    kaiseHotaHai: "1. Fraudster acquires customer list having bank lockers.\n2. Calls customer claiming new RBI locker rules require registration fees.\n3. Convinces victim to transfer verification fee to personal account.",
-    redFlags: [
-      "Caller demands fee transfer via UPI for locker renewal",
-      "Asks for your confidential physical locker number and key details",
-      "Threatens that locker will be broken open by authorities within 48 hours",
-      "Calling from personal mobile phone rather than official bank branch",
-      "Banks execute locker agreements in person at the branch, never over phone"
-    ],
-    kyaKarein: [
-      "Locker agreements and renewals are executed strictly in person at your home branch",
-      "Never transfer locker charges to individual UPI accounts",
-      "Visit branch manager directly to verify any circulars"
-    ]
-  },
-  {
-    id: "gold-loan-pledging-redemption-classic",
-    slug: "gold-loan-pledging-redemption-classic",
-    icon: "🪙",
-    name: "Gold Loan Pledging Redemption Fraud",
-    year: 2026,
-    isLatest: false,
-    country: "India",
-    category: "Investment",
-    score: 92,
-    desc: "Unlicensed agents offering to pay off your pledged gold loan at Muthoot/Manappuram and return gold for a 10% fee, vanishing with ornaments.",
-    sampleMsg: "Stuck gold loan? We release your pledged gold from Muthoot/Manappuram with 0% interest and return it to you today. Call agent.",
-    kaiseHotaHai: "1. Preys on borrowers struggling to repay gold loans.\n2. Agent accompanies borrower to branch, pays principal to release gold.\n3. Takes physical custody of gold ornaments claiming to take them for assaying, then escapes.",
-    redFlags: [
-      "Agent approaches borrowers outside gold loan branch premises",
-      "Promises to clear high-value gold loans without collateral",
-      "Insists on holding the physical gold ornaments immediately after release",
-      "Has no registered corporate NBFC office or legal contract",
-      "Pressures borrower to accept quick cash balance"
-    ],
-    kyaKarein: [
-      "Never involve third-party touts to redeem pledged gold ornaments",
-      "Deal exclusively with the authorized branch officers inside the branch counter",
-      "If struggling to repay, request formal loan restructuring from the NBFC"
-    ]
-  },
-  {
-    id: "fake-govt-subsidy-solar-panel-classic",
-    slug: "fake-govt-subsidy-solar-panel-classic",
-    icon: "☀️",
-    name: "Fake Government Subsidy Solar Panel Scheme",
-    year: 2026,
-    isLatest: false,
-    country: "India",
-    category: "Govt",
-    score: 89,
-    desc: "Fake PM Surya Ghar rooftop solar websites collecting Rs 2,500 registration fee for free solar panel installations.",
-    sampleMsg: "PM Surya Ghar Yojana: Get 3KW rooftop solar panel 100% free with 300 units free electricity. Register at https://pmsuryaghar-gov.info",
-    kaiseHotaHai: "1. Capitalizes on public solar subsidy schemes.\n2. Phishing portal asks for electricity bill details and processing fee.\n3. Collects registration fees from thousands of homeowners with no solar installation.",
-    redFlags: [
-      "Website URL does not end in official national government domain: pmsuryaghar.gov.in",
-      "Demands online registration fee paid to personal UPI ID",
-      "Promises 100% free rooftop solar without central/state government inspection",
-      "Promoted via chain-forwarded WhatsApp and Facebook group messages",
-      "Vendor is not an empanelled discom solar installer"
-    ],
-    kyaKarein: [
-      "Apply for rooftop solar subsidies only on official national portal: pmsuryaghar.gov.in",
-      "Verify authorized solar vendors through your local electricity distribution company",
-      "Never transfer subsidy processing fees to third-party web portals"
-    ]
-  },
-  {
-    id: "fake-university-degree-verification-classic",
-    slug: "fake-university-degree-verification-classic",
-    icon: "🎓",
-    name: "Fake University Degree Verification Portal",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Shop",
-    score: 88,
-    desc: "Diploma mill websites selling backdated accredited university bachelor/master degrees with fake verification portals.",
-    sampleMsg: "Get UGC / AICTE approved MBA / B.Tech degree in 15 days without exams. 100% verified for government and MNC jobs.",
-    kaiseHotaHai: "1. Targets job candidates seeking quick educational credentials.\n2. Sells forged paper degrees and sets up mock verification portal.\n3. Candidate is terminated from job and prosecuted for criminal forgery during employer background verification.",
-    redFlags: [
-      "Offers degrees without attending classes or appearing for exams",
-      "Promises backdated graduation years",
-      "University verification portal URL is slightly misspelled",
-      "Demands cash payments or transfers to individual bank accounts",
-      "Using fake degrees is a severe criminal offense leading to imprisonment"
-    ],
-    kyaKarein: [
-      "Only earn educational degrees through legitimate universities recognized by UGC/AICTE or national education boards",
-      "Never purchase backdated certificates from degree mills",
-      "Verify university accreditation on official regulatory portal: ugc.ac.in"
-    ]
-  },
-  {
-    id: "crowdfunding-medical-emergency-impersonation-classic",
-    slug: "crowdfunding-medical-emergency-impersonation-classic",
-    icon: "❤️",
-    name: "Crowdfunding Medical Emergency Impersonation",
-    year: 2026,
-    isLatest: false,
-    country: "Global",
-    category: "Govt",
-    score: 90,
-    desc: "Scammers clone legitimate Ketto/Milaap fundraisers for critically ill children, replacing beneficiary bank accounts with their own.",
-    sampleMsg: "Emergency: 3-year-old child fighting for life in ICU. Urgent liver transplant needed. Please donate: ketto-child-care@upi",
-    kaiseHotaHai: "1. Downloads heart-wrenching hospital photos from authentic charity campaigns.\n2. Runs targeted Facebook and Instagram ads with personal payment links.\n3. Siphons public goodwill while ill child receives zero funds.",
-    redFlags: [
-      "Campaign requests direct transfers to individual personal UPI IDs rather than verified crowdfunding gateway",
-      "Hospital contact number provided is unreachable or belongs to a mobile phone",
-      "Photos appear low resolution or appear on multiple conflicting fundraising campaigns",
-      "Refuses to provide hospital inpatient admission registration number (IPD number)",
-      "Ad urges urgent donation within next 3 hours"
-    ],
-    kyaKarein: [
-      "Donate directly through verified crowdfunding platforms (Ketto, Milaap, GoFundMe) using their secure gateway",
-      "Never transfer donation money to unverified personal UPI IDs posted on social media ads",
-      "Verify patient details directly with hospital administration if donating large sums"
-    ]
-  },
-  {
-    id: "gold-ira-rollover-scam-2024",
-    slug: "gold-ira-rollover-scam-2024",
-    icon: "🪙",
-    name: "Gold IRA & Precious Metals Rollover Scam",
-    year: 2024,
-    isLatest: false,
-    country: "USA",
-    category: "Investment",
-    score: 91,
-    desc: "Predatory boiler rooms induce retirees to roll 401(k) accounts into overpriced collectible coins with exorbitant markups.",
-    sampleMsg: "Protect your retirement from dollar collapse. Roll your 401(k) tax-free into physical gold bullions with guaranteed 30% yield.",
-    kaiseHotaHai: "1. Runs conservative fear-based talk radio and TV advertisements.\n2. Pressure salesmen push 'exclusive numismatic coins' with 300% markups.\n3. Victims discover real melt value is a fraction of their retirement balance.",
-    redFlags: [
-      "Fearmongering regarding imminent total US dollar hyperinflation",
-      "Claims numismatic coins are superior to standard bullion",
-      "High-pressure sales calls urging you not to discuss with financial advisor",
-      "Hidden storage and custodian management fees",
-      "Refusal to provide written buyback guarantees"
-    ],
-    kyaKarein: [
-      "Consult an independent, fee-only fiduciary financial advisor before rolling retirement funds",
-      "Verify dealer registration with CFTC (Commodity Futures Trading Commission)",
-      "Report fraudulent precious metal promoters to FTC: ReportFraud.ftc.gov"
-    ]
-  },
-  {
-    id: "rental-vacation-villa-fake-deposit-2023",
-    slug: "rental-vacation-villa-fake-deposit-2023",
-    icon: "🏖️",
-    name: "Fake Holiday Villa & Rental Cottage Scam",
-    year: 2023,
-    isLatest: false,
-    country: "UK",
-    category: "Shop",
-    score: 90,
-    desc: "Fraudulent holiday home listings on clone websites asking for direct bank transfer deposits for luxury villas.",
-    sampleMsg: "Cornwall Luxury Sea Villa: Peak summer week discounted to £850 if paid via direct bank transfer today due to cancellation.",
-    kaiseHotaHai: "1. Steals photos of authentic holiday cottages and creates fake booking site.\n2. Offers steep discounts for booking outside legitimate platforms.\n3. Victim arrives at address on holiday to find it occupied or non-existent.",
-    redFlags: [
-      "Host insists on direct bank transfer rather than booking platform checkout",
-      "Price is 60% cheaper than comparable holiday lets in the same area",
-      "Domain was registered only a few weeks before the listing appeared",
-      "Host communication switches to WhatsApp or personal email",
-      "No customer reviews or suspiciously identical 5-star ratings"
-    ],
-    kyaKarein: [
-      "Always book holiday lets through verified platforms (Airbnb, Booking.com, VRBO) with payment protection",
-      "Never pay rental deposits via direct bank transfer or wire",
-      "Report fake UK rental websites to Action Fraud on 0300 123 2040"
-    ]
-  },
-  {
-    id: "sim-swap-netbanking-takeover-2021",
-    slug: "sim-swap-netbanking-takeover-2021",
-    icon: "📶",
-    name: "SIM Swap & Telco Impersonation Takeover",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 97,
-    desc: "Fraudsters pose as telecom customer service (Airtel/Jio) asking to send 20-digit SIM numbers to migrate to 4G/5G, hijacking your mobile network.",
-    sampleMsg: "Airtel Notice: Your SIM card will be deactivated tonight due to 3G sunset. SMS 'SIM <20-digit-no>' to 121 to upgrade to 5G instantly.",
-    kaiseHotaHai: "1. Phishes your 20-digit SIM card ICCID number via fake upgrade SMS.\n2. Triggers telecom SIM swap, routing all SMS OTPs to scammer's handset.\n3. Drains bank accounts and UPI wallets while victim has zero network signal.",
-    redFlags: [
-      "SMS asking to forward a SIM replacement code to carrier shortcode",
-      "Caller warns your phone service will stop within 2 hours unless you confirm SIM details",
-      "Sudden loss of cellular network reception ('No Service' or 'Emergency Calls Only')",
-      "Requests to read back 20-digit number printed on the back of your SIM card",
-      "Follow-up password reset emails arriving simultaneously"
-    ],
-    kyaKarein: [
-      "If phone shows 'No Service' unexpectedly, contact telecom provider immediately from another phone",
-      "Never share SIM ICCID numbers with anyone claiming to be telecom staff",
-      "Call national cyber helpline 1930 immediately to freeze bank accounts"
-    ]
-  },
-  {
-    id: "crypto-discord-dm-phishing-2022",
-    slug: "crypto-discord-dm-phishing-2022",
-    icon: "💬",
-    name: "Discord NFT & Crypto Bot Direct Message Scam",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Crypto",
-    score: 92,
-    desc: "Compromised Discord bots or fake server administrators send direct messages offering stealth mints or exclusive airdrops.",
-    sampleMsg: "SURPRISE AIRDROP: You won 2.5 ETH whitelist spot! Connect your MetaMask wallet at https://opensea-stealth-whitelist.io within 10 mins.",
-    kaiseHotaHai: "1. Compromises Discord server administrator account via session token hijacking.\n2. Pings '@everyone' with urgent link to fake decentralized app (dApp).\n3. Smart contract contains 'setApprovalForAll' drainer function emptying entire wallet.",
-    redFlags: [
-      "Unsolicited direct message from bot claiming exclusive prize or whitelist",
-      "URL differs from official project domain (e.g. opensea-airdrop.xyz)",
-      "Wallet popup asks for 'Approve All' or Unlimited Token Allowance",
-      "Server chat channels are suddenly muted with only announcement visible",
-      "High urgency timer counting down under 15 minutes"
-    ],
-    kyaKarein: [
-      "Turn off Discord direct messages from server members in privacy settings",
-      "Use hardware wallet with transaction simulation tools (PocketUniverse, ScamSniffer)",
-      "Revoke malicious approvals on Revoke.cash immediately if signed"
-    ]
-  },
-  {
-    id: "fake-echallan-traffic-police-apk-2025",
-    slug: "fake-echallan-traffic-police-apk-2025",
-    icon: "🚗",
-    name: "Fake E-Challan Traffic Police APK Scam",
-    year: 2025,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 96,
-    desc: "SMS claiming unpaid traffic challan on your vehicle containing a link to download a malicious .APK file disguised as Parivahan portal.",
-    sampleMsg: "Traffic Police: Challan of Rs 1,000 pending on vehicle DL01AB1234. Install official e-challan app to pay online: https://echallan-parivahan.apk",
-    kaiseHotaHai: "1. Sends SMS referencing your vehicle registration or random number.\n2. Link initiates download of Trojan APK file requesting SMS read permissions.\n3. Malware intercepts bank OTPs and empties linked bank accounts.",
-    redFlags: [
-      "Link ends in '.apk' file rather than official website page",
-      "Received from regular 10-digit mobile number instead of government sender ID (e.g., AD-PARIVHN)",
-      "Threatens court summons or vehicle seizure within 24 hours",
-      "Phone displays dangerous unknown source installation warning",
-      "App requests device administrator or SMS read privileges"
-    ],
-    kyaKarein: [
-      "Check traffic fines only on official Ministry portal: echallan.parivahan.gov.in",
-      "Never install .apk files received over WhatsApp, SMS or Telegram",
-      "Report fake APK links to National Cyber Crime portal: cybercrime.gov.in"
-    ]
-  },
-  {
-    id: "emirates-id-verification-sms-2025",
-    slug: "emirates-id-verification-sms-2025",
-    icon: "🪪",
-    name: "Emirates ID Suspension & ICP Phishing",
-    year: 2025,
-    isLatest: false,
-    country: "UAE",
-    category: "Message",
-    score: 95,
-    desc: "SMS impersonating UAE Federal Authority (ICP) claiming your Emirates ID is suspended and will result in bank account freezing.",
-    sampleMsg: "ICP UAE Notice: Your Emirates ID has expired and banking access will freeze in 24 hours. Update your biometric profile at https://icp-emirates-portal.vip",
-    kaiseHotaHai: "1. Scammers spoof ICP, Dubai Police or Central Bank of UAE.\n2. Phishing form captures Emirates ID, credit card number and SMS OTP.\n3. Siphons funds through unauthorized overseas merchant transactions.",
-    redFlags: [
-      "Urgent threat that your bank account and visa will be cancelled",
-      "SMS contains suspicious shortened link or non-government top-level domain (.vip, .me)",
-      "Demands credit card or debit card details to 'verify' government ID",
-      "Sender number is an international code or unauthorized shortcode",
-      "ICP and UAE banks never ask for card PINs or passwords via SMS"
-    ],
-    kyaKarein: [
-      "Verify Emirates ID status exclusively on official portal: icp.gov.ae or UAE PASS app",
-      "Never enter credit card details on SMS links",
-      "Report phishing incidents to Dubai Police via eCrime: ecrime.ae"
-    ]
-  },
-  {
-    id: "ehsaas-rashan-riayat-phishing-2022",
-    slug: "ehsaas-rashan-riayat-phishing-2022",
-    icon: "🌾",
-    name: "Ehsaas Rashan Riayat Subsidy Phishing",
-    year: 2022,
-    isLatest: false,
-    country: "Pakistan",
-    category: "Message",
-    score: 91,
-    desc: "SMS pretending to offer free grocery subsidy or cash ration from Ehsaas program, asking for registration fees via EasyPaisa or JazzCash.",
-    sampleMsg: "Ehsaas Rashan Program: Aapko mahana Rs 4,500 rashan subsidy manzoor ho gayi hai. Helpline 0312-XXXXXXX par call kar ke biometric register karwayen.",
-    kaiseHotaHai: "1. Scammers broadcast thousands of fake subsidy notifications.\n2. Victims call back and are instructed to send Rs 500-1,000 'processing fee'.\n3. Fraudsters block the victim immediately after receiving mobile wallet transfer.",
-    redFlags: [
-      "Message comes from private mobile phone number rather than 8171 official shortcode",
-      "Asks for advance fee or recharge card codes to activate benefit",
-      "Claims subsidy approved without prior official application",
-      "Demands your JazzCash/EasyPaisa MPIN code",
-      "Operator speaks informally and pushes for instant money transfer"
-    ],
-    kyaKarein: [
-      "All legitimate Ehsaas/BISP messages come ONLY from 8171 shortcode",
-      "Government assistance programs never ask for registration fees or mobile balance recharge",
-      "Report fraud numbers to FIA Cyber Crime wing: complaint.fia.gov.pk"
-    ]
-  },
-  {
-    id: "puppy-adoption-shipping-fee-2020",
-    slug: "puppy-adoption-shipping-fee-2020",
-    icon: "🐶",
-    name: "Puppy Adoption & Pet Courier Scam",
-    year: 2020,
-    isLatest: false,
-    country: "USA",
-    category: "Shop",
-    score: 88,
-    desc: "Fake online pet breeders offer free or low-cost puppies but demand mounting fees for climate-controlled crates and quarantine insurance.",
-    sampleMsg: "French Bulldog puppy ready for adoption! Just pay $150 shipping fee to specialized pet courier service for doorstep delivery.",
-    kaiseHotaHai: "1. Uses stolen puppy pictures on fake pet adoption website.\n2. Buyer pays initial shipping fee via Zelle or wire transfer.\n3. Fake courier demands additional $800 for 'temperature-controlled crate insurance' that will supposedly be refunded.",
-    redFlags: [
-      "Breeder refuses in-person visit or live video call with puppy and mother",
-      "Payment requested through non-reversible methods (Zelle, Cash App, wire)",
-      "Escalating unexpected fees for pet insurance, custom crate or COVID health permits",
-      "Puppy pictures found on multiple conflicting pet listings via reverse image search",
-      "Prices are unnaturally low for purebred dogs"
-    ],
-    kyaKarein: [
-      "Never buy a pet without seeing it in person or via live video call with the breeder",
-      "Adopt from local accredited animal shelters or verified humane societies",
-      "Report fake puppy sellers to BBB Scam Tracker and FTC"
-    ]
-  },
-  {
-    id: "student-loan-debt-forgiveness-imposter-2023",
-    slug: "student-loan-debt-forgiveness-imposter-2023",
-    icon: "🎓",
-    name: "Student Loan Debt Relief Impersonation",
-    year: 2023,
-    isLatest: false,
-    country: "USA",
-    category: "Govt",
-    score: 93,
-    desc: "Robocalls and emails claiming to be Federal Student Aid (FSA) offering immediate complete loan discharge for an upfront enrollment fee.",
-    sampleMsg: "President Biden Student Debt Relief: Your $20,000 loan discharge is pending signature. Call 1-888-XXX to complete enrollment before deadline.",
-    kaiseHotaHai: "1. Capitalizes on news coverage regarding federal student debt relief policies.\n2. Scammers harvest FSA ID logins and social security numbers.\n3. Victims pay hundreds in bogus monthly 'processing fees' while their real loan enters default.",
-    redFlags: [
-      "Promises immediate total loan cancellation or forgiveness for a fee",
-      "Asks for your Federal Student Aid (FSA) username and password",
-      "Claims official affiliation with Department of Education from third-party company",
-      "Urges immediate action before 'temporary relief program expires'",
-      "Instructs you to cut off communication with your real loan servicer (e.g. MOHELA, Nelnet)"
-    ],
-    kyaKarein: [
-      "Manage federal loans only at official government portal: StudentAid.gov",
-      "Federal loan forgiveness applications are always 100% free through the Department of Education",
-      "Report fraudulent debt relief calls to FTC: ReportFraud.ftc.gov"
-    ]
-  },
-  {
-    id: "whatsapp-pink-apk-malware-2021",
-    slug: "whatsapp-pink-apk-malware-2021",
-    icon: "🌸",
-    name: "WhatsApp Pink Fake Theme APK Malware",
-    year: 2021,
-    isLatest: false,
-    country: "India",
-    category: "Link",
-    score: 94,
-    desc: "Viral broadcast link claiming to upgrade WhatsApp into an exclusive pink theme with new features, installing Android trojan spyware.",
-    sampleMsg: "Official WhatsApp Pink Update: Enjoy new theme and secret features! Download official update here: https://whatsapp-pink-official.apk",
-    kaiseHotaHai: "1. Spreads virally through infected contacts auto-replying on WhatsApp.\n2. App hides its launcher icon after installation and gains background permissions.\n3. Exfiltrates saved photos, contacts, keystrokes and SMS banking OTPs.",
-    redFlags: [
-      "Offers unofficial WhatsApp themes or modified APK versions outside Google Play Store",
-      "Promoted via chain broadcast forwards from friends whose phones are already infected",
-      "Requests excessive permissions: SMS read, contacts access, notification listener",
-      "App icon vanishes from home screen immediately following installation",
-      "Phone shows rapid battery drain and sluggish performance"
-    ],
-    kyaKarein: [
-      "Uninstall suspect app immediately from Settings -> Apps & Notifications",
-      "Only install WhatsApp and updates from Google Play Store or Apple App Store",
-      "Scan device with Google Play Protect or trusted mobile antivirus"
-    ]
-  },
-  {
-    id: "work-from-home-amazon-product-review-2024",
-    slug: "work-from-home-amazon-product-review-2024",
-    icon: "⭐",
-    name: "E-Commerce Product Review & Rating Task Scam",
-    year: 2024,
-    isLatest: false,
-    country: "Global",
-    category: "Job",
-    score: 93,
-    desc: "Recruiters offer high daily pay for writing fake 5-star product reviews on Amazon or Sephora, requiring financial deposit for 'product optimization'.",
-    sampleMsg: "Amazon Vendor Partner: Earn $200-$400 daily testing and reviewing new merchant products. No experience needed, work 30 minutes from home.",
-    kaiseHotaHai: "1. Victim completes 3 easy sample review tasks and earns small $20 withdrawal to build trust.\n2. Assigned high-value 'VIP merchant task' requiring personal deposit to unlock commission.\n3. Platform freezes account demanding higher tier deposits until victim runs out of funds.",
-    redFlags: [
-      "Pays extraordinarily high rate for trivial 5-star rating clicks",
-      "Contact initiated via cold WhatsApp or Telegram message from unknown international number",
-      "Requires transferring your own money to complete order fulfillment tasks",
-      "Dashboard website uses broken English and has no verified company contact details",
-      "Withdrawal buttons throw 'tax clearance' or 'security deposit' errors"
-    ],
-    kyaKarein: [
-      "Never pay money to start or complete tasks for any employer or freelance portal",
-      "Legitimate e-commerce companies strictly prohibit paying users for product reviews",
-      "Block recruiter number and report profile on WhatsApp/Telegram"
-    ]
-  },
-  {
-    id: "boiler-room-cold-calling-shares-2018",
-    slug: "boiler-room-cold-calling-shares-2018",
-    icon: "📉",
-    name: "Boiler Room Share & High-Yield Bond Scam",
-    year: 2018,
-    isLatest: false,
-    country: "UK",
-    category: "Investment",
-    score: 92,
-    desc: "Unsolicited cold callers masquerading as City of London brokers promote worthless or non-existent offshore company shares with promised buyout.",
-    sampleMsg: "Exclusive pre-IPO opportunity: Green energy tech stock poised for 400% gain on NASDAQ debut next quarter. Available to accredited investors only.",
-    kaiseHotaHai: "1. Obtains share registers and targets senior investors with cold calls.\n2. Uses aggressive psychological manipulation and fake glossy brochures.\n3. Once purchased, victim discovers shares are unlisted, restricted and completely untradeable.",
-    redFlags: [
-      "Unsolicited phone call out of the blue about investment opportunities",
-      "Promises guaranteed high returns with zero market downside risk",
-      "High-pressure closing tactics: 'Must buy today before prospectus closes'",
-      "Broker firm is not authorized on the Financial Conduct Authority (FCA) Register",
-      "Seller asks you to keep the investment confidential from family"
-    ],
-    kyaKarein: [
-      "Always check the FCA Warning List and Financial Services Register (register.fca.org.uk)",
-      "Hang up on unsolicited cold callers offering investment products",
-      "Report illegal boiler room operations to Action Fraud UK"
-    ]
-  },
-  {
-    id: "fake-ac-service-summer-scam-2023",
-    slug: "fake-ac-service-summer-scam-2023",
-    icon: "❄️",
-    name: "Fake Home AC Gas Leakage & Service Scam",
-    year: 2023,
-    isLatest: false,
-    country: "India",
-    category: "Call",
-    score: 85,
-    desc: "Unverified technicians found on search ads intentionally puncture air conditioner copper coils or fake gas pressure gauges to extort Rs 4,000-8,000.",
-    sampleMsg: "Urban Service AC Repair: Full deep jet cleaning + gas top-up only Rs 499 today! Call 098XXXXXXXX for same-day technician visit.",
-    kaiseHotaHai: "1. Unscrupulous technicians post cheap Rs 499 service ads on Google search.\n2. In home, secretly releases refrigerant gas or damages capacitor.\n3. Tells customer compressor will burn out unless they pay Rs 5,500 immediately for gas refilling.",
-    redFlags: [
-      "Extremely cheap initial inspection quote (Rs 199-499) designed as a bait",
-      "Technician prevents homeowner from observing outdoor unit inspection",
-      "Shows pressure gauge without connecting proper manifold valves",
-      "Demands cash payment without providing GST invoice or official warranty card",
-      "Technician phone number is unlisted on official brand service directory"
-    ],
-    kyaKarein: [
-      "Book AC maintenance only through verified brand service portals (Daikin, Voltas, LG) or reputed apps (Urban Company)",
-      "Always inspect old parts before agreeing to replacement",
-      "Insist on an official GST invoice and warranty on gas refills"
-    ]
-  },
-  {
-    id: "instagram-blue-tick-phishing-2022",
-    slug: "instagram-blue-tick-phishing-2022",
-    icon: "☑️",
-    name: "Instagram & Meta Verified Badge Phishing",
-    year: 2022,
-    isLatest: false,
-    country: "Global",
-    category: "Link",
-    score: 89,
-    desc: "Direct messages or emails claiming your profile is approved for a free verified blue badge, directing you to a phishing login portal.",
-    sampleMsg: "Meta Support: Congratulations! Your account has been approved for the Verified Badge. Fill out form to claim within 24h: https://instagram-meta-badge.com",
-    kaiseHotaHai: "1. Targets influencers and small business owners with automated direct messages.\n2. Phishing link replicates Meta account center login.\n3. Instantly changes 2FA phone number and email, demanding ransom to recover account.",
-    redFlags: [
-      "Direct message claiming to be Instagram Support or Meta Verification Team",
-      "Domain is not instagram.com or meta.com (e.g. meta-verify-form.info)",
-      "Threatens that failure to verify will delete your account",
-      "Asks for account password and two-factor authentication backup codes",
-      "Official Meta verification is applied through in-app settings only"
-    ],
-    kyaKarein: [
-      "Apply for verification only inside official Instagram App -> Settings -> Account -> Request Verification",
-      "Enable App-based Two-Factor Authentication (Google Authenticator) instead of SMS",
-      "Never click external links promising verified badges"
-    ]
-  },
-  {
-    id: "toll-tag-unpaid-transponder-sms-2025",
-    slug: "toll-tag-unpaid-transponder-sms-2025",
-    icon: "🛣️",
-    name: "National Highway Fastag / Toll Tag Unpaid Phishing",
-    year: 2025,
-    isLatest: false,
-    country: "Global",
-    category: "Message",
-    score: 94,
-    desc: "Mass text warning your toll transponder (Fastag, SunPass, FasTrak, Dartford) is blacklisted due to unpaid $5.50 toll, directing to credit card drainer.",
-    sampleMsg: "Toll Services Alert: Your vehicle transponder has a delinquent charge of $5.45. Settle before midnight to avoid $100 penalty: https://highway-toll-resolve.top",
-    kaiseHotaHai: "1. Mass smishing attacks trigger during holiday travel weekends.\n2. Phishing landing page looks identical to state highway authority portal.\n3. Collects debit card details and immediately attempts unauthorized cash advances.",
-    redFlags: [
-      "Urgent midnight deadline threatening license suspension or vehicle impound",
-      "Sent from personal mobile phone number or strange country code (+63, +44, +91)",
-      "URL has unusual domain extension instead of official state dot-gov portal",
-      "Does not specify vehicle license plate or exact toll plaza location",
-      "Received even if you have not driven on toll roads recently"
-    ],
-    kyaKarein: [
-      "Check toll balances directly on official agency app or dot-gov website",
-      "Never click links in toll collection text messages",
-      "Block and report message sender to telecom spam reporting line"
-    ]
+    "id": "Google News",
+    "name": "Google News (2026)"
   }
 ];
 
-// Helper to get total count
-window.GLOBAL_SCAMS_COUNT = window.GLOBAL_SCAMS_DATABASE.length;
+window.SCAMPEDIA_CATEGORIES = [
+  {
+    "slug": "investment-crypto",
+    "name": "Investment & Crypto",
+    "icon": "\ud83e\ude99",
+    "count": 41
+  },
+  {
+    "slug": "job-employment",
+    "name": "Job & Employment",
+    "icon": "\ud83d\udcbc",
+    "count": 32
+  },
+  {
+    "slug": "phishing-message",
+    "name": "Phishing / Message / Link",
+    "icon": "\ud83d\udce9",
+    "count": 38
+  },
+  {
+    "slug": "call-impersonation",
+    "name": "Call & Impersonation",
+    "icon": "\ud83d\udcde",
+    "count": 32
+  },
+  {
+    "slug": "romance-sextortion",
+    "name": "Romance & Sextortion",
+    "icon": "\ud83d\udc94",
+    "count": 22
+  },
+  {
+    "slug": "shopping-ecommerce",
+    "name": "Shopping & Online Store",
+    "icon": "\ud83d\uded2",
+    "count": 32
+  },
+  {
+    "slug": "govt-lottery",
+    "name": "Govt & Lottery",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "count": 27
+  },
+  {
+    "slug": "banking-financial",
+    "name": "Financial / Banking",
+    "icon": "\ud83c\udfe6",
+    "count": 32
+  },
+  {
+    "slug": "tech-ransomware",
+    "name": "Ransomware / Malware / Tech",
+    "icon": "\ud83d\udcbb",
+    "count": 22
+  },
+  {
+    "slug": "classic-tricks",
+    "name": "Classic / Confidence Tricks (Wikipedia)",
+    "icon": "\ud83c\udfad",
+    "count": 25
+  }
+];
 
+window.GLOBAL_SCAMS_DATABASE = [
+  {
+    "id": "classic-ponzi-scheme-classic",
+    "slug": "classic-ponzi-scheme-classic",
+    "icon": "\ud83e\ude99",
+    "name": "Classic Ponzi Scheme",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 99,
+    "desc": "Fraudulent investing scam generating returns for earlier investors with funds taken from newer investors rather than legitimate profits.",
+    "sampleMsg": "Guaranteed 50% return in 45 days. Fully insured offshore arbitrage certificate with zero risk.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Promoters promise unprecedented consistent returns.\n2. Inflows from new recruits pay artificial dividends to early participants.\n3. The scheme collapses when new investor recruitment slows down.",
+    "redFlags": [
+      "Guaranteed high investment returns with little or no risk",
+      "Overly consistent positive returns regardless of market fluctuations",
+      "Unregistered investments not verified with SEC, FCA or SEBI",
+      "Secretive or complex investment strategies promoters refuse to explain",
+      "Difficulty receiving payments or withdrawing your principal capital"
+    ],
+    "kyaKarein": [
+      "Never invest in schemes guaranteeing fixed double-digit monthly returns",
+      "Check if the investment company is licensed on official regulatory registers",
+      "Report fraudulent schemes to national securities commissions"
+    ]
+  },
+  {
+    "id": "pyramid-scheme-mlm-recruitment-trap-classic",
+    "slug": "pyramid-scheme-mlm-recruitment-trap-classic",
+    "icon": "\ud83d\udd3a",
+    "name": "Pyramid Scheme & MLM Recruitment Trap",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Unsustainable business model where participants earn primarily by enrolling new members rather than selling genuine goods or services.",
+    "sampleMsg": "Buy our $500 elite starter kit, recruit 3 friends into your downline and earn $10,000 monthly passive income.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Victims are pressured to buy overpriced starter kits or memberships.\n2. Compensation plans heavily reward signing up additional members.\n3. Over 99% of participants lose their entire buy-in fee.",
+    "redFlags": [
+      "Primary emphasis on recruiting other members rather than retail product sales",
+      "High upfront membership or compulsory inventory purchase fees",
+      "Promises of rapid wealth and passive recurring commissions",
+      "Complex hierarchy commissions requiring constant downline expansion",
+      "Aggressive high-pressure seminar and webinar recruitment"
+    ],
+    "kyaKarein": [
+      "Carefully calculate whether earnings come from product sales or headcount recruitment",
+      "Check BBB and FTC alert registries for previous company citations",
+      "Walk away from opportunities that mandate buying expensive starter packages"
+    ]
+  },
+  {
+    "id": "bitconnect-1-daily-compound-interest-scheme-2018",
+    "slug": "bitconnect-1-daily-compound-interest-scheme-2018",
+    "icon": "\ud83e\udd16",
+    "name": "BitConnect 1% Daily Compound Interest Scheme",
+    "year": 2018,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 99,
+    "desc": "High-yield investment program (HYIP) promising up to 40% monthly returns via a mythical volatility trading bot.",
+    "sampleMsg": "Lend your Bitcoin to our BitConnect Trading Bot and earn guaranteed 1% daily interest compounding up to $300,000.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Promoters urged users to exchange BTC for proprietary BCC tokens.\n2. Tiered lending locks kept investor funds frozen for months.\n3. Token crashed to near zero following cease-and-desist orders, wiping out billions.",
+    "redFlags": [
+      "Promise of daily compound interest exceeding 1% per day",
+      "Proprietary trading bot whose algorithmic strategy cannot be audited",
+      "Requirement to swap liquid cryptocurrencies for proprietary locked tokens",
+      "Aggressive multi-tier affiliate referral rewards",
+      "Promoter flashy lifestyle demonstrations and conference hype"
+    ],
+    "kyaKarein": [
+      "Recognize that guaranteed 1% daily return implies 3,700% annual return which is mathematically impossible",
+      "Never lock funds into proprietary tokens with no external liquidity",
+      "Report crypto lending scams to FBI IC3: ic3.gov"
+    ]
+  },
+  {
+    "id": "pig-butchering-sha-zhu-pan-crypto-romance-scam-2026",
+    "slug": "pig-butchering-sha-zhu-pan-crypto-romance-scam-2026",
+    "icon": "\ud83d\udc94",
+    "name": "Pig Butchering (Sha Zhu Pan) Crypto Romance Scam",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 99,
+    "desc": "Industrialized fraud where romance contacts spend weeks building intimacy before directing victims into fraudulent AI crypto trading platforms.",
+    "sampleMsg": "My uncle is a senior Goldman Sachs quant; he gave me nodes on an internal AI crypto liquidity pool. Let me teach you on WhatsApp.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Scammers reach out via wrong-number texts, dating apps, or LinkedIn.\n2. Build romantic trust over weeks without asking for immediate money.\n3. Direct victim to fake trading platform showing staged profits, then demand 30% tax to withdraw.",
+    "redFlags": [
+      "New romantic contact rapidly steers conversation toward crypto or financial investments",
+      "Platform URL is not a major registered exchange (Coinbase, Binance, Kraken)",
+      "Account shows incredible 30% to 50% weekly gains",
+      "Small initial test withdrawal succeeds seamlessly to build false trust",
+      "Demands 20% to 35% advance 'security tax' or 'anti-money laundering fee' to unlock withdrawal"
+    ],
+    "kyaKarein": [
+      "Never trade on customized URLs suggested by romantic contacts",
+      "Refuse to transfer additional funds to 'unlock' frozen accounts",
+      "Report cryptocurrency wallets and transaction hashes to FBI IC3 and local cyber police"
+    ]
+  },
+  {
+    "id": "crypto-guaranteed-profit-cloud-mining-pool-2024",
+    "slug": "crypto-guaranteed-profit-cloud-mining-pool-2024",
+    "icon": "\u26cf\ufe0f",
+    "name": "Crypto Guaranteed Profit Cloud Mining Pool",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 93,
+    "desc": "Websites offering cloud hash-rate contracts with guaranteed daily crypto mining yields from non-existent server farms.",
+    "sampleMsg": "Rent Antminer S19 Pro cloud hash power! Earn 0.05 BTC daily passive payout directly to your wallet. Contracts from $250.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Displays stock photos of massive data center server racks.\n2. Collects upfront crypto deposits for 1-year hash contracts.\n3. Halts withdrawals after 2 months citing network difficulty hikes.",
+    "redFlags": [
+      "Guaranteed daily Bitcoin or USDT mining returns despite variable mining difficulty",
+      "No verifiable evidence of physical mining hardware or electricity contracts",
+      "Heavy referral commissions for bringing new mining contract purchasers",
+      "Platform operates from anonymous offshore domain with no corporate registration",
+      "Withdrawal fees that constantly escalate"
+    ],
+    "kyaKarein": [
+      "Verify that cloud mining is historically less profitable than simply holding base crypto",
+      "Never purchase cloud contracts from unverified offshore websites",
+      "Report fraudulent cloud mining portals to national cyber authorities"
+    ]
+  },
+  {
+    "id": "fake-crypto-exchange-liquidity-lock-trap-2025",
+    "slug": "fake-crypto-exchange-liquidity-lock-trap-2025",
+    "icon": "\ud83d\udd12",
+    "name": "Fake Crypto Exchange Liquidity Lock Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Cloned cryptocurrency exchanges that accept deposits but freeze account assets behind fabricated verification requirements.",
+    "sampleMsg": "Account Alert: Your $18,400 balance is locked under international KYC laws. Deposit $2,500 security collateral to activate withdrawals.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Victims lured by Telegram crypto trading signals to register on obscure exchange.\n2. Interface displays legitimate-looking charts and inflated balances.\n3. Any withdrawal request triggers endless verification and fee demands.",
+    "redFlags": [
+      "Exchange is not listed on CoinMarketCap or CoinGecko top volume rankings",
+      "Withdrawal requests require paying advance capital rather than deducting from balance",
+      "Support agents communicate exclusively through Telegram or WhatsApp",
+      "Deposit addresses change frequently to personal unhosted wallets",
+      "Domain was registered within the past 90 days"
+    ],
+    "kyaKarein": [
+      "Trade only on regulated exchanges registered with national financial authorities",
+      "Never pay upfront money to release funds already held in an account",
+      "File complaint with FBI IC3 and FTC"
+    ]
+  },
+  {
+    "id": "fake-ai-trading-app-quantum-bot-trap-2026",
+    "slug": "fake-ai-trading-app-quantum-bot-trap-2026",
+    "icon": "\ud83e\udd16",
+    "name": "Fake AI Trading App & Quantum Bot Trap",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 97,
+    "desc": "Deepfake social ads featuring Elon Musk or Sundar Pichai promoting high-frequency AI quantum trading bots with guaranteed 90% win rates.",
+    "sampleMsg": "Elon Musk Project Quantum: Automated AI engine trades market volatility for $1,200 daily profit on $250 initial deposit. Register today.",
+    "source": "Google News 2026",
+    "kaiseHotaHai": "1. Uses deepfake video of tech billionaires on Facebook, YouTube and X.\n2. User submits phone number and receives relentless boiler room phone calls.\n3. Funds deposited to the 'AI platform' are instantly funneled into scammer wallets.",
+    "redFlags": [
+      "Celebrity video shows unnatural lip-syncing or synthetic voice cadence",
+      "Claims automated artificial intelligence generates risk-free trading profits",
+      "Immediate high-pressure phone call from offshore account manager within 5 minutes of sign-up",
+      "Platform requires downloading remote desktop software like AnyDesk",
+      "Refusal to explain how the underlying algorithm manages market downside"
+    ],
+    "kyaKarein": [
+      "Recognize that reputable billionaires do not promote private $250 automated trading schemes",
+      "Never install remote management software on trading guidance calls",
+      "Report deceptive deepfake advertisements to platform moderation"
+    ]
+  },
+  {
+    "id": "nft-stealth-mint-malicious-wallet-drainer-2022",
+    "slug": "nft-stealth-mint-malicious-wallet-drainer-2022",
+    "icon": "\ud83d\uddbc\ufe0f",
+    "name": "NFT Stealth Mint & Malicious Wallet Drainer",
+    "year": 2022,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 94,
+    "desc": "Hacked project social media accounts post fake emergency stealth mints containing smart contract functions that empty connected wallets.",
+    "sampleMsg": "SURPRISE MINT: 500 Free Bored Ape Mutant airdrops available for next 15 minutes! Connect wallet at https://bayc-stealth-whitelist.xyz",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Hijacks project Twitter or Discord through session token theft.\n2. Posts urgent link to cloned minting page.\n3. Transaction prompts victim to sign 'SetApprovalForAll', transferring all NFTs and tokens.",
+    "redFlags": [
+      "Unscheduled mint announced outside official roadmap schedule",
+      "URL uses non-standard domain extension (.xyz, .top, .app)",
+      "Web3 wallet popup requests unlimited asset approval rather than standard gas fee",
+      "Comments and replies are completely turned off on announcement post",
+      "Artificial timer creating FOMO urgency under 15 minutes"
+    ],
+    "kyaKarein": [
+      "Use burner wallets with minimal balances when minting new projects",
+      "Use transaction simulation tools (PocketUniverse, ScamSniffer) to read contract payloads",
+      "Revoke approvals immediately on Revoke.cash if suspect signature was provided"
+    ]
+  },
+  {
+    "id": "telegram-vip-stock-crypto-pump-and-dump-2025",
+    "slug": "telegram-vip-stock-crypto-pump-and-dump-2025",
+    "icon": "\ud83d\udcc8",
+    "name": "Telegram VIP Stock & Crypto Pump-and-Dump",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 93,
+    "desc": "Unregistered stock advisory channels manipulate illiquid penny stocks or low-cap tokens, dumping holdings onto followers at the peak.",
+    "sampleMsg": "SEBI Certified Premium Calls: Buy Penny stock XYZ at Rs 14. Target Rs 85 within 2 weeks! Guaranteed upper circuit breakout.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Operators quietly accumulate large positions in illiquid shares.\n2. Broadcast urgent 'jackpot stock tips' across hundreds of Telegram groups.\n3. Retail buying triggers upper circuit, operators dump entire holdings, trapping investors.",
+    "redFlags": [
+      "Stock tips shared on Telegram or WhatsApp groups with fake SEBI registration certificates",
+      "Recommendation focuses on obscure illiquid micro-cap companies with poor fundamentals",
+      "Guarantees daily upper-circuit profits",
+      "Admin urges instant market orders at 9:15 AM market open",
+      "Admins charge hefty monthly subscription fees for VIP insider signals"
+    ],
+    "kyaKarein": [
+      "Only take investment advice from SEBI Registered Research Analysts (verify on sebi.gov.in)",
+      "Never purchase penny stocks based on viral social media channels",
+      "Report fraudulent advisory channels to SEBI SCORES portal"
+    ]
+  },
+  {
+    "id": "pre-ipo-unlisted-shares-allocation-trap-2024",
+    "slug": "pre-ipo-unlisted-shares-allocation-trap-2024",
+    "icon": "\ud83d\udcd1",
+    "name": "Pre-IPO & Unlisted Shares Allocation Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 94,
+    "desc": "Fraudulent intermediaries offer guaranteed institutional allotments of high-profile unlisted shares, providing forged share transfer slips.",
+    "sampleMsg": "Exclusive HNI Quota: Guaranteed pre-IPO allocation of Tata Technologies / Swiggy shares at 40% discount. Minimum lot Rs 1,00,000.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Advertises discounted shares of trending unicorns preparing for public debut.\n2. Collects funds via current accounts claiming institutional block deals.\n3. Delivers fake DIS (Delivery Instruction Slip) or vanishes before shares credit to demat.",
+    "redFlags": [
+      "Offers pre-IPO shares at steep discounts compared to prevailing grey market premium",
+      "Guarantees 100% allocation regardless of issue subscription demand",
+      "Payment requested into individual or unrelated LLP bank accounts",
+      "Shares do not credit to NSDL/CDSL demat account within standard T+2 settlement",
+      "Broker refuses to provide broker-dealer registration credentials"
+    ],
+    "kyaKarein": [
+      "Acquire unlisted securities only through established, SEBI-registered intermediaries",
+      "Confirm share transfer reflects directly in NSDL/CDSL mobile app before releasing full funds",
+      "Report bogus share brokers to economic offences wing"
+    ]
+  },
+  {
+    "id": "offshore-forex-high-leverage-broker-trap-2023",
+    "slug": "offshore-forex-high-leverage-broker-trap-2023",
+    "icon": "\ud83d\udcb1",
+    "name": "Offshore Forex High-Leverage Broker Trap",
+    "year": 2023,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 92,
+    "desc": "Unregulated offshore brokers offering 1:1000 leverage that manipulate MT4/MT5 price feeds to engineer rapid account liquidations.",
+    "sampleMsg": "Trade EUR/USD and Gold with 1:1000 leverage! 100% deposit bonus plus personal VIP trading mentor. Minimum deposit $100.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Unregulated broker registers in St. Vincent or Vanuatu.\n2. Mentors instruct novice traders into ultra-high leverage trades.\n3. Artificial server slippage and spread widening trigger total margin wipeouts.",
+    "redFlags": [
+      "Offers extreme leverage ratios exceeding 1:500",
+      "Broker is located in unregulated tax havens with zero domestic licensing",
+      "Personal 'account managers' who directly place or advise specific trades",
+      "Spreads artificially widen during volatile news events causing instant stop-outs",
+      "Refusal to process withdrawals under guise of active trading bonuses"
+    ],
+    "kyaKarein": [
+      "Trade forex only with brokers registered under FCA, ASIC, SEC, or national central bank regulations",
+      "Avoid unregulated offshore accounts offering huge deposit matching bonuses",
+      "Report fraudulent trading platforms to national consumer protection watchdogs"
+    ]
+  },
+  {
+    "id": "gold-ira-rare-coin-rollover-scam-2024",
+    "slug": "gold-ira-rare-coin-rollover-scam-2024",
+    "icon": "\ud83e\ude99",
+    "name": "Gold IRA & Rare Coin Rollover Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 91,
+    "desc": "High-pressure boiler rooms convince senior retirees to roll 401(k) retirement funds into collectible coins with 300% markups.",
+    "sampleMsg": "Protect your retirement from dollar hyperinflation. Roll your 401(k) tax-free into certified collectible gold coins with guaranteed buyback.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Fear-based TV and talk radio ads warn of imminent banking collapse.\n2. Salesmen urge rolling 401(k) into 'exclusive numismatic coins'.\n3. Victims discover real melt value is 70% lower than purchase price.",
+    "redFlags": [
+      "Heavy fear-based marketing about impending dollar collapse",
+      "Pushing rare or collectible numismatic coins rather than standard bullion",
+      "Hidden custodian, storage and staggering dealer markups over spot price",
+      "Urges client not to consult existing CPA or independent fiduciary financial advisor",
+      "Oral buyback guarantees that do not exist in written contracts"
+    ],
+    "kyaKarein": [
+      "Consult a fee-only independent fiduciary advisor before moving retirement funds",
+      "Verify dealer background with CFTC and BBB",
+      "Report fraudulent gold dealers to FTC: ReportFraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "fixed-rate-green-energy-fake-bond-scam-2026",
+    "slug": "fixed-rate-green-energy-fake-bond-scam-2026",
+    "icon": "\ud83d\udcc8",
+    "name": "Fixed Rate Green Energy Fake Bond Scam",
+    "year": 2026,
+    "isLatest": true,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Clone websites posing as leading financial institutions offer fake 9.5% capital-protected green ISA bonds.",
+    "sampleMsg": "Barclays Green Bond ISA: Guaranteed 9.8% annual return on government backed green energy infrastructure. Minimum investment \u00a35,000.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Clones legitimate bank branding on comparison engine search ads.\n2. Prospectus looks glossy with fake FCA authorization numbers.\n3. Transferred funds vanish into mule bank accounts controlled by syndicates.",
+    "redFlags": [
+      "Promised fixed interest rate significantly above official central bank base rates",
+      "Claims complete capital protection on high-yield corporate debt",
+      "Bank details for transfer belong to an individual or unrelated limited company",
+      "Pressure to transfer funds before 'bond tranche closes at 5 PM'",
+      "Contact initiated through comparison quote capture forms"
+    ],
+    "kyaKarein": [
+      "Check FCA Financial Services Register (register.fca.org.uk) for official firm telephone numbers",
+      "Never wire investment funds to payee accounts differing from registered firm name",
+      "Report fake bond brochures to Action Fraud on 0300 123 2040"
+    ]
+  },
+  {
+    "id": "pension-liberation-early-cash-release-scam-2023",
+    "slug": "pension-liberation-early-cash-release-scam-2023",
+    "icon": "\ud83c\udfe6",
+    "name": "Pension Liberation & Early Cash Release Scam",
+    "year": 2023,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 98,
+    "desc": "Scammers convince workers under age 55 to transfer pension pots into bogus investments with promised early cash loans, incurring 55% tax fines.",
+    "sampleMsg": "Unlock your pension cash before age 55! Government loophole lets you access up to \u00a340,000 tax-free loan today.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Unsolicited cold calls or text messages offer early pension access.\n2. Pension transferred to high-risk overseas unregulated schemes.\n3. HMRC levies up to 55% unauthorized payment tax charge, and pension principal is lost.",
+    "redFlags": [
+      "Claims you can access pension savings before age 55 legally without illness",
+      "Introducers use phrases like 'pension loan', 'cashback', or 'loophole'",
+      "Free pension reviews offered via cold calls or text messages",
+      "Couriers sent to your home with documents needing immediate signature",
+      "Pension investments routed through complex overseas shell companies"
+    ],
+    "kyaKarein": [
+      "UK law strictly prohibits accessing pension savings before age 55 except in severe terminal illness",
+      "Consult MoneyHelper (moneyhelper.org.uk) before signing any pension transfer",
+      "Report pension cold callers to Action Fraud"
+    ]
+  },
+  {
+    "id": "fake-chit-fund-unauthorized-committee-scheme-2022",
+    "slug": "fake-chit-fund-unauthorized-committee-scheme-2022",
+    "icon": "\ud83e\udd1d",
+    "name": "Fake Chit Fund & Unauthorized Committee Scheme",
+    "year": 2022,
+    "isLatest": false,
+    "country": "India",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 92,
+    "desc": "Unregistered monthly committee or chit funds offering 20% annual returns where organizers abscond once collection pool reaches peak volume.",
+    "sampleMsg": "Join neighborhood gold committee: Pay Rs 5,000 monthly for 20 months. Winner gets Rs 1,50,000 gold voucher guaranteed.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Local organizers collect cash from neighbors and small business owners.\n2. Smooth operations for first 6 months build communal trust.\n3. Organizer vanishes overnight with entire accumulated corpus.",
+    "redFlags": [
+      "Chit fund is not registered under State Chit Funds Act",
+      "No formal auctions held with certified government oversight",
+      "Promoters promise fixed returns rather than variable auction dividends",
+      "Transactions conducted predominantly in cash without receipts",
+      "Organizer offers high interest if prize money is left with them"
+    ],
+    "kyaKarein": [
+      "Participate only in registered chit funds licensed by State Registrar of Chits",
+      "Never deposit savings into unauthorized informal committee pools",
+      "Report absconding operators immediately to local police station"
+    ]
+  },
+  {
+    "id": "onecoin-global-multi-billion-crypto-pyramid-classic",
+    "slug": "onecoin-global-multi-billion-crypto-pyramid-classic",
+    "icon": "\ud83e\ude99",
+    "name": "OneCoin Global Multi-Billion Crypto Pyramid",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 99,
+    "desc": "Notorious pyramid scheme masquerading as a cryptocurrency with no public blockchain, defrauding over $4 billion worldwide.",
+    "sampleMsg": "Buy educational package to receive free OneCoin mining tokens. The Bitcoin Killer will make you a millionaire on private exchange.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Sold educational packages ranging from \u20ac100 to \u20ac118,000.\n2. Displayed fake internal server numbers claiming to be real coin values.\n3. Founder vanished while promoters continued running recruitment rallies.",
+    "redFlags": [
+      "Cryptocurrency does not possess a publicly verifiable open-source blockchain explorer",
+      "Coin can only be transacted on private internal platform, not public exchanges",
+      "Core business is selling 'educational packages' that reward recruitment commissions",
+      "Extreme claims of replacing global banking infrastructure",
+      "Regulatory warnings issued across multiple international jurisdictions"
+    ],
+    "kyaKarein": [
+      "Verify any cryptocurrency has an open, public blockchain (Etherscan, Blockchain.com)",
+      "Never purchase educational packages whose main incentive is token grants",
+      "Heed international regulatory warnings against crypto MLM syndicates"
+    ]
+  },
+  {
+    "id": "squid-game-token-instant-rug-pull-2021",
+    "slug": "squid-game-token-instant-rug-pull-2021",
+    "icon": "\ud83e\udd91",
+    "name": "Squid Game Token Instant Rug Pull",
+    "year": 2021,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 98,
+    "desc": "Meme coin capitalizing on viral Netflix series that engineered smart contracts preventing buyers from selling, draining millions in minutes.",
+    "sampleMsg": "Official Squid Game Play-to-Earn token! Soared 45,000% today on PancakeSwap. Buy now before exchange listings.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Created hype around popular television show.\n2. Smart contract contained anti-dump mechanism that disabled sell functions for public.\n3. Developers dumped treasury reserves and pulled all liquidity pools.",
+    "redFlags": [
+      "Token holders cannot sell on decentralized exchanges (DEX shows error 'Transfer Failed')",
+      "Project claims official affiliation with major studio without proof",
+      "Whitepaper contains spelling errors and unrealistic game reward mechanics",
+      "Developer wallet holds over 70% of total circulating token supply",
+      "Telegram chat is restricted with members unable to post questions"
+    ],
+    "kyaKarein": [
+      "Use Honeypot.is or TokenSniffer to test whether a smart contract allows selling",
+      "Avoid newly minted meme tokens driven solely by viral television trends",
+      "Never invest capital into anonymous developer projects"
+    ]
+  },
+  {
+    "id": "honeypot-smart-contract-token-2022",
+    "slug": "honeypot-smart-contract-token-2022",
+    "icon": "\ud83c\udf6f",
+    "name": "Honeypot Smart Contract Token",
+    "year": 2022,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Deceptive smart contract code allowing incoming purchases while whitelisting only the creator's address for sell orders.",
+    "sampleMsg": "New 100x gem launched! MoonShot Token chart is only going up, zero red candles! Buy on Uniswap now.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Deploys ERC-20 contract with malicious transfer restrictions.\n2. Price chart shows only green buying candles, creating extreme fear of missing out.\n3. Creators drain all accumulated Ethereum liquidity, abandoning buyers.",
+    "redFlags": [
+      "Chart shows 100% buy orders with zero recorded sell transactions",
+      "Contract code is unverified on Etherscan or contains obfuscated logic",
+      "Selling tax is programmed at 99% or requires owner approval",
+      "Liquidity pool is not locked in a reputable third-party locker (Team Finance, Unicrypt)",
+      "Promoted heavily by paid anonymous Twitter influencers"
+    ],
+    "kyaKarein": [
+      "Analyze token contracts with DEXScreener audit tools before swapping",
+      "Verify liquidity is locked for at least 12 months",
+      "Report malicious smart contracts on Etherscan"
+    ]
+  },
+  {
+    "id": "crypto-address-poisoning-zero-value-transfer-2025",
+    "slug": "crypto-address-poisoning-zero-value-transfer-2025",
+    "icon": "\ud83e\uddea",
+    "name": "Crypto Address Poisoning & Zero-Value Transfer",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 93,
+    "desc": "Scammers generate vanity wallet addresses matching the first and last 4 characters of your regular recipients, sending 0 USDT transactions to trick copy-paste habits.",
+    "sampleMsg": "Transaction history alert: 0.0001 USDT received from 0x71a...92bF (vanity spoofed address matching your exchange deposit).",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Bots monitor blockchain for frequent transfers between addresses.\n2. Generate lookalike address sharing identical starting and ending characters.\n3. Sends dust transaction so lookalike address shows at top of victim's transaction history.",
+    "redFlags": [
+      "Unsolicited 0-value or microscopic token transfer appearing in wallet history",
+      "Sender address has identical start and end characters to someone you transact with regularly",
+      "Incoming transaction has no accompanying memo or communication",
+      "Hacker relies on victims copying addresses from wallet transaction lists rather than contact book",
+      "Happens frequently on high-speed chains (Tron, Polygon, BSC)"
+    ],
+    "kyaKarein": [
+      "Always verify every single character of a destination address, not just first and last 4",
+      "Use saved address book entries with hardware wallet screen confirmation",
+      "Never copy wallet addresses from recent transaction history"
+    ]
+  },
+  {
+    "id": "defi-liquidity-pool-flash-loan-exploit-trap-2024",
+    "slug": "defi-liquidity-pool-flash-loan-exploit-trap-2024",
+    "icon": "\u26a1",
+    "name": "DeFi Liquidity Pool Flash Loan Exploit Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Phishing sites promoting automated flash loan arbitrage bots that instruct users to execute code that transfers wallet balances to attacker.",
+    "sampleMsg": "Earn 5 ETH daily with Flash Loan Arbitrage! Copy this Remix Ethereum smart contract code and execute without coding knowledge.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. YouTube tutorial explains supposed zero-risk flash loan arbitrage.\n2. Provides pre-written Solidity script for users to paste into Remix IDE.\n3. Script contains hidden function routing deposited startup gas directly to hacker.",
+    "redFlags": [
+      "Promises effortless automated flash loan arbitrage profits for non-developers",
+      "Requires deploying pre-written Solidity contract code found on YouTube description",
+      "Code contains encoded hex string that conceals destination transfer wallet",
+      "Comments on tutorial video are heavily astroturfed with fake bot testimonials",
+      "Instruction emphasizes funding contract with minimum 0.5 ETH for 'liquidity depth'"
+    ],
+    "kyaKarein": [
+      "Never deploy smart contract code you did not write or have professionally audited",
+      "Recognize that real flash loan arbitrage requires ultra-low latency infrastructure, not public YouTube scripts",
+      "Report scam tutorial videos on YouTube"
+    ]
+  },
+  {
+    "id": "binary-options-offshore-broker-rigging-2021",
+    "slug": "binary-options-offshore-broker-rigging-2021",
+    "icon": "\u23f1\ufe0f",
+    "name": "Binary Options Offshore Broker Rigging",
+    "year": 2021,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 94,
+    "desc": "Online platforms offering 60-second all-or-nothing binary bets on currency pairs that manipulate execution prices to guarantee trader losses.",
+    "sampleMsg": "Predict currency movement in 60 seconds! Win 90% payout on every trade. Free $10,000 demo balance upon sign-up.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Demo account is rigged to show 90% win rates to build false confidence.\n2. When real money is deposited, execution delays and altered price feeds force losses.\n3. Withdrawals of remaining balances are refused.",
+    "redFlags": [
+      "Binary options are completely banned or restricted by regulators (FCA, ESMA, ASIC)",
+      "Demo account generates unrealistic winning streaks not replicated in real accounts",
+      "Platform refuses withdrawals unless trader hits massive impossible turnover volume",
+      "Aggressive phone calls from account managers pushing for five-figure deposits",
+      "Broker based in unregulated Caribbean or Pacific island jurisdictions"
+    ],
+    "kyaKarein": [
+      "Avoid binary options platforms as they are widely banned globally due to extreme fraud rates",
+      "Never accept account management assistance from broker representatives",
+      "Report illicit binary platforms to financial intelligence units"
+    ]
+  },
+  {
+    "id": "prime-bank-guarantee-fraud-classic",
+    "slug": "prime-bank-guarantee-fraud-classic",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "name": "Prime Bank Guarantee Fraud",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 97,
+    "desc": "Elite financial swindle claiming access to secret trading programs in standby letters of credit (SBLC) from the world's top 25 prime banks.",
+    "sampleMsg": "Private Placement Opportunity: Trade IMF backed Prime Bank Debentures. 200% annualized return reserved for accredited institutions.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Fraudsters use complex terminology: 'discounted bank debentures', 'roll programs'.\n2. Demand six-figure escrow deposits to access secret secondary markets.\n3. The instruments and markets do not exist; funds are immediately embezzled.",
+    "redFlags": [
+      "Mentions secret 'prime bank guarantees', 'standby letters of credit' or 'high-yield roll programs'",
+      "Claims official backing by World Bank, Federal Reserve, or International Monetary Fund",
+      "Imposes extreme non-disclosure agreements forbidding discussion with trusted attorneys",
+      "Promises triple-digit returns backed by top global commercial institutions",
+      "Targets wealthy accredited investors, church endowments, and municipal funds"
+    ],
+    "kyaKarein": [
+      "Remember that major world central banks and the IMF have repeatedly issued warnings: Prime Bank programs are 100% fictitious",
+      "Consult experienced institutional legal counsel before committing escrow funds",
+      "Report solicitations to the FBI Financial Crimes section"
+    ]
+  },
+  {
+    "id": "high-yield-investment-program-hyip-syndicate-2020",
+    "slug": "high-yield-investment-program-hyip-syndicate-2020",
+    "icon": "\ud83d\udcca",
+    "name": "High-Yield Investment Program (HYIP) Syndicate",
+    "year": 2020,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Unregistered investment platforms promising 2% to 5% daily returns from mysterious automated forex or sports betting arbitrage.",
+    "sampleMsg": "Earn 3.5% daily for 60 calendar days! Principal back anytime. Automated sports arbitrage hedge fund.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Attractive template website launched with fake UK Companies House certificate.\n2. Pays initial daily interest to lure larger deposits and referral word-of-mouth.\n3. Website goes offline after 60-90 days, operators rebrand under new name.",
+    "redFlags": [
+      "Daily return rate between 1% and 5% with promised capital return",
+      "Shows fake certificate of incorporation from UK Companies House (readily bought for \u00a312)",
+      "Payment accepted strictly in non-refundable crypto (Bitcoin, Perfect Money, USDT)",
+      "Promoter relies on monitoring sites (HYIP monitors) rating platforms 'Paying'",
+      "No verifiable physical management team or public auditing"
+    ],
+    "kyaKarein": [
+      "Understand that all HYIP programs are mathematical Ponzi structures designed to collapse",
+      "Never deposit funds into platforms promising daily percentage interest",
+      "Report HYIP portals to national fraud reporting desks"
+    ]
+  },
+  {
+    "id": "boiler-room-cold-calling-share-trap-2018",
+    "slug": "boiler-room-cold-calling-share-trap-2018",
+    "icon": "\ud83d\udcde",
+    "name": "Boiler Room Cold-Calling Share Trap",
+    "year": 2018,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Aggressive overseas telephone brokers using high-pressure psychological tactics to sell worthless, untradeable, or non-existent shares.",
+    "sampleMsg": "City of London Brokerage: Exclusive pre-IPO allocation in lithium extraction technology. 400% gain guaranteed upon Nasdaq listing next month.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Obtains shareholder lists and cold calls experienced senior investors.\n2. Uses scripted high-pressure sales routines over several weeks.\n3. Victim purchases shares that are restricted, unlisted, and impossible to liquidate.",
+    "redFlags": [
+      "Unsolicited telephone call regarding investment opportunities",
+      "Pressure to make immediate investment decisions before market close",
+      "Firm is not listed on Financial Conduct Authority (FCA) register",
+      "Overseas address with UK virtual forwarding phone number",
+      "Salesman insists on total confidentiality from family and regular financial advisors"
+    ],
+    "kyaKarein": [
+      "Hang up immediately on cold callers offering shares or bonds",
+      "Always verify caller identity against the FCA Register website",
+      "Report illegal boiler rooms to Action Fraud"
+    ]
+  },
+  {
+    "id": "fake-green-energy-carbon-credit-syndicate-2022",
+    "slug": "fake-green-energy-carbon-credit-syndicate-2022",
+    "icon": "\ud83c\udf31",
+    "name": "Fake Green Energy & Carbon Credit Syndicate",
+    "year": 2022,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 92,
+    "desc": "Scammers convince retail investors to purchase voluntary carbon credits or biofuel plots, falsely claiming prices will surge under global climate accords.",
+    "sampleMsg": "Invest in Voluntary Carbon Credits: Buy Certified Emission Reductions at \u00a34 per unit; sell to corporate polluters at \u00a325 next year.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Exploits public interest in ESG environmental investing.\n2. Sells retail investors industrial voluntary carbon credits with zero secondary market liquidity.\n3. Investors are left holding worthless digital certificates.",
+    "redFlags": [
+      "Cold calls or internet ads marketing carbon credits to individual retail consumers",
+      "Claims carbon credit prices are guaranteed to skyrocket under international law",
+      "No authorized carbon exchange exists for retail consumers to liquidate credits",
+      "High commissions and handling fees deducted from investment balance",
+      "Broker is not authorized by financial regulatory authorities"
+    ],
+    "kyaKarein": [
+      "Recognize that carbon credit markets are designed for institutional compliance entities, not retail individuals",
+      "Never purchase carbon offset credits as speculative investments",
+      "Report fraudulent environmental investment promoters to Action Fraud"
+    ]
+  },
+  {
+    "id": "fake-rare-whiskey-cask-wine-investment-2023",
+    "slug": "fake-rare-whiskey-cask-wine-investment-2023",
+    "icon": "\ud83e\udd43",
+    "name": "Fake Rare Whiskey Cask & Wine Investment",
+    "year": 2023,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 91,
+    "desc": "Unscrupulous investment firms sell unverified or non-existent Scotch whisky casks stored in bonded warehouses at 500% over market valuation.",
+    "sampleMsg": "Scotch Whisky Cask Ownership: 12% average annual appreciation over last decade. Invest \u00a33,500 in single malt Highland casks today.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Telemarketers pitch rare whisky casks as inflation-proof luxury assets.\n2. Sells casks that are either non-existent or lower grade grain spirit worth pennies.\n3. Distilleries confirm the investment firm holds no storage records in the warehouse.",
+    "redFlags": [
+      "Promises guaranteed double-digit annual appreciation for cask whisky",
+      "Refusal to provide genuine Delivery Order (DO) issued by verified HMRC bonded warehouse",
+      "Firm does not hold verified WOWGR (Warehousekeepers and Owners of Warehoused Goods) status",
+      "Lack of independent third-party cask re-gauging and alcohol strength testing",
+      "Cold call marketing directed at inexperienced retail consumers"
+    ],
+    "kyaKarein": [
+      "Demand official delivery orders verified directly with HMRC approved bonded warehouses",
+      "Consult genuine distilleries before purchasing cask investment shares",
+      "Report deceptive cask investment companies to the Advertising Standards Authority and Action Fraud"
+    ]
+  },
+  {
+    "id": "fake-fine-art-blue-chip-fractional-ownership-2023",
+    "slug": "fake-fine-art-blue-chip-fractional-ownership-2023",
+    "icon": "\ud83c\udfa8",
+    "name": "Fake Fine Art & Blue-Chip Fractional Ownership",
+    "year": 2023,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 90,
+    "desc": "Unregistered fractional art platforms selling micro-shares of masterworks (Banksy, Picasso) with inflated valuations and non-existent secondary liquidity.",
+    "sampleMsg": "Own shares in Banksy and Warhol masterworks from $100! Historic 14.5% annual return outperforming S&P 500.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Acquires lesser-known paintings and commissions exaggerated appraisals.\n2. Sells thousands of digital fractional shares to retail consumers.\n3. Enormous maintenance fees, insurance costs, and zero buyer liquidity erase investor capital.",
+    "redFlags": [
+      "Claims art consistently outperforms the stock market with minimal volatility",
+      "Appraisal provided by affiliated or unverified art appraisal service",
+      "Platform charges heavy upfront acquisition, sourcing, and ongoing storage fees",
+      "No functioning public secondary market to liquidate your fractional shares",
+      "Ownership certificates are proprietary tokens with no legal title to physical art"
+    ],
+    "kyaKarein": [
+      "Understand that art is an illiquid passion asset, not a guaranteed financial hedge",
+      "Examine whether secondary market trading exists with genuine price discovery",
+      "Report fraudulent art syndicates to SEC or local trading standards"
+    ]
+  },
+  {
+    "id": "social-copy-trading-master-trader-kickback-trap-2024",
+    "slug": "social-copy-trading-master-trader-kickback-trap-2024",
+    "icon": "\ud83d\udc65",
+    "name": "Social Copy-Trading 'Master Trader' Kickback Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 89,
+    "desc": "Social media trading influencers recruit followers to mirror their trades on unregulated brokers, secretly profiting from high-volume commission kickbacks as followers lose.",
+    "sampleMsg": "Copy my exact crypto & forex trades 100% automated! 88% win rate over 500 trades. Free VIP access when signing up with my partner broker.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Influencer displays rented luxury cars and fabricated trading profit screenshots.\n2. Directs followers to sign up with offshore broker via exclusive affiliate link.\n3. Intentionally executes hundreds of reckless trades daily to farm volume rebates, wiping out client accounts.",
+    "redFlags": [
+      "Trader offers 'free signals' only if you register using their specific broker referral link",
+      "Broker pays the influencer based on trading volume regardless of whether trades win or lose",
+      "Trading history displays manipulated or edited MetaTrader statement logs",
+      "Excessive lot sizes and scalping frequency causing huge spread commission costs",
+      "Followers are discouraged from setting strict stop-loss limits"
+    ],
+    "kyaKarein": [
+      "Never execute copy-trading based on unverified social media influencers",
+      "Understand that broker affiliate schemes create direct conflicts of interest",
+      "Report deceptive influencer affiliate schemes to consumer protection agencies"
+    ]
+  },
+  {
+    "id": "telegram-crypto-doubler-bot-scam-2025",
+    "slug": "telegram-crypto-doubler-bot-scam-2025",
+    "icon": "\ud83e\udd16",
+    "name": "Telegram Crypto Doubler Bot Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 97,
+    "desc": "Automated Telegram bots claiming to double any deposited cryptocurrency balance within 24 hours through high-frequency mining arbitrage.",
+    "sampleMsg": "BTC Doubler Bot 2026: Send 0.05 BTC to automated mining contract, receive 0.10 BTC back in exactly 24 hours. Verified blockchain algorithm.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Victim enters Telegram bot command /deposit.\n2. Sends crypto to the wallet address provided by the bot.\n3. The bot blocks the user or demands an additional deposit to 'unlock payout batch'.",
+    "redFlags": [
+      "Guarantees doubling or tripling deposited cryptocurrency in 24 to 48 hours",
+      "Operates strictly via anonymous Telegram or Discord bot commands",
+      "Fake live payout ticker in the channel displaying fabricated blockchain hashes",
+      "Customer support requires additional deposits to resolve 'processing errors'",
+      "There is no company name, physical address, or verifiable human behind the bot"
+    ],
+    "kyaKarein": [
+      "Remember the golden rule of cryptography: Nobody can double your Bitcoin for free",
+      "Never send cryptocurrency to automated Telegram or Discord doubler bots",
+      "Report scam bots to Telegram @notoscam"
+    ]
+  },
+  {
+    "id": "fake-halal-islamic-investment-fund-2023",
+    "slug": "fake-halal-islamic-investment-fund-2023",
+    "icon": "\ud83d\udd4c",
+    "name": "Fake Halal Islamic Investment Fund",
+    "year": 2023,
+    "isLatest": false,
+    "country": "UAE",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Affinity fraud operators targeting Muslim communities offering 100% Sharia-compliant zero-interest investments, operating standard Ponzi pyramids.",
+    "sampleMsg": "Certified Halal Wealth Fund: 100% Sharia-compliant Mudarabah investment in Dubai gold and real estate. Guaranteed 25% annual profit share.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Scammers quote religious texts and produce forged Sharia advisory board fatwas.\n2. Exploit community and religious trust at local gatherings.\n3. Diverts collected funds into offshore personal accounts without making real investments.",
+    "redFlags": [
+      "Uses religious piety and affinity group trust to discourage thorough financial due diligence",
+      "Presents unverified Sharia compliance certificates with fictitious Islamic scholar signatures",
+      "Guarantees fixed profit shares (contrary to authentic Mudarabah partnership principles)",
+      "Promoters pressure potential investors not to check with state financial regulators",
+      "Lack of audited financial disclosures and physical property asset titles"
+    ],
+    "kyaKarein": [
+      "Verify Islamic financial institutions with official central banks (DFSA, RBI, SEC)",
+      "Authentic Sharia investment cannot guarantee fixed risk-free returns by definition",
+      "Report affinity fraud syndicates to police and religious council fraud desks"
+    ]
+  },
+  {
+    "id": "dubai-luxury-off-plan-real-estate-crypto-escrow-2025",
+    "slug": "dubai-luxury-off-plan-real-estate-crypto-escrow-2025",
+    "icon": "\ud83c\udfd9\ufe0f",
+    "name": "Dubai Luxury Off-Plan Real Estate Crypto Escrow",
+    "year": 2025,
+    "isLatest": false,
+    "country": "UAE",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 94,
+    "desc": "Bogus real estate brokers offering pre-launch Dubai Marina penthouses payable in cryptocurrency through fraudulent non-government escrow accounts.",
+    "sampleMsg": "Dubai Palm Jumeirah Off-Plan: 4-Bedroom Luxury Villa 30% below market! Settle in USDT via developer fast escrow account.",
+    "source": "UAE eCrime",
+    "kaiseHotaHai": "1. Sets up sleek website mimicking licensed Dubai property master developers.\n2. Issues forged Oqood pre-registration title deeds.\n3. Instructs buyers to deposit USDT into fake private escrow wallet, vanishing with funds.",
+    "redFlags": [
+      "Broker insists on direct cryptocurrency payments to private wallet address",
+      "Escrow account is not an official registered DLD (Dubai Land Department) Trust account",
+      "Property price is significantly lower than real-time Dubai Land Department market data",
+      "Agent does not possess a verifiable RERA (Real Estate Regulatory Agency) broker card",
+      "High-pressure deadline threatening loss of unit to other foreign cash buyers"
+    ],
+    "kyaKarein": [
+      "Verify all property sales and escrow accounts directly on the official Dubai REST mobile app",
+      "Only pay into officially designated DLD developer escrow accounts at authorized banks",
+      "Report fraudulent real estate brokers on Dubai Police eCrime (ecrime.ae)"
+    ]
+  },
+  {
+    "id": "teakwood-sandalwood-plantation-investment-scam-2021",
+    "slug": "teakwood-sandalwood-plantation-investment-scam-2021",
+    "icon": "\ud83c\udf33",
+    "name": "Teakwood & Sandalwood Plantation Investment Scam",
+    "year": 2021,
+    "isLatest": false,
+    "country": "India",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 91,
+    "desc": "Agro-forestry collective investment schemes promising massive 50x returns on timber harvesting after 15 years, collapsing long before harvest dates.",
+    "sampleMsg": "Sandalwood Wealth Scheme: Invest Rs 50,000 today for 10 teak trees. Guaranteed harvest valuation Rs 25,00,000 in 15 years with tax-free agricultural income.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Organizers buy cheap barren agricultural land and plant basic saplings.\n2. Collect millions from urban investors claiming astronomical future wood prices.\n3. Neglect plantation after a few years, declaring crop failure due to pests or weather.",
+    "redFlags": [
+      "Promises astronomical 20x to 50x future harvest returns with zero maintenance liability",
+      "Scheme is not registered with SEBI as an authorized Collective Investment Scheme (CIS)",
+      "No clear land ownership or title partition given to individual tree investors",
+      "Promises tax-free agricultural income to avoid traditional investment scrutiny",
+      "Promoter relies on multi-level network marketing agents to sell tree units"
+    ],
+    "kyaKarein": [
+      "Verify if the agro-forestry company has SEBI Collective Investment Scheme approval",
+      "Insist on independent legal verification of land registry and revenue records",
+      "Report illegal agricultural collective schemes to SEBI and local police"
+    ]
+  },
+  {
+    "id": "e-rupee-cbdc-launch-phishing-air-drop-trap-2026",
+    "slug": "e-rupee-cbdc-launch-phishing-air-drop-trap-2026",
+    "icon": "\ud83c\uddee\ud83c\uddf3",
+    "name": "E-Rupee (CBDC) Launch Phishing & Air-Drop Trap",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Fraudulent messages claiming the Reserve Bank of India is distributing free Digital Rupee (e-Rupee) bonuses, downloading banking trojan APKs.",
+    "sampleMsg": "RBI Digital Rupee Grant: Claim your Rs 5,000 Digital Rupee (CBDC) introductory wallet bonus. Download official e-Rupee APK at https://rbi-digitalrupee.in",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Capitalizes on public awareness of the Reserve Bank of India's Central Bank Digital Currency.\n2. Link downloads malicious APK file disguised as an e-Rupee wallet.\n3. Malware intercepts SMS banking OTPs and steals device credentials.",
+    "redFlags": [
+      "Message offers free monetary cash grant from the central bank",
+      "Link points to third-party APK download instead of Google Play Store or bank portal",
+      "Central banks do not directly distribute free money bonuses to individual citizens",
+      "Sender ID is a private 10-digit mobile number rather than authorized banking shortcode",
+      "Phone triggers severe unknown source security installation warnings"
+    ],
+    "kyaKarein": [
+      "Use only official Digital Rupee apps provided by your registered commercial bank via Google Play Store",
+      "Never install APK files received through SMS, WhatsApp or Telegram",
+      "Report fake government APK links to cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "micro-cap-penny-stock-newsletter-pump-trap-2020",
+    "slug": "micro-cap-penny-stock-newsletter-pump-trap-2020",
+    "icon": "\ud83d\udcf0",
+    "name": "Micro-Cap Penny Stock Newsletter Pump Trap",
+    "year": 2020,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 90,
+    "desc": "Spam email newsletters hyping pink-sheet over-the-counter penny stocks, paid for by insiders dumping millions of restricted shares.",
+    "sampleMsg": "Stock Alert: Medical biotech penny stock has breakthrough cancer patent! Shares trading at $0.15; heading to $4.50 this week.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Insiders acquire millions of penny stock shares for pennies.\n2. Send mass email spam newsletter promoting the stock.\n3. Retail investors buy, inflating stock briefly before insiders dump, crashing price 95%.",
+    "redFlags": [
+      "Unsolicited stock recommendation received via email or fax newsletter",
+      "Fine print disclaimer reveals newsletter received $50,000+ from anonymous third-party to promote company",
+      "Stock trades on OTC Pink Sheets with minimal audited financial reporting",
+      "Claims revolutionary breakthrough patent without scientific peer review",
+      "Urges immediate purchases at market open before momentum slows"
+    ],
+    "kyaKarein": [
+      "Always read the microscopic legal disclaimer at the bottom of investment newsletters",
+      "Avoid investing in companies that do not file regular audited 10-K reports with SEC",
+      "Report stock pump email spam to SEC Office of the Whistleblower"
+    ]
+  },
+  {
+    "id": "phantom-timeshare-resale-exit-scam-2023",
+    "slug": "phantom-timeshare-resale-exit-scam-2023",
+    "icon": "\ud83c\udfd6\ufe0f",
+    "name": "Phantom Timeshare Resale & Exit Scam",
+    "year": 2023,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 92,
+    "desc": "Telemarketers call timeshare owners claiming to have an eager corporate buyer waiting, demanding thousands in upfront legal and Mexican escrow fees.",
+    "sampleMsg": "Timeshare Exit Authority: We have an overseas corporate buyer offering $24,500 for your Cancun week. Pay $1,850 Mexican notary fee to finalize.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Obtains public timeshare deed records and targets senior owners eager to exit.\n2. Fabricates official purchase agreement with non-existent corporate buyer.\n3. Escalates fees for foreign wire transfer, tax withholding, and title insurance.",
+    "redFlags": [
+      "Unsolicited phone call claiming a buyer is already lined up to purchase your timeshare",
+      "Requires paying upfront closing costs, foreign taxes, or notary fees via wire transfer",
+      "Salesperson guarantees quick sale at or above your original purchase price",
+      "Pressure to wire funds to personal bank accounts in Mexico or offshore jurisdictions",
+      "Buyer supposedly agrees to purchase without inspecting or negotiating"
+    ],
+    "kyaKarein": [
+      "Never pay upfront fees to a timeshare reseller before the sale is finalized",
+      "Deal only with licensed real estate brokers who collect commission after closing",
+      "Report timeshare resale fraud to FTC: ReportFraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "presale-token-telegram-stealth-honeypot-2026",
+    "slug": "presale-token-telegram-stealth-honeypot-2026",
+    "icon": "\ud83e\ude99",
+    "name": "Presale Token Telegram Stealth Honeypot",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Cloned Telegram project channels launch fake presale tokens, instructing buyers to deposit Solana or Ethereum to private developer addresses.",
+    "sampleMsg": "TIER 1 PRESALE: Send 1-10 SOL to presale treasury wallet: 7Xw9...Kp2 to receive 50,000 AI tokens before Raydium listing.",
+    "source": "Google News 2026",
+    "kaiseHotaHai": "1. Clones branding of high-profile trending Web3 AI projects.\n2. Pins urgent message in fake channel with 50,000 bot members.\n3. Wallet collects millions in crypto transfers without ever deploying or distributing tokens.",
+    "redFlags": [
+      "Presale requires direct wallet transfers to an unverified private address rather than smart contract",
+      "Channel has thousands of members but messages have zero real comments or reactions",
+      "Official project website and X account have no mention of any private presale round",
+      "Heavy discount offered for transfers made within the next 30 minutes",
+      "Admins DM users directly offering priority allocation bonuses"
+    ],
+    "kyaKarein": [
+      "Never send direct wallet-to-wallet transfers for unverified token presales",
+      "Cross-verify all announcements with project verified social media channels",
+      "Report fraudulent Telegram presale channels"
+    ]
+  },
+  {
+    "id": "peer-to-peer-p2p-crypto-arbitrage-triangular-trap-2025",
+    "slug": "peer-to-peer-p2p-crypto-arbitrage-triangular-trap-2025",
+    "icon": "\ud83d\udd04",
+    "name": "Peer-to-Peer (P2P) Crypto Arbitrage Triangular Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 96,
+    "desc": "Scammers recruit P2P crypto traders to receive payments from third-party cybercrime victims, causing the trader's bank accounts to be frozen for money laundering.",
+    "sampleMsg": "P2P Arbitrage Opportunity: Earn 3% per trade buying USDT on Binance and selling to our verified buyers via IMPS / UPI.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer defrauds victim in digital arrest or fake job scam.\n2. Instructs victim to transfer money directly into innocent P2P crypto trader's bank account.\n3. Scammer receives crypto from trader; police trace cyber fraud and freeze trader's entire bank account.",
+    "redFlags": [
+      "Buyer account on P2P platform differs from the name of the bank account sending payment (Third-Party payment)",
+      "Buyer urges trading off-platform via Telegram to avoid exchange fees",
+      "Buyer offers above-market prices for your cryptocurrency",
+      "Sudden debit freeze notice from your bank citing police cybercrime complaint (1930)",
+      "Buyer refuses to provide government photo ID verification matching bank account"
+    ],
+    "kyaKarein": [
+      "Never accept third-party payments on P2P platforms; sender name must match exchange KYC 100%",
+      "Keep all communication and escrow transactions strictly inside the official exchange app",
+      "Immediately contact cyber police helpline 1930 if your bank account receives dirty funds"
+    ]
+  },
+  {
+    "id": "carbon-offset-forest-planting-certificate-fraud-2024",
+    "slug": "carbon-offset-forest-planting-certificate-fraud-2024",
+    "icon": "\ud83c\udf32",
+    "name": "Carbon Offset Forest Planting Certificate Fraud",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 88,
+    "desc": "Bogus environmental non-profits selling digital certificates claiming to plant Amazon rainforest trees that have already been counted or do not exist.",
+    "sampleMsg": "Corporate ESG Compliance: Buy 1,000 Amazon rainforest trees for $5,000 with certified carbon removal credits. Fully audit-ready.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Telemarketers target corporate sustainability departments and green investors.\n2. Sells recycled or duplicate GPS coordinates of trees already pledged to other charities.\n3. Pocketing corporate payments while zero new trees are planted.",
+    "redFlags": [
+      "Organization is not certified by Verra (VCS) or Gold Standard carbon registries",
+      "GPS coordinates provided match existing public conservation parks",
+      "Aggressive sales calls pushing year-end ESG tax deductions",
+      "Prices are 70% cheaper than established voluntary carbon offset standards",
+      "No verifiable third-party satellite or on-ground verification reports"
+    ],
+    "kyaKarein": [
+      "Verify all carbon offset programs on Verra (registry.verra.org) or Gold Standard registries",
+      "Never purchase corporate offset credits from unaccredited telemarketing brokers",
+      "Report fraudulent greenwashing schemes to FTC"
+    ]
+  },
+  {
+    "id": "decentralized-liquidity-staking-honeypot-2025",
+    "slug": "decentralized-liquidity-staking-honeypot-2025",
+    "icon": "\ud83e\udd69",
+    "name": "Decentralized Liquidity Staking Honeypot",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Crypto",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 95,
+    "desc": "Phishing portals posing as Lido or Rocket Pool offering 50% APY for staking ETH, deploying malicious smart contracts that siphon staked principal.",
+    "sampleMsg": "Lido Finance Staking v3: Stake ETH for limited-time 42% APY liquidity rewards. Connect wallet to claim boosted stETH tier.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Buys sponsored Google search ads mimicking official staking dApps.\n2. Phishing portal prompts user to sign staking contract.\n3. Contract contains approval that transfers all connected wallet tokens to drainer.",
+    "redFlags": [
+      "Staking yield offered (42% APY) is drastically higher than actual Ethereum consensus yield (3-4% APY)",
+      "Domain differs from official site (e.g., lido-rewards-staking.org vs lido.fi)",
+      "Web3 transaction requests approval for all tokens in wallet rather than staking amount",
+      "Advertised via Google Sponsored search ads above organic results",
+      "Support team messages users directly in Telegram groups offering help"
+    ],
+    "kyaKarein": [
+      "Always bookmark and verify official protocol domains (e.g. lido.fi)",
+      "Understand that legitimate Ethereum staking yields are determined by network consensus (typically 3-4%)",
+      "Use hardware wallets that visually display contract recipient and parameter details"
+    ]
+  },
+  {
+    "id": "sports-betting-vip-fixing-algorithm-syndicate-2024",
+    "slug": "sports-betting-vip-fixing-algorithm-syndicate-2024",
+    "icon": "\u26bd",
+    "name": "Sports Betting VIP Fixing Algorithm Syndicate",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 93,
+    "desc": "Tipsters claiming inside information on fixed football, cricket, or tennis matches, charging high subscription fees for fabricated betting slips.",
+    "sampleMsg": "100% Fixed Match Alert: European 2nd Division match fixed by syndicate. Correct score odds 45/1. VIP membership fee \u00a3250.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Posts edited betting slips showing massive wins on Instagram and Telegram.\n2. Charges high upfront fee for 'guaranteed fixed match score'.\n3. Match fails; scammer blocks victim or claims match was 'rescheduled' demanding more money.",
+    "redFlags": [
+      "Claims to have 100% guaranteed insider knowledge of fixed sporting events",
+      "Shows photos of winning betting slips that have been manipulated in Photoshop",
+      "Payment requested via crypto, Western Union, or personal bank transfer",
+      "Demands a percentage of your winnings after the match",
+      "Account operates anonymously with no real human identity"
+    ],
+    "kyaKarein": [
+      "Recognize that legitimate match fixing is rare and criminal; anyone selling it on Instagram is 100% a fraudster",
+      "Never pay money for sports betting tips or fixed score claims",
+      "Report match-fixing scam accounts to platform moderation and Action Fraud"
+    ]
+  },
+  {
+    "id": "film-production-executive-producer-equity-scam-2022",
+    "slug": "film-production-executive-producer-equity-scam-2022",
+    "icon": "\ud83c\udfac",
+    "name": "Film Production Executive Producer Equity Scam",
+    "year": 2022,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Investment",
+    "categorySlug": "investment-crypto",
+    "categoryName": "Investment & Crypto",
+    "score": 91,
+    "desc": "Con artists solicit six-figure investments for independent Hollywood feature films with promised A-list stars attached that are never produced.",
+    "sampleMsg": "Executive Producer Credit: Invest $50,000 in upcoming action thriller starring Hollywood A-listers. Guaranteed box-office revenue share + red carpet premiere.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Rents fancy Beverly Hills office and creates glossy lookbook with photos of famous actors.\n2. Claims distribution contracts with major streaming services are already signed.\n3. Spends investor capital on luxury personal lifestyle; film never enters pre-production.",
+    "redFlags": [
+      "Promises executive producer credit and box office revenue shares to novice investors",
+      "Claims major movie stars are committed without showing verified agent deal memos",
+      "High-pressure deadline to close financing before shooting supposedly starts",
+      "Promoter has history of bankruptcies or unfinished film titles on IMDb",
+      "Offering securities without filing necessary Regulation D exemptions with SEC"
+    ],
+    "kyaKarein": [
+      "Conduct thorough background check on film producers and previous distribution track records",
+      "Demand verified documentation from entertainment law attorneys and escrow banks",
+      "Report fraudulent film investment schemes to state securities regulators"
+    ]
+  },
+  {
+    "id": "work-from-home-data-entry-security-deposit-scam-2024",
+    "slug": "work-from-home-data-entry-security-deposit-scam-2024",
+    "icon": "\u2328\ufe0f",
+    "name": "Work-From-Home Data Entry Security Deposit Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Victims are promised high wages for typing scanned documents from home, but must pay non-refundable software security fees that are never returned.",
+    "sampleMsg": "Data Entry Job at Home: Type 100 pages per week, earn Rs 25,000 monthly! Refundable registration fee Rs 2,999 for server login.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Advertised on job portals and social media as easy data entry.\n2. Charges refundable software license and server login fee.\n3. After work is submitted, claims accuracy rate was under 90% and withholds salary.",
+    "redFlags": [
+      "Employer demands advance fee for registration, software, or security deposit",
+      "Unrealistically high hourly pay for simple manual typing tasks",
+      "Contract stipulates impossible 98%+ accuracy rate to qualify for payment",
+      "Company has no physical office address or legitimate corporate email domain",
+      "Recruiter communicates exclusively through WhatsApp or personal Gmail"
+    ],
+    "kyaKarein": [
+      "Never pay money to get a job or start working for an employer",
+      "Legitimate employers provide company tools and software free of charge",
+      "Report fraudulent data entry syndicates to national labor and cyber portals"
+    ]
+  },
+  {
+    "id": "telegram-youtube-video-liking-task-scam-2025",
+    "slug": "telegram-youtube-video-liking-task-scam-2025",
+    "icon": "\ud83d\udcfa",
+    "name": "Telegram YouTube Video Liking Task Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 96,
+    "desc": "Recruiters pay small amounts (Rs 150) for liking YouTube videos, then steer victims to Telegram VIP investment tasks demanding heavy deposits.",
+    "sampleMsg": "Part-Time YouTube Partner: Earn Rs 50 for every video like and subscribe! Contact HR manager on Telegram @Task_VIP_India to start.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends unsolicited WhatsApp message offering simple video liking tasks.\n2. Pays Rs 150-300 via UPI immediately to build credibility.\n3. Adds victim to Telegram group with fake members celebrating high payouts from 'Prepaid Merchant Tasks', trapping savings.",
+    "redFlags": [
+      "Unsolicited WhatsApp message offering high pay for liking videos or rating hotels",
+      "Contact moves to Telegram channel where users share screenshots of huge daily earnings",
+      "Small initial payments sent to your UPI account to establish false credibility",
+      "Introduction of 'Prepaid Tasks' or 'Crypto Optimization' requiring you to deposit money",
+      "Withdrawal of your earnings is blocked until you complete higher-tier deposit tasks"
+    ],
+    "kyaKarein": [
+      "Any job that asks YOU to pay money to receive your salary is 100% a fraud syndicate",
+      "Block the recruiter number and report the Telegram channel immediately",
+      "File complaint on Indian cybercrime portal cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "e-commerce-product-rating-order-optimization-scam-2024",
+    "slug": "e-commerce-product-rating-order-optimization-scam-2024",
+    "icon": "\u2b50",
+    "name": "E-Commerce Product Rating & Order Optimization Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 95,
+    "desc": "Scammers pose as Amazon or Sephora marketing partners, requiring victims to deposit funds into fake merchant dashboards to submit 5-star product reviews.",
+    "sampleMsg": "Amazon Review Associate: Earn $150-$300 daily reviewing new seller products. Work 30 minutes from your smartphone.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Recruiter contacts via WhatsApp offering remote marketing tasks.\n2. User performs sample 5-star rating clicks on cloned merchant dashboard.\n3. Dashboard generates negative balance requiring victim to deposit real funds to complete the order batch.",
+    "redFlags": [
+      "Pays extraordinarily high wages for clicking 5-star reviews on products you never bought",
+      "Requires depositing personal money into a web dashboard to complete order fulfillment cycles",
+      "Dashboard interface shows crude graphic counters and broken English translations",
+      "Withdrawal button throws 'tax clearance' or 'security tier' errors",
+      "Recruiter insists you must recharge your account within 24 hours to avoid losing balance"
+    ],
+    "kyaKarein": [
+      "Major retailers strictly prohibit paying users for product reviews; it violates international trade rules",
+      "Never deposit personal funds to complete work tasks for an employer",
+      "Report fraudulent rating schemes to FTC and Interpol"
+    ]
+  },
+  {
+    "id": "fake-dubai-gulf-employment-visa-ticket-scam-2024",
+    "slug": "fake-dubai-gulf-employment-visa-ticket-scam-2024",
+    "icon": "\u2708\ufe0f",
+    "name": "Fake Dubai / Gulf Employment Visa & Ticket Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UAE",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 94,
+    "desc": "Fraudulent overseas recruitment agencies charge hefty advance fees for fictitious luxury hotel or airport jobs in Dubai, issuing forged tourist visas as work permits.",
+    "sampleMsg": "Dubai Airport Authority Urgent Hiring: Ground staff, security & drivers wanted! Salary AED 6,500 + free accommodation. Visa processing fee Rs 45,000.",
+    "source": "UAE eCrime",
+    "kaiseHotaHai": "1. Post newspaper ads and social media flyers promising lucrative Gulf jobs.\n2. Issues forged UAE Ministry of Human Resources offer letter.\n3. Collects processing fees and provides single-entry visit visa; victims arrive in Dubai stranded with no job.",
+    "redFlags": [
+      "Job offer issued without formal technical interview or credential verification",
+      "Recruiter asks candidate to pay for UAE work permit, medical test, or flight tickets",
+      "Under UAE law, the employing company is legally mandated to pay all visa and recruitment expenses",
+      "Offer letter format lacks official MOHRE QR verification code",
+      "Payment requested into individual personal bank account rather than registered agency"
+    ],
+    "kyaKarein": [
+      "Verify all UAE job offer letters and entry permits on official MOHRE portal (mohre.gov.ae)",
+      "Remember that legitimate employers in UAE never charge job candidates recruitment or visa fees",
+      "Report bogus overseas agents to Ministry of External Affairs and Dubai Police eCrime"
+    ]
+  },
+  {
+    "id": "fake-canada-express-entry-work-permit-guarantee-2025",
+    "slug": "fake-canada-express-entry-work-permit-guarantee-2025",
+    "icon": "\ud83c\udde8\ud83c\udde6",
+    "name": "Fake Canada Express Entry & Work Permit Guarantee",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Canada",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 95,
+    "desc": "Immigration consultancies guaranteeing Canadian permanent residency and high-paying jobs in Toronto or Vancouver, extracting thousands in fake LMIA fees.",
+    "sampleMsg": "Guaranteed Canada PR & Job Offer: Logistics Manager in Ontario $75,000 CAD salary. LMIA approval guaranteed within 60 days. Initial legal deposit $2,500.",
+    "source": "Canadian Anti-Fraud Centre",
+    "kaiseHotaHai": "1. Runs flashy Instagram ads promising guaranteed Canadian PR without IELTS exam.\n2. Provides forged Labour Market Impact Assessment (LMIA) approval letter.\n3. Escalates legal and biometric processing fees until victim realizes visa is fraudulent.",
+    "redFlags": [
+      "Consultant guarantees Canadian PR or work permit approval (only IRCC can grant visas)",
+      "Claims IELTS language exam and educational credentials can be bypassed",
+      "Charges fees for LMIA approval (in Canada, employers must cover LMIA costs)",
+      "Consultant is not registered with the College of Immigration and Citizenship Consultants (CICC)",
+      "Contract guarantees 100% refund that is impossible to collect"
+    ],
+    "kyaKarein": [
+      "Check consultant credentials on the official CICC public register (college-ic.ca)",
+      "Only official IRCC (canada.ca/immigration) can approve Canadian visas and work permits",
+      "Report fraudulent immigration agents to the Canadian Anti-Fraud Centre"
+    ]
+  },
+  {
+    "id": "fake-uk-nhs-healthcare-worker-sponsorship-scam-2024",
+    "slug": "fake-uk-nhs-healthcare-worker-sponsorship-scam-2024",
+    "icon": "\ud83c\udfe5",
+    "name": "Fake UK NHS Healthcare Worker Sponsorship Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 96,
+    "desc": "Rogue agents sell counterfeit Certificates of Sponsorship (CoS) for UK National Health Service care worker jobs, leaving migrants stranded upon arrival in the UK.",
+    "sampleMsg": "UK Health and Care Worker Visa: Immediate NHS hospital placement in Birmingham. Certificate of Sponsorship (CoS) ready. Processing fee \u00a34,500.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Targets nurses and healthcare workers in Africa and Asia.\n2. Sells fake or unallocated sponsorship certificates using cloned NHS trust letterheads.\n3. Migrant arrives in UK to discover the healthcare facility has no record of employment.",
+    "redFlags": [
+      "Demands thousands of pounds in fees for a UK Certificate of Sponsorship (CoS)",
+      "NHS and licensed UK care providers do not charge candidates for sponsorship certificates",
+      "Email comes from free domain (nhs-recruitment@gmail.com) instead of official nhs.net",
+      "Sponsoring company is not listed on the official UK Home Office Register of Worker Sponsors",
+      "Contract asks for cash payments or transfers to personal offshore accounts"
+    ],
+    "kyaKarein": [
+      "Verify employer sponsorship license on the official UK Government register (gov.uk)",
+      "Apply for NHS jobs exclusively through the official portal: jobs.nhs.uk",
+      "Report fraudulent visa sponsorship brokers to Action Fraud UK"
+    ]
+  },
+  {
+    "id": "fake-indian-railway-ssc-government-job-syndicate-2023",
+    "slug": "fake-indian-railway-ssc-government-job-syndicate-2023",
+    "icon": "\ud83d\ude86",
+    "name": "Fake Indian Railway & SSC Government Job Syndicate",
+    "year": 2023,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 97,
+    "desc": "Organized gangs conduct mock medical tests and interviews at government guest houses, issuing forged appointment letters for Indian Railways in exchange for lakhs.",
+    "sampleMsg": "Indian Railways Direct Recruitment: Group C & D Station Master vacancies. No exam required under Special Officer quota. Joining fee Rs 4,50,000.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Touts target rural youth preparing for competitive exams.\n2. Conducts fake physical fitness tests outside railway stadiums.\n3. Delivers forged appointment letters with counterfeit ministry seals; youth discovered fraud when reporting for duty.",
+    "redFlags": [
+      "Claims government or railway recruitment can occur without official competitive examinations",
+      "Demands lakhs in advance under 'ministerial discretion quota' or 'secret internal hiring'",
+      "Interviews conducted in hotel lobbies, private guest houses, or vehicles",
+      "Appointment letters lack official security watermarks and verifiable employee codes",
+      "Touts demand cash or payments to personal bank accounts"
+    ],
+    "kyaKarein": [
+      "Indian Railways and SSC hire exclusively through open public exams announced on rrbcdg.gov.in and ssc.nic.in",
+      "Never pay bribes or agency fees for government employment",
+      "Report employment racketeers to the Central Bureau of Investigation (CBI) and state police"
+    ]
+  },
+  {
+    "id": "fake-army-recruitment-rally-officer-impersonation-2022",
+    "slug": "fake-army-recruitment-rally-officer-impersonation-2022",
+    "icon": "\ud83e\ude96",
+    "name": "Fake Army Recruitment Rally Officer Impersonation",
+    "year": 2022,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 96,
+    "desc": "Imposters in fake military uniforms approach candidates outside Army recruitment rallies, promising guaranteed selection through medical board manipulation.",
+    "sampleMsg": "Indian Army Agniveer Special Entry: Direct selection for General Duty soldier. Medical clearance guaranteed by Military Hospital board. Advance Rs 2,00,000.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Con artists loiter near official military recruitment grounds in fake combat uniforms.\n2. Approach candidates rejected in medical screening, claiming internal doctor contacts.\n3. Take original educational certificates as collateral alongside advance cash, then abscond.",
+    "redFlags": [
+      "Promises guaranteed selection into Indian Armed Forces through backchannels",
+      "Demands original 10th/12th mark sheets and certificates as hostage collateral",
+      "Claims military hospital medical rejection can be reversed for a cash bribe",
+      "Recruiter refuses to meet inside official military cantonment premises",
+      "Armed forces recruitment is 100% computerized, transparent and merit-based"
+    ],
+    "kyaKarein": [
+      "Army recruitment rallies (Join Indian Army) are strictly transparent with zero tout influence",
+      "Never hand over your original school mark sheets or certificates to recruiters",
+      "Report touts immediately to military police (CMP) or local police stations"
+    ]
+  },
+  {
+    "id": "fake-5g-mobile-tower-installation-advance-rent-scam-2024",
+    "slug": "fake-5g-mobile-tower-installation-advance-rent-scam-2024",
+    "icon": "\ud83d\udce1",
+    "name": "Fake 5G Mobile Tower Installation Advance Rent Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Fraudsters contact plot and rooftop owners promising Rs 50,000 monthly rent and a government family job for leasing land to Jio/Airtel 5G towers, extracting registration fees.",
+    "sampleMsg": "Jio/Airtel 5G Tower Installation: Install tower on your empty plot or terrace! Get Rs 50,000 monthly rent + Rs 35,00,000 advance + 1 family job. Registration fee Rs 12,500.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Newspaper flyers and SMS advertise lucrative cell tower rooftop lease agreements.\n2. Sends forged TRAI / Telecom Department approval letters.\n3. Demands mounting advance fees for structural safety certificates, GST clearance, and survey permits.",
+    "redFlags": [
+      "Promises exorbitant monthly rent (Rs 40,000-80,000) and huge advance cash deposits",
+      "Promises a permanent family member job as a tower security guard or maintenance technician",
+      "Presents forged Telecom Regulatory Authority of India (TRAI) 'No Objection' certificates",
+      "Requires paying thousands in advance fees for government environmental clearance",
+      "Telecom companies and Indus Towers never charge landowners installation or application fees"
+    ],
+    "kyaKarein": [
+      "TRAI has explicitly warned citizens: Telecom regulators do not issue tower installation certificates",
+      "Telecom tower companies (Indus Towers) never demand registration money from property owners",
+      "Report fraudulent tower installation ads to national cybercrime portal"
+    ]
+  },
+  {
+    "id": "fake-amazon-flipkart-warehouse-packing-job-2025",
+    "slug": "fake-amazon-flipkart-warehouse-packing-job-2025",
+    "icon": "\ud83d\udce6",
+    "name": "Fake Amazon / Flipkart Warehouse Packing Job",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 92,
+    "desc": "SMS advertisements promising home packaging jobs for Amazon cosmetics or stationery, demanding non-refundable material security deposits.",
+    "sampleMsg": "Amazon Home Packaging: Pack cosmetic bottles and pen sets from home. Earn Rs 28,000 monthly. Material delivery free. One-time gate pass fee Rs 1,450.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends mass SMS claiming Amazon is outsourcing product packaging to home workers.\n2. Charges 'gate pass' and barcode scanner machine security deposit.\n3. Goods are never delivered and phone numbers are blocked.",
+    "redFlags": [
+      "Claims major e-commerce giants outsource product packaging to private residences",
+      "Requires paying an advance gate pass, ID card, or courier delivery security deposit",
+      "Offers full-time salary for simple mechanical packing tasks requiring zero qualifications",
+      "Contact number is an ordinary prepaid SIM with no official corporate affiliation",
+      "Payment requested via UPI to individual accounts"
+    ],
+    "kyaKarein": [
+      "Amazon and Flipkart do all packaging inside automated fulfillment centers, never in private homes",
+      "Never pay gate pass or materials fees for home packing jobs",
+      "Report home packing SMS scams to telecom spam line 1909"
+    ]
+  },
+  {
+    "id": "fake-remote-job-interview-processing-fee-trap-2024",
+    "slug": "fake-remote-job-interview-processing-fee-trap-2024",
+    "icon": "\ud83d\udcbc",
+    "name": "Fake Remote Job Interview Processing Fee Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 91,
+    "desc": "Bogus recruiters conduct chat-only interviews on Telegram or Wire, declaring the candidate hired and demanding payment for background screening software.",
+    "sampleMsg": "Congratulations! After reviewing your resume, you have been selected for the Data Analyst role at Johnson & Johnson ($45/hr). Pay $120 for company portal ID.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scrapes resumes from Indeed or LinkedIn.\n2. Conducts rapid 15-minute text-only interview on Telegram.\n3. Issues formal offer letter, then demands payment for background checks, onboarding software, or company portal credentials.",
+    "redFlags": [
+      "Job interview conducted strictly via text message, Telegram, or Google Chat with no video or voice call",
+      "Job offer made exceptionally fast without assessing in-depth technical skills or references",
+      "Candidate asked to pay for background checks, aptitude tests, or onboarding software licenses",
+      "Email domain is a spoofed lookalike (e.g. @johnson-careers-portal.com instead of official corporate domain)",
+      "Pay rate is significantly higher than standard industry compensation for the role"
+    ],
+    "kyaKarein": [
+      "Reputable multinational corporations never conduct employment interviews strictly over messaging apps",
+      "Employers pay for candidate background checks and onboarding software directly",
+      "Report imposter recruiters to the FTC and job platform support"
+    ]
+  },
+  {
+    "id": "fake-paid-remote-internship-processing-fee-2025",
+    "slug": "fake-paid-remote-internship-processing-fee-2025",
+    "icon": "\ud83c\udf93",
+    "name": "Fake Paid Remote Internship Processing Fee",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 90,
+    "desc": "Spam campaigns targeting college engineering and management students, offering paid MNC internships that require paying 'training certificate fees'.",
+    "sampleMsg": "Microsoft / Google Remote Internship Selection: 3-Month AI & Cloud Internship. Stipend Rs 35,000/mo. Pay Rs 1,999 student registration & LMS license fee.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Targets university students on LinkedIn and WhatsApp groups.\n2. Sends congratulatory selection letter with stolen MNC corporate logos.\n3. Collects Rs 1,500-3,000 registration fees, providing automated plagiarized video links with zero mentorship.",
+    "redFlags": [
+      "Student selected for high-stipend internship without formal technical screening",
+      "Company charges money for 'training materials', 'LMS portal', or 'certificate issuance'",
+      "Recruiter uses free Gmail address rather than verified corporate email",
+      "Offer letter is sent within hours of submitting a resume",
+      "Internship claims affiliation with global tech giants without verifiable corporate domain"
+    ],
+    "kyaKarein": [
+      "Authentic internships pay students; students never pay to work or intern for a company",
+      "Verify all internship openings directly on the official careers page of the company",
+      "Report fraudulent internship portals to college placement cells and cyber authorities"
+    ]
+  },
+  {
+    "id": "fake-fashion-modeling-casting-agency-advance-2023",
+    "slug": "fake-fashion-modeling-casting-agency-advance-2023",
+    "icon": "\ud83d\udcf8",
+    "name": "Fake Fashion Modeling & Casting Agency Advance",
+    "year": 2023,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 89,
+    "desc": "Fake talent scouts contact aspiring models on Instagram offering commercial magazine shoots, requiring thousands for photo portfolio shoots with their approved photographer.",
+    "sampleMsg": "Zara / Vogue Talent Scout: You have the perfect look for our upcoming summer campaign! Pay $850 for mandatory model portfolio shoot in our studio.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Reaches out via Instagram direct messages complimenting user's appearance.\n2. Promises lucrative fashion shoot with famous clothing brand.\n3. Requires user to pay upfront fees for compulsory portfolio photoshoot with affiliated photographer who splits the fee.",
+    "redFlags": [
+      "Unsolicited scout message on Instagram direct messages promising major brand campaigns",
+      "Requires paying hundreds of dollars upfront for a professional portfolio shoot",
+      "Scout insists you must use their specific in-house photographer",
+      "Agency does not have a verified roster of working models or legitimate corporate headquarters",
+      "Pressure to sign contracts and transfer money immediately to secure shoot dates"
+    ],
+    "kyaKarein": [
+      "Legitimate modeling agencies take commissions from paid bookings, never upfront portfolio fees from models",
+      "Never transfer money for photo sessions pitched in unsolicited social media direct messages",
+      "Report fraudulent casting scouts to FTC and platform moderation"
+    ]
+  },
+  {
+    "id": "fake-hotel-tourism-booking-review-job-2024",
+    "slug": "fake-hotel-tourism-booking-review-job-2024",
+    "icon": "\ud83c\udfe8",
+    "name": "Fake Hotel & Tourism Booking Review Job",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Recruiters hire users to boost TripAdvisor or Booking.com hotel rankings by leaving fake reviews, escalating into high-deposit task freeze schemes.",
+    "sampleMsg": "Booking.com Partner: Boost global luxury hotel ratings! Earn $200 daily reviewing 20 hotels. Work from home 45 minutes daily.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Telegram recruiters assign users to rate luxury hotels.\n2. Initial earnings withdrawable to create trust.\n3. Account requires purchasing 'VIP Booking Credit' to unlock high-commission luxury hotel tiers, freezing all deposits.",
+    "redFlags": [
+      "Pays high compensation for submitting reviews on hotels you have never stayed in",
+      "Platform requires users to deposit their own money into a dashboard to unlock tasks",
+      "Support staff insist you must clear negative account balance to withdraw existing earnings",
+      "Recruiter uses international WhatsApp numbers (+63, +234, +44)",
+      "Fake members in task group post staged receipts of massive bank transfers"
+    ],
+    "kyaKarein": [
+      "Reputable travel platforms prohibit paid customer reviews as illegal market manipulation",
+      "Never transfer personal money to complete freelance task orders",
+      "Report fake review task scams to Scamwatch and local cybercrime desks"
+    ]
+  },
+  {
+    "id": "mystery-shopper-secret-shopper-fake-check-scam-2022",
+    "slug": "mystery-shopper-secret-shopper-fake-check-scam-2022",
+    "icon": "\ud83d\uded2",
+    "name": "Mystery Shopper / Secret Shopper Fake Check Scam",
+    "year": 2022,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 94,
+    "desc": "Victim receives a cashier's check for $2,500 with instructions to mystery-shop at Walmart, buy gift cards, and wire remaining balance before check bounces.",
+    "sampleMsg": "Walmart Secret Shopper Assignment: Enclosed cashier check for $2,850. Keep $400 for your commission; evaluate customer service by purchasing $2,400 in Apple gift cards.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Sends official-looking cashier's check through FedEx.\n2. Instructs victim to deposit check, keep a fee, and purchase gift cards to evaluate store staff.\n3. Victim sends gift card PINs to scammer; check bounces 4 days later leaving victim liable for the entire amount.",
+    "redFlags": [
+      "Unsolicited mystery shopping packet arriving with a high-value physical cashier's check",
+      "Assignment instructs you to purchase gift cards or wire money via Western Union/MoneyGram",
+      "Instructions urge urgent completion within 48 hours before the check has fully cleared bank reconciliation",
+      "Sender company has no formal affiliation with the Mystery Shopping Providers Association (MSPA)",
+      "Bank balance shows available funds temporarily due to federal check clearing laws before check actually clears"
+    ],
+    "kyaKarein": [
+      "Never deposit checks from strangers with instructions to wire back remaining funds",
+      "Verify legitimate mystery shopping companies through MSPA Americas (mspa-americas.org)",
+      "Report counterfeit checks to the US Postal Inspection Service and FTC"
+    ]
+  },
+  {
+    "id": "reshipping-package-mule-recruitment-scam-2024",
+    "slug": "reshipping-package-mule-recruitment-scam-2024",
+    "icon": "\ud83d\udce6",
+    "name": "Reshipping & Package Mule Recruitment Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 96,
+    "desc": "Victims are hired as 'Quality Control Package Managers' to receive goods bought with stolen credit cards at their home and reship them overseas.",
+    "sampleMsg": "Merchandise Quality Inspector: Work from home receiving packages, inspect contents, and print prepaid labels to forward internationally. $3,000 monthly.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Hired via fake job listing for work-from-home logistics manager.\n2. Receives electronics and luxury goods purchased with stolen credit cards.\n3. Repackages and ships items to Eastern Europe or Africa; victim receives zero pay and faces police investigation for handling stolen property.",
+    "redFlags": [
+      "Job requires receiving physical packages at your personal residence and reshipping them",
+      "Merchandise consists of high-end electronics, designer clothing, or luxury jewelry",
+      "Employer provides shipping labels addressed to private individuals in foreign countries",
+      "Promises high monthly salary with first payment promised only after 30 to 60 days of work",
+      "Company has no physical commercial warehouse or licensed customs forwarding registration"
+    ],
+    "kyaKarein": [
+      "Never accept a job that involves receiving and reshipping packages from your home address",
+      "Reshipping stolen goods is a federal felony (trafficking in stolen property)",
+      "Report package mule schemes to the Postal Inspection Service and FBI IC3"
+    ]
+  },
+  {
+    "id": "fake-cruise-ship-hospitality-job-scam-2023",
+    "slug": "fake-cruise-ship-hospitality-job-scam-2023",
+    "icon": "\ud83d\udea2",
+    "name": "Fake Cruise Ship Hospitality Job Scam",
+    "year": 2023,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 92,
+    "desc": "Con artists pose as recruiters for Royal Caribbean or Carnival Cruises, demanding hundreds for mandatory maritime safety certificates and visa medicals.",
+    "sampleMsg": "Royal Caribbean Luxury Cruise Line Hiring: Chefs, bartenders, waitstaff wanted! Tax-free salary $3,800/mo + free meals. STCW maritime safety certificate fee $450.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Sends job offer letters with official cruise line logos and captain signatures.\n2. Demands upfront fees for compulsory maritime safety certification (STCW).\n3. Vanishes after payment; cruise line confirms candidate was never interviewed.",
+    "redFlags": [
+      "Job offer made without rigorous in-person or verified video interviews",
+      "Recruiter demands candidate pay for maritime safety certificates or seaman book up front",
+      "Email sent from commercial accounts (@royalcaribbean-careers.com) rather than official corporate domain",
+      "Payment requested into individual personal bank accounts or Western Union",
+      "Cruises hire through accredited recruitment partners who do not charge candidate fees"
+    ],
+    "kyaKarein": [
+      "Verify all cruise jobs on official corporate career portals (e.g. royalcaribbeangroup.com/careers)",
+      "Major cruise operators never ask job applicants to pay for employment verification or training",
+      "Report fraudulent cruise recruiters to Action Fraud and FTC"
+    ]
+  },
+  {
+    "id": "fake-oil-gas-rig-high-salary-technician-job-2023",
+    "slug": "fake-oil-gas-rig-high-salary-technician-job-2023",
+    "icon": "\ud83d\udee2\ufe0f",
+    "name": "Fake Oil & Gas Rig High-Salary Technician Job",
+    "year": 2023,
+    "isLatest": false,
+    "country": "Canada",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Bogus offshore recruitment firms pitch six-figure entry-level oil rig positions in Alberta or the North Sea, requiring upfront offshore survival course fees.",
+    "sampleMsg": "Offshore Oil Rig Roustabout Job: Starting salary $95,000 CAD with 2 weeks on / 2 weeks off rotation. Offshore safety BOSIET permit fee $1,200.",
+    "source": "Canadian Anti-Fraud Centre",
+    "kaiseHotaHai": "1. Posts high-salary offshore energy jobs on international classified sites.\n2. Issues formal employment contract with Shell or BP logos.\n3. Requires transferring safety course and visa processing fees before deployment.",
+    "redFlags": [
+      "Unrealistic six-figure salaries offered for unskilled entry-level positions",
+      "Demands advance payments for offshore safety training (BOSIET) or Canadian work visas",
+      "Recruiter conducts interview via generic questionnaires without voice or video screening",
+      "Offer letter contains grammatical errors and informal corporate signatures",
+      "Official energy companies hire through accredited offshore contracting agencies"
+    ],
+    "kyaKarein": [
+      "Apply for energy sector jobs directly through verified oil company portals",
+      "Never transfer money for offshore safety certifications to overseas recruitment agencies",
+      "Report fraudulent oil rig job offers to Canadian Anti-Fraud Centre"
+    ]
+  },
+  {
+    "id": "fake-captcha-typing-software-license-scam-2022",
+    "slug": "fake-captcha-typing-software-license-scam-2022",
+    "icon": "\ud83e\udde9",
+    "name": "Fake Captcha Typing Software License Scam",
+    "year": 2022,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 88,
+    "desc": "Websites offering full-time income solving image captchas, requiring users to purchase specialized software licenses that intentionally fail accuracy tests.",
+    "sampleMsg": "Earn Rs 15,000 monthly typing Captchas from home! Unlimited work 24/7. Lifetime Captcha software server license Rs 1,499.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Advertises simple image captcha typing jobs for students and homemakers.\n2. Charges Rs 1,000-2,000 for software license key.\n3. Software is rigged to reject correct entries as errors, permanently preventing payouts.",
+    "redFlags": [
+      "Requires paying for software license keys to start captcha entry work",
+      "Earnings promised are completely disproportionate to real-world captcha entry market rates (fractions of a cent)",
+      "Software intentionally introduces artificial network lag and false error counts",
+      "Minimum payout threshold is set impossibly high ($100 or Rs 10,000)",
+      "No customer support contact number or physical company registration"
+    ],
+    "kyaKarein": [
+      "Never pay for software or license keys to access freelance typing work",
+      "Recognize that solving captchas is intended to bypass website security and earns pennies at best",
+      "Report fraudulent captcha software operators to cyber police"
+    ]
+  },
+  {
+    "id": "linkedin-recruiter-apk-phishing-attack-2026",
+    "slug": "linkedin-recruiter-apk-phishing-attack-2026",
+    "icon": "\ud83d\udd17",
+    "name": "LinkedIn Recruiter APK Phishing Attack",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 96,
+    "desc": "Hackers pose as corporate HR recruiters on LinkedIn, sending prospective candidates interview coding tests in malicious .APK or .EXE files that steal session tokens.",
+    "sampleMsg": "Meta Senior Engineer Opening: Excellent profile! Please review the technical assessment spec in our secure candidate portal app: meta-interview-test.apk",
+    "source": "Google News 2026",
+    "kaiseHotaHai": "1. Creates high-reputation fake LinkedIn recruiter profile with 500+ connections.\n2. Engages tech workers with flattering career opening messages.\n3. Sends assessment project files containing infostealer malware that extracts browser passwords and crypto wallets.",
+    "redFlags": [
+      "Recruiter asks candidate to install an executable (.exe) or Android package (.apk) for interview testing",
+      "Refusal to use standard technical assessment platforms (HackerRank, LeetCode, CodeSignal)",
+      "Recruiter profile has few historical endorsements despite holding senior talent executive title",
+      "File download link hosted on third-party file sharing servers (Mega, Google Drive)",
+      "Antivirus software triggers severe trojan warnings upon download"
+    ],
+    "kyaKarein": [
+      "Never execute .exe or .apk files received from prospective recruiters",
+      "Conduct technical screening tests only on verified industry standard platforms",
+      "Report imposter recruiter profiles directly to LinkedIn Safety"
+    ]
+  },
+  {
+    "id": "medical-billing-work-from-home-software-kit-2023",
+    "slug": "medical-billing-work-from-home-software-kit-2023",
+    "icon": "\ud83e\ude7a",
+    "name": "Medical Billing Work-From-Home Software Kit",
+    "year": 2023,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 91,
+    "desc": "Telemarketers promise lucrative home medical billing contracts, charging thousands for obsolete software and lists of doctors who have never heard of the service.",
+    "sampleMsg": "Medical Billing Business: Earn $50,000/year processing doctor insurance claims from home! Complete software training & client startup kit only $1,800.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Telemarketers claim hospitals and doctors are desperate for home billing processors.\n2. Sells expensive outdated billing software and bogus doctor contact directories.\n3. Doctors on the list have no billing needs; telemarketer refuses refunds.",
+    "redFlags": [
+      "Promises ready-made client lists of doctors needing outsourced billing support",
+      "Requires purchasing specialized medical billing software packages costing thousands",
+      "High-pressure telemarketing pitches emphasizing work-from-home independence",
+      "Lack of formal HIPAA healthcare privacy compliance certification in training",
+      "Doctors on the provided list already have established in-house billing teams"
+    ],
+    "kyaKarein": [
+      "Healthcare providers rarely hire independent uncertified individuals for confidential medical billing",
+      "Never purchase client directories or expensive software kits from telemarketers",
+      "Report medical billing business scams to FTC: ReportFraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "envelope-stuffing-home-assembly-kit-fraud-classic",
+    "slug": "envelope-stuffing-home-assembly-kit-fraud-classic",
+    "icon": "\u2709\ufe0f",
+    "name": "Envelope Stuffing & Home Assembly Kit Fraud",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 89,
+    "desc": "Classic classified ad promising high pay for stuffing envelopes from home, whose only product is an instruction guide telling you to post the same ad to cheat others.",
+    "sampleMsg": "Earn $3 per envelope stuffed! Never leave your home. Send $40 for your official starter supply kit and immediate workflow guarantee.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Posts classified ads in newspapers and magazines offering easy envelope stuffing.\n2. Collects $30-50 for starter kit.\n3. Kit simply instructs victim to place identical ads in other publications to recruit new victims.",
+    "redFlags": [
+      "Promises money for basic envelope stuffing, flyer folding, or craft assembly at home",
+      "Requires paying an upfront application or starter kit fee",
+      "Modern automated mailing machines stuff thousands of envelopes per minute for fractions of a penny",
+      "Ad gives no company name or verifiable commercial business description",
+      "The work involves nothing more than recruiting more people into the same scheme"
+    ],
+    "kyaKarein": [
+      "Commercial businesses use automated industrial mailing machines; nobody pays humans to stuff envelopes by hand",
+      "Never send money for home envelope stuffing or assembly starter kits",
+      "Report mail order job scams to US Postal Inspection Service"
+    ]
+  },
+  {
+    "id": "fake-document-translation-transcription-deposit-2024",
+    "slug": "fake-document-translation-transcription-deposit-2024",
+    "icon": "\ud83c\udf10",
+    "name": "Fake Document Translation & Transcription Deposit",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 90,
+    "desc": "Fraudulent translation agencies award freelance translators large book projects, demanding a security deposit that is stolen after completion.",
+    "sampleMsg": "Freelance Translation Contract: Translate 80-page business manual English to Spanish. Payout $3,500. Refundable project insurance deposit $250.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Posts high-paying translation contracts on freelance job boards.\n2. Directs translator to communication outside the platform on Telegram.\n3. Demands insurance or security deposit before releasing initial milestone payout.",
+    "redFlags": [
+      "Client insists on moving communication off the freelance platform to Telegram",
+      "Rate per word offered is 5x to 10x higher than standard professional translation rates",
+      "Client demands candidate pay a 'security deposit' or 'tax deposit' to release payment",
+      "Contract documents use generic templates with no real corporate identity",
+      "Payment proof provided is a forged wire transfer receipt"
+    ],
+    "kyaKarein": [
+      "Never pay money to receive payment for freelance services you completed",
+      "Keep all communication, contracts, and payments inside verified freelance platforms (Upwork, ProZ)",
+      "Report client fraud to freelance platform trust and safety teams"
+    ]
+  },
+  {
+    "id": "fake-airline-cabin-crew-academy-advance-fee-2023",
+    "slug": "fake-airline-cabin-crew-academy-advance-fee-2023",
+    "icon": "\ud83d\udeeb",
+    "name": "Fake Airline Cabin Crew Academy Advance Fee",
+    "year": 2023,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Bogus aviation institutes promise 100% guaranteed flight attendant placement with Emirates or IndiGo, charging lakhs for unaccredited certificates.",
+    "sampleMsg": "Cabin Crew / Air Hostess Direct Placement: 100% job guarantee with Emirates & IndiGo Airlines upon 3-month course completion. Admission fee Rs 1,50,000.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Runs advertisements targeting young women in tier-2 cities.\n2. Rents fake training center with mock airplane seats.\n3. Collects heavy course fees and provides worthless in-house diploma; airlines reject candidates due to lack of DGCA/aviation accreditation.",
+    "redFlags": [
+      "Guarantees 100% employment placement with specific international airlines",
+      "Institute is not approved or accredited by the Directorate General of Civil Aviation (DGCA)",
+      "Airlines train their own cabin crew internally after direct merit-based selection",
+      "High upfront cash fees demanded with no refund clause",
+      "Promoters boast of personal relationships with airline HR leadership"
+    ],
+    "kyaKarein": [
+      "Airlines (IndiGo, Air India, Emirates) hire and train flight attendants directly at zero academy fees",
+      "Apply directly through official airline career websites",
+      "Report fraudulent aviation academies to consumer protection forums"
+    ]
+  },
+  {
+    "id": "freelancer-escrow-bypass-external-payment-scam-2024",
+    "slug": "freelancer-escrow-bypass-external-payment-scam-2024",
+    "icon": "\ud83d\udcbb",
+    "name": "Freelancer Escrow Bypass & External Payment Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 92,
+    "desc": "Dishonest clients lure Upwork and Fiverr freelancers to work outside platform escrow with promises of higher direct pay, refusing payment once work is submitted.",
+    "sampleMsg": "Let's work outside Upwork to avoid their 10% fee. I will pay you $2,500 directly via PayPal upon project delivery. Send work files first.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Connects with freelance designer or developer on licensed platform.\n2. Convinces freelancer to communicate via WhatsApp and bypass escrow.\n3. Takes full source code and vanishes without sending payment.",
+    "redFlags": [
+      "Client insists on bypassing platform escrow to save fees",
+      "Refuses to fund an upfront milestone or initial deposit",
+      "Demands delivery of full high-resolution source code files before releasing payment",
+      "Client profile has no payment verification or previous hiring history",
+      "Offers payment methods that can be easily charged back or spoofed"
+    ],
+    "kyaKarein": [
+      "Always work through platform escrow systems that hold funds before work begins",
+      "Never deliver full project source files without verified milestone release",
+      "Report clients attempting escrow bypass to platform administration"
+    ]
+  },
+  {
+    "id": "it-consultant-background-verification-fee-extortion-2025",
+    "slug": "it-consultant-background-verification-fee-extortion-2025",
+    "icon": "\ud83d\udc68\u200d\ud83d\udcbb",
+    "name": "IT Consultant Background Verification Fee Extortion",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 91,
+    "desc": "Recruiters offer high-salary software developer roles at TCS or Infosys, demanding Rs 8,000 for mandatory third-party background screening.",
+    "sampleMsg": "TCS Senior Java Developer Offer: Annual CTC Rs 18 LPA. Offer letter released. Pay Rs 7,800 to verified third-party background screening portal to finalize.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends realistic offer letter on forged corporate stationery.\n2. Directs engineer to third-party website to submit background verification fee.\n3. The verification portal is controlled by scammers who pocket the money and cut communication.",
+    "redFlags": [
+      "IT services company demands the job candidate pay for their own background verification",
+      "Major IT companies (TCS, Infosys, Wipro) have strict zero-fee candidate recruitment policies",
+      "Offer letter sent from non-corporate email address (@tcs-hiring-desk.com)",
+      "Threatens that offer will lapse if verification fee is not paid within 24 hours",
+      "Payment portal redirects to generic personal UPI handle"
+    ],
+    "kyaKarein": [
+      "Major IT corporations never ask candidates to pay background screening fees",
+      "Verify offer letters through official company careers verification email addresses",
+      "Report fraudulent recruitment consultants to national cyber portals"
+    ]
+  },
+  {
+    "id": "fake-overseas-school-teacher-placement-scam-2023",
+    "slug": "fake-overseas-school-teacher-placement-scam-2023",
+    "icon": "\ud83d\udcda",
+    "name": "Fake Overseas School Teacher Placement Scam",
+    "year": 2023,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 92,
+    "desc": "Educators are offered high-paying international school teaching roles in Dubai or London, requiring upfront payments for local teaching licenses.",
+    "sampleMsg": "International British School London: High School English Teacher opening! Salary \u00a342,000 + housing. Pay \u00a3650 for UK Department of Education license.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Sends unsolicited offer letters to teachers listed on resume databases.\n2. Fakes legitimate school branding and headmaster signature.\n3. Demands payment for foreign credential evaluation and immigration security clearance.",
+    "redFlags": [
+      "Teaching position offered without interview with the school principal or academic panel",
+      "Candidate asked to pay for foreign teaching credentials or visa processing up front",
+      "School website domain is slightly misspelled compared to the real institution",
+      "Telephone interviews conducted with poor audio quality and evasive answers about curriculum",
+      "Payments routed to individual offshore escrow accounts"
+    ],
+    "kyaKarein": [
+      "Contact the school directly using phone numbers listed in official educational directories",
+      "Legitimate international schools sponsor visas and covering licensing costs for selected teachers",
+      "Report bogus teaching recruiters to Action Fraud"
+    ]
+  },
+  {
+    "id": "virtual-assistant-equipment-check-overpayment-2024",
+    "slug": "virtual-assistant-equipment-check-overpayment-2024",
+    "icon": "\ud83d\udcbb",
+    "name": "Virtual Assistant Equipment Check Overpayment",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 95,
+    "desc": "Newly hired virtual assistants receive a fraudulent $4,000 cashier's check to purchase home office laptops from the company's 'approved vendor'.",
+    "sampleMsg": "Executive Virtual Assistant: Welcome to the team! We are mailing a $3,800 equipment check. Deposit check and Zelle $3,200 to our approved Apple vendor.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Hires assistant after brief online questionnaire.\n2. Mails fake cashier's check for home office supplies.\n3. Victim wires funds to 'approved vendor' (the scammer); check bounces days later, leaving assistant deeply in debt to their bank.",
+    "redFlags": [
+      "Employer sends a check to buy home office equipment from their specific vendor",
+      "Employer insists on sending money to the vendor via Zelle, Cash App, or wire",
+      "The vendor only accepts non-reversible peer-to-peer payment methods",
+      "The check sent is significantly higher than necessary equipment costs",
+      "Real employers ship physical computers directly or reimburse verified expenses on payroll"
+    ],
+    "kyaKarein": [
+      "Never deposit a check from an employer with instructions to transfer funds to a third-party vendor",
+      "Legitimate remote employers ship corporate laptops directly from IT departments",
+      "Report fake equipment check scams to FBI IC3"
+    ]
+  },
+  {
+    "id": "fake-voiceover-artist-equipment-deposit-scam-2024",
+    "slug": "fake-voiceover-artist-equipment-deposit-scam-2024",
+    "icon": "\ud83c\udf99\ufe0f",
+    "name": "Fake Voiceover Artist Equipment Deposit Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 89,
+    "desc": "Voice actors are booked for high-paying audiobook narration, then instructed to send money to an audio engineer for specialized studio calibration software.",
+    "sampleMsg": "Audiobook Narration Booking: 10-hour narration contract at $250/finished hour. Pay $350 to master audio engineer for proprietary acoustic calibration profile.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Reaches out to voice talent on freelance audio forums.\n2. Sends contract for lucrative multi-book narration project.\n3. Insists the audio must be mastered using their specific engineer, demanding advance calibration fee.",
+    "redFlags": [
+      "Client books talent without requesting professional voice demo reel or custom audition",
+      "Compensation offered is double standard SAG-AFTRA or ACX industry union rates",
+      "Requires paying an advance fee to a third-party audio engineer for software or calibration",
+      "Client refuses to communicate on verified voiceover industry platforms",
+      "Contract contains vague production details and no publisher ISBN registration"
+    ],
+    "kyaKarein": [
+      "Professional publishers provide mastering specs; they never require talent to pay external engineers",
+      "Book narration projects through reputable platforms like ACX or Voices.com",
+      "Report fraudulent audiobook casting to FTC"
+    ]
+  },
+  {
+    "id": "fake-overseas-chauffeur-private-driver-hiring-2023",
+    "slug": "fake-overseas-chauffeur-private-driver-hiring-2023",
+    "icon": "\ud83d\ude97",
+    "name": "Fake Overseas Chauffeur & Private Driver Hiring",
+    "year": 2023,
+    "isLatest": false,
+    "country": "UAE",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 93,
+    "desc": "Con artists advertise high-salary VIP chauffeur positions for royal families in Dubai or London, charging advance international driving license translation fees.",
+    "sampleMsg": "Royal Family Chauffeur Dubai: VIP luxury fleet driver needed. Salary AED 8,000 + luxury accommodation. International driving license conversion fee Rs 38,000.",
+    "source": "UAE eCrime",
+    "kaiseHotaHai": "1. Advertises VIP driving jobs targeting professional drivers in developing countries.\n2. Demands advance fees for international driving permit conversion and security vetting.\n3. Vanishes once payment is received; victims arrive in Gulf on visit visas with no sponsor.",
+    "redFlags": [
+      "Promises extraordinarily high chauffeur salaries with VIP royal family perks",
+      "Requires paying upfront license conversion or security screening fees",
+      "Recruiter refuses to provide official labor contract attested by UAE Embassy",
+      "Payments directed to personal bank accounts in home country",
+      "Genuine royal estates hire through accredited diplomatic and protocol security firms"
+    ],
+    "kyaKarein": [
+      "Verify all UAE private employment contracts through the official MOHRE portal",
+      "Never pay money for international driving license conversion before travel",
+      "Report overseas driver recruitment fraud to Indian MEA and Dubai Police"
+    ]
+  },
+  {
+    "id": "fake-overseas-security-guard-deployment-scam-2024",
+    "slug": "fake-overseas-security-guard-deployment-scam-2024",
+    "icon": "\ud83d\udee1\ufe0f",
+    "name": "Fake Overseas Security Guard Deployment Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 92,
+    "desc": "Bogus manpower agencies promise security guard positions at FIFA stadiums or Gulf shopping malls, taking lakhs in deposits and stranding workers on visitor visas.",
+    "sampleMsg": "Qatar & Dubai Mall Security Guard: 500 Vacancies! Height 5'8\"+. Salary Rs 65,000 + free food & visa. Registration & uniform fee Rs 55,000.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Conducts mock physical height measurements in rural coaching academies.\n2. Collects Rs 50,000-80,000 advance fees for uniforms and security clearance.\n3. Flies workers to Gulf on short-term 30-day tourist visas with zero work authorization.",
+    "redFlags": [
+      "Agency is not registered with the Protector General of Emigrants (eMigrate portal)",
+      "Issues tourist or visit visas instead of formal employment residence visas",
+      "Collects uniform and training fees from job seekers (strictly illegal under emigrant law)",
+      "Recruitment agency office is temporary with no permanent corporate signboards",
+      "Demands original passport deposit as collateral"
+    ],
+    "kyaKarein": [
+      "Always verify overseas recruitment agencies on the Indian government eMigrate portal (emigrate.gov.in)",
+      "Never travel for overseas employment on a tourist or visit visa",
+      "Report illegal recruitment touts to the Protector of Emigrants"
+    ]
+  },
+  {
+    "id": "ai-prompt-engineer-high-hourly-remote-task-trap-2026",
+    "slug": "ai-prompt-engineer-high-hourly-remote-task-trap-2026",
+    "icon": "\ud83e\udd16",
+    "name": "AI Prompt Engineer High-Hourly Remote Task Trap",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Job",
+    "categorySlug": "job-employment",
+    "categoryName": "Job & Employment",
+    "score": 95,
+    "desc": "Fraudulent platforms promise $80/hr training generative AI models, requiring workers to purchase an 'AI Model Calibration Certificate' to qualify for tasks.",
+    "sampleMsg": "Remote AI Prompt Engineer: Train generative language models from home! $75/hr. No coding needed. Pass certified benchmark exam ($149 verification fee) to unlock queue.",
+    "source": "Google News 2026",
+    "kaiseHotaHai": "1. Capitalizes on massive media hype surrounding artificial intelligence careers.\n2. Lures applicants with promises of high hourly wages for simple chatbot testing.\n3. Mandates paying $150-300 for an unaccredited internal AI training certification before releasing tasks.",
+    "redFlags": [
+      "Offers high hourly wages ($70+/hr) for non-technical AI prompting requiring zero experience",
+      "Requires paying for an proprietary training module or certification exam to qualify for the work queue",
+      "Platform interface is cloned from authentic data annotation platforms (Scale AI, Outlier)",
+      "Once certification fee is paid, the platform displays 'No tasks currently available in your region'",
+      "No human hiring manager or verifiable corporate headquarters"
+    ],
+    "kyaKarein": [
+      "Reputable AI annotation platforms (Scale, Outlier, Appen) never charge workers for certification exams",
+      "Never pay money to unlock remote freelance work queues",
+      "Report deceptive AI employment platforms to FTC"
+    ]
+  },
+  {
+    "id": "usps-postal-service-incomplete-address-smishing-2026",
+    "slug": "usps-postal-service-incomplete-address-smishing-2026",
+    "icon": "\ud83d\udce6",
+    "name": "USPS / Postal Service Incomplete Address Smishing",
+    "year": 2026,
+    "isLatest": true,
+    "country": "USA",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "Fake SMS claiming your package cannot be delivered due to missing house number, directing to cloned postal portal demanding redelivery fee.",
+    "sampleMsg": "USPS: Your package has arrived at the distribution center but cannot be delivered due to incomplete street address. Please update: https://usps-redeliver-track.top/us",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Automated SMS gateways mass-blast thousands of phone numbers daily.\n2. Phishing link clones genuine postal service branding and asks for address.\n3. Requires $1.99 card payment, harvesting full credit card details and CVV for carding syndicates.",
+    "redFlags": [
+      "Sent from regular mobile number or international country code instead of postal 5-digit shortcode",
+      "Urgent call to action claiming parcel will be returned within 12 hours",
+      "Domain has unusual extension like .top, .xyz, .cc, or hyphens (usps-redeliver-track.top)",
+      "You received notification without ordering any physical items online",
+      "Website prompts for debit/credit card CVV to update a residential delivery address"
+    ],
+    "kyaKarein": [
+      "Never tap links in unexpected package delivery text messages",
+      "Track packages only by opening the official USPS, FedEx or UPS app directly",
+      "Forward suspicious text messages to 7726 (SPAM) to notify carriers"
+    ]
+  },
+  {
+    "id": "india-post-customs-detention-smishing-2026",
+    "slug": "india-post-customs-detention-smishing-2026",
+    "icon": "\ud83d\udcec",
+    "name": "India Post Customs Detention Smishing",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "Fraudsters impersonate India Post or Customs Department claiming international courier is stuck and will be returned if address/fee is not updated.",
+    "sampleMsg": "India Post: Your package #IN98214912 has arrived at depot but address is incorrect. Please update within 24hrs at https://indiapost-update-address.in to avoid return.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Victims receive SMS with forged India Post sender header.\n2. Link leads to pixel-perfect replica of the India Post tracking portal.\n3. Asks user to pay nominal charge of Rs 25, harvesting netbanking or UPI credentials via fake payment gateway.",
+    "redFlags": [
+      "Sender ID is private 10-digit mobile number rather than registered government header (e.g. DZ-INPOST)",
+      "Short deadline threatening return or legal fine for unclaimed courier",
+      "Demands bank details or OTP for simple postal address modification",
+      "Grammatical errors in Hindi or English notification text",
+      "URL does not end in official government domain '.gov.in'"
+    ],
+    "kyaKarein": [
+      "Check tracking numbers solely on official portal indiapost.gov.in",
+      "Do not pay any fee on links received via SMS or WhatsApp",
+      "Report fraudulent messages on National Cyber Crime Portal cybercrime.gov.in or helpline 1930"
+    ]
+  },
+  {
+    "id": "quishing-qr-code-phishing-on-parking-meters-menus-2026",
+    "slug": "quishing-qr-code-phishing-on-parking-meters-menus-2026",
+    "icon": "\ud83d\udcf1",
+    "name": "Quishing - QR Code Phishing on Parking Meters & Menus",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 94,
+    "desc": "Malicious QR code stickers placed over legitimate QR codes on street parking meters, restaurant tables, or electric vehicle chargers.",
+    "sampleMsg": "Scan this QR code with camera to pay $2.50 for parking space #42. Avoid $60 municipal parking citation.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Criminals print physical QR stickers and overlay them on authentic municipal meter signs.\n2. Scanning redirects driver to fake parking payment website mimicking ParkMobile or PayByPhone.\n3. Driver inputs card info; parking remains unpaid, resulting in both stolen card data and real city parking ticket.",
+    "redFlags": [
+      "QR code looks like a peel-off sticker overlaid on top of existing signage",
+      "URL opened in browser does not match official municipal parking provider domain",
+      "Browser gives SSL warning or shows unusual generic payment processor",
+      "Website prompts for account passwords or excessive personal information",
+      "Physical sticker edges are peeling or misaligned with metal plate"
+    ],
+    "kyaKarein": [
+      "Pay via the official parking mobile app downloaded directly from official app stores",
+      "Inspect QR codes carefully to verify they are not stickers pasted over permanent metal printing",
+      "Never input credit card info if the URL bar appears unfamiliar"
+    ]
+  },
+  {
+    "id": "royal-mail-redelivery-fee-smishing-2025",
+    "slug": "royal-mail-redelivery-fee-smishing-2025",
+    "icon": "\ud83d\udcee",
+    "name": "Royal Mail Redelivery Fee Smishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 95,
+    "desc": "Scam text pretending to be Royal Mail demanding a \u00a31.45 unpaid shipping surcharge before delivery can proceed.",
+    "sampleMsg": "Royal Mail: Your item has been held due to unpaid shipping fee (\u00a31.45). To reschedule delivery, visit: https://royal-mail-fee-settle.co.uk",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. SMS sent claiming a parcel has unpaid customs or handling surcharge.\n2. Phishing link requests full name, address, date of birth, and debit card number.\n3. Criminals follow up hours later with phone call pretending to be bank fraud department.",
+    "redFlags": [
+      "Royal Mail only leaves physical grey 'Something for you' cards through letterboxes for unpaid fees",
+      "Website domain is not royalmail.com",
+      "Text sent from standard mobile number (+44 7xxx)",
+      "Requests mother's maiden name or online banking credentials during checkout",
+      "Immediate threat of parcel destruction"
+    ],
+    "kyaKarein": [
+      "Check Royal Mail official site directly for true tracking status",
+      "Forward scam text messages to 7726 for UK telecommunication network investigation",
+      "Report phishing attempts to Action Fraud on 0300 123 2040"
+    ]
+  },
+  {
+    "id": "highway-toll-smishing-e-zpass-sunpass-fastrak-2025",
+    "slug": "highway-toll-smishing-e-zpass-sunpass-fastrak-2025",
+    "icon": "\ud83d\udee3\ufe0f",
+    "name": "Highway Toll Smishing (E-ZPass, SunPass, FasTrak)",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 94,
+    "desc": "Urgent texts claiming you have an unpaid toll balance of $3.50 to $11.50 with threat of $50 late fee or driver's license suspension.",
+    "sampleMsg": "Toll Services: You have an unpaid toll invoice of $6.25 on I-95. Settle immediately to avoid $50 late penalty: https://toll-invoices-pay.com",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Coordinated smishing campaigns target area codes where express toll lanes operate.\n2. Fake portal shows realistic toll agency logo and mock invoice.\n3. Steals credit card and social security details under guise of driver verification.",
+    "redFlags": [
+      "Toll agencies never send unsolicited text messages demanding immediate payment",
+      "Domain is not official state toll operator website (.gov or authorized toll portal)",
+      "Recipient does not drive on toll roads or own an automobile",
+      "High pressure threat of immediate license suspension or credit score destruction",
+      "Payment screen does not show specific timestamp, toll plaza location, or vehicle license plate"
+    ],
+    "kyaKarein": [
+      "Log in only via your registered state toll authority account or official app",
+      "File complaint with FBI IC3 at ic3.gov",
+      "Block sender and delete text message without opening link"
+    ]
+  },
+  {
+    "id": "fastag-account-suspension-blacklist-alert-2025",
+    "slug": "fastag-account-suspension-blacklist-alert-2025",
+    "icon": "\ud83d\ude97",
+    "name": "FASTag Account Suspension & Blacklist Alert",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "SMS warning that FASTag KYC is pending and toll tag will be deactivated or blacklisted within 24 hours.",
+    "sampleMsg": "Dear Customer, Your NHAI FASTag KYC has expired. Your tag will be blocked on highway tolls tonight. Update now: https://fastag-kyc-nhai.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Exploits nationwide FASTag KYC compliance deadlines.\n2. Links to fake portal asking vehicle registration number and mobile OTP.\n3. Uses entered OTP to drain linked prepaid wallet or bank account.",
+    "redFlags": [
+      "Link uses non-government domain instead of official bank portal or ihmcl.co.in",
+      "Urgent deadline threatening toll plaza denial or double toll penalty",
+      "Asks for bank account password or UPI PIN to verify FASTag",
+      "Message sent from personal 10-digit number",
+      "Demands installation of APK file for KYC verification"
+    ],
+    "kyaKarein": [
+      "Verify FASTag status only through issuer bank app or IHMCL portal",
+      "Never enter UPI PIN or bank password to complete KYC updates",
+      "Call your FASTag issuing bank customer care number on physical card"
+    ]
+  },
+  {
+    "id": "electricity-power-disconnection-tonight-sms-2025",
+    "slug": "electricity-power-disconnection-tonight-sms-2025",
+    "icon": "\u26a1",
+    "name": "Electricity Power Disconnection Tonight SMS",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "SMS warning electricity power supply will be cut off at 9:30 PM tonight due to previous month unpaid bill, providing fake electricity officer mobile number.",
+    "sampleMsg": "Dear consumer, Your Electricity power will be disconnected tonight at 9.30 pm from electricity office because your previous month bill was not updated. Please immediately contact our power officer 9811XXXXXX. Thanks.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends frightening text late in the afternoon so victims fear spending night in dark.\n2. Scared victim calls provided officer mobile number.\n3. Fraudster instructs victim to install AnyDesk or TeamViewer APK to pay Rs 10 test fee, draining entire bank balance.",
+    "redFlags": [
+      "Threatens imminent power disconnection within hours (electricity boards give weeks of written notice)",
+      "Directs customer to call private mobile phone number rather than official discom helpline",
+      "Sent from personal mobile number instead of utility sender header (e.g. BSES, TATA, MSEDCL)",
+      "Officer asks caller to download APK file or screen sharing software",
+      "Demands instant payment via unknown UPI link"
+    ],
+    "kyaKarein": [
+      "Never call phone numbers provided inside suspicious SMS warnings",
+      "Check true bill status on official state electricity board mobile app or consumer portal",
+      "Never install remote control apps like AnyDesk, RustDesk or TeamViewer requested by callers"
+    ]
+  },
+  {
+    "id": "bank-pan-kyc-expiry-account-blocked-phishing-2025",
+    "slug": "bank-pan-kyc-expiry-account-blocked-phishing-2025",
+    "icon": "\ud83c\udfe6",
+    "name": "Bank PAN / KYC Expiry Account Blocked Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 98,
+    "desc": "SMS claiming bank account has been suspended or frozen due to unlinked PAN card or missing re-KYC documentation.",
+    "sampleMsg": "Dear SBI/HDFC User, your bank account has been blocked due to unlinked PAN card. Kindly click https://sbi-pan-kyc-verify.com to re-activate within 24 hours.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Mass smishing attacks trigger panic about inaccessible bank funds.\n2. Phishing link opens replica of netbanking login portal.\n3. Captures customer ID, password, date of birth, and triggers high-value transfer demanding victim's OTP.",
+    "redFlags": [
+      "Banks never send links in SMS asking customers to update KYC or PAN details",
+      "Short deadline threatening immediate freeze of banking services",
+      "Website domain does not match official bank URL (e.g. onlinesbi.sbi or hdfcbank.com)",
+      "Webpage prompts for Internet banking password, debit card PIN, and OTP simultaneously",
+      "SMS received from standard 10-digit mobile number"
+    ],
+    "kyaKarein": [
+      "Banks mandate physical branch visit or official netbanking login for re-KYC",
+      "Never click links inside SMS mentioning account suspension",
+      "Call bank customer service immediately to lock netbanking if credentials entered"
+    ]
+  },
+  {
+    "id": "netflix-streaming-subscription-suspension-phishing-2025",
+    "slug": "netflix-streaming-subscription-suspension-phishing-2025",
+    "icon": "\ud83d\udcfa",
+    "name": "Netflix & Streaming Subscription Suspension Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 91,
+    "desc": "Emails and SMS stating your Netflix, Disney+ or Spotify membership is suspended due to billing decline, linking to fake credit card update page.",
+    "sampleMsg": "Netflix: We were unable to authorize your latest membership payment. Please update your billing details here to avoid service disruption: https://netflix-account-restart.net",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Mass phishing campaigns target millions of streaming subscribers.\n2. Page mirrors authentic streaming service login interface.\n3. Harvests user credentials and full credit card details including CVV and billing address.",
+    "redFlags": [
+      "Sender email address is not from @netflix.com or official brand domain",
+      "Greeting is generic ('Dear Customer') instead of account holder name",
+      "Link destination displays suspicious third-party URL",
+      "Prompts for sensitive card data without requiring 2FA login verification",
+      "Threatens immediate termination of account within 24 hours"
+    ],
+    "kyaKarein": [
+      "Navigate directly to netflix.com in browser or open installed TV/mobile app to view billing status",
+      "Forward phishing email to phishing@netflix.com",
+      "Report scam URL to Google Safe Browsing and FTC"
+    ]
+  },
+  {
+    "id": "apple-id-icloud-device-lost-found-phishing-2025",
+    "slug": "apple-id-icloud-device-lost-found-phishing-2025",
+    "icon": "\ud83c\udf4f",
+    "name": "Apple ID / iCloud Device Lost & Found Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "Victims of stolen iPhones receive SMS pretending to be Apple Find My, stating missing device was found and requesting Apple ID login to view location.",
+    "sampleMsg": "Apple Find My: Your lost iPhone 15 Pro has been located near Central Station at 14:22. View real-time location map: https://apple-findmy-location-auth.co",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Thieves steal iPhone and obtain owner's emergency contact number from lock screen.\n2. Automated SMS sent pretending iPhone is powered on and found.\n3. Fake iCloud login captures Apple ID password, allowing thieves to remove Activation Lock and wipe phone for resale.",
+    "redFlags": [
+      "Apple Find My never sends SMS with links to enter Apple ID password to view location",
+      "Domain is not official apple.com or icloud.com",
+      "Message arrives shortly after device was physically stolen or misplaced",
+      "Page demands two-factor authentication verification code immediately",
+      "Sender ID is random web email or international number"
+    ],
+    "kyaKarein": [
+      "Check device status exclusively on official portal icloud.com/find",
+      "Never enter Apple ID or iCloud password into links received via SMS",
+      "Keep Lost Mode active on iCloud to prevent thieves from wiping device"
+    ]
+  },
+  {
+    "id": "tax-refund-phishing-irs-hmrc-fbr-2025",
+    "slug": "tax-refund-phishing-irs-hmrc-fbr-2025",
+    "icon": "\ud83d\udcb8",
+    "name": "Tax Refund Phishing (IRS / HMRC / FBR)",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 95,
+    "desc": "Emails or SMS claiming you are owed a large tax rebate ($480 or \u00a3650), directing to fake tax portal asking for bank account and card details to claim funds.",
+    "sampleMsg": "HMRC: You have an outstanding tax refund of \u00a3485.20 from fiscal year 2024. Submit your direct deposit claim within 48h: https://gov-hmrc-rebates-claim.org",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Dispatched during spring and year-end annual tax filing seasons.\n2. Phishing form requests full identity details (SSN, National Insurance number, birth date).\n3. Requires debit card number, expiration, and CVV to 'deposit refund', which scammers immediately drain.",
+    "redFlags": [
+      "Tax authorities never initiate contact by email or text message to issue refunds",
+      "Government websites use official top-level domains (.gov or .gov.uk)",
+      "Refunds are never sent by asking for a debit card CVV number",
+      "Urgent deadline warning that refund will expire or revert to treasury",
+      "Spelling errors in tax authority legal disclosures"
+    ],
+    "kyaKarein": [
+      "Check refund status directly on irs.gov or gov.uk online tax account",
+      "Forward IRS phishing emails to phishing@irs.gov",
+      "Forward HMRC phishing messages to phishing@hmrc.gov.uk"
+    ]
+  },
+  {
+    "id": "sim-swap-verification-5g-upgrade-trap-2025",
+    "slug": "sim-swap-verification-5g-upgrade-trap-2025",
+    "icon": "\ud83d\udcf6",
+    "name": "SIM Swap Verification & 5G Upgrade Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "Messages claiming your 4G SIM will stop working unless you upgrade to 5G by forwarding a carrier porting code or 20-digit SIM number.",
+    "sampleMsg": "Airtel/Jio: Your 4G SIM service will expire in 12 hours. To upgrade to Free 5G Unlimited, forward SIM <20-digit code> to 121 immediately.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers obtain victim's bank details or passwords via earlier breach.\n2. Tricking victim into forwarding SIM activation code transfers phone number to fraudster's physical SIM.\n3. Victim's phone shows 'No Service' while scammers intercept OTPs and empty bank accounts.",
+    "redFlags": [
+      "Telecom carriers do not require users to forward SMS codes to upgrade to 5G",
+      "SMS instructs sending SIM serial number to customer service porting number",
+      "Threat of immediate service termination within 12 hours",
+      "Sudden loss of cellular network signal on your phone following the message",
+      "Caller claims to be telecom engineer assisting with speed optimization"
+    ],
+    "kyaKarein": [
+      "Never forward SMS codes or SIM numbers received on your handset",
+      "If phone suddenly loses network connection, contact telecom provider immediately from another phone",
+      "Notify bank fraud helpline immediately if SIM swap is suspected"
+    ]
+  },
+  {
+    "id": "whatsapp-account-verification-code-interception-2025",
+    "slug": "whatsapp-account-verification-code-interception-2025",
+    "icon": "\ud83d\udcac",
+    "name": "WhatsApp Account Verification Code Interception",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "A friend's hacked WhatsApp account texts you asking for a 6-digit code sent to your phone by mistake, which is actually your own WhatsApp registration OTP.",
+    "sampleMsg": "Hey sorry, I accidentally sent my WhatsApp 6-digit code to your phone number by mistake! Can you please send it back to me quickly? It is very urgent.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Fraudster hacks user A's account and targets contacts in their address book.\n2. Fraudster attempts to register WhatsApp on a new phone using victim's phone number.\n3. Victim receives official WhatsApp SMS code and forwards it to 'friend', instantly losing account access.",
+    "redFlags": [
+      "A friend asks for a 6-digit verification code sent to your phone",
+      "Official SMS clearly states: 'Do not share this code with anyone'",
+      "Unusual conversational tone or desperate urgency from someone you know",
+      "Request occurs out of nowhere on social messaging apps",
+      "After sharing code, you are immediately logged out of WhatsApp on your phone"
+    ],
+    "kyaKarein": [
+      "Never share verification codes or OTPs with anyone, even close family or friends",
+      "Enable Two-Step Verification PIN inside WhatsApp Settings > Account",
+      "Call your friend on cellular phone to inform them their account is compromised"
+    ]
+  },
+  {
+    "id": "fake-airline-cancellation-flight-reschedule-sms-2025",
+    "slug": "fake-airline-cancellation-flight-reschedule-sms-2025",
+    "icon": "\u2708\ufe0f",
+    "name": "Fake Airline Cancellation & Flight Reschedule SMS",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "SMS alerting that your upcoming flight is cancelled due to weather or technical fault, directing you to call a fake airline support number for refund.",
+    "sampleMsg": "Delta/IndiGo Alert: Flight DL-491 has been cancelled due to technical difficulties. Call priority rebooking desk +1-888-XXX-XXXX immediately to claim refund.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers track travel disruptions or blast holiday traveler pools.\n2. Call connects to fake travel call center.\n3. Operator demands cancellation fee or card details to reschedule flight tickets.",
+    "redFlags": [
+      "SMS does not include passenger name or booking reference PNR number",
+      "Phone number provided is not the official airline customer care helpline",
+      "Demands credit card payment to reissue ticket on cancelled flight",
+      "Agent creates intense pressure claiming next flight has only 1 seat left",
+      "Website or caller requests remote phone access software"
+    ],
+    "kyaKarein": [
+      "Check flight status directly in the airline official mobile app or airport website",
+      "Never dial phone numbers provided in unverified SMS alerts",
+      "Verify booking using PNR on the airline's official domain"
+    ]
+  },
+  {
+    "id": "social-media-copyright-infringement-suspension-dm-2025",
+    "slug": "social-media-copyright-infringement-suspension-dm-2025",
+    "icon": "\ud83d\udcf8",
+    "name": "Social Media Copyright Infringement Suspension DM",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 92,
+    "desc": "Direct message on Instagram, Facebook or X claiming copyright violation on your post, warning account deletion within 24h unless verified via link.",
+    "sampleMsg": "Meta Copyright Center: A copyright violation has been detected on your account. If you think this is a mistake, appeal here: https://meta-copyright-appeals-form.biz",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Bots target creators and business pages on Instagram and Facebook.\n2. Link mimics Meta or Twitter support authentication form.\n3. Steals account login, backup codes, and changes recovery email immediately.",
+    "redFlags": [
+      "Meta and Instagram never send copyright notices via Direct Message or chat",
+      "Official notices appear exclusively in Settings > Help > Support Requests",
+      "Domain has unusual extensions (.biz, .cfd, .click)",
+      "Sender profile has no official verification badge and has 0 posts",
+      "Demands your current password and 2FA recovery backup codes"
+    ],
+    "kyaKarein": [
+      "Ignore and report Instagram direct messages claiming copyright violations",
+      "Check authentic account status inside official Instagram Settings > Support Requests",
+      "Turn on two-factor authentication using authenticator apps rather than SMS"
+    ]
+  },
+  {
+    "id": "credit-card-points-expiry-reward-voucher-phishing-2025",
+    "slug": "credit-card-points-expiry-reward-voucher-phishing-2025",
+    "icon": "\ud83d\udcb3",
+    "name": "Credit Card Points Expiry Reward Voucher Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 95,
+    "desc": "SMS claiming reward points worth Rs 8,450 on your credit card will expire today, urging you to redeem for cash into bank account via link.",
+    "sampleMsg": "Dear customer, Your 9,850 HDFC/SBI credit card reward points worth Rs 9,850 are expiring today. Redeem cash directly into your account: https://reward-points-redeem.cc",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends enticing text during festival seasons when spending is high.\n2. Phishing link asks victim to select bank and enter credit card number, CVV, and expiry date.\n3. Scammers initiate transaction on overseas portal and prompt victim for OTP under pretense of reward credit.",
+    "redFlags": [
+      "Banks never redeem reward points for direct cash deposits via unauthenticated third-party links",
+      "SMS sent from random private number instead of official bank header",
+      "URL is not the official credit card reward portal (e.g. smartbuy or sbicard.com)",
+      "Page asks for CVV and OTP to credit reward money",
+      "Urgent deadline warning that points will lapse at midnight"
+    ],
+    "kyaKarein": [
+      "Redeem reward points only through official mobile banking app or card statement portal",
+      "Never enter CVV or card details to receive rewards or cashback",
+      "Forward fraudulent SMS to 1930 and report to bank fraud department"
+    ]
+  },
+  {
+    "id": "healthcare-nhs-prescription-fee-phishing-2024",
+    "slug": "healthcare-nhs-prescription-fee-phishing-2024",
+    "icon": "\ud83e\ude7a",
+    "name": "Healthcare / NHS Prescription Fee Phishing",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 91,
+    "desc": "Fake NHS SMS stating prescription or medical survey is pending with a small delivery charge of \u00a32.10.",
+    "sampleMsg": "NHS: You have a pending prescription delivery from your GP surgery. Confirm delivery and pay handling fee (\u00a32.10) at: https://nhs-prescription-verify.org",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Targets elderly or vulnerable individuals expecting medication.\n2. Link mimics authentic NHS portal design.\n3. Collects debit card details and health information for identity theft.",
+    "redFlags": [
+      "NHS never asks for payment via links sent in SMS messages",
+      "Website domain does not end in '.nhs.uk'",
+      "Sender number is a standard international or mobile number",
+      "Prompts for mother's maiden name or banking password",
+      "Received without any recent GP appointment or consultation"
+    ],
+    "kyaKarein": [
+      "Contact your local GP surgery or pharmacy directly using their verified number",
+      "Forward scam SMS to 7726",
+      "Report NHS impersonation to Action Fraud"
+    ]
+  },
+  {
+    "id": "gas-subsidy-lpg-cylinder-kyc-suspension-sms-2024",
+    "slug": "gas-subsidy-lpg-cylinder-kyc-suspension-sms-2024",
+    "icon": "\ud83d\udd25",
+    "name": "Gas Subsidy / LPG Cylinder KYC Suspension SMS",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "SMS warning that subsidized cooking gas cylinder deliveries will be suspended unless e-KYC is completed on third-party link.",
+    "sampleMsg": "Indane/HP Gas: Your LPG subsidy is blocked due to incomplete biometric KYC. Update documents now to avoid commercial rates: https://lpg-kyc-subsidy.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Exploits government mandates regarding LPG cylinder biometric verification.\n2. Link asks for Aadhaar number, bank details, and installs malicious APK.\n3. APK intercepts incoming banking SMS to authorize fraudulent transactions.",
+    "redFlags": [
+      "Gas agencies mandate biometric KYC in person at the local distributor agency",
+      "Domain has unusual extension like .top or .xyz",
+      "Webpage prompts user to download an Android APK file",
+      "Threatens loss of cooking gas supply or subsidy within 24 hours",
+      "Sent from private mobile number"
+    ],
+    "kyaKarein": [
+      "Complete LPG KYC in person at your authorized gas distributor showroom",
+      "Never download APK files sent over WhatsApp or SMS links",
+      "Check official subsidy status on mylpg.in portal"
+    ]
+  },
+  {
+    "id": "echallan-traffic-violation-fine-scam-2025",
+    "slug": "echallan-traffic-violation-fine-scam-2025",
+    "icon": "\ud83d\udea8",
+    "name": "eChallan Traffic Violation Fine Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "SMS stating traffic violation fine of Rs 1,000 recorded against your vehicle with threat of court summons if not paid via link within 24 hours.",
+    "sampleMsg": "Traffic Police: Challan #DL5912 has been issued against vehicle DL01XX for overspeeding. Pay Rs 1000 within 24h to avoid court notice: https://echallan-parivahan-gov.in.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Fraudsters obtain vehicle numbers from parking lots or public databases.\n2. Phishing link clones national Parivahan eChallan portal.\n3. Download button installs malware APK or routes to fake payment gateway stealing card credentials.",
+    "redFlags": [
+      "Official traffic police notices are sent from authorized sender IDs (e.g. TRF-POL)",
+      "URL does not end in '.gov.in' (e.g. uses spoofed domain echallan-parivahan.top)",
+      "Message does not mention exact location, photo proof of violation, or vehicle registration",
+      "Prompts download of APK file named 'eChallan.apk'",
+      "Demands instant payment to avoid immediate arrest warrant"
+    ],
+    "kyaKarein": [
+      "Check traffic challans only on official Ministry portal: echallan.parivahan.gov.in",
+      "Never download .apk files to pay traffic fines",
+      "Report spoofed SMS to cybercrime.gov.in and National Cyber Helpline 1930"
+    ]
+  },
+  {
+    "id": "whatsapp-pink-whatsapp-gold-apk-phishing-2024",
+    "slug": "whatsapp-pink-whatsapp-gold-apk-phishing-2024",
+    "icon": "\ud83c\udf38",
+    "name": "WhatsApp Pink / WhatsApp Gold APK Phishing",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "Viral message offering exclusive pink or gold WhatsApp theme with secret new features, installing trojan malware that spreads itself to all contacts.",
+    "sampleMsg": "WhatsApp Pink launched with exciting new features! Download official update now: https://whatsapp-pink-theme.download/update.apk",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Viral forward shared across group chats promising aesthetic redesign.\n2. User downloads APK and grants Accessibility and Notification permissions.\n3. Malware hijacks SMS and WhatsApp, automatically texting malicious download link to all phone contacts.",
+    "redFlags": [
+      "Prompts user to install an APK file from outside the Google Play Store or Apple App Store",
+      "Promises unofficial cosmetic themes (Pink, Gold, Transparent) for WhatsApp",
+      "Requests sensitive permissions: Accessibility Services, Read SMS, and Notification Access",
+      "Auto-forwards itself to other WhatsApp contacts and groups without user consent",
+      "Meta has never released any separate colored editions of WhatsApp"
+    ],
+    "kyaKarein": [
+      "Uninstall suspicious apps immediately under Android Settings > Apps",
+      "Revoke Accessibility permissions for unfamiliar applications",
+      "Download WhatsApp updates exclusively from official Google Play Store or Apple App Store"
+    ]
+  },
+  {
+    "id": "fake-charitable-donation-disaster-relief-phishing-2025",
+    "slug": "fake-charitable-donation-disaster-relief-phishing-2025",
+    "icon": "\ud83d\udd4a\ufe0f",
+    "name": "Fake Charitable Donation & Disaster Relief Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 92,
+    "desc": "Crowdfunding links claiming to raise emergency medical funds for earthquake victims or injured children, pocketing 100% of donations.",
+    "sampleMsg": "Urgent: Thousands displaced in tragic earthquake. Every $10 feeds a family of four. Donate through official relief fund: https://emergency-relief-aid.org/donate",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers launch emotional campaigns within 2 hours of breaking natural disaster news.\n2. Phishing websites use stolen news photos and tragic testimonials.\n3. Donations via credit card or crypto flow directly into criminal offshore wallets.",
+    "redFlags": [
+      "Domain created within hours or days of the disaster breaking in news",
+      "Charity is not registered with Charity Navigator, GiveWell, or GuideStar",
+      "Demands payment via cryptocurrency, gift cards, or direct wire transfer",
+      "Vague descriptions of how relief funds will be distributed on the ground",
+      "High emotional pressure demanding immediate contribution"
+    ],
+    "kyaKarein": [
+      "Donate exclusively through well-established registered charities (Red Cross, UNICEF, Doctors Without Borders)",
+      "Check charity legitimacy on charitynavigator.org or give.org",
+      "Never donate via untraceable methods like crypto or prepaid gift cards"
+    ]
+  },
+  {
+    "id": "fake-university-exam-degree-verification-fee-phishing-2024",
+    "slug": "fake-university-exam-degree-verification-fee-phishing-2024",
+    "icon": "\ud83c\udf93",
+    "name": "Fake University Exam / Degree Verification Fee Phishing",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 90,
+    "desc": "SMS to college students claiming examination admit card is withheld due to pending document verification fee.",
+    "sampleMsg": "University Notice: Your Semester exam admit card is blocked. Pay Rs 450 verification fee before 5 PM today to download: https://university-admit-card-fee.in",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers harvest student rolls or broadcast during exam seasons.\n2. Fake college portal requests roll number and bank credentials.\n3. Empties student savings accounts via fraudulent debit card transactions.",
+    "redFlags": [
+      "University never sends fee payment links via private SMS",
+      "URL does not match official university domain (.ac.in or .edu)",
+      "Short deadline threatening exam disqualification",
+      "Demands card PIN or netbanking password on payment page",
+      "Sender is an unverified mobile phone number"
+    ],
+    "kyaKarein": [
+      "Verify exam notifications directly on your college official website or notice board",
+      "Contact your college examination branch in person",
+      "Never pay exam fees through unverified WhatsApp or SMS links"
+    ]
+  },
+  {
+    "id": "postal-forwarding-redirection-fee-smishing-2025",
+    "slug": "postal-forwarding-redirection-fee-smishing-2025",
+    "icon": "\ud83e\udd98",
+    "name": "Postal Forwarding Redirection Fee Smishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 94,
+    "desc": "SMS impersonating Australia Post stating mail forwarding request requires credit card verification fee.",
+    "sampleMsg": "AusPost: Your mail redirection service is suspended due to invalid billing details. Update payment here: https://auspost-redirection-settle.top",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. SMS sent across Australian mobile prefixes.\n2. Phishing link clones AusPost myPost portal.\n3. Steals credit card number, CVV, and mobile banking login details.",
+    "redFlags": [
+      "Australia Post will never email or text asking for personal information or payment for mail delivery",
+      "Sender number is not official 13-POST service",
+      "URL does not end in '.auspost.com.au'",
+      "Prompts for credit card CVV and expiration date",
+      "Urgent deadline threatening return of all postal mail"
+    ],
+    "kyaKarein": [
+      "Log in directly to official myPost account at auspost.com.au",
+      "Report scam messages to Scamwatch at scamwatch.gov.au",
+      "Forward suspicious texts to Australian cyber authority"
+    ]
+  },
+  {
+    "id": "airline-frequent-flyer-points-expiration-phishing-2025",
+    "slug": "airline-frequent-flyer-points-expiration-phishing-2025",
+    "icon": "\u2708\ufe0f",
+    "name": "Airline Frequent Flyer Points Expiration Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 91,
+    "desc": "Emails claiming your Emirates Skywards, British Airways Avios, or United MileagePlus miles will expire unless you log in to redeem a free flight voucher.",
+    "sampleMsg": "Emirates Skywards: 45,000 miles in your account will expire on Friday. Redeem for a complimentary round-trip voucher now: https://skywards-miles-renewal.com",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Spoofs airline loyalty communication branding.\n2. Login page captures frequent flyer credentials.\n3. Criminals immediately transfer accumulated airline points or book resale flight tickets.",
+    "redFlags": [
+      "Sender address is not from official airline domain (e.g. emirates.com)",
+      "Directs to an unverified third-party web domain",
+      "Offers unrealistic free business class vouchers for expiring miles",
+      "Prompts for account password and credit card number to 're-activate' miles",
+      "Account number or loyalty tier not mentioned in email body"
+    ],
+    "kyaKarein": [
+      "Log in to frequent flyer accounts only via official airline mobile app or verified website",
+      "Enable multi-factor authentication on all travel and loyalty accounts",
+      "Report loyalty phishing to airline security team"
+    ]
+  },
+  {
+    "id": "cloud-storage-quota-full-deletion-warning-phishing-2025",
+    "slug": "cloud-storage-quota-full-deletion-warning-phishing-2025",
+    "icon": "\u2601\ufe0f",
+    "name": "Cloud Storage Quota Full Deletion Warning Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "Emails warning your Google Drive, OneDrive, or iCloud storage is 99% full and all photos and files will be deleted within 24 hours unless you pay $1.99.",
+    "sampleMsg": "Google Storage Alert: Your Google Drive and Photos storage is 99.8% full. Files will be permanently deleted in 24h. Upgrade 100GB for $0.99: https://storage-google-upgrade.top",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Mass emails exploit anxiety over losing irreplaceable family photos and documents.\n2. Phishing link clones Google or Microsoft login page.\n3. Captures account password and credit card number.",
+    "redFlags": [
+      "Sender email address is random webmail rather than @google.com or @microsoft.com",
+      "Domain has unusual URL extension like .top or .shop",
+      "Extreme threat of total data deletion within 24 hours (providers give months of grace period)",
+      "Login screen does not recognize your saved browser credentials",
+      "Prompts for debit card details on unencrypted page"
+    ],
+    "kyaKarein": [
+      "Check true storage usage directly in Google Drive or Microsoft account settings",
+      "Never click payment links inside alarming storage warning emails",
+      "Report phishing email using Gmail 'Report Phishing' button"
+    ]
+  },
+  {
+    "id": "whatsapp-group-ban-appeal-phishing-2024",
+    "slug": "whatsapp-group-ban-appeal-phishing-2024",
+    "icon": "\ud83d\uded1",
+    "name": "WhatsApp Group Ban Appeal Phishing",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 92,
+    "desc": "SMS or WhatsApp message claiming your phone number has been flagged for violating community guidelines and will be banned in 12 hours.",
+    "sampleMsg": "WhatsApp Support: Your phone number +91-XXXXX has been reported for spam activity. Appeal your permanent suspension here: https://whatsapp-support-appeals.me",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Targets heavy WhatsApp users and community group admins.\n2. Link asks for phone number, 6-digit registration code, and 2FA PIN.\n3. Hijacks account and extorts user or asks group members for emergency cash.",
+    "redFlags": [
+      "WhatsApp never communicates policy bans via private text messages or third-party links",
+      "Official ban appeals are submitted inside the official app on the ban screen",
+      "Domain is not whatsapp.com",
+      "Prompts for 6-digit SMS verification code",
+      "Urgent 12-hour deadline threatening permanent loss of contacts"
+    ],
+    "kyaKarein": [
+      "Submit support tickets only through WhatsApp App > Settings > Help > Contact Us",
+      "Never enter 6-digit verification codes into web forms",
+      "Enable Two-Step Verification inside WhatsApp settings"
+    ]
+  },
+  {
+    "id": "esim-profile-download-phishing-trap-2026",
+    "slug": "esim-profile-download-phishing-trap-2026",
+    "icon": "\ud83d\udcf2",
+    "name": "eSIM Profile Download Phishing Trap",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "Victims are guided to scan a malicious eSIM QR code under guise of network speed upgrade, immediately transferring their cellular phone number to attacker's device.",
+    "sampleMsg": "Verizon/Jio: Your complimentary 5G Ultra eSIM profile is ready for activation. Scan this QR code in phone cellular settings to activate high-speed data: [QR Code]",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attacker purchases victim's personal data or impersonates carrier customer care.\n2. Sends eSIM QR code via email or WhatsApp pretending it is an upgrade profile.\n3. Scanning code instantly ports phone number to attacker's handset, giving full OTP access to bank accounts.",
+    "redFlags": [
+      "Carrier never emails unrequested eSIM QR codes without verified customer portal request",
+      "Scanning unknown eSIM QR code from email or WhatsApp will transfer your cellular line",
+      "Caller claims eSIM download is mandatory to retain existing phone service",
+      "Phone cellular network disconnects shortly after scanning",
+      "Sender uses free email domain (e.g. jiosupport@gmail.com)"
+    ],
+    "kyaKarein": [
+      "Never scan eSIM QR codes unless you personally requested eSIM transfer inside carrier store or official app",
+      "If your cellular service disconnects unexpectedly, contact carrier fraud desk immediately",
+      "Freeze linked netbanking and UPI accounts immediately if unauthorized eSIM transfer occurs"
+    ]
+  },
+  {
+    "id": "tinder-dating-app-verification-code-scam-2024",
+    "slug": "tinder-dating-app-verification-code-scam-2024",
+    "icon": "\u2764\ufe0f",
+    "name": "Tinder / Dating App Verification Code Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 91,
+    "desc": "A match on Tinder, Bumble or Hinge asks you to click a link to verify your identity on a 'dating safety site' before they will agree to meet in person.",
+    "sampleMsg": "Before we meet for coffee, can you get free safety verification? It protects both of us. It only takes 1 minute: https://dating-safety-id-check.com",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Catfish profile matches with victim and suggests meeting for a date.\n2. Refuses to meet unless victim verifies identity on fake 'Dating Safety Registry'.\n3. Verification page demands credit card for $1.95 trial, signing victim up for recurring monthly $49.99 subscription charges.",
+    "redFlags": [
+      "Match refuses to meet in public coffee shop without third-party website verification",
+      "Site claims to be mandatory government or police safety verification system",
+      "Demands credit card details for a supposedly free background check",
+      "Match profile disappears after credit card details are submitted",
+      "Site terms hidden in tiny print bill high recurring monthly charges"
+    ],
+    "kyaKarein": [
+      "Never enter credit card details on third-party verification sites recommended by dating app matches",
+      "Real dating safety features (like photo verification) are free and built directly into Tinder and Bumble",
+      "Report match profile to dating app moderators"
+    ]
+  },
+  {
+    "id": "fake-booking-com-hotel-payment-confirmation-link-2025",
+    "slug": "fake-booking-com-hotel-payment-confirmation-link-2025",
+    "icon": "\ud83c\udfe8",
+    "name": "Fake Booking.com Hotel Payment Confirmation Link",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 96,
+    "desc": "Messages received inside official Booking.com app from actual booked hotel (compromised account) claiming reservation will be cancelled unless card is re-verified via external link.",
+    "sampleMsg": "Booking.com Hotel Desk: Due to updated security policies, your reservation #89214 at Grand Hotel requires card re-authorization within 12h: https://booking-reservation-auth.net",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Hackers compromise hotel's official Booking.com partner extranet account.\n2. Send phishing messages directly through authentic Booking.com in-app messaging system.\n3. Link directs guest to clone payment gateway stealing credit card funds.",
+    "redFlags": [
+      "Message directs you to pay through an external web link rather than within Booking.com official app",
+      "Urgent 12 or 24 hour cancellation threat for a booking already confirmed with valid credit card",
+      "External payment domain is not booking.com",
+      "Hotel staff claims payment declined even though bank shows funds reserved",
+      "Demands credit card verification via instant debit"
+    ],
+    "kyaKarein": [
+      "Never click payment links sent inside chat messages, even from verified hotel accounts",
+      "Pay for reservations exclusively through official Booking.com checkout page",
+      "Call hotel directly using phone number listed on official hotel website"
+    ]
+  },
+  {
+    "id": "customs-duty-gift-parcel-ransom-phishing-2024",
+    "slug": "customs-duty-gift-parcel-ransom-phishing-2024",
+    "icon": "\ud83d\udec3",
+    "name": "Customs Duty Gift Parcel Ransom Phishing",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 95,
+    "desc": "SMS or WhatsApp from fake customs officer claiming a foreign friend has sent valuable gifts (gold, iPhones, dollars) detained at airport customs requiring clearance fee.",
+    "sampleMsg": "Customs Delhi Airport: Parcel from UK containing electronic items and currency is on hold. Clear customs fee Rs 28,500 to account 91823XXXXX within 6 hours.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Romance scammer tells victim they sent expensive gifts or jewelry from abroad.\n2. Accomplice calls or texts pretending to be airport customs commissioner.\n3. Demands clearance fee, then anti-money laundering fee, siphoning lakhs from victim.",
+    "redFlags": [
+      "Customs department never asks individuals to transfer customs duty into personal savings accounts",
+      "Customs duty is never payable via UPI or personal IMPS transfers",
+      "Foreign gifts containing currency or bullion are illegal to import without prior declarations",
+      "Caller threatens immediate arrest by CBI or Police if money is not transferred within hours",
+      "Sender cannot provide official Customs Bill of Entry document"
+    ],
+    "kyaKarein": [
+      "Never pay money to claim surprise parcels or overseas gifts from internet acquaintances",
+      "Customs duty is collected exclusively by official courier companies on delivery with printed tax receipts",
+      "Report syndicate numbers to cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "fake-loan-approval-disbursal-fee-sms-2025",
+    "slug": "fake-loan-approval-disbursal-fee-sms-2025",
+    "icon": "\ud83d\udcb0",
+    "name": "Fake Loan Approval & Disbursal Fee SMS",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 94,
+    "desc": "SMS promising pre-approved instant loan of Rs 5,00,000 at 2% interest with zero collateral, requiring upfront processing fee of Rs 2,500 to release loan amount.",
+    "sampleMsg": "Congratulations! Loan of Rs 5,00,000 pre-approved under PM Mudra Scheme at 2% interest. No cibil score required. Pay Rs 2,499 file charge to disburse: https://mudra-loan-apply.in",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Targets individuals seeking quick financial assistance or low credit borrowers.\n2. Phishing portal asks for PAN, Aadhaar, and upfront documentation/processing fee.\n3. After processing fee is paid, scammers demand insurance fee and GST fee, never disbursing any loan.",
+    "redFlags": [
+      "Legitimate banks never demand advance processing fees transferred via UPI or personal accounts",
+      "Processing fees are deducted directly from the disbursed loan amount",
+      "Unrealistically low interest rate (2% - 3%) with no credit check required",
+      "Sent from personal mobile number rather than bank shortcode",
+      "Uses government scheme names (Mudra, PMEGP) to mislead victims"
+    ],
+    "kyaKarein": [
+      "Apply for loans exclusively through RBI-registered banks and verified NBFC branches",
+      "Never pay advance money to get a loan sanctioned or disbursed",
+      "Check NBFC registration status on official RBI portal rbi.org.in"
+    ]
+  },
+  {
+    "id": "fake-e-commerce-order-cancellation-sms-2024",
+    "slug": "fake-e-commerce-order-cancellation-sms-2024",
+    "icon": "\ud83d\udce6",
+    "name": "Fake E-Commerce Order Cancellation SMS",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 92,
+    "desc": "Text message alerting that your Amazon or Flipkart order for an expensive item ($999 laptop) has been confirmed, instructing you to click link to cancel if unauthorized.",
+    "sampleMsg": "Amazon: Your order for Apple MacBook Pro ($1,299) has been processed. If you did NOT place this order, cancel immediately at: https://amazon-orders-dispute.top",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Sends fake purchase confirmation causing victim to panic about stolen credit card.\n2. Victim clicks link to cancel the non-existent order.\n3. Phishing page captures Amazon login credentials and credit card information.",
+    "redFlags": [
+      "No order appears when checking your real Amazon or Flipkart account in app",
+      "Link domain is not amazon.com or flipkart.com",
+      "Message sent from random phone number instead of official brand SMS sender",
+      "Page demands credit card number and CVV to 'cancel the transaction'",
+      "Grammar or punctuation mistakes in SMS alert text"
+    ],
+    "kyaKarein": [
+      "Check 'Your Orders' tab directly inside the official Amazon or retailer app",
+      "Never click cancellation links received via SMS or email",
+      "Report phishing attempt to stop-spoofing@amazon.com"
+    ]
+  },
+  {
+    "id": "toll-tag-low-balance-auto-debit-phishing-2025",
+    "slug": "toll-tag-low-balance-auto-debit-phishing-2025",
+    "icon": "\ud83d\udcb3",
+    "name": "Toll Tag Low Balance Auto-Debit Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "SMS warning your transponder has negative balance and daily penalties will accrue unless replenished via link.",
+    "sampleMsg": "SunPass Notice: Your toll balance is -$4.20. Auto-replenishment failed. Settle now to prevent daily $25 penalties: https://sunpass-toll-settle.net",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Automated bots text millions of phone numbers across state lines.\n2. Phishing link opens replica of state toll payment system.\n3. Harvests full billing address and debit card information.",
+    "redFlags": [
+      "State toll authorities do not text drivers from 10-digit telephone numbers",
+      "Unusual domain extension (.net, .top) instead of official state authority domain",
+      "Threat of immediate exponential daily penalties",
+      "Recipient does not have a registered vehicle or transponder tag",
+      "No specific toll plaza timestamp or license plate provided"
+    ],
+    "kyaKarein": [
+      "Log in only via official toll transponder account portal or app",
+      "Report toll phishing text to FBI IC3 at ic3.gov",
+      "Block sender phone number immediately"
+    ]
+  },
+  {
+    "id": "social-security-number-national-id-suspension-phishing-2025",
+    "slug": "social-security-number-national-id-suspension-phishing-2025",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "name": "Social Security Number / National ID Suspension Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "SMS warning your Social Security Number has been linked to drug trafficking in Texas and will be suspended unless verified on link.",
+    "sampleMsg": "SSA Alert: Your Social Security Number has been suspended due to suspicious activity. Verify identity to avoid federal arrest warrant: https://ssa-gov-identity-verify.org",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Exploits fear of federal law enforcement and criminal prosecution.\n2. Form collects full Social Security Number, mother's maiden name, address, and bank routing numbers.\n3. Used to file fraudulent tax returns and take out loans in victim's name.",
+    "redFlags": [
+      "Social Security Administration never contacts citizens via SMS threatening SSN suspension",
+      "The government cannot 'suspend' your Social Security Number",
+      "Threatens imminent federal arrest or sheriff dispatch",
+      "Domain does not end in '.gov'",
+      "Demands full 9-digit SSN and financial account details"
+    ],
+    "kyaKarein": [
+      "Report Social Security impersonations to SSA OIG at oig.ssa.gov",
+      "Never share your SSN or National ID on unverified web portals",
+      "Freeze credit bureaus (Equifax, Experian, TransUnion) if SSN compromised"
+    ]
+  },
+  {
+    "id": "fake-free-wi-fi-portal-credential-harvester-2024",
+    "slug": "fake-free-wi-fi-portal-credential-harvester-2024",
+    "icon": "\ud83d\udcf6",
+    "name": "Fake Free Wi-Fi Portal Credential Harvester",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 93,
+    "desc": "Rogue Wi-Fi hotspot in airports or cafes showing captive portal asking users to log in with Google, Facebook, or phone number OTP to get free internet.",
+    "sampleMsg": "Connect to Airport Free High-Speed Wi-Fi: Log in with your Google or Facebook account to enjoy 2 hours free browsing.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Attacker sets up portable Wi-Fi router named 'Free_Airport_WiFi' in busy public area.\n2. When user connects, captive portal pops up requesting social login credentials.\n3. Captures cleartext usernames, passwords, and session cookies.",
+    "redFlags": [
+      "Open unencrypted Wi-Fi network with generic name (Free_Public_WiFi, Airport_Guest)",
+      "Captive portal demands full password login to Google, Apple ID, or Facebook to browse web",
+      "SSL certificate warning appears when connecting to the login page",
+      "Prompts to install a security certificate or configuration profile on your device",
+      "Legitimate airport Wi-Fi usually requires only accepting terms of service"
+    ],
+    "kyaKarein": [
+      "Use cellular data or personal hotspot instead of untrusted public Wi-Fi networks",
+      "Use a reputable Virtual Private Network (VPN) when browsing on public connections",
+      "Never enter passwords into captive Wi-Fi login pages"
+    ]
+  },
+  {
+    "id": "job-offer-whatsapp-group-invite-phishing-2025",
+    "slug": "job-offer-whatsapp-group-invite-phishing-2025",
+    "icon": "\ud83d\udcbc",
+    "name": "Job Offer WhatsApp Group Invite Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 94,
+    "desc": "SMS or WhatsApp inviting you to join a private VIP job group where admins share daily part-time tasks earning Rs 3,000 to Rs 8,000.",
+    "sampleMsg": "Greetings from Amazon HR! You have been selected for online work. Daily payout Rs 3500-8000. Join official hiring WhatsApp group: https://chat.whatsapp.com/invitelink",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Bot invites victim to WhatsApp group with 50 fake members.\n2. Group admins post fabricated payment screenshots and celebrate high payouts.\n3. Victim is gradually lured into paying crypto deposits for VIP task tiers.",
+    "redFlags": [
+      "Reputable companies like Amazon or Google do not hire employees through public WhatsApp group invite links",
+      "Unsolicited job offer without submitting an application or resume",
+      "Group members post identical scripted praise and bank transfer screenshots",
+      "Admin phone numbers have unusual foreign country codes (+234, +62, +84)",
+      "Demands small registration fee or task deposit to start earning"
+    ],
+    "kyaKarein": [
+      "Exit and report the WhatsApp group immediately using 'Report and Exit'",
+      "Adjust WhatsApp privacy settings: Settings > Privacy > Groups > 'My Contacts' to prevent strangers from adding you",
+      "Apply for employment exclusively through company career portals"
+    ]
+  },
+  {
+    "id": "fake-bank-beneficiary-added-alert-phishing-2025",
+    "slug": "fake-bank-beneficiary-added-alert-phishing-2025",
+    "icon": "\u26a0\ufe0f",
+    "name": "Fake Bank Beneficiary Added Alert Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 97,
+    "desc": "SMS warning that a new beneficiary has been successfully added to your netbanking account, prompting you to click link to cancel if unauthorized.",
+    "sampleMsg": "HDFC Alert: Beneficiary 'Rahul Sharma' has been added to your A/c ending 4912. If not requested by you, cancel transfer within 30 mins: https://hdfc-beneficiary-cancel.com",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers spoof bank notification templates to induce sudden panic.\n2. Victim clicks link to immediately prevent money transfer.\n3. Phishing portal captures netbanking customer ID, IPIN, and OTP to actually add a criminal beneficiary.",
+    "redFlags": [
+      "Banks do not provide direct cancellation links inside beneficiary notification messages",
+      "SMS sent from personal 10-digit number instead of authorized bank alphabetic sender header",
+      "URL is not the verified netbanking portal of your bank",
+      "Page prompts for login password, debit card PIN, and OTP simultaneously",
+      "Creating intense 30-minute urgency deadline"
+    ],
+    "kyaKarein": [
+      "Log in only through your official bank mobile app to verify registered beneficiaries",
+      "Never tap cancellation links received via SMS",
+      "Call bank fraud hotline immediately to freeze netbanking access if credentials were submitted"
+    ]
+  },
+  {
+    "id": "fake-invoice-geek-squad-auto-renewal-phishing-email-2025",
+    "slug": "fake-invoice-geek-squad-auto-renewal-phishing-email-2025",
+    "icon": "\ud83e\uddfe",
+    "name": "Fake Invoice / Geek Squad Auto-Renewal Phishing Email",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Message",
+    "categorySlug": "phishing-message",
+    "categoryName": "Phishing / Message / Link",
+    "score": 95,
+    "desc": "Email invoice showing auto-charge of $499.99 for Best Buy Geek Squad or Norton Antivirus renewal, providing a toll-free number to cancel within 24 hours.",
+    "sampleMsg": "Geek Squad Invoice #GS-9821: Thank you for renewing your Total Tech Support 3-Year Plan ($499.99). Call +1-888-XXX-XXXX to cancel if you did not authorize this charge.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Fraudulent PDF invoice sent to thousands of email addresses.\n2. Victim panics at $500 unauthorized charge and calls provided telephone number.\n3. Call center scammer instructs victim to install AnyDesk to process a refund, editing HTML to show fake overpayment and extorting thousands.",
+    "redFlags": [
+      "You never purchased Geek Squad, Norton, or McAfee tech support subscriptions",
+      "Sender email address is a free Gmail or Outlook address (e.g. billingdept892@gmail.com)",
+      "Invoice is an attached image or PDF designed to bypass email spam filters",
+      "Customer service number connects directly to call center with heavy background noise",
+      "Representative asks you to download remote desktop software to give a refund"
+    ],
+    "kyaKarein": [
+      "Check your credit card or bank account directly to verify if any charge actually occurred",
+      "Never call phone numbers listed on unverified email invoices",
+      "Forward phishing email to reportphishing@apwg.org and mark as spam"
+    ]
+  },
+  {
+    "id": "digital-arrest-police-cbi-video-intimidation-scam-2026",
+    "slug": "digital-arrest-police-cbi-video-intimidation-scam-2026",
+    "icon": "\ud83d\udc6e",
+    "name": "Digital Arrest Police & CBI Video Intimidation Scam",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 99,
+    "desc": "Victims are called on Skype or WhatsApp video by fraudsters wearing fake police or CBI uniforms against simulated police station backdrops, ordering 24/7 video surveillance and transfer of life savings to 'RBI verification accounts'.",
+    "sampleMsg": "This is Inspector Vijay from Cyber Crime Delhi. A parcel in your name with 5 passports and MDMA drugs was seized at airport. You are placed under Digital Arrest on Skype right now.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer calls stating passport or SIM registered in victim's name is involved in high-profile money laundering.\n2. Transfers call to 'investigating officer' on Skype or WhatsApp video with fake police station setup and uniforms.\n3. Orders victim to stay on camera continuously ('Digital Arrest') and transfer all bank deposits to 'RBI Supreme Court Escrow Accounts' for verification, which are drained instantly.",
+    "redFlags": [
+      "Indian law enforcement has no legal concept of 'Digital Arrest' via video call",
+      "Demands 24/7 continuous video call monitoring forbidding talking to family or lawyers",
+      "Orders victim to transfer money to private bank accounts for 'government fund verification'",
+      "Displays forged arrest warrants, Supreme Court seals, or fake police ID cards over WhatsApp",
+      "Call initiated on WhatsApp, Telegram, or Skype from numbers starting with +92, +855 or VOIP"
+    ],
+    "kyaKarein": [
+      "Disconnect the call immediately; police or CBI never conduct interrogations via Skype or WhatsApp",
+      "Never transfer money to any 'safe account' or 'RBI verification escrow'",
+      "Report immediately to National Cyber Crime Helpline 1930 and file complaint at cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "ai-voice-clone-ceo-executive-emergency-transfer-call-2026",
+    "slug": "ai-voice-clone-ceo-executive-emergency-transfer-call-2026",
+    "icon": "\ud83c\udf99\ufe0f",
+    "name": "AI Voice Clone CEO / Executive Emergency Transfer Call",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 98,
+    "desc": "Using short audio clips from podcasts or earnings calls, AI models clone corporate CEO or finance director's voice to instruct finance staff to wire urgent acquisition funds.",
+    "sampleMsg": "Hey David, it's Mark. We're finalizing an offshore acquisition today. I need an urgent wire of $185,000 to the escrow account details I just emailed. Please expedite right away.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Criminals scrape executive voice samples from YouTube, interviews, and public webinars.\n2. Generative voice synthesis software replicates vocal timbre, breathing, and pitch in real time.\n3. Calls company accountant with high urgency instructing immediate wire transfer to criminal mule accounts.",
+    "redFlags": [
+      "Executive insists on bypassing standard two-person internal financial approval procedures",
+      "Caller claims they are in a noisy boardroom or airport boarding lounge to avoid back-and-forth questioning",
+      "Urgent demand for wire transfer or cryptocurrency transfer within hours",
+      "Receiving bank account is at an unfamiliar institution or overseas jurisdiction",
+      "Executive refuses follow-up callback on their registered corporate desk or mobile phone"
+    ],
+    "kyaKarein": [
+      "Enforce strict multi-channel out-of-band verbal confirmation protocol for all wire transfers",
+      "Call the executive back on their verified internal phone extension",
+      "Implement multi-signature authorization controls for treasury disbursements"
+    ]
+  },
+  {
+    "id": "grandparent-emergency-distress-bail-phone-scam-2025",
+    "slug": "grandparent-emergency-distress-bail-phone-scam-2025",
+    "icon": "\ud83d\udc75",
+    "name": "Grandparent Emergency Distress Bail Phone Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 97,
+    "desc": "Scammer calls an elderly person crying and claiming to be their grandchild who was arrested after a car accident, pleading for immediate cash bail dispatched via courier.",
+    "sampleMsg": "Grandma, it's me! I was in a terrible car crash and the police arrested me because someone was hurt. A court courier will come to your house to collect $9,500 cash for bail. Please don't tell mom!",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers scrape family relations from social media (Facebook, Instagram).\n2. Fraudster calls elderly victim crying, disguising voice as grandson or granddaughter in jail.\n3. Hand-off to fake defense attorney who sends an in-person courier or rideshare driver to collect cash from the victim's porch.",
+    "redFlags": [
+      "Caller begs grandparent not to tell other family members ('Don't tell mom and dad')",
+      "Intense emotional crisis claiming jail, car crash, or hospital emergency",
+      "Court bail is requested in cash, gold bars, or prepaid gift cards",
+      "Courier or rideshare driver sent to victim's home address to collect physical envelope of money",
+      "Caller becomes aggressive or panics if victim asks clarifying personal trivia questions"
+    ],
+    "kyaKarein": [
+      "Hang up immediately and call your grandchild or their parents directly on their known cell phone",
+      "Establish a secret family emergency passphrase that only close relatives know",
+      "Never hand cash envelopes or valuables to couriers arriving at your residence"
+    ]
+  },
+  {
+    "id": "microsoft-windows-tech-support-blue-screen-phone-scam-2025",
+    "slug": "microsoft-windows-tech-support-blue-screen-phone-scam-2025",
+    "icon": "\ud83d\udcbb",
+    "name": "Microsoft & Windows Tech Support Blue Screen Phone Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 96,
+    "desc": "Browser lock pop-up or phone call pretending to be Microsoft Windows Security claiming computer is infected with Trojan spyware, directing caller to pay for lifetime security.",
+    "sampleMsg": "Warning: Microsoft Security Alert! Your computer is locked due to Zeus Trojan infection. Call Microsoft Certified Technicians immediately at 1-800-XXX-XXXX to prevent hard drive wipe.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Malicious ad triggers full-screen browser lock showing fake Windows Blue Screen error.\n2. Alarmed victim calls the toll-free number on screen.\n3. Indian call center technician instructs victim to download AnyDesk, opens Windows Event Viewer to show normal warnings as 'severe viruses', and charges $499.",
+    "redFlags": [
+      "Microsoft error messages NEVER include a telephone support number to call",
+      "Full-screen browser message prevents closing tab (press Esc or Alt+F4 to exit)",
+      "Technician demands remote desktop control via AnyDesk, TeamViewer or UltraViewer",
+      "Technician opens normal Windows Event Viewer or dir/s in CMD claiming every line is a hacker virus",
+      "Demands payment via Apple gift cards, Google Play cards, or wire transfer"
+    ],
+    "kyaKarein": [
+      "Press Esc key or use Task Manager (Ctrl+Shift+Esc) to close the locked browser window",
+      "Microsoft will never proactively cold-call or show phone numbers on blue screens",
+      "Never grant remote desktop access to unsolicited callers"
+    ]
+  },
+  {
+    "id": "fedex-dhl-illegal-narcotics-courier-call-2025",
+    "slug": "fedex-dhl-illegal-narcotics-courier-call-2025",
+    "icon": "\ud83d\udce6",
+    "name": "FedEx / DHL Illegal Narcotics Courier Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 98,
+    "desc": "Automated IVR call stating your parcel containing 140 grams of MDMA drugs and fake passports sent to Taiwan has been intercepted by customs, patching to fake cyber police.",
+    "sampleMsg": "FedEx Customer Notice: Your parcel sent from Mumbai to Taiwan containing 140g MDMA and 5 fake passports has been seized. Press 1 to connect to Narcotics Control Bureau officer.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Robocall plays automated courier alert message.\n2. Pressing 1 connects to call center scammer posing as Mumbai Police or Customs Officer.\n3. Threatens victim with immediate non-bailable arrest unless they transfer bank balances to verify legitimate source of funds.",
+    "redFlags": [
+      "Courier companies do not connect customers directly to police or narcotics officers on telephone calls",
+      "You never shipped any parcel abroad",
+      "Caller demands immediate Skype or WhatsApp video conference",
+      "Demands bank fund transfer to clear victim from money laundering FIR",
+      "Threatens that police teams are outside victim's residence"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; it is 100% a criminal call center syndicate",
+      "Call authentic FedEx/DHL customer care from their official website to verify no parcel exists",
+      "Dial 1930 to report the calling numbers to cybercrime authorities"
+    ]
+  },
+  {
+    "id": "irs-tax-collector-law-enforcement-arrest-call-2024",
+    "slug": "irs-tax-collector-law-enforcement-arrest-call-2024",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "name": "IRS / Tax Collector Law Enforcement Arrest Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 97,
+    "desc": "Robocall claiming to be Internal Revenue Service stating federal arrest warrant is issued for tax evasion and local sheriff will arrive within 45 minutes unless back taxes are paid immediately.",
+    "sampleMsg": "This is Officer John Miller from the Internal Revenue Service. We have filed a federal warrant against your name. Pay your $3,450 back taxes within 45 minutes or local police will arrest you.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Caller ID spoofing shows official IRS or police department phone numbers.\n2. Aggressive scammer reads fake badge number and federal case citation.\n3. Demands payment through prepaid Target gift cards, Bitcoin ATM, or Western Union to cancel the warrant.",
+    "redFlags": [
+      "IRS always initiates contact about unpaid taxes by official mail through the postal service, never phone calls",
+      "IRS never demands payment using gift cards, cryptocurrency, or wire transfer",
+      "IRS does not threaten to dispatch local police or sheriffs for immediate arrest",
+      "Caller demands that you stay on the phone while driving to the grocery store or Bitcoin ATM",
+      "Refuses to allow taxpayer to appeal or review bill through official tax portal"
+    ],
+    "kyaKarein": [
+      "Hang up the phone immediately; the IRS never conducts business this way",
+      "Report the call to Treasury Inspector General (TIGTA) at tigta.gov",
+      "Check real tax status online at irs.gov/account"
+    ]
+  },
+  {
+    "id": "virtual-kidnapping-extortion-phone-scam-2025",
+    "slug": "virtual-kidnapping-extortion-phone-scam-2025",
+    "icon": "\ud83d\ude31",
+    "name": "Virtual Kidnapping Extortion Phone Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 99,
+    "desc": "Scammer calls parents screaming that their son or daughter has been kidnapped, playing fake screams or AI voice in the background demanding ransom before the child is harmed.",
+    "sampleMsg": "We have your daughter! She was involved in a car accident with my gang and we have her at gunpoint. Wire $5,000 to this account in 20 minutes or you'll never see her alive again!",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Perpetrators browse social media to identify children on vacations or at concerts away from parents.\n2. Call parent with terrifying screaming sounds in background.\n3. Keep parent on line to prevent them from calling child directly, demanding immediate wire transfer or money order.",
+    "redFlags": [
+      "Call comes from unfamiliar phone number or international country code",
+      "Caller refuses to let victim speak directly with the supposedly kidnapped family member",
+      "Background screams sound muffled, repetitive, or generic ('Help me mom!')",
+      "Demands wire transfer or digital payment within an extremely short time window (15-30 minutes)",
+      "Forbids hanging up the phone to prevent contacting other relatives"
+    ],
+    "kyaKarein": [
+      "Stay calm; attempt to reach your family member on another phone or message their friends",
+      "Ask the caller specific questions only your loved one would know (pet's name, childhood memory)",
+      "Call 911 or local police immediately from a secondary phone"
+    ]
+  },
+  {
+    "id": "bank-fraud-department-safe-account-transfer-call-2025",
+    "slug": "bank-fraud-department-safe-account-transfer-call-2025",
+    "icon": "\ud83c\udfe6",
+    "name": "Bank Fraud Department 'Safe Account' Transfer Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 98,
+    "desc": "Caller claims to be from your bank's fraud prevention team, warning your account is compromised by corrupt branch staff and instructing you to move money to a 'safe holding account'.",
+    "sampleMsg": "This is HSBC Fraud Prevention. We have detected suspicious transactions from our Newcastle branch. To safeguard your savings, transfer your balance of \u00a314,200 to our safe holding account.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Scammer spoofs official bank phone number shown on back of payment card.\n2. Convinces victim that an insider fraud ring at the local branch is stealing money.\n3. Instructs victim to make high-value online transfer to 'safeguard account' controlled by the criminal syndicate.",
+    "redFlags": [
+      "Your bank will NEVER ask you to transfer money to another account for fraud prevention or 'safekeeping'",
+      "Caller urges you to lie to bank branch staff if they question the purpose of the transfer",
+      "High urgency insisting transfer must occur while remaining on the telephone line",
+      "Caller asks for your online banking password, card PIN, or secure token code",
+      "Claims that corrupt bank employees are watching your account"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; genuine banks never use 'safe holding accounts'",
+      "Wait 5 minutes to clear the phone line, or use a different phone to call the number printed on back of bank card",
+      "Report scam attempt to your bank fraud department and Action Fraud"
+    ]
+  },
+  {
+    "id": "department-of-telecom-dot-2-hour-mobile-disconnection-call-2025",
+    "slug": "department-of-telecom-dot-2-hour-mobile-disconnection-call-2025",
+    "icon": "\ud83d\udcde",
+    "name": "Department of Telecom (DoT) 2-Hour Mobile Disconnection Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 96,
+    "desc": "Automated IVR call claiming all mobile numbers registered on your Aadhaar will be disconnected within 2 hours due to illegal advertisements and spam complaints.",
+    "sampleMsg": "This is Department of Telecommunications (DoT). All mobile numbers linked to your Aadhaar card will be blocked in 2 hours due to 1,200 illegal spam SMS. Press 9 for customer care.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Robocall plays official-sounding DoT warning message.\n2. Pressing 9 transfers to fake telecommunications officer.\n3. Officer claims another SIM in victim's name in Assam or Mumbai was used for harassment and demands bribe or banking credentials to issue NOC.",
+    "redFlags": [
+      "Department of Telecommunications (DoT) never makes automated calls to citizens threatening phone line disconnections",
+      "Robocall asks you to press a digit to speak to a telecommunication officer",
+      "Officer claims multiple SIMs registered on your Aadhaar were used in illegal activities",
+      "Demands Aadhaar OTP or bank details to issue 'police clearance certificate'",
+      "Threatens immediate telecom blacklisting across all national carriers"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; DoT does not make disconnection calls",
+      "Check total SIM cards registered in your name on official DoT portal: tafcop.sancharsaathi.gov.in",
+      "Report fraudulent numbers on Sanchar Saathi Chakshu portal sancharsaathi.gov.in/sfc"
+    ]
+  },
+  {
+    "id": "amazon-customer-support-unauthorized-purchase-call-2025",
+    "slug": "amazon-customer-support-unauthorized-purchase-call-2025",
+    "icon": "\ud83d\udce6",
+    "name": "Amazon Customer Support Unauthorized Purchase Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 93,
+    "desc": "Robocall stating your Amazon account was charged $999 for an iPhone 16 Pro, asking you to press 1 to speak with security to dispute transaction.",
+    "sampleMsg": "Amazon Security: An order for Apple iPhone 16 ($999) has been charged to your card. If you did not make this purchase, press 1 now to connect to fraud department.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Automated dialers blast millions of landlines and mobile phones.\n2. Connecting to representative leads to scammer asking victim to download AnyDesk or TeamViewer.\n3. Scammer opens mock bank transfer screen to process refund, tricking victim into sending money.",
+    "redFlags": [
+      "Amazon never calls customers via robocalls about suspicious orders without prior customer request",
+      "Order does not appear in your authentic Amazon account order history",
+      "Caller insists on installing remote desktop software on your computer or phone",
+      "Representative asks for your banking login to issue a refund",
+      "Demands gift cards to reverse the fraudulent transaction"
+    ],
+    "kyaKarein": [
+      "Hang up and check your authentic Amazon order history at amazon.com/orders",
+      "Never download screen sharing tools recommended by incoming callers",
+      "Report scam call to FTC at reportfraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "australian-taxation-office-ato-arrest-phone-scam-2025",
+    "slug": "australian-taxation-office-ato-arrest-phone-scam-2025",
+    "icon": "\ud83e\udd98",
+    "name": "Australian Taxation Office (ATO) Arrest Phone Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 95,
+    "desc": "Robocall impersonating Australian Taxation Office stating arrest warrant has been filed with Federal Police for unpaid tax debt.",
+    "sampleMsg": "This is the Australian Taxation Office. A warrant for your arrest has been registered with the Australian Federal Police. To avoid immediate detention, press 1 to speak with an investigator.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Automated calls spoof Canberra or Sydney telephone prefixes.\n2. Operator demands immediate payment using Bitcoin ATM, iTunes gift cards, or bank transfer.\n3. Victims threatened with immediate cancellation of Tax File Number (TFN) or deportation.",
+    "redFlags": [
+      "ATO will never threaten immediate arrest, jail, or deportation over the phone",
+      "ATO never demands payment via gift cards, prepaid vouchers, or cryptocurrency",
+      "Demands you stay on phone while traveling to retail stores to buy gift vouchers",
+      "Caller becomes aggressive, abusive, or uses foul language when questioned",
+      "Refuses to provide written notice via official myGov inbox"
+    ],
+    "kyaKarein": [
+      "Hang up the phone immediately; the ATO never operates in this manner",
+      "Check your true tax account status securely by logging into myGov",
+      "Report the scam call to Scamwatch at scamwatch.gov.au"
+    ]
+  },
+  {
+    "id": "cbi-ed-hawala-money-laundering-raid-threat-call-2025",
+    "slug": "cbi-ed-hawala-money-laundering-raid-threat-call-2025",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "name": "CBI / ED Hawala Money Laundering Raid Threat Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 98,
+    "desc": "Caller claims to be Enforcement Directorate (ED) or CBI Joint Director stating victim's bank account was used in Rs 200 Crore hawala laundering by a corrupt politician.",
+    "sampleMsg": "I am ED Joint Director Sharma from New Delhi. In the interrogation of hawala broker Naresh Goyal, your bank account details were found. An ED search warrant is signed for your home.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends forged legal seizure notices bearing national emblem via WhatsApp.\n2. Conducts multi-hour interrogation warning of immediate home raid and asset freezing.\n3. Demands victim transfer deposits into 'Government Verification Vault' to prove funds are legitimate.",
+    "redFlags": [
+      "Enforcement Directorate and CBI do not conduct official interrogations via WhatsApp calls",
+      "Government agencies never require citizens to transfer personal savings for 'fund verification'",
+      "Legal notices sent as low-resolution PDFs over WhatsApp with fake seals and spelling mistakes",
+      "Caller commands victim to remain confined in room with doors locked",
+      "Threatens to notify national television news channels of victim's 'arrest'"
+    ],
+    "kyaKarein": [
+      "Disconnect call immediately; legitimate summons are served in person by uniformed officers",
+      "Never transfer funds to any bank account provided over the telephone",
+      "Call local police station or Cyber Crime Helpline 1930 to report the extortion attempt"
+    ]
+  },
+  {
+    "id": "social-security-administration-ssa-benefit-termination-call-2024",
+    "slug": "social-security-administration-ssa-benefit-termination-call-2024",
+    "icon": "\ud83c\uddfa\ud83c\uddf8",
+    "name": "Social Security Administration (SSA) Benefit Termination Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 96,
+    "desc": "Robocall stating your Social Security Number has been linked to an abandoned rental car filled with drugs in Texas and monthly benefits will be terminated today.",
+    "sampleMsg": "This is Officer Michael Robinson from the Social Security Administration. An abandoned vehicle with 25kg of drugs was recovered in El Paso registered to your SSN. Press 1 immediately.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Spoofs phone number of local SSA field office.\n2. Demands victim confirm their full 9-digit SSN, date of birth, and mother's maiden name.\n3. Instructs victim to convert bank balances into retail gift cards to safeguard against federal seizure.",
+    "redFlags": [
+      "SSA never calls citizens threatening benefit termination or arrest",
+      "Government cannot cancel or suspend your Social Security Number",
+      "Caller demands payment through retail store gift cards or Bitcoin kiosks",
+      "Caller ID shows 1-800-772-1213 (spoofed number)",
+      "Insists on total secrecy from bank tellers or family members"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; do not press 1 to speak with anyone",
+      "Report SSA phone scams to Social Security Office of the Inspector General at oig.ssa.gov",
+      "Check authentic benefit records at ssa.gov/myaccount"
+    ]
+  },
+  {
+    "id": "courier-delivery-confirmation-otp-refund-call-2025",
+    "slug": "courier-delivery-confirmation-otp-refund-call-2025",
+    "icon": "\ud83d\ude9a",
+    "name": "Courier Delivery Confirmation OTP Refund Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 95,
+    "desc": "Delivery boy calls claiming he is outside your apartment with an expensive cash-on-delivery package you didn't order, offering to cancel if you share cancellation OTP.",
+    "sampleMsg": "Hello sir, I am Bluedart delivery executive. I have your parcel of Rs 4,999 cash on delivery. You didn't order? Okay, I will cancel it. Just tell me the 6-digit cancellation OTP sent to your phone.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer triggers netbanking or UPI password reset on victim's phone number.\n2. Concurrently calls pretending to be delivery agent needing 'cancellation code'.\n3. Victim shares OTP thinking it cancels the unwanted parcel, allowing scammer to take over bank account.",
+    "redFlags": [
+      "Delivery boys do not require OTPs to cancel orders you did not place",
+      "The SMS OTP text clearly mentions: 'OTP for Netbanking Login' or 'UPI PIN Reset'",
+      "Delivery boy becomes overly persistent or helpful about canceling quickly",
+      "No delivery vehicle or courier executive is physically visible outside your residence",
+      "Caller asks you to click a link or forward an SMS code"
+    ],
+    "kyaKarein": [
+      "Never share any SMS OTP with delivery personnel, especially for packages you never ordered",
+      "Simply tell the delivery boy to return the package to sender as 'Refused by Customer'",
+      "Read SMS text carefully to see what the OTP is actually authorizing before reading it aloud"
+    ]
+  },
+  {
+    "id": "utility-water-gas-emergency-shutoff-phone-scam-2024",
+    "slug": "utility-water-gas-emergency-shutoff-phone-scam-2024",
+    "icon": "\ud83d\udca7",
+    "name": "Utility Water & Gas Emergency Shutoff Phone Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 94,
+    "desc": "Caller claims your municipal water or gas service will be turned off in 30 minutes due to unpaid commercial meter inspection fee.",
+    "sampleMsg": "City Water & Power: A service technician is en route to shut off your water meter due to unpaid past-due invoice. Pay $195 immediately over the phone with Zelle to cancel technician dispatch.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Targets restaurants, small businesses, and homeowners during busy operating hours.\n2. Threatens catastrophic immediate utility shutoff disrupting operations.\n3. Demands instant electronic payment via Zelle, Venmo, or GreenDot MoneyPak card.",
+    "redFlags": [
+      "Municipal utilities provide written past-due warnings by mail weeks before disconnection",
+      "Utilities do not accept payment via Zelle, Cash App, or GreenDot prepaid cards",
+      "Extreme urgency demanding payment within 30-45 minutes",
+      "Caller claims technician is already on the road to your property",
+      "Payment request directed to private individual's phone number or email"
+    ],
+    "kyaKarein": [
+      "Hang up and check your utility account balance directly on the official municipal website",
+      "Call the customer service phone number printed on your physical monthly water/gas bill",
+      "Report fraudulent utility collection attempts to the state public utilities commission"
+    ]
+  },
+  {
+    "id": "google-maps-business-listing-verification-extortion-call-2024",
+    "slug": "google-maps-business-listing-verification-extortion-call-2024",
+    "icon": "\ud83d\udccd",
+    "name": "Google Maps Business Listing Verification Extortion Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 92,
+    "desc": "Robocall targeting small business owners stating their Google Business Profile is unverified and will be marked permanently closed unless they pay $299 maintenance fee.",
+    "sampleMsg": "Your Google Maps business listing has not been renewed and will be marked as permanently closed on Google search results within 24 hours. Press 1 to speak with a Google listing specialist.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Automated dialer scrapes business phone numbers from Google Maps.\n2. Scammer claims to be an authorized Google representative.\n3. Pressures shop owner into paying recurring monthly fee to maintain their free Google Business profile.",
+    "redFlags": [
+      "Google never charges fees to maintain or verify a standard Google Business Profile",
+      "Google does not place unsolicited robocalls threatening to delete business listings",
+      "Caller demands credit card number over the phone to 'keep profile active'",
+      "Representative cannot email you from an authentic @google.com email address",
+      "Threatens loss of search rankings and customer reviews within 24 hours"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; managing your Google Business Profile is 100% free",
+      "Manage your listing directly at business.google.com",
+      "File complaint with FTC at reportfraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "customs-drug-parcel-skype-video-call-2025",
+    "slug": "customs-drug-parcel-skype-video-call-2025",
+    "icon": "\ud83d\udc6e",
+    "name": "Customs Drug Parcel Skype Video Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 98,
+    "desc": "Fraudsters initiate Skype video call wearing police uniforms, showing fake CBI arrest warrants claiming victim's Aadhaar was used to send illegal packages to Cambodia.",
+    "sampleMsg": "We are calling from Crime Branch Cyber Cell. Your Aadhaar card #XXXX was used to open an illicit account in Canara Bank transferring money to Cambodia. Connect on Skype room CBI_Official_Room right now.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Victim receives intimidating IVR call transferred to fake police inspector.\n2. Ordered to install Skype on desktop or mobile.\n3. Fraudster wears genuine-looking uniform and presents fabricated Supreme Court seizure notices, coercing victim into breaking fixed deposits.",
+    "redFlags": [
+      "Government law enforcement officers never use Skype or WhatsApp video for official procedures",
+      "Arrest warrants or FIRs are never served via chat applications",
+      "Victim ordered not to inform spouse, children, or local police station",
+      "Officer demands screen sharing to inspect bank balances",
+      "Demands liquidation of mutual funds, stocks, and fixed deposits into RTGS accounts"
+    ],
+    "kyaKarein": [
+      "Never connect to Skype or video calls with strangers claiming to be police officers",
+      "Walk into your nearest local police station to verify any genuine summons",
+      "Lodge complaint on cybercrime.gov.in and dial 1930"
+    ]
+  },
+  {
+    "id": "jury-duty-failure-to-appear-arrest-warrant-call-2024",
+    "slug": "jury-duty-failure-to-appear-arrest-warrant-call-2024",
+    "icon": "\u2696\ufe0f",
+    "name": "Jury Duty Failure to Appear Arrest Warrant Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 95,
+    "desc": "Caller claims to be deputy sheriff stating you failed to report for federal jury duty and a bench warrant for contempt of court is active with a $1,500 fine payable via cash voucher.",
+    "sampleMsg": "This is Deputy Collins from the County Sheriff's Department. You failed to appear for federal grand jury duty this morning. Judge Davis issued a bench warrant. Settle the $1,500 bond immediately.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Scammers spoof local sheriff office or county courthouse caller ID.\n2. Provide real names of local judges and courthouse addresses.\n3. Instruct victim to purchase MoneyPak or reloadable debit cards to pay the citation bond over the phone.",
+    "redFlags": [
+      "Courts never notify citizens about missed jury duty via unexpected telephone calls",
+      "Deputies never demand payment of fines or bonds over the telephone using cash cards",
+      "Threatens that squad cars are currently dispatched to your workplace",
+      "Demands that you remain on the line while driving to purchase retail gift cards",
+      "Refuses to allow in-person payment at the county clerk office"
+    ],
+    "kyaKarein": [
+      "Hang up and call the official clerk of courts office using the verified telephone directory",
+      "Never purchase gift cards or wire money to cancel an arrest warrant",
+      "Report jury scam calls to local sheriff department and FBI IC3"
+    ]
+  },
+  {
+    "id": "health-insurance-policy-renewal-lapse-extortion-call-2025",
+    "slug": "health-insurance-policy-renewal-lapse-extortion-call-2025",
+    "icon": "\ud83c\udfe5",
+    "name": "Health Insurance Policy Renewal Lapse Extortion Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 92,
+    "desc": "Caller claims to be from Insurance Regulatory and Development Authority (IRDAI) stating your lapsed policy bonus of Rs 3,50,000 can be released upon paying GST registration fee.",
+    "sampleMsg": "I am calling from IRDAI Grievance Redressal Cell. You have an unclaimed bonus of Rs 3,45,000 against your old lapsed insurance policy. Pay 18% GST (Rs 32,000) to release the cheque.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Fraudsters buy leaked customer data from insurance lead aggregators.\n2. Quote genuine past policy numbers to build immediate trust.\n3. Convince victim to pay multiple advance charges (GST, NOC fee, legal clearance) to release non-existent bonuses.",
+    "redFlags": [
+      "IRDAI does not sell insurance policies, collect fees, or distribute bonus payouts to citizens",
+      "Unclaimed bonuses are never released by paying upfront GST fees via personal UPI transfers",
+      "Caller promises lakhs of rupees against policies lapsed years ago",
+      "Demands that fees be transferred to individual bank accounts rather than the insurance company",
+      "Threatens that bonus funds will be confiscated by government if not claimed today"
+    ],
+    "kyaKarein": [
+      "Never pay money to claim bonuses on lapsed life or health insurance policies",
+      "Contact your original insurance company directly via their official customer service email or branch",
+      "Verify facts with IRDAI consumer portal at bimaverosa.irdai.gov.in"
+    ]
+  },
+  {
+    "id": "canadian-border-services-agency-cbsa-seizure-call-2024",
+    "slug": "canadian-border-services-agency-cbsa-seizure-call-2024",
+    "icon": "\ud83c\udf41",
+    "name": "Canadian Border Services Agency (CBSA) Seizure Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Canada",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 96,
+    "desc": "Robocall stating Canada Border Services Agency has intercepted a suspicious parcel with illicit weapons and cash addressed to you, threatening revocation of permanent residency or arrest.",
+    "sampleMsg": "This is Canada Border Services Agency. A package with illegal weapons and unverified cash registered under your name was seized at Vancouver border. Press 1 to speak with border security.",
+    "source": "Canadian Anti-Fraud Centre",
+    "kaiseHotaHai": "1. Targets newcomers, international students, and Canadian residents.\n2. Pressing 1 connects to fake CBSA investigator.\n3. Demands Social Insurance Number (SIN) and tells victim to deposit funds into Bitcoin ATM to avoid deportation.",
+    "redFlags": [
+      "CBSA never contacts individuals by robocalls demanding money or Social Insurance Numbers",
+      "Government of Canada does not accept Bitcoin or prepaid gift cards for penalties or legal bail",
+      "Threatens immediate deportation or revocation of Canadian PR status over the phone",
+      "Caller demands that victim tell no one and stay on the line until payment is confirmed",
+      "Number is spoofed to look like a Canadian government department"
+    ],
+    "kyaKarein": [
+      "Hang up the phone immediately; it is an organized extortion scam",
+      "Report the call to Canadian Anti-Fraud Centre (CAFC) at 1-888-495-8501 or antifraudcentre.ca",
+      "Never disclose your Social Insurance Number to unverified callers"
+    ]
+  },
+  {
+    "id": "immigration-passport-revocation-deportation-call-2025",
+    "slug": "immigration-passport-revocation-deportation-call-2025",
+    "icon": "\ud83d\uddfd",
+    "name": "Immigration & Passport Revocation Deportation Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 97,
+    "desc": "Caller pretending to be USCIS immigration officer telling visa holders (H-1B, F-1) there are critical errors on their I-94 arrival record and ICE agents will deport them unless they pay fine.",
+    "sampleMsg": "This is Officer Martinez from US Citizenship and Immigration Services. There is a discrepancy on your alien registration file. ICE has an open deportation order unless a $2,200 bond is paid.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers exploit vulnerable visa holders and green card applicants.\n2. Threaten immediate immigration detention and career ruin.\n3. Instruct victim to pay bond via wire transfer or cryptocurrency.",
+    "redFlags": [
+      "USCIS never calls individuals threatening deportation or demanding immediate telephone bond payments",
+      "USCIS issues official paper correspondence (Form I-797) by certified mail",
+      "Immigration bonds are never paid via wire transfer, gift cards, or crypto",
+      "Caller orders student or worker not to speak with their university DSO or company immigration attorney",
+      "Caller ID spoofed to display USCIS customer service 1-800 number"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; USCIS does not conduct business by telephone threats",
+      "Contact your designated school official (DSO) or company immigration counsel",
+      "Check true immigration case status exclusively at egov.uscis.gov"
+    ]
+  },
+  {
+    "id": "credit-card-apr-rate-reduction-robocall-2024",
+    "slug": "credit-card-apr-rate-reduction-robocall-2024",
+    "icon": "\ud83d\udcb3",
+    "name": "Credit Card APR Rate Reduction Robocall",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 93,
+    "desc": "Robocall offering to lower credit card interest rates down to 0% with all major banks, charging upfront service fee of $1,500 that delivers zero interest rate reduction.",
+    "sampleMsg": "This is Cardholder Services. We can lower your credit card interest rate to 1.9% guaranteed on all major cards. Press 1 now to speak with a credit specialist before this promotion expires.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Mass automated robocalls target debt-burdened consumers.\n2. Specialist asks for card numbers, expiration dates, and 3-digit security codes.\n3. Charges $1,500 upfront fee to victim's card; either disappears or performs basic balance transfer victim could do for free.",
+    "redFlags": [
+      "Robocall uses vague company name ('Cardholder Services', 'Credit Department')",
+      "Guarantees that credit card companies will drop APR to near-zero rates",
+      "Demands high upfront processing fee before performing any service",
+      "Demands your full 16-digit credit card number and CVV over the phone",
+      "Claims to have a special relationship or legal arrangement with Visa or Mastercard"
+    ],
+    "kyaKarein": [
+      "Hang up; robocalls pitching credit rate reductions are illegal under FTC Telemarketing Sales Rule",
+      "Call your credit card issuer directly using the number on your card to negotiate your own interest rate",
+      "Report telemarketing violators to the National Do Not Call Registry at donotcall.gov"
+    ]
+  },
+  {
+    "id": "flight-ticket-booking-cancellation-fare-refund-call-2025",
+    "slug": "flight-ticket-booking-cancellation-fare-refund-call-2025",
+    "icon": "\u2708\ufe0f",
+    "name": "Flight Ticket Booking Cancellation & Fare Refund Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 94,
+    "desc": "After victim searches for airline helpline on Google and dials a spoofed SEO customer care number, scammer claims ticket is cancelled and instructs installing remote desktop to issue refund.",
+    "sampleMsg": "Yes sir, this is MakeMyTrip / Air India customer desk. Your ticket cancellation refund of Rs 7,200 is approved. Please install QuickSupport app so we can credit money to your UPI.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Cybercriminals create fake Google My Business listings and ads for airline support numbers.\n2. Desperate passenger dials top Google result.\n3. Scammer guides caller to download AnyDesk or enter Rs 7,200 into UPI 'Pay' request instead of receiving money.",
+    "redFlags": [
+      "Phone number found on random search engine results instead of official airline contact page",
+      "Executive insists that receiving a refund requires downloading AnyDesk or QuickSupport",
+      "Executive asks caller to approve a payment request in Google Pay or PhonePe to 'receive money'",
+      "Demands debit card number and OTP to initiate customer refund",
+      "Call center has noisy domestic background with television or family chatter"
+    ],
+    "kyaKarein": [
+      "Obtain customer care numbers exclusively from the airline's official mobile app or ticket booking PDF",
+      "Remember: Entering UPI PIN ALWAYS DEBITS money from your account, never credits it",
+      "Never install remote screen-sharing tools for travel customer service"
+    ]
+  },
+  {
+    "id": "smart-electricity-meter-upgrade-fee-call-2025",
+    "slug": "smart-electricity-meter-upgrade-fee-call-2025",
+    "icon": "\u26a1",
+    "name": "Smart Electricity Meter Upgrade Fee Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 95,
+    "desc": "Caller claims power company is mandatory-replacing existing meter with digital smart meter, demanding Rs 1,499 installation fee payable via UPI link before electricity is cut off.",
+    "sampleMsg": "Sir, I am calling from Tata Power / BSES meter department. Your analog meter must be replaced with smart prepaid meter today. Pay Rs 1,499 installation fee on this link or power will be disconnected.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers exploit government smart electricity meter rollout programs.\n2. Threaten power supply disconnection if meter upgrade fee is not paid immediately.\n3. Link directs to phishing payment page harvesting netbanking credentials.",
+    "redFlags": [
+      "Power utility companies do not demand online payments via WhatsApp links for meter replacements",
+      "Government smart meter installations are funded through utility capital programs and do not require on-the-spot UPI fees",
+      "Threatens immediate power outage within 2 hours",
+      "Caller reaches from an unverified mobile phone number",
+      "Refuses to provide written consumer service order number"
+    ],
+    "kyaKarein": [
+      "Check electricity account status in the official discom consumer mobile application",
+      "Never pay meter installation fees via private UPI links",
+      "Call authorized electricity board helpline to verify technician orders"
+    ]
+  },
+  {
+    "id": "social-media-account-recovery-hacker-phone-trap-2025",
+    "slug": "social-media-account-recovery-hacker-phone-trap-2025",
+    "icon": "\ud83d\udcf8",
+    "name": "Social Media Account Recovery 'Hacker' Phone Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 93,
+    "desc": "Fraudsters advertise fake phone numbers claiming to be Instagram or Facebook live customer care, charging $200 upfront to 'recover hacked accounts' and stealing remaining accounts.",
+    "sampleMsg": "Meta Live Support: Account recovery specialist assigned. Pay $150 recovery server fee and share your WhatsApp backup code to restore your locked Instagram page.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Victims of hacked social accounts desperately search Google for 'Instagram customer care phone number'.\n2. Call scam call center pretending to be Meta tech engineers.\n3. Scammer charges $150 and tricks victim into revealing 2FA codes for WhatsApp and email, compromising everything.",
+    "redFlags": [
+      "Meta, Instagram, and Facebook DO NOT offer incoming telephone customer support for regular accounts",
+      "Any phone number claiming to be 'Instagram Live Support' is 100% fraudulent",
+      "Caller demands payment via Cash App, Zelle, or gift cards to unlock an account",
+      "Asks for SMS verification codes sent to your phone or recovery email password",
+      "Guarantees 100% account recovery within 30 minutes"
+    ],
+    "kyaKarein": [
+      "Submit account recovery requests exclusively through official in-app recovery flows (instagram.com/hacked)",
+      "Never call phone numbers discovered on search engine forums or YouTube comments",
+      "Never share 2FA backup codes with third-party callers"
+    ]
+  },
+  {
+    "id": "pre-approved-gold-loan-at-1-interest-call-2024",
+    "slug": "pre-approved-gold-loan-at-1-interest-call-2024",
+    "icon": "\ud83e\ude99",
+    "name": "Pre-Approved Gold Loan at 1% Interest Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 91,
+    "desc": "Telemarketer offering pre-approved gold loan at 1% annual interest with doorstep gold collection, stealing physical jewelry with fabricated valuation documents.",
+    "sampleMsg": "Greetings from Muthoot/Manappuram Gold Finance. Special festival offer: 1% annual interest on gold loan with home pickup! Our valuer will visit your home today to weigh gold and disburse cash.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Telemarketer pitches unrealistically cheap loan interest rate with home convenience.\n2. Accomplice arrives at home wearing branded lanyard with fake receipt book.\n3. Takes victim's gold ornaments for 'purity testing at branch' and flees.",
+    "redFlags": [
+      "Reputable gold loan NBFCs require borrowers to bring physical jewelry to authorized branches for testing and safe custody",
+      "1% annual interest rate is far below prevailing market rates",
+      "Representative insists on taking jewelry away without disbursing immediate bank transfer",
+      "Receipt provided has spelling errors or lacks registered NBFC branch stamp",
+      "Caller reached from personal mobile phone rather than registered corporate line"
+    ],
+    "kyaKarein": [
+      "Pledge gold jewelry exclusively inside authorized physical bank or NBFC branch premises",
+      "Never hand over gold ornaments to strangers visiting your home",
+      "Verify company credentials on official Reserve Bank of India register"
+    ]
+  },
+  {
+    "id": "high-court-legal-notice-whatsapp-video-extortion-2025",
+    "slug": "high-court-legal-notice-whatsapp-video-extortion-2025",
+    "icon": "\u2696\ufe0f",
+    "name": "High Court Legal Notice Whatsapp Video Extortion",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 97,
+    "desc": "Fraudsters initiate WhatsApp video call showing realistic courtroom setup with an actor dressed in lawyer gown claiming a cheque bounce non-bailable warrant is issued against victim.",
+    "sampleMsg": "I am Advocate K.R. Sharma representing High Court. Under Section 138 NI Act, a non-bailable arrest warrant is in my hand. Transfer Rs 45,000 compromise fee now to stop police dispatch.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Calls victim with background showing Indian courtroom bench and legal emblems.\n2. Shows fabricated PDF notice with fake stamps of High Court and judicial magistrate.\n3. Threatens that local police are en route unless out-of-court settlement fee is paid via UPI immediately.",
+    "redFlags": [
+      "Courts and lawyers never issue or serve arrest warrants over WhatsApp video calls",
+      "Judicial warrants are physically served by police officers in uniform with official court seal",
+      "Cheque bounce settlements under Section 138 require formal written compromise petitions in open court",
+      "Demands immediate payment to a private individual UPI ID",
+      "Caller uses aggressive intimidatory language to prevent victim from consulting a personal lawyer"
+    ],
+    "kyaKarein": [
+      "Hang up the video call immediately; no legal process operates over WhatsApp video",
+      "Consult your own independent lawyer to verify any genuine legal disputes",
+      "File complaint with Cyber Police on helpline 1930 and cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "vehicle-insurance-policy-renewal-lapse-call-2025",
+    "slug": "vehicle-insurance-policy-renewal-lapse-call-2025",
+    "icon": "\ud83d\ude97",
+    "name": "Vehicle Insurance Policy Renewal Lapse Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 92,
+    "desc": "Caller claims to be from PolicyBazaar or insurance company stating car insurance policy expired yesterday and vehicle will be impounded unless renewed via their payment link.",
+    "sampleMsg": "Sir, your Maruti Swift insurance expired yesterday. Traffic police has flagged your RC. Renew right now on 40% discount for Rs 4,200: I am sending payment link on WhatsApp.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Telemarketers harvest vehicle registration data from state transport databases.\n2. Call vehicle owners near actual policy expiration dates.\n3. Send phishing link or take payment via personal UPI, providing completely fake PDF policy certificate with non-existent policy number.",
+    "redFlags": [
+      "Caller asks for payment to private UPI ID instead of official insurance aggregator gateway",
+      "Offers massive discounts (40% - 60%) that violate IRDAI tariff regulations",
+      "Payment link destination is not the official insurer domain (e.g. icicilombard.com)",
+      "Policy PDF issued has invalid QR code and does not reflect in Parivahan mParivahan app",
+      "Caller creates false panic claiming vehicle is already blacklisted on highway cameras"
+    ],
+    "kyaKarein": [
+      "Renew vehicle insurance directly through official insurer website or authorized mobile app",
+      "Verify policy details immediately on the national transport portal: parivahan.gov.in",
+      "Never send insurance premiums to personal UPI mobile numbers"
+    ]
+  },
+  {
+    "id": "foreign-university-admission-processing-fee-call-2024",
+    "slug": "foreign-university-admission-processing-fee-call-2024",
+    "icon": "\ud83c\udf93",
+    "name": "Foreign University Admission Processing Fee Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 93,
+    "desc": "Scammer calls students aspiring to study abroad claiming an elite UK or Canadian university has accepted their profile with 80% scholarship, demanding Rs 75,000 visa letter fee.",
+    "sampleMsg": "Congratulations! University of Manchester has selected your application for MS Computer Science with \u00a315,000 scholarship. Pay Rs 75,000 CAS letter deposit before 5 PM to confirm your seat.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Fraudulent education consultancy collects student contact details from education fairs.\n2. Issues fabricated university admission offer letter with forged seals.\n3. Takes tuition and visa processing fee into domestic shell accounts and shuts down office.",
+    "redFlags": [
+      "Student never formally applied to the university or took mandatory English tests (IELTS/TOEFL)",
+      "University never asks international tuition deposits into private Indian bank accounts",
+      "Unrealistic 80% - 100% scholarship offered with low academic test scores",
+      "High pressure requiring payment within hours to 'hold international quota'",
+      "Consultant refuses to let student communicate directly with university admissions office"
+    ],
+    "kyaKarein": [
+      "Verify admission offers directly with the university international admissions office via their .ac.uk or .edu email",
+      "Pay tuition fees exclusively through official university international wire platforms (Flywire, Convera)",
+      "Check consultancy registration on official education department portals"
+    ]
+  },
+  {
+    "id": "atm-card-expiry-microchip-upgrade-robocall-2024",
+    "slug": "atm-card-expiry-microchip-upgrade-robocall-2024",
+    "icon": "\ud83d\udcb3",
+    "name": "ATM Card Expiry & Microchip Upgrade Robocall",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 96,
+    "desc": "Caller claims to be bank card department manager stating ATM magnetic stripe card will stop functioning tonight unless upgraded to EVM microchip over phone.",
+    "sampleMsg": "Dear customer, your SBI ATM card is expiring today. To upgrade to new free microchip card without visiting branch, verify your 16-digit card number and CVV on this call.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Caller pretends to be bank card manager assisting busy customer.\n2. Convinces victim to read out 16-digit card number, expiration date, and CVV on back of card.\n3. Scammer triggers online shopping transaction and asks victim for incoming 6-digit 'upgrade code' (which is the purchase OTP), looting bank account.",
+    "redFlags": [
+      "Bank employees NEVER ask for card CVV, expiry date, or ATM PIN under any circumstances",
+      "New chip cards are automatically dispatched to customer's registered home address by post",
+      "Caller claims card will be permanently cancelled within 24 hours if not verified on phone",
+      "Caller asks for the OTP received on SMS, falsely calling it a 'card verification code'",
+      "Call comes from standard 10-digit mobile number"
+    ],
+    "kyaKarein": [
+      "Never share 16-digit card number, CVV, or SMS OTP over any phone call",
+      "Hang up and block the phone number immediately",
+      "If details were shared, lock card immediately via your official mobile banking app"
+    ]
+  },
+  {
+    "id": "mobile-tower-installation-advance-rent-scam-call-2024",
+    "slug": "mobile-tower-installation-advance-rent-scam-call-2024",
+    "icon": "\ud83d\uddfc",
+    "name": "Mobile Tower Installation Advance Rent Scam Call",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 94,
+    "desc": "Caller offers Rs 50,000 monthly rent plus Rs 30 Lakh advance to install Jio or Airtel mobile tower on victim's empty plot or rooftop, demanding registration tax upfront.",
+    "sampleMsg": "Jio Tower Division: Your plot has been approved for 5G mobile tower. You will get Rs 45,000 monthly rent + Rs 25 Lakh advance cheque. Deposit Rs 18,500 government environmental tax to start installation.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends official-looking forged approval letters bearing Department of Telecom logo.\n2. Promises lucrative recurring monthly rental income and one family member employment.\n3. Extracts multiple advance fees (survey fee, environmental clearance, NOC tax) before disappearing.",
+    "redFlags": [
+      "Telecom carriers and tower companies (Indus Towers) do NOT charge property owners fees to install towers",
+      "Promises unrealistically high monthly rent (Rs 40,000 - Rs 70,000) for residential rooftops",
+      "Demands government clearance fee or environmental tax transferred into private bank account",
+      "Approval letter sent via WhatsApp or email filled with spelling and grammar mistakes",
+      "Uses telecom brand logos (Jio, Airtel) without corporate authorization"
+    ],
+    "kyaKarein": [
+      "Never pay advance money to get a mobile tower installed on your property",
+      "Check guidelines on official Department of Telecom website: dot.gov.in",
+      "Apply directly through verified portals of genuine infrastructure providers like Indus Towers"
+    ]
+  },
+  {
+    "id": "fake-police-fir-compromise-settlement-call-2025",
+    "slug": "fake-police-fir-compromise-settlement-call-2025",
+    "icon": "\ud83d\udc6e",
+    "name": "Fake Police FIR Compromise Settlement Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Call",
+    "categorySlug": "call-impersonation",
+    "categoryName": "Call & Impersonation",
+    "score": 97,
+    "desc": "Caller claims to be Station House Officer (SHO) from another state stating an FIR for sexual harassment or cheating has been registered against victim, demanding bribe to quash case.",
+    "sampleMsg": "I am SHO Arvind Kumar from Gomti Nagar Police Station Lucknow. A girl has filed an FIR #281/24 against your phone number for criminal intimidation. Pay Rs 50,000 settlement to settle matter out of court.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Criminals obtain victim's name, phone number, and workplace from LinkedIn or Truecaller.\n2. Call with high aggression, yelling legal IPC sections and threatening public embarrassment.\n3. Demand immediate UPI transfer to 'compromise' the fabricated complaint before arrest team departs.",
+    "redFlags": [
+      "Genuine police officers never call accused individuals demanding money to cancel an FIR",
+      "Refuses to provide certified copy of FIR or station diary entry number",
+      "Demands immediate payment via PhonePe, Google Pay or Paytm to private numbers",
+      "Threatens to contact victim's employer or parents to destroy their reputation",
+      "Pressures victim not to contact a local lawyer"
+    ],
+    "kyaKarein": [
+      "Do not panic and never transfer any money over the phone",
+      "Tell caller you are visiting your local city police station to verify the FIR with their senior officers",
+      "Lodge complaint immediately with Cyber Crime Helpline 1930"
+    ]
+  },
+  {
+    "id": "whatsapp-video-call-sextortion-morphing-blackmail-2026",
+    "slug": "whatsapp-video-call-sextortion-morphing-blackmail-2026",
+    "icon": "\ud83d\udcf9",
+    "name": "WhatsApp Video Call Sextortion & Morphing Blackmail",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 99,
+    "desc": "Victim receives unexpected WhatsApp video call from attractive woman who undresses within seconds. Screen recorder captures victim's face alongside explicit footage, used to demand money under threat of sending video to family and uploading to YouTube.",
+    "sampleMsg": "Hello handsome, you look lonely. I am bored in hostel, let's video chat on WhatsApp... [Answers call, pre-recorded nude video plays for 5 seconds, call disconnects, followed by extortion screenshot].",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer contacts victim via Facebook, Instagram, or WhatsApp expressing romantic interest.\n2. Triggers video call and plays pre-recorded video of an undressing model while recording victim's bewildered face.\n3. Seconds later, sends composite video screenshot demanding Rs 20,000 to Rs 1,00,000, followed by calls from fake 'Delhi Police YouTube Cyber Crime Cell' threatening arrest.",
+    "redFlags": [
+      "Unsolicited video call from unknown number on WhatsApp or Instagram",
+      "Caller immediately starts undressing without engaging in normal conversation",
+      "Call abruptly ends within 5 to 15 seconds",
+      "Immediate extortion message with screenshots threatening to share with your contact list and Facebook friends",
+      "Subsequent phone call from an alleged 'Delhi Police Cyber Cell Inspector' or 'YouTube Legal Officer' offering to delete the video for a fee"
+    ],
+    "kyaKarein": [
+      "Do NOT pay any money; paying never stops extortion and leads to endless demands",
+      "Block the blackmailer numbers immediately on WhatsApp and make social media profiles strictly private",
+      "Report immediately to National Cyber Crime Reporting Portal cybercrime.gov.in and dial 1930"
+    ]
+  },
+  {
+    "id": "shaadi-matrimonial-fake-nri-groom-bride-scam-2025",
+    "slug": "shaadi-matrimonial-fake-nri-groom-bride-scam-2025",
+    "icon": "\ud83d\udc8d",
+    "name": "Shaadi & Matrimonial Fake NRI Groom / Bride Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 97,
+    "desc": "Profile on matrimonial portals (Shaadi.com, BharatMatrimony) posing as wealthy NRI doctor or engineer in London/Canada, claiming to fly to India for engagement, then demanding emergency customs clearance fee.",
+    "sampleMsg": "I have boarded British Airways flight to Delhi to meet your parents for our marriage! I bought diamond necklace and $50,000 for you. But customs officer detained me at airport. Please transfer Rs 1,20,000 customs penalty.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer creates sophisticated matrimonial profile with stolen photos of foreign doctor or pilot.\n2. Courts victim over phone for weeks promising grand wedding and immigration visa.\n3. Announces surprise arrival at airport; fake accomplice calls pretending to be airport customs demanding lakhs in clearance penalties.",
+    "redFlags": [
+      "Matches on matrimonial site but consistently refuses in-person meeting or live family video call",
+      "Claims to be high-earning NRI living in UK, USA, or Canada with tragic backstory (widowed, orphan)",
+      "Expresses intense marriage commitment within days or weeks of messaging",
+      "Claims to be detained at Indian airport customs with undeclared gold or foreign currency",
+      "Demands customs clearance fees transferred to personal Indian savings accounts"
+    ],
+    "kyaKarein": [
+      "Never send money to someone you have never met in person, regardless of marriage promises",
+      "Conduct thorough background check and in-person family verification before proceeding with matrimonial alliances",
+      "Report the profile to matrimonial site safety team and cyber police"
+    ]
+  },
+  {
+    "id": "pig-butchering-sha-zhu-pan-romance-investment-trap-2026",
+    "slug": "pig-butchering-sha-zhu-pan-romance-investment-trap-2026",
+    "icon": "\ud83d\udc16",
+    "name": "Pig Butchering (Sha Zhu Pan) Romance Investment Trap",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 99,
+    "desc": "Scammer builds romantic relationship over WhatsApp, dating app, or LinkedIn over months ('fattening the pig'), then introduces exclusive crypto trading platform showing fake huge returns, locking life savings.",
+    "sampleMsg": "Darling, I don't just want love for us, I want financial freedom for our future family. My uncle is an algorithmic crypto trader. Look at my 30% profit today on Defi-Wealth.top. Put $5,000 and we will travel Europe together.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Operatives based in Southeast Asian compound syndicates contact victim via 'wrong number' text or dating app.\n2. Spend weeks building deep emotional intimacy, discussing marriage and shared future dreams.\n3. Gradually introduce manipulated crypto or forex platform showing fake profits, encouraging victim to take loans and mortgage homes before locking all withdrawals.",
+    "redFlags": [
+      "Unsolicited 'wrong number' message that politely turns into daily romantic conversation",
+      "Partner claims immense wealth from cryptocurrency, gold, or foreign exchange arbitrage",
+      "Guides you to trade on an unverified trading platform or bespoke mobile app not on Google Play",
+      "Platform shows massive paper profits and allows initial tiny withdrawal ($100) to build trust",
+      "When you request large withdrawal, platform demands 20% - 30% 'tax deposit' and freezes funds"
+    ],
+    "kyaKarein": [
+      "Never invest money on trading platforms recommended by romantic partners you have never met in person",
+      "Conduct reverse image search on the partner's photos to uncover stolen model identities",
+      "File immediate report with FBI IC3 at ic3.gov or your national cybercrime agency"
+    ]
+  },
+  {
+    "id": "us-military-overseas-soldier-romance-scam-2025",
+    "slug": "us-military-overseas-soldier-romance-scam-2025",
+    "icon": "\ud83c\udf96\ufe0f",
+    "name": "US Military Overseas Soldier Romance Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 96,
+    "desc": "Scammer poses as deployed US military officer or peacekeeper in Syria or Afghanistan, claiming love and requesting money for leave application fees, satellite internet, or emergency medical treatment.",
+    "sampleMsg": "My dearest, I am Captain John deployed on peacekeeping mission in Kabul. I want to retire and spend my life with you. But the UN Army command requires $3,800 leave processing fee to allow me to fly home.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers steal photos of decorated military servicemembers from public memorial or tribute sites.\n2. Target divorced, widowed, or lonely individuals on Facebook and Words with Friends.\n3. Claim they found a trunk of gold or need funds to pay military doctors, leave boards, or replacement soldiers.",
+    "redFlags": [
+      "Claims to be active-duty US soldier deployed in overseas conflict zone unable to video chat due to 'security protocols'",
+      "Demands money to pay for military leave paperwork, travel permits, or medical bills",
+      "Military personnel have full government healthcare and never pay personal leave fees",
+      "Asks for funds via cryptocurrency, Apple gift cards, or Western Union to third-party bank accounts",
+      "Uses exaggerated dramatic vows of devotion and refers to victim as 'my wife/husband' within weeks"
+    ],
+    "kyaKarein": [
+      "US military members never need civilians to pay for leave, flights, or medical treatment",
+      "Do not send money, gift cards, or crypto to online romantic partners",
+      "Report military imposter profiles to US Army Criminal Investigation Division (CID)"
+    ]
+  },
+  {
+    "id": "oil-rig-engineer-remote-love-scam-2024",
+    "slug": "oil-rig-engineer-remote-love-scam-2024",
+    "icon": "\ud83d\udee2\ufe0f",
+    "name": "Oil Rig Engineer Remote Love Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 94,
+    "desc": "Profile pretending to be offshore oil rig contractor in North Sea or Gulf of Mexico, unable to access bank accounts and pleading for money to replace broken drill equipment.",
+    "sampleMsg": "My love, a critical drill valve on our North Sea platform exploded. My corporate account is restricted while offshore. Send \u00a34,500 to equipment supplier or I will lose my contract and be stranded here.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Uses photos of handsome middle-aged engineers on offshore rigs.\n2. Romantic relationship develops entirely via text messages and phone calls.\n3. Sudden catastrophic industrial emergency occurs requiring urgent financial bailout.",
+    "redFlags": [
+      "Claims to be working on offshore oil platform, cargo ship, or deep-sea vessel",
+      "Inability to participate in live video calls blamed on weak maritime satellite internet",
+      "Claims personal bank accounts are inaccessible from offshore location",
+      "Requests financial help for drill parts, contract penalties, or satellite communications fees",
+      "Promises to repay quadruple the amount once back on dry land"
+    ],
+    "kyaKarein": [
+      "Offshore engineering companies cover 100% of industrial equipment costs, never private individuals",
+      "Never wire money to foreign accounts for internet love interests",
+      "Report scammer details to Action Fraud"
+    ]
+  },
+  {
+    "id": "sugar-daddy-sugar-mommy-allowance-deposit-trap-2025",
+    "slug": "sugar-daddy-sugar-mommy-allowance-deposit-trap-2025",
+    "icon": "\ud83c\udf6d",
+    "name": "Sugar Daddy / Sugar Mommy Allowance Deposit Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 93,
+    "desc": "Promised weekly allowance of $2,000 on Instagram or Twitter for chatting, but victim must pay a $50 'clearance fee' or process fake mobile check deposit.",
+    "sampleMsg": "Hey babe! I am looking for a sweet loyal sugar baby to spoil. I will give you $2,500 weekly allowance with no physical intimacy needed. Just pay $50 processing fee to link my business payroll to your Cash App.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Targets students and young adults on Instagram, TikTok, and Twitter.\n2. Sends photos of fake bank accounts showing millions of dollars.\n3. Either takes $50-$100 'account linking fee' or sends fraudulent mobile check, demanding victim wire back part of funds before check bounces.",
+    "redFlags": [
+      "Strangers offering thousands of dollars in free weekly allowance just for texting",
+      "Requires victim to pay an upfront 'activation fee', 'loyalty test fee', or 'transaction tax'",
+      "Sends mobile check images instructing victim to deposit using mobile banking app",
+      "Demands victim purchase gift cards and send photo of barcodes",
+      "Asks for your bank account online login username and password to deposit payroll"
+    ],
+    "kyaKarein": [
+      "Real sugar relationships never require you to pay upfront fees to receive allowance",
+      "Depositing fake checks is bank fraud and will lead to account closure and police investigation",
+      "Block and report sugar daddy solicitations on social media"
+    ]
+  },
+  {
+    "id": "celebrity-imposter-romance-vip-fan-card-scam-2025",
+    "slug": "celebrity-imposter-romance-vip-fan-card-scam-2025",
+    "icon": "\ud83c\udf1f",
+    "name": "Celebrity Imposter Romance & VIP Fan Card Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 95,
+    "desc": "Scammer poses as Keanu Reeves, Johnny Depp, or K-pop star on private fan chat, claiming management controls their money and asking fan for money for a secret meeting VIP card.",
+    "sampleMsg": "Hello my dear loyal fan, this is Johnny Depp's private personal account away from my Hollywood management. I love your comments. Purchase an official VIP Fan Meet Card ($1,200) so we can spend the weekend together.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Scammers create fan pages and message vulnerable fans privately.\n2. Claim their manager or divorce settlement blocks them from accessing their millions.\n3. Ask devoted fan to buy gift cards, pay private jet fees, or purchase fake membership cards.",
+    "redFlags": [
+      "Celebrity messaging you directly on private messaging apps claiming to love you",
+      "Profile lacks official verified checkmark on the platform",
+      "Claims wealthy international celebrity needs your financial help to pay bills or travel fees",
+      "Demands payments via Bitcoin, Apple gift cards, or wire transfer to third-party managers",
+      "Insists that relationship must remain top secret from media and family"
+    ],
+    "kyaKarein": [
+      "World-famous celebrities do not secretly message private fans for romantic relationships and money",
+      "Never send money or gift cards to celebrity fan accounts",
+      "Report impersonator profiles to social media platform security desks"
+    ]
+  },
+  {
+    "id": "tinder-swindler-luxury-lifestyle-investor-extortion-2024",
+    "slug": "tinder-swindler-luxury-lifestyle-investor-extortion-2024",
+    "icon": "\ud83d\udc8e",
+    "name": "Tinder Swindler Luxury Lifestyle Investor Extortion",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 96,
+    "desc": "Con artist charms matches on Tinder with lavish dinners, private jets, and luxury hotels, then claims enemies are tracking his credit cards and begs match to take out bank loans in her name.",
+    "sampleMsg": "My darling, my security team says my credit cards are being tracked by business rivals. My bodyguard was injured. Can you open a line of credit of $50,000 for me? I will wire you $100,000 next Monday.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Uses money stolen from previous victims to finance ultra-luxury lifestyle to impress new target.\n2. Stages fake emergency with staged photos of injured bodyguards.\n3. Convinces victim to max out credit cards and take bank loans, disappearing once credit limits are exhausted.",
+    "redFlags": [
+      "Flaunts extreme wealth, designer clothes, and private aviation early on dating apps",
+      "Rushes emotional bonding and invites match to international luxury hotels within days",
+      "Fabricates elaborate security threats claiming enemies or rivals are tracing their spending",
+      "Pressures romantic partner to take out personal bank loans or credit cards on their behalf",
+      "Repays initial small amounts using bounced checks or fraudulent wire receipts"
+    ],
+    "kyaKarein": [
+      "Never borrow money or open financial credit lines for any romantic acquaintance",
+      "Conduct thorough background check on business entities and corporate claims",
+      "Report financial romance predators to police and consumer fraud bureaus"
+    ]
+  },
+  {
+    "id": "sextortion-webcam-malware-recording-extortion-2025",
+    "slug": "sextortion-webcam-malware-recording-extortion-2025",
+    "icon": "\ud83d\udcbb",
+    "name": "Sextortion Webcam Malware Recording Extortion",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 94,
+    "desc": "Email stating hacker installed Pegasus spyware on your computer through adult website, recorded split-screen video of you watching explicit content, demanding $1,500 in Bitcoin.",
+    "sampleMsg": "I know your password 'Summer2023!'. I infected your operating system with remote trojan while you visited adult site. I recorded your camera and screen. Send $1,500 BTC to 1A1zP1... or I blast video to all your email contacts.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Mass automated spam campaign using leaked passwords from past commercial data breaches.\n2. Threatens that a dual-screen recording of camera and browsing history exists.\n3. Relies purely on guilt and psychological terror to extract Bitcoin payments; no actual malware or video exists.",
+    "redFlags": [
+      "Spam email quotes an old or breached password to prove fake hacker access",
+      "Claims to have remote desktop video recording of your webcam",
+      "Demands payment exclusively in Bitcoin or Monero to anonymous crypto address",
+      "Gives arbitrary 48-hour or 72-hour countdown timer",
+      "Sent to thousands of people simultaneously using generic templates"
+    ],
+    "kyaKarein": [
+      "Do NOT pay; the blackmailer does not have any video or spyware on your device",
+      "Change the password mentioned in the email on any websites where it is still used",
+      "Mark email as phishing/spam and delete it immediately"
+    ]
+  },
+  {
+    "id": "single-parent-seeking-love-visa-clearance-trap-2024",
+    "slug": "single-parent-seeking-love-visa-clearance-trap-2024",
+    "icon": "\ud83e\uddf8",
+    "name": "Single Parent Seeking Love Visa Clearance Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 92,
+    "desc": "Widowed single father or mother profile on dating apps claiming to fall deeply in love, asking for financial help with their child's sudden hospital surgery abroad.",
+    "sampleMsg": "Sweetheart, my 7-year-old daughter Emma collapsed with acute appendicitis here in Turkey. The hospital refuses surgery without $3,200 deposit. You are the only person I can turn to. Please save my little girl.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Uses stolen family photos of handsome father with adorable child.\n2. Builds deep empathy with compassionate victims over several months.\n3. Fabricates heart-wrenching child medical emergency to extract wire transfers.",
+    "redFlags": [
+      "Tragic profile story: spouse died in tragic accident, leaving them as noble single parent",
+      "Always located in foreign country for business or engineering contract",
+      "Refuses live video calls claiming camera is broken or emotions are too overwhelming",
+      "Sudden medical crisis involving child requiring immediate funds to save their life",
+      "Demands funds sent via untraceable cash apps, crypto, or money remitter"
+    ],
+    "kyaKarein": [
+      "Never wire money for foreign medical emergencies to people you have never met face-to-face",
+      "Perform reverse image search on profile photos using Google Images or TinEye",
+      "Report fraudulent romance profiles to dating app administration"
+    ]
+  },
+  {
+    "id": "honeytrap-blackmail-after-hotel-room-meeting-2025",
+    "slug": "honeytrap-blackmail-after-hotel-room-meeting-2025",
+    "icon": "\ud83d\udeaa",
+    "name": "Honeytrap Blackmail After Hotel Room Meeting",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 98,
+    "desc": "Victim meets dating app match at a hotel or private apartment. Minutes later, gang members burst into the room claiming to be crime branch police or the woman's family, extorting lakhs under threat of rape case.",
+    "sampleMsg": "Match invites victim to hotel room for drinks. Within 20 minutes, 3 men burst in claiming to be Crime Branch Police and woman's brothers, recording victim without clothes and demanding Rs 10 Lakh.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Organized honeytrap gang uses woman to lure wealthy professionals via dating apps.\n2. Insists on meeting in secluded hotel, Airbnb, or apartment rented by the syndicate.\n3. Armed accomplices burst into room, assault victim, confiscate mobile phone, and force ATM card PIN disclosure.",
+    "redFlags": [
+      "Dating match insists on meeting at an unfamiliar private flat or hotel room rather than a busy public cafe",
+      "Match pushes aggressively for private physical intimacy within the very first hour of meeting",
+      "Sudden raid by aggressive men claiming to be police officers without official ID or uniforms",
+      "Immediate demand for lakhs of rupees to 'settle the matter' and avoid rape charges",
+      "Forced transfer of money via mobile banking or ATM withdrawals under physical duress"
+    ],
+    "kyaKarein": [
+      "Always meet dating app matches in well-lit, crowded public spaces (malls, cafes, restaurants)",
+      "Never enter private apartments or hotel rooms on a first date with a stranger",
+      "If targeted, immediately reach nearest police station and dial 112 to file criminal extortion FIR"
+    ]
+  },
+  {
+    "id": "matrimonial-overseas-gift-courier-detention-trap-2025",
+    "slug": "matrimonial-overseas-gift-courier-detention-trap-2025",
+    "icon": "\ud83c\udf81",
+    "name": "Matrimonial Overseas Gift Courier Detention Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 96,
+    "desc": "Matrimonial suitor sends tracking link for parcel containing expensive bridal jewelry and $20,000 cash, followed by fake customs officer calling demanding anti-terror clearance fee.",
+    "sampleMsg": "Customs Clearance Delhi: A heavy international gift consignment from London containing 500g gold and \u00a335,000 cash addressed to you is on hold. Clear Rs 85,000 Anti-Terrorism Clearance Charge.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Groom suitor tells bride-to-be he sent expensive royal bridal gifts ahead of wedding.\n2. Provides link to fabricated courier tracking site showing package progressing.\n3. Fake customs commissioner calls demanding sequential fees (customs, currency clearance, RBI tax) totaling lakhs.",
+    "redFlags": [
+      "Sending foreign currency in postal parcels is illegal under international postal and FEMA laws",
+      "Tracking website is an obscure unverified domain with no legitimate corporate history",
+      "Caller claims to be customs commissioner but demands fee payment to private individual bank accounts",
+      "Suitor acts helpless and begs victim to pay customs fee promising to reimburse in cash",
+      "Threats of CBI arrest if the parcel is not cleared"
+    ],
+    "kyaKarein": [
+      "Never pay customs duties into private individual bank accounts",
+      "Customs never charges 'anti-terror' or 'money laundering clearance' fees over the phone",
+      "Block suitor and report phone numbers to cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "fake-russian-ukrainian-bride-romance-visa-scam-2024",
+    "slug": "fake-russian-ukrainian-bride-romance-visa-scam-2024",
+    "icon": "\ud83d\udc70",
+    "name": "Fake Russian / Ukrainian Bride Romance Visa Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 93,
+    "desc": "Profiles posing as Eastern European women seeking foreign husbands to escape hardship, asking match to pay $2,000 for travel visa, passport fees, and translation services.",
+    "sampleMsg": "My dear darling, I dream of cooking dinner for you in your country. I went to the visa agency in Kyiv today. My travel visa and ticket cost $1,850. Please send it through Western Union so I can fly into your arms.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Mail-order bride syndicates operate translation agency front companies.\n2. Professional copywriters draft passionate love letters using professional model portfolios.\n3. Collect endless advance fees for visas, flight tickets, medical exams, and agency commission without ever traveling.",
+    "redFlags": [
+      "Model-grade photos with overly flattering, emotionally intense love letters early on",
+      "Woman claims she does not speak English and agency charges per-minute translation fees",
+      "Constant financial obstacles preventing travel (visa denied, passport stolen, baggage tax)",
+      "Demands cash transfers via Western Union, MoneyGram, or cryptocurrency",
+      "Refuses unscripted direct video calls on independent apps"
+    ],
+    "kyaKarein": [
+      "Do not pay visa or travel agency fees for foreign romance contacts",
+      "Insist on direct video chat on standard platforms before spending any money",
+      "Report predatory bride agencies to national consumer protection boards"
+    ]
+  },
+  {
+    "id": "facebook-dating-profile-hijack-friend-loan-begging-2025",
+    "slug": "facebook-dating-profile-hijack-friend-loan-begging-2025",
+    "icon": "\ud83d\udc65",
+    "name": "Facebook Dating Profile Hijack & Friend Loan Begging",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 92,
+    "desc": "Attacker hacks Facebook account and initiates dating chats with mutual friends, developing romantic banter before asking for emergency $500 Venmo loan.",
+    "sampleMsg": "Hey, I always had a secret crush on you... Can I ask you a huge favor? My car broke down and my bank app is locked. Can you Venmo $400 to my mechanic? I will pay you back tomorrow over dinner.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Attacker takes over Facebook account via credential stuffing or phishing.\n2. Reviews Messenger chat history to identify romantic openings with friends.\n3. Fabricates emergency expense and directs payment to criminal cash tag.",
+    "redFlags": [
+      "Sudden flirtatious or romantic confession from an acquaintance you haven't spoken with in years",
+      "Conversation quickly pivots to financial hardship or urgent car repair",
+      "Refuses telephone call claiming voice microphone is damaged",
+      "Cash App or Venmo payment recipient name does not match your friend's real name",
+      "High pressure requiring transfer within the hour"
+    ],
+    "kyaKarein": [
+      "Call your friend directly on their regular cellular phone number to verify",
+      "Never send electronic cash transfers to unfamiliar recipient handles",
+      "Notify friend that their social media account has been hijacked"
+    ]
+  },
+  {
+    "id": "instagram-model-paid-date-advance-escort-trap-2025",
+    "slug": "instagram-model-paid-date-advance-escort-trap-2025",
+    "icon": "\ud83d\udc60",
+    "name": "Instagram Model Paid Date Advance Escort Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 95,
+    "desc": "Instagram accounts advertising high-profile female models or college students for dinner dates or escort meetings, requiring Rs 3,000 hotel room booking advance that is stolen.",
+    "sampleMsg": "VIP Escort & Dating Service: Meet verified college models for dinner dates in 5-star hotels. Registration fee Rs 2,500 + Rs 1,000 hotel advance. WhatsApp manager at 98XXXXXX.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Criminals post stolen Instagram model photos with attractive pricing.\n2. Ask client to transfer registration fee via Google Pay.\n3. Demand secondary 'security deposit' and 'hotel room clearance', blocking victim after collecting funds.",
+    "redFlags": [
+      "Solicitations advertising paid companionship on Instagram, Telegram, or classified sites",
+      "Requires advance registration, hotel booking fee, or medical safety card charge",
+      "Demands payment via UPI or gift cards before any meeting takes place",
+      "Manager keeps demanding additional safety deposits claiming previous payment failed",
+      "No physical address or legitimate agency license"
+    ],
+    "kyaKarein": [
+      "Never transfer advance payments for online dating or companionship advertisements",
+      "These schemes are 100% fraudulent advance-fee confidence traps",
+      "Report predatory social profiles to platform safety desks"
+    ]
+  },
+  {
+    "id": "widow-inheritance-romance-consignment-scheme-2024",
+    "slug": "widow-inheritance-romance-consignment-scheme-2024",
+    "icon": "\ud83d\udcdc",
+    "name": "Widow Inheritance Romance Consignment Scheme",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 93,
+    "desc": "Online love interest claims to have inherited multi-million pound estate or diplomatic consignment trunk from late spouse, naming victim as sole beneficiary if taxes are paid.",
+    "sampleMsg": "My love, my late husband left \u00a36.5M in an offshore security vault. I have made you co-beneficiary so we can build our hospital together. Pay \u00a34,200 diplomatic courier stamp duty to release the trunk.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Combines classic advance-fee fraud with intense romantic grooming.\n2. Convinces victim they will jointly manage philanthropic fortune together.\n3. Extracts thousands in imaginary taxes, legal stamps, and bribery fees.",
+    "redFlags": [
+      "Love interest claims to possess secret diplomatic courier trunk containing gold or cash",
+      "Names internet romantic acquaintance as legal co-beneficiary to millions in estate assets",
+      "Demands payment of foreign taxes, stamp duties, or anti-laundering certificates",
+      "Documents provided feature fake government insignias and forged attorney signatures",
+      "Urges victim to keep the inheritance secret from all family and banks"
+    ],
+    "kyaKarein": [
+      "Diplomatic courier trunks do not contain secret gold or millions in cash for online acquaintances",
+      "Never pay advance fees to claim overseas inheritances",
+      "Report fraudulent estate claims to Action Fraud"
+    ]
+  },
+  {
+    "id": "matrimonial-caste-verification-fee-scam-2024",
+    "slug": "matrimonial-caste-verification-fee-scam-2024",
+    "icon": "\ud83d\udd49\ufe0f",
+    "name": "Matrimonial Caste Verification Fee Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 90,
+    "desc": "Matrimonial suitor's fake parents demand Rs 15,000 for mandatory traditional community registry background check before finalizing wedding date.",
+    "sampleMsg": "Namaste, we are groom's parents. We like your daughter. But our community panchayat requires official caste background verification fee Rs 15,000 before fixing Roka ceremony date.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Targets parents of prospective brides on community matrimonial portals.\n2. Expresses high interest in daughter's profile and promises lavish groom status.\n3. Demands payment for community verification or horoscope balancing fees, disappearing afterwards.",
+    "redFlags": [
+      "Demands money before any in-person family meeting or visit",
+      "Fee requested for vague administrative requirements ('panchayat registry', 'horoscope clearance')",
+      "Groom family refuses to meet in person or provide residential address",
+      "Payment directed to personal mobile UPI account",
+      "High pressure claiming other wealthy suitors are competing for the match"
+    ],
+    "kyaKarein": [
+      "Never pay any administrative or verification fee to prospective in-laws",
+      "Conduct in-person home visits before making any financial commitments",
+      "Report suspicious profiles to matrimonial portal support"
+    ]
+  },
+  {
+    "id": "crypto-romance-liquidity-mining-dapp-drainer-2025",
+    "slug": "crypto-romance-liquidity-mining-dapp-drainer-2025",
+    "icon": "\ud83e\ude99",
+    "name": "Crypto Romance 'Liquidity Mining' DApp Drainer",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 98,
+    "desc": "Romantic partner invites victim to join passive income DeFi liquidity pool by connecting their Coinbase Wallet or MetaMask, signing smart contract approval that drains all tokens.",
+    "sampleMsg": "Babe, connect your crypto wallet to this decentralized ETH liquidity pool. You keep your USDT in your own wallet, so it's 100% safe, and earn 2% daily rewards! Just click 'Join Pool' to claim your voucher.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Romance scammer convinces victim that funds never leave their personal non-custodial wallet.\n2. Victim clicks 'Join Pool' on malicious web3 DApp, which executes unlimited ERC-20 `approve()` allowance.\n3. Smart contract automatically siphons all USDT, USDC, and ETH out of victim's wallet directly into attacker vault.",
+    "redFlags": [
+      "Romantic interest gives instructions on connecting self-custody crypto wallet to third-party web link",
+      "Claims funds remain in your wallet so there is 'zero risk'",
+      "Wallet prompt asks to approve unlimited token allowance or set spend limit to maximum",
+      "DApp URL is an unverified domain mimicking legitimate DeFi protocols (Uniswap, Curve)",
+      "All cryptocurrency vanishes from wallet within minutes of transaction confirmation"
+    ],
+    "kyaKarein": [
+      "Never connect crypto wallets to web links recommended by online romantic partners",
+      "Carefully read Web3 wallet signature prompts; never approve unlimited spend allowances for untrusted smart contracts",
+      "Use Revoke.cash or Etherscan Token Approval tool to revoke malicious permissions immediately"
+    ]
+  },
+  {
+    "id": "dating-app-catfishing-stolen-identity-romance-2024",
+    "slug": "dating-app-catfishing-stolen-identity-romance-2024",
+    "icon": "\ud83c\udfad",
+    "name": "Dating App Catfishing Stolen Identity Romance",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 91,
+    "desc": "Scammer creates fake romantic persona using photos of social media influencers, stringing victims along with fabricated personal emergencies requiring small recurring cash gifts.",
+    "sampleMsg": "I would love to FaceTime you babe, but my phone camera broke when I dropped it at work. Can you send $150 on Apple Pay so I can fix it and see your handsome face?",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Scammer steals entire Instagram photo catalog of a minor influencer from another country.\n2. Maintains continuous text relationship for months.\n3. Regularly invents modest financial problems (broken phone, car gas, grocery money) that add up to thousands.",
+    "redFlags": [
+      "Refuses video calls or in-person meetings with endless excuses (camera broken, social anxiety)",
+      "Profile photos look professionally shot like a fashion catalog or influencer portfolio",
+      "Frequent minor financial emergencies requesting small payments via gift cards or peer-to-peer apps",
+      "Vague details about their local city, street names, or workplace",
+      "Inconsistencies in daily routine and timezone differences"
+    ],
+    "kyaKarein": [
+      "Insist on a real-time live video chat early in any online romantic relationship",
+      "Use reverse image search to trace source of profile pictures",
+      "Stop sending money or gifts to individuals you have never met face-to-face"
+    ]
+  },
+  {
+    "id": "fake-police-arrest-sextortion-follow-up-threat-2025",
+    "slug": "fake-police-arrest-sextortion-follow-up-threat-2025",
+    "icon": "\ud83d\udc6e",
+    "name": "Fake Police Arrest Sextortion Follow-up Threat",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 99,
+    "desc": "Following a sextortion video call, victim is called by an accomplice posing as YouTube Cyber Police Director claiming the explicit video was uploaded and demanding Rs 50,000 to suppress the link.",
+    "sampleMsg": "This is Inspector Vikram Rathore from Crime Branch Cyber Cell New Delhi. A girl has committed suicide after video chat with you and her family lodged FIR. Pay Rs 52,000 server fee right now to remove FIR and video from YouTube.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Secondary phase of WhatsApp sextortion racket.\n2. Accomplice calls victim impersonating senior police officer or YouTube content moderator.\n3. Claims girl attempted suicide or FIR is registered, manipulating panic to extort life savings.",
+    "redFlags": [
+      "Caller claims to be Cyber Police officer but demands money via PhonePe or Google Pay",
+      "Claims girl committed suicide or file is on Commissioner's desk for arrest",
+      "Offers to 'delete FIR' or remove video from YouTube servers for a cash payment",
+      "Refuses to provide written FIR copy or police station address",
+      "Aggressive shouting and background sound effects mimicking police wireless radios"
+    ],
+    "kyaKarein": [
+      "Disconnect call immediately; police NEVER settle criminal cases or remove videos for cash payments",
+      "Do NOT transfer any money; every rupee paid leads to larger extortion demands",
+      "Dial 1930 immediately to report the extortion syndicate to genuine Cyber Police"
+    ]
+  },
+  {
+    "id": "fake-romance-gift-customs-penalty-extortion-2024",
+    "slug": "fake-romance-gift-customs-penalty-extortion-2024",
+    "icon": "\ud83e\udd98",
+    "name": "Fake Romance Gift Customs Penalty Extortion",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 95,
+    "desc": "Online love interest claims to have sent luxury watch and cash from overseas, followed by fake Australian Border Force email demanding $3,500 non-inspection certificate fee.",
+    "sampleMsg": "Australian Border Clearance: Consignment #AU9821 contains luxury goods and foreign currency. Pay $3,500 Non-Inspection Certificate penalty within 24h to avoid criminal prosecution.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Romance scammer promises romantic gift of jewelry or electronics.\n2. Sends spoofed border security email demanding payment of arbitrary clearance certificates.\n3. Threatens Australian federal court summons if fees are not wired.",
+    "redFlags": [
+      "Australian Border Force (ABF) does not issue 'Non-Inspection Certificates' for parcels",
+      "ABF never demands payments via cryptocurrency or personal bank accounts",
+      "Received unexpected notification of valuable gifts from online contact",
+      "Email sender address uses free webmail domain (.outlook, .gmail)",
+      "Threats of immediate arrest or immigration detention"
+    ],
+    "kyaKarein": [
+      "Never pay money to claim surprise gifts from internet contacts",
+      "Report fake border communications to Scamwatch (scamwatch.gov.au)",
+      "Cease all contact with the romantic persona"
+    ]
+  },
+  {
+    "id": "matrimonial-overseas-medical-emergency-wire-trap-2024",
+    "slug": "matrimonial-overseas-medical-emergency-wire-trap-2024",
+    "icon": "\ud83c\udfe5",
+    "name": "Matrimonial Overseas Medical Emergency Wire Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Romance",
+    "categorySlug": "romance-sextortion",
+    "categoryName": "Romance & Sextortion",
+    "score": 94,
+    "desc": "Prospective groom on matrimonial site claims his mother suffered massive stroke in Dubai during transit to India, begging bride's family to wire Rs 2,50,000 for emergency ICU surgery.",
+    "sampleMsg": "My dear, tragedy has struck. My mother collapsed with brain hemorrhage during our layover in Dubai airport. Hospital demands AED 12,000 for emergency ICU. Please wire Rs 2.5 Lakh, I will return once in India.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer spends months winning trust of bride and her parents.\n2. Orchestrates dramatic life-or-death crisis just before scheduled first physical meeting.\n3. Exploits bride family's moral obligation and sympathy to extract urgent bank wire.",
+    "redFlags": [
+      "Sudden medical catastrophe occurs right before the first planned in-person meeting",
+      "Claims foreign hospital will not treat patient without immediate civilian wire transfer",
+      "Refuses to provide hospital landline contact number or attending doctor details",
+      "Payment directed to private money changer or foreign wire account",
+      "Emotional manipulation accusing bride family of not caring about his mother's life"
+    ],
+    "kyaKarein": [
+      "Never wire money for foreign medical emergencies for prospective matrimonial matches",
+      "Contact Dubai hospital emergency department directly to verify patient admission records",
+      "Terminate contact and report user profile on matrimonial website"
+    ]
+  },
+  {
+    "id": "fake-stanley-owala-tumbler-90-off-warehouse-clearance-2026",
+    "slug": "fake-stanley-owala-tumbler-90-off-warehouse-clearance-2026",
+    "icon": "\ud83e\udd64",
+    "name": "Fake Stanley & Owala Tumbler 90% Off Warehouse Clearance",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 96,
+    "desc": "Sponsored Facebook and Instagram ads promoting fake 90% off Stanley Quencher or Owala FreeSip warehouse liquidation sale, charging cards on fake Shopify stores that never ship any products.",
+    "sampleMsg": "Stanley Warehouse Liquidation: Overstock clearance! 40oz Quencher tumblers only $5.99 (Retail $45)! Buy 3 get free shipping today only: https://stanley-outlet-clearance.shop",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers run paid video ads on TikTok and Meta feeds mimicking viral product trends.\n2. Link directs to cloned Shopify or WooCommerce store mimicking authentic brand styling.\n3. Captures card numbers and charges recurring monthly subscriptions or ships nothing.",
+    "redFlags": [
+      "Prices are 80% to 90% lower than manufacturer suggested retail price (MSRP)",
+      "Store URL is newly registered with extensions like .shop, .store, .vip, or contains hyphens (stanley-outlet-clearance.shop)",
+      "No legitimate company headquarters address or customer service phone number listed",
+      "Checkout forces credit card payment and refuses secure payment gateways like PayPal or Apple Pay",
+      "Urgent artificial countdown timers ('Only 4 items left in stock!')"
+    ],
+    "kyaKarein": [
+      "Purchase trendy consumer products only from official brand websites or verified authorized retailers",
+      "Check domain registration age on Whois (scam stores are typically less than 30 days old)",
+      "Dispute unauthorized charges with your credit card issuer immediately"
+    ]
+  },
+  {
+    "id": "instagram-boutique-clothing-jewelry-non-delivery-trap-2025",
+    "slug": "instagram-boutique-clothing-jewelry-non-delivery-trap-2025",
+    "icon": "\ud83d\udc57",
+    "name": "Instagram Boutique Clothing & Jewelry Non-Delivery Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 95,
+    "desc": "Trendy Instagram clothing boutique with 50,000 bought followers offering designer lehengas or sneakers at 70% off via Google Pay / UPI, blocking buyers immediately after receiving payment.",
+    "sampleMsg": "Exclusive Designer Sabyasachi Replica Lehenga only Rs 2,499! Limited stock. To order, send screenshot on WhatsApp and pay via Google Pay to 9871XXXXXX.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers purchase pre-aged Instagram accounts with fake bot followers.\n2. Repost high-definition catalog photos stolen from legitimate luxury designers.\n3. Accept customer orders exclusively via direct UPI transfers and block buyer handles as soon as money is received.",
+    "redFlags": [
+      "Profile has disabled comments on all posts or allows only generic emoji comments",
+      "Demands advance payment exclusively via personal UPI or Google Pay numbers",
+      "No official registered e-commerce website, return policy, or physical store location",
+      "Prices for luxury designer replicas are unrealistically cheap",
+      "Account name has been changed multiple times in Instagram 'About this account'"
+    ],
+    "kyaKarein": [
+      "Never pay money via personal UPI to unverified Instagram business pages",
+      "Check 'About This Account' on Instagram profile to see date joined and past username changes",
+      "File complaint on National Consumer Helpline (consumerhelpline.gov.in) and cybercrime.gov.in"
+    ]
+  },
+  {
+    "id": "cash-on-delivery-cod-empty-box-soap-scam-2025",
+    "slug": "cash-on-delivery-cod-empty-box-soap-scam-2025",
+    "icon": "\ud83d\udce6",
+    "name": "Cash-on-Delivery (COD) Empty Box / Soap Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Courier arrives at victim's doorstep delivering unexpected parcel with Rs 899 or Rs 1,499 cash-on-delivery charge. Family member pays assuming someone ordered, finding cheap soap bars or cardboard inside.",
+    "sampleMsg": "Bluedart / Delhivery parcel arrives addressed to household member marked 'COD: Rs 1,250'. Father pays delivery boy cash. Inside the sealed plastic envelope is a piece of waste tile.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers buy leaked e-commerce customer names and addresses.\n2. Ship thousands of low-cost junk packages (soap, detergent, sawdust) marked with COD charges.\n3. Delivery partners collect cash from unaware family members and remit proceeds to syndicate.",
+    "redFlags": [
+      "Package arrives that no one in the household remembers actually ordering",
+      "Sender company name on label is vague or unknown third-party trading company",
+      "Delivery courier refuses to allow package inspection before cash payment is handed over",
+      "COD amount is modest (Rs 500 - Rs 1,500) so family members pay without double-checking",
+      "Return address printed on shipping label is non-existent or fake"
+    ],
+    "kyaKarein": [
+      "Establish strict household rule: Never accept or pay for COD parcels without confirming with the named recipient first",
+      "Refuse delivery if no family member confirms placing the order; write 'Order Not Placed - Returned' on manifest",
+      "Report repeat rogue merchant accounts to courier logistics companies"
+    ]
+  },
+  {
+    "id": "taylor-swift-coldplay-concert-counterfeit-ticket-fraud-2025",
+    "slug": "taylor-swift-coldplay-concert-counterfeit-ticket-fraud-2025",
+    "icon": "\ud83c\udf9f\ufe0f",
+    "name": "Taylor Swift & Coldplay Concert Counterfeit Ticket Fraud",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 97,
+    "desc": "Scammers sell fake or duplicate VIP concert tickets on Facebook groups, Reddit, or Telegram using Photoshopped Ticketmaster confirmations, collecting Zelle/UPI payments and vanishing.",
+    "sampleMsg": "Can't make it to Coldplay Music of the Spheres tonight! Selling 2 Floor Standing tickets at face value ($150 each). Can transfer on Ticketmaster app after Zelle/Venmo payment.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Hijacks dormant Facebook or Twitter accounts to appear as genuine fans.\n2. Posts claims of urgent family emergency forcing ticket sale at face value.\n3. Sends fabricated screen-recording of Ticketmaster app showing tickets; receives non-refundable peer-to-peer payment and immediately blocks buyer.",
+    "redFlags": [
+      "Seller demands payment exclusively via non-refundable peer-to-peer apps (Zelle, Venmo, UPI, Friends & Family PayPal)",
+      "Seller refuses to conduct transaction via verified resale platforms (StubHub, Twickets, Ticketmaster Verified)",
+      "Screen recording of tickets shows static graphics or mismatched fonts and dates",
+      "Seller profile on social media was recently created or shows no concert fan history",
+      "High pressure insisting other buyers are waiting with cash"
+    ],
+    "kyaKarein": [
+      "Purchase resale concert tickets exclusively through platforms with buyer guarantees (Ticketmaster Resale, Twickets, AXS)",
+      "Never use Zelle, Venmo or PayPal 'Friends and Family' to buy tickets from strangers",
+      "Report fraudulent ticket sellers to Action Fraud and FTC"
+    ]
+  },
+  {
+    "id": "facebook-marketplace-overpayment-zelle-business-upgrade-scam-2025",
+    "slug": "facebook-marketplace-overpayment-zelle-business-upgrade-scam-2025",
+    "icon": "\ud83d\udecb\ufe0f",
+    "name": "Facebook Marketplace Overpayment Zelle Business Upgrade Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 95,
+    "desc": "Buyer on Facebook Marketplace offers to buy your used sofa, sends fake Zelle email claiming payment is held until seller pays $300 to upgrade to 'Zelle Business Account'.",
+    "sampleMsg": "Zelle Payment Pending: Buyer sent $400 for your Marketplace item. However, your account limit requires a $300 upgrade to a Zelle Business Profile. Have buyer send $300 extra and refund it.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammer contacts seller within 5 minutes of item posting on Marketplace.\n2. Insists on paying immediately via Zelle and sends fake screenshot of transaction.\n3. Sends forged Zelle/Venmo email from free Gmail account stating seller must refund an imaginary $300 business upgrade fee.",
+    "redFlags": [
+      "Buyer refuses in-person cash inspection and insists on sending payment ahead of pickup",
+      "Buyer sends screenshot showing payment was 'sent' but your authentic bank app shows zero deposit",
+      "You receive an email claiming Zelle has an 'account upgrade fee' or 'business limit' (Zelle is 100% free and has no business upgrades)",
+      "Sender email address is from @gmail.com or @outlook.com instead of official financial institution",
+      "Buyer demands that you refund the extra money immediately via Apple gift cards or cryptocurrency"
+    ],
+    "kyaKarein": [
+      "Check your authentic bank or Zelle app directly; never trust email confirmations from buyers",
+      "Sell items on Facebook Marketplace for cash upon in-person pickup in safe public locations",
+      "Report buyer profile on Facebook Marketplace and block immediately"
+    ]
+  },
+  {
+    "id": "brushing-scam-unordered-mystery-e-commerce-packages-2024",
+    "slug": "brushing-scam-unordered-mystery-e-commerce-packages-2024",
+    "icon": "\ud83d\udce6",
+    "name": "Brushing Scam - Unordered Mystery E-Commerce Packages",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 90,
+    "desc": "Receiving unexpected packages containing cheap items (seeds, phone cases, hair clips) from Amazon sellers who stole your address to write fake verified 5-star product reviews in your name.",
+    "sampleMsg": "Unordered padded envelope from Amazon third-party seller arrives containing generic Bluetooth earbuds or flower seeds addressed with your full name and address.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Rogue third-party e-commerce sellers obtain consumer address lists from past data leaks.\n2. Create fake buyer accounts using victim details to place real orders for cheap junk.\n3. Once package delivers, seller posts glowing 5-star 'verified purchase' reviews to boost their search ranking on Amazon.",
+    "redFlags": [
+      "Package delivered to your home with your name that you or your family never ordered",
+      "Item inside has very low value (plastic trinket, seeds, USB cable)",
+      "No return address or order packing slip included inside the envelope",
+      "No record of the charge appears on your credit card or bank statements",
+      "Indicates your personal contact information has been leaked on commercial marketing lists"
+    ],
+    "kyaKarein": [
+      "You are legally entitled under FTC rules to keep or discard unordered merchandise without paying",
+      "Report brushing incidents directly to Amazon Customer Service fraud desk",
+      "Change your Amazon account password and check your credit reports for identity fraud"
+    ]
+  },
+  {
+    "id": "puppy-golden-retriever-pet-adoption-courier-trap-2024",
+    "slug": "puppy-golden-retriever-pet-adoption-courier-trap-2024",
+    "icon": "\ud83d\udc36",
+    "name": "Puppy & Golden Retriever Pet Adoption Courier Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Website advertising purebred Golden Retriever or French Bulldog puppies for adoption for only $500 shipping fee, then demanding emergency funds for temperature-controlled air crates.",
+    "sampleMsg": "Adopt purebred French Bulldog puppy 'Bella' for free, just pay $450 airline courier crate fee. Next day: Airline demands $980 for climate-controlled pressurized oxygen crate or puppy will be euthanized.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers create appealing pet adoption sites with stolen photos of puppies and kittens.\n2. Promise adoption for nominal shipping and rehoming fee.\n3. Fake pet courier company emails demanding sequential fees (insurance, quarantine, vet shots, heated crate) while puppy never existed.",
+    "redFlags": [
+      "Purebred puppies offered for adoption at a fraction of standard breeder pricing",
+      "Breeder refuses in-person visit to inspect puppy and mother before purchase",
+      "Requires payment exclusively through Zelle, Cash App, wire transfer, or gift cards",
+      "Pet transport company website has no physical airport warehouse or USDA transport license",
+      "High emotional pressure claiming animal will freeze or be put down if crate fee is not wired"
+    ],
+    "kyaKarein": [
+      "Adopt pets from local animal shelters or meet breeders in person to view animal and parents",
+      "Never wire money or send gift cards to buy or transport animals online",
+      "Report fraudulent pet websites to PetScams.com and FTC"
+    ]
+  },
+  {
+    "id": "used-car-escrow-military-overseas-deployment-vehicle-trap-2024",
+    "slug": "used-car-escrow-military-overseas-deployment-vehicle-trap-2024",
+    "icon": "\ud83d\ude97",
+    "name": "Used Car Escrow & Military Overseas Deployment Vehicle Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 96,
+    "desc": "Used Toyota truck advertised on Craigslist for $4,500 by seller claiming to be deployed US soldier needing quick sale, directing buyer to pay through fake 'eBay Motors Escrow'.",
+    "sampleMsg": "2018 Toyota Tacoma 4x4 in pristine condition for $4,800. I am deployed to Fort Hood before overseas deployment. eBay Motors will handle shipping and hold your money in escrow for 5 days free trial.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Scammers post attractive vehicles at 50% below Kelley Blue Book market value.\n2. Seller claims sudden military deployment or death of spouse necessitates immediate sacrifice sale.\n3. Sends forged invoice from fake 'eBay Motors Escrow Department' demanding payment in eBay gift cards or wire transfer.",
+    "redFlags": [
+      "Vehicle price is drastically below fair market value",
+      "Seller claims to be deployed military personnel unable to show the vehicle in person",
+      "Claims a third party like eBay Motors or Amazon will ship car for free and hold funds in escrow",
+      "Payment instructions demand eBay gift cards, Apple gift cards, or wire transfer to private accounts",
+      "Seller refuses phone calls and communicates solely through email"
+    ],
+    "kyaKarein": [
+      "eBay Motors DOES NOT handle escrow, shipping, or transactions for vehicles found on Craigslist or Facebook",
+      "Always inspect used vehicles in person with an independent mechanic before parting with money",
+      "Verify vehicle history using official National Motor Vehicle Title Information System (NMVTIS)"
+    ]
+  },
+  {
+    "id": "rolex-luxury-swiss-watch-replica-counterfeit-site-2025",
+    "slug": "rolex-luxury-swiss-watch-replica-counterfeit-site-2025",
+    "icon": "\u231a",
+    "name": "Rolex & Luxury Swiss Watch Replica Counterfeit Site",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Websites displaying high-resolution photos of authentic Rolex Submariner or Omega Speedmaster watches for $189, shipping cheap $5 plastic quartz knockoffs from China.",
+    "sampleMsg": "Rolex Submariner Master Edition 904L Swiss Movement - 85% Off Weekend Clearance: Only $189 (Regular $12,500). Certified chronometer with box and papers.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Scammers build sleek e-commerce storefronts targeting search queries for discount luxury watches.\n2. Claim watches are grey-market overstock or confiscated customs goods.\n3. Customer receives non-working plastic replica or empty padded box with no recourse.",
+    "redFlags": [
+      "Rolex and luxury Swiss horology brands never sell new watches at 85% discounts online",
+      "Official Swiss manufacturers sell exclusively through Authorized Dealers (ADs)",
+      "Domain registration was created within the last 6 months",
+      "Website contains generic stock photos copied from genuine luxury watch blogs",
+      "Payment is processed through obscure offshore payment gateways"
+    ],
+    "kyaKarein": [
+      "Buy pre-owned luxury watches only from reputable certified platforms with authenticity guarantees (Chrono24 with Escrow, WatchBox)",
+      "Dispute payment with bank as 'Counterfeit goods received'",
+      "Report counterfeit sellers to the Swiss Watch Federation (FH)"
+    ]
+  },
+  {
+    "id": "playstation-5-graphics-card-gpu-scalper-web-trap-2024",
+    "slug": "playstation-5-graphics-card-gpu-scalper-web-trap-2024",
+    "icon": "\ud83c\udfae",
+    "name": "PlayStation 5 & Graphics Card GPU Scalper Web Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Fake online gaming storefronts advertising in-stock RTX 4090 graphics cards or PS5 consoles at MSRP during shortages, requiring wire transfer or crypto that is stolen.",
+    "sampleMsg": "Nvidia RTX 4090 24GB In Stock! Only $1,599 with free express delivery. Limited retail allocation remaining. Payment via Zelle / Bank Wire for immediate dispatch.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers register domains mimicking electronics retailers (e.g. bestbuy-warehouse-stock.com).\n2. Rank high on Google Shopping ads during product launch shortages.\n3. Direct buyers to wire transfers or cryptocurrency, never shipping items.",
+    "redFlags": [
+      "Hard-to-find hardware in stock at retail price when all major retailers are sold out",
+      "Website only accepts irreversible payment methods: Zelle, Bitcoin, or wire transfer",
+      "No option to pay with major credit cards with chargeback protection",
+      "Customer service phone number is disconnected or answers with generic voice mailbox",
+      "Physical store address resolves to a residential home or empty parking lot on Google Maps"
+    ],
+    "kyaKarein": [
+      "Purchase electronics only from authorized brand dealers using credit cards that provide purchase protection",
+      "Never use wire transfer, crypto, or peer-to-peer apps to purchase retail electronics online",
+      "Check retailer reputation on ResellerRatings and Better Business Bureau"
+    ]
+  },
+  {
+    "id": "fake-e-commerce-return-overpayment-check-scam-2025",
+    "slug": "fake-e-commerce-return-overpayment-check-scam-2025",
+    "icon": "\ud83d\udcb5",
+    "name": "Fake E-Commerce Return & Overpayment Check Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 95,
+    "desc": "Online seller receives paper check from buyer for $3,500 when item cost $1,500, with buyer asking seller to deposit check and wire extra $2,000 to their 'shipping agent'.",
+    "sampleMsg": "Dear seller, my corporate cashier's check of $3,500 was sent by my accountant by error. Please deposit it, keep $1,500 for the item + $200 for your trouble, and wire $1,800 to our shipping company.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Buyer contacts independent seller offering cashier's check for expensive item.\n2. Sends forged check for far higher amount than asking price.\n3. Bank makes funds temporarily available under federal clearing rules; seller wires real cash to 'shipper'; days later the fake check bounces, leaving seller out thousands.",
+    "redFlags": [
+      "Buyer insists on paying by cashier's check, certified check, or business draft",
+      "Check amount exceeds agreed purchase price",
+      "Buyer provides elaborate excuse why accountant wrote the wrong check amount",
+      "Instructs seller to wire excess money back immediately before check has fully cleared",
+      "Buyer refuses to conduct simple electronic transfer via reputable platforms"
+    ],
+    "kyaKarein": [
+      "Never accept checks for more than the purchase price of an item",
+      "Remember: Funds available in your account does NOT mean the check has cleared (can take 2-3 weeks)",
+      "Refuse overpayment checks and return them to the sender"
+    ]
+  },
+  {
+    "id": "social-media-sneaker-resale-sneakerhead-bot-scam-2025",
+    "slug": "social-media-sneaker-resale-sneakerhead-bot-scam-2025",
+    "icon": "\ud83d\udc5f",
+    "name": "Social Media Sneaker Resale Sneakerhead Bot Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Instagram seller posing as verified sneaker reseller offering Nike Jordan 1 Retro or Travis Scott kicks at retail price, disappearing after collecting Cash App payment.",
+    "sampleMsg": "Air Jordan 1 Retro High Travis Scott Reverse Mocha - Brand New in Box with receipt! Size 10. Only $250. First to pay on Cash App gets priority shipment today: $KicksPlugOfficial",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Uses stolen photos from legitimate sneaker influencers and SneakerCon exhibitors.\n2. Offers hype sneakers worth $1,200 for $250 claiming they won a SNKRS app raffle.\n3. Blocks buyer immediately after non-reversible Cash App transfer is completed.",
+    "redFlags": [
+      "High-demand collectible sneakers sold for a fraction of secondary market value (StockX / GOAT prices)",
+      "Seller insists on non-refundable payment apps (Cash App, Zelle, Crypto)",
+      "Refuses to conduct sale through authenticated sneaker platforms (GOAT, StockX, eBay Authenticity Guarantee)",
+      "Tagged photos show mismatched handwriting or dates edited in Photoshop",
+      "Comments on Instagram posts are restricted or heavily filtered"
+    ],
+    "kyaKarein": [
+      "Buy secondary sneakers exclusively through authentication-guaranteed platforms like GOAT, StockX, or eBay",
+      "Never send Cash App payments to strangers on Instagram or Discord",
+      "Report fraudulent sneaker profiles to platform moderation"
+    ]
+  },
+  {
+    "id": "airline-ticket-travel-agency-counterfeit-booking-broker-2025",
+    "slug": "airline-ticket-travel-agency-counterfeit-booking-broker-2025",
+    "icon": "\u2708\ufe0f",
+    "name": "Airline Ticket Travel Agency Counterfeit Booking Broker",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 96,
+    "desc": "Fake online travel agent booking international flights using stolen credit cards. Passenger gets PNR confirmation, but airline cancels ticket at airport check-in counter for fraud.",
+    "sampleMsg": "Cheap Flights Express: Fly New York to London round-trip for only $299! Pay via bank transfer or crypto. Official PNR booking confirmation issued within 2 hours.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Rogue brokers advertise impossibly cheap international business and economy fares.\n2. Collect clean cash from customer via bank transfer.\n3. Purchase ticket on airline site using stolen credit card data; real cardholder files dispute, and airline cancels ticket leaving passenger stranded at airport.",
+    "redFlags": [
+      "Flight fares are 50% - 70% cheaper than fares listed on airline official site",
+      "Agency does not have IATA or ATOL accreditation license",
+      "Demands payment via bank wire transfer, Western Union, or crypto rather than passenger credit card",
+      "Tickets are issued under unfamiliar corporate corporate discount codes",
+      "No physical corporate address or verifiable travel industry credentials"
+    ],
+    "kyaKarein": [
+      "Book airline tickets directly on official airline websites or IATA-accredited travel agencies",
+      "Always pay for travel using credit cards with chargeback protection",
+      "Check that your UK travel package is ATOL protected or registered with national travel associations"
+    ]
+  },
+  {
+    "id": "amazon-review-cashback-refund-whatsapp-trap-2024",
+    "slug": "amazon-review-cashback-refund-whatsapp-trap-2024",
+    "icon": "\u2b50",
+    "name": "Amazon Review Cashback Refund WhatsApp Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 92,
+    "desc": "Brokers contact buyers on Facebook offering 100% full refund via PayPal plus $10 commission for purchasing items on Amazon and posting 5-star product reviews.",
+    "sampleMsg": "Free Amazon Products: Buy this Bluetooth Smartwatch on Amazon, leave a 5-star review with video, and we will refund 100% of price via PayPal + give you $10 bonus!",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Rogue Amazon merchants hire third-party review syndicates to manipulate search algorithms.\n2. Buyers purchase low-quality items and post deceptive 5-star reviews.\n3. Broker often refuses PayPal reimbursement once review is posted, or Amazon permanently bans buyer's account for incentivized review fraud.",
+    "redFlags": [
+      "Solicitations on WhatsApp, Facebook, or Telegram offering free products for positive Amazon reviews",
+      "Merchant requires buyer to search specific keywords and avoid mentioning reimbursement",
+      "Demands 5-star rating with photos and positive text before issuing refund",
+      "Violates Amazon Community Guidelines and FTC truth-in-advertising regulations",
+      "Buyer risks immediate suspension of Amazon account and loss of digital purchases"
+    ],
+    "kyaKarein": [
+      "Never participate in paid or incentivized product review schemes",
+      "Report review manipulation groups to Amazon at review-appeals@amazon.com",
+      "Trust authentic third-party consumer testing websites (Consumer Reports, Wirecutter) for honest reviews"
+    ]
+  },
+  {
+    "id": "solar-panel-subsidy-door-to-door-overcharge-contract-scam-2025",
+    "slug": "solar-panel-subsidy-door-to-door-overcharge-contract-scam-2025",
+    "icon": "\u2600\ufe0f",
+    "name": "Solar Panel Subsidy Door-to-Door Overcharge Contract Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Salesmen visit homeowners claiming a 'federal government program' makes solar panels 100% free, locking homeowners into predatory 25-year solar financing loans with heavy roof liens.",
+    "sampleMsg": "Federal Clean Energy Mandate: Your roof was selected for the zero-cost federal solar program! The government pays for panels and your electric bill drops to zero. Sign authorization today.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Aggressive salespeople impersonate utility company or federal energy inspectors.\n2. Mislead homeowner into believing solar installation is completely free from government.\n3. Homeowner unknowingly signs a 25-year loan contract for $55,000 at 12% interest with a property lien.",
+    "redFlags": [
+      "Salesperson claims solar panels are 'free from the government' or mandatory under federal law",
+      "Wears clothing mimicking local public utility company but represents independent contractor",
+      "High-pressure in-home sales pitch refusing to leave until contract is signed",
+      "Promises your electric bill will be completely eliminated",
+      "Disguises high-interest 25-year financial loans as 'routine utility paperwork'"
+    ],
+    "kyaKarein": [
+      "The US federal government does NOT give away free solar panels (only income tax credits)",
+      "Get at least three competing quotes from established local solar contractors",
+      "Read every line of financing agreements before signing; exercise 3-day statutory right of cancellation"
+    ]
+  },
+  {
+    "id": "fake-online-pharmacy-prescription-drug-store-2024",
+    "slug": "fake-online-pharmacy-prescription-drug-store-2024",
+    "icon": "\ud83d\udc8a",
+    "name": "Fake Online Pharmacy Prescription Drug Store",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 97,
+    "desc": "Websites offering Ozempic, Adderall, or Viagra without doctor prescription at steep discounts, shipping counterfeit pills containing dangerous fentanyl or chalk.",
+    "sampleMsg": "Buy Ozempic & Wegovy online without prescription! 3-month supply only $199 with discreet express shipping. No doctor consultation needed: https://cheap-ozempic-online.com",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Rogue online pharmacies target desperate patients facing drug shortages or high prices.\n2. Collect credit card payments or cryptocurrency.\n3. Ship lethal counterfeit pills pressed in illicit overseas labs or steal credit card data and ship nothing.",
+    "redFlags": [
+      "Offers prescription-only medications (Ozempic, stimulants, narcotics) without valid doctor prescription",
+      "Prices are drastically below legitimate retail pharmacy prices",
+      "Website does not display verified pharmacy accreditation seal (.pharmacy domain or VIPPS seal)",
+      "Pharmacy has no licensed physical address or state pharmacy board registration",
+      "Requires payment via cryptocurrency, Zelle, or gift cards"
+    ],
+    "kyaKarein": [
+      "Purchase prescription drugs only from verified pharmacies accredited by the National Association of Boards of Pharmacy (NABP)",
+      "Verify online pharmacy safety on safe.pharmacy",
+      "Report illegal online drug sellers to FDA and Interpol"
+    ]
+  },
+  {
+    "id": "facebook-marketplace-local-pickup-cash-switch-scam-2024",
+    "slug": "facebook-marketplace-local-pickup-cash-switch-scam-2024",
+    "icon": "\ud83d\udcf1",
+    "name": "Facebook Marketplace Local Pickup Cash Switch Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 91,
+    "desc": "Buyer inspects your used iPhone, agrees to purchase, hands over envelope of cash, then snatches phone and runs before seller discovers counterfeit currency notes inside.",
+    "sampleMsg": "Buyer meets seller at evening metro station to buy iPhone 14 for Rs 42,000 cash. Hands over envelope of 500-rupee notes. Before seller counts notes, buyer grabs phone and jumps onto departing train.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Arranges physical meeting at poorly lit or crowded transit location.\n2. Hands over envelope containing fake 'Children Bank of India' notes or newspaper clippings wrapped in a real note.\n3. Distracts or physically flees before seller examines cash.",
+    "redFlags": [
+      "Buyer insists on meeting at late evening hours or busy transit metro station gates",
+      "Buyer refuses to meet inside a bank branch or local police station safe exchange zone",
+      "Urges seller not to open the cash envelope in public ('people are watching us')",
+      "Distracts seller or creates sudden hurry to depart",
+      "Refuses digital UPI transfer where transaction history is recorded"
+    ],
+    "kyaKarein": [
+      "Conduct high-value physical electronics sales inside a bank branch or designated Police Safe Trade Zone",
+      "Count and verify every currency note before handing over the physical item",
+      "Bring a friend along for security during in-person marketplace transactions"
+    ]
+  },
+  {
+    "id": "luxury-handbag-sneaker-cleaning-damage-extortion-2025",
+    "slug": "luxury-handbag-sneaker-cleaning-damage-extortion-2025",
+    "icon": "\ud83d\udc5c",
+    "name": "Luxury Handbag & Sneaker Cleaning Damage Extortion",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 92,
+    "desc": "Fly-by-night luxury dry-cleaning service picks up expensive designer bags (Louis Vuitton, Gucci) for cleaning, switches them with cheap counterfeit replicas, and claims genuine bag was delivered.",
+    "sampleMsg": "Doorstep Luxury Bag Spa: Professional deep cleaning and leather restoration for Gucci and Prada bags! Pickup from home for Rs 1,999. Bag returned 1 week later is a cheap plastic fake.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Advertises specialized luxury restoration services on social media.\n2. Collects valuable authentic designer merchandise from clients' homes.\n3. Swaps genuine bags with master-copy replicas and denies customer accusations.",
+    "redFlags": [
+      "Service provider operates without a registered commercial laundry facility or storefront",
+      "Pickup agent gives informal handwritten paper slip with no serial numbers or detailed photos recorded",
+      "Extremely low cleaning rates for delicate exotic leathers",
+      "Company has numerous recent negative reviews alleging lost or swapped items",
+      "Customer service blocks phone calls once customer discovers the item has been substituted"
+    ],
+    "kyaKarein": [
+      "Entrust high-value luxury items only to brand-authorized repair services or reputable heritage dry cleaners",
+      "Photograph serial numbers, hardware hallmarks, and unique leather patina before handing items over",
+      "Demand detailed computerized receipt listing serial numbers and verified condition"
+    ]
+  },
+  {
+    "id": "subscription-trap-14-day-free-trial-hidden-recurring-billing-2025",
+    "slug": "subscription-trap-14-day-free-trial-hidden-recurring-billing-2025",
+    "icon": "\ud83e\uddf4",
+    "name": "Subscription Trap / 14-Day Free Trial Hidden Recurring Billing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Skin cream, weight-loss gummies, or PDF editor offering 'Free Trial - Just Pay $4.95 Shipping', burying hidden terms that bill $99.95 automatically every 30 days.",
+    "sampleMsg": "Keto Fat Burner Gummies: Claim your risk-free 14-day sample bottle today! Pay only $4.95 handling. Customer discovers $98.40 recurring charges on credit card statement every month.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Catchy banner ads offer celebrity-endorsed trial samples for nominal shipping fee.\n2. Obscures terms in tiny grey low-contrast text on checkout page.\n3. Automatically enrolls buyer in recurring monthly subscription that is nearly impossible to cancel.",
+    "redFlags": [
+      "Product advertised as '100% Free' but requires credit card for shipping fee",
+      "Terms and conditions hidden in tiny, unreadable font at the very bottom of webpage",
+      "No option to complete purchase without accepting recurring auto-shipment enrollment",
+      "Customer support phone number is permanently busy or puts callers on infinite hold",
+      "Unauthorized recurring debits appear on credit card under obscure offshore company names"
+    ],
+    "kyaKarein": [
+      "Use virtual credit cards with fixed spending limits when trying new trial offers",
+      "Read terms of service carefully to identify recurring subscription disclosures",
+      "Contact your credit card issuer to place a merchant stop-payment and dispute unauthorized debits"
+    ]
+  },
+  {
+    "id": "fake-real-estate-vacation-rental-airbnb-clone-site-2025",
+    "slug": "fake-real-estate-vacation-rental-airbnb-clone-site-2025",
+    "icon": "\ud83c\udfd6\ufe0f",
+    "name": "Fake Real Estate Vacation Rental & Airbnb Clone Site",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 96,
+    "desc": "Victims book beachfront villa in Goa or Hawaii on clone website looking identical to Airbnb, wiring $2,500 deposit, only to arrive and find villa is occupied by real homeowners.",
+    "sampleMsg": "Luxury 4-Bedroom Beachfront Villa in North Goa: Private pool, chef included. 50% discount for direct booking: $350/night! Pay via direct bank wire to secure dates: https://airbnb-luxury-rentals-goa.top",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Scammers scrape photos and descriptions from genuine luxury rental listings.\n2. Post them on lookalike rental portals or social media with heavily discounted rates.\n3. Demand direct bank wire or Zelle payment to 'avoid Airbnb service fees', disappearing once payment is sent.",
+    "redFlags": [
+      "Host asks you to take conversation off the official Airbnb or Vrbo platform to communicate via WhatsApp",
+      "Offers 30% - 50% discount if you pay via direct bank wire or wire transfer instead of booking on site",
+      "Website domain mimics Airbnb (e.g. airbnb-booking-confirm.top, vrbo-secure-checkout.com)",
+      "Host claims Airbnb payment system is undergoing scheduled maintenance",
+      "Property photos match identical luxury homes in completely different countries on Google Lens"
+    ],
+    "kyaKarein": [
+      "Keep all communication, bookings, and payments strictly within official Airbnb or Vrbo platforms",
+      "Never wire bank deposits directly to vacation rental hosts",
+      "Verify property authenticity using reverse image search on property photographs"
+    ]
+  },
+  {
+    "id": "diamond-gemstone-valuation-certificate-forgery-2024",
+    "slug": "diamond-gemstone-valuation-certificate-forgery-2024",
+    "icon": "\ud83d\udc8e",
+    "name": "Diamond & Gemstone Valuation Certificate Forgery",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Online jeweler sells laboratory-created moissanite or cubic zirconia as natural certified GIA diamonds, providing forged GIA certificates with real serial numbers laser-inscribed.",
+    "sampleMsg": "Certified Natural 2.5 Carat Solitaire Diamond Ring with GIA Report #2189412 - Appraised value $18,000, private estate sale liquidation price: $2,800.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers laser-inscribe genuine GIA certificate numbers onto cheap synthetic moissanite stones.\n2. Print convincing replica grading certificates with GIA watermarks.\n3. Sell stones online at deep discounts to buyers who believe they are purchasing natural earth-mined diamonds.",
+    "redFlags": [
+      "Natural high-carat diamond offered at 70% - 80% below wholesale market pricing",
+      "Seller refuses inspection by an independent local accredited gemologist before purchase",
+      "Paper certificate lacks holographic security features or micro-printing",
+      "Seller insists on cash, crypto, or wire transfer payment",
+      "Online jeweler has no verifiable physical store or Better Business Bureau rating"
+    ],
+    "kyaKarein": [
+      "Verify certificate details directly on the official GIA Report Check portal: gia.edu/report-check",
+      "Have valuable diamonds examined in person by an independent certified Master Gemologist Appraiser",
+      "Never purchase expensive fine jewelry from unverified social media sellers"
+    ]
+  },
+  {
+    "id": "auto-parts-replacement-engine-online-phantom-store-2024",
+    "slug": "auto-parts-replacement-engine-online-phantom-store-2024",
+    "icon": "\ud83d\udd27",
+    "name": "Auto Parts & Replacement Engine Online Phantom Store",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Websites offering rare replacement car engines, transmissions, or catalytic converters at low prices, accepting Zelle or Cash App payments, and never shipping parts.",
+    "sampleMsg": "Used OEM Honda Civic Engine 2.0L with 45k miles - Fully tested with 1-year warranty! Only $850 shipped to your mechanic shop. Pay via Zelle for same-day freight dispatch.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers build fake auto parts salvage inventory sites scraping photos from junkyards.\n2. Rank high on Google search for specific car engine model numbers.\n3. Demand direct electronic payment and disappear without shipping freight.",
+    "redFlags": [
+      "Extremely low pricing for rebuilt or low-mileage engines and transmissions",
+      "Refuses credit card payments and insists on Zelle, Cash App, or wire transfer",
+      "No verifiable physical salvage yard address or commercial dismantler license",
+      "Sales representative communicates exclusively through Google Voice numbers",
+      "Demands additional shipping insurance or freight clearance fee after initial payment"
+    ],
+    "kyaKarein": [
+      "Purchase automotive drivetrain components from licensed salvage yards with credit cards",
+      "Verify salvage business address on Google Street View to confirm actual parts inventory",
+      "Check seller reviews on car enthusiast forums and Better Business Bureau"
+    ]
+  },
+  {
+    "id": "counterfeit-electronics-refurbished-iphone-bait-switch-2025",
+    "slug": "counterfeit-electronics-refurbished-iphone-bait-switch-2025",
+    "icon": "\ud83d\udcf1",
+    "name": "Counterfeit Electronics Refurbished iPhone Bait & Switch",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 95,
+    "desc": "Online sellers advertise refurbished iPhone 15 Pro for Rs 22,000. Device shipped is an Android phone running a laggy iOS skin with low-resolution camera and plastic casing.",
+    "sampleMsg": "Refurbished Apple iPhone 15 Pro Max (100% Battery Health, 1 Year Apple Care). Festival deal: Rs 21,999! Cash on delivery available. Book order on WhatsApp.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers purchase knockoff Android devices customized with iOS launchers in bulk from Shenzhen.\n2. Run ads offering refurbished Apple phones at 75% discount.\n3. Unsuspecting buyer pays COD or advance payment, discovering phone cannot connect to Apple App Store or iCloud.",
+    "redFlags": [
+      "Price is 70% cheaper than genuine market value of refurbished Apple devices",
+      "Phone does not open the genuine Apple App Store (opens Google Play or third-party store disguised as App Store)",
+      "Camera has extreme shutter lag and blurry low-light resolution",
+      "Serial number in settings does not match official Apple coverage check on checkcoverage.apple.com",
+      "Casing is made of cheap lightweight plastic rather than aerospace titanium or surgical steel"
+    ],
+    "kyaKarein": [
+      "Buy refurbished Apple products exclusively from Apple Certified Refurbished or authorized retailers (Amazon Renewed)",
+      "Verify serial number on checkcoverage.apple.com before finalizing any secondary purchase",
+      "Never purchase Apple smartphones through unverified WhatsApp merchants"
+    ]
+  },
+  {
+    "id": "wedding-photographer-event-hall-booking-advance-theft-2024",
+    "slug": "wedding-photographer-event-hall-booking-advance-theft-2024",
+    "icon": "\ud83d\udcf7",
+    "name": "Wedding Photographer / Event Hall Booking Advance Theft",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Fraudulent wedding photography studio steals photos from award-winning photographers to book weddings, taking Rs 50,000 advance deposit and never showing up on wedding day.",
+    "sampleMsg": "Elite Wedding Cinematography: Pre-wedding shoot + 3-day wedding drone coverage only Rs 65,000 (Regular Rs 1,50,000). Book today with Rs 30,000 advance to hold wedding date.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Creates impressive Instagram portfolio using stolen wedding films of luxury couples.\n2. Meets couples online or in rented coworking spaces, taking heavy advance bookings.\n3. Ghost on the wedding day, leaving brides and grooms without photography coverage.",
+    "redFlags": [
+      "Prices are 50% lower than prevailing wedding photography market rates",
+      "Photographer has no permanent physical commercial studio or registered office",
+      "Portfolio features celebrity or luxury weddings that cannot be corroborated with vendor tags",
+      "Demands 50% - 80% advance payment in cash or personal UPI without a formal legal contract",
+      "Refuses to provide raw unedited samples from previous complete client weddings"
+    ],
+    "kyaKarein": [
+      "Visit the vendor's physical commercial studio and speak directly with past clients",
+      "Insist on a comprehensive written contract detailing deliverable timelines and cancellation penalties",
+      "Never pay more than a standard 10% - 20% booking token in advance"
+    ]
+  },
+  {
+    "id": "bicycle-electric-scooter-liquidation-clearance-trap-2025",
+    "slug": "bicycle-electric-scooter-liquidation-clearance-trap-2025",
+    "icon": "\ud83d\udeb2",
+    "name": "Bicycle & Electric Scooter Liquidation Clearance Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Facebook sponsored ads claiming Trek, Specialized, or Segway is having a bankruptcy liquidation sale selling $2,000 electric bikes for $89, charging credit cards and disappearing.",
+    "sampleMsg": "Trek Bicycle Bankruptcy Auction: Due to retail store closures, all Trek Marlin and Dual Sport E-Bikes must go! Today only $79 (MSRP $1,800). Free home delivery.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Clones branding and product imagery of prestigious cycling and scooter manufacturers.\n2. Exploits news of retail bankruptcy or economic downturn to justify absurdly low prices.\n3. Siphons card numbers and bills fraudulent overseas transactions.",
+    "redFlags": [
+      "Electric bicycles and scooters sold for $79 - $99 (battery alone costs $300+)",
+      "Claims reputable global brand like Trek or Specialized is bankrupt or liquidating",
+      "Website domain contains random words (e.g. trek-factory-clearance-outlet.store)",
+      "Checkout forces credit card input and does not offer buyer-protected payment methods",
+      "No customer service phone number or verifiable corporate business registration"
+    ],
+    "kyaKarein": [
+      "Check official corporate website (trekbikes.com) to verify if any liquidation is actually occurring",
+      "Dispute charges immediately with your credit card company as fraudulent",
+      "Report fraudulent advertisements using Meta or Google Ad reporting tools"
+    ]
+  },
+  {
+    "id": "designer-sunglasses-eyewear-90-off-ray-ban-scam-2024",
+    "slug": "designer-sunglasses-eyewear-90-off-ray-ban-scam-2024",
+    "icon": "\ud83d\udd76\ufe0f",
+    "name": "Designer Sunglasses & Eyewear 90% Off Ray-Ban Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 92,
+    "desc": "Spam emails and tagged Facebook photos promoting 'Ray-Ban Sunglasses Anniversary Sale: 90% Off All Aviators & Wayfarers - Today Only $19.99', shipping cheap toxic plastic shades.",
+    "sampleMsg": "Ray-Ban 80th Anniversary Sale: All classic polarized sunglasses only $19.99 today! Buy 2 pairs get free worldwide express shipping: https://rayban-discount-outlet-store.org",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Attacker hijacks Facebook accounts and tags hundreds of friends in fake Ray-Ban discount flyers.\n2. Links to offshore counterfeit storefront copying Ray-Ban or Luxottica branding.\n3. Ships cheap counterfeit sunglasses lacking UV radiation protection, causing eye strain and retinal damage.",
+    "redFlags": [
+      "Ray-Ban or Oakley sunglasses advertised for $19.99 (authentic models retail for $150 - $300)",
+      "Promoted via unsolicited tags from hacked friends on Facebook or Instagram",
+      "Website URL is an unverified domain mimicking the official brand",
+      "Counterfeit glasses received lack polarized lenses and CE safety certification",
+      "Charges on bank statement show up under unrelated Chinese shell company names"
+    ],
+    "kyaKarein": [
+      "Purchase designer sunglasses exclusively from authorized opticians or official brand store (ray-ban.com)",
+      "Untag yourself and report scam flyers posted on social media",
+      "Never wear uncertified counterfeit sunglasses as they lack proper UV protection filters"
+    ]
+  },
+  {
+    "id": "gym-equipment-dumbbell-treadmill-quarantine-trap-2024",
+    "slug": "gym-equipment-dumbbell-treadmill-quarantine-trap-2024",
+    "icon": "\ud83c\udfcb\ufe0f",
+    "name": "Gym Equipment Dumbbell & Treadmill Quarantine Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 91,
+    "desc": "Websites offering Bowflex adjustable dumbbell sets or commercial treadmills at 80% discount during fitness season, collecting payments via wire or Zelle and never shipping heavy freight.",
+    "sampleMsg": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair) - New Year Liquidation Sale: Only $79 with free freight delivery (MSRP $429). Limited stock available.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Exploits seasonal spikes in home fitness equipment demand (January New Year resolutions).\n2. Offers heavy cast iron equipment with 'free shipping' at prices that wouldn't even cover the freight postage.\n3. Steals payment and ghosts buyer.",
+    "redFlags": [
+      "Heavy fitness equipment (50-100 lbs) offered with free shipping at impossibly low prices",
+      "Demands payment via non-refundable peer-to-peer methods",
+      "Domain is newly registered with no Better Business Bureau track record",
+      "Contact address points to a private residential apartment building",
+      "No tracking number provided after payment confirmation"
+    ],
+    "kyaKarein": [
+      "Purchase home gym equipment from reputable established sporting goods retailers",
+      "Check shipping costs (freight delivery for 100lb dumbbells typically costs $50-$100 alone)",
+      "Dispute payment through your credit card provider"
+    ]
+  },
+  {
+    "id": "custom-furniture-woodworking-advance-deposit-theft-2025",
+    "slug": "custom-furniture-woodworking-advance-deposit-theft-2025",
+    "icon": "\ud83e\ude91",
+    "name": "Custom Furniture & Woodworking Advance Deposit Theft",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Carpenter or interior decorator advertises bespoke solid teak dining tables on Instagram, visits home to take measurements, collects Rs 40,000 timber advance, and vanishes.",
+    "sampleMsg": "Solid Sheesham & Teak Wood 6-Seater Dining Table custom crafted for Rs 35,000! Free home measurement and design consultation. Pay 50% timber procurement advance to start carpentry.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Post attractive photos of modern minimalist furniture taken from Pinterest.\n2. Carpenter visits client home with measuring tape and wood samples to build trust.\n3. Takes substantial cash or UPI advance for raw materials and switches off phone.",
+    "redFlags": [
+      "Carpenter has no permanent workshop or physical furniture showroom you can visit",
+      "Demands 50% - 70% advance payment in cash before starting any work",
+      "Offers rates 40% below actual raw timber market prices",
+      "Refuses to provide valid GST invoice or registered business PAN",
+      "Repeatedly delays delivery with excuses about labor strikes or wood seasoning"
+    ],
+    "kyaKarein": [
+      "Visit the carpenter's physical workshop to inspect active projects and timber inventory",
+      "Pay in installments tied directly to verified milestones (timber delivery, framework inspection, polishing)",
+      "Execute signed contract detailing exact wood species and delivery completion date"
+    ]
+  },
+  {
+    "id": "luggage-travel-suitcase-warehouse-liquidation-scam-2025",
+    "slug": "luggage-travel-suitcase-warehouse-liquidation-scam-2025",
+    "icon": "\ud83e\uddf3",
+    "name": "Luggage & Travel Suitcase Warehouse Liquidation Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 94,
+    "desc": "Fake e-commerce stores advertising 3-piece Rimowa or Samsonite hard-shell luggage sets for $29.99 claiming airport unclaimed baggage auction liquidation, shipping empty envelopes.",
+    "sampleMsg": "Airport Unclaimed Baggage Auction: Unclaimed Samsonite 3-Piece Hardside Spinner Luggage Sets must be cleared! Only $29.99 per set. Over 500 sets sold today: https://airport-luggage-clearance.shop",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Run ads exploiting rumors about airport unclaimed baggage auctions.\n2. Lure travelers with luxury luggage for price of a coffee and sandwich.\n3. Customer receives a cheap travel luggage tag or empty tracking envelope to generate fake proof of postal delivery.",
+    "redFlags": [
+      "Brand-name luxury luggage sets sold for $29 - $39 (retail price $300 - $1,500)",
+      "Claims items are 'unclaimed airport baggage' sold under government orders",
+      "Store URL uses hyphenated words with .shop or .top extension",
+      "Package tracking shows delivered, but customer only receives an envelope with a plastic sticker",
+      "Customer service email bounces or uses automated nonsense replies"
+    ],
+    "kyaKarein": [
+      "Legitimate airports do not sell individual luxury luggage sets online for $29",
+      "Purchase luggage directly from authorized brand dealers or reputable department stores",
+      "Dispute payment with bank for non-delivery of merchandise"
+    ]
+  },
+  {
+    "id": "wholesale-b2b-bulk-inventory-alibaba-imposter-scam-2024",
+    "slug": "wholesale-b2b-bulk-inventory-alibaba-imposter-scam-2024",
+    "icon": "\ud83c\udfed",
+    "name": "Wholesale B2B Bulk Inventory Alibaba Imposter Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 96,
+    "desc": "Small business owner looking for wholesale inventory connects with fake supplier on WhatsApp impersonating verified Alibaba Gold Supplier, wiring $15,000 for non-existent goods.",
+    "sampleMsg": "Shenzhen Electronics Tech Co., Ltd: 1,000 units TWS Earbuds ready for FOB shipping. Total $12,500. Transfer 30% deposit via TT wire to our offshore bank account in Hong Kong to initiate freight.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Scammers clone identity and certifications of verified Chinese or Indian factory exporters.\n2. Convinces buyer to communicate outside Alibaba Trade Assurance to 'save 3% platform commission'.\n3. Buyer wires direct international telegraphic transfer (T/T); scammers vanish with entire commercial deposit.",
+    "redFlags": [
+      "Supplier insists on moving negotiations and payment off the protected Alibaba platform",
+      "Demands direct bank wire transfer (T/T) or Western Union to an offshore personal account",
+      "Offers wholesale prices significantly lower than raw material commodity costs",
+      "Refuses third-party pre-shipment quality inspection (SGS, Bureau Veritas)",
+      "Corporate email domain differs slightly from the official manufacturer website"
+    ],
+    "kyaKarein": [
+      "Keep all communication, contracts, and payments strictly within Alibaba Trade Assurance",
+      "Hire independent inspection agencies (SGS, QIMA) to verify factory existence and goods before final payment",
+      "Never wire commercial wholesale funds to unverified personal or offshore bank accounts"
+    ]
+  },
+  {
+    "id": "luxury-cosmetics-skincare-counterfeit-batch-trap-2024",
+    "slug": "luxury-cosmetics-skincare-counterfeit-batch-trap-2024",
+    "icon": "\ud83d\udc84",
+    "name": "Luxury Cosmetics & Skincare Counterfeit Batch Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 93,
+    "desc": "Fake e-commerce portals selling La Mer, Est\u00e9e Lauder, or MAC cosmetics at 70% discount. Products shipped are toxic counterfeits filled with lead, mercury, and arsenic.",
+    "sampleMsg": "La Mer Cr\u00e8me de la Mer Moisturizing Cream 60ml - Duty Free Clearance: Only $49 (MSRP $380)! 100% Original sealed batch with box: https://dutyfree-cosmetics-outlet.top",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Counterfeiters manufacture dangerous fake skincare creams in unsanitary underground facilities.\n2. Package in convincing replica jars mimicking prestige cosmetics brands.\n3. Products cause chemical burns, severe allergic reactions, and skin scarring for buyers.",
+    "redFlags": [
+      "Prestige luxury skincare brands sold at 70% - 85% below authorized retail pricing",
+      "Texture, scent, or color of cream is runny, separation-prone, or smells chemically",
+      "Batch code printed on bottom of jar does not match the outer cardboard box",
+      "Purchased from unverified third-party discount website rather than Sephora or authorized brand counter",
+      "Spelling errors in ingredient list printed on product packaging"
+    ],
+    "kyaKarein": [
+      "Purchase skincare and cosmetic products exclusively from authorized department stores and verified brand retailers",
+      "Discard counterfeit cosmetics immediately; laboratory tests regularly reveal high levels of lead and toxic bacteria",
+      "Report counterfeit cosmetic sellers to FDA and consumer protection agencies"
+    ]
+  },
+  {
+    "id": "used-mobile-phone-marketplace-blacklisted-imei-scam-2025",
+    "slug": "used-mobile-phone-marketplace-blacklisted-imei-scam-2025",
+    "icon": "\ud83d\udcf1",
+    "name": "Used Mobile Phone Marketplace Blacklisted IMEI Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Shop",
+    "categorySlug": "shopping-ecommerce",
+    "categoryName": "Shopping & Online Store",
+    "score": 95,
+    "desc": "Buying a used smartphone on OfferUp or Craigslist that works during initial test, but 48 hours later seller reports phone stolen to insurance company, blacklisting the IMEI nationwide.",
+    "sampleMsg": "iPhone 15 Pro Max 256GB Unlocked - Perfect condition, clean IMEI! Meet in person for cash purchase: $700. Buyer tests SIM card, works fine. Next day, carrier blocks phone as stolen.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammer purchases phone on carrier installment plan or takes out mobile phone insurance.\n2. Sells phone for cash to buyer on OfferUp or Craigslist.\n3. Days later, seller files fraudulent insurance claim reporting phone lost/stolen, collecting replacement device while carrier blacklists the sold phone's IMEI permanently.",
+    "redFlags": [
+      "Seller cannot provide original purchase receipt or retail carrier box",
+      "Seller refuses to conduct sale inside the carrier store (Verizon, AT&T, T-Mobile)",
+      "Price is noticeably below prevailing second-hand market value",
+      "Seller insists on cash-only transaction in parking lot",
+      "Phone is tied to active carrier equipment financing agreement that seller will stop paying"
+    ],
+    "kyaKarein": [
+      "Complete used phone purchases inside the carrier store to verify account payoff and clean title",
+      "Verify IMEI on official carrier portals and Swappa IMEI checker (swappa.com/esn)",
+      "Purchase used phones from certified refurbished platforms (Swappa, Gazelle, BackMarket) that offer IMEI guarantees"
+    ]
+  },
+  {
+    "id": "kbc-kaun-banega-crorepati-rs-25-lakh-whatsapp-lottery-2026",
+    "slug": "kbc-kaun-banega-crorepati-rs-25-lakh-whatsapp-lottery-2026",
+    "icon": "\ud83c\udf89",
+    "name": "KBC Kaun Banega Crorepati Rs 25 Lakh WhatsApp Lottery",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 98,
+    "desc": "Victims receive a WhatsApp voice note and Photoshopped flyer featuring Amitabh Bachchan and Narendra Modi claiming their SIM card won Rs 25,00,000 in KBC All-India Lottery, asking for Rs 25,000 tax deposit.",
+    "sampleMsg": "Congratulations! Your mobile SIM number has won Rs 25,00,000 in KBC All-India Lucky Draw. To receive your cheque from State Bank of India Mumbai manager Rana Pratap Singh, contact WhatsApp 9821XXXXXX and deposit Rs 25,000 GST tax.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer sends automated audio note in Hindi with sound effects of congratulations.\n2. Victim calls fake 'SBI Branch Manager' on WhatsApp.\n3. Manager demands Rs 25,000 registration tax, then Rs 45,000 RBI clearance, siphoning thousands before disappearing.",
+    "redFlags": [
+      "You never purchased any lottery ticket or participated in the KBC television game show",
+      "Notification arrives via an audio recording or poorly edited image over WhatsApp",
+      "Manager insists on communicating ONLY via WhatsApp call and forbids normal telephone calls",
+      "Phone numbers originate with foreign country codes (+92 Pakistan, +93 Afghanistan)",
+      "Demands upfront advance tax, GST, or bank processing fees transferred to private individual accounts"
+    ],
+    "kyaKarein": [
+      "KBC never conducts SIM card lucky draws or lottery schemes; all announcements are 100% fake",
+      "Never deposit money into any account to claim a prize or lottery winnings",
+      "Report fraudulent numbers to WhatsApp and National Cyber Crime Helpline 1930"
+    ]
+  },
+  {
+    "id": "us-green-card-diversity-visa-lottery-advance-fee-trap-2025",
+    "slug": "us-green-card-diversity-visa-lottery-advance-fee-trap-2025",
+    "icon": "\ud83d\uddfd",
+    "name": "US Green Card Diversity Visa Lottery Advance Fee Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "Emails claiming you have been selected for the US Diversity Visa (Green Card) Lottery, directing you to pay an $880 'Embassy processing and visa registration fee' via Western Union.",
+    "sampleMsg": "US Department of State Notice: You have been selected in the DV-2025 Diversity Immigrant Visa Program! To claim your Permanent Resident Card, wire $880 consular fee to US Embassy consular agent.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Sends spoofed emails copying the Great Seal of the United States and Department of State emblems.\n2. Exploits dreams of permanent residency in the United States.\n3. Directs funds to money remitters or untraceable foreign accounts while real Green Card lottery is completely free.",
+    "redFlags": [
+      "The US Department of State NEVER notifies Diversity Visa winners by email or telephone",
+      "Entrants must check their status exclusively on the official portal: dvprogram.state.gov using their confirmation number",
+      "The official Diversity Visa lottery entry is 100% completely FREE of charge",
+      "Government fees are never payable via Western Union, MoneyGram, or cryptocurrency",
+      "Email sender address does NOT end in '.gov' (uses domains like us-state-dept-gov.com)"
+    ],
+    "kyaKarein": [
+      "Check official Green Card lottery results solely at dvprogram.state.gov",
+      "Never send money or personal identity documents to unverified immigration email addresses",
+      "Report immigration lottery scams to the Federal Trade Commission (FTC)"
+    ]
+  },
+  {
+    "id": "pm-kisan-samman-nidhi-pm-awas-yojana-subsidy-phishing-2025",
+    "slug": "pm-kisan-samman-nidhi-pm-awas-yojana-subsidy-phishing-2025",
+    "icon": "\ud83c\udf3e",
+    "name": "PM Kisan Samman Nidhi & PM Awas Yojana Subsidy Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 97,
+    "desc": "SMS targeting farmers and rural citizens claiming Rs 6,000 installment under PM-Kisan or Rs 2,50,000 home construction grant under PM Awas is approved, linking to malicious APK.",
+    "sampleMsg": "PM-Kisan Alert: Your 17th installment of Rs 2,000 is on hold due to pending Aadhaar biometric. Download official PM-Kisan verification app to release funds: https://pm-kisan-yojana.top/app.apk",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Broadcasts smishing links coinciding with official government subsidy distribution dates.\n2. Link prompts download of a rogue Android APK file mimicking government schemes.\n3. APK requests SMS and Accessibility permissions, intercepting banking OTPs and siphoning savings.",
+    "redFlags": [
+      "Official government schemes use websites ending strictly in '.gov.in' or '.nic.in'",
+      "SMS directs you to download an unverified '.apk' file from outside the Google Play Store",
+      "Message sent from a personal 10-digit mobile number rather than registered government sender ID",
+      "Demands upfront registration fee or bank account password to release subsidy",
+      "Claims subsidy will be cancelled permanently if not claimed within 24 hours"
+    ],
+    "kyaKarein": [
+      "Check PM-Kisan beneficiary status exclusively on official portal: pmkisan.gov.in",
+      "Never download or install .apk files received via SMS or WhatsApp links",
+      "Visit your local Common Service Centre (CSC) or agricultural officer for genuine subsidy assistance"
+    ]
+  },
+  {
+    "id": "uk-national-lottery-euromillions-sweepstakes-winning-letter-2024",
+    "slug": "uk-national-lottery-euromillions-sweepstakes-winning-letter-2024",
+    "icon": "\ud83c\udf9f\ufe0f",
+    "name": "UK National Lottery & EuroMillions Sweepstakes Winning Letter",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Physical letters or emails bearing official Royal Mail and National Lottery logos informing the recipient they won \u00a3750,000 in European sweepstakes, demanding \u00a31,500 legal transfer fee.",
+    "sampleMsg": "The National Lottery Official Notification: Ticket #NL-8921 has won \u00a3850,000 in the International EuroMillions Draw! Contact Senior Claims Officer to process your check. Processing fee \u00a31,250 payable within 14 days.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Sends official-looking formal stationery to addresses gathered from public directories.\n2. Victim contacts claims agent by phone, who congratulates them and confirms winnings.\n3. Agent explains UK law requires an upfront 'non-resident tax' or 'clearance bond' to release the check.",
+    "redFlags": [
+      "You cannot win a lottery or sweepstakes you never bought a physical ticket for",
+      "Genuine lotteries NEVER ask winners to pay fees, taxes, or clearance charges to receive prize money",
+      "Legitimate lotteries deduct applicable statutory taxes automatically from winnings",
+      "Claims agent uses a free webmail address (Hotmail, Gmail, Yahoo)",
+      "Demands that the winner keep the prize confidential to prevent duplicate claims"
+    ],
+    "kyaKarein": [
+      "Throw the letter in the recycling bin; you have not won any lottery",
+      "Never send bank details, passport copies, or money to claims processing agents",
+      "Report fraudulent lottery mailings to Action Fraud at actionfraud.police.uk"
+    ]
+  },
+  {
+    "id": "benazir-income-support-programme-bisp-relief-sms-2025",
+    "slug": "benazir-income-support-programme-bisp-relief-sms-2025",
+    "icon": "\ud83c\uddf5\ud83c\uddf0",
+    "name": "Benazir Income Support Programme (BISP) Relief SMS",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Pakistan",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "SMS claiming recipient has been awarded Rs 25,000 or Rs 50,000 emergency cash aid under Ehsaas / BISP poverty relief, directing to call an agent who demands Rs 2,000 mobile load fee.",
+    "sampleMsg": "BISP / Ehsaas Alert: Mubarak ho! Aapke khandan ko Hakumat ki taraf se Rs 35,000 ki mali imdad manzoor ho gayi hai. Raqam hasil karne ke liye BISP officer 0345-XXXXXXX par foran rabta karein.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Mass SMS campaigns exploit low-income and vulnerable families across Pakistan.\n2. Caller dials provided number; fake officer instructs them to send Rs 1,500 EasyPaisa / JazzCash voucher to 'activate file'.\n3. Keeps demanding sequential fees for administrative stamps without releasing any aid.",
+    "redFlags": [
+      "Official BISP and Ehsaas SMS are sent ONLY from shortcode 8171 (never from 11-digit mobile numbers)",
+      "Government relief programs NEVER require beneficiaries to pay fees or send mobile balance",
+      "SMS received from private mobile network numbers (e.g. 03xx-xxxxxxx)",
+      "Officer demands EasyPaisa or JazzCash transfer to private personal accounts",
+      "Claims urgent registration deadline within 24 hours"
+    ],
+    "kyaKarein": [
+      "Verify BISP and Ehsaas eligibility exclusively by sending your CNIC to official shortcode 8171",
+      "Never send mobile balance, EasyPaisa, or JazzCash to anyone claiming to be a BISP officer",
+      "Report fraudulent mobile numbers to Pakistan Telecommunication Authority (PTA) helpline 0800-55055"
+    ]
+  },
+  {
+    "id": "federal-government-free-grant-award-notification-scam-2025",
+    "slug": "federal-government-free-grant-award-notification-scam-2025",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "name": "Federal Government Free Grant Award Notification Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "Phone call or Facebook message stating you have been awarded a $9,000 free federal government education or home repair grant that never needs to be repaid, requiring $250 processing fee.",
+    "sampleMsg": "Federal Grants Department: You have been selected for a non-repayable $8,500 Congressional Economic Grant! To disburse funds directly to your checking account, pay $249 delivery fee via GreenDot MoneyPak.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Robocall or hacked Facebook friend message claims free money is available to good citizens.\n2. Convinces victim that government grant requires an upfront administrative processing tax.\n3. Once fee is paid via gift card or wire transfer, scammer demands insurance fee and disappears.",
+    "redFlags": [
+      "The US government does NOT award unsolicited free cash grants to individual citizens for personal use",
+      "Real federal grants are awarded exclusively to organizations, researchers, and institutions through grants.gov",
+      "Legitimate government agencies NEVER require payment of a fee to receive a grant",
+      "Caller claims to be from non-existent agencies like 'Federal Grants Department'",
+      "Demands payment via prepaid debit cards, gift cards, or Western Union"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; the US government does not call citizens giving away free money",
+      "Check legitimate federal grant opportunities exclusively at grants.gov",
+      "Report fraudulent grant calls to the FTC at reportfraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "student-loan-forgiveness-debt-cancellation-phishing-2025",
+    "slug": "student-loan-forgiveness-debt-cancellation-phishing-2025",
+    "icon": "\ud83c\udf93",
+    "name": "Student Loan Forgiveness & Debt Cancellation Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Robocall claiming your federal student loans qualify for immediate complete forgiveness under new executive orders, charging $899 upfront fee to 'enroll in the Biden relief plan'.",
+    "sampleMsg": "Federal Student Loan Advisory: Your student loan balances qualify for 100% forgiveness under updated federal relief guidelines. You must finalize enrollment before midnight. Press 1 to speak with a loan counselor.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Telemarketers target recent university graduates and borrowers with student debt.\n2. High-pressure sales rep promises complete debt cancellation within 30 days.\n3. Charges $800 upfront fee and recurring $49/month maintenance, while merely submitting basic income-driven repayment paperwork borrower could do for free.",
+    "redFlags": [
+      "Demands high upfront fees or recurring monthly maintenance charges to process debt relief",
+      "Promises immediate, complete cancellation of all federal student loan balances",
+      "Asks for your Federal Student Aid (FSA) ID username and password",
+      "Pressures borrower to sign power of attorney giving them control of your loan servicer account",
+      "Uses company names that sound official (e.g. 'Student Loan Assistance Department')"
+    ],
+    "kyaKarein": [
+      "Federal student loan forgiveness and income-driven repayment programs are 100% FREE to apply for",
+      "Manage your federal student loans directly at studentaid.gov or with your assigned loan servicer",
+      "Never share your FSA ID password with any third-party debt relief company"
+    ]
+  },
+  {
+    "id": "medicare-new-plastic-chip-card-upgrade-phone-scam-2024",
+    "slug": "medicare-new-plastic-chip-card-upgrade-phone-scam-2024",
+    "icon": "\ud83e\ude7a",
+    "name": "Medicare New Plastic / Chip Card Upgrade Phone Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "Caller targeting senior citizens claiming paper Medicare cards are being phased out for new digital chip cards, demanding their Medicare number and bank account to verify identity.",
+    "sampleMsg": "This is Medicare Member Services. The government is issuing new secure plastic Medicare cards with microchips. To receive your new card, verify your current Medicare ID number and date of birth.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Calls elderly individuals during Medicare Open Enrollment season (October - December).\n2. Claims the paper red, white, and blue card is invalid.\n3. Extracts Medicare beneficiary number, using it to bill thousands in fraudulent medical equipment and genetic testing.",
+    "redFlags": [
+      "Medicare will NEVER call beneficiaries unsolicited to issue new cards or request personal information",
+      "There is NO plastic or microchip Medicare card being issued by the federal government",
+      "Caller threatens that health benefits or prescription coverage will be cancelled if you do not comply",
+      "Caller asks for your Social Security Number, bank routing number, or Medicare ID",
+      "Caller ID is spoofed to display 1-800-MEDICARE"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; Medicare never makes proactive calls to beneficiaries",
+      "Keep your Medicare card safe and treat your Medicare number like a credit card",
+      "Report Medicare imposter calls to 1-800-MEDICARE (1-800-633-4227)"
+    ]
+  },
+  {
+    "id": "canadian-carbon-tax-rebate-deposit-phishing-2025",
+    "slug": "canadian-carbon-tax-rebate-deposit-phishing-2025",
+    "icon": "\ud83c\udf41",
+    "name": "Canadian Carbon Tax Rebate Deposit Phishing",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Canada",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "Text message stating your Canada Carbon Rebate (CCR) payment of $325 is pending, instructing you to click an INTERAC e-Transfer link to deposit funds into your bank.",
+    "sampleMsg": "Canada Revenue Agency: Your Canada Carbon Rebate of $340.50 has been issued via Interac e-Transfer. Deposit your funds within 24 hours: https://cra-rebate-deposit.interac-services.top",
+    "source": "Canadian Anti-Fraud Centre",
+    "kaiseHotaHai": "1. Coincides with quarterly Canada Carbon Rebate distribution dates.\n2. Phishing link opens replica of the Interac financial institution selection page.\n3. When victim selects their bank and inputs login credentials, scammers capture access and drain accounts.",
+    "redFlags": [
+      "The Canada Revenue Agency (CRA) NEVER sends government benefit payments via Interac e-Transfer text links",
+      "Legitimate CRA benefit payments are deposited directly into your bank account or mailed by paper cheque",
+      "Text sent from random cellular number or international phone prefix",
+      "URL is not official cra-arc.gc.ca or canada.ca domain",
+      "Threatens that unclaimed rebate will revert to federal treasury within 24 hours"
+    ],
+    "kyaKarein": [
+      "Check true CRA tax and benefit notices by logging into your official CRA My Account at canada.ca",
+      "Never enter online banking credentials into links received via text messages",
+      "Report phishing texts to the Canadian Anti-Fraud Centre"
+    ]
+  },
+  {
+    "id": "us-census-bureau-mandatory-survey-fine-threat-2024",
+    "slug": "us-census-bureau-mandatory-survey-fine-threat-2024",
+    "icon": "\ud83d\udcca",
+    "name": "US Census Bureau Mandatory Survey Fine Threat",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 93,
+    "desc": "Caller claims to be Census Bureau worker stating you failed to complete the mandatory American Community Survey and a federal $5,000 fine is due unless you answer financial questions over phone.",
+    "sampleMsg": "This is Officer Henderson from the US Census Bureau. You have failed to respond to the mandatory American Community Survey. Under Title 13, pay $450 administrative fee over the phone to prevent court citation.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers exploit legal mandate of census participation.\n2. Demands payment of fines or asks sensitive financial questions (bank balances, credit card numbers, PINs).\n3. Siphons identity data for fraudulent credit applications.",
+    "redFlags": [
+      "The Census Bureau NEVER asks for bank account numbers, credit card details, or PINs",
+      "The Census Bureau NEVER asks for money or charges fees for survey participation",
+      "Census workers will never threaten you with immediate arrest or fines over the telephone",
+      "Caller cannot provide official Census Bureau employee verification ID",
+      "Official census surveys arrive by mail with a secure 12-digit census ID to complete on census.gov"
+    ],
+    "kyaKarein": [
+      "Verify legitimate Census Bureau surveys on the official website: census.gov/check",
+      "Never disclose banking details or credit card numbers to census takers",
+      "Report fraudulent census communications to the Census Bureau National Processing Center"
+    ]
+  },
+  {
+    "id": "publisher-s-clearing-house-pch-prize-patrol-cash-trap-2024",
+    "slug": "publisher-s-clearing-house-pch-prize-patrol-cash-trap-2024",
+    "icon": "\ud83c\udfc6",
+    "name": "Publisher's Clearing House (PCH) Prize Patrol Cash Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Caller claims to be Dave Sayer from the Publishers Clearing House Prize Patrol stating you won $2.5 Million and a new Mercedes-Benz, requiring $1,500 insurance fee before the prize van arrives.",
+    "sampleMsg": "Congratulations from Publishers Clearing House! Dave Sayer and the Prize Patrol van are 30 miles from your house with your $2,500,000 cashier check and new Mercedes. Wire $1,500 state excise tax to release van.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers target older Americans using names and photos of famous PCH Prize Patrol personalities.\n2. Tell victim the prize delivery van is already driving in their neighborhood.\n3. Demand that victim purchase store gift cards or send money orders to cover delivery insurance.",
+    "redFlags": [
+      "Publishers Clearing House NEVER notifies major winners by phone, text, or email",
+      "PCH Prize Patrol awards major prizes in person unannounced with oversized checks and balloons",
+      "You NEVER have to pay a single penny to collect genuine PCH sweepstakes winnings",
+      "Caller demands payment through GreenDot MoneyPak, Western Union, or retail gift cards",
+      "Instructs victim to keep the prize secret from family members and bank tellers"
+    ],
+    "kyaKarein": [
+      "Hang up the phone; PCH never asks winners to pay fees, taxes, or shipping costs",
+      "Check official PCH winning rules and consumer warnings at pch.com/fraud-protection",
+      "Report the scam to Publishers Clearing House customer service and the FTC"
+    ]
+  },
+  {
+    "id": "pm-mudra-yojana-instant-business-loan-registration-fee-2025",
+    "slug": "pm-mudra-yojana-instant-business-loan-registration-fee-2025",
+    "icon": "\ud83c\uddee\ud83c\uddf3",
+    "name": "PM Mudra Yojana Instant Business Loan Registration Fee",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "WhatsApp message offering zero-interest PM Mudra business loans up to Rs 10 Lakh with zero collateral, requiring Rs 3,500 approval certificate fee transferred to personal UPI.",
+    "sampleMsg": "Pradhan Mantri Mudra Yojana 2025: Get Rs 10,00,000 loan at 1% interest with 50% government subsidy! No collateral needed. Deposit Rs 3,500 registration charge for Sanction Letter: WhatsApp 9811XXXXXX.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Sends forged loan sanction letters featuring Prime Minister's photo and Finance Ministry logos.\n2. Convinces small shopkeepers and entrepreneurs that loan is sanctioned.\n3. Collects sequential fees (file charge, insurance fee, GST, NOC fee) before cutting contact.",
+    "redFlags": [
+      "Government of India does not disburse Mudra loans directly via WhatsApp messages",
+      "Mudra loans are sanctioned and disbursed exclusively through commercial banks, RRBs, and NBFC branches",
+      "No government loan program requires upfront application fees paid into private personal UPI IDs",
+      "Letter features forged signatures of RBI Governor or Finance Ministry secretaries",
+      "Promises unrealistically low interest rates (1% - 2%) and massive 50% debt waivers"
+    ],
+    "kyaKarein": [
+      "Apply for Mudra loans only through your nearest physical bank branch or official portal: udyamimitra.in",
+      "Never transfer advance money to get any government loan sanctioned",
+      "Verify government scheme information exclusively on official portals ending in '.gov.in'"
+    ]
+  },
+  {
+    "id": "spanish-el-gordo-christmas-lottery-winner-letter-2024",
+    "slug": "spanish-el-gordo-christmas-lottery-winner-letter-2024",
+    "icon": "\ud83c\uddea\ud83c\uddf8",
+    "name": "Spanish El Gordo Christmas Lottery Winner Letter",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 93,
+    "desc": "International letter mailed to households claiming their name was selected in the Spanish El Gordo Christmas Lottery draw winning \u20ac2,150,000, requesting bank details to transfer funds.",
+    "sampleMsg": "Loterias y Apuestas del Estado Madrid: Reference #ES-4912. You have won \u20ac2,150,000 in the El Gordo International Sweepstakes. Remit 1% non-resident security fee (\u20ac2,150) to legal claim attorney.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Mailed physical letters from Spain to affluent international neighborhoods.\n2. Includes official-looking certificates of award, tax stamps, and legal disclaimers.\n3. Instructs winner to wire clearance fee to an attorney in Madrid who is part of the criminal ring.",
+    "redFlags": [
+      "You cannot win the Spanish El Gordo lottery without having physically purchased an authentic Spanish lottery d\u00e9cimo ticket",
+      "Foreign lotteries do not randomly select names or passport numbers from international databases",
+      "Demands advance payment of legal fees, administrative charges, or foreign tax deposits",
+      "Attorney communication comes from free webmail accounts rather than official legal bar domains",
+      "Strict non-disclosure clause threatening prize forfeiture if discussed with others"
+    ],
+    "kyaKarein": [
+      "Discard the letter; it is a textbook international advance-fee lottery scam",
+      "Never send money abroad to claim lottery prizes",
+      "Report fraudulent cross-border mailings to national postal inspectors"
+    ]
+  },
+  {
+    "id": "government-solar-rooftop-subsidy-registration-scam-2025",
+    "slug": "government-solar-rooftop-subsidy-registration-scam-2025",
+    "icon": "\u2600\ufe0f",
+    "name": "Government Solar Rooftop Subsidy Registration Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Fraudulent website mimicking PM Surya Ghar Muft Bijli Yojana offering free 3kW solar panels and Rs 78,000 direct subsidy, collecting Rs 2,999 registration fee that is stolen.",
+    "sampleMsg": "PM Surya Ghar Yojana: Get 300 units free electricity per month! Government will install 3kW rooftop solar for only Rs 2,999 initial booking fee. Apply online now: https://pm-suryaghar-gov.in.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Capitalizes on nationwide publicity surrounding national solar rooftop initiatives.\n2. Builds lookalike portal mimicking Ministry of New and Renewable Energy design.\n3. Collects thousands of Rs 2,999 application fees into mule accounts without ever installing panels.",
+    "redFlags": [
+      "URL is not the official Ministry domain: pmsuryaghar.gov.in (uses lookalike .top, .in.net, .org domains)",
+      "Demands immediate online payment of registration fees to unverified payment gateways",
+      "Promises 100% free solar systems without vendor site surveys or technical feasibility checks",
+      "Website lacks standard government portal footer links and official contact directories",
+      "Payment receipts do not feature DISCOM authorization or official state power registry numbers"
+    ],
+    "kyaKarein": [
+      "Register for solar subsidies exclusively on the official portal: pmsuryaghar.gov.in",
+      "Work only with DISCOM-empanelled solar vendors listed on official state utility portals",
+      "Report spoofed government portals to National Cyber Crime Reporting Portal"
+    ]
+  },
+  {
+    "id": "australian-national-disability-insurance-scheme-ndis-card-scam-2025",
+    "slug": "australian-national-disability-insurance-scheme-ndis-card-scam-2025",
+    "icon": "\ud83e\udd98",
+    "name": "Australian National Disability Insurance Scheme (NDIS) Card Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "Phone call impersonating NDIS officials telling participants their funding package has expired and an upfront fee is required to renew disability support plans.",
+    "sampleMsg": "This is the NDIS Quality and Safeguards Commission. Your support package has expired. To maintain daily living assistance, transfer your $450 plan renewal fee to our clearing trust account.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Scammers obtain contact details of vulnerable Australians with disabilities.\n2. Threaten immediate cessation of care workers and therapy funding.\n3. Demand direct bank wire or credit card payments to maintain active funding status.",
+    "redFlags": [
+      "NDIS does NOT charge participants fees to review, renew, or maintain funding plans",
+      "NDIS never calls participants demanding immediate credit card payments over the phone",
+      "Caller threatens that disability support workers will not show up tomorrow",
+      "Demands payments into private bank accounts rather than through registered NDIS plan managers",
+      "Caller cannot confirm your specific NDIS participant number or local area coordinator name"
+    ],
+    "kyaKarein": [
+      "Hang up and contact your trusted NDIS Local Area Coordinator (LAC) or Plan Manager directly",
+      "Call the authentic NDIS contact centre on 1800 800 110",
+      "Report fraudulent calls to Scamwatch at scamwatch.gov.au"
+    ]
+  },
+  {
+    "id": "passport-office-urgent-tatkal-appointment-fee-trap-2025",
+    "slug": "passport-office-urgent-tatkal-appointment-fee-trap-2025",
+    "icon": "\ud83d\udec2",
+    "name": "Passport Office Urgent Tatkal Appointment Fee Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Fake Passport Seva websites charging Rs 3,000 for 'guaranteed next-day Tatkal passport interview slots', taking money and issuing fake appointment slips.",
+    "sampleMsg": "Urgent Tatkal Passport Appointment Booking: Bypass 2-month waiting queues! Confirmed slot at your nearest PSK tomorrow. Pay Rs 2,999 priority fee: https://passport-seva-appointment.in.net",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Cybercriminals bid on Google Search Ads for keywords like 'passport appointment online'.\n2. Phishing site mirrors official Ministry of External Affairs portal.\n3. Steals applicant identity information and charges exorbitant unauthorized booking fees.",
+    "redFlags": [
+      "Official Passport Seva portal is passportindia.gov.in (ends strictly in .gov.in)",
+      "Websites ending in .org, .in.net, or .com are private third-party aggregators or fraudulent phishing portals",
+      "Official passport fees are fixed by Ministry rules (Rs 1,500 normal, Rs 3,500 Tatkal) and never paid via private UPI",
+      "No agent can legally manipulate or bypass government automated appointment release schedules",
+      "Site asks for credit card CVV and Aadhaar details without government DigiLocker integration"
+    ],
+    "kyaKarein": [
+      "Book passport appointments exclusively on the official government portal: passportindia.gov.in",
+      "Never use unofficial third-party websites or pay touts for passport appointments",
+      "Report fake passport booking websites to Ministry of External Affairs and Cyber Police"
+    ]
+  },
+  {
+    "id": "social-security-cost-of-living-adjustment-cola-phone-trap-2025",
+    "slug": "social-security-cost-of-living-adjustment-cola-phone-trap-2025",
+    "icon": "\ud83c\uddfa\ud83c\uddf8",
+    "name": "Social Security Cost-of-Living Adjustment (COLA) Phone Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "Robocall telling retirees their monthly Social Security check is increasing by $250 under new COLA rules, but they must confirm their bank account and SSN over the phone to activate the raise.",
+    "sampleMsg": "Social Security Administration Alert: You qualify for an additional $245 monthly Cost-of-Living adjustment. To activate this increase into your direct deposit, verify your Social Security number and bank routing number now.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Broadcasts robocalls in autumn when annual SSA COLA adjustments are in national news.\n2. Pretends that seniors must actively apply or verify their accounts to receive the higher payout.\n3. Obtains banking credentials and redirects monthly benefit checks to criminal prepaid cards.",
+    "redFlags": [
+      "Social Security COLA increases are 100% AUTOMATIC; beneficiaries never need to apply or verify accounts",
+      "SSA never calls beneficiaries to activate benefit increases",
+      "Caller asks for your 9-digit Social Security Number, bank name, routing number, and account number",
+      "Threatens that failure to verify today will forfeit your monthly benefit adjustment",
+      "Caller ID shows spoofed Social Security Administration phone numbers"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; COLA increases happen automatically with zero action required",
+      "Check authentic benefit statements securely online at ssa.gov/myaccount",
+      "Report SSA impersonation calls to the SSA Office of the Inspector General at oig.ssa.gov"
+    ]
+  },
+  {
+    "id": "uk-council-tax-rebanding-rebate-cold-call-scam-2024",
+    "slug": "uk-council-tax-rebanding-rebate-cold-call-scam-2024",
+    "icon": "\ud83c\udfe0",
+    "name": "UK Council Tax Rebanding / Rebate Cold Call Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 92,
+    "desc": "Caller claims your home was placed in the wrong Council Tax valuation band and you are owed a \u00a32,400 backdated refund, demanding an upfront \u00a3150 administration fee to submit the claim.",
+    "sampleMsg": "Council Tax Recovery Agency: Your property has been re-evaluated from Band D to Band C. You are owed \u00a32,450 in overpaid council tax! Pay \u00a3149 processing fee to release your refund cheque today.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Cold-calls homeowners using public property valuation registers.\n2. Convinces resident that local council owes them thousands in overpaid historical taxes.\n3. Takes \u00a3150 debit card payment and never submits any paperwork, or submits basic challenge resident could do for free.",
+    "redFlags": [
+      "You can check your council tax band and challenge it completely FREE on the Valuation Office Agency (VOA) website",
+      "Your local council will NEVER cold-call you demanding payment to issue an overpayment rebate",
+      "Company uses names that sound like official bodies ('Council Tax Review Board')",
+      "High pressure insisting the claim must be submitted today to avoid backdated statutory limits",
+      "Demands credit or debit card details over the telephone"
+    ],
+    "kyaKarein": [
+      "Check and challenge your council tax band for free on the official government website: gov.uk/council-tax-bands",
+      "Contact your local municipal council directly to verify any genuine tax credits",
+      "Report fraudulent council tax calls to Action Fraud"
+    ]
+  },
+  {
+    "id": "aadhaar-card-biometric-update-otp-cancellation-trap-2025",
+    "slug": "aadhaar-card-biometric-update-otp-cancellation-trap-2025",
+    "icon": "\ud83c\udd94",
+    "name": "Aadhaar Card Biometric Update OTP Cancellation Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 97,
+    "desc": "Caller pretending to be UIDAI Aadhaar official stating your Aadhaar card has been suspended due to 10-year document update mandate, demanding Aadhaar OTP to prevent card deactivation.",
+    "sampleMsg": "UIDAI Helpline: Your Aadhaar card #XXXX is expired under 10-year biometric verification rules. Your bank accounts will be frozen tonight. To re-activate without visiting enrollment centre, share the UIDAI OTP sent to your mobile.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Exploits government advisories encouraging citizens to update documents after 10 years.\n2. Concurrently initiates Aadhaar-enabled Payment System (AePS) or netbanking password reset.\n3. Victim shares OTP thinking it updates Aadhaar, allowing criminal to drain bank accounts via AePS micro-ATMs.",
+    "redFlags": [
+      "UIDAI never calls citizens asking for Aadhaar OTPs to update biometric records",
+      "Biometric updates (fingerprints, iris, facial photo) physically require visiting an authorized Aadhaar Seva Kendra",
+      "Caller threatens that bank accounts, PAN cards, and SIM cards will be blocked tonight",
+      "OTP message clearly states: 'OTP for Aadhaar authentication / AePS transaction'",
+      "Call comes from private 10-digit mobile number"
+    ],
+    "kyaKarein": [
+      "Never share Aadhaar OTPs with incoming callers under any circumstances",
+      "Update documents yourself securely on official UIDAI portal: myaadhaar.uidai.gov.in",
+      "Lock your Aadhaar biometrics using mAadhaar mobile app to prevent unauthorized AePS withdrawals"
+    ]
+  },
+  {
+    "id": "green-card-renewal-citizenship-application-form-fee-scam-2024",
+    "slug": "green-card-renewal-citizenship-application-form-fee-scam-2024",
+    "icon": "\ud83d\uddfd",
+    "name": "Green Card Renewal & Citizenship Application Form Fee Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 93,
+    "desc": "Websites charging immigrants $300 to $500 to download standard USCIS immigration forms (I-90, N-400), which are officially provided 100% free of charge by the federal government.",
+    "sampleMsg": "US Immigration Support Center: Download official Form N-400 Application for Naturalization & Form I-90 Green Card Renewal. Premium attorney filing package only $399: https://us-immigration-forms-fast.com",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers purchase search engine ads for common immigration form searches.\n2. Charge hundreds of dollars just to provide a standard government PDF form.\n3. Collect sensitive personal background and immigrant alien registration numbers.",
+    "redFlags": [
+      "ALL official USCIS immigration forms are 100% completely FREE to download at uscis.gov/forms",
+      "Website charges money for blank immigration PDF form downloads",
+      "Domain does not end in '.gov' (uses .com, .org, or .us)",
+      "Website claims to be affiliated with USCIS but includes tiny disclaimer disavowing government connection",
+      "Demands credit card payment before allowing form access"
+    ],
+    "kyaKarein": [
+      "Download all immigration forms exclusively for free from official portal: uscis.gov/forms",
+      "Never pay third-party websites for blank government application forms",
+      "Report deceptive immigration websites to the FTC and state Attorney General"
+    ]
+  },
+  {
+    "id": "voter-id-card-deletion-electoral-roll-update-sms-2024",
+    "slug": "voter-id-card-deletion-electoral-roll-update-sms-2024",
+    "icon": "\ud83d\uddf3\ufe0f",
+    "name": "Voter ID Card Deletion & Electoral Roll Update SMS",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "SMS received ahead of national or state elections warning that your name has been flagged for removal from the voter list, directing you to click link and pay Rs 50 re-verification fee.",
+    "sampleMsg": "Election Commission Notice: Your name in Electoral Ward #14 is flagged for deletion due to duplicate entry. Re-verify your voter ID card and pay Rs 50 processing charge at: https://eci-voter-card-verify.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Capitalizes on public anxiety during general and assembly election seasons.\n2. Phishing link mimics Election Commission of India (ECI) voter service portal.\n3. Captures EPIC voter card number, Aadhaar, and bank credentials under guise of nominal fee.",
+    "redFlags": [
+      "Election Commission of India NEVER charges fees to maintain or verify entries on the electoral roll",
+      "Official voter portal is voters.eci.gov.in (never uses .top, .org, or .in.net domains)",
+      "Voter verification is 100% free through your local Booth Level Officer (BLO)",
+      "Sent from private mobile number instead of official ECI header",
+      "Demands online payment of processing charges"
+    ],
+    "kyaKarein": [
+      "Check your name on the electoral roll exclusively on the official portal: voters.eci.gov.in",
+      "Use the official Voter Helpline App (VHA) developed by Election Commission of India",
+      "Never pay money to keep your name on voter lists"
+    ]
+  },
+  {
+    "id": "fema-disaster-relief-grant-application-fee-scam-2024",
+    "slug": "fema-disaster-relief-grant-application-fee-scam-2024",
+    "icon": "\ud83c\udf2a\ufe0f",
+    "name": "FEMA Disaster Relief Grant Application Fee Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 96,
+    "desc": "Following a hurricane, tornado, or wildfire, scammers visit disaster zones or post online offering to expedite $15,000 in FEMA disaster relief grants for an upfront $500 application fee.",
+    "sampleMsg": "FEMA Expedited Emergency Relief: Hurricane victims eligible for immediate $15,000 FEMA rebuilding grants! Pay $450 priority inspector dispatch fee to have your claim approved within 48 hours.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Predators arrive in declared disaster areas within days of storm devastation.\n2. Pose as federal disaster recovery inspectors with counterfeit badges.\n3. Solicit cash payments from desperate homeowners to 'expedite federal assistance checks'.",
+    "redFlags": [
+      "FEMA disaster assistance applications and inspections are 100% completely FREE",
+      "FEMA NEVER charges fees to apply for or inspect disaster damage",
+      "Federal inspectors never solicit cash, gift cards, or wire payments",
+      "Inspectors must wear official laminated photo ID badges (a FEMA shirt alone is not valid ID)",
+      "Promises guaranteed grant approval in exchange for upfront payment"
+    ],
+    "kyaKarein": [
+      "Apply for federal disaster assistance exclusively at disasterassistance.gov or call 1-800-621-FEMA",
+      "Ask to see official government photo identification from any inspector visiting your property",
+      "Report disaster fraud to the National Center for Disaster Fraud (NCDF) at 1-866-720-5721"
+    ]
+  },
+  {
+    "id": "state-driving-license-renewal-online-phishing-site-2025",
+    "slug": "state-driving-license-renewal-online-phishing-site-2025",
+    "icon": "\ud83e\udeaa",
+    "name": "State Driving License Renewal Online Phishing Site",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "Unofficial websites ranking high on Google for 'renew driver's license online', charging $50 for a fake digital renewal guide while harvesting driver's license numbers and SSNs.",
+    "sampleMsg": "Online DMV Services: Renew your California/Texas driver's license online without waiting at the DMV office! Instant digital renewal application processing: https://state-dmv-renewals-portal.com",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Deceptive marketing companies build lookalike DMV portals targeting every US state.\n2. Trick drivers into paying $20 - $50 for useless publicly available informational PDFs.\n3. Collect full driving license number, SSN, home address, and credit card credentials.",
+    "redFlags": [
+      "Website domain does NOT end in '.gov' (official state DMV websites are strictly .gov)",
+      "Charges an 'application assistance fee' in addition to standard statutory state fees",
+      "Tiny fine print at bottom discloses website is private and not affiliated with any state agency",
+      "Does not connect to official state department of motor vehicles database",
+      "Demands credit card payment for forms that are free on official DMV sites"
+    ],
+    "kyaKarein": [
+      "Renew driver's licenses exclusively on your state's official department of motor vehicles '.gov' website",
+      "Check the URL bar to confirm it ends in '.gov' before entering personal data",
+      "Dispute deceptive charges with your bank as misleading marketing"
+    ]
+  },
+  {
+    "id": "free-laptop-smartphone-student-scheme-fake-portal-2024",
+    "slug": "free-laptop-smartphone-student-scheme-fake-portal-2024",
+    "icon": "\ud83d\udcbb",
+    "name": "Free Laptop & Smartphone Student Scheme Fake Portal",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 95,
+    "desc": "Viral WhatsApp messages claiming government is distributing free HP laptops and 5G smartphones to all college students, requiring users to share link to 10 WhatsApp groups.",
+    "sampleMsg": "Free Laptop Scheme 2024: Prime Minister is distributing 5,00,000 free laptops to all students who passed 10th/12th! Register now before stock ends. Share to 10 groups to unlock form: https://free-laptop-yojana.online",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Viral clickbait website forces visitors to share message to 10 WhatsApp contacts to reach 100% progress bar.\n2. Once shared, redirects to ad networks, malware APK downloads, or fake survey forms.\n3. Steals contact databases and bombards students with spam subscriptions.",
+    "redFlags": [
+      "Forces users to share link to multiple WhatsApp groups or contacts before accessing form",
+      "Promises expensive free electronic hardware (laptops, iPhones) to everyone without merit criteria",
+      "Domain is newly created with extensions like .online, .site, .xyz, or .club",
+      "Website has countless flashing ads and fake Facebook comment widgets",
+      "No official government press release or news on Press Information Bureau (PIB)"
+    ],
+    "kyaKarein": [
+      "Never forward viral messages that condition rewards on forwarding to multiple groups",
+      "Verify government announcements on the official PIB Fact Check handle: @PIBFactCheck on X",
+      "Report malicious phishing domains to National Cyber Crime portal"
+    ]
+  },
+  {
+    "id": "court-jury-summons-exemption-payment-trap-2024",
+    "slug": "court-jury-summons-exemption-payment-trap-2024",
+    "icon": "\u2696\ufe0f",
+    "name": "Court Jury Summons Exemption Payment Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 93,
+    "desc": "Email claiming you have been summoned for Supreme Court jury service, offering an 'electronic exemption certificate' for a $120 statutory exemption filing fee.",
+    "sampleMsg": "Supreme Court Sheriff Office: You have been empanelled for criminal jury service commencing next Monday. If you are unable to attend, submit statutory exemption application fee of $120: https://jury-exemption-portal.net",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Exploits reluctance of busy professionals to serve on multi-week jury trials.\n2. Threatens hefty court fines if recipient fails to attend without paying exemption fee.\n3. Siphons credit card data and charges recurring fraudulent amounts.",
+    "redFlags": [
+      "Courts do not charge fees to submit legitimate jury service exemption applications",
+      "Jury summons are delivered by official postal mail, not unsolicited email links",
+      "URL is not the official state justice department portal (.gov.au)",
+      "Demands credit card payment to excuse medical or employment hardship",
+      "Threatens police dispatch for failure to pay exemption charge"
+    ],
+    "kyaKarein": [
+      "Respond to jury summons exclusively via the official contact information printed on your physical paper summons",
+      "Jury exemption applications are processed completely free of charge by court registrars",
+      "Report scam jury emails to Scamwatch"
+    ]
+  },
+  {
+    "id": "pm-free-electricity-300-units-scheme-registration-form-2025",
+    "slug": "pm-free-electricity-300-units-scheme-registration-form-2025",
+    "icon": "\u26a1",
+    "name": "PM Free Electricity 300 Units Scheme Registration Form",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 94,
+    "desc": "Deceptive portal charging Rs 499 for 'free electricity consumer card' claiming to grant lifelong 300 units free monthly power to all households.",
+    "sampleMsg": "National Free Power Mission: Apply for your Green Electricity Subsidy Card! Get 300 units free power every month. One-time smart card processing fee Rs 499: https://free-bijli-subsidy-apply.in",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers exploit state and central political promises of subsidized power.\n2. Direct users to mock payment portal charging Rs 499 card printing fee.\n3. Card is never shipped, and credit card data is monetized on dark web forums.",
+    "redFlags": [
+      "State electricity subsidies are applied automatically on your monthly electricity bill from your licensed DISCOM",
+      "Government never issues separate paid physical plastic cards for electricity subsidies",
+      "Website domain does not end in '.gov.in'",
+      "Demands UPI payment to private individual account",
+      "Contains fabricated testimonials of citizens receiving zero bills"
+    ],
+    "kyaKarein": [
+      "Check electricity subsidy criteria directly with your state power distribution company (DISCOM)",
+      "Never pay money for unverified subsidy discount cards",
+      "Report fraudulent subsidy portals to National Cyber Crime portal"
+    ]
+  },
+  {
+    "id": "post-office-unclaimed-prize-parcel-notification-letter-2024",
+    "slug": "post-office-unclaimed-prize-parcel-notification-letter-2024",
+    "icon": "\ud83d\udcec",
+    "name": "Post Office Unclaimed Prize Parcel Notification Letter",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Govt",
+    "categorySlug": "govt-lottery",
+    "categoryName": "Govt & Lottery",
+    "score": 92,
+    "desc": "Postcard delivered by mail stating a valuable insured parcel containing high-value electronics is held at central postal hub, requiring $20 customs clearance stamp to release.",
+    "sampleMsg": "Parcel Notification Service: A high-value package #US-8912 insured for $1,500 remains unclaimed in our warehouse. Remit $19.95 processing voucher within 5 days to schedule residential delivery.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Sends yellow physical postcard resembling authentic postal service delivery notices.\n2. Instructs recipient to call toll-free number or visit website to pay handling charge.\n3. Once payment is made, sender ships a generic coupon book or worthless promotional brochure.",
+    "redFlags": [
+      "Postcard comes from private company ('Parcel Notification Service') not the US Postal Service (USPS)",
+      "Requires payment to deliver a package you never ordered or sent",
+      "Demands credit card payment over telephone or online portal",
+      "Does not list sender's name or return origin address",
+      "Designed deliberately to deceive recipients into confusing it with an official USPS form"
+    ],
+    "kyaKarein": [
+      "Discard the postcard; USPS leaves official peach/white Form 3849 for missed deliveries",
+      "Never pay money to claim surprise packages from unknown senders",
+      "Report deceptive mailings to the US Postal Inspection Service (USPIS) at uspais.gov"
+    ]
+  },
+  {
+    "id": "upi-collect-request-pin-reverse-trap-pay-to-receive-scam-2026",
+    "slug": "upi-collect-request-pin-reverse-trap-pay-to-receive-scam-2026",
+    "icon": "\ud83d\udcb8",
+    "name": "UPI 'Collect Request' PIN Reverse Trap (Pay to Receive Scam)",
+    "year": 2026,
+    "isLatest": true,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 99,
+    "desc": "Fraudster posing as buyer on OLX sends a UPI 'Collect Request' of Rs 15,000 to the seller, falsely claiming entering UPI PIN will credit the money into seller's bank account. Entering PIN immediately deducts money.",
+    "sampleMsg": "Sir, I am sending you Rs 15,000 for your old refrigerator on Google Pay. You will get a notification on PhonePe / GPay. Just click 'Pay' and enter your 4-digit UPI PIN to receive the money into your account.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer contacts OLX seller agreeing immediately to full asking price without bargaining.\n2. Sends a 'Collect' request in PhonePe or Google Pay instead of initiating a payment transfer.\n3. Convinces victim that UPI technology requires entering their secret PIN to 'receive and verify' incoming deposits, instantly transferring funds to the scammer.",
+    "redFlags": [
+      "Entering your secret UPI PIN ALWAYS DEBITS money from your account \u2014 PIN is NEVER required to receive money",
+      "Notification in payment app displays 'Collect Request' or 'Pay' button instead of showing money credited",
+      "Buyer agrees to purchase high-value furniture or electronics without physical inspection",
+      "Buyer refuses to meet in person or conduct standard cash exchange",
+      "Buyer insists you stay on phone while accepting the payment notification"
+    ],
+    "kyaKarein": [
+      "GOLDEN UPI RULE: You NEVER need to enter your UPI PIN to receive money. PIN is used ONLY to send money.",
+      "Decline all incoming 'Collect' requests from unfamiliar individuals on Google Pay, PhonePe, and Paytm",
+      "Report fraudulent UPI IDs immediately on the National Cyber Crime Reporting Portal (cybercrime.gov.in) and dial 1930"
+    ]
+  },
+  {
+    "id": "predatory-instant-loan-apps-contact-list-blackmail-syndicate-2025",
+    "slug": "predatory-instant-loan-apps-contact-list-blackmail-syndicate-2025",
+    "icon": "\ud83d\udcf1",
+    "name": "Predatory Instant Loan Apps & Contact List Blackmail Syndicate",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 99,
+    "desc": "Unregistered instant loan apps (Lightning Loan, CashPark) offer quick Rs 5,000 loans with zero documents, disbursing only Rs 3,000 after deductions. After 6 days, syndicates morph victim's photos with pornography and broadcast them to their entire phone contact list demanding extortionate payments.",
+    "sampleMsg": "Need emergency cash? Get Rs 10,000 instant loan in 2 minutes without CIBIL score! Install Cash-Express.apk now. After 6 days: Gang texts all contacts: 'This person is a fraud defaulter and sex offender [attached morphed explicit photo]'.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Victims install unverified APK files advertised on social media promising instant collateral-free microloans.\n2. App mandates permissions for complete Contacts, Gallery, and Call Logs.\n3. Disburses partial loan (Rs 2,800 on Rs 5,000 loan) with 50% interest due in 6 days; if unpaid, call center agents harass elderly parents and female colleagues with obscene edited photos.",
+    "redFlags": [
+      "Loan app is downloaded as an APK file from web links or obscure third-party websites outside Google Play Store",
+      "App demands permissions completely irrelevant to lending: full Contacts book, Camera, and Photo Gallery access",
+      "Tenure of the loan is extremely short (5 to 7 days) instead of standard statutory minimums (90 days)",
+      "Astronomical processing fees deducted upfront (taking Rs 2,000 out of Rs 5,000 loan)",
+      "Lending company has no official Non-Banking Financial Company (NBFC) license registered with the Reserve Bank of India"
+    ],
+    "kyaKarein": [
+      "Borrow exclusively from RBI-registered banks and licensed NBFCs (verify company on rbi.org.in)",
+      "Never grant Contacts or Media Storage permissions to financial applications",
+      "If blackmailed, do NOT pay; file immediate police report under IPC Section 506/509 and dial 1930"
+    ]
+  },
+  {
+    "id": "business-email-compromise-bec-wire-redirection-fraud-2026",
+    "slug": "business-email-compromise-bec-wire-redirection-fraud-2026",
+    "icon": "\ud83d\udcbc",
+    "name": "Business Email Compromise (BEC) Wire Redirection Fraud",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 98,
+    "desc": "Hackers compromise corporate email accounts of a major vendor or supplier, monitor invoice threads, and send updated wire instructions directing a $250,000 invoice payment to a criminal offshore bank account.",
+    "sampleMsg": "Dear Accounts Payable Team, Please note our primary bank account is undergoing corporate year-end audit. For Invoice #INV-8921 ($185,000), remit payment to our secondary escrow account at Wells Fargo: [New Account Details].",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attackers gain access to vendor's email system via spear-phishing or credential theft.\n2. Set up hidden inbox forwarding rules and monitor pending multi-million dollar transactions.\n3. At the exact moment payment is due, inject an email from the vendor's real address (or lookalike domain) providing 'updated banking coordinates'.",
+    "redFlags": [
+      "Sudden last-minute modification of standard wire transfer routing coordinates or bank names",
+      "Supplier claims urgent financial audit, tax restructuring, or banking migration necessitates new account details",
+      "Email domain has subtle character substitution (e.g. @supp1ier.com instead of @supplier.com)",
+      "Sender urges accounts payable staff to bypass standard dual-control phone confirmation protocols",
+      "Telephone number listed in the new invoice footer differs from the established vendor contract directory"
+    ],
+    "kyaKarein": [
+      "MANDATORY VERIFICATION: Always verify any bank account modification via known, out-of-band telephone contact with the vendor's chief financial officer",
+      "Establish strict dual-signature verbal verification policies for all electronic wire transfers exceeding $5,000",
+      "If fraudulent transfer occurred within 48 hours, contact your bank immediately and request a Federal Reserve Financial Fraud Kill Chain recall"
+    ]
+  },
+  {
+    "id": "atm-skimming-deep-insert-reader-card-data-theft-2025",
+    "slug": "atm-skimming-deep-insert-reader-card-data-theft-2025",
+    "icon": "\ud83c\udfe7",
+    "name": "ATM Skimming & Deep-Insert Reader Card Data Theft",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 96,
+    "desc": "Criminals install microscopic magnetic stripe reader inserts inside ATM card slots and hidden pinhole spy cameras or false keypads above keypad, cloning cards and stealing PINs for overnight cash withdrawals.",
+    "sampleMsg": "Customer inserts debit card into standalone outdoor ATM at gas station. Deep-insert skimmer records magnetic stripe; micro-camera disguised as brochure holder records 4-digit PIN. Card cloned for $1,000 cash withdrawals in Mexico.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Gang attaches ultra-thin wafer skimmer deep inside the motorized ATM throat mechanism.\n2. Pinhole camera positioned above keyboard records customer fingers entering PIN.\n3. Data transmitted via Bluetooth to nearby vehicle; gang burns cloned magnetic cards and drains daily limits.",
+    "redFlags": [
+      "ATM card slot bezel feels loose, unusually bulky, or wobbly when physically manipulated",
+      "Keypad feels spongy, misaligned, or raised higher than the surrounding metal console",
+      "Unusual plastic attachments, fake mirrors, or brochure holders mounted directly above the keypad",
+      "ATM is located in poorly lit, unmonitored standalone outdoor location (convenience stores, gas stations)",
+      "Card insertion feels unusually tight or encounters abnormal mechanical resistance"
+    ],
+    "kyaKarein": [
+      "Always cover the keypad completely with your other hand or wallet while typing your PIN",
+      "Use ATMs physically located inside well-lit, camera-monitored bank branch vestibules",
+      "Use contactless NFC card tapping (Apple Pay / Google Wallet / contactless chip) at ATMs instead of inserting magnetic cards"
+    ]
+  },
+  {
+    "id": "fake-spoofed-upi-payment-screenshot-trick-2025",
+    "slug": "fake-spoofed-upi-payment-screenshot-trick-2025",
+    "icon": "\ud83d\udcf1",
+    "name": "Fake Spoofed UPI Payment Screenshot Trick",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 94,
+    "desc": "Customer in retail shop or taxi shows a realistic fake Paytm or Google Pay app on their phone displaying 'Paid Rs 1,800 to [Shop Name]' with animated green tick mark and mock soundbox audio, walking away with goods without real money ever being transferred.",
+    "sampleMsg": "Customer purchases branded shoes worth Rs 3,500. Shows shopkeeper screen of 'Paytm Spoof' app displaying green checkmark: 'Payment Successful: Rs 3,500'. Shopkeeper checks phone 10 minutes later: zero money received in bank account.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer installs rogue Android app named 'Paytm Spoof' or 'GPay Prank' from APK repositories.\n2. Inputs shopkeeper's business name, phone number, and exact purchase amount.\n3. App generates pixel-perfect imitation of successful payment screen complete with realistic tick animation and synthetic voice chime.",
+    "redFlags": [
+      "Customer shows payment screen on their phone screen but your authentic bank SMS or merchant soundbox did NOT chime",
+      "Customer rushes to leave shop immediately without waiting for your personal confirmation",
+      "Customer claims: 'Server is slow, bank SMS takes 15 minutes, look at my successful screenshot!'",
+      "Transaction reference number (UTR) is missing or has incorrect digit length",
+      "Shopkeeper's own merchant business app shows zero new transactions"
+    ],
+    "kyaKarein": [
+      "Never release goods based on customer's phone screen; verify payment solely on YOUR OWN phone or registered Soundbox speaker",
+      "Install a verified merchant voice alert device (Paytm / PhonePe Soundbox) that announces successful deposits in real time",
+      "If customer insists payment went through, ask them to wait until credit is reflected in your merchant dashboard"
+    ]
+  },
+  {
+    "id": "cheque-washing-chemical-alteration-signature-fraud-2024",
+    "slug": "cheque-washing-chemical-alteration-signature-fraud-2024",
+    "icon": "\u270d\ufe0f",
+    "name": "Cheque Washing & Chemical Alteration Signature Fraud",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 95,
+    "desc": "Thieves fish outgoing paper checks from blue USPS postal collection boxes, erase the payee name and dollar amount using acetone chemical solvent, and rewrite check to a criminal mule for $12,500.",
+    "sampleMsg": "Homeowner mails $45 water utility paper check from neighborhood blue postal box. Thieves steal mail, wash check with nail polish remover, change payee to 'Marcus Williams' and amount to '$8,450', and cash at check cashing store.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Criminals use stolen universal postal collection keys or adhesive string traps to fish envelopes from street mailboxes.\n2. Use household solvents (acetone, bleach) to chemically dissolve standard ballpoint pen ink while preserving original signature.\n3. Rewrite payee and inflated dollar amount in indelible gel pen and deposit into newly opened mule accounts.",
+    "redFlags": [
+      "Checks written to utilities or landlords are not credited to your billing account despite showing cleared at bank",
+      "Digital check image in online banking shows altered, mismatched, or trembling handwriting in payee line",
+      "Check cleared for significantly higher amount than recorded in your personal checkbook register",
+      "Paper check had been dropped inside a street collection box rather than inside a postal facility",
+      "Payee name does not match the invoice or merchant you intended to pay"
+    ],
+    "kyaKarein": [
+      "Use indelible pigmented gel ink pens (e.g. Uni-ball 207) which chemically bond with paper fibers and resist solvents",
+      "Drop outgoing mail containing checks directly inside the postal lobby rather than outdoor street boxes",
+      "Switch to electronic online bill pay services instead of mailing paper checks through the mail"
+    ]
+  },
+  {
+    "id": "credit-card-limit-enhancement-otp-phishing-call-2025",
+    "slug": "credit-card-limit-enhancement-otp-phishing-call-2025",
+    "icon": "\ud83d\udcb3",
+    "name": "Credit Card Limit Enhancement OTP Phishing Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 97,
+    "desc": "Caller claims to be credit card division manager offering to double credit card limit from Rs 1,50,000 to Rs 3,00,000 with zero charges and lifetime waiver of annual fees, requesting card details and OTP.",
+    "sampleMsg": "Good afternoon sir, I am calling from ICICI/HDFC Credit Card Upgrade Department. Your card has been upgraded to Platinum with limit increased to Rs 3,50,000. Just verify your 16-digit card number and OTP to activate new limit.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Telemarketer speaks with professional executive authority quoting victim's name and partial card type.\n2. Convinces victim to read out 16-digit card number, expiry date, and CVV on back of card.\n3. Triggers international e-commerce transaction and asks for incoming SMS 'limit authorization code' (which is the actual purchase OTP).",
+    "redFlags": [
+      "Banks NEVER call customers asking for card CVV, expiry date, or OTP to increase credit limits",
+      "Genuine credit card limit increases are offered and accepted directly inside your official mobile banking app with a single click",
+      "Caller claims card will be downgraded if you refuse the free limit enhancement offer today",
+      "Caller asks you to read out the 6-digit OTP received on your mobile phone",
+      "Call is received from standard mobile number instead of verified bank corporate contact lines"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; genuine banks NEVER ask for card numbers or OTPs over phone calls",
+      "Accept legitimate limit enhancement offers only through your official mobile banking app under 'Card Services'",
+      "If details were disclosed, immediately lock card using bank mobile app and call fraud hotline to block"
+    ]
+  },
+  {
+    "id": "aadhaar-enabled-payment-system-aeps-biometric-cash-drain-2025",
+    "slug": "aadhaar-enabled-payment-system-aeps-biometric-cash-drain-2025",
+    "icon": "\ud83d\udd90\ufe0f",
+    "name": "Aadhaar Enabled Payment System (AePS) Biometric Cash Drain",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 98,
+    "desc": "Criminals obtain leaked biometric fingerprint scans from property registration deeds, clone fingerprints onto silicone gummy molds, and make unauthorized cash withdrawals from victim's bank account via AePS micro-ATMs without requiring OTP or ATM card.",
+    "sampleMsg": "Victim wakes up to SMS: 'Rs 10,000 withdrawn from your bank account via AePS Micro-ATM at 3:15 AM'. Victim still has ATM card in wallet and received no SMS OTP.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Fraudsters scrape land registry and deed documents containing scanned biometric fingerprints from state revenue portals.\n2. Fabricate 3D silicone copies of victim's thumbprint.\n3. Approach corrupt or unaware business correspondents (BC) operating AePS micro-ATMs in remote districts, withdrawing daily cash limits using cloned fingerprints and victim's Aadhaar number.",
+    "redFlags": [
+      "Unauthorized cash withdrawal occurs without physical ATM card usage or incoming SMS OTP",
+      "SMS notification mentions transaction mode as 'AePS Cash Withdrawal' or 'Micro-ATM'",
+      "Victim recently completed property registration, land sale, or SIM card KYC where fingerprints were collected",
+      "Multiple rapid withdrawals occurring in Rs 10,000 increments (statutory AePS transaction ceiling)",
+      "Transactions originate from unfamiliar rural customer service points in other states"
+    ],
+    "kyaKarein": [
+      "CRITICAL PROTECTION: Lock your Aadhaar biometrics immediately using the official mAadhaar app or myaadhaar.uidai.gov.in (biometrics stay locked until temporarily unlocked for 10 minutes when needed)",
+      "File complaint with National Cyber Crime Helpline 1930 and notify your bank's branch manager to disable AePS facility",
+      "Check Bank-Aadhaar linking status on UIDAI portal to manage linked bank accounts"
+    ]
+  },
+  {
+    "id": "mandate-fraud-direct-debit-account-hijack-2024",
+    "slug": "mandate-fraud-direct-debit-account-hijack-2024",
+    "icon": "\ud83d\udcc4",
+    "name": "Mandate Fraud & Direct Debit Account Hijack",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 94,
+    "desc": "Criminals contact a business or consumer pretending to be an organization to which regular payments are made (supplier, landlord, sports club), instructing them to redirect standing orders or direct debits to a new bank account.",
+    "sampleMsg": "Notice from Property Management: Our rental collection account has changed to Barclays Bank. Please cancel your existing standing order of \u00a31,450/month and setup new recurring transfer to account #891241.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Scammers identify regular recurring payment obligations from discarded mail or intercepted statements.\n2. Contact paying party with formal forged letterhead announcing new banking coordinates.\n3. Recurring monthly lease or supplier payments flow to criminal accounts for months before discovery.",
+    "redFlags": [
+      "Notification of changes to bank details received out of the blue by email or standard postal letter",
+      "Urgent request to alter recurring standing order instructions before the next billing cycle",
+      "New bank account is held in an individual's name rather than the corporate business name",
+      "Contact phone number on the letterhead differs from previous agreements",
+      "No formal notice was provided on the company's official customer portal"
+    ],
+    "kyaKarein": [
+      "Never amend recurring payment mandates or direct debits without independently verifying the change with the payee using trusted historical phone numbers",
+      "Check with your bank to verify if payments fall under the Direct Debit Guarantee scheme",
+      "Report mandate fraud attempts immediately to Action Fraud"
+    ]
+  },
+  {
+    "id": "cardless-atm-cash-withdrawal-otp-interception-2025",
+    "slug": "cardless-atm-cash-withdrawal-otp-interception-2025",
+    "icon": "\ud83c\udfe7",
+    "name": "Cardless ATM Cash Withdrawal OTP Interception",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 96,
+    "desc": "Scammer initiates cardless cash withdrawal (SBI YONO Cash / ICICI Cardless Cash) from compromised netbanking account, calling victim pretending to be security officer asking for 'system security code' to complete cash withdrawal at physical ATM.",
+    "sampleMsg": "Sir, this is Bank Security. We are locking an unauthorized login on your YONO account. A 6-digit cancellation reference was sent to your phone. Read it immediately to prevent hacker withdrawal.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer acquires victim's netbanking login credentials via phishing.\n2. Generates an instant Cardless Cash Withdrawal transaction for Rs 20,000 on mobile banking app.\n3. Bank texts a 6-digit transaction PIN; scammer tricks victim into revealing it over phone while standing directly in front of an ATM, dispensing physical currency.",
+    "redFlags": [
+      "Incoming SMS explicitly states: 'Cardless Cash Withdrawal Reference Code for ATM'",
+      "Caller claims code is for 'security lockdown' or 'cancellation' when the text clearly states cash withdrawal",
+      "High urgency demanding code within 3 minutes before reference expires",
+      "Caller refuses to allow customer to contact local branch",
+      "Transaction initiated during late night or early morning hours"
+    ],
+    "kyaKarein": [
+      "NEVER share cardless ATM cash withdrawal codes or reference numbers with anyone",
+      "Read SMS messages carefully: never confuse a cash withdrawal authorization code with a cancellation token",
+      "Freeze netbanking access immediately via your bank mobile app if credentials are compromised"
+    ]
+  },
+  {
+    "id": "debit-card-cash-back-credit-reversal-scam-2025",
+    "slug": "debit-card-cash-back-credit-reversal-scam-2025",
+    "icon": "\ud83c\udf81",
+    "name": "Debit Card Cash-Back Credit Reversal Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 93,
+    "desc": "Fraudster calls offering a Rs 5,000 cashback credit on your debit card from Diwali shopping, directing you to open your mobile banking app and approve an IMPS transaction to receive credit.",
+    "sampleMsg": "Dear customer, you won Rs 4,800 cashback on your festive debit card spends! Open your bank mobile app, go to 'Funds Transfer' and enter this verification merchant code 098214 to receive cash in your account.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer plays on greed for free festive cash rewards.\n2. Convinces victim that inputting numbers into 'Funds Transfer' or 'Pay' tab deposits money.\n3. The 'verification merchant code' is actually the scammer's bank account or UPI ID, transferring victim's savings out.",
+    "redFlags": [
+      "Banks NEVER ask customers to initiate outgoing fund transfers or enter account numbers to receive cashback",
+      "Legitimate cashback is credited automatically to your account statement with zero customer interaction",
+      "Caller guides you step-by-step through outgoing transfer menus in your mobile banking app",
+      "Caller uses misleading terms like 'credit validation code' to disguise an outgoing account number",
+      "Demands transaction approval via biometric fingerprint or transaction PIN"
+    ],
+    "kyaKarein": [
+      "Legitimate cashback rewards are automatically deposited without requiring manual transfers",
+      "Never initiate outgoing fund transfers based on instructions from incoming telephone callers",
+      "Hang up and check official reward points balance directly in your bank mobile application"
+    ]
+  },
+  {
+    "id": "zelle-venmo-bank-account-drainage-phishing-call-2025",
+    "slug": "zelle-venmo-bank-account-drainage-phishing-call-2025",
+    "icon": "\ud83c\udfe6",
+    "name": "Zelle / Venmo Bank Account Drainage Phishing Call",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 97,
+    "desc": "Caller impersonating Chase or Bank of America Fraud Department texts asking if you authorized a $1,200 Zelle payment. When you reply 'NO', they call you immediately, instructing you to 'reverse the payment' by sending Zelle to your own phone number, which actually transfers funds to the scammer.",
+    "sampleMsg": "Chase Fraud Alert: Did you authorize a Zelle payment of $1,400 to 'Zelle Transfer'? Reply YES or NO. [User replies NO]. Caller ID 'Chase Bank' calls: 'To reverse this fraud, send $1,400 to your own phone number via Zelle.'",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammer links victim's phone number to a criminal Zelle account in their own bank profile.\n2. Calls victim using spoofed bank telephone numbers claiming to stop an active fraud in progress.\n3. Guides victim to send money to 'themselves' via Zelle, which deposits directly into the scammer's linked institution.",
+    "redFlags": [
+      "Bank fraud representatives NEVER ask you to send money to yourself or anyone else via Zelle to reverse a transaction",
+      "High urgency claiming funds will be permanently lost if you do not complete the transfer while on the line",
+      "Caller asks for the one-time passcode sent to your phone to 'verify your identity'",
+      "Caller instructs you to ignore warning prompts in the banking app ('Recipient is a new contact')",
+      "Caller claims internal bank software will automatically bounce the test transaction back"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; your bank will NEVER ask you to make a Zelle transfer to stop fraud",
+      "Call your bank directly using the telephone number printed on the back of your debit card",
+      "Report fraudulent Zelle activity to your financial institution and file a report at reportfraud.ftc.gov"
+    ]
+  },
+  {
+    "id": "foreign-currency-wire-transfer-intermediary-fee-trap-2024",
+    "slug": "foreign-currency-wire-transfer-intermediary-fee-trap-2024",
+    "icon": "\ud83c\udf10",
+    "name": "Foreign Currency Wire Transfer Intermediary Fee Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 92,
+    "desc": "Victim receives a notification from a fake international commercial bank stating an incoming wire transfer of $500,000 is on hold pending payment of an IMF / World Bank currency conversion stamp.",
+    "sampleMsg": "Geneva Private Bank: Inward wire transfer of $750,000 is currently held in our clearing vault. To release SWIFT MT103 transmission to your local bank, pay $3,500 International Monetary Clearance Stamp.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Combines elements of commercial business fraud and inheritance schemes.\n2. Sends fabricated SWIFT transmission slips and central bank clearance documents.\n3. Collects sequential fees for imaginary international regulatory certifications.",
+    "redFlags": [
+      "You are not legitimately expecting any large international commercial wire transfer",
+      "Central banks, the IMF, and SWIFT do NOT hold funds or demand fees from individual citizens",
+      "Legitimate international wire processing fees are deducted directly from the transmitted principal amount",
+      "Documents feature fake gold seals, national crests, and forged signatures of finance ministers",
+      "Payment of fees is demanded via cryptocurrency or wire transfer to private accounts"
+    ],
+    "kyaKarein": [
+      "Never pay advance clearance fees or tax deposits to receive international wire transfers",
+      "Consult the international wire department at your local bank to inspect any suspicious SWIFT documentation",
+      "Report international wire fraud attempts to Interpol and national police authorities"
+    ]
+  },
+  {
+    "id": "overdraft-protection-fee-refund-phone-trap-2024",
+    "slug": "overdraft-protection-fee-refund-phone-trap-2024",
+    "icon": "\u2696\ufe0f",
+    "name": "Overdraft Protection Fee Refund Phone Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 91,
+    "desc": "Caller claims your bank was fined by federal regulators for illegal overdraft fee overcharges and you are entitled to a $450 direct compensation refund if you confirm your routing and account number.",
+    "sampleMsg": "Consumer Financial Protection Bureau Settlement: You have $480 in refunded bank overdraft penalty fees ready for direct deposit into your checking account. Press 1 to verify your routing and account numbers.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Telemarketers exploit consumer resentment over high bank overdraft penalty fees.\n2. Claim federal class action or regulatory enforcement requires immediate refund distribution.\n3. Collects bank routing numbers, account numbers, and debit card credentials to initiate unauthorized ACH debits.",
+    "redFlags": [
+      "Regulatory agencies (CFPB, FDIC) never call consumers asking for bank details to distribute settlement funds",
+      "Official class action settlements are administered via formal postal notices and dedicated settlement portals",
+      "Caller asks for full checking account details, debit card CVV, or online banking passwords",
+      "Robocall uses vague agency names like 'Consumer Settlement Claims Division'",
+      "Demands immediate response claiming unclaimed settlement funds will revert to the state treasury"
+    ],
+    "kyaKarein": [
+      "Hang up the phone; do not disclose banking details to unsolicited callers",
+      "Verify legitimate class action settlement information on consumeraction.org or ftc.gov/enforcement/refunds",
+      "Report imposter calls to the Consumer Financial Protection Bureau (CFPB) at consumerfinance.gov"
+    ]
+  },
+  {
+    "id": "dormant-bank-account-unclaimed-balance-release-scam-2025",
+    "slug": "dormant-bank-account-unclaimed-balance-release-scam-2025",
+    "icon": "\ud83c\udfe6",
+    "name": "Dormant Bank Account Unclaimed Balance Release Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 93,
+    "desc": "Caller claims an old forgotten savings account opened in your name has an unclaimed balance of Rs 1,85,000 under RBI UDGAM portal, requiring Rs 12,000 stamp duty fee to transfer to your active account.",
+    "sampleMsg": "RBI UDGAM Cell: Unclaimed deposit of Rs 1,85,000 detected under your PAN in an old Punjab National Bank account. Pay Rs 11,500 Stamp Duty Clearance to transfer funds directly to your active SBI account.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers exploit awareness of the Reserve Bank of India's genuine UDGAM unclaimed deposits portal.\n2. Forge official RBI letterheads showing large unclaimed balances against victim's name.\n3. Demand upfront processing and legal clearance fees before disappearing.",
+    "redFlags": [
+      "The RBI UDGAM portal is 100% FREE to search and claim unclaimed deposits",
+      "The Reserve Bank of India NEVER calls citizens, holds personal funds, or demands clearance fees",
+      "Claims on dormant bank accounts are processed directly and free of charge by the holding commercial bank",
+      "Payment requested via UPI to a private individual account rather than official government treasury",
+      "Threatens that unclaimed funds will be permanently confiscated by government if not claimed today"
+    ],
+    "kyaKarein": [
+      "Search for genuine unclaimed deposits for free on the official RBI UDGAM portal: udgam.rbi.org.in",
+      "Visit the nearest branch of the bank where you previously held an account to file a free claim",
+      "Never pay third parties or agents to claim your own dormant bank deposits"
+    ]
+  },
+  {
+    "id": "cryptocurrency-exchange-account-freeze-wire-extortion-2025",
+    "slug": "cryptocurrency-exchange-account-freeze-wire-extortion-2025",
+    "icon": "\ud83e\ude99",
+    "name": "Cryptocurrency Exchange Account Freeze Wire Extortion",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 96,
+    "desc": "Victim receives email mimicking Coinbase or Binance stating account is flagged for international money laundering and all cryptocurrency will be forfeited unless $5,000 security collateral is wired.",
+    "sampleMsg": "Coinbase Compliance Alert: Your account has been flagged for AML Section 314 violation. To prevent total asset forfeiture and federal referral, transfer $5,000 security deposit to our compliance escrow wallet within 24h.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Spear-phishing email uses official exchange branding and authoritative regulatory terminology.\n2. Link opens fake compliance portal demanding security collateral.\n3. Scammers siphon wired collateral and demand additional 'unfreeze fees'.",
+    "redFlags": [
+      "Legitimate crypto exchanges NEVER require users to deposit additional collateral to resolve AML compliance reviews",
+      "Sender email address is not from official corporate domain (e.g. uses @coinbase-compliance.net instead of @coinbase.com)",
+      "Threatens total asset forfeiture within arbitrary short deadline (24 hours)",
+      "Requires transfer of funds into an external unhosted cryptocurrency wallet address",
+      "Refuses in-app customer support ticketing verification"
+    ],
+    "kyaKarein": [
+      "Log in to your cryptocurrency exchange account exclusively by typing the official URL directly in your browser",
+      "Contact exchange customer support solely through the verified in-app help center",
+      "Report compliance phishing emails to security@coinbase.com or security@binance.com"
+    ]
+  },
+  {
+    "id": "deceased-relative-estate-probate-bank-account-wire-trap-2024",
+    "slug": "deceased-relative-estate-probate-bank-account-wire-trap-2024",
+    "icon": "\ud83d\udcdc",
+    "name": "Deceased Relative Estate Probate Bank Account Wire Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "UK",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 92,
+    "desc": "Letter from fake probate solicitor in London claiming an estranged wealthy relative with your identical surname died intestate leaving \u00a34.8M in Barclays Bank, asking for \u00a33,000 legal fee to release inheritance.",
+    "sampleMsg": "Chancery Chambers London: Following the untimely passing of Sir Arthur [Your Surname], we have identified you as the surviving next-of-kin to his \u00a34,800,000 estate. Pay \u00a32,850 probate administration fee to file claim.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Scammers scrape phone directories to match common surnames with probate legal notices.\n2. Mail formal letters with impressive legal terminology and fake Law Society stamps.\n3. Request sequential administrative fees for probate filing, inheritance tax bonds, and overseas wire release.",
+    "redFlags": [
+      "You have never heard of or met the wealthy relative mentioned in the letter",
+      "Solicitor asks for payment of legal fees to a private overseas bank account or via money transfer",
+      "Solicitor uses a free webmail address or newly registered domain not listed on the Solicitors Regulation Authority (SRA)",
+      "Urges complete secrecy and demands you do not consult your personal family lawyer",
+      "Offers to split the estate 50/50 between you and the law firm"
+    ],
+    "kyaKarein": [
+      "Verify any UK solicitor's credentials on the official Solicitors Regulation Authority directory: sra.org.uk",
+      "Legitimate estate probate fees are deducted from the estate assets, never paid out-of-pocket by beneficiaries in advance",
+      "Report fraudulent inheritance letters to Action Fraud"
+    ]
+  },
+  {
+    "id": "credit-card-skimming-gas-pump-overlay-trap-2024",
+    "slug": "credit-card-skimming-gas-pump-overlay-trap-2024",
+    "icon": "\u26fd",
+    "name": "Credit Card Skimming Gas Pump Overlay Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 95,
+    "desc": "Thieves install external Bluetooth overlay skimmers over outdoor gas station payment terminals, recording magnetic stripe data and PINs as drivers fuel up, creating counterfeit cards overnight.",
+    "sampleMsg": "Driver swipes debit card at gas pump #4. Concealed overlay skimmer reads card track data; Bluetooth transmitter beams card details to criminal vehicle parked across street. $800 drained from checking account next day.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Gang opens pump dispenser cabinet with universal master key or snaps molded overlay over reader.\n2. Skimmer stores card data or broadcasts it via Bluetooth to fraudsters sitting in nearby parked car.\n3. Drains victim bank accounts via ATM withdrawals and gift card purchases at big-box retailers.",
+    "redFlags": [
+      "The card reader protruding from the pump looks loose, crooked, or different from adjacent fuel pumps",
+      "Security seal tape across the pump cabinet door is broken, cut, or shows the word 'VOID'",
+      "Card insertion slot feels unnaturally thick or requires excessive physical force to push card in",
+      "Gas pump is located at the furthest perimeter edge away from the attendant window and security cameras",
+      "Keypad feels thicker than standard metal keypad"
+    ],
+    "kyaKarein": [
+      "Pay inside with the station cashier or use modern contactless tapping (Apple Pay / Google Pay) at the pump",
+      "Choose fuel pumps closest to the cashier window, which are least likely to be tampered with",
+      "Use credit cards rather than debit cards at fuel pumps to avoid direct exposure of checking account funds"
+    ]
+  },
+  {
+    "id": "fixed-deposit-fd-premature-liquidation-phishing-trap-2025",
+    "slug": "fixed-deposit-fd-premature-liquidation-phishing-trap-2025",
+    "icon": "\ud83c\udfe6",
+    "name": "Fixed Deposit (FD) Premature Liquidation Phishing Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 98,
+    "desc": "Victim receives SMS that their Rs 10 Lakh Bank Fixed Deposit has been prematurely broken and credited to savings account. Moments later, caller guides victim to 'cancel the liquidation' by clicking a link that actually wires funds away.",
+    "sampleMsg": "SBI Alert: Your Term Deposit #FD8921 for Rs 8,00,000 has been closed prematurely and credited to savings A/c. If unauthorized, click immediately to lock transaction: https://sbi-fd-secure.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Hackers access victim netbanking via past data breaches or malware.\n2. Liquidate legitimate fixed deposits into victim's own checking account, triggering genuine bank SMS alerts.\n3. Terrified victim clicks phishing link to 'cancel liquidation', providing OTP that authorizes transfer of the newly freed cash to scammer accounts.",
+    "redFlags": [
+      "SMS received regarding liquidation of fixed deposits that you never initiated",
+      "Cancellation link destination is an unfamiliar third-party URL rather than official bank netbanking portal",
+      "Incoming caller claims to be senior bank manager assisting with emergency fund recovery",
+      "Page prompts for high-value transaction OTP while claiming it is an 'account freeze code'",
+      "High emotional panic manipulated to prevent victim from calling local branch manager"
+    ],
+    "kyaKarein": [
+      "Never click links inside SMS alerts regarding account transactions",
+      "If fixed deposits were prematurely broken, immediately open your official mobile banking app and FREEZE all outward transactions / lock netbanking",
+      "Visit your home bank branch immediately in person to have netbanking credentials reset by staff"
+    ]
+  },
+  {
+    "id": "fake-check-cashing-mystery-shopper-financial-scam-2024",
+    "slug": "fake-check-cashing-mystery-shopper-financial-scam-2024",
+    "icon": "\ud83d\udd75\ufe0f",
+    "name": "Fake Check Cashing Mystery Shopper Financial Scam",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 94,
+    "desc": "Victim is hired as a 'Secret Mystery Shopper' evaluating Walmart and Western Union services, receiving a $2,800 cashier's check to deposit, keep $400 commission, and evaluate Western Union by wiring $2,400.",
+    "sampleMsg": "Mystery Shopper Assignment: Welcome to Premier Consumer Research! Enclosed is your first evaluation assignment and $2,850 corporate check. Deposit check in your bank, keep $450 pay, and test Western Union by wiring $2,400 to evaluator address.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Sends official-looking employment packet with authentic-looking cashier's check.\n2. Instructs victim to deposit check; bank makes funds available within 24 hours under federal law.\n3. Victim wires real cash via Western Union; two weeks later, the counterfeit check bounces, leaving victim liable for the entire $2,850 deficit.",
+    "redFlags": [
+      "You are hired for a job without an interview or formal application process",
+      "Employer sends you a check and instructs you to wire money back via Western Union, MoneyGram, or gift cards",
+      "Checks arrive from an unrelated third-party corporate entity",
+      "Company insists you complete the evaluation within 48 hours before the check has time to clear",
+      "Legitimate mystery shopping companies NEVER require shoppers to wire money as part of an assignment"
+    ],
+    "kyaKarein": [
+      "Tear up the check; legitimate mystery shopping agencies (MSPA members) never ask workers to wire funds",
+      "Understand check clearing rules: funds showing 'available' does NOT mean the check has genuinely cleared",
+      "Report fraudulent check cashing scams to the FTC and US Postal Inspection Service"
+    ]
+  },
+  {
+    "id": "account-takeover-ato-multi-factor-authentication-push-fatigue-2025",
+    "slug": "account-takeover-ato-multi-factor-authentication-push-fatigue-2025",
+    "icon": "\ud83d\udd14",
+    "name": "Account Takeover (ATO) Multi-Factor Authentication Push Fatigue",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 97,
+    "desc": "Attackers obtain bank password and trigger dozens of 2FA push notifications to the victim's phone at 3:00 AM ('MFA Fatigue'), then call pretending to be security support telling victim to press 'Approve' to stop the notification spam.",
+    "sampleMsg": "Phone chimes with 40 consecutive bank 2FA login approval pop-ups at 3:30 AM. Phone rings: 'This is Bank Fraud Support. Your account is being attacked by Russian IP. Tap Approve on the next prompt to lock your account.'",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attackers acquire corporate or banking password from dark web leaks.\n2. Script automated bot to bombard victim's mobile authentication app with continuous push approvals.\n3. Exhausted or confused victim either taps 'Approve' accidentally to stop the ringing or complies with social engineer caller.",
+    "redFlags": [
+      "Receiving dozens of unprompted 2FA login approval requests when you are not actively logging in",
+      "Notifications occurring during unusual middle-of-the-night hours",
+      "Incoming caller claims that pressing 'Approve' or sharing a 2FA prompt will lock or protect your account",
+      "Banking app prompt displays login attempt from unfamiliar city, state, or foreign IP address",
+      "Caller urges you to accept the prompt to stop the notification spamming"
+    ],
+    "kyaKarein": [
+      "NEVER tap 'Approve' on two-factor authentication prompts you did not personally trigger",
+      "Select 'Deny' or 'Report Fraud' directly within the authentication prompt",
+      "Change your primary banking password immediately using an independent, secure device"
+    ]
+  },
+  {
+    "id": "fake-tax-deducted-at-source-tds-refund-credit-scam-2025",
+    "slug": "fake-tax-deducted-at-source-tds-refund-credit-scam-2025",
+    "icon": "\ud83e\uddfe",
+    "name": "Fake Tax Deducted at Source (TDS) Refund Credit Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 95,
+    "desc": "SMS claiming excess TDS of Rs 18,450 deducted on your salary has been approved for instant credit into your bank account, linking to fake Income Tax e-Filing portal.",
+    "sampleMsg": "Income Tax Dept: Excess TDS refund of Rs 18,450 for Assessment Year 2024-25 has been approved. Update your bank account details here to receive direct transfer: https://incometax-tds-refund.top",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Dispatched during corporate quarterly TDS filing windows.\n2. Phishing link clones national Income Tax e-Filing login portal.\n3. Captures PAN, netbanking password, debit card credentials, and OTP under pretense of refund processing.",
+    "redFlags": [
+      "Official Income Tax Department portal is incometax.gov.in (ends strictly in '.gov.in')",
+      "Income tax refunds are processed automatically into pre-validated bank accounts without third-party links",
+      "SMS sent from private 10-digit mobile number rather than registered government header (e.g. ITDEPT)",
+      "Page prompts for debit card PIN and CVV to 'credit' refund amount",
+      "Threatens that unclaimed TDS refund will lapse at the end of the month"
+    ],
+    "kyaKarein": [
+      "Check tax refund status exclusively by logging into the official portal: incometax.gov.in",
+      "Never click on refund links received via SMS or WhatsApp",
+      "Forward fraudulent tax phishing communications to webmanager@incometax.gov.in"
+    ]
+  },
+  {
+    "id": "de-risking-safe-holding-escrow-account-wire-fraud-2025",
+    "slug": "de-risking-safe-holding-escrow-account-wire-fraud-2025",
+    "icon": "\ud83e\udd98",
+    "name": "De-Risking / Safe Holding Escrow Account Wire Fraud",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Australia",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 98,
+    "desc": "Caller pretending to be from Commonwealth Bank or ANZ fraud operations tells customer that rogue bank employees are stealing funds, instructing them to transfer $65,000 to a 'Reserve Bank Safe Holding Facility'.",
+    "sampleMsg": "This is Commonwealth Bank Fraud Operations. An internal data leak at our Sydney branch has compromised your accounts. To protect your home loan equity, transfer $45,000 to our Reserve Bank holding facility.",
+    "source": "Scamwatch",
+    "kaiseHotaHai": "1. Scammers spoof Australian major bank customer service phone numbers.\n2. Convince customer that banking systems are unsafe due to criminal internal staff.\n3. Guide customer through transferring high-value sums via PayID or Osko to money mule accounts.",
+    "redFlags": [
+      "Australian banks will NEVER ask customers to move money to another account to keep it safe",
+      "Caller claims that bank branch staff cannot be trusted and tells customer to lie about transfer purpose",
+      "High urgency requiring payment while remaining continuously on the telephone call",
+      "Payment instructions use PayID or Osko transfer to personal individual account names",
+      "Caller claims funds will be returned within 24 hours once security patch is installed"
+    ],
+    "kyaKarein": [
+      "Hang up immediately; Australian banks NEVER utilize 'safe holding accounts'",
+      "Wait several minutes or use another phone to call your bank's verified fraud number",
+      "Report imposter bank calls to Scamwatch and the Australian Cyber Security Centre (cyber.gov.au)"
+    ]
+  },
+  {
+    "id": "credit-card-chargeback-dispute-processing-fee-trap-2024",
+    "slug": "credit-card-chargeback-dispute-processing-fee-trap-2024",
+    "icon": "\ud83d\udcb3",
+    "name": "Credit Card Chargeback Dispute Processing Fee Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 92,
+    "desc": "Consumer disputes a charge online, then receives call from fake 'Mastercard Dispute Resolution Bureau' stating dispute is approved but requires a $75 administrative processing fee to release chargeback.",
+    "sampleMsg": "Mastercard Chargeback Services: Your $850 fraud dispute with merchant has been resolved in your favor! To release the credit reversal to your card, pay the $75 mandatory dispute processing charge.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammers harvest consumer dispute complaints posted on public social media forums.\n2. Call consumer posing as payment card network dispute department.\n3. Demands payment of administrative processing fees before issuing refund credit.",
+    "redFlags": [
+      "Credit card networks (Visa, Mastercard, Amex) NEVER charge cardholders fees to process legitimate fraud disputes",
+      "Federal Fair Credit Billing Act guarantees free investigation of disputed billing errors",
+      "Caller demands fee payment via gift cards, wire transfer, or peer-to-peer apps",
+      "Caller cannot confirm the original 16-digit card number on file",
+      "Dispute department calls from a blocked or unverified telephone number"
+    ],
+    "kyaKarein": [
+      "Cardholder dispute investigations are 100% free under federal consumer credit protection laws",
+      "Manage all billing disputes exclusively through your issuing bank customer service portal",
+      "Report fraudulent chargeback fee solicitations to the FTC"
+    ]
+  },
+  {
+    "id": "merchant-pos-terminal-fraudulent-return-credit-trap-2024",
+    "slug": "merchant-pos-terminal-fraudulent-return-credit-trap-2024",
+    "icon": "\ud83d\udcb3",
+    "name": "Merchant POS Terminal Fraudulent Return Credit Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 93,
+    "desc": "Shady customer enters retail shop, creates distraction with accomplice while asking to return an item, grabs countertop credit card terminal, and processes a manual $2,500 refund to their own debit card.",
+    "sampleMsg": "Accomplice spills hot coffee across retail checkout counter creating commotion. Second suspect accesses unattended countertop POS terminal, keys in manager refund override PIN 0000, and swipes debit card for $2,500 refund.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Thieves target retail stores with countertop POS terminals facing customer side.\n2. Create deliberate physical distraction occupying all cashiers and staff.\n3. Use default factory supervisor passwords (0000, 1234) on terminal to execute manual refund transaction to stolen debit card.",
+    "redFlags": [
+      "Customer insists on handling or manipulating the merchant payment terminal directly",
+      "Accomplice creates sudden loud physical disturbance, argument, or spill in checkout area",
+      "Customer attempts to process high-value return without presenting original store receipt or merchandise",
+      "Merchant terminal supervisor PIN has never been changed from default manufacturer factory setting",
+      "Customer appears nervous and watches staff positions intently"
+    ],
+    "kyaKarein": [
+      "Change all default merchant POS terminal supervisor and refund passwords immediately upon installation",
+      "Keep payment terminal physically behind the counter or tethered out of customer reach",
+      "Require dual-manager authorization for all electronic customer refunds exceeding $100"
+    ]
+  },
+  {
+    "id": "fake-cheque-clearance-hold-advance-fee-trap-2024",
+    "slug": "fake-cheque-clearance-hold-advance-fee-trap-2024",
+    "icon": "\ud83c\udfe6",
+    "name": "Fake Cheque Clearance Hold Advance Fee Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 94,
+    "desc": "Victim receives a high-value cheque of Rs 4,50,000 for consulting services. Bank branch manager imposter calls stating the outstation cheque is on hold and requires Rs 15,000 clearing house surcharge to pass.",
+    "sampleMsg": "Sir, I am clearing officer from CTS Clearing House Mumbai. Cheque #491204 for Rs 4,50,000 deposited in your account is held in inter-bank clearing. Pay Rs 14,800 speed clearing tax to clear funds today.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer issues worthless or forged cheque for legitimate services rendered.\n2. Concurrently calls victim impersonating clearing house or RBI official.\n3. Extracts cash clearance fees before victim realizes the original paper cheque bounced due to insufficient funds.",
+    "redFlags": [
+      "Cheque Clearing Houses (CTS) do NOT contact individual payees directly demanding clearance fees",
+      "Cheque clearing charges, if applicable, are deducted automatically from bank balances, never paid via UPI",
+      "Caller claims cheque will be permanently cancelled unless clearance fee is paid within 2 hours",
+      "Payment directed to private personal UPI handle",
+      "Original drawer of cheque becomes unreachable by telephone"
+    ],
+    "kyaKarein": [
+      "Never pay money to have an incoming cheque cleared or processed",
+      "Wait for the standard statutory clearing cycle (1-2 business days) for funds to be formally credited",
+      "Contact your home branch customer service desk to inspect true clearing status"
+    ]
+  },
+  {
+    "id": "unauthorized-auto-debit-recurring-standing-mandate-fraud-2025",
+    "slug": "unauthorized-auto-debit-recurring-standing-mandate-fraud-2025",
+    "icon": "\ud83d\udd04",
+    "name": "Unauthorized Auto-Debit Recurring Standing Mandate Fraud",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 95,
+    "desc": "Victim approves a Rs 1 test transaction on a gaming or loan website, which secretly registers an e-NACH auto-debit standing mandate deducting Rs 9,999 every month from their bank account automatically.",
+    "sampleMsg": "Play Online Fantasy Cricket: Verify bank account with Rs 1 refundable deposit. Hidden in terms: Authorizes e-NACH recurring monthly mandate of Rs 8,500. Next month: Rs 8,500 automatically debited from salary.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Rogue merchants trick user into completing netbanking or debit card verification for Rs 1.\n2. Authorization screen conceals registration of recurring e-NACH / UPI Autopay mandate.\n3. Merchant initiates recurring automated debits on monthly schedule without further customer notification.",
+    "redFlags": [
+      "Netbanking authentication screen mentions 'Mandate Registration' or 'Maximum Amount: Rs 10,000'",
+      "SMS OTP mentions 'e-NACH Mandate Approval' rather than simple one-time payment",
+      "Unfamiliar recurring monthly debits appearing on bank statement under merchant aggregator names",
+      "Website does not provide customer dashboard to cancel or view active subscriptions",
+      "Customer service ignores cancellation and refund requests"
+    ],
+    "kyaKarein": [
+      "Always inspect bank authentication screens carefully: verify if you are approving a one-time charge or a recurring standing mandate",
+      "Cancel unauthorized standing mandates directly in your bank mobile app under 'e-NACH / Mandate Management' or 'UPI Autopay'",
+      "Notify your bank manager to place a stop-payment order on rogue merchant billing IDs"
+    ]
+  },
+  {
+    "id": "corporate-payroll-imposter-direct-deposit-change-scam-2025",
+    "slug": "corporate-payroll-imposter-direct-deposit-change-scam-2025",
+    "icon": "\ud83d\udcbc",
+    "name": "Corporate Payroll Imposter Direct Deposit Change Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 96,
+    "desc": "Scammer sends email to corporate HR/payroll department impersonating an executive or employee, requesting direct deposit salary instructions be switched to a new GreenDot prepaid card account.",
+    "sampleMsg": "Hi Payroll, I recently switched banks and need to update my direct deposit information for this Friday's paycheck. Attached is my new voided check. Please update my routing and account number immediately.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attacker spoofs employee email address or uses lookalike executive domain.\n2. Requests direct deposit payroll change right before scheduled company pay cycle.\n3. Payroll processor updates records without verbal confirmation, routing thousands in salary to criminal prepaid account.",
+    "redFlags": [
+      "Employee requests direct deposit change via informal email rather than secure employee self-service portal",
+      "Sender urges payroll staff to process change immediately to meet impending pay cycle deadline",
+      "New bank account is with an online fintech or prepaid card provider (Chime, GreenDot, Netspend)",
+      "Sender claims they are unavailable for phone or video confirmation due to medical leave or family travel",
+      "Email sender address has subtle typographical difference from official company corporate directory"
+    ],
+    "kyaKarein": [
+      "Mandate that all direct deposit changes be submitted through password-protected, 2FA employee self-service portals",
+      "Require payroll staff to perform out-of-band verbal confirmation using employee's verified internal telephone number",
+      "Report payroll diversion attacks immediately to company information security officer and FBI IC3"
+    ]
+  },
+  {
+    "id": "debit-card-skimming-at-drive-through-fast-food-windows-2024",
+    "slug": "debit-card-skimming-at-drive-through-fast-food-windows-2024",
+    "icon": "\ud83c\udf54",
+    "name": "Debit Card Skimming at Drive-Through Fast Food Windows",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 93,
+    "desc": "Dishonest drive-through cashier takes customer's physical debit card out of sight, swipes it through a handheld pocket magnetic card skimmer hidden under counter, cloning card for unauthorized retail sprees.",
+    "sampleMsg": "Customer hands debit card to drive-through attendant for $8 hamburger order. Cashier walks card out of driver's view for 45 seconds, swiping through pocket skimmer. Counterfeit card used for $600 Best Buy purchase 2 hours later.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Rogue employee recruited by criminal carding syndicate for $20 per skimmed card.\n2. Uses palm-sized battery-powered magnetic reader concealed under counter or in apron pocket.\n3. Sells captured track data to fraud networks that encode counterfeit plastic cards.",
+    "redFlags": [
+      "Cashier walks your payment card out of physical eyesight or under the counter ledge",
+      "Payment transaction takes abnormally long (more than 30 seconds) for a simple fast-food charge",
+      "Cashier swipes card twice claiming the first swipe encountered terminal error",
+      "Cashier appears nervous, fidgety, or turns back completely away from drive-through window",
+      "Unauthorized retail charges begin appearing on card within hours of visiting the restaurant"
+    ],
+    "kyaKarein": [
+      "Never allow service workers to take your physical payment card out of your line of sight",
+      "Use mobile contactless payments (Apple Pay / Google Pay / Samsung Pay) which generate tokenized one-time virtual numbers",
+      "Review bank checking account transactions daily and set up instant push alerts for all card expenditures"
+    ]
+  },
+  {
+    "id": "fake-loan-foreclosure-clearance-certificate-fee-2024",
+    "slug": "fake-loan-foreclosure-clearance-certificate-fee-2024",
+    "icon": "\ud83d\ude97",
+    "name": "Fake Loan Foreclosure Clearance Certificate Fee",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 94,
+    "desc": "Borrower looking to close home or auto loan receives call from fake bank recovery agent offering 50% discount on final foreclosure balance, pocketing Rs 1,20,000 and issuing forged No-Objection Certificate.",
+    "sampleMsg": "Dear customer, settle your outstanding ICICI auto loan of Rs 2,40,000 for a one-time settlement of only Rs 1,15,000 today! Pay on this official collection link to receive digital loan closure NOC certificate.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Corrupt data brokers leak overdue borrower lists from collection agencies.\n2. Scammer contacts borrower offering lucrative one-time settlement discount.\n3. Takes payment via personal UPI, issues forged bank NOC PDF, while actual bank loan remains unpaid and accrues penalties.",
+    "redFlags": [
+      "Settlement payment demanded via private individual UPI ID or unverified payment link",
+      "Unrealistic 50% - 70% debt waiver without formal written settlement letter from the bank branch",
+      "Agent refuses to meet inside the bank branch or conduct formal paperwork across branch counters",
+      "NOC certificate issued features incorrect bank branch IFSC codes and fake digital signatures",
+      "Actual bank continues calling for loan installments weeks after alleged settlement"
+    ],
+    "kyaKarein": [
+      "Execute loan settlements and foreclosures ONLY inside the physical bank branch with authorized bank officers",
+      "Pay settlement amounts solely into your specific loan account number, never to individual agent accounts",
+      "Demand original stamped No-Objection Certificate (NOC) and return of property documents directly from branch custody"
+    ]
+  },
+  {
+    "id": "international-remittance-currency-exchange-lock-scam-2025",
+    "slug": "international-remittance-currency-exchange-lock-scam-2025",
+    "icon": "\ud83d\udcb1",
+    "name": "International Remittance Currency Exchange Lock Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 95,
+    "desc": "Expatriates sending money home (Dubai to India, UK to Pakistan) use informal online hawala exchange groups offering 5% higher exchange rates, transferring funds that are stolen immediately.",
+    "sampleMsg": "Best AED to INR Exchange Rate: Get Rs 23.80 per Dirham (Bank rate is Rs 22.50)! Zero transfer fee, instant IMPS deposit into Indian bank account. WhatsApp money exchange desk: +971-50-XXXXXXX.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Operates informal currency transfer groups on Facebook and WhatsApp targeting migrant workers.\n2. Offers exchange rates significantly higher than official banking central bank rates.\n3. Expatriate transfers local currency in UAE or UK; scammers send fake transfer screenshot to family back home and disappear.",
+    "redFlags": [
+      "Exchange rate offered is substantially higher than the official interbank market foreign exchange rate",
+      "Informal operator has no registered money service business (MSB) or central bank financial license",
+      "Transactions conducted entirely via WhatsApp messages and personal peer-to-peer transfers",
+      "Operator claims to bypass standard statutory international tax reporting rules",
+      "Sends fabricated payment receipts while beneficiary bank account shows zero incoming deposit"
+    ],
+    "kyaKarein": [
+      "Remit international funds exclusively through licensed, regulated money transfer operators (Wise, Western Union, official banks)",
+      "Informal hawala / hundi transfers are illegal under foreign exchange management regulations and carry zero consumer protection",
+      "Report fraudulent remittance syndicates to local financial regulatory authorities"
+    ]
+  },
+  {
+    "id": "fake-cheque-stop-payment-cancellation-fee-trap-2024",
+    "slug": "fake-cheque-stop-payment-cancellation-fee-trap-2024",
+    "icon": "\u270d\ufe0f",
+    "name": "Fake Cheque Stop-Payment Cancellation Fee Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Banking",
+    "categorySlug": "banking-financial",
+    "categoryName": "Financial / Banking",
+    "score": 93,
+    "desc": "Customer loses chequebook and calls a fake bank customer care phone number found on Google. Scammer pretends to be branch officer, demanding Rs 1,500 'emergency stop-payment fee' paid via UPI.",
+    "sampleMsg": "Customer searches 'Canara Bank customer care number' on Google and calls top ad result. Scammer answers: 'To place an urgent stop-payment on your lost cheque #89124, transfer Rs 1,500 stop fee to bank UPI id: canarabank-help@upi'.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammers flood search engine ads with fake bank customer care phone numbers.\n2. Customer dials number in panic after losing physical chequebook or wallet.\n3. Scammer charges fake fee and tricks customer into revealing netbanking passwords.",
+    "redFlags": [
+      "Bank customer service number found on unverified third-party search engine results or blog posts",
+      "Bank representative asks you to pay stop-payment fees via personal UPI handles",
+      "Representative asks for your netbanking password, debit card PIN, or OTP to execute stop payment",
+      "Stop-payment fees on legitimate bank accounts are deducted automatically from account balances",
+      "Customer service representative uses an informal Gmail or personal WhatsApp account"
+    ],
+    "kyaKarein": [
+      "Place stop-payment orders on cheques yourself securely inside your official bank mobile app under 'Cheque Services'",
+      "Obtain genuine bank telephone helplines exclusively from your physical bank passbook or official website (e.g. sbi.co.in)",
+      "Never transfer money via UPI to customer service executives on phone calls"
+    ]
+  },
+  {
+    "id": "lockbit-double-extortion-enterprise-ransomware-2026",
+    "slug": "lockbit-double-extortion-enterprise-ransomware-2026",
+    "icon": "\ud83d\udd12",
+    "name": "LockBit & Double Extortion Enterprise Ransomware",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 99,
+    "desc": "Ransomware syndicate infiltrates enterprise network via compromised remote desktop credentials, exfiltrates corporate customer databases, encrypts all virtual machines, and demands $2,000,000 in Monero under threat of publishing patient records on dark web leak site.",
+    "sampleMsg": "All your servers and customer databases are encrypted with military-grade AES-256. We also downloaded 450GB of confidential patient records. Pay $2.5M in Monero (XMR) within 7 days or everything will be published on our public dark web leak blog.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Gang buys compromised VPN or Remote Desktop Protocol (RDP) credentials from initial access brokers.\n2. Silently moves laterally across corporate network over 3 weeks, disabling security software and exfiltrating gigabytes of sensitive files.\n3. Deploys ransomware binary across all domain controllers simultaneously at 2:00 AM on Sunday morning, leaving ransom notes on every desktop.",
+    "redFlags": [
+      "Desktop wallpaper replaced with alarming ransom instructions and all file extensions renamed (.lockbit, .encrypted)",
+      "System shadow copies and local backup snapshots deleted via automated batch scripts",
+      "Attacker provides link to proprietary dark web .onion negotiation chat portal",
+      "Demands ransom payment exclusively in anonymous cryptocurrency (Monero XMR or Bitcoin)",
+      "Threatens to leak proprietary intellectual property, employee SSNs, or customer financial records if ransom is unpaid"
+    ],
+    "kyaKarein": [
+      "Maintain immutable, air-gapped, offline data backups that cannot be modified over the local network",
+      "Isolate infected network subnets immediately: disconnect Ethernet cables and disable Wi-Fi to stop lateral propagation",
+      "Contact FBI Cyber Division (ic3.gov) or national cybersecurity agency (CISA / CERT-In) immediately; law enforcement advises against paying ransoms"
+    ]
+  },
+  {
+    "id": "fake-chatgpt-5-ai-voice-desktop-app-trojan-2026",
+    "slug": "fake-chatgpt-5-ai-voice-desktop-app-trojan-2026",
+    "icon": "\ud83e\udd16",
+    "name": "Fake ChatGPT-5 & AI Voice Desktop App Trojan",
+    "year": 2026,
+    "isLatest": true,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 97,
+    "desc": "Sponsored Google search ads and Facebook ads promoting 'Free ChatGPT-5 Pro Offline Desktop Edition', distributing RedLine or Lumma info-stealer trojans that extract saved browser passwords, session cookies, and crypto wallet private keys within 60 seconds.",
+    "sampleMsg": "Download ChatGPT-5 Pro for Windows: Free unlimited GPT-5 offline desktop assistant with voice cloning! 100% free download: https://chatgpt5-desktop-ai.org/setup.exe",
+    "source": "Google News",
+    "kaiseHotaHai": "1. Scammers purchase sponsored search results on Google for terms like 'ChatGPT desktop app download'.\n2. User downloads an executable installer (setup.exe) signed with a stolen corporate certificate.\n3. Silent stealer payload executes in background, scraping Chrome and Edge password databases and crypto wallet browser extensions, transmitting archives to attacker Telegram bot.",
+    "redFlags": [
+      "Software claims to offer non-existent AI models ('ChatGPT-5', 'Midjourney v7 Offline')",
+      "Website domain is not the official OpenAI portal: chatgpt.com or openai.com",
+      "Windows Defender or browser displays SmartScreen security warning on download",
+      "Installer asks for Administrator privileges to install a supposedly simple text AI tool",
+      "User accounts on Facebook, Gmail, and crypto exchanges show simultaneous unauthorized logins shortly after installation"
+    ],
+    "kyaKarein": [
+      "Access ChatGPT and AI services exclusively through official verified domains: chatgpt.com or official mobile app stores",
+      "Never download standalone .exe or .msi AI packages from sponsored third-party search results",
+      "If infected, run a full system scan with reputable anti-malware (Malwarebytes) and immediately change all passwords from an independent clean device"
+    ]
+  },
+  {
+    "id": "wannacry-smb-exploit-worm-ransomware-2017",
+    "slug": "wannacry-smb-exploit-worm-ransomware-2017",
+    "icon": "\ud83d\uded1",
+    "name": "WannaCry SMB Exploit Worm Ransomware",
+    "year": 2017,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 99,
+    "desc": "Global worm exploiting Microsoft Windows SMBv1 vulnerability (EternalBlue), rapidly infecting over 200,000 computers across 150 countries within hours, locking hospitals, railways, and telecom networks demanding $300 Bitcoin.",
+    "sampleMsg": "Ooops, your files are encrypted! Maybe you are busy looking for a way to recover your files, but do not waste your time. You have only 3 days to submit $300 in Bitcoin to our wallet.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scans the public internet and local networks for unpatched Windows computers with open SMB port 445.\n2. Injects NSA-leaked EternalBlue exploit code without requiring any user click or email interaction.\n3. Encrypts hard drives, replaces wallpaper with famous red lock screen, and self-propagates to all adjacent network computers.",
+    "redFlags": [
+      "Distinctive red graphical user interface window titled '@WanaDecryptor@ v2.0'",
+      "Files renamed with extension '.WNCRY'",
+      "Two countdown timers showing deadline before ransom doubles and before files are permanently deleted",
+      "Spreads autonomously across internal enterprise local area networks without any employee interaction",
+      "Affected systems running legacy, unpatched Windows operating systems (Windows XP, Windows 7, Windows Server 2003)"
+    ],
+    "kyaKarein": [
+      "Keep all operating systems updated with the latest security patches (ensure MS17-010 patch is applied)",
+      "Disable outdated SMBv1 protocol in Windows Features and block port 445 at corporate firewalls",
+      "Use free decryption tools available on the official NoMoreRansom.org project"
+    ]
+  },
+  {
+    "id": "anydesk-teamviewer-remote-screen-control-bank-drainage-2025",
+    "slug": "anydesk-teamviewer-remote-screen-control-bank-drainage-2025",
+    "icon": "\ud83d\udcf2",
+    "name": "AnyDesk / TeamViewer Remote Screen Control Bank Drainage",
+    "year": 2025,
+    "isLatest": false,
+    "country": "India",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 98,
+    "desc": "Scammer posing as bank, electricity, or telecom executive convinces victim to download AnyDesk or TeamViewer QuickSupport on their phone, reciting the 9-digit remote access code. Scammer blacks out screen and empties bank accounts via netbanking.",
+    "sampleMsg": "Sir, your KYC update requires digital terminal verification. Please install 'AnyDesk' from Google Play Store and tell me the 9-digit code displayed so our technical team can complete biometric synchronization.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Convinces victim to install legitimate remote desktop software from Google Play Store.\n2. Directs victim to read out the unique 9-digit connection address and tap 'Accept' on permissions.\n3. Scammer gains complete remote touch control over victim's phone screen, instructs victim to open their banking app, and watches them enter their PIN and passwords.",
+    "redFlags": [
+      "Customer service or technical representative instructs you to install AnyDesk, TeamViewer, RustDesk, or QuickSupport on your mobile phone",
+      "Caller insists on you reading aloud the 9-digit connection address shown inside the app",
+      "Phone screen displays warning: 'Allow incoming connection? Third party can view and control your device'",
+      "Caller asks you to log in to your mobile banking or UPI app while the remote session is active",
+      "Phone screen goes black or flickers while transactions occur in the background"
+    ],
+    "kyaKarein": [
+      "NEVER install remote control software (AnyDesk, TeamViewer, RustDesk) at the request of incoming callers",
+      "If you installed it, immediately turn on Airplane Mode or power off your phone to sever the connection",
+      "Uninstall the remote access application immediately and contact your bank to freeze electronic transfers"
+    ]
+  },
+  {
+    "id": "juice-jacking-rogue-public-usb-charging-kiosk-2025",
+    "slug": "juice-jacking-rogue-public-usb-charging-kiosk-2025",
+    "icon": "\ud83d\udd0c",
+    "name": "Juice Jacking Rogue Public USB Charging Kiosk",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 93,
+    "desc": "Tampered USB charging ports in airports, train stations, or hotel lobbies secretly wired to microcomputers that install keylogger spyware or siphon photos and messages the moment phone is plugged in.",
+    "sampleMsg": "Traveler plugs smartphone into free public USB wall port at airport terminal. Phone displays subtle prompt: 'Trust this computer?' Hidden micro-controller extracts contacts and installs monitoring payload.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Criminals disassemble public USB charging kiosks in high-traffic transit hubs.\n2. Splice data transfer pins (D+ and D-) to a concealed Raspberry Pi microcomputer.\n3. When traveler connects charging cable, the rogue computer attempts automated media extraction and malware injection.",
+    "redFlags": [
+      "Connecting your phone to a public USB wall charging port triggers a prompt: 'Trust this computer?' or 'Allow access to device data?'",
+      "Public USB port feels loose, altered, or shows signs of physical casing damage",
+      "Phone heats up rapidly or shows background data transfer activity while charging",
+      "Device battery discharges faster than normal following connection to public kiosk",
+      "Unprompted installation of unknown configuration profiles on mobile device"
+    ],
+    "kyaKarein": [
+      "Use an AC electrical wall outlet with your own personal power adapter block rather than public USB jacks",
+      "Use a 'USB Data Blocker' (charge-only adapter) that physically disconnects data pins and allows only power flow",
+      "Always tap 'Don't Trust' if a computer trust prompt appears while plugging into a wall charging port"
+    ]
+  },
+  {
+    "id": "evil-twin-rogue-public-airport-wi-fi-packet-sniffer-2024",
+    "slug": "evil-twin-rogue-public-airport-wi-fi-packet-sniffer-2024",
+    "icon": "\ud83d\udcf6",
+    "name": "Evil Twin Rogue Public Airport Wi-Fi Packet Sniffer",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 94,
+    "desc": "Attacker deploys a Wi-Fi Pineapple router in an airport lounge broadcasting an identical open Wi-Fi network named 'Free_Airport_WiFi_HighSpeed', intercepting all unencrypted web traffic, DNS requests, and login sessions.",
+    "sampleMsg": "Passenger connects laptop to open Wi-Fi network matching airport lounge name. Attacker performs man-in-the-middle SSL stripping, capturing corporate session cookies and redirecting user to cloned login portals.",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Attacker sets up portable wireless access point cloning SSID name of legitimate venue.\n2. Broadcasts stronger signal causing traveler devices to auto-connect.\n3. Intercepts DNS queries, executes SSL stripping, and injects fake software update popups to install Trojans.",
+    "redFlags": [
+      "Two identical Wi-Fi network names appearing in your device Wi-Fi connection list (one secure, one unsecured)",
+      "Network does not require the standard captive portal agreement or password displayed on the airport board",
+      "Browser displays recurring SSL/TLS certificate security warning banners when visiting popular websites",
+      "Unexpected prompts appear instructing user to install 'Flash Player Update' or 'Wi-Fi Driver Certificate'",
+      "Webpages take abnormally long to load or redirect to obscure search engine portals"
+    ],
+    "kyaKarein": [
+      "Use personal cellular mobile data hotspot instead of connecting to untrusted public Wi-Fi networks",
+      "Always activate an encrypted Virtual Private Network (VPN) before browsing on any public network",
+      "Never bypass SSL/HTTPS browser security warnings on public connections"
+    ]
+  },
+  {
+    "id": "malicious-chrome-browser-extension-password-stealer-2025",
+    "slug": "malicious-chrome-browser-extension-password-stealer-2025",
+    "icon": "\ud83e\udde9",
+    "name": "Malicious Chrome Browser Extension Password Stealer",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 95,
+    "desc": "Helpful Chrome extension (PDF converter, ad blocker, screenshot tool) purchased by criminal developers, pushed with automatic update injecting JavaScript that harvests credit card numbers and session tokens.",
+    "sampleMsg": "Popular 'Free Color Picker' Chrome extension with 100,000 users updates in background. Silent malicious script injects DOM keylogger on all banking and crypto websites, transmitting passwords to remote server.",
+    "source": "Google News",
+    "kaiseHotaHai": "1. Scammers purchase popular, abandoned browser extensions from legitimate original developers.\n2. Push a silent extension update through the Chrome Web Store containing obfuscated malicious code.\n3. Extension reads DOM input fields across every webpage the user visits, extracting passwords and session cookies.",
+    "redFlags": [
+      "Extension suddenly requests expanded browser permissions: 'Read and change all your data on all websites'",
+      "Browser performance slows down noticeably with persistent high CPU utilization",
+      "Spontaneous popups or unwanted redirects to third-party affiliate shopping links",
+      "Online accounts trigger security warnings regarding session cookie hijacking",
+      "Extension name or branding changes subtly in Chrome extensions management page"
+    ],
+    "kyaKarein": [
+      "Audit installed browser extensions regularly and remove any that are not strictly necessary",
+      "Review extension permissions: restrict access to 'On click' rather than 'On all websites'",
+      "Install extensions only from verified developers with extensive positive historical track records"
+    ]
+  },
+  {
+    "id": "pirated-software-torrent-crack-keygen-trojan-dropper-2024",
+    "slug": "pirated-software-torrent-crack-keygen-trojan-dropper-2024",
+    "icon": "\ud83c\udff4\u200d\u2620\ufe0f",
+    "name": "Pirated Software Torrent Crack & Keygen Trojan Dropper",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 96,
+    "desc": "Downloading cracked versions of Adobe Photoshop, Premiere Pro, or AutoCAD from torrent sites. The included 'keygen.exe' or 'patch.exe' disables Windows Defender and installs persistent rootkit malware.",
+    "sampleMsg": "Download Adobe Photoshop 2024 Full Crack + Keygen.zip. Running 'Patch.exe' prompts user to temporarily disable antivirus. Antivirus disabled: trojan installs hidden cryptocurrency miner and backdoors system.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Threat actors package pirated commercial software with malicious loaders in torrent releases.\n2. Instructions strictly tell user to 'Turn off Antivirus/Windows Defender' before running patcher.\n3. Patcher establishes persistent backdoor, joins computer to malicious botnet, and harvests stored credentials.",
+    "redFlags": [
+      "Installer instructions mandate turning off your antivirus or adding installation folder to exclusion list",
+      "File arrives in password-protected ZIP or RAR archive designed to evade automated virus scanner inspection",
+      "Executable file has suspicious double extension (e.g. Photoshop_Crack.pdf.exe)",
+      "System fan runs loudly continuously while computer is idle due to hidden background crypto mining",
+      "New unrecognized administrator user accounts appear in Windows settings"
+    ],
+    "kyaKarein": [
+      "Never download or execute cracked commercial software from torrent repositories",
+      "NEVER disable antivirus or Windows Defender based on instructions from downloaded software",
+      "Use open-source free software alternatives (GIMP for Photoshop, DaVinci Resolve for Premiere, Blender for 3D)"
+    ]
+  },
+  {
+    "id": "cryptojacking-hidden-monero-cpu-miner-malware-2024",
+    "slug": "cryptojacking-hidden-monero-cpu-miner-malware-2024",
+    "icon": "\u26cf\ufe0f",
+    "name": "Cryptojacking Hidden Monero CPU Miner Malware",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 91,
+    "desc": "Malware silently runs high-intensity Monero (XMR) cryptocurrency mining software in background, consuming 100% of CPU and GPU power, causing computer overheating and thermal hardware damage.",
+    "sampleMsg": "Computer fan runs at maximum speed continuously; laptop battery drains in 30 minutes. Task Manager shows unknown process 'svchost_update.exe' consuming 98% of multi-core CPU capacity.",
+    "source": "Interpol",
+    "kaiseHotaHai": "1. Infiltrates system via drive-by download, malicious browser extension, or infected game mod.\n2. Installs lightweight XMRig mining executable disguised under legitimate Windows system process names.\n3. Program throttles CPU usage to 10% whenever user opens Task Manager to evade visual detection.",
+    "redFlags": [
+      "Computer cooling fans run at maximum speed constantly, even when no applications are open",
+      "Laptop chassis becomes uncomfortably hot to the touch and battery life drops precipitously",
+      "System performance stutters severely during basic web browsing or document editing",
+      "Electricity utility bills show unexplained, substantial monthly increases",
+      "High CPU utilization immediately drops to normal the moment Task Manager is launched"
+    ],
+    "kyaKarein": [
+      "Scan computer using specialized anti-malware tools (Malwarebytes, HitmanPro) to detect hidden miners",
+      "Inspect startup applications in Windows Task Manager > Startup tab and disable unrecognized entries",
+      "Install reputable ad-blocking extensions (uBlock Origin) to prevent in-browser cryptomining scripts"
+    ]
+  },
+  {
+    "id": "stalkerware-mobile-spyware-surveillance-app-2025",
+    "slug": "stalkerware-mobile-spyware-surveillance-app-2025",
+    "icon": "\ud83d\udd75\ufe0f",
+    "name": "Stalkerware & Mobile Spyware Surveillance App",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 97,
+    "desc": "Covert surveillance app (mSpy, FlexiSPY, KidsGuard) secretly installed on victim's phone by abusive partner or stalker, recording live location, phone calls, WhatsApp messages, and microphone audio 24/7.",
+    "sampleMsg": "Partner secretly borrows victim's phone for 10 minutes to 'check navigation', installs hidden monitoring app disguised as 'Device Health Service'. Partner monitors all real-time WhatsApp chats and GPS coordinates from web dashboard.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Person with physical access to victim's handset unlocks device and sideloads surveillance software.\n2. Disguises app icon under system names (e.g. 'System Update Service', 'Google Play Config').\n3. Grants Device Administrator, Accessibility, and Location permissions, transmitting continuous real-time telemetry to stalker's online portal.",
+    "redFlags": [
+      "Phone battery drains drastically faster than usual and handset feels warm when idle",
+      "Mobile data consumption spikes dramatically due to continuous background video/audio uploads",
+      "Location GPS indicator icon appears active in status bar even when maps are closed",
+      "Device settings show unfamiliar active apps under 'Device Admin Apps' or 'Accessibility Services'",
+      "Another person exhibits uncanny, exact knowledge of your private conversations and whereabouts"
+    ],
+    "kyaKarein": [
+      "Review Android Settings > Apps > Special App Access > Device Admin Apps and revoke unknown entries",
+      "Enable Google Play Protect to automatically scan and identify commercially sold stalkerware",
+      "Perform a factory reset of the smartphone and change your Google/Apple account passwords from a separate device"
+    ]
+  },
+  {
+    "id": "browser-lock-law-enforcement-warning-pop-up-ransomware-2024",
+    "slug": "browser-lock-law-enforcement-warning-pop-up-ransomware-2024",
+    "icon": "\ud83d\udea8",
+    "name": "Browser Lock Law Enforcement Warning Pop-up Ransomware",
+    "year": 2024,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 93,
+    "desc": "Full-screen browser lockout displaying Department of Justice or FBI seal claiming illegal pornography or copyright violation was detected, demanding $500 fine paid via MoneyPak voucher to unlock computer.",
+    "sampleMsg": "FBI Cyber Crime Division: Your browser has been locked due to viewing forbidden child pornography materials. Under federal penal code, you must pay $450 fine within 48h using GreenDot MoneyPak to restore access.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Malicious pop-under ad triggers an infinite JavaScript fullscreen loop that disables standard close buttons.\n2. Displays alarming FBI or Interpol badges and uses laptop webcam to display victim's real-time face on screen.\n3. Convinces panicked user that federal agents have locked their computer until a prepaid cash fine is entered.",
+    "redFlags": [
+      "Browser enters forced fullscreen mode and prevents clicking back or closing tabs",
+      "Displays official government agency seals (FBI, DOJ, Interpol) demanding cash fines to avoid criminal trial",
+      "Demands payment via prepaid vouchers (GreenDot MoneyPak, Vanilla Visa, iTunes gift cards)",
+      "Webcam light turns on and displays live video feed of your face inside the browser window",
+      "Computer itself is NOT actually encrypted; only the single browser tab is locked"
+    ],
+    "kyaKarein": [
+      "Do NOT pay; press Ctrl+Alt+Delete (or Cmd+Option+Esc on Mac) to open Task Manager and force-quit the browser",
+      "When restarting browser, do NOT click 'Restore previous session' when prompted",
+      "Clear browser cache and cookies, and install an ad blocker to prevent rogue redirect scripts"
+    ]
+  },
+  {
+    "id": "fake-antivirus-renewal-subscription-overcharge-scam-2025",
+    "slug": "fake-antivirus-renewal-subscription-overcharge-scam-2025",
+    "icon": "\ud83d\udee1\ufe0f",
+    "name": "Fake Antivirus Renewal Subscription Overcharge Scam",
+    "year": 2025,
+    "isLatest": false,
+    "country": "USA",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 94,
+    "desc": "Email receipt thanking you for renewing Norton 360 or McAfee Total Protection for $499, instructing you to call their toll-free helpline within 24 hours if you wish to dispute the charge and receive a refund.",
+    "sampleMsg": "Norton LifeLock Billing Invoice: Thank you for renewing your 3-Year Family Shield Plan ($479.99). Your credit card will be debited today. If you did NOT authorize this charge, call our billing dispute center immediately at 1-888-XXX-XXXX.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Millions of deceptive email invoices sent to consumers claiming major automatic renewals.\n2. Panicked recipient dials the toll-free number to prevent the $500 charge.\n3. Call center scammer guides caller to download AnyDesk to process a 'refund', edits bank webpage HTML to show $5,000 accidental refund, and demands victim return the $4,500 difference in cash.",
+    "redFlags": [
+      "You never purchased or subscribed to Norton, McAfee, or Geek Squad security products",
+      "Sender email address uses free commercial mail providers (@gmail.com, @outlook.com) rather than corporate domains",
+      "Invoice is sent as an attached PDF or image file to bypass automated email security filters",
+      "Representative insists on taking remote desktop control of your computer to process a refund",
+      "Representative asks you to log in to your personal online bank account while they view your screen"
+    ],
+    "kyaKarein": [
+      "Check your authentic credit card and bank statements directly; you will find no charge was ever made",
+      "Never call telephone numbers provided on unverified email invoices",
+      "Forward the fraudulent email to phishing@nortonlifelock.com or spam@mcafee.com and delete it"
+    ]
+  },
+  {
+    "id": "social-media-account-hijack-session-cookie-thefts-2025",
+    "slug": "social-media-account-hijack-session-cookie-thefts-2025",
+    "icon": "\ud83c\udf6a",
+    "name": "Social Media Account Hijack Session Cookie Thefts",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 96,
+    "desc": "Info-stealer malware extracts active browser session cookies, allowing hackers to bypass two-factor authentication (2FA) and take over YouTube channels, Instagram accounts, and Steam profiles without knowing passwords.",
+    "sampleMsg": "Victim downloads a game cheat mod from Discord. Stealer malware extracts Chrome session cookies. Attacker imports cookies into their browser, instantly logging into victim's 500k-subscriber YouTube channel and launching crypto scam livestream.",
+    "source": "Google News",
+    "kaiseHotaHai": "1. Malware (RedLine, Vidar, Raccoon) scrapes SQLite database files where browsers store active session cookies.\n2. Attacker loads stolen cookies into browser session profile.\n3. Website recognizes valid session token and allows instant login, completely bypassing 2FA prompts and password verification.",
+    "redFlags": [
+      "YouTube channel or Instagram account taken over even though two-factor authentication was active",
+      "Channel profile, banner, and name suddenly changed to 'Tesla Motors' or 'MicroStrategy' streaming Elon Musk crypto videos",
+      "Security logs show successful login from foreign country with NO two-factor authentication prompt triggered",
+      "Account recovery email and telephone numbers changed within seconds of takeover",
+      "Attacker deletes existing public videos and makes live broadcasts asking viewers to send Bitcoin"
+    ],
+    "kyaKarein": [
+      "In your Google/Meta account security settings, click 'Sign out of all other sessions and devices' immediately",
+      "Clear all browser cookies and cache to invalidate active session tokens",
+      "Contact YouTube Creator Support on Twitter/X (@TeamYouTube) to initiate specialized channel recovery procedures"
+    ]
+  },
+  {
+    "id": "fake-system-cleaners-pc-optimizer-scareware-2024",
+    "slug": "fake-system-cleaners-pc-optimizer-scareware-2024",
+    "icon": "\ud83e\uddf9",
+    "name": "Fake System Cleaners & PC Optimizer Scareware",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 90,
+    "desc": "Free utility program (PC SpeedUp 2024, CleanMyWin) scans computer and fabricates 1,400 'critical registry errors' and 'severe security risks', requiring $49.99 paid license to repair non-existent problems.",
+    "sampleMsg": "PC Speed Booster Scan Complete: 1,842 Critical System Errors Detected! Your Windows Registry is corrupted and hard drive is at imminent risk of failure. Purchase Pro Lifetime License ($49.95) to repair.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Bundled with free software downloads via deceptive marketing popups.\n2. Performs mock diagnostic scan displaying benign temporary files as catastrophic system corruptions.\n3. Terrifies non-technical computer users into purchasing useless paid software licenses.",
+    "redFlags": [
+      "Program installed itself without your explicit knowledge during another software installation",
+      "Claims thousands of severe registry errors or critical virus threats on a newly formatted computer",
+      "Frequent intrusive desktop popups warning of imminent system failure and crash",
+      "Demands credit card payment to perform basic file deletions you can do for free with built-in Windows tools",
+      "Difficult to uninstall using standard Windows Add/Remove Programs"
+    ],
+    "kyaKarein": [
+      "Do NOT pay; Windows does NOT require third-party registry cleaners or PC optimizers",
+      "Uninstall the scareware application using Windows Settings > Apps",
+      "Use built-in Windows Disk Cleanup tool and Windows Defender to keep your system clean and secure"
+    ]
+  },
+  {
+    "id": "ransomware-as-a-service-raas-dark-web-affiliate-network-2025",
+    "slug": "ransomware-as-a-service-raas-dark-web-affiliate-network-2025",
+    "icon": "\ud83d\udcbb",
+    "name": "Ransomware-as-a-Service (RaaS) Dark Web Affiliate Network",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 98,
+    "desc": "Sophisticated cybercrime business model where ransomware core developers lease encryption payloads and payment infrastructure to independent criminal affiliates in exchange for 20% commission on all extortion payouts.",
+    "sampleMsg": "Dark web RaaS recruitment advertisement: 'Join our elite ransomware affiliate network. 80/20 revenue split. Automated Tor payment portal, military-grade fast encryption, and dedicated DDoS pressure services.'",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Core developers maintain encryption software, automated leak portals, and cryptocurrency laundering pipelines.\n2. Recruit independent hackers ('affiliates') who breach corporate networks and deploy the ransomware.\n3. Extortion payments collected via automated Tor portals and split automatically between developers and affiliates.",
+    "redFlags": [
+      "Ransom demand directed to a sophisticated Tor dark web portal with automated ticketing customer support",
+      "Victim offered 'Free trial decryption of 1 file' to prove decryption capability",
+      "Professional countdown timer with dynamic price increases if deadline lapses",
+      "Attackers demonstrate comprehensive understanding of victim corporate insurance policy limits",
+      "Threat of Distributed Denial of Service (DDoS) attacks and customer notifications if negotiation stalls"
+    ],
+    "kyaKarein": [
+      "Engage professional certified cybersecurity incident response firms immediately upon detection",
+      "Notify law enforcement (FBI Cyber Division / CISA / Europol) before entering any communications",
+      "Maintain comprehensive offline immutable backups to ensure recovery without paying criminal syndicates"
+    ]
+  },
+  {
+    "id": "fake-google-meet-zoom-conference-malware-trap-2025",
+    "slug": "fake-google-meet-zoom-conference-malware-trap-2025",
+    "icon": "\ud83c\udfa5",
+    "name": "Fake Google Meet / Zoom Conference Malware Trap",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 95,
+    "desc": "Invited to a business interview or client presentation on a lookalike Google Meet or Zoom page that prompts: 'Audio driver missing. Click here to download Zoom-Audio-Plugin.exe to join the meeting.'",
+    "sampleMsg": "You have been invited to an urgent project consultation on Google Meet. To join with microphone and video, install required browser media plugin: https://meet-google-conference.top/plugin.exe",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attacker sends calendar invite or LinkedIn message scheduling a job interview or business partnership call.\n2. Link opens realistic clone of video conferencing interface.\n3. Fake error claims camera or microphone driver is missing, tricking user into downloading and executing info-stealer malware.",
+    "redFlags": [
+      "Joining video conference requires downloading an unexpected standalone '.exe' or '.msi' file",
+      "Legitimate Google Meet runs completely natively inside standard modern web browsers with zero plugin downloads",
+      "URL is not official meet.google.com or zoom.us domain",
+      "Meeting host does not appear in room and interface controls are static or non-responsive",
+      "Browser downloads trigger antivirus SmartScreen security warnings"
+    ],
+    "kyaKarein": [
+      "Google Meet NEVER requires downloading desktop software plugins to join a meeting",
+      "Download Zoom exclusively from the official domain: zoom.us/download",
+      "Never execute downloaded files received from unverified meeting invites"
+    ]
+  },
+  {
+    "id": "sim-card-puk-code-netbanking-takeover-trap-2024",
+    "slug": "sim-card-puk-code-netbanking-takeover-trap-2024",
+    "icon": "\ud83d\udcf6",
+    "name": "SIM Card PUK Code Netbanking Takeover Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "India",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 96,
+    "desc": "Scammer calls claiming telecom network maintenance requires your 8-digit SIM PUK code. With PUK code, scammer clones physical SIM card, hijacking mobile OTPs while victim's phone shows 'Emergency Calls Only'.",
+    "sampleMsg": "Airtel / Jio Technical Desk: Your SIM card security certificate has expired. To prevent total signal block, share the 8-digit PUK code printed on your original SIM card plastic envelope.",
+    "source": "I4C India",
+    "kaiseHotaHai": "1. Scammer contacts carrier or uses social engineering to initiate SIM replacement.\n2. Convinces victim to disclose their confidential 8-digit Personal Unblocking Key (PUK).\n3. Activates new duplicate physical SIM in scammer handset, intercepting all two-factor authentication SMS codes.",
+    "redFlags": [
+      "Telecom carriers NEVER call subscribers requesting their secret 8-digit SIM PUK code",
+      "PUK codes are used exclusively by users to unlock PIN-blocked SIM cards",
+      "Caller claims mobile network tower maintenance requires PUK authentication",
+      "Sudden permanent loss of cellular signal and network reception on your phone following the call",
+      "Call received from an unverified standard mobile telephone number"
+    ],
+    "kyaKarein": [
+      "NEVER share your SIM card PUK code with anyone over phone or text message",
+      "If phone network signal disappears unexpectedly, contact your cellular carrier immediately from another handset",
+      "Instruct carrier to place an immediate fraud lock on SIM replacement requests"
+    ]
+  },
+  {
+    "id": "fake-cloudflare-turnstile-captcha-powershell-dropper-2025",
+    "slug": "fake-cloudflare-turnstile-captcha-powershell-dropper-2025",
+    "icon": "\ud83e\udd16",
+    "name": "Fake Cloudflare Turnstile CAPTCHA PowerShell Dropper",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 97,
+    "desc": "Website shows fake Cloudflare 'Verify You Are Human' CAPTCHA instructing user to press 'Windows Key + R', paste clipboard script into Run dialog, and press Enter, executing malicious PowerShell stealer.",
+    "sampleMsg": "Cloudflare Verification: To verify you are not a robot, press Win + R, then press Ctrl + V and hit Enter to complete automated browser verification.",
+    "source": "Google News",
+    "kaiseHotaHai": "1. Malicious webpage automatically copies an encoded PowerShell command to user's system clipboard.\n2. Displays convincing fake Cloudflare verification page with step-by-step instructions.\n3. User unknowingly pastes and executes remote payload download script directly into Windows Run console, bypassing all browser sandboxes.",
+    "redFlags": [
+      "Website instructs you to press keyboard shortcuts 'Win + R' (Windows Run console) to complete a CAPTCHA",
+      "Page instructs you to paste ('Ctrl + V') and run code in your operating system command line",
+      "Legitimate Cloudflare or reCAPTCHA verification requires ONLY clicking a checkbox or solving visual puzzles",
+      "Text pasted in Run box starts with 'powershell.exe -w hidden -e ...'",
+      "Browser sandboxing is completely bypassed when running commands directly in the OS shell"
+    ],
+    "kyaKarein": [
+      "CRITICAL: NEVER press Win + R or paste unknown clipboard text into Windows Run or Terminal based on website instructions",
+      "Legitimate CAPTCHA challenges NEVER ask users to execute operating system terminal commands",
+      "Close the browser tab immediately and scan device for unauthorized background processes"
+    ]
+  },
+  {
+    "id": "dns-hijacking-router-default-password-takeover-2024",
+    "slug": "dns-hijacking-router-default-password-takeover-2024",
+    "icon": "\ud83c\udf10",
+    "name": "DNS Hijacking & Router Default Password Takeover",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 94,
+    "desc": "Malicious ad or drive-by script accesses local home router at 192.168.1.1 using default password (admin/admin), modifying DNS server settings to redirect all home devices to phishing portals when typing bank URLs.",
+    "sampleMsg": "Home Wi-Fi router DNS modified by cross-site request forgery. When user types 'chase.com' on laptop or phone, rogue DNS routes connection to identical phishing server, harvesting credentials.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. User visits website hosting hidden WebRTC / CSRF script targeting default router IP (192.168.1.1).\n2. Logs into router admin panel using common factory credentials (admin/admin, admin/password).\n3. Replaces legitimate ISP DNS servers with malicious rogue DNS resolvers controlled by cybercriminals.",
+    "redFlags": [
+      "Home router still uses default manufacturer administrator password (admin/admin)",
+      "Websites occasionally show invalid SSL certificate errors on trusted domains",
+      "Typing common web addresses occasionally redirects to foreign ad portals or phishing screens",
+      "Internet speed degrades and strange advertisements appear on previously clean websites",
+      "All devices on home Wi-Fi experience identical routing anomalies simultaneously"
+    ],
+    "kyaKarein": [
+      "Change default router administrator password immediately upon installation",
+      "Update router firmware regularly and disable 'Remote Management' in router settings",
+      "Manually configure trusted secure DNS resolvers (e.g. Cloudflare 1.1.1.1 or Google 8.8.8.8) on your router"
+    ]
+  },
+  {
+    "id": "fake-critical-chrome-edge-browser-security-update-pop-up-2025",
+    "slug": "fake-critical-chrome-edge-browser-security-update-pop-up-2025",
+    "icon": "\ud83c\udf10",
+    "name": "Fake Critical Chrome / Edge Browser Security Update Pop-up",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 93,
+    "desc": "Compromised website displays full-screen overlay mimicking Google Chrome: 'Your browser is out of date! A critical security update is required to view this content', downloading trojan installer.",
+    "sampleMsg": "Google Chrome Update Alert: An update is required to view this webpage securely. Download Chrome-Update-v124.exe now to prevent browser vulnerability exploitation.",
+    "source": "Google News",
+    "kaiseHotaHai": "1. Legitimate WordPress websites infected with malicious redirect scripts.\n2. Visitors presented with convincing overlay mimicking authentic browser update notification.\n3. Downloaded file installs infostealer trojan or backdoors computer.",
+    "redFlags": [
+      "Webpage itself prompts you to download an executable file (.exe) to update your browser",
+      "Google Chrome and Microsoft Edge update AUTOMATICALLY in background without downloading manual .exe files from random websites",
+      "URL hosting the update is an obscure third-party web domain rather than google.com or microsoft.com",
+      "Popup claims you cannot view the webpage content until the file is installed",
+      "Antivirus triggers warning regarding suspicious dropper binary"
+    ],
+    "kyaKarein": [
+      "Update Google Chrome exclusively via Settings > About Chrome (built-in automated updater)",
+      "Never download browser update executables from random webpage banner popups",
+      "Close the deceptive browser tab immediately"
+    ]
+  },
+  {
+    "id": "discord-nitro-free-gift-subscription-trojan-trap-2024",
+    "slug": "discord-nitro-free-gift-subscription-trojan-trap-2024",
+    "icon": "\ud83c\udfae",
+    "name": "Discord Nitro Free Gift Subscription Trojan Trap",
+    "year": 2024,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 92,
+    "desc": "Bot messages on Discord offering 'Free 3 Months Discord Nitro', linking to a phishing domain mimicking Discord login that steals session tokens and auto-messages all user friends.",
+    "sampleMsg": "Discord Bot Gift: Congratulations! You have been gifted 3 months of Discord Nitro ($29.97 value)! Claim your gift subscription here before it expires: https://dlscord-nitro-gifts.com/claim",
+    "source": "Action Fraud",
+    "kaiseHotaHai": "1. Hacked Discord accounts or bots blast direct messages across public gaming servers.\n2. Phishing link features typo-squatted domain (dlscord, disord-app) with fake QR code login.\n3. Captures Discord user token, scans for linked credit cards, and buys gift subscriptions while spamming contacts.",
+    "redFlags": [
+      "Direct message offering free Discord Nitro from unknown user or bot",
+      "URL has subtle spelling error (e.g. dlscord.com, discord-app.gift)",
+      "Page asks you to scan a Discord QR code with your mobile app (scanning logs the attacker into your account)",
+      "Offer claims to be valid for only 24 hours to create artificial rush",
+      "Legitimate Discord gifts appear as native embedded cards within the chat interface, not external web links"
+    ],
+    "kyaKarein": [
+      "Never scan Discord QR codes on third-party websites with your mobile app",
+      "Check that domain is strictly 'discord.com' or 'discord.gift'",
+      "Enable Two-Factor Authentication on your Discord account and change password immediately if compromised"
+    ]
+  },
+  {
+    "id": "dark-web-credential-stuffing-automated-account-takeover-2025",
+    "slug": "dark-web-credential-stuffing-automated-account-takeover-2025",
+    "icon": "\ud83d\udd10",
+    "name": "Dark Web Credential Stuffing Automated Account Takeover",
+    "year": 2025,
+    "isLatest": false,
+    "country": "Global",
+    "category": "Tech",
+    "categorySlug": "tech-ransomware",
+    "categoryName": "Ransomware / Malware / Tech",
+    "score": 95,
+    "desc": "Automated botnets use billions of username/password combinations leaked from past corporate data breaches to test logins against banks, Netflix, and shopping portals, hijacking accounts sharing identical passwords.",
+    "sampleMsg": "User's password leaked in old LinkedIn breach is reused on food delivery and shopping apps. Automated bot successfully logs into Domino's and Uber accounts, ordering $350 in unauthorized food using saved credit cards.",
+    "source": "FBI IC3",
+    "kaiseHotaHai": "1. Attackers aggregate massive combo-lists containing billions of leaked credentials from past breaches.\n2. Configure automated bot suites (OpenBullet, SilverBullet) with proxy rotation to test logins against popular consumer websites.\n3. Successfully breached accounts are drained of loyalty points, stored card values, or sold on dark web marketplaces.",
+    "redFlags": [
+      "Receiving password reset or login alert emails from websites you have not visited recently",
+      "Account shows orders, deliveries, or viewing history you never initiated",
+      "You reuse the same primary password across multiple email, shopping, and entertainment services",
+      "Your email address appears in publicly known commercial data breaches",
+      "Stored reward points or digital gift card balances suddenly disappear"
+    ],
+    "kyaKarein": [
+      "NEVER reuse passwords across multiple services: generate unique passwords for every account",
+      "Use a reputable password manager (1Password, Bitwarden, Apple Keychain) to store unique credentials",
+      "Enable Two-Factor Authentication (2FA) using authenticator apps on all critical accounts"
+    ]
+  },
+  {
+    "id": "nigerian-prince-advance-fee-fraud-419-scam-classic",
+    "slug": "nigerian-prince-advance-fee-fraud-419-scam-classic",
+    "icon": "\ud83d\udc51",
+    "name": "Nigerian Prince Advance-Fee Fraud (419 Scam)",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 97,
+    "desc": "Originating from Section 419 of the Nigerian Criminal Code, an email or letter claims to be from a deposed Nigerian prince, government minister, or wealthy widow needing assistance to move $35,000,000 out of the country in exchange for 30% commission, extracting endless advance transfer fees.",
+    "sampleMsg": "Dear Beloved Friend, I am Prince Abacha of the Federal Republic of Nigeria. I have access to $28.5 Million USD currently frozen in the Central Bank of Nigeria. If you assist me as a foreign partner, I will grant you 30% ($8.5M). Remit $2,500 legal transfer fee to begin.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammer sends mass unsolicited emails claiming vast royal or political fortunes trapped by civil war or currency controls.\n2. Lures victim with the promise of millions of dollars for simple banking assistance.\n3. Convinces victim to pay sequential advance fees (foreign exchange permits, bribe money for customs officials, legal stamps), draining victim savings until victim realizes no fortune exists.",
+    "redFlags": [
+      "Unsolicited email from someone claiming to be foreign royalty, an exiled minister, or an attorney",
+      "Promises multi-million dollar payouts (20% - 30% of a massive fortune) for simple bank coordination",
+      "Requires payment of advance fees, legal permits, or government bribes to release the funds",
+      "Insists on total confidentiality and instructs you not to discuss the transaction with bank personnel",
+      "Email sender address uses generic free webmail services (Yahoo, Gmail) rather than official government domains"
+    ],
+    "kyaKarein": [
+      "Delete the email immediately; no foreign prince or government minister gives millions of dollars to random strangers",
+      "Never send money, bank account details, or passport copies to unknown international correspondents",
+      "Report advance-fee fraud emails to the FBI Internet Crime Complaint Center (ic3.gov)"
+    ]
+  },
+  {
+    "id": "the-spanish-prisoner-confidence-trick-classic",
+    "slug": "the-spanish-prisoner-confidence-trick-classic",
+    "icon": "\ud83c\udff0",
+    "name": "The Spanish Prisoner Confidence Trick",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 96,
+    "desc": "One of the oldest documented confidence tricks (originating in the late 16th century), where a correspondent claims to be imprisoned under false identity in Spain, asking for money to secure his release and promising a share of secret buried wealth and the hand of his beautiful daughter in marriage.",
+    "sampleMsg": "Sir, a wealthy nobleman is unjustly imprisoned under an assumed name in a Spanish fortress. If you provide bail funds of \u00a3500, he will disclose the location of his hidden estate and grant you the hand of his noble daughter in marriage.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. The con artist contacts the mark, sharing a secret about a wealthy nobleman held in prison.\n2. Appeals to the victim's chivalry, greed, and romantic ambition.\n3. The mark sends bail money; the con artist reports unexpected complications requiring further bribes and bail payments, repeating until the mark is bankrupt.",
+    "redFlags": [
+      "Secret communication claiming a high-born individual is imprisoned under an alias",
+      "Promises of immense hidden treasure combined with romantic or social elevation",
+      "Demands immediate bail or escape funding that must be delivered in cash or untraceable funds",
+      "Each payment is immediately followed by a new unexpected legal obstacle requiring more money",
+      "The victim is sworn to absolute secrecy on pain of the prisoner's execution"
+    ],
+    "kyaKarein": [
+      "Recognize this as the foundational ancestor of modern advance-fee fraud",
+      "Never finance legal releases or bail for individuals you do not know personally",
+      "Verify all claims through official diplomatic and consular channels"
+    ]
+  },
+  {
+    "id": "three-card-monte-shell-game-street-swindle-classic",
+    "slug": "three-card-monte-shell-game-street-swindle-classic",
+    "icon": "\ud83c\udccf",
+    "name": "Three-Card Monte & Shell Game Street Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 98,
+    "desc": "A classic street confidence game where a dealer manipulates three playing cards (find the Queen of Hearts) or three walnut shells covering a pea. Shills in the crowd win easy bets to entice onlookers, but sleight-of-hand mechanics make winning physically impossible for real players.",
+    "sampleMsg": "Watch the lady! Find the Queen of Hearts and double your money! $50 on the table, where is the red lady? (Shill in crowd bets $100 and visibly wins with theatrical excitement).",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. The dealer operates on a portable cardboard box with 3 or 4 confederates ('shills') posing as casual passersby.\n2. Shills make obvious bets, win large cash, and loudly celebrate to lure genuine spectators.\n3. When a mark bets, the dealer uses advanced sleight-of-hand (bent-corner illusion, Mexican turnover) ensuring the target card is never where it appears; pickpockets in the mob target spectator wallets.",
+    "redFlags": [
+      "Game played on a makeshift table, cardboard box, or upside-down trash can on a busy public sidewalk",
+      "Eager crowd members betting large wads of cash and winning with laughable ease",
+      "Dealer appears clumsy or deliberately flashes the winning card to make winning look effortless",
+      "Lookouts ('spotters') stationed on street corners watching for approaching police patrols",
+      "Aggressive crowd members who physically block victims from retrieving their cash or leaving"
+    ],
+    "kyaKarein": [
+      "NEVER bet on street card games; Three-Card Monte is NOT a game of chance, it is 100% rigged sleight-of-hand fraud",
+      "Keep walking and do not stop to watch; crowds around street games are packed with pickpockets targeting spectators",
+      "Notify local transit or municipal police of the swindlers' location"
+    ]
+  },
+  {
+    "id": "the-pigeon-drop-confidence-trick-classic",
+    "slug": "the-pigeon-drop-confidence-trick-classic",
+    "icon": "\ud83d\udd4a\ufe0f",
+    "name": "The Pigeon Drop Confidence Trick",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 95,
+    "desc": "Con artist approaches mark on street with a found envelope stuffed with cash. A second con artist (shill) joins, suggesting they divide the money equally. To ensure the mark doesn't run away with the found cash, they convince the mark to put up their own cash as 'good faith collateral'.",
+    "sampleMsg": "Excuse me, did you drop this envelope? Look, there is $25,000 in cash inside with no ID! A lawyer I know says we can split it three ways. But you must put $2,000 of your own money in this safe bag as good faith while I file the legal claim.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. First swindler 'finds' an envelope stuffed with cash right in front of the mark.\n2. Second accomplice arrives and suggests splitting the windfall equally among them.\n3. Convince the mark to hand over their own cash, jewelry, or watch as 'good faith guarantee' while one swindler goes to 'consult a lawyer', leaving the mark holding an envelope filled with cut newspaper.",
+    "redFlags": [
+      "Stranger approaches you in public claiming to have found an envelope or bag stuffed with large amounts of cash",
+      "A second stranger coincidentally appears and immediately proposes splitting the money with you",
+      "They insist you put up your own personal money or valuables as 'collateral' or 'good faith'",
+      "They hand you a sealed envelope or locked bag to hold while they step away for 10 minutes",
+      "The envelope, once opened, contains shredded paper or worthless coupons wrapped in a single real banknote"
+    ],
+    "kyaKarein": [
+      "If someone finds lost cash on the street, direct them to turn it over to the nearest police precinct",
+      "Never hand over your own money or jewelry as 'good faith collateral' to strangers",
+      "Walk away immediately if approached with found money schemes"
+    ]
+  },
+  {
+    "id": "the-fiddle-game-restaurant-trick-classic",
+    "slug": "the-fiddle-game-restaurant-trick-classic",
+    "icon": "\ud83c\udfbb",
+    "name": "The Fiddle Game Restaurant Trick",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 92,
+    "desc": "An elderly man eats at a restaurant and realizes he has no money, offering to leave his old violin as collateral while he gets cash. A second customer (accomplice) examines the violin, proclaims it is a rare $50,000 Stradivarius, and offers to buy it. The restaurant owner buys the violin from the old man for $5,000, only to discover it is worth $25.",
+    "sampleMsg": "Old gentleman leaves violin as collateral for his $40 meal. Connoisseur diner inspects it: 'Good heavens! This is a genuine 18th-century Guarneri worth $75,000! I will pay $25,000 for it tomorrow!' Restaurant manager buys violin from old man for $4,000 cash.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. First con artist leaves an apparently worthless musical instrument, painting, or watch as collateral for a modest bill.\n2. Second con artist, posing as an antique expert or collector, dramatically discovers the item is an irreplaceable masterpiece and offers an immense fortune for it.\n3. Greed takes over the shopkeeper, who buys the item from the first con artist for thousands in cash before the 'collector' is due to return; neither con artist ever returns.",
+    "redFlags": [
+      "Customer leaves an everyday object as collateral for a small unpaid restaurant or hotel bill",
+      "Another independent customer just happens to be a world-class antique expert who values the item at astronomical sums",
+      "The 'expert' leaves a large cash deposit and a business card promising to buy the item for tens of thousands the next morning",
+      "The original owner returns and is willing to sell the priceless item for a fraction of its alleged value",
+      "Both parties are working together in a coordinated two-person sting"
+    ],
+    "kyaKarein": [
+      "Never buy collateral left by customers; enforce standard payment for meals and services",
+      "If an antique looks like worthless junk, it is almost certainly worthless junk",
+      "Never broker high-value art or instrument sales based on verbal evaluations from restaurant patrons"
+    ]
+  },
+  {
+    "id": "black-money-wash-wash-chemistry-scam-classic",
+    "slug": "black-money-wash-wash-chemistry-scam-classic",
+    "icon": "\ud83e\uddea",
+    "name": "Black Money / Wash Wash Chemistry Scam",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 96,
+    "desc": "Con artists claim to possess millions in real $100 banknotes dyed black or purple with protective dye to smuggle past customs, demonstrating a 'magical cleaning chemical' that washes real cash, selling bottles of 'cleaning solvent' for $50,000 that is nothing but water.",
+    "sampleMsg": "We smuggled $5,000,000 from the central bank. To avoid customs detection, all bills were coated in black chemical dye. Watch this: with two drops of my secret chemical, this black paper turns into a genuine $100 bill! Buy a liter of chemical for $45,000 to clean the rest.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammer brings a trunk filled with black construction paper cut to banknote dimensions.\n2. Performs a chemistry demonstration: takes a real $100 bill previously coated in iodine/starch and washes it in vitamin C or chlorine water, revealing a genuine bill.\n3. Convinces mark that millions of black bills can be washed into clean cash, selling bottles of tap water as 'expensive cleaning chemical' for $50,000 to $100,000.",
+    "redFlags": [
+      "Claims that millions of dollars were dyed black, green, or blue to bypass customs inspectors",
+      "Demonstration uses theatrical chemicals (iodine, starch, chlorine) in dimly lit hotel rooms",
+      "The 'cleaned' banknote handed to the mark is genuine because the con artist simply washed a real pre-treated bill",
+      "Demands tens of thousands of dollars to purchase 'expensive laboratory chemical solvent'",
+      "Claims the chemical must be purchased from an embassy contact or secret overseas scientist"
+    ],
+    "kyaKarein": [
+      "Central banks and governments NEVER dye currency black to smuggle it through customs",
+      "There is NO such thing as 'black money chemical washing' \u2014 it is 100% fraudulent chemical theater",
+      "Report Wash Wash scam operations to federal law enforcement immediately"
+    ]
+  },
+  {
+    "id": "salted-gold-mine-mineral-property-fraud-classic",
+    "slug": "salted-gold-mine-mineral-property-fraud-classic",
+    "icon": "\u26cf\ufe0f",
+    "name": "Salted Gold Mine / Mineral Property Fraud",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 95,
+    "desc": "Historically practiced during the California Gold Rush (and modern mining stock scams like Bre-X), where swindlers secretly fire shotguns loaded with gold dust into rock crevices or add gold shavings to core drill samples to trick assayers into declaring a worthless rock quarry an ultra-rich mother lode.",
+    "sampleMsg": "Promoters sell shares in a Nevada silver mine. Before the independent geological assayer arrives, promoters fire shotgun shells packed with silver flake into the mine walls. Assayer reports exceptional mineral grades, driving stock price up 1,000%.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Swindlers purchase an exhausted, worthless mining claim or land parcel.\n2. Secretly 'salt' rock faces or drill core samples with real gold, diamonds, or high-grade ore.\n3. Independent assayers unwittingly certify rich deposits; swindlers sell overvalued stock or the property for millions before mining operations expose zero actual ore.",
+    "redFlags": [
+      "Extraordinary high-grade mineral assays reported on previously barren or abandoned properties",
+      "Assayers or geologists were not permitted to collect samples independently without company escort",
+      "Stock promoters launch aggressive marketing campaigns emphasizing immediate riches",
+      "Geological reports lack verifiable independent laboratory chain-of-custody documentation",
+      "Insiders dump massive shareholdings immediately following the release of initial drill results"
+    ],
+    "kyaKarein": [
+      "Invest exclusively in mining companies adhering to strict national standards (e.g. NI 43-101 in Canada, JORC in Australia)",
+      "Ensure core drill samples maintain verified third-party laboratory chain of custody",
+      "Beware of junior penny mining exploration companies with aggressive internet promotion"
+    ]
+  },
+  {
+    "id": "the-gilded-gold-brick-brass-bar-swindle-classic",
+    "slug": "the-gilded-gold-brick-brass-bar-swindle-classic",
+    "icon": "\ud83e\ude99",
+    "name": "The Gilded Gold Brick & Brass Bar Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 93,
+    "desc": "Con artist offers to sell a solid gold ingot supposedly stolen from a government treasury or found on Native American land at half price. The bar is solid brass or lead coated in a thin electroplated gold wash, with a small genuine gold corner drilled for the assay test.",
+    "sampleMsg": "A construction laborer claims he uncovered a hidden 5kg Spanish bullion bar while digging foundation. He drills a tiny corner shaving: testing acid proves 24-karat gold! Mark buys the bar for $35,000 cash, discovering the rest of the ingot is solid lead.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Con artist manufactures a heavy lead or tungsten bar matching gold density and electroplates it with genuine gold.\n2. Insets a small plug of pure solid gold into one specific corner.\n3. Takes mark to an assayer and specifically drills the pre-planted gold plug; mark purchases the bar for tens of thousands below market spot price.",
+    "redFlags": [
+      "Gold bullion offered for sale significantly below the prevailing global spot market price",
+      "Seller claims the gold is clandestine (stolen, untaxed, or found on ancestral grounds)",
+      "Seller insists on testing only one specific pre-drilled corner of the bar",
+      "Seller demands payment exclusively in physical cash or bearer bonds",
+      "Seller refuses to conduct sale inside a licensed precious metals bullion exchange"
+    ],
+    "kyaKarein": [
+      "Gold has a universal global spot market price; NO ONE sells real gold at a steep discount to strangers",
+      "Conduct non-destructive ultrasound testing and specific gravity density testing across the entire ingot",
+      "Purchase precious metals only from accredited mints and LBMA-certified bullion dealers"
+    ]
+  },
+  {
+    "id": "fortune-teller-curse-on-your-money-cleansing-scam-classic",
+    "slug": "fortune-teller-curse-on-your-money-cleansing-scam-classic",
+    "icon": "\ud83d\udd2e",
+    "name": "Fortune Teller 'Curse on Your Money' Cleansing Scam",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 96,
+    "desc": "Psychic reader or astrologer tells client that a dark ancestral curse or evil spirit is attached to their money and family, causing illness or misfortune. Client is instructed to bring their life savings in cash to be 'spiritually cleansed' over burning herbs, during which the cash is switched with cut paper.",
+    "sampleMsg": "Psychic Madame Rosa reads palm: 'A black death curse is attached to your family lineage! The evil spirit resides in your bank money. Bring $45,000 cash in a white pillowcase to the altar tomorrow. I will bury it in holy earth to burn the curse away.'",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Client visits psychic during emotional vulnerability (bereavement, illness, romantic breakup).\n2. Psychic performs sleight-of-hand parlor trick (breaking egg that reveals fake black worms or blood inside).\n3. Convinces victim their wealth is demonically cursed, requiring cash to be brought to altar where psychic switches bags with chopped newspaper and tells client not to open it for 30 days.",
+    "redFlags": [
+      "Psychic claims a generational death curse, black magic spell, or demonic entity is attached to your family",
+      "Uses parlor tricks: crack an egg revealing black dye, or turn water red to prove 'evil presence'",
+      "Demands that you withdraw your entire bank savings in cash to be 'blessed' or 'cleansed' on an altar",
+      "Forbids you from opening the blessed envelope or pillowcase for 9 days, 21 days, or 40 days",
+      "Threatens that opening the container early will cause sudden death to your children or spouse"
+    ],
+    "kyaKarein": [
+      "Never bring cash, jewelry, or financial assets to psychics, mediums, or astrologers",
+      "Report fraudulent psychic extortion to local police and state consumer protection agencies",
+      "Seek guidance from licensed medical and mental health professionals for personal distress"
+    ]
+  },
+  {
+    "id": "the-badger-game-extortion-trap-classic",
+    "slug": "the-badger-game-extortion-trap-classic",
+    "icon": "\ud83d\udeaa",
+    "name": "The Badger Game Extortion Trap",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 97,
+    "desc": "An attractive woman seduces a wealthy married man into a compromising position in a hotel room. Suddenly, her 'enraged husband' (accomplice) bursts in brandishing a weapon or camera, threatening public exposure and divorce scandal unless paid a massive hush-money settlement.",
+    "sampleMsg": "Woman invites married businessman to her apartment for intimacy. Ten minutes later, her violent 'husband' kicks the door down screaming betrayal, pulling a camera: 'You ruined my marriage! Give me $25,000 right now or I send photos to your wife and company board!'",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Female accomplice targets affluent married man in hotel bar or business lounge.\n2. Lures mark into hotel bedroom or private apartment.\n3. Male accomplice bursts in staging extreme marital fury, threatening immediate physical violence or public ruin unless an extortionate financial settlement is paid on the spot.",
+    "redFlags": [
+      "An attractive stranger becomes sexually aggressive and invites you to an unmonitored private room very quickly",
+      "Sudden dramatic intrusion by an alleged jealous spouse or family member within minutes of arrival",
+      "Intruder immediately produces camera equipment or photographs while making verbal threats",
+      "Quick transition from emotional outrage to demanding specific sums of cash or jewelry to 'forget the incident'",
+      "Accomplices demand victim accompany them to an ATM to make maximum cash withdrawals"
+    ],
+    "kyaKarein": [
+      "Avoid private secluded hotel rooms with strangers met in bars or lounges",
+      "If cornered, prioritize personal physical safety and escape to a public lobby immediately",
+      "Report the criminal extortion scheme to local law enforcement authorities"
+    ]
+  },
+  {
+    "id": "the-money-box-roll-over-duplicate-currency-printer-classic",
+    "slug": "the-money-box-roll-over-duplicate-currency-printer-classic",
+    "icon": "\ud83d\udda8\ufe0f",
+    "name": "The Money-Box / Roll-Over Duplicate Currency Printer",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 94,
+    "desc": "Invented by master swindler Victor Lustig (the man who sold the Eiffel Tower), the scammer demonstrates a mahogany wooden box with brass dials that supposedly copies $100 bills using chemical radium rollers, taking 6 hours per bill. The mark buys the 'money-printing machine' for $30,000, only for it to produce blank paper after two pre-loaded real bills emerge.",
+    "sampleMsg": "Victor Lustig inserts blank paper and chemical into a polished mahogany brass box, turning dials. Six hours later, the machine dispenses a crisp genuine $100 bill. Mark is amazed, takes bill to bank, verifies it is real, and pays $25,000 to buy the machine.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Swindler demonstrates an elaborate mechanical box with dials, gears, and chemical smells.\n2. Inserts blank banknote paper and a real $100 bill, claiming the device duplicates currency via chemical absorption.\n3. The machine dispenses two genuine $100 bills previously hidden inside the roller mechanism; mark buys the machine for tens of thousands and discovers it produces only blank paper once the pre-loaded bills run out.",
+    "redFlags": [
+      "Seller claims to possess a machine, chemical process, or software capable of duplicating legal currency",
+      "The demonstration process takes hours ('the chemical reaction takes 6 hours to cure paper fibers')",
+      "The banknotes produced during the demonstration are real because the con artist concealed genuine cash inside",
+      "The seller agrees to part with their 'infinite money printer' for a fixed lump-sum cash price",
+      "The seller disappears while the mark waits for the machine to finish printing its next batch"
+    ],
+    "kyaKarein": [
+      "Remember fundamental logic: If someone possessed a machine that printed real money, they would NEVER sell it to you",
+      "Manufacturing or duplicating currency is high treason and counterfeiting under federal penal law",
+      "Recognize this as one of history's most legendary confidence swindles"
+    ]
+  },
+  {
+    "id": "the-wire-delayed-race-results-wiretapping-scam-classic",
+    "slug": "the-wire-delayed-race-results-wiretapping-scam-classic",
+    "icon": "\ud83c\udfc7",
+    "name": "The Wire / Delayed Race Results Wiretapping Scam",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 96,
+    "desc": "Depicted in the Oscar-winning film 'The Sting', con artists set up a complete fake betting parlor (the 'big store') populated by dozens of actor shills. They convince the mark they have tapped the Western Union telegraph wire to receive horse racing results two minutes before bookmakers, betting the mark's life savings on a 'sure thing' and deliberately misinterpreting instructions.",
+    "sampleMsg": "Con artist claims his telegraphist partner taps Western Union wires, getting race results 2 minutes before bookies. Mark enters lavish fake betting parlor with 30 actors. Mark bets $50,000 on 'Lucky Dan to place'. Horse comes in second; teller says: 'I told you to win, not to place! You lost everything.'",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Swindlers build a complete temporary 'big store' (fake betting shop, fake stock brokerage) populated by dozens of actor confederates.\n2. Convince mark they have inside telegraph delay giving guaranteed foreknowledge of race or stock results.\n3. The mark places huge bet; the con artists engineer an intentional misunderstanding ('place' vs 'win') so the mark believes they made a personal betting error rather than being robbed.",
+    "redFlags": [
+      "Offers of 'guaranteed inside information' or delayed financial market feeds",
+      "Elaborate physical environment where every patron, teller, and customer is overly dramatic or synchronized",
+      "Claims that transactions are taking advantage of a technical loophole or delay in communications",
+      "High stakes requiring the mark to convert substantial bank deposits into cash",
+      "The loss is framed as the victim's own personal misunderstanding of instructions"
+    ],
+    "kyaKarein": [
+      "There are no legitimate guarantees in gambling, sports betting, or high-speed market arbitrage",
+      "Be aware of sophisticated 'big store' setups where every participant in an office or room is an actor",
+      "Avoid participating in illegal gambling or wire-tapping operations"
+    ]
+  },
+  {
+    "id": "selling-the-eiffel-tower-public-landmark-sale-fraud-classic",
+    "slug": "selling-the-eiffel-tower-public-landmark-sale-fraud-classic",
+    "icon": "\ud83d\uddfc",
+    "name": "Selling the Eiffel Tower / Public Landmark Sale Fraud",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 95,
+    "desc": "Executed twice in 1925 by master con artist Victor Lustig, who posed as a French government deputy director, inviting Paris scrap metal dealers to secret hotel meetings, convincing them the Eiffel Tower was too expensive to maintain and was being sold for scrap, pocketing huge bribes and purchase tenders.",
+    "sampleMsg": "Victor Lustig presents forged French Ministry of Posts stationery: 'Due to engineering decay, Paris municipal council has decided to dismantle the Eiffel Tower and sell 7,000 tons of scrap metal. Submit confidential tenders.' Scrap dealer Andre Poisson pays $70,000 bribe and tender cash.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Con artist rents luxury hotel suite and invites scrap metal tycoons under fake government credentials.\n2. Convinces target that public landmark maintenance is bankrupting city and must be quietly auctioned.\n3. Swindler feigns corruption, asking for personal cash bribes to guarantee tender award, fleeing with both the bribe and deposit.",
+    "redFlags": [
+      "Private individual offering to sell, lease, or scrap major public municipal monuments or public infrastructure",
+      "Meetings conducted in private hotel suites rather than official municipal government ministries",
+      "Demands absolute secrecy under the pretense of avoiding public outcry and press scandals",
+      "Official asks for under-the-table cash bribes to secure lucrative government contracts",
+      "Documents feature ornate but unverified official stamps and seals"
+    ],
+    "kyaKarein": [
+      "Public infrastructure and national landmarks are NEVER sold through private hotel room negotiations",
+      "Verify all municipal procurement tenders through official public government gazettes and registries",
+      "Report bribery and public procurement fraud to anti-corruption authorities"
+    ]
+  },
+  {
+    "id": "the-melter-counterfeit-gold-bar-melting-swindle-classic",
+    "slug": "the-melter-counterfeit-gold-bar-melting-swindle-classic",
+    "icon": "\ud83d\udd25",
+    "name": "The Melter / Counterfeit Gold Bar Melting Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 93,
+    "desc": "Con artist approaches a mark with unrefined gold nuggets or bars, agreeing to have them melted down at an independent jeweler. The con artist uses a trick crucible with a secret false compartment containing genuine gold, or switches the molten crucible with real gold during the pour, proving high purity.",
+    "sampleMsg": "Miner shows mark 2kg of rough nuggets. At jeweler shop, miner melts nuggets in his special clay crucible. In the pour, the crucible releases pure gold from a hidden wax plug. Mark buys the remaining 20kg of 'rough gold' for $80,000, which is pure pyrite copper slag.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Con artist brings rough raw mineral rocks claiming they were unearthed from a private strike.\n2. Insists on using his own clay crucible or tongs during the jeweler's melt test.\n3. Melting process releases hidden pure gold beads, tricking the buyer into purchasing hundreds of pounds of worthless pyrite (fool's gold).",
+    "redFlags": [
+      "Seller insists on using their own specialized melting equipment, crucibles, or flux chemicals",
+      "Unrefined ore offered for sale at a steep discount to spot precious metal value",
+      "Seller creates a spectacle of amateur metallurgy in front of the buyer",
+      "Only a tiny random sample is melted while the bulk ore remains sealed in barrels",
+      "Seller insists on immediate cash payment following the successful test melt"
+    ],
+    "kyaKarein": [
+      "Refine precious metals only at certified commercial assayers using the assayer's own laboratory crucibles and equipment",
+      "Conduct full X-ray fluorescence (XRF) spectrometry across multiple random bulk core samples",
+      "Never purchase raw unrefined mineral ore without independent accredited laboratory certification"
+    ]
+  },
+  {
+    "id": "the-murphy-game-street-prostitution-cash-advance-theft-classic",
+    "slug": "the-murphy-game-street-prostitution-cash-advance-theft-classic",
+    "icon": "\ud83d\udeaa",
+    "name": "The Murphy Game Street Prostitution Cash Advance Theft",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 92,
+    "desc": "A street hustler ('the steerer') promises a customer in a nightlife district an introduction to high-class women in an apartment building. The hustler takes the mark's money and valuables 'for safekeeping so the girls don't rob you', tells mark to walk upstairs to Room 302, and flees out the back alley.",
+    "sampleMsg": "Hustler outside nightclub: 'Hey friend, the private VIP club is on the 3rd floor. Give me your watch, wallet, and $100 entry fee so the dancers don't steal it inside. Go up to door 3B and knock twice.' Mark knocks on door 3B; an angry elderly tenant answers; hustler has fled.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Street hustler approaches mark in entertainment district promising access to illegal or clandestine entertainment.\n2. Leads mark to an apartment building with dual street exits.\n3. Convinces mark to hand over cash and valuables 'for security', directing mark up the stairs while hustler exits through the rear delivery door.",
+    "redFlags": [
+      "Stranger approaches you on city streets offering access to secret nightlife clubs or escorts",
+      "Directs you to an ordinary residential apartment building with no commercial signage",
+      "Demands that you surrender your wallet, watch, or cash before entering for 'safekeeping'",
+      "Tells you to walk up the stairs and knock on a specific private residential apartment door",
+      "Building features rear exits, fire escapes, or public alleyway corridors"
+    ],
+    "kyaKarein": [
+      "Never follow street touts or hustlers to private residential buildings or alleyways",
+      "NEVER surrender your wallet, phone, or jewelry to anyone on the street for 'safekeeping'",
+      "Stay in well-lit, reputable, licensed commercial entertainment venues"
+    ]
+  },
+  {
+    "id": "the-green-goods-counterfeit-money-advance-swindle-classic",
+    "slug": "the-green-goods-counterfeit-money-advance-swindle-classic",
+    "icon": "\ud83d\udcb5",
+    "name": "The Green Goods Counterfeit Money Advance Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 94,
+    "desc": "Prominent in late 19th-century America, swindlers mailed circulars offering to sell 'genuine government plates' counterfeit banknotes for pennies on the dollar. When the greedy mark arrived with cash, the swindlers showed real bills, but switched the locked carpetbag with one filled with green sawdust and sawdust bricks.",
+    "sampleMsg": "Circular mailed to shopkeeper: 'We have acquired authentic Treasury printing plates. Flawless currency indistinguishable from genuine cash. $10,000 in bills for $1,000 cash.' Mark travels to New York, inspects real bills, but is handed bag of green sawdust.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Sends circulars to small-town businessmen offering high-grade counterfeit money at 10-to-1 ratios.\n2. Convinces mark to travel to a private meeting location with cash.\n3. Allows mark to inspect genuine banknotes, then switches the locked bag with an identical carpetbag filled with green sawdust, threatening the mark with arrest if they complain.",
+    "redFlags": [
+      "Offers to sell counterfeit banknotes or stolen currency at pennies on the dollar",
+      "Appeals to the victim's criminal greed, knowing the mark cannot easily go to police without admitting intent to buy counterfeit cash",
+      "Demands that the transaction occur in cash in a strange city or unfamiliar warehouse",
+      "Switches luggage bags using a hidden trapdoor or distraction",
+      "Accomplices pose as police officers to scare the mark into fleeing without checking the bag"
+    ],
+    "kyaKarein": [
+      "Attempting to purchase counterfeit currency is a severe federal felony",
+      "Never travel to isolated locations with large sums of physical cash",
+      "Understand that swindlers exploit victim complicity to prevent reporting to police"
+    ]
+  },
+  {
+    "id": "the-snake-oil-miracle-patent-medicine-cure-classic",
+    "slug": "the-snake-oil-miracle-patent-medicine-cure-classic",
+    "icon": "\ud83d\udc0d",
+    "name": "The Snake Oil Miracle Patent Medicine Cure",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Classic",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 93,
+    "desc": "Originating in 19th-century traveling medicine shows (pioneered by Clark Stanley 'The Rattlesnake King'), vendors sell bottles of mineral oil, alcohol, and turpentine claiming it cures cancer, arthritis, tuberculosis, and blindness, with shills in the audience pretending to be instantly cured of lameness.",
+    "sampleMsg": "Clark Stanley's Snake Oil Liniment: Extracted from pure Arizona rattlesnakes! Cures rheumatism, deafness, kidney disease, frostbite, and toothache in 5 minutes! (Shill in audience drops crutches and leaps onto stage dancing). Only $1 per bottle!",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Traveling showman sets up theatrical wagon in town square with music and entertainment.\n2. Gives dramatic lecture claiming a miraculous exotic remedy discovered among Native Americans or Chinese herbalists.\n3. Hired confederates ('plants') in the crowd pretend to be miraculously healed on stage, provoking a buying frenzy for 10-cent mineral oil sold at $1 a bottle.",
+    "redFlags": [
+      "Product claims to cure an impossible variety of completely unrelated illnesses (cancer, arthritis, baldness, diabetes)",
+      "Promoted with theatrical personal testimonials and miraculous instant cures",
+      "Vendor claims the scientific establishment, doctors, or pharmaceutical companies are 'conspiring to suppress the secret'",
+      "Ingredient list is secretive, proprietary, or lacks verified medical laboratory regulation",
+      "High emotional manipulation targeting desperate chronic disease patients"
+    ],
+    "kyaKarein": [
+      "Consult licensed medical doctors and pharmacists for health conditions and medical treatments",
+      "Verify medical claims through peer-reviewed scientific studies and regulatory bodies (FDA, EMA)",
+      "Be deeply skeptical of any health remedy claiming to cure multiple disparate chronic diseases"
+    ]
+  },
+  {
+    "id": "the-lost-dog-heartbroken-owner-reward-swindle-classic",
+    "slug": "the-lost-dog-heartbroken-owner-reward-swindle-classic",
+    "icon": "\ud83d\udc15",
+    "name": "The Lost Dog Heartbroken Owner Reward Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 91,
+    "desc": "A wealthy-looking woman visits a small diner or antique shop in tears, claiming her champion show dog is lost and offering a $1,000 cash reward. The next day, a scruffy man walks in holding the exact dog, offering to sell it to the shopkeeper for $200. The shopkeeper buys the dog hoping for the $1,000 reward; neither swindler returns.",
+    "sampleMsg": "Distraught lady posts flyer in bakery: 'Lost pedigree Poodle! $1,500 reward no questions asked!' Next afternoon, hobo enters bakery with the poodle: 'Found this dog in alley, anyone want to buy it for $250?' Baker pays $250 cash to claim the $1,500 reward.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. First con artist establishes immense emotional value and astronomical reward for a lost pet or heirloom.\n2. Second con artist appears with the item or animal, asking for a small modest sum.\n3. Greed compels the mark to purchase the item with the intention of claiming the large reward, only to discover the reward was completely fabricated.",
+    "redFlags": [
+      "Distraught stranger posts massive cash reward posters for a common item or pet",
+      "A second stranger coincidentally finds the exact missing item within 24 hours in the immediate vicinity",
+      "The finder is unwilling to claim the official reward themselves ('I don't have ID / I'm in a hurry')",
+      "The finder offers to surrender the item for a fraction of the advertised reward amount",
+      "The original pet owner's phone number is permanently disconnected immediately after the sale"
+    ],
+    "kyaKarein": [
+      "Never buy lost property or animals from third parties in hopes of claiming a reward",
+      "Instruct the finder to contact the phone number on the poster directly or take the pet to a shelter",
+      "Recognize this as a classic variation of the two-person confidence swindle"
+    ]
+  },
+  {
+    "id": "the-unclaimed-inheritance-genealogist-heir-search-classic",
+    "slug": "the-unclaimed-inheritance-genealogist-heir-search-classic",
+    "icon": "\ud83c\udf33",
+    "name": "The Unclaimed Inheritance Genealogist Heir Search",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 92,
+    "desc": "Letters mailed to families with uncommon surnames claiming an international genealogist research firm has uncovered an unclaimed $1.5M estate from an ancestral relative, offering to provide the certified family tree and estate claim dossier for a $250 research fee.",
+    "sampleMsg": "International Heritage Archives: Our historical research has identified you as a potential legal heir to the unclaimed estate of Sir William [Your Name] ($1,850,000). Order your Certified Heir Verification Dossier for $249 to establish legal claim.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammers scrape phonebooks for uncommon or regional surnames.\n2. Mail thousands of personalized letters promising ancestral inheritances.\n3. Cash thousands of $250 checks and send back generic, worthless photocopies of public census records.",
+    "redFlags": [
+      "Letter arrives claiming you are heir to an ancestral fortune you have never heard of",
+      "The genealogist firm charges an upfront 'dossier fee', 'heir certification fee', or 'research charge'",
+      "Letter sent to dozens of unrelated individuals who simply share the same last name",
+      "Company name sounds prestigious ('International Probate Registry', 'Heritage Claims Bureau')",
+      "The promised estate has no court probate docket number or legal jurisdiction cited"
+    ],
+    "kyaKarein": [
+      "Legitimate probate genealogists work on contingency percentages paid from the estate, NEVER upfront fees from heirs",
+      "Check official state unclaimed property registers (e.g. missingmoney.com in the US) for free",
+      "Discard mass genealogy solicitations"
+    ]
+  },
+  {
+    "id": "the-ring-drop-sidewalk-gold-jewelry-swindle-classic",
+    "slug": "the-ring-drop-sidewalk-gold-jewelry-swindle-classic",
+    "icon": "\ud83d\udc8d",
+    "name": "The Ring Drop Sidewalk Gold Jewelry Swindle",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 93,
+    "desc": "Common tourist scam in Paris, Rome, and London: A stranger bends down in front of a tourist, picks up a shiny ring, and asks: 'Did you drop this gold wedding band?' Shows a fake '18K' hallmark, claims they cannot keep it for religious reasons, and offers it to tourist for \u20ac50 for food.",
+    "sampleMsg": "Tourist walks near Eiffel Tower. Scammer bends down: 'Excuse me, you dropped this solid gold ring!' Shows inside hallmark '18K'. 'I am homeless, I cannot sell gold. Give me \u20ac40 for lunch and you keep this \u20ac500 ring.' Tourist pays; ring is 10-cent brass.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammer drops cheap brass curtain ring right in tourist's walking path and dramatically retrieves it.\n2. Flatters tourist and shows stamped counterfeit '18K' or '750' gold hallmarks.\n3. Pleads poverty and sells the worthless 10-cent ring to the tourist for \u20ac20 to \u20ac50.",
+    "redFlags": [
+      "Stranger bends down right in front of you claiming to find a piece of jewelry you didn't drop",
+      "Stranger immediately shows you the ring and points out the '18K' or '750' hallmark stamp",
+      "Presents an emotional story about why they cannot keep or pawn the jewelry",
+      "Asks for a modest amount of cash (\u20ac20 - \u20ac50) in exchange for the 'valuable gold ring'",
+      "Commonly practiced in major European tourist hotspots (Paris, Rome, Florence)"
+    ],
+    "kyaKarein": [
+      "Say 'No, that is not mine' firmly and keep walking without breaking stride",
+      "Never give cash to strangers on the street claiming to find valuable jewelry",
+      "Warn traveling companions about street distraction theater in tourist areas"
+    ]
+  },
+  {
+    "id": "the-drop-lock-bicycle-padlock-parking-extortion-classic",
+    "slug": "the-drop-lock-bicycle-padlock-parking-extortion-classic",
+    "icon": "\ud83d\udeb2",
+    "name": "The Drop-Lock Bicycle Padlock Parking Extortion",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 90,
+    "desc": "A cyclist parks their bicycle on a city street. While away, a scammer places a second heavy U-lock or padlock on the bicycle frame alongside a phone number note. When the cyclist calls, the scammer demands $50 cash to come unlock the bike or threatens to strip it overnight.",
+    "sampleMsg": "Cyclist returns to locked bicycle on street to find a stranger's heavy kryptonite lock wrapped through the wheel with a sticky note: 'Accidentally locked your bike. Text 555-0192 with $40 Venmo to get unlock combination.'",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammer targets bicycles parked on public street racks during evening hours.\n2. Snaps a second padlock through the frame and rear wheel, immobilizing the bicycle.\n3. Forces owner to either pay electronic ransom or abandon bicycle overnight, allowing thief to cut the owner's lock at 3:00 AM undisturbed.",
+    "redFlags": [
+      "Your parked bicycle has an unfamiliar padlock or chain wrapped through the frame",
+      "A handwritten note or sticker left on the handlebar with a phone number or payment handle",
+      "Caller demands money to provide the combination key code",
+      "Scammer threatens that the bicycle will be stolen or destroyed if not settled tonight",
+      "Occurs in busy urban nightlife districts or college campuses"
+    ],
+    "kyaKarein": [
+      "Do NOT pay the extortionist; paying does not guarantee they will unlock the bike",
+      "Contact local police or campus security to escort you while using a portable angle grinder or locksmith",
+      "Never leave your bicycle locked on public streets overnight"
+    ]
+  },
+  {
+    "id": "the-sick-child-street-prescription-pharmacy-beggar-classic",
+    "slug": "the-sick-child-street-prescription-pharmacy-beggar-classic",
+    "icon": "\ud83d\udc8a",
+    "name": "The Sick Child Street Prescription Pharmacy Beggar",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 91,
+    "desc": "A well-dressed, distraught parent approaches commuters outside a train station with a medical prescription for expensive infant antibiotics, weeping that they are $35 short. When a kind commuter gives cash or buys the medicine, the scammer returns the medicine to a participating pharmacy for a cash refund.",
+    "sampleMsg": "Distraught mother outside pharmacy cries: 'My 6-month-old baby is burning with 104 fever. The doctor prescribed $48 antibiotic drops and I am $30 short. Please help me save my baby!' Commuter buys the medicine; woman refunds it 10 minutes later for cash.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Scammer obtains an authentic-looking doctor's prescription for an expensive, non-controlled medication.\n2. Stands near pharmacies or transit stations performing intense emotional distress.\n3. Collects hundreds of dollars in cash daily from compassionate strangers or returns purchased drugs to complicit chemists for refund cuts.",
+    "redFlags": [
+      "Beggar presents a doctor's prescription slip or medical bill as immediate proof of need",
+      "High emotional theater involving acute infant or child illness",
+      "Stationed directly outside high-foot-traffic transport terminals or pharmacy entrances",
+      "Refuses offers to take the baby to an emergency hospital room",
+      "Same individual seen working the identical street corner day after day with identical script"
+    ],
+    "kyaKarein": [
+      "Donate to established charitable hospital emergency funds rather than street solicitations",
+      "Offer to call municipal social services or non-emergency ambulance support",
+      "Be aware that medical prescriptions are frequently used as street confidence props"
+    ]
+  },
+  {
+    "id": "the-counterfeit-money-order-roommate-deposit-scam-classic",
+    "slug": "the-counterfeit-money-order-roommate-deposit-scam-classic",
+    "icon": "\ud83c\udfe0",
+    "name": "The Counterfeit Money Order Roommate Deposit Scam",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "USA",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 95,
+    "desc": "A prospective tenant moving from out of state sends a postal money order for first and last month's rent plus extra $1,000 for 'moving van delivery'. Landlord deposits money order, wires $1,000 to the mover, and days later bank discovers money order was counterfeit, holding landlord liable.",
+    "sampleMsg": "Out-of-state tenant mails $3,500 USPS money order for $2,000 apartment rent deposit. Asks landlord to deposit it, keep rent + $200 bonus, and wire $1,300 to moving company. Money order is forged; landlord loses $1,300.",
+    "source": "FTC",
+    "kaiseHotaHai": "1. Scammer targets individuals advertising rooms or apartments for rent on Craigslist.\n2. Sends high-quality counterfeit postal money orders for more than the required security deposit.\n3. Asks landlord to wire excess funds to a third party; when bank discovers the forgery weeks later, the funds are reversed from the landlord's account.",
+    "redFlags": [
+      "Tenant rents property unseen without in-person inspection or video walk-through",
+      "Payment arrives via physical postal money order or cashier's check exceeding the requested rent",
+      "Elaborate explanation why employer or relocation agent sent an overpayment check",
+      "Urgent request to wire excess balance to a moving company or shipping agent",
+      "Watermark on postal money order lacks official security features (Franklin watermark, color-shifting ink)"
+    ],
+    "kyaKarein": [
+      "Verify USPS Postal Money Orders directly using the official verification system: usps.com/money-orders or call 1-866-459-7822",
+      "Never wire money to third parties on behalf of incoming tenants",
+      "Wait for checks and money orders to fully clear through inter-bank settlement before granting access or returning funds"
+    ]
+  },
+  {
+    "id": "the-fake-antique-roadshow-family-heirloom-appraisal-classic",
+    "slug": "the-fake-antique-roadshow-family-heirloom-appraisal-classic",
+    "icon": "\ud83c\udffa",
+    "name": "The Fake Antique Roadshow Family Heirloom Appraisal",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 92,
+    "desc": "Traveling 'antique appraisers' hold free appraisal fairs in hotel conference rooms. An appraiser tells a widow her late husband's bronze clock is common junk worth $50, offering to buy it for $100 out of pity. The clock is actually a museum-grade Renaissance antique worth $40,000, which the appraiser immediately flips at auction.",
+    "sampleMsg": "Free Hotel Antique Roadshow: Appraiser examines elderly woman's antique jade vase: 'This is a 1970s tourist reproduction worth $30, but I will give you $75 for it.' Appraiser sells the genuine 18th-century Qing Dynasty vase at Sotheby's for $65,000.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Swindlers advertise 'Free Antique Valuation & Buying Events' across regional hotels.\n2. Downplay the authenticity and value of genuine family heirlooms brought in by unsuspecting seniors.\n3. Purchase valuable rare gold, coins, and antiques for pennies, reselling them at major auction houses for fortunes.",
+    "redFlags": [
+      "Traveling roadshow company offering 'Free Appraisals' with zero independent certification",
+      "The appraiser offers to buy the item directly from you immediately after evaluating it (severe conflict of interest)",
+      "Appraiser discourages you from getting a second opinion from an independent museum curator or certified appraiser",
+      "Appraiser uses high-pressure cash offers to close deals on the spot",
+      "Company leaves town the following morning with no permanent local business address"
+    ],
+    "kyaKarein": [
+      "NEVER sell antiques or art to the same person who appraised them (independent appraisers do not buy items they appraise)",
+      "Hire certified appraisers affiliated with the Appraisers Association of America (AAA) or International Society of Appraisers (ISA)",
+      "Get independent secondary opinions on significant family heirlooms"
+    ]
+  },
+  {
+    "id": "the-broken-vase-stumble-drop-insurance-trap-classic",
+    "slug": "the-broken-vase-stumble-drop-insurance-trap-classic",
+    "icon": "\ud83c\udffa",
+    "name": "The Broken Vase Stumble & Drop Insurance Trap",
+    "year": "Classic",
+    "isLatest": false,
+    "country": "Global",
+    "category": "Classic",
+    "categorySlug": "classic-tricks",
+    "categoryName": "Classic / Confidence Tricks (Wikipedia)",
+    "score": 91,
+    "desc": "Con artist carrying a cardboard box bumps into a distracted tourist on a busy street and drops the box, which shatters loudly. Con artist cries that an antique Ming Dynasty ceramic vase was destroyed, demanding \u20ac200 compensation from the terrified tourist to avoid calling police.",
+    "sampleMsg": "Pedestrian in Florence bumps into tourist, dropping parcel with ceramic smash. Swindler weeps: 'You broke my grandfather's antique porcelain urn! It was worth \u20ac450! Pay me \u20ac150 right now or I call the Carabinieri!' The vase was already broken junk inside.",
+    "source": "Wikipedia",
+    "kaiseHotaHai": "1. Con artist walks down busy tourist street carrying a package containing pre-broken ceramic shards.\n2. Deliberately steps into the path of an oncoming tourist and drops the parcel with theatrical drama.\n3. Intimidates tourist in foreign country, demanding immediate cash settlement to avoid police intervention.",
+    "redFlags": [
+      "Pedestrian deliberately steps into your personal space or stops abruptly in front of you",
+      "Parcel shatters instantly upon contact, indicating contents were already cracked or fragile",
+      "Immediate aggressive demand for cash compensation rather than exchanging contact information",
+      "Accomplices gather around supporting the con artist and pressuring the tourist to pay",
+      "Threatens to call local police while simultaneously refusing to walk with you to a police station"
+    ],
+    "kyaKarein": [
+      "Insist on walking to the nearest uniformed police officer or municipal station to file an official report",
+      "Never hand over cash in on-the-spot street collision disputes",
+      "Firmly state: 'Let us wait for the police to document the incident' \u2014 swindlers will immediately flee"
+    ]
+  }
+];

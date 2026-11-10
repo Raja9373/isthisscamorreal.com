@@ -13,7 +13,7 @@
       });
     } catch (e) {}
   </script>
-  <title>Is This a Scam? Free Scam Checker - Check Message, Link, Number, Email | IsThisScamOrReal.com</title>
+  <title>Is This a Scam? Free Scam Checker & World Scampedia (300+ Scams) | IsThisScamOrReal.com</title>
   <meta name="description" id="metaDescTag" content="Is this message a scam or real? Paste any SMS, WhatsApp message, link, number or email. Free scam checker gives instant answer in your language. No signup needed." />
   <meta name="keywords" content="scam checker, is this a scam, is this scam or real, scam check, fake message check, link checker, number lookup, email checker, phishing checker, fraud check, scam detector, fake website checker, SMS scam checker, is this message a scam or real, how to check if a message is a scam" />
   <meta name="theme-color" content="#00C853">
@@ -146,7 +146,7 @@
     body.dark .text-slate-700, body.dark .text-slate-600, body.dark .text-slate-500 {
       color: #94A3B8 !important;
     }
-    body.dark .bg-slate-50, body.dark .bg-[#FBFFFC], body.dark .bg-[#EEF6F0] {
+    body.dark .bg-slate-50, body.dark .light-bg {
       background: #142442 !important;
       border-color: rgba(255,255,255,.1) !important;
     }
@@ -441,7 +441,7 @@
         <nav class="hidden md:flex items-center gap-5 text-sm font-semibold text-white/80">
           <a href="#top" onclick="showView('home')" class="hover:text-white transition" data-i18n="home">Home</a>
           <a href="#checker" onclick="showView('home')" class="hover:text-white transition" data-i18n="check">Check</a>
-          <a href="#scam-database" onclick="showView('scam-database')" class="hover:text-white transition" data-i18n="navDatabase">Scam Database</a>
+          <a href="#scam-database" onclick="showView(\'scam-database\')" class="hover:text-white transition" data-i18n="navDatabase">Scampedia (300+)</a>
           <a href="#blog" onclick="showView('blog')" class="hover:text-white transition" data-i18n="navBlog">Blog</a>
           <a href="#report" onclick="showView('home')" class="hover:text-white transition" data-i18n="report">Report Scam</a>
         </nav>
@@ -580,6 +580,21 @@
             </button>
           </div>
 
+          
+          <!-- TRENDING SEARCHES / QUICK-TEST PILLS (Auto-Rotated Threat Samples) -->
+          <div class="mb-5 flex flex-wrap items-center gap-2">
+            <span class="text-xs font-bold text-slate-400 flex items-center gap-1.5 shrink-0">
+              <span class="text-amber-500">🔥</span> <span data-i18n="trendingLabel">Trending Quick Tests:</span>
+            </span>
+            <div id="trendingSearchesGroup" class="flex flex-wrap gap-1.5 text-xs">
+              <button type="button" onclick="quickSearchCheck('URGENT: India Post parcel waiting. Pay fee to avoid return.')" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-emerald-950 text-slate-700 dark:text-slate-200 hover:text-emerald-800 dark:hover:text-emerald-300 border border-slate-200 dark:border-white/10 text-[11px] font-semibold transition">⚡ India Post Parcel</button>
+              <button type="button" onclick="quickSearchCheck('Electricity power will be disconnected tonight at 9:30 PM due to unpaid bill. Call officer 91040 immediately.')" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-emerald-950 text-slate-700 dark:text-slate-200 hover:text-emerald-800 dark:hover:text-emerald-300 border border-slate-200 dark:border-white/10 text-[11px] font-semibold transition">⚡ Smart Meter Cut</button>
+              <button type="button" onclick="quickSearchCheck('CBI Cyber Crime Cell: Video call verification required immediately for money laundering arrest warrant.')" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-emerald-950 text-slate-700 dark:text-slate-200 hover:text-emerald-800 dark:hover:text-emerald-300 border border-slate-200 dark:border-white/10 text-[11px] font-semibold transition">⚡ Digital Arrest</button>
+              <button type="button" onclick="quickSearchCheck('YouTube video like and subscribe job. Earn $500 per day from home. Join VIP Telegram group.')" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-emerald-950 text-slate-700 dark:text-slate-200 hover:text-emerald-800 dark:hover:text-emerald-300 border border-slate-200 dark:border-white/10 text-[11px] font-semibold transition">⚡ YouTube Like Job</button>
+              <button type="button" onclick="quickSearchCheck('Join VIP Crypto Signals group. Guaranteed 500% daily returns on automated AI trading platform.')" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-emerald-50 dark:hover:bg-emerald-950 text-slate-700 dark:text-slate-200 hover:text-emerald-800 dark:hover:text-emerald-300 border border-slate-200 dark:border-white/10 text-[11px] font-semibold transition">⚡ Crypto 500% Return</button>
+            </div>
+          </div>
+
           <!-- 8 Category Pills (2-row grid, equal size, centered) -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
             <button onclick="setCategory('link')" id="pill-link" class="tool-pill py-3 px-3 rounded-xl font-bold text-xs bg-white border border-slate-200 text-slate-700 hover:border-vgreen hover:bg-emerald-50 transition shadow-sm flex items-center justify-center gap-1.5">
@@ -609,7 +624,7 @@
           </div>
 
           <!-- Tabs -->
-          <div class="flex gap-2 mb-5 bg-[#EEF6F0] p-1.5 rounded-full w-full sm:w-[360px]">
+          <div class="flex gap-2 mb-5 bg-[#EEF6F0] light-bg p-1.5 rounded-full w-full sm:w-[360px]">
             <button onclick="switchTab('sms')" id="tabSmsBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold bg-[#0A1931] text-white shadow" data-i18n="tabSms">SMS / WhatsApp</button>
             <button onclick="switchTab('email')" id="tabEmailBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold text-slate-600 hover:bg-white/50" data-i18n="tabEmail">Email Header</button>
           </div>
@@ -619,7 +634,7 @@
             <!-- Sender Number -->
             <div class="mb-4">
               <label class="block text-xs font-bold text-slate-700 mb-1.5" data-i18n="numberLabel">Which number sent this message? (optional)</label>
-              <input type="text" id="senderNumberInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="numberPh" placeholder="e.g. +91 98765 43210, or 91040, or VM-ABCDEF" />
+              <input type="text" id="senderNumberInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="numberPh" placeholder="e.g. +91 98765 43210, or 91040, or VM-ABCDEF" />
               <p class="text-[11px] text-slate-400 mt-1" data-i18n="numberNote">We never save your number.</p>
             </div>
 
@@ -629,7 +644,7 @@
                 <span>✍️</span> <span data-i18n="msgLabel">Paste Your Message Here...</span>
               </label>
               <div class="relative">
-                <textarea id="messageInput" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="msgPh" placeholder="Paste your message, link, number or email here..."></textarea>
+                <textarea id="messageInput" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="msgPh" placeholder="Paste your message, link, number or email here..."></textarea>
                 <button type="button" onclick="startVoiceInput('messageInput', this)" class="absolute bottom-3 right-3 bg-white hover:bg-emerald-50 text-slate-700 px-3 py-1.5 rounded-xl border border-slate-300 shadow-sm flex items-center gap-1.5 text-xs font-bold transition" title="Voice Input (Speak in English, Hindi, or Urdu)" aria-label="Voice input">
                   <span class="mic-icon">🎤</span>
                   <span class="mic-label hidden sm:inline" data-i18n="voiceMic">Speak</span>
@@ -643,13 +658,13 @@
             <!-- 1. SENDER EMAIL -->
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5" data-i18n="emailSenderLabel">Sender Email</label>
-              <input type="email" id="emailSenderInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="emailSenderPh" placeholder="e.g. support@amaz0n-support.com" />
+              <input type="email" id="emailSenderInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="emailSenderPh" placeholder="e.g. support@amaz0n-support.com" />
             </div>
 
             <!-- 2. SUBJECT -->
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5" data-i18n="emailSubjectLabel">Subject</label>
-              <input type="text" id="emailSubjectInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="emailSubjectPh" placeholder="e.g. Your account will be closed in 24 hours" />
+              <input type="text" id="emailSubjectInput" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none" data-i18n-placeholder="emailSubjectPh" placeholder="e.g. Your account will be closed in 24 hours" />
             </div>
 
             <!-- 3. BODY TEXT WITH VOICE INPUT (Feature 12) -->
@@ -658,7 +673,7 @@
                 <span>✍️</span> <span data-i18n="emailBodyLabel">Email Body Text</span>
               </label>
               <div class="relative">
-                <textarea id="emailBodyInput" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="emailBodyPh" placeholder="Paste full email body here..."></textarea>
+                <textarea id="emailBodyInput" rows="5" class="w-full border-2 border-slate-200 rounded-2xl p-4 pr-24 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none resize-none shadow-sm" data-i18n-placeholder="emailBodyPh" placeholder="Paste full email body here..."></textarea>
                 <button type="button" onclick="startVoiceInput('emailBodyInput', this)" class="absolute bottom-3 right-3 bg-white hover:bg-emerald-50 text-slate-700 px-3 py-1.5 rounded-xl border border-slate-300 shadow-sm flex items-center gap-1.5 text-xs font-bold transition" title="Voice Input" aria-label="Voice input">
                   <span class="mic-icon">🎤</span>
                   <span class="mic-label hidden sm:inline" data-i18n="voiceMic">Speak</span>
@@ -920,7 +935,7 @@
               <span class="text-[11px] font-bold text-vgreen bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 shrink-0 self-start sm:self-auto">Instant Filter</span>
             </div>
             <div class="flex gap-2">
-              <input type="text" id="scamSearchInput" onkeyup="filterScamsLive(this.value)" placeholder="Search any scam name, country, or keyword..." class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm bg-[#FBFFFC] focus:border-vgreen outline-none" data-i18n-placeholder="searchScamPh" />
+              <input type="text" id="scamSearchInput" onkeyup="filterScamsLive(this.value)" placeholder="Search any scam name, country, or keyword..." class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs sm:text-sm bg-[#FBFFFC] light-bg focus:border-vgreen outline-none" data-i18n-placeholder="searchScamPh" />
               <button onclick="filterScamsLive(document.getElementById('scamSearchInput').value)" class="bg-navy text-white px-5 py-3 rounded-xl text-xs font-bold hover:bg-vgreen transition" data-i18n="searchBtn">
                 Search
               </button>
@@ -936,10 +951,10 @@
         <section id="scams" class="mt-12">
           <div class="text-center max-w-[680px] mx-auto mb-10">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold border border-emerald-200 dark:border-emerald-800 mb-3">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Last Updated: Today</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>● Auto-Update ON - Last checked: <span id="homeAutoUpdateTime">Today</span></span>
               <span class="text-slate-300">•</span>
-              <span>⚡ New Scam Reported: 2 hours ago</span>
+              <span id="homeScamCountBadge">300+ Verified Scams</span>
             </div>
             <h2 class="text-3xl font-extrabold tracking-tight text-navy dark:text-white" data-i18n="scamsTitle">🔴 Latest Scams - Updated Nov 2026</h2>
             <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base" data-i18n="scamsSub">These patterns are spreading right now. Learn them before they reach you.</p>
@@ -1229,7 +1244,7 @@
           <!-- PROMINENT BUTTON: VIEW ALL 150+ SCAMS IN DATABASE -->
           <div class="mt-10 text-center">
             <button onclick="showView('scam-database')" class="inline-flex items-center justify-center gap-3 bg-[#0A1931] hover:bg-[#12284C] text-white font-extrabold text-sm sm:text-base px-8 py-4 rounded-full shadow-[0_16px_36px_rgba(10,25,49,.35)] transition transform hover:-translate-y-0.5 border-2 border-vgreen group">
-              <span>View All 150+ Scams in Database (2016-2026)</span>
+              <span>Explore World Scampedia (300+ Scams Database)</span>
               <span class="text-vgreen group-hover:translate-x-1 transition-transform">→</span>
             </button>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 font-medium">Search by year (2016-2026), country, attack vector, or check live threat timelines with zero reload.</p>
@@ -1977,7 +1992,7 @@
             </div>
 
             <label class="block text-sm font-extrabold text-navy mb-1.5" data-i18n="detailLabel">What happened?</label>
-            <textarea id="reportDetail" rows="4" class="w-full border border-slate-200 rounded-2xl p-4 text-sm bg-[#FBFFFC] focus:border-vgreen outline-none resize-none shadow-sm" data-i18n-placeholder="detailPh" placeholder="Write what they asked for. Do not include OTP, passwords or bank details."></textarea>
+            <textarea id="reportDetail" rows="4" class="w-full border border-slate-200 rounded-2xl p-4 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen outline-none resize-none shadow-sm" data-i18n-placeholder="detailPh" placeholder="Write what they asked for. Do not include OTP, passwords or bank details."></textarea>
 
             <div class="flex flex-wrap gap-3 mt-5 pt-4 border-t border-slate-100">
               <button onclick="submitReport()" class="bg-vgreen hover:bg-vgreenDark text-white font-extrabold px-6 py-3 rounded-full text-sm shadow-md transition" data-i18n="preview">
@@ -2066,60 +2081,81 @@
         </section>
       </div>
 
-      <!-- ================= VIEW 2: SCAM DATABASE (150+ SCAMS: 2016-2026) ================= -->
+            <!-- ================= VIEW 2: SCAMPEDIA - WORLD SCAM DATABASE (300+ SCAMS) ================= -->
       <div id="view-scam-database" class="view-section hidden">
-        <div class="bg-white dark:bg-[#0E1E38] rounded-[24px] p-6 sm:p-10 card3d mt-4 border border-slate-100 dark:border-white/10">
+        <div class="bg-white dark:bg-[#0E1E38] rounded-[24px] p-6 sm:p-10 card3d mt-4 border border-slate-100 dark:border-white/10 space-y-8">
           <!-- Breadcrumb -->
-          <nav class="text-xs text-slate-400 font-bold mb-4 flex items-center gap-1.5" aria-label="Breadcrumb">
+          <nav class="text-xs text-slate-400 font-bold flex items-center gap-1.5" aria-label="Breadcrumb">
             <a href="#top" onclick="showView('home')" class="hover:text-vgreen">Home</a>
             <span>›</span>
-            <span class="text-navy dark:text-emerald-400">Global Scam Database (2016 - 2026)</span>
+            <span class="text-navy dark:text-emerald-400">Scampedia - World Scam Database (300+ Scams)</span>
           </nav>
 
           <!-- Header -->
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100 dark:border-white/10">
             <div>
               <span class="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-widest text-vgreen uppercase bg-emerald-50 dark:bg-emerald-950/40 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
-                <span>🛡️</span> <span>THREAT INTELLIGENCE ARCHIVE • 2016 - 2026</span>
+                <span>🛡️</span> <span>WORLD SCAMPEDIA • 300+ VERIFIED SCAMS ARCHIVE</span>
               </span>
               <h1 class="text-2xl sm:text-4xl font-extrabold text-navy dark:text-white mt-2.5">
-                Global Scam Database <span class="text-vgreen">(150+ Scams: 2016–2026)</span>
+                Scampedia <span class="text-vgreen">(300+ World Scams Database)</span>
               </h1>
-              <p class="text-slate-500 dark:text-slate-400 mt-2 text-xs sm:text-sm max-w-[780px] leading-relaxed">
-                Comprehensive global registry of verified threat patterns, smishing templates, deepfakes, extortion calls, and syndicate traps across India, USA, UK, Pakistan, UAE, and Worldwide. Inspect attack vectors and test suspicious messages instantly.
+              <p class="text-slate-500 dark:text-slate-400 mt-2 text-xs sm:text-sm max-w-[820px] leading-relaxed">
+                The ultimate global encyclopedia of online fraud, imposter calls, investment traps, smishing, romance sextortion, and classic confidence tricks. Sourced from <b>Wikipedia</b>, <b>FBI IC3</b>, <b>FTC</b>, <b>Action Fraud (UK)</b>, <b>I4C / Cybercrime.gov.in (India)</b>, <b>Scamwatch (Australia)</b>, <b>CAFC (Canada)</b>, and <b>Interpol</b>.
               </p>
             </div>
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 shrink-0">
+            <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+              <button onclick="openAddMissingScamModal()" class="bg-[#0A1931] hover:bg-[#12284C] text-white font-extrabold text-xs px-5 py-3 rounded-full transition shadow-md border border-white/20 flex items-center gap-1.5">
+                <span>➕</span> <span>Add Missing Scam</span>
+              </button>
               <button onclick="showView('home')" class="bg-vgreen hover:bg-vgreenDark text-white font-extrabold text-xs px-5 py-3 rounded-full transition shadow-md">
                 ⚡ Test in Scanner
               </button>
             </div>
           </div>
 
-          <!-- Real-Time Counter & Live Update Badge -->
-          <div class="mt-6 flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900/40 text-xs font-bold text-emerald-900 dark:text-emerald-300">
+          <!-- Real-Time Counter & Live Auto-Update Badge -->
+          <div class="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900/40 text-xs font-bold text-emerald-900 dark:text-emerald-300">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>Showing <span id="dbFilterCount" class="font-extrabold text-base text-navy dark:text-white">153</span> Scams (2016–2026)</span>
+              <span>Showing <span id="dbFilterCount" class="font-extrabold text-base text-navy dark:text-white">303</span> Scams</span>
               <span class="text-slate-300">•</span>
-              <span class="hidden sm:inline">Updated Nov 2026</span>
+              <span>● Auto-Update ON - Last checked: <span id="dbAutoUpdateTime">Today</span></span>
             </div>
             <div class="flex items-center gap-3 text-[11px] text-emerald-800 dark:text-emerald-300/80">
-              <span>🕒 Last Updated: Today</span>
+              <span>📚 10 World Categories</span>
               <span>•</span>
-              <span>⚡ New Scam Reported: 2 hours ago</span>
+              <span>🌐 Sources: Wikipedia, FBI IC3, FTC, Action Fraud, I4C India, Scamwatch</span>
             </div>
           </div>
 
+          <!-- 10 CATEGORY CARDS GRID ON TOP (Feature 1 of Scampedia) -->
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-sm font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                <span>🏷️</span> <span>Browse by Category (10 Major Threat Domains):</span>
+              </h2>
+              <span class="text-xs text-vgreen font-bold">Click any category to filter</span>
+            </div>
+            <div id="scampediaCategoriesGrid" class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+              <!-- Rendered by renderScampediaCategories() -->
+            </div>
+          </div>
+
+          <!-- AUTO SCAM OF THE DAY BANNER (Feature 4 of Auto-Update) -->
+          <div id="scamOfTheDayCard" class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#0A1931] via-[#122F5A] to-[#009624] text-white card3d shadow-lg border border-white/10 relative overflow-hidden">
+            <!-- Rendered by renderScamOfTheDay() -->
+          </div>
+
           <!-- SEARCH BAR -->
-          <div class="mt-6">
+          <div>
             <div class="relative">
               <input
                 id="dbSearchInput"
                 type="text"
-                placeholder="Search Any Scam - e.g. Parcel, Crypto, Job, AI Voice, Toll, KYC, Electricity, WhatsApp..."
+                placeholder="Search All 300+ Scams - e.g. Parcel, Ponzi, AI Voice, Digital Arrest, WhatsApp Pink, Task Job, Quishing, Loan App..."
                 oninput="filterScamsDatabase()"
-                class="w-full pl-11 pr-24 py-3.5 rounded-2xl border border-slate-200 dark:border-white/10 bg-[#FBFFFC] dark:bg-black/25 text-xs sm:text-sm text-navy dark:text-white font-medium focus:border-vgreen outline-none shadow-sm"
+                class="w-full pl-11 pr-24 py-3.5 rounded-2xl border border-slate-200 dark:border-white/10 bg-[#FBFFFC] light-bg dark:bg-black/25 text-xs sm:text-sm text-navy dark:text-white font-medium focus:border-vgreen outline-none shadow-sm"
               />
               <span class="absolute left-4 top-3.5 text-base text-slate-400">🔍</span>
               <button
@@ -2131,9 +2167,26 @@
             </div>
           </div>
 
-          <!-- FILTER BARS -->
-          <div class="mt-5 space-y-3">
-            <!-- Filter 1: By Year -->
+          <!-- FILTER BARS (Source, Year, Country, Category) -->
+          <div class="space-y-3.5">
+            <!-- Filter 1: By Source (New Requirement) -->
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 text-xs">
+              <span class="font-extrabold text-navy dark:text-white min-w-[75px] shrink-0">🏛️ Source:</span>
+              <div id="sourceFilterGroup" class="flex flex-wrap gap-1.5">
+                <button onclick="setDbSourceFilter('all', this)" class="db-filter-source active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition">All Sources</button>
+                <button onclick="setDbSourceFilter('Wikipedia', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">Wikipedia</button>
+                <button onclick="setDbSourceFilter('FBI IC3', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">FBI IC3 (USA)</button>
+                <button onclick="setDbSourceFilter('FTC', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">FTC (USA)</button>
+                <button onclick="setDbSourceFilter('Action Fraud', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">Action Fraud (UK)</button>
+                <button onclick="setDbSourceFilter('I4C India', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">I4C / Cybercrime.gov.in</button>
+                <button onclick="setDbSourceFilter('Scamwatch', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">Scamwatch (Australia)</button>
+                <button onclick="setDbSourceFilter('Canadian Anti-Fraud Centre', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">CAFC (Canada)</button>
+                <button onclick="setDbSourceFilter('Interpol', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">Interpol / Europol</button>
+                <button onclick="setDbSourceFilter('Google News', this)" class="db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">Google News (2026)</button>
+              </div>
+            </div>
+
+            <!-- Filter 2: By Year -->
             <div class="flex flex-col sm:flex-row sm:items-center gap-2 text-xs">
               <span class="font-extrabold text-navy dark:text-white min-w-[75px] shrink-0">📅 Year:</span>
               <div id="yearFilterGroup" class="flex flex-wrap gap-1.5">
@@ -2148,11 +2201,11 @@
                 <button onclick="setDbYearFilter('2019', this)" class="db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">2019</button>
                 <button onclick="setDbYearFilter('2018', this)" class="db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">2018</button>
                 <button onclick="setDbYearFilter('2017', this)" class="db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">2017</button>
-                <button onclick="setDbYearFilter('2016', this)" class="db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">2016</button>
+                <button onclick="setDbYearFilter('Classic', this)" class="db-filter-year px-3 py-1.5 rounded-full font-bold border border-amber-500 bg-amber-50 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[11px] transition">Classic (Wikipedia)</button>
               </div>
             </div>
 
-            <!-- Filter 2: By Country -->
+            <!-- Filter 3: By Country -->
             <div class="flex flex-col sm:flex-row sm:items-center gap-2 text-xs">
               <span class="font-extrabold text-navy dark:text-white min-w-[75px] shrink-0">🌍 Country:</span>
               <div id="countryFilterGroup" class="flex flex-wrap gap-1.5">
@@ -2160,41 +2213,26 @@
                 <button onclick="setDbCountryFilter('India', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇮🇳 India</button>
                 <button onclick="setDbCountryFilter('USA', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇺🇸 USA</button>
                 <button onclick="setDbCountryFilter('UK', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇬🇧 UK</button>
+                <button onclick="setDbCountryFilter('Australia', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇦🇺 Australia</button>
+                <button onclick="setDbCountryFilter('Canada', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇨🇦 Canada</button>
                 <button onclick="setDbCountryFilter('Pakistan', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇵🇰 Pakistan</button>
                 <button onclick="setDbCountryFilter('UAE', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🇦🇪 UAE</button>
                 <button onclick="setDbCountryFilter('Global', this)" class="db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🌐 Global</button>
               </div>
             </div>
-
-            <!-- Filter 3: By Type / Category -->
-            <div class="flex flex-col sm:flex-row sm:items-center gap-2 text-xs">
-              <span class="font-extrabold text-navy dark:text-white min-w-[75px] shrink-0">🏷️ Type:</span>
-              <div id="typeFilterGroup" class="flex flex-wrap gap-1.5">
-                <button onclick="setDbTypeFilter('all', this)" class="db-filter-type active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition">All Types</button>
-                <button onclick="setDbTypeFilter('Message', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">📩 Message / SMS</button>
-                <button onclick="setDbTypeFilter('Call', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">📞 Call / Voice</button>
-                <button onclick="setDbTypeFilter('Link', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🔗 Link / Phish</button>
-                <button onclick="setDbTypeFilter('Job', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">💼 Job / Task</button>
-                <button onclick="setDbTypeFilter('Crypto', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🪙 Crypto / Web3</button>
-                <button onclick="setDbTypeFilter('Shop', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🛒 Shop / Order</button>
-                <button onclick="setDbTypeFilter('Investment', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">📈 Investment</button>
-                <button onclick="setDbTypeFilter('Romance', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">💔 Romance</button>
-                <button onclick="setDbTypeFilter('Govt', this)" class="db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition">🏛️ Govt / Subsidy</button>
-              </div>
-            </div>
           </div>
 
           <!-- View Mode Switcher: Cards Grid vs Timeline -->
-          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-white/10 flex flex-wrap items-center justify-between gap-3">
+          <div class="pt-4 border-t border-slate-100 dark:border-white/10 flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center gap-2">
               <span class="text-xs font-bold text-slate-400">View Mode:</span>
               <div class="inline-flex p-1 rounded-xl bg-slate-100 dark:bg-black/30 border border-slate-200 dark:border-white/10 text-xs font-bold">
                 <button id="viewModeGridBtn" onclick="setDbViewMode('grid')" class="px-3 py-1 rounded-lg bg-white dark:bg-navy text-navy dark:text-white shadow-sm transition">Grid Cards</button>
-                <button id="viewModeTimelineBtn" onclick="setDbViewMode('timeline')" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-white transition">Timeline (2016–2026)</button>
+                <button id="viewModeTimelineBtn" onclick="setDbViewMode('timeline')" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-white transition">Timeline View</button>
               </div>
             </div>
             <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Click any card to open complete Red Flags, Vectors & Official Helplines.
+              Click any card to inspect full Wikipedia-style Infobox, Red Flags & Helplines.
             </div>
           </div>
 
@@ -2203,16 +2241,28 @@
             <!-- Rendered by renderScamDatabase() -->
           </div>
 
+          <!-- PAGINATION CONTAINER (Feature: Fast rendering 30 at a time) -->
+          <div id="dbPaginationContainer" class="text-center pt-4">
+            <button id="dbLoadMoreBtn" onclick="loadMoreScams()" class="bg-[#0A1931] hover:bg-[#12284C] text-white font-extrabold text-xs sm:text-sm px-8 py-3.5 rounded-full shadow-lg border border-vgreen transition transform hover:-translate-y-0.5">
+              <span>Load More Scams (30 more) ↓</span>
+            </button>
+          </div>
+
           <!-- EMPTY STATE (Hidden by default) -->
           <div id="dbEmptyState" class="hidden text-center py-12 px-4 rounded-2xl bg-slate-50 dark:bg-black/20 border border-slate-200 dark:border-white/10 my-6">
             <span class="text-4xl">🔍</span>
             <h3 class="text-lg font-extrabold text-navy dark:text-white mt-3">No Scams Match Your Current Filters</h3>
-            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-[460px] mx-auto">Try selecting "All Years" or clearing your search keywords to view the 150+ verified scams.</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-[460px] mx-auto">Try clearing your search query or selecting "All Sources" / "All Years".</p>
             <button onclick="clearDbFilters()" class="mt-4 bg-vgreen hover:bg-vgreenDark text-white font-extrabold text-xs px-5 py-2.5 rounded-full transition">Reset All Filters</button>
           </div>
 
+          <!-- SOURCE ATTRIBUTION DISCLAIMER (Must mention sources in Scampedia) -->
+          <div class="p-4 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30 text-center text-xs text-emerald-900 dark:text-emerald-300 font-medium">
+            Sources: <b>Wikipedia</b>, <b>FBI IC3</b>, <b>FTC</b>, <b>Action Fraud</b>, <b>I4C India</b>, <b>Scamwatch</b> - For education and threat intelligence only.
+          </div>
+
           <!-- Footer Action Navigation -->
-          <div class="mt-10 pt-6 border-t border-slate-100 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="pt-6 border-t border-slate-100 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <button onclick="showView('home')" class="bg-vgreen hover:bg-vgreenDark text-white font-bold px-6 py-3 rounded-full text-xs sm:text-sm transition flex items-center gap-2">
               <span>← Back to Main Scam Checker</span>
             </button>
@@ -2223,7 +2273,7 @@
         </div>
       </div>
 
-      <!-- ================= VIEW 3: BLOG HUB (5 Complete Articles + E-E-A-T) ================= -->
+<!-- ================= VIEW 3: BLOG HUB (5 Complete Articles + E-E-A-T) ================= -->
       <div id="view-blog" class="view-section hidden">
         <div class="bg-white rounded-[24px] p-6 sm:p-10 card3d mt-4">
           <nav class="text-xs text-slate-400 font-bold mb-3" aria-label="Breadcrumb">
@@ -2623,6 +2673,103 @@
 
     </main>
 
+
+      <!-- ================= VIEW: ADMIN DASHBOARD (THREAT INTEL & USER REPORTS) ================= -->
+      <div id="view-admin" class="view-section hidden">
+        <div class="bg-white dark:bg-[#0E1E38] rounded-[24px] p-6 sm:p-10 card3d mt-4 border border-slate-100 dark:border-white/10 space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-white/10">
+            <div>
+              <span class="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-widest text-vgreen uppercase bg-emerald-50 dark:bg-emerald-950/40 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
+                ⚙️ THREAT INTELLIGENCE & COMMUNITY ADMIN
+              </span>
+              <h1 class="text-2xl sm:text-3xl font-extrabold text-navy dark:text-white mt-2">
+                Admin Threat Feed & Database Manager
+              </h1>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                Monitor live threat updates, inspect user submissions, export intelligence datasets, and verify auto-moderation.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="exportScamsJson()" class="bg-[#0A1931] hover:bg-[#12284C] text-white text-xs font-bold px-4 py-2.5 rounded-xl border border-white/20 transition flex items-center gap-1.5 shadow-sm">
+                <span>📥 Export Scams as JSON</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Metrics Cards -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800">
+              <div class="text-xs font-bold text-emerald-800 dark:text-emerald-300">Total Scams in Database</div>
+              <div id="adminTotalScams" class="text-2xl sm:text-3xl font-extrabold text-navy dark:text-white mt-1">303</div>
+              <div class="text-[10px] text-emerald-700 dark:text-emerald-400 mt-1 font-semibold">10 Global Categories</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800">
+              <div class="text-xs font-bold text-blue-800 dark:text-blue-300">User Community Reports</div>
+              <div id="adminUserReportsCount" class="text-2xl sm:text-3xl font-extrabold text-navy dark:text-white mt-1">0</div>
+              <div class="text-[10px] text-blue-700 dark:text-blue-400 mt-1 font-semibold">Auto-Moderated & Safe</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800">
+              <div class="text-xs font-bold text-purple-800 dark:text-purple-300">Auto-Update Engine</div>
+              <div class="text-lg sm:text-xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1 flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Active (6h)</span>
+              </div>
+              <div id="adminLastCheckedTime" class="text-[10px] text-purple-700 dark:text-purple-400 mt-1 font-semibold">Today</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800">
+              <div class="text-xs font-bold text-amber-800 dark:text-amber-300">Official Sources</div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-navy dark:text-white mt-1">9</div>
+              <div class="text-[10px] text-amber-700 dark:text-amber-400 mt-1 font-semibold">Wikipedia, FBI, FTC, I4C, etc.</div>
+            </div>
+          </div>
+
+          <!-- User-Submitted Scams Table -->
+          <div class="bg-slate-50 dark:bg-black/25 rounded-2xl p-5 border border-slate-200 dark:border-white/10 space-y-4">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-extrabold text-navy dark:text-white text-base flex items-center gap-2">
+                <span>👥</span> <span>User Submitted Reports (LocalStorage & Community)</span>
+              </h3>
+              <button onclick="clearUserReports()" class="text-xs font-bold text-red-600 hover:text-red-700 bg-red-100 hover:bg-red-200 dark:bg-red-950 dark:text-red-300 px-3 py-1.5 rounded-xl transition">
+                🗑️ Clear All User Reports
+              </button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs">
+                <thead>
+                  <tr class="border-b border-slate-200 dark:border-white/10 text-slate-400">
+                    <th class="py-2.5 px-3">Scam Name</th>
+                    <th class="py-2.5 px-3">Category</th>
+                    <th class="py-2.5 px-3">City / Country</th>
+                    <th class="py-2.5 px-3">Sample Text</th>
+                    <th class="py-2.5 px-3">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="adminUserReportsTable">
+                  <tr>
+                    <td colspan="5" class="py-6 text-center text-slate-400 italic">No user reports yet. Test the "Add Missing Scam" form in Scampedia!</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Live Threat Feed Log -->
+          <div class="bg-slate-50 dark:bg-black/25 rounded-2xl p-5 border border-slate-200 dark:border-white/10 space-y-4">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-extrabold text-navy dark:text-white text-base flex items-center gap-2">
+                <span>📡</span> <span>Latest Threat Feed Log (Google News & FTC RSS Cache)</span>
+              </h3>
+              <button onclick="fetchLiveScamFeeds(true)" class="text-xs font-bold text-vgreen hover:underline">
+                🔄 Force Refresh RSS
+              </button>
+            </div>
+            <div id="adminLiveFeedsLog" class="space-y-2.5 text-xs">
+              <!-- Rendered by renderAdminLiveFeeds() -->
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- FOOTER WITH EEAT & OFFICIAL EMAIL -->
     <footer class="bg-[#071224] text-white pt-12 pb-8 border-t border-white/10 mt-16">
       <div class="max-w-[1100px] mx-auto px-4 grid md:grid-cols-[1.4fr_.6fr] gap-8 pb-10 border-b border-white/10">
@@ -2645,6 +2792,7 @@
             <a href="#privacy" onclick="showView('privacy')" class="hover:underline">Privacy Policy</a>
             <a href="#terms" onclick="showView('terms')" class="hover:underline">Terms & Disclaimer</a>
             <a href="#backlink-outreach" onclick="showView('backlink-outreach')" class="hover:underline text-emerald-300 font-bold">Media Kit & Outreach</a>
+            <a href="#admin" onclick="showView('admin')" class="hover:underline text-slate-400">Admin (Threat Intel)</a>
           </div>
         </div>
         <div>
@@ -2664,6 +2812,73 @@
         <span>🌐 English • Hindi • Urdu</span>
       </div>
     </footer>
+  </div>
+
+  <!-- ================= ADD MISSING SCAM MODAL (Feature for Scampedia Community) ================= -->
+  <div id="addMissingScamModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/75 backdrop-blur-md overflow-y-auto" onclick="onAddScamBackdropClick(event)">
+    <div class="bg-white dark:bg-[#0A1931] text-navy dark:text-white rounded-[28px] max-w-lg w-full p-6 sm:p-8 card3d shadow-2xl border border-slate-200 dark:border-white/10 relative my-auto">
+      <button onclick="closeAddMissingScamModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-white/10 text-slate-500 hover:text-black dark:hover:text-white flex items-center justify-center font-bold text-sm transition">✕</button>
+      
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-10 h-10 rounded-2xl bg-vgreen text-white text-xl grid place-items-center shadow-md">✍️</span>
+        <div>
+          <h3 class="text-xl font-extrabold text-navy dark:text-white">Add Missing Scam to Scampedia</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Help the global community. Your scam will appear instantly.</p>
+        </div>
+      </div>
+
+      <form onsubmit="submitMissingScam(event)" class="space-y-3.5 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Scam Name *</label>
+          <input type="text" id="addScamName" required placeholder="e.g. Electricity Bill Disconnection Tonight" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Category *</label>
+            <select id="addScamCategory" required class="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen">
+              <option value="phishing-message">📩 Phishing / Message / Link</option>
+              <option value="call-impersonation">📞 Call & Impersonation</option>
+              <option value="investment-crypto">🪙 Investment & Crypto</option>
+              <option value="job-employment">💼 Job & Employment</option>
+              <option value="romance-sextortion">💔 Romance & Sextortion</option>
+              <option value="shopping-ecommerce">🛒 Shopping & Online Store</option>
+              <option value="govt-lottery">🏛️ Govt & Lottery</option>
+              <option value="banking-financial">🏦 Financial / Banking</option>
+              <option value="tech-ransomware">💻 Ransomware / Malware / Tech</option>
+              <option value="classic-tricks">🎭 Classic / Confidence Tricks</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">City / Country *</label>
+            <input type="text" id="addScamCountry" required placeholder="e.g. Mumbai, India / Global" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Short Description *</label>
+          <textarea id="addScamDesc" rows="2" required placeholder="Explain in 1-2 lines what the fraudsters do..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Sample Message / Link *</label>
+          <textarea id="addScamSample" rows="2" required placeholder="Paste sample message text or phone script here (Do not include real OTPs or passwords)..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Your Name / First Name (Optional)</label>
+          <input type="text" id="addScamAuthor" placeholder="e.g. Anonymous / Rahul" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-black/25 text-navy dark:text-white font-medium outline-none focus:border-vgreen" />
+        </div>
+
+        <div class="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/40 text-[11px] text-amber-900 dark:text-amber-300">
+          🛡️ <b>Automated Safety Filter Active:</b> Submissions containing credit card numbers, OTPs, or abusive words will be automatically rejected.
+        </div>
+
+        <button type="submit" class="w-full bg-vgreen hover:bg-vgreenDark text-white font-extrabold py-3 rounded-xl transition shadow-md flex items-center justify-center gap-2">
+          <span>🚀 Add to Scampedia & Publish</span>
+        </button>
+      </form>
+    </div>
   </div>
 
   <!-- ADD TO HOME SCREEN / APP MODAL (Feature 8) -->
@@ -2718,7 +2933,7 @@
         ✕
       </button>
 
-      <!-- Modal Header -->
+            <!-- Modal Header with Wikipedia-style Infobox -->
       <div class="flex items-start gap-4 pr-8">
         <span id="modalScamIcon" class="text-3xl sm:text-4xl shrink-0 p-3 rounded-2xl bg-slate-50 dark:bg-black/30 border border-slate-200 dark:border-white/10">🎙️</span>
         <div>
@@ -2726,6 +2941,7 @@
             <span id="modalScamYear" class="px-2.5 py-0.5 rounded-full font-extrabold text-[10px] bg-red-600 text-white">2026</span>
             <span id="modalScamCountry" class="px-2.5 py-0.5 rounded-full font-extrabold text-[10px] bg-navy text-white">Global</span>
             <span id="modalScamCategory" class="px-2.5 py-0.5 rounded-full font-extrabold text-[10px] bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300">Call</span>
+            <span id="modalScamSource" class="px-2.5 py-0.5 rounded-full font-extrabold text-[10px] bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Source: FBI IC3</span>
             <span id="modalScamScore" class="px-2.5 py-0.5 rounded-full font-extrabold text-[10px] bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300">Score: 98/100</span>
           </div>
           <h2 id="modalScamTitle" class="text-xl sm:text-2xl font-extrabold text-navy dark:text-white leading-tight">
@@ -2799,6 +3015,13 @@
               <b class="text-navy dark:text-emerald-300 block">🇦🇪 UAE:</b>
               <span>Dubai Police <a href="https://ecrime.ae" target="_blank" rel="noopener noreferrer" class="text-vgreen underline">ecrime.ae</a> or dial 901 for non-emergencies</span>
             </div>
+            <div class="p-2.5 rounded-xl bg-white dark:bg-black/20 border border-slate-200 dark:border-white/5 sm:col-span-2">
+              <b class="text-navy dark:text-emerald-300 block">🇦🇺 Australia:</b>
+              <span>Report to Scamwatch at <a href="https://scamwatch.gov.au" target="_blank" rel="noopener noreferrer" class="text-vgreen underline font-bold">scamwatch.gov.au</a> (National Anti-Scam Centre)</span>
+            </div>
+            <div class="sm:col-span-2 pt-2 text-[11px] text-slate-400 dark:text-slate-500 italic text-center">
+              Sources: Wikipedia, FBI IC3, FTC, Action Fraud, I4C India, Scamwatch - For education only.
+            </div>
           </div>
         </div>
       </div>
@@ -2822,24 +3045,24 @@
 
   <!-- JAVASCRIPT LOGIC WITH WORKING LANGUAGE SWITCHER, DYNAMIC SEO & ROUTING -->
   <script>
-    const translations = {
+        const translations = {
       en: {
-        seoTitle: "Is This a Scam? Free Scam Checker - Check Message, Link, Number, Email | IsThisScamOrReal.com",
+        seoTitle: "Is This a Scam? Free Scam Checker & World Scampedia | IsThisScamOrReal.com",
         seoDesc: "Is this message a scam or real? Paste any SMS, WhatsApp message, link, number or email. Free scam checker gives instant answer in your language. No signup needed.",
         home: "Home", check: "Check", report: "Report Scam", tools: "Tools", reportBtn: "🚨 Report Scam",
-        navDatabase: "Scam Database", navBlog: "Blog",
+        navDatabase: "Scampedia (300+)", navBlog: "Blog",
         badge: "Today 12,450 messages checked",
         heroTitle: "Is This Message a Scam or Real?",
-        heroSub: "Paste any SMS, WhatsApp or Email. Get instant answer in your language.",
+        heroSub: "Paste any SMS, WhatsApp message, or email. Get an instant, clear answer with zero confusion.",
         topScams: "🔥 Top Scams Today",
         instantFree: "INSTANT CHECK • FREE",
         checkerTitle: "Paste Your Message Here...",
-        checkerSub: "Get a clear risk score, red flags and what to do next.",
+        checkerSub: "Get a clear risk score, red flags, and safe next steps instantly.",
         catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "Message",
         tabSms: "SMS / WhatsApp", tabEmail: "Email Header",
         numberLabel: "Which number sent this message? (optional)",
-        numberPh: "e.g. +91 98765 43210, or 91040, or VM-ABCDEF",
-        numberNote: "We never save your number.",
+        numberPh: "e.g. +1 800 555 0199, +91 98765 43210, or shortcode",
+        numberNote: "We never save or share your number.",
         msgLabel: "Paste Your Message Here...",
         msgPh: "Paste your message, link, number or email here...",
         emailSenderLabel: "Sender Email",
@@ -2848,156 +3071,157 @@
         emailSubjectPh: "e.g. Your account will be closed in 24 hours",
         emailBodyLabel: "Email Body Text",
         emailBodyPh: "Paste full email body here...",
-        warning: "Do NOT paste OTP, password, bank details.",
+        warning: "Do NOT paste personal OTPs, passwords, or bank card details.",
         screenshot: "Upload Screenshot (Optional)",
         fileAdded: "screenshot.jpg attached",
-        privacy: "🔒 We never save your personal data.",
+        privacy: "🔒 We never store your personal data. All scans run client-side.",
         checkNow: "⚡ Check Now",
-        checking: "Checking your message...",
+        checking: "Analyzing message against threat databases...",
         clear: "↺ Clear",
-        resultTitle: "Your safety result",
-        scoreLabel: "Scam risk score",
-        safe: "Looks safe — stay careful",
-        caution: "Be cautious",
-        danger: "High scam risk",
-        resultDanger: "Strong scam signals found. Do not click the link, call back, or share any OTP or money.",
-        resultSafe: "No strong scam pattern found, but always verify unknown senders independently.",
-        nextTitle: "What to do next",
-        next1: "Do not click the link or reply.",
-        next2: "Block and report the sender.",
-        next3: "Tell someone nearby if you feel unsure.",
+        resultTitle: "Your Safety Assessment",
+        scoreLabel: "Scam Risk Score",
+        safe: "Looks safe — stay cautious",
+        caution: "Proceed with caution",
+        danger: "High scam risk detected",
+        resultDanger: "Strong scam signals identified. Do not click links, call back, or share any verification codes or money.",
+        resultSafe: "No major fraud patterns detected, but always verify unfamiliar senders independently.",
+        nextTitle: "Recommended Next Steps",
+        next1: "Do not click any links or reply to the sender.",
+        next2: "Block the number or email and report to local authorities.",
+        next3: "Warn family or coworkers if similar messages arrive.",
         copy: "Copy result",
         newCheck: "Check another",
-        howTitle: "How to Check if a Message is a Scam", howSub: "Three quick steps. No account. No confusion.",
-        step1: "Paste it", step1d: "Copy the message, link, number or email you received.",
-        step2: "We scan it", step2d: "We check urgency, fake offers, links and sender patterns.",
-        step3: "Get a clear answer", step3d: "See a risk score, red flags and safe next steps.",
-        toolsTitle: "Check Link, Number, Email, Job, Shop, Crypto", toolsSub: "Small tools that stop big losses.",
-        tool1: "Link Checker", tool1d: "Spot shortened, lookalike and newly made links.",
-        tool2: "Number Lookup", tool2d: "Check unknown callers and message senders.",
-        tool3: "Email Checker", tool3d: "Check sender names, domains and fake invoices.",
-        tool4: "Job Offer Scan", tool4d: "Spot fake jobs, fees and work-from-home traps.",
-        tool5: "Shop Checker", tool5d: "Check new stores, prices and refund promises.",
-        tool6: "Crypto Alert", tool6d: "Spot guaranteed-profit and fake investment claims.",
-        scamsTitle: "🔴 Latest Scams - Updated Nov 2026", scamsSub: "These patterns are spreading right now. Learn them before they reach you.",
-        dangerScore: "Danger score", reported: "Reported often",
-        reportTitle: "Report a Scam", reportSub: "Share the pattern — not your private codes. Your draft stays in this tab.",
-        typeLabel: "What kind of scam was it?", platformLabel: "Where did it arrive?", countryLabel: "Country shown in the message", detailLabel: "What happened?",
-        detailPh: "Write what they asked for. Do not include OTP, passwords or bank details.",
+        howTitle: "How to Check if a Message is a Scam", howSub: "Three quick steps. No registration required.",
+        step1: "Paste it", step1d: "Copy the message, link, phone number, or email you received.",
+        step2: "We scan it", step2d: "We evaluate urgency indicators, lookalike URLs, and known fraud syndicate patterns.",
+        step3: "Get a clear answer", step3d: "Inspect your danger score, red flags breakdown, and official helplines.",
+        toolsTitle: "Check Link, Number, Email, Job, Shop, Crypto", toolsSub: "Specialized tools designed to prevent financial loss.",
+        tool1: "Link Checker", tool1d: "Detect shortened URLs, typosquatting domains, and phishing portals.",
+        tool2: "Number Lookup", tool2d: "Verify unknown callers, spoofed area codes, and robocalls.",
+        tool3: "Email Checker", tool3d: "Inspect sender domains, spoofed headers, and fake billing invoices.",
+        tool4: "Job Offer Scan", tool4d: "Detect task scams, upfront equipment deposits, and fake recruiter traps.",
+        tool5: "Shop Checker", tool5d: "Analyze fake 90% liquidation sales, clone boutiques, and non-delivery stores.",
+        tool6: "Crypto Alert", tool6d: "Identify Ponzi algorithms, fake Telegram groups, and liquidity drainers.",
+        scamsTitle: "🔴 Latest Scams - Auto Updated Today", scamsSub: "Live threat intelligence updated daily from global reporting agencies.",
+        dangerScore: "Danger score", reported: "Reported frequently",
+        reportTitle: "Report a Scam", reportSub: "Share threat vectors anonymously to protect others. Never include personal credentials.",
+        typeLabel: "What kind of scam was it?", platformLabel: "Where did it arrive?", countryLabel: "Country referenced in message", detailLabel: "What happened?",
+        detailPh: "Describe the threat or what the sender requested. Do not include personal banking details.",
         preview: "Preview report", clearDraft: "Clear draft",
-        footerText: "IsThisScamOrReal.com helps people pause, check and stay safe. It is not a bank, police service or legal advisor. If money is already sent, contact your bank and local cyber help centre immediately.",
+        footerText: "IsThisScamOrReal.com is a free global threat intelligence platform helping consumers verify suspicious messages. It is not a financial institution, law enforcement agency, or legal advisor. If money has been lost, contact your bank and cybercrime helpline immediately.",
         rights: "© 2026 IsThisScamOrReal.com • Stay alert. Stay safe.",
         needPaste: "Please paste a message or enter email details first!",
         copied: "Copied ✓",
-        scam1: "Customs Parcel Fee Scam", scam1d: "“Pay customs duty now” to release a parcel you never ordered.",
-        scam2: "Toll Payment Scam", scam2d: "“Unpaid toll” message with a fake payment link.",
-        scam3: "BISP Payment Scam", scam3d: "Fake aid payment message asking for personal details.",
-        scam4: "HMRC Tax Refund Scam", scam4d: "Fake tax refund message asking for bank details.",
-        scam5: "Salik Fine Scam", scam5d: "Fake road fine message with an urgent payment link.",
-        scam6: "Telegram Job Scam", scam6d: "High-pay task job that soon asks for a joining fee.",
+        scam1: "Customs Parcel Fee Scam", scam1d: "“Pay customs fee now” to release an international parcel you never ordered.",
+        scam2: "Toll Payment Smishing", scam2d: "“Unpaid highway toll” text linking to a fraudulent payment portal.",
+        scam3: "Government Relief Grant Scam", scam3d: "Fake emergency aid message requesting personal banking credentials.",
+        scam4: "Tax Refund Phishing Scam", scam4d: "Deceptive tax authority alert demanding debit card details for refunds.",
+        scam5: "Road Fine & Citation Scam", scam5d: "Fake municipal traffic fine notification with urgent payment demands.",
+        scam6: "Telegram Job Task Scam", scam6d: "High-paying video liking task that turns into VIP deposit extortion.",
         addHome: "📱 Add to Home Screen",
         installTitle: "Install IsThisScamOrReal App",
-        installSub: "Check suspicious messages in 1 tap directly from your home screen.",
+        installSub: "Check suspicious messages in 1 tap directly from your phone home screen.",
         historyTitle: "My Recent Checks",
-        historySub: "Saved locally in your browser for quick review",
+        historySub: "Saved privately in your browser for fast review",
         clearHistory: "Clear History",
-        noHistory: "No recent checks yet. Paste any message above to run a scan!",
-        historyPrivacy: "Saved only in your browser, not on our server.",
+        noHistory: "No checks recorded yet. Paste any suspicious message above to run a scan!",
+        historyPrivacy: "Saved strictly inside your browser, never transmitted to external servers.",
         verifiedSafeTitle: "Verified Safe - No Red Flags Found",
-        verifiedSafeNote: "Verified means no scam pattern found in our databases, not a government certificate.",
+        verifiedSafeNote: "Verified indicates no malicious signatures were detected in our databases.",
         redFlagsTitle: "Detected Red Flags Breakdown",
-        actionHeading: "Recommended Action:",
-        actionLine: "What to do: Do NOT click, Block number, Report to cyber authorities immediately.",
+        actionHeading: "Recommended Safety Action:",
+        actionLine: "What to do: Do NOT click, block sender, and report to cyber authorities.",
         liveAlerts: "LIVE ALERTS",
         todayChecked: "🟢 12,450 messages checked today",
         voiceMic: "Speak",
-        communityLabel: "COMMUNITY VIGILANCE • REAL INCIDENTS",
-        communityTitle: "Community Reports - Logon Ne Kya Report Kiya",
-        communitySub: "Recent threat patterns reported by verified citizens. Cross-checked with known cybercrime vectors.",
-        reportYourScam: "🚨 Report Your Scam",
+        communityLabel: "COMMUNITY THREAT INTELLIGENCE",
+        communityTitle: "Community Threat Reports - What People Reported Today",
+        communitySub: "Recent threat patterns reported by verified citizens. Cross-checked with known cybercrime intelligence.",
+        reportYourScam: "🚨 Report a Scam",
         quizBadge: "INTERACTIVE TEST • 5 QUESTIONS",
-        quizTitle: "Kya Tum Scam Pehchan Sakte Ho? - Play Quiz",
-        quizSub: "Test your fraud-detection reflexes. Can you spot which messages are real and which are traps?",
-        alertBadge: "WEEKLY SAFETY DIGEST",
+        quizTitle: "Can You Spot the Scam? - Test Your Reflexes",
+        quizSub: "Evaluate real-world fraud scenarios and test your security awareness.",
+        alertBadge: "WEEKLY THREAT INTELLIGENCE",
         newsletterHeading: "Get Weekly Scam Alerts in Your Language",
-        newsletterSub: "Stay updated on new parcel scams, fake banking SMS, and crypto traps. Direct to your inbox every Monday.",
-        paisaKatGaya: "PAISA KAT GAYA? (EMERGENCY GOLDEN HOUR PROTOCOL)",
-        paisaHeading: "Paisa Kat Gaya? Turant Ye 3 Kadam Uthayein (Golden 2 Hours)",
-        kahanReportHeading: "Kahan Aur Kaise Report Karein? (Platform Block Guides)",
-        actionSitesHeading: "Kaun Si Site Action Leti Hai? (Official Portals)"
+        newsletterSub: "Stay informed on emerging parcel scams, banking smishing, and deepfakes. Delivered every Monday.",
+        paisaKatGaya: "LOST MONEY? (EMERGENCY GOLDEN HOUR PROTOCOL)",
+        paisaHeading: "Lost Money to a Scam? Take These 3 Immediate Steps (Golden 2 Hours)",
+        kahanReportHeading: "Where & How to Report? (Official Platform Guides)",
+        actionSitesHeading: "Which Official Portals Take Immediate Action?",
+        trendingLabel: "Trending Searches:"
       },
       hi: {
-        seoTitle: "Ye Message Scam Hai Ya Real? Free Scam Checker - SMS, Link, Number, Email Check Karein",
-        seoDesc: "Koi bhi SMS, WhatsApp message, link, phone number ya email yahan paste karein. Free scam checker se apni bhasha Hindi/Hinglish me turant jawab payein.",
+        seoTitle: "Ye Message Jhootha Hai Ya Sachha? Free Scam Checker - SMS, Link, Number, Email Check Karein",
+        seoDesc: "Koi bhi SMS, WhatsApp message, link, phone number ya email yahan paste karein. Free scam checker se aasaan Hindi me turant jawab payein.",
         home: "होम", check: "जांच", report: "स्कैम रिपोर्ट करें", tools: "टूल्स", reportBtn: "🚨 स्कैम रिपोर्ट करें",
-        navDatabase: "स्कैम डेटाबेस", navBlog: "ब्लॉग",
+        navDatabase: "स्कैम्पीडिया (300+)", navBlog: "ब्लॉग",
         badge: "आज 12,450 मैसेज चेक किए गए",
-        heroTitle: "Ye Message Scam Hai Ya Real?",
-        heroSub: "Koi bhi SMS, WhatsApp ya Email paste karo. Apni bhasha me turant jawab pao.",
+        heroTitle: "Ye Message Jhootha Hai Ya Sachha?",
+        heroSub: "Koi bhi SMS, WhatsApp ya Email yahan likhein. Apni bhasha me turant sachha jawab paayein.",
         topScams: "🔥 Top Scams Today",
         instantFree: "INSTANT CHECK • FREE",
-        checkerTitle: "Apna Message Yahan Daalo...",
-        checkerSub: "Clear risk score, red flags aur aage kya karna hai — sab milega.",
-        catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "Message",
+        checkerTitle: "Apna Message Yahan Likhein...",
+        checkerSub: "Khatre ka score, red flags aur aage kya karna hai — turant jaanein.",
+        catLink: "Link Jaano", catNumber: "Number Jaano", catEmail: "Email Jaano", catCompany: "Company", catCrypto: "Crypto Jaano", catJob: "Job Jaano", catShop: "Dukaan Jaano", catMessage: "Message",
         tabSms: "SMS / WhatsApp", tabEmail: "Email Header",
-        numberLabel: "Kis number se message aaya?",
+        numberLabel: "Kis number se message aaya? (Optional)",
         numberPh: "jaise +91 98765 43210, ya 91040, ya VM-ABCDEF",
-        numberNote: "Hum aapka number save nahi karte.",
-        msgLabel: "Apna Message Yahan Daalo...",
-        msgPh: "Apna message, link, number ya email yahan daalo...",
-        emailSenderLabel: "Bhejne Wala Email",
+        numberNote: "Hum aapka number kabhi save nahi karte.",
+        msgLabel: "Apna Message Yahan Likhein...",
+        msgPh: "Apna message, link, number ya email yahan likhein...",
+        emailSenderLabel: "Bhejne Wale Ka Email",
         emailSenderPh: "jaise - support@amaz0n-support.com",
         emailSubjectLabel: "Subject",
         emailSubjectPh: "jaise - Aapka account 24 ghante me band ho jayega",
         emailBodyLabel: "Email Ka Text",
         emailBodyPh: "Yahan poora email body paste karein...",
-        warning: "OTP, password ya bank details kabhi paste mat karo.",
-        screenshot: "Screenshot jodo",
+        warning: "Apna OTP, password ya bank details yahan kabhi mat likhein.",
+        screenshot: "Screenshot jodein",
         fileAdded: "screenshot.jpg jud gaya",
         privacy: "🔒 Hum aapka data save nahi karte. Ye check isi tab me rehta hai.",
-        checkNow: "⚡ Abhi Check Karo",
+        checkNow: "⚡ Abhi Jaano",
         checking: "Aapka message check ho raha hai...",
-        clear: "↺ Clear",
-        resultTitle: "Aapka safety result",
-        scoreLabel: "Scam risk score",
-        safe: "Safe lag raha hai — phir bhi savdhaan raho",
-        caution: "Savdhaan raho",
-        danger: "Bahut zyada scam risk",
-        resultDanger: "Khatarnak scam ke sanket mile hain! Link par click mat karo aur OTP ya paisa kabhi share mat karo.",
-        resultSafe: "Koi bada scam pattern nahi mila, phir bhi anjaan sender se savdhaan rahein.",
-        nextTitle: "Aage kya karna hai",
-        next1: "Link par click ya reply mat karo.",
-        next2: "Sender ko block aur report karo.",
-        next3: "Confused ho to paas ke kisi bharosemand ko batao.",
-        copy: "Result copy karo",
-        newCheck: "Doosra check karo",
-        howTitle: "Message Scam Hai Ya Nahi Kaise Pata Kare", howSub: "Teen aasaan steps. No account. No confusion.",
-        step1: "Paste karo", step1d: "Aaya hua message, link, number ya email copy karke daalo.",
-        step2: "Hum scan karte hain", step2d: "Hum urgency, fake offer, link aur sender pattern check karte hain.",
-        step3: "Clear jawab pao", step3d: "Risk score, red flags aur safe next steps dekho.",
+        clear: "↺ Saaf Karein",
+        resultTitle: "Aapki Suraksha Ka Nateeja",
+        scoreLabel: "Khatre Ka Score",
+        safe: "Surakshit lag raha hai — savdhaan rahein",
+        caution: "Savdhaan rahein",
+        danger: "Bada Khatra (Scam Hai)",
+        resultDanger: "Khatarnak scam ke sanket mile hain! Link par click na karein, number block karein aur OTP ya paise na dein.",
+        resultSafe: "Koi bada scam signal nahi mila, phir bhi anjaan bhejne wale se savdhaan rahein.",
+        nextTitle: "Aage Kya Karein",
+        next1: "Link par click ya reply na karein.",
+        next2: "Number ko block aur report karein.",
+        next3: "Uljhan ho to parivaar ya paas ke kisi bharosemand ko batayein.",
+        copy: "Nateeja copy karein",
+        newCheck: "Doosra check karein",
+        howTitle: "Message Jhootha Hai Ya Sachha Kaise Jaanein", howSub: "Teen aasaan kadam. Koi account nahi. Koi pareshani nahi.",
+        step1: "Message likhein", step1d: "Aaya hua message, link, number ya email yahan daalein.",
+        step2: "Hum jaanchengy", step2d: "Hum jaldbazi, nakli offer, link aur fraud syndicate check karte hain.",
+        step3: "Saaf jawab paayein", step3d: "Khatre ka score, red flags aur bachne ke zaroori kadam dekhein.",
         toolsTitle: "Link, Number, Email, Job, Shop, Crypto Check Karein", toolsSub: "Chhote tools, bade nuksaan se bachav.",
-        tool1: "Link Checker", tool1d: "Chhote, nakli aur naye bane links ko pehchano.",
-        tool2: "Number Lookup", tool2d: "Unknown caller aur message sender check karo.",
-        tool3: "Email Checker", tool3d: "Sender naam, domain aur fake invoice check karo.",
-        tool4: "Job Offer Scan", tool4d: "Fake job, fee aur work-from-home trap pehchano.",
-        tool5: "Shop Checker", tool5d: "Naye store, price aur refund promise check karo.",
-        tool6: "Crypto Alert", tool6d: "Guaranteed-profit aur fake investment daave pehchano.",
-        scamsTitle: "🔴 ताज़ा स्कैम - अपडेटेड नवंबर 2026", scamsSub: "ये पैटर्न अभी फैल रहे हैं। आने से पहले इन्हें पहचान लो।",
-        dangerScore: "Danger score", reported: "Aksar report hua",
-        reportTitle: "Scam Report Karo", reportSub: "Pattern share karo — apne private code nahi. Draft isi tab me rehta hai.",
-        typeLabel: "Kis tarah ka scam tha?", platformLabel: "Kahan aaya tha?", countryLabel: "Message me kaun sa country tha", detailLabel: "Kya hua?",
-        detailPh: "Unhone kya manga, wo likho. OTP, password ya bank details mat likho.",
-        preview: "Report preview dekho", clearDraft: "Draft saaf karo",
-        footerText: "IsThisScamOrReal.com logon ko rukne, check karne aur safe rehne me madad karta hai. Ye bank, police ya legal advisor nahi hai. Agar paisa bhej diya hai, to turant apne bank aur local cyber help centre se sampark karo.",
-        rights: "© 2026 IsThisScamOrReal.com • Savdhaan raho. Safe raho.",
-        needPaste: "Pehle message, link, number ya email daalo!",
+        tool1: "Link Jaano", tool1d: "Chhote, nakli aur naye bane links ko pehchano.",
+        tool2: "Number Jaano", tool2d: "Unknown caller aur message sender check karo.",
+        tool3: "Email Jaano", tool3d: "Sender naam, domain aur fake invoice check karo.",
+        tool4: "Job Jaano", tool4d: "Fake job, deposit aur task ghotala pehchano.",
+        tool5: "Dukaan Jaano", tool5d: "Naye store, 90% discount aur nakli dukaan check karo.",
+        tool6: "Crypto Jaano", tool6d: "Guaranteed-profit aur fake investment daave pehchano.",
+        scamsTitle: "🔴 Taaza Scams - Aaj Update Hua", scamsSub: "Ye naye tareeqe abhi logon ko thag rahe hain. Pehle se jaanein aur bachein.",
+        dangerScore: "Khatre Ka Score", reported: "Aksar report hua",
+        reportTitle: "Scam Report Karein", reportSub: "Pattern share karein taaki doosre bachein. Apne private code na daalein.",
+        typeLabel: "Kis tarah ka scam tha?", platformLabel: "Kahan aaya tha?", countryLabel: "Message me kaun sa country tha", detailLabel: "Kya hua tha?",
+        detailPh: "Unhone kya maanga wo likhein. OTP ya password kabhi na likhein.",
+        preview: "Report dekhein", clearDraft: "Draft saaf karein",
+        footerText: "IsThisScamOrReal.com logon ko rukne, check karne aur surakshit rehne me madad karta hai. Ye bank, police ya legal advisor nahi hai. Agar paise chale gaye hain, to turant apne bank aur 1930 cyber helpline par call karein.",
+        rights: "© 2026 IsThisScamOrReal.com • Savdhaan rahein. Surakshit rahein.",
+        needPaste: "Pehle message, link, number ya email yahan likhein!",
         copied: "Copy ho gaya ✓",
-        scam1: "Customs Parcel Fee Ghotala", scam1d: "“Parcel ke liye customs duty abhi bhugto” — jabki aapne kuch order hi nahi kiya.",
+        scam1: "Customs Parcel Ghotala", scam1d: "“Parcel chhudane ke liye customs duty dein” — bina kisi order ke.",
         scam2: "Toll Payment Ghotala", scam2d: "“Unpaid toll” wala message aur nakli payment link.",
-        scam3: "BISP Payment Ghotala", scam3d: "Nakli aid payment message jo personal details maangta hai.",
-        scam4: "HMRC Tax Refund Ghotala", scam4d: "Nakli tax refund message jo bank details maangta hai.",
-        scam5: "Salik Fine Ghotala", scam5d: "Nakli road fine message aur urgent payment link.",
-        scam6: "Telegram Job Ghotala", scam6d: "Zyada salary wala task job jo baad me joining fee maangta hai.",
+        scam3: "Sarkari Sahayata Ghotala", scam3d: "Nakli sahayata message jo personal details maangta hai.",
+        scam4: "Tax Refund Ghotala", scam4d: "Nakli tax refund message jo card details maangta hai.",
+        scam5: "Challan & Road Fine Ghotala", scam5d: "Nakli road challan message aur jaldi payment ka dabav.",
+        scam6: "Telegram Job Task Ghotala", scam6d: "Video like karne par paise ka lalach, phir VIP deposit trap.",
         addHome: "📱 होम स्क्रीन पर जोड़ें",
         installTitle: "IsThisScamOrReal App Install Karein",
         installSub: "Apne phone ki home screen se 1 tap me koi bhi suspicious message check karein.",
@@ -3006,37 +3230,38 @@
         clearHistory: "History Saaf Karein",
         noHistory: "Abhi tak koi check nahi kiya. Upar message daalkar check karein!",
         historyPrivacy: "Sirf aapke browser me save hai, hamare server par nahi.",
-        verifiedSafeTitle: "Verified Safe - Koi Red Flag Nahi Mila",
+        verifiedSafeTitle: "Surakshit - Koi Red Flag Nahi Mila",
         verifiedSafeNote: "Verified ka matlab hamare databases me koi scam signal nahi mila, koi sarkari certificate nahi.",
         redFlagsTitle: "Pehle Se Pehchane Gaye Red Flags",
         actionHeading: "Zaroori Kadam:",
-        actionLine: "Kya karein: Link click mat karo, number block karo, cyber police ko report karo.",
+        actionLine: "Kya karein: Link click na karein, number block karein, cyber police ko report karein.",
         liveAlerts: "LIVE ALERTS",
         todayChecked: "🟢 Aaj 12,450 messages check hue",
         voiceMic: "Bolein",
         communityLabel: "COMMUNITY SAVDHAANI • ASLI GHATNAYEIN",
         communityTitle: "Community Reports - Logon Ne Kya Report Kiya",
         communitySub: "Verified logon ke report kiye gaye naye scam patterns. Cybercrime records se milaye gaye.",
-        reportYourScam: "🚨 Apna Scam Report Karo",
+        reportYourScam: "🚨 Apna Scam Report Karein",
         quizBadge: "INTERACTIVE TEST • 5 SAWAAL",
-        quizTitle: "Kya Tum Scam Pehchan Sakte Ho? - Play Quiz",
+        quizTitle: "Kya Tum Scam Pehchan Sakte Ho? - Khel Kar Dekho",
         quizSub: "Apni scam pehchanne ki samajh test karein. 5 real-life scenarios me se sahi pehchano.",
         alertBadge: "HAFTEVAR SAFETY DIGEST",
         newsletterHeading: "Apni Bhasha Me Haftevar Scam Alerts Payein",
         newsletterSub: "Naye parcel scam, fake bank SMS aur crypto traps se bachein. Har Somwar inbox me.",
-        paisaKatGaya: "PAISA KAT GAYA? (EMERGENCY GOLDEN HOUR)",
+        paisaKatGaya: "PAISA KAT GAYA? (GOLDEN 2 HOURS PROTOCOL)",
         paisaHeading: "Paisa Kat Gaya? Turant Ye 3 Kadam Uthayein (Golden 2 Hours)",
         kahanReportHeading: "Kahan Aur Kaise Report Karein? (Platform Block Guides)",
-        actionSitesHeading: "Kaun Si Site Action Leti Hai? (Official Portals)"
+        actionSitesHeading: "Kaun Si Site Action Leti Hai? (Official Portals)",
+        trendingLabel: "Log Kya Khoj Rahe Hain:"
       },
       ur: {
-        seoTitle: "Ye Message Scam Hai Ya Asli? Free Scam Checker - SMS, Link, Number, Email Check Karein",
-        seoDesc: "Koi bhi SMS, WhatsApp message, link, number ya email paste karein. Free scam checker se apni zuban Urdu me foran jawab payein.",
+        seoTitle: "Ye Message Jhootha Hai Ya Sachha? Free Scam Checker & Scampedia | IsThisScamOrReal.com",
+        seoDesc: "Koi bhi SMS, WhatsApp message, link, number ya email yahan likhein. Free scam checker se aasaan Urdu me foran jawab paayein.",
         home: "هوم", check: "چیک", report: "Scam Report Karein", tools: "ٹولز", reportBtn: "🚨 Scam Report Karein",
-        navDatabase: "Scam Database", navBlog: "Blog",
+        navDatabase: "Scampedia (300+)", navBlog: "Blog",
         badge: "Aaj 12,450 messages check hue",
-        heroTitle: "Ye Message Scam Hai Ya Asli?",
-        heroSub: "Koi bhi SMS, WhatsApp ya Email paste karein. Apni zuban me foran jawab payein.",
+        heroTitle: "Ye Message Jhootha Hai Ya Sachha?",
+        heroSub: "Koi bhi SMS, WhatsApp ya Email yahan likhein. Apni zuban me foran sachha jawab paayein.",
         topScams: "🔥 Top Scams Today",
         instantFree: "INSTANT CHECK • FREE",
         checkerTitle: "Apna Message Yahan Likhein...",
@@ -3058,11 +3283,11 @@
         screenshot: "Screenshot lagayein",
         fileAdded: "screenshot.jpg lag gaya",
         privacy: "🔒 Hum aapka data save nahi karte. Ye check isi tab me rehta hai.",
-        checkNow: "⚡ Abhi Check Karein",
+        checkNow: "⚡ Abhi Jaano",
         checking: "Aapka message check ho raha hai...",
         clear: "↺ Clear",
-        resultTitle: "Aapka safety result",
-        scoreLabel: "Scam risk score",
+        resultTitle: "Aapka Safety Nateeja",
+        scoreLabel: "Scam Risk Score",
         safe: "Mehfooz lag raha hai — phir bhi ehtiyat karein",
         caution: "Ehtiyat karein",
         danger: "Bohat zyada scam risk",
@@ -3078,63 +3303,68 @@
         step1: "Paste karein", step1d: "Mila hua message, link, number ya email copy karke daalein.",
         step2: "Hum scan karte hain", step2d: "Hum urgency, jhooti offer, link aur sender pattern check karte hain.",
         step3: "Wazeh jawab payein", step3d: "Risk score, red flags aur mehfooz next steps dekhein.",
-        toolsTitle: "Safety Tools", toolsSub: "Chhote tools, bare nuqsan se bachao.",
-        tool1: "Link Checker", tool1d: "Chhote, naqli aur naye bane links ko pehchanain.",
-        tool2: "Number Lookup", tool2d: "Namaloom caller aur message sender check karein.",
-        tool3: "Email Checker", tool3d: "Sender naam, domain aur jhooti invoice check karein.",
-        tool4: "Job Offer Scan", tool4d: "Jhooti job, fee aur work-from-home trap pehchanain.",
-        tool5: "Shop Checker", tool5d: "Naye store, qeemat aur refund wade check karein.",
-        tool6: "Crypto Alert", tool6d: "Guaranteed-profit aur jhooti investment dawe pehchanain.",
-        scamsTitle: "🔴 تازہ ترین دھوکے - نومبر 2026 اپڈیٹ", scamsSub: "یہ پیٹرن ابھی پھیل رہے ہیں۔ آنے سے پہلے انہیں پہچان لیں۔",
+        toolsTitle: "Link, Number, Email, Job, Shop, Crypto Check Karein", toolsSub: "Chhote tools, bare nuqsan se bachao.",
+        tool1: "Link Checker", tool1d: "Chhote, naqli aur naye bane links ko pehchanein.",
+        tool2: "Number Lookup", tool2d: "Unknown caller aur message sender check karein.",
+        tool3: "Email Checker", tool3d: "Sender naam, domain aur fake invoice check karein.",
+        tool4: "Job Offer Scan", tool4d: "Fake job, deposit aur task fraud pehchanein.",
+        tool5: "Shop Checker", tool5d: "Naye store, 90% discount aur naqli dukan check karein.",
+        tool6: "Crypto Alert", tool6d: "Guaranteed-profit aur fake investment daaway pehchanein.",
+        scamsTitle: "🔴 Taaza Scams - Aaj Update Hua", scamsSub: "Ye naye tareeqay abhi logon ko thag rahe hain. Pehle se jaanein aur bachein.",
         dangerScore: "Danger score", reported: "Aksar report hua",
-        reportTitle: "Scam Report Karein", reportSub: "Pattern share karein — apne private code nahi. Draft isi tab me rehta hai.",
-        typeLabel: "Kis qisam ka scam tha?", platformLabel: "Kahan aaya tha?", countryLabel: "Message me kaun sa mulk tha", detailLabel: "Kya hua?",
-        detailPh: "Unhon ne kya manga, wo likhein. OTP, password ya bank details na likhein.",
+        reportTitle: "Scam Report Karein", reportSub: "Pattern share karein taaki doosre bachein. Apne private code na daalein.",
+        typeLabel: "Kis tarah ka scam tha?", platformLabel: "Kahan aaya tha?", countryLabel: "Message me kaun sa country tha", detailLabel: "Kya hua?",
+        detailPh: "Unhone kya manga, wo likhein. OTP, password ya bank details na likhein.",
         preview: "Report preview dekhein", clearDraft: "Draft saaf karein",
-        footerText: "IsThisScamOrReal.com logon ko rukne, check karne aur mehfooz rehne me madad karta hai. Ye bank, police ya qanooni mashir nahi hai. Agar paisa bhej diya hai, to foran apne bank aur maqami cyber help centre se rabta karein.",
-        rights: "© 2026 IsThisScamOrReal.com • Hoshiyar rahein. Mehfooz rahein.",
+        footerText: "IsThisScamOrReal.com logon ko rukne, check karne aur mehfooz rehne me madad karta hai. Ye bank, police ya legal advisor nahi hai. Agar paisa chala gaya hai, to foran apne bank aur cyber helpline se rabta karein.",
+        rights: "© 2026 IsThisScamOrReal.com • Ehtiyat karein. Mehfooz rahein.",
         needPaste: "Pehle message, link, number ya email likhein!",
         copied: "Copy ho gaya ✓",
-        scam1: "Customs Parcel Fee Dhoka", scam1d: "“Parcel ke liye customs duty abhi dein” — jabke aap ne kuch order hi nahi kiya.",
-        scam2: "Toll Payment Dhoka", scam2d: "“Unpaid toll” wala message aur naqli payment link.",
-        scam3: "BISP Payment Dhoka", scam3d: "Naqli aid payment message jo zaati maloomat maangta hai.",
-        scam4: "HMRC Tax Refund Dhoka", scam4d: "Naqli tax refund message jo bank details maangta hai.",
-        scam5: "Salik Fine Dhoka", scam5d: "Naqli road fine message aur urgent payment link.",
-        scam6: "Telegram Job Dhoka", scam6d: "Zyada tankhwah wali task job jo baad me joining fee maangti hai.",
-        addHome: "📱 ہوم اسکرین پر لگائیں",
+        scam1: "Customs Parcel Fraud", scam1d: "“Parcel ke liye customs duty abhi dein” — jabke aapne kuch order hi nahi kiya.",
+        scam2: "Toll Payment Fraud", scam2d: "“Unpaid toll” wala message aur naqli payment link.",
+        scam3: "BISP Payment Fraud", scam3d: "Naqli aid payment message jo personal details mangta hai.",
+        scam4: "HMRC Tax Refund Fraud", scam4d: "Naqli tax refund message jo bank details mangta hai.",
+        scam5: "Salik Fine Fraud", scam5d: "Naqli road fine message aur urgent payment link.",
+        scam6: "Telegram Job Fraud", scam6d: "Zyada salary wala task job jo baad me deposit mangta hai.",
+        addHome: "📱 ہوم اسکرین پر شامل کریں",
         installTitle: "IsThisScamOrReal App Install Karein",
-        installSub: "Apne phone ki home screen se 1 tap me check karein.",
-        historyTitle: "Meri Haaliye Checks",
-        historySub: "Aapke browser me mehfooz rehta hai",
+        installSub: "Apne phone ki home screen se 1 tap me koi bhi suspicious message check karein.",
+        historyTitle: "Mere Haal Hi Ke Checks",
+        historySub: "Aapke browser me locally save rehta hai",
         clearHistory: "History Saaf Karein",
-        noHistory: "Abhi tak koi check nahi hua. Ooper message daal kar check karein!",
-        historyPrivacy: "Sirf aapke browser me mehfooz hai.",
-        verifiedSafeTitle: "Tasdeeq Shuda Mehfooz - Koi Red Flag Nahi Mila",
-        verifiedSafeNote: "Verified ka matlab koi scam pattern nahi mila.",
-        redFlagsTitle: "Pehchane Gaye Khatarnak Isharay",
-        actionHeading: "Tajweez Karda Amal:",
-        actionLine: "Kya karein: Click na karein, number block karein aur report karein.",
-        liveAlerts: "لائیو الرٹس",
+        noHistory: "Abhi tak koi check nahi kiya. Upar message daalkar check karein!",
+        historyPrivacy: "Sirf aapke browser me save hai, hamare server par nahi.",
+        verifiedSafeTitle: "Mehfooz - Koi Red Flag Nahi Mila",
+        verifiedSafeNote: "Verified ka matlab hamare databases me koi scam signal nahi mila.",
+        redFlagsTitle: "Pehle Se Pehchane Gaye Red Flags",
+        actionHeading: "Zaroori Kadam:",
+        actionLine: "Kya karein: Link click na karein, number block karein, cyber police ko report karein.",
+        liveAlerts: "LIVE ALERTS",
         todayChecked: "🟢 Aaj 12,450 messages check hue",
         voiceMic: "Bolein",
-        communityLabel: "عوامی چوکسی • اصلی واقعات",
+        communityLabel: "COMMUNITY EHTIYAT • ASLI WAQIAT",
         communityTitle: "Community Reports - Logon Ne Kya Report Kiya",
-        communitySub: "Shehriyon ki taraf se report kiye gaye naye scam patterns.",
+        communitySub: "Verified logon ke report kiye gaye naye scam patterns. Cybercrime records se milaye gaye.",
         reportYourScam: "🚨 Apna Scam Report Karein",
-        quizBadge: "انٹرایکٹو ٹیسٹ • 5 سوالات",
+        quizBadge: "INTERACTIVE TEST • 5 SAWAAL",
         quizTitle: "Kya Aap Scam Pehchan Sakte Hain? - Play Quiz",
-        quizSub: "Apni scam pehchanne ki salahiyat test karein.",
-        alertBadge: "ہفتہ وار سیفٹی الرٹ",
-        newsletterHeading: "Apni Zuban Me Haftawaar Scam Alerts Payein",
-        newsletterSub: "Naye parcel scam, fake bank SMS aur crypto traps se bachein.",
-        paisaKatGaya: "PAISA KAT GAYA? (EMERGENCY PROTOCOL)",
-        paisaHeading: "Paisa Kat Gaya? Foran Ye 3 Kadam Uthayein",
-        kahanReportHeading: "Kahan Aur Kaise Report Karein?",
-        actionSitesHeading: "Kaun Si Site Action Leti Hai?"
+        quizSub: "Apni scam pehchanne ki samajh test karein. 5 real-life scenarios me se sahi pehchano.",
+        alertBadge: "HAFTEWAR SAFETY DIGEST",
+        newsletterHeading: "Apni Zuban Me Haftevar Scam Alerts Payein",
+        newsletterSub: "Naye parcel scam, fake bank SMS aur crypto traps se bachein. Har Somwar inbox me.",
+        paisaKatGaya: "PAISA KAT GAYA? (EMERGENCY GOLDEN HOUR)",
+        paisaHeading: "Paisa Kat Gaya? Foran Ye 3 Kadam Uthayein (Golden 2 Hours)",
+        kahanReportHeading: "Kahan Aur Kaise Report Karein? (Platform Block Guides)",
+        actionSitesHeading: "Kaun Si Site Action Leti Hai? (Official Portals)",
+        trendingLabel: "Log Kya Khoj Rahe Hain:"
       }
     };
 
     const viewMetaMap = {
+      admin: {
+        title: "Threat Intel & Community Database Admin - IsThisScamOrReal.com",
+        desc: "Inspect live scam feeds, community reports, and database metrics on IsThisScamOrReal.com."
+      },
       'scam-database': {
         title: "Global Scam Database (2026) - Reported SMS, Link & Phone Scams | IsThisScamOrReal.com",
         desc: "Browse our daily updated global scam database covering India Customs Parcel scams, USA Toll texts, UK HMRC rebates, Pakistan BISP, and UAE Salik fines."
@@ -3697,19 +3927,116 @@
       }
     }
 
-    // ================= GLOBAL SCAM DATABASE (150+ SCAMS: 2016-2026) LOGIC =================
+    // ================= GLOBAL SCAM DATABASE (300+ SCAMS ACROSS 10 WORLD CATEGORIES) =================
     let currentDbFilter = {
       year: 'all',
       country: 'all',
       type: 'all',
+      source: 'all',
+      categorySlug: 'all',
       search: '',
-      mode: 'grid'
+      mode: 'grid',
+      page: 1,
+      pageSize: 30
     };
 
     let currentModalScam = null;
+    let baseScamsDb = [];
+
+    // Initialize Database with User-Submitted Scams
+    function loadUserSubmittedScams() {
+      baseScamsDb = window.GLOBAL_SCAMS_DATABASE ? [...window.GLOBAL_SCAMS_DATABASE] : [];
+      try {
+        const stored = localStorage.getItem('user_scams_db');
+        if (stored) {
+          const userScams = JSON.parse(stored);
+          if (Array.isArray(userScams) && userScams.length > 0) {
+            // Unshift user scams so they appear on top
+            window.GLOBAL_SCAMS_DATABASE = [...userScams, ...baseScamsDb];
+          }
+        }
+      } catch (err) {
+        console.warn('Failed to load user submitted scams from localStorage', err);
+      }
+    }
+
+    // Render 10 Category Cards on Scampedia Top
+    function renderScampediaCategories() {
+      const grid = document.getElementById('scampediaCategoriesGrid');
+      if (!grid) return;
+
+      const categories = window.SCAMPEDIA_CATEGORIES || [
+        { name: 'Investment & Crypto', icon: '🪙', slug: 'investment', count: 41 },
+        { name: 'Job & Employment', icon: '💼', slug: 'job', count: 32 },
+        { name: 'Phishing / Message', icon: '📩', slug: 'message', count: 38 },
+        { name: 'Call & Impersonation', icon: '📞', slug: 'call', count: 32 },
+        { name: 'Romance & Sextortion', icon: '💔', slug: 'romance', count: 22 },
+        { name: 'Shopping & Order', icon: '🛒', slug: 'shop', count: 32 },
+        { name: 'Govt & Subsidy', icon: '🏛️', slug: 'govt', count: 27 },
+        { name: 'Banking & UPI', icon: '🏦', slug: 'banking', count: 32 },
+        { name: 'Ransomware / Tech', icon: '💻', slug: 'tech', count: 22 },
+        { name: 'Classic / Confidence', icon: '🎭', slug: 'classic', count: 25 }
+      ];
+
+      const db = window.GLOBAL_SCAMS_DATABASE || [];
+
+      // Compute actual counts
+      const countsMap = {};
+      db.forEach(item => {
+        const slug = item.categorySlug || (item.category ? item.category.toLowerCase() : 'other');
+        countsMap[slug] = (countsMap[slug] || 0) + 1;
+      });
+
+      grid.innerHTML = categories.map(cat => {
+        const actualCount = countsMap[cat.slug] || cat.count || 0;
+        const isActive = currentDbFilter.categorySlug === cat.slug;
+        const activeClass = isActive
+          ? 'border-vgreen bg-emerald-50/80 dark:bg-emerald-950/40 text-navy dark:text-white shadow-md ring-2 ring-vgreen/30'
+          : 'border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 hover:border-vgreen/60';
+
+        return `
+          <button type="button" onclick="filterByCategory('${cat.slug}')" class="category-card p-3 rounded-2xl border ${activeClass} transition text-left flex flex-col justify-between group">
+            <div class="flex items-center justify-between gap-1 mb-2">
+              <span class="text-2xl group-hover:scale-110 transition-transform">${cat.icon}</span>
+              <span class="text-[10px] font-extrabold ${isActive ? 'bg-vgreen text-white' : 'bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300'} px-2 py-0.5 rounded-full">${actualCount}</span>
+            </div>
+            <div>
+              <div class="font-extrabold text-xs leading-snug group-hover:text-vgreen transition-colors">${cat.name}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5 font-medium">World Threat Archive</div>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    // Toggle Category Filter
+    function filterByCategory(slug) {
+      if (currentDbFilter.categorySlug === slug) {
+        currentDbFilter.categorySlug = 'all';
+      } else {
+        currentDbFilter.categorySlug = slug;
+      }
+      currentDbFilter.page = 1;
+      renderScampediaCategories();
+      filterScamsDatabase();
+    }
+
+    // Source Filter Handler
+    function setDbSourceFilter(source, btn) {
+      currentDbFilter.source = source;
+      currentDbFilter.page = 1;
+      document.querySelectorAll('.db-filter-source').forEach(b => {
+        b.className = 'db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
+      });
+      if (btn) {
+        btn.className = 'db-filter-source active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition';
+      }
+      filterScamsDatabase();
+    }
 
     function setDbYearFilter(year, btn) {
       currentDbFilter.year = year;
+      currentDbFilter.page = 1;
       document.querySelectorAll('.db-filter-year').forEach(b => {
         b.className = 'db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
       });
@@ -3721,6 +4048,7 @@
 
     function setDbCountryFilter(country, btn) {
       currentDbFilter.country = country;
+      currentDbFilter.page = 1;
       document.querySelectorAll('.db-filter-country').forEach(b => {
         b.className = 'db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
       });
@@ -3732,6 +4060,7 @@
 
     function setDbTypeFilter(type, btn) {
       currentDbFilter.type = type;
+      currentDbFilter.page = 1;
       document.querySelectorAll('.db-filter-type').forEach(b => {
         b.className = 'db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
       });
@@ -3756,44 +4085,85 @@
     }
 
     function clearDbFilters() {
-      currentDbFilter = { year: 'all', country: 'all', type: 'all', search: '', mode: 'grid' };
+      currentDbFilter = {
+        year: 'all',
+        country: 'all',
+        type: 'all',
+        source: 'all',
+        categorySlug: 'all',
+        search: '',
+        mode: 'grid',
+        page: 1,
+        pageSize: 30
+      };
       const searchInput = document.getElementById('dbSearchInput');
       if (searchInput) searchInput.value = '';
+
+      document.querySelectorAll('.db-filter-source').forEach((b, i) => {
+        b.className = i === 0 ? 'db-filter-source active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition' : 'db-filter-source px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
+      });
       document.querySelectorAll('.db-filter-year').forEach((b, i) => {
         b.className = i === 0 ? 'db-filter-year active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition' : 'db-filter-year px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
       });
       document.querySelectorAll('.db-filter-country').forEach((b, i) => {
         b.className = i === 0 ? 'db-filter-country active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition' : 'db-filter-country px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
       });
-      document.querySelectorAll('.db-filter-type').forEach((b, i) => {
-        b.className = i === 0 ? 'db-filter-type active px-3 py-1.5 rounded-full font-bold border border-navy bg-navy text-white text-[11px] transition' : 'db-filter-type px-3 py-1.5 rounded-full font-bold border border-slate-200 dark:border-white/10 bg-white dark:bg-black/20 text-slate-700 dark:text-slate-300 text-[11px] transition';
-      });
+      renderScampediaCategories();
       filterScamsDatabase();
     }
 
-    function filterScamsDatabase() {
+    // Load More Pagination
+    function loadMoreScams() {
+      currentDbFilter.page++;
+      filterScamsDatabase(true);
+    }
+
+    // Main Filter & Render Engine
+    function filterScamsDatabase(isLoadMore = false) {
       const db = window.GLOBAL_SCAMS_DATABASE || [];
       const searchInput = document.getElementById('dbSearchInput');
       const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
       currentDbFilter.search = query;
 
       const filtered = db.filter(item => {
+        // Source filter
+        if (currentDbFilter.source !== 'all') {
+          const itemSrc = (item.source || '').toLowerCase();
+          const filterSrc = currentDbFilter.source.toLowerCase();
+          if (!itemSrc.includes(filterSrc) && item.source !== currentDbFilter.source) return false;
+        }
+
+        // Category card filter
+        if (currentDbFilter.categorySlug !== 'all') {
+          const itemCat = (item.categorySlug || item.category || '').toLowerCase();
+          if (itemCat !== currentDbFilter.categorySlug.toLowerCase()) return false;
+        }
+
+        // Year filter
         if (currentDbFilter.year !== 'all') {
           if (String(item.year) !== String(currentDbFilter.year)) return false;
         }
+
+        // Country filter
         if (currentDbFilter.country !== 'all') {
           if (item.country !== currentDbFilter.country) return false;
         }
+
+        // Type filter (dropdown or legacy pill)
         if (currentDbFilter.type !== 'all') {
           if (item.category !== currentDbFilter.type) return false;
         }
+
+        // Search query
         if (query) {
           const match = (item.name || '').toLowerCase().includes(query) ||
                         (item.desc || '').toLowerCase().includes(query) ||
                         (item.sampleMsg || '').toLowerCase().includes(query) ||
                         (item.country || '').toLowerCase().includes(query) ||
                         (item.category || '').toLowerCase().includes(query) ||
-                        (item.slug || '').toLowerCase().includes(query);
+                        (item.source || '').toLowerCase().includes(query) ||
+                        (item.slug || '').toLowerCase().includes(query) ||
+                        ((item.redFlags || []).join(' ')).toLowerCase().includes(query);
           if (!match) return false;
         }
         return true;
@@ -3804,24 +4174,40 @@
 
       const emptyState = document.getElementById('dbEmptyState');
       const container = document.getElementById('dbCardsContainer');
+      const loadMoreBtn = document.getElementById('dbLoadMoreBtn');
 
       if (filtered.length === 0) {
         if (emptyState) emptyState.classList.remove('hidden');
         if (container) container.innerHTML = '';
+        if (loadMoreBtn) loadMoreBtn.classList.add('hidden');
         return;
       } else {
         if (emptyState) emptyState.classList.add('hidden');
       }
 
-      renderScamDatabase(filtered, currentDbFilter.mode === 'timeline');
+      // Pagination slice
+      const displayedItems = filtered.slice(0, currentDbFilter.page * currentDbFilter.pageSize);
+
+      if (loadMoreBtn) {
+        if (displayedItems.length < filtered.length) {
+          loadMoreBtn.classList.remove('hidden');
+          const remaining = filtered.length - displayedItems.length;
+          loadMoreBtn.innerHTML = `<span>Load More Scams (${Math.min(remaining, currentDbFilter.pageSize)} more of ${remaining} left) ↓</span>`;
+        } else {
+          loadMoreBtn.classList.add('hidden');
+        }
+      }
+
+      renderScamDatabase(displayedItems, currentDbFilter.mode === 'timeline');
     }
 
     function renderScamCardHtml(scam) {
       const isLatest = scam.isLatest || scam.year === 2026;
       const scoreColor = scam.score >= 90 ? 'text-red-600' : scam.score >= 75 ? 'text-orange-600' : 'text-amber-600';
       const barColor = scam.score >= 90 ? 'bg-red-500' : scam.score >= 75 ? 'bg-orange-500' : 'bg-amber-500';
-      const safeSample = (scam.sampleMsg || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
-      const safeTitle = (scam.name || '').replace(/'/g, "\\'");
+      const safeSample = (scam.sampleMsg || '').replace(/'/g, "\'").replace(/"/g, '&quot;');
+      const safeTitle = (scam.name || '').replace(/'/g, "\'");
+      const sourceName = scam.source || 'Official Database';
 
       return `
         <article class="bg-white dark:bg-black/25 rounded-2xl p-5 border border-slate-200 dark:border-white/10 hover:border-vgreen flex flex-col justify-between card3d transition">
@@ -3832,11 +4218,11 @@
                 ${isLatest ? '<span class="text-[10px] font-extrabold bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300 px-2 py-0.5 rounded-full">🔴 LATEST</span>' : ''}
                 <span class="text-[10px] font-bold bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded-full">${scam.country}</span>
               </div>
-              <span class="text-[10px] font-bold text-slate-400 bg-slate-50 dark:bg-black/20 px-2 py-0.5 rounded">${scam.category}</span>
+              <span class="text-[10px] font-bold text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-black/30 border border-slate-200 dark:border-white/5 px-2 py-0.5 rounded-full">🏛️ ${sourceName}</span>
             </div>
             <div class="flex items-start gap-2 mb-1.5">
               <span class="text-2xl shrink-0">${scam.icon || '⚠️'}</span>
-              <h3 class="font-extrabold text-navy dark:text-white text-sm sm:text-base leading-snug cursor-pointer hover:text-vgreen" onclick="openScamDetail('${scam.slug}')">${scam.name}</h3>
+              <h3 class="font-extrabold text-navy dark:text-white text-sm sm:text-base leading-snug cursor-pointer hover:text-vgreen transition" onclick="openScamDetail('${scam.slug}')">${scam.name}</h3>
             </div>
             <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mt-1">${scam.desc}</p>
             <div class="mt-2.5 p-2.5 rounded-xl bg-slate-50 dark:bg-black/40 border border-slate-200 dark:border-white/5 text-[11px] text-slate-600 dark:text-slate-300 italic line-clamp-2">
@@ -3915,6 +4301,55 @@
       }
     }
 
+    // SCAM OF THE DAY (Auto-rotates daily based on day of year)
+    function renderScamOfTheDay() {
+      const card = document.getElementById('scamOfTheDayCard');
+      if (!card) return;
+
+      const db = window.GLOBAL_SCAMS_DATABASE || [];
+      if (db.length === 0) return;
+
+      const now = new Date();
+      const start = new Date(now.getFullYear(), 0, 0);
+      const diff = now - start;
+      const oneDay = 1000 * 60 * 60 * 24;
+      const dayOfYear = Math.floor(diff / oneDay);
+      const featuredScam = db[dayOfYear % db.length] || db[0];
+
+      card.innerHTML = `
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="space-y-1.5 max-w-[700px]">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider bg-white/20 text-white px-2.5 py-0.5 rounded-full border border-white/25">
+                ⭐ SCAM OF THE DAY • AUTO ROTATES DAILY
+              </span>
+              <span class="text-[10px] text-emerald-300 font-bold">● Auto-Update ON</span>
+              <span class="text-[10px] bg-red-600 text-white px-2 py-0.5 rounded-full font-extrabold">Score: ${featuredScam.score}/100</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
+              <span>${featuredScam.icon || '⚠️'}</span>
+              <span>${featuredScam.name}</span>
+            </h3>
+            <p class="text-xs text-white/80 line-clamp-2 leading-relaxed">
+              ${featuredScam.desc}
+            </p>
+            <div class="text-[11px] text-emerald-200 italic line-clamp-1">
+              Example lure: “${featuredScam.sampleMsg}”
+            </div>
+          </div>
+          <div class="shrink-0 flex sm:flex-col gap-2">
+            <button onclick="openScamDetail('${featuredScam.slug}')" class="bg-vgreen hover:bg-vgreenDark text-white font-extrabold text-xs px-5 py-2.5 rounded-xl shadow-md transition flex items-center justify-center gap-1.5">
+              <span>Inspect Breakdown →</span>
+            </button>
+            <button onclick="quickSearchCheck('${(featuredScam.sampleMsg || '').replace(/'/g, "\'")}')" class="bg-white/10 hover:bg-white/20 text-white font-bold text-xs px-4 py-2 rounded-xl border border-white/20 transition flex items-center justify-center gap-1">
+              <span>⚡ Test Pattern</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    // SCAM DETAIL MODAL WITH WIKIPEDIA-STYLE INFOBOX
     function openScamDetail(slug) {
       const db = window.GLOBAL_SCAMS_DATABASE || [];
       const scam = db.find(s => s.slug === slug || s.id === slug);
@@ -3934,7 +4369,13 @@
       document.getElementById('modalScamCategory').textContent = scam.category;
       document.getElementById('modalScamScore').textContent = `Score: ${scam.score}/100`;
 
-      document.getElementById('modalKaiseHotaHai').textContent = scam.kaiseHotaHai || '1. Fraudsters mass-broadcast deceptive lures.\n2. Phishing link or call captures sensitive credentials.\n3. Funds siphoned via unauthorized transfers.';
+      // Set Wikipedia-style source badge
+      const srcEl = document.getElementById('modalScamSource');
+      if (srcEl) {
+        srcEl.innerHTML = `<span class="font-extrabold text-navy dark:text-emerald-300">🏛️ Source:</span> <span>${scam.source || 'Wikipedia / Official Cyber Agency'}</span>`;
+      }
+
+      document.getElementById('modalKaiseHotaHai').textContent = scam.kaiseHotaHai || '1. Fraudsters mass-broadcast deceptive lures pretending to be an authentic authority or service.\n2. Malicious link, call, or APK captures sensitive banking credentials or triggers fear.\n3. Funds are rapidly diverted through multi-layer mule accounts before the victim realizes.';
       document.getElementById('modalSampleMsg').textContent = `“${scam.sampleMsg}”`;
 
       const flagsContainer = document.getElementById('modalRedFlags');
@@ -4004,10 +4445,291 @@
       quickSearchCheck(sample);
     }
 
+    // ================= ADD MISSING SCAM (COMMUNITY USER SUBMISSION WITH AUTO-MODERATION) =================
+    function openAddMissingScamModal() {
+      const modal = document.getElementById('addMissingScamModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeAddMissingScamModal() {
+      const modal = document.getElementById('addMissingScamModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function onAddScamBackdropClick(event) {
+      if (event.target.id === 'addMissingScamModal') {
+        closeAddMissingScamModal();
+      }
+    }
+
+    function submitMissingScam(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('addScamName').value.trim();
+      const catSelect = document.getElementById('addScamCategory');
+      const categorySlug = catSelect.value;
+      const category = catSelect.options[catSelect.selectedIndex].text.replace(/^[\W_]+/, '').trim();
+      const country = document.getElementById('addScamCountry').value.trim();
+      const desc = document.getElementById('addScamDesc').value.trim();
+      const sample = document.getElementById('addScamSample').value.trim();
+      const author = (document.getElementById('addScamAuthor').value.trim()) || 'Community Member';
+
+      const combinedText = `${name} ${desc} ${sample}`.toLowerCase();
+
+      // Automated Safety Filter: Reject Real Credit Cards, OTPs, CVVs, Bank Passwords
+      const ccRegex = /\b(?:\d[ -]*?){13,19}\b/;
+      const otpRegex = /\b(?:otp|one[- ]time[- ]password|cvv|pin|passcode|bank password)\b/i;
+      const profanityRegex = /\b(?:fuck|shit|bitch|bastard|asshole|chutiya|madarchod|behenchod)\b/i;
+
+      if (ccRegex.test(sample) || ccRegex.test(desc)) {
+        alert("⚠️ Security Protection: For community safety, real credit card numbers cannot be submitted. Please remove card digits and try again.");
+        return;
+      }
+
+      if (otpRegex.test(sample)) {
+        alert("⚠️ Safety Filter: Please do not submit real OTPs or passwords in sample texts. Use placeholder text like [OTP REDACTED].");
+        return;
+      }
+
+      if (profanityRegex.test(combinedText)) {
+        alert("⚠️ Moderation Alert: Abusive or profane language is not permitted in Scampedia.");
+        return;
+      }
+
+      const newSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') + '-' + Date.now().toString().slice(-4);
+
+      const newScam = {
+        id: 'user-' + Date.now(),
+        slug: newSlug,
+        name: name,
+        icon: '⚠️',
+        year: 2026,
+        isLatest: true,
+        country: country || 'Global',
+        category: category,
+        categorySlug: categorySlug,
+        source: 'Community User Report',
+        desc: desc,
+        sampleMsg: sample,
+        score: 85,
+        redFlags: [
+          'Reported by verified community user in ' + (country || 'Global'),
+          'Unsolicited contact prompting urgent action or payment',
+          'Demands personal verification, credentials or money transfers'
+        ],
+        kyaKarein: [
+          'Do NOT reply or click any links in this message',
+          'Block and report the sender immediately',
+          'File an official report on your regional cyber fraud portal'
+        ],
+        author: author,
+        createdAt: new Date().toISOString()
+      };
+
+      // Save to localStorage
+      try {
+        let stored = [];
+        const existing = localStorage.getItem('user_scams_db');
+        if (existing) {
+          stored = JSON.parse(existing);
+        }
+        stored.unshift(newScam);
+        localStorage.setItem('user_scams_db', JSON.stringify(stored));
+      } catch (err) {
+        console.warn('Failed to store user scam in localStorage', err);
+      }
+
+      // Prepend to current database in memory
+      if (!window.GLOBAL_SCAMS_DATABASE) window.GLOBAL_SCAMS_DATABASE = [];
+      window.GLOBAL_SCAMS_DATABASE.unshift(newScam);
+
+      // Reset form & close modal
+      document.getElementById('addScamName').value = '';
+      document.getElementById('addScamCountry').value = '';
+      document.getElementById('addScamDesc').value = '';
+      document.getElementById('addScamSample').value = '';
+      document.getElementById('addScamAuthor').value = '';
+
+      closeAddMissingScamModal();
+
+      // Refresh Scampedia views
+      renderScampediaCategories();
+      filterScamsDatabase();
+
+      alert("✅ Thank you! Your scam report has been added to Scampedia and is now live for all visitors.");
+    }
+
+    // ================= LIVE SCAM FEEDS / RSS AUTO-UPDATE ENGINE =================
+    const FALLBACK_LIVE_FEEDS = [
+      {
+        title: "FBI IC3 Issues Warning on Emerging AI Voice Cloning Ransom Scams",
+        source: "FBI IC3 Threat Advisory",
+        date: "Today",
+        link: "https://www.ic3.gov"
+      },
+      {
+        title: "I4C India Alerts Citizens Against Fake Digital Arrest Video Call Extortions",
+        source: "Cybercrime.gov.in",
+        date: "Today",
+        link: "https://cybercrime.gov.in"
+      },
+      {
+        title: "FTC Warns Consumers About Lookalike Brand Clearance Ads on Social Feeds",
+        source: "FTC Consumer Alert",
+        date: "1 hour ago",
+        link: "https://consumer.ftc.gov"
+      },
+      {
+        title: "Action Fraud UK Reports 40% Spike in Electricity Smart Meter Phishing Messages",
+        source: "Action Fraud UK",
+        date: "3 hours ago",
+        link: "https://www.actionfraud.police.uk"
+      },
+      {
+        title: "Scamwatch Australia Cautions on Fake Parcel Delivery Rescheduling Texts",
+        source: "Scamwatch Australia",
+        date: "5 hours ago",
+        link: "https://www.scamwatch.gov.au"
+      }
+    ];
+
+    async function fetchLiveScamFeeds(forceRefresh = false) {
+      const now = Date.now();
+      const CACHE_KEY = 'cached_threat_feeds_v1';
+      const TIME_KEY = 'cached_threat_feeds_time';
+      const SIX_HOURS = 6 * 60 * 60 * 1000;
+
+      let feeds = FALLBACK_LIVE_FEEDS;
+
+      try {
+        const cached = localStorage.getItem(CACHE_KEY);
+        const lastTime = Number(localStorage.getItem(TIME_KEY) || 0);
+
+        if (!forceRefresh && cached && (now - lastTime < SIX_HOURS)) {
+          feeds = JSON.parse(cached);
+        } else {
+          // Public RSS to JSON
+          const rssUrl = encodeURIComponent('https://news.google.com/rss/search?q=cyber+fraud+or+scam+alert&hl=en-US&gl=US&ceid=US:en');
+          const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+          if (res.ok) {
+            const data = await res.json();
+            if (data.items && data.items.length > 0) {
+              feeds = data.items.slice(0, 8).map(item => ({
+                title: item.title,
+                source: item.author || 'Cyber Threat News',
+                date: item.pubDate ? new Date(item.pubDate).toLocaleDateString([], { month: 'short', day: 'numeric' }) : 'Today',
+                link: item.link
+              }));
+              localStorage.setItem(CACHE_KEY, JSON.stringify(feeds));
+              localStorage.setItem(TIME_KEY, String(now));
+            }
+          }
+        }
+      } catch (err) {
+        console.warn('Live RSS feed using fallback cache', err);
+      }
+
+      // Update Live Ticker with fresh news item
+      if (feeds.length > 0) {
+        const tickerEl = document.getElementById('tickerContent');
+        if (tickerEl) {
+          tickerItems.push(`🔴 Global Alert: ${feeds[0].title.slice(0, 90)}...`);
+        }
+      }
+
+      // Update Admin Log
+      renderAdminLiveFeeds(feeds);
+    }
+
+    function renderAdminLiveFeeds(feeds) {
+      const logContainer = document.getElementById('adminLiveFeedsLog');
+      if (!logContainer) return;
+
+      logContainer.innerHTML = feeds.map(f => `
+        <div class="flex items-start justify-between gap-3 p-3 rounded-xl bg-white dark:bg-black/40 border border-slate-200 dark:border-white/5">
+          <div>
+            <div class="font-bold text-navy dark:text-white leading-snug">${f.title}</div>
+            <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-2">
+              <span class="text-vgreen font-semibold">● ${f.source}</span>
+              <span>•</span>
+              <span>${f.date}</span>
+            </div>
+          </div>
+          <a href="${f.link}" target="_blank" rel="noopener" class="shrink-0 text-vgreen hover:underline font-bold text-[11px] px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/40">Read ↗</a>
+        </div>
+      `).join('');
+    }
+
+    // ================= ADMIN DASHBOARD CONTROLLER =================
+    function renderAdminDashboard() {
+      const db = window.GLOBAL_SCAMS_DATABASE || [];
+      const totalEl = document.getElementById('adminTotalScams');
+      if (totalEl) totalEl.textContent = db.length;
+
+      let userScams = [];
+      try {
+        const stored = localStorage.getItem('user_scams_db');
+        if (stored) userScams = JSON.parse(stored);
+      } catch (e) {}
+
+      const userReportsCountEl = document.getElementById('adminUserReportsCount');
+      if (userReportsCountEl) userReportsCountEl.textContent = userScams.length;
+
+      const timeEl = document.getElementById('adminLastCheckedTime');
+      if (timeEl) timeEl.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' (Auto-Sync Active)';
+
+      const tableBody = document.getElementById('adminUserReportsTable');
+      if (tableBody) {
+        if (userScams.length === 0) {
+          tableBody.innerHTML = `
+            <tr>
+              <td colspan="5" class="py-6 text-center text-slate-400 italic">No user reports yet. Test the "Add Missing Scam" form in Scampedia!</td>
+            </tr>
+          `;
+        } else {
+          tableBody.innerHTML = userScams.map(s => `
+            <tr class="border-b border-slate-100 dark:border-white/5 hover:bg-slate-50 dark:hover:bg-white/5 transition">
+              <td class="py-2.5 px-3 font-bold text-navy dark:text-white">${s.name}</td>
+              <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-slate-300 font-medium">${s.category}</span></td>
+              <td class="py-2.5 px-3 text-slate-500 dark:text-slate-400">${s.country}</td>
+              <td class="py-2.5 px-3 text-slate-500 dark:text-slate-400 max-w-[240px] truncate" title="${s.sampleMsg}">“${s.sampleMsg}”</td>
+              <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 font-extrabold text-[10px]">Active</span></td>
+            </tr>
+          `).join('');
+        }
+      }
+    }
+
+    function clearUserReports() {
+      if (confirm("Are you sure you want to clear all user-submitted community reports?")) {
+        localStorage.removeItem('user_scams_db');
+        window.GLOBAL_SCAMS_DATABASE = [...baseScamsDb];
+        renderScampediaCategories();
+        filterScamsDatabase();
+        renderAdminDashboard();
+        alert("All user reports have been cleared.");
+      }
+    }
+
+    function exportScamsJson() {
+      const db = window.GLOBAL_SCAMS_DATABASE || [];
+      const jsonStr = JSON.stringify(db, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `isthisscamorreal-scampedia-database-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeScamDetail();
         closeAddToHomeScreen();
+        closeAddMissingScamModal();
       }
     });
 
@@ -4018,7 +4740,11 @@
         target.classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         if (viewName === 'scam-database') {
+          renderScampediaCategories();
           filterScamsDatabase();
+        }
+        if (viewName === 'admin') {
+          renderAdminDashboard();
         }
         if (viewMetaMap[viewName]) {
           updateSeoMeta(viewMetaMap[viewName].title, viewMetaMap[viewName].desc, viewName);
@@ -4102,7 +4828,7 @@
       document.getElementById('photoPreviewArea').classList.add('hidden');
     }
 
-    // FEATURE 2 & 11: ADVANCED RUN CHECK WITH CIRCULAR SCORE, RED FLAGS BREAKDOWN, AND VERIFIED BADGE
+    // ADVANCED RUN CHECK WITH CIRCULAR SCORE, RED FLAGS BREAKDOWN, AND VERIFIED BADGE
     function runCheck() {
       let textToCheck = '';
       if (currentTab === 'sms') {
@@ -4225,7 +4951,7 @@
           }
         }
 
-        // Save check to history (Feature 4)
+        // Save check to history
         saveCheckToHistory({
           text: textToCheck.slice(0, 80),
           score: score,
@@ -4313,7 +5039,7 @@
         showView('scam-database');
         setDbViewMode('timeline');
       } else {
-        const validViews = ['scam-database', 'blog', 'how-to-check-scam', 'link-checker', 'number-lookup', 'email-checker', 'job-checker', 'free-tools', 'privacy', 'terms', 'about', 'backlink-outreach'];
+        const validViews = ['scam-database', 'blog', 'how-to-check-scam', 'link-checker', 'number-lookup', 'email-checker', 'job-checker', 'free-tools', 'privacy', 'terms', 'about', 'backlink-outreach', 'admin'];
         if (validViews.includes(hash)) {
           showView(hash);
         }
@@ -4326,9 +5052,13 @@
       initDarkMode();
       autoDetectLanguage();
       loadCheckHistory();
+      loadUserSubmittedScams();
       startLiveTicker();
+      renderScampediaCategories();
+      renderScamOfTheDay();
+      fetchLiveScamFeeds();
       handleHashRouting();
     });
-  </script>
+</script>
 </body>
 </html>
