@@ -174,6 +174,13 @@
       transform-origin: 50% 50%;
       transition: stroke-dashoffset 1s ease-in-out, stroke 0.5s ease;
     }
+      @keyframes fadeInScale {
+      0% { opacity: 0; transform: scale(0.95) translateY(12px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .result-box-animate {
+      animation: fadeInScale 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
   </style>
 
   <!-- Comprehensive JSON-LD Structured Data (SEO, GEO, AEO, Schema) -->
@@ -643,9 +650,19 @@
           </div>
 
           <!-- Tabs -->
-          <div class="flex gap-2 mb-5 bg-[#EEF6F0] light-bg p-1.5 rounded-full w-full sm:w-[360px]">
+          <div id="checkerTabsContainer" class="flex gap-2 mb-5 bg-[#EEF6F0] light-bg p-1.5 rounded-full w-full sm:w-[360px]">
             <button onclick="switchTab('sms')" id="tabSmsBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold bg-[#0A1931] text-white shadow" data-i18n="tabSms">SMS / WhatsApp</button>
             <button onclick="switchTab('email')" id="tabEmailBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold text-slate-600 hover:bg-white/50" data-i18n="tabEmail">Email Header</button>
+          </div>
+
+          <!-- SINGLE TOOL INPUT SECTION (For Link, Number, Company, Crypto, Job, Shop) -->
+          <div id="singleToolInputSection" class="hidden mb-4">
+            <div class="mb-2">
+              <label id="singleToolLabel" class="block text-sm font-extrabold text-navy mb-1.5">Enter details...</label>
+              <div class="relative">
+                <input type="text" id="singleToolInput" class="w-full border-2 border-slate-200 rounded-2xl p-4 text-sm bg-[#FBFFFC] light-bg focus:border-vgreen focus:ring-4 focus:ring-emerald-100 outline-none shadow-sm" placeholder="Paste or type here..." />
+              </div>
+            </div>
           </div>
 
           <!-- SMS / WHATSAPP FORM SECTION -->
@@ -3119,7 +3136,7 @@
         instantFree: "INSTANT CHECK • FREE",
         checkerTitle: "Paste Your Message Here...",
         checkerSub: "Get a clear risk score, red flags, and safe next steps instantly.",
-        catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "Message",
+        catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "WhatsApp / SMS",
         tabSms: "SMS / WhatsApp", tabEmail: "Email Header",
         numberLabel: "Which number sent this message? (optional)",
         numberPh: "e.g. +1 800 555 0199, +91 98765 43210, or shortcode",
@@ -3246,7 +3263,7 @@
         instantFree: "INSTANT CHECK • FREE",
         checkerTitle: "Apna Message Yahan Likhein...",
         checkerSub: "Khatre ka score, red flags aur aage kya karna hai — turant jaanein.",
-        catLink: "Link Jaano", catNumber: "Number Jaano", catEmail: "Email Jaano", catCompany: "Company", catCrypto: "Crypto Jaano", catJob: "Job Jaano", catShop: "Dukaan Jaano", catMessage: "Message",
+        catLink: "Link Jaano", catNumber: "Number Jaano", catEmail: "Email Jaano", catCompany: "Company", catCrypto: "Crypto Jaano", catJob: "Job Jaano", catShop: "Dukaan Jaano", catMessage: "WhatsApp / SMS",
         tabSms: "SMS / WhatsApp", tabEmail: "Email Header",
         numberLabel: "Kis number se message aaya? (Optional)",
         numberPh: "jaise +91 98765 43210, ya 91040, ya VM-ABCDEF",
@@ -3373,7 +3390,7 @@
         instantFree: "INSTANT CHECK • FREE",
         checkerTitle: "Apna Message Yahan Likhein...",
         checkerSub: "Wazeh risk score, red flags aur aage kya karna hai — sab milega.",
-        catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "Message",
+        catLink: "Link Checker", catNumber: "Number Lookup", catEmail: "Email Checker", catCompany: "Company", catCrypto: "Crypto Alert", catJob: "Job Scan", catShop: "Shop Checker", catMessage: "WhatsApp / SMS",
         tabSms: "SMS / WhatsApp", tabEmail: "Email Header",
         numberLabel: "Kis number se message aaya? (optional)",
         numberPh: "jaise +92 300 1234567, ya VM-ABCDEF",
@@ -4376,53 +4393,80 @@
       `;
     }
 
+        function renderScamDatabaseSkeleton() {
+      const container = document.getElementById('dbCardsContainer');
+      if (!container) return;
+      let html = '<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">';
+      for (let i = 0; i < 6; i++) {
+        html += `
+          <div class="bg-white dark:bg-[#0E1E38] rounded-[22px] p-5 border border-slate-200 dark:border-white/15 animate-pulse space-y-3 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div class="w-20 h-5 bg-slate-200 dark:bg-white/10 rounded-full"></div>
+              <div class="w-12 h-5 bg-slate-200 dark:bg-white/10 rounded-full"></div>
+            </div>
+            <div class="w-3/4 h-6 bg-slate-200 dark:bg-white/10 rounded-lg"></div>
+            <div class="w-full h-12 bg-slate-100 dark:bg-white/5 rounded-xl"></div>
+            <div class="flex items-center justify-between pt-2">
+              <div class="w-24 h-4 bg-slate-200 dark:bg-white/10 rounded"></div>
+              <div class="w-20 h-8 bg-slate-200 dark:bg-white/10 rounded-xl"></div>
+            </div>
+          </div>
+        `;
+      }
+      html += '</div>';
+      container.innerHTML = html;
+    }
+
     function renderScamDatabase(list, isTimeline) {
       const container = document.getElementById('dbCardsContainer');
       if (!container) return;
+      
+      // Render skeleton loaders for perceived performance
+      renderScamDatabaseSkeleton();
 
-      if (!isTimeline) {
-        let html = '<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">';
-        list.forEach(item => {
-          html += renderScamCardHtml(item);
-        });
-        html += '</div>';
-        container.innerHTML = html;
-      } else {
-        const yearsMap = {};
-        list.forEach(item => {
-          const yr = item.year || 'Classic';
-          if (!yearsMap[yr]) yearsMap[yr] = [];
-          yearsMap[yr].push(item);
-        });
-
-        const sortedYears = Object.keys(yearsMap).sort((a, b) => {
-          if (a === 'Classic') return 1;
-          if (b === 'Classic') return -1;
-          return Number(b) - Number(a);
-        });
-
-        let html = '<div id="scam-timeline-2016-2026" class="space-y-10">';
-        sortedYears.forEach(yr => {
-          const yearItems = yearsMap[yr];
-          const is2026 = String(yr) === '2026';
-          html += `
-            <div class="timeline-year-group">
-              <div class="flex items-center gap-3 pb-3 mb-4 border-b-2 ${is2026 ? 'border-red-500' : 'border-slate-200 dark:border-white/10'}">
-                <span class="w-3.5 h-3.5 rounded-full ${is2026 ? 'bg-red-600 animate-ping' : 'bg-navy dark:bg-emerald-400'}"></span>
-                <h2 class="text-xl sm:text-2xl font-extrabold text-navy dark:text-white">
-                  ${yr} ${is2026 ? '<span class="text-xs bg-red-600 text-white px-2.5 py-0.5 rounded-full ml-2 uppercase tracking-wider font-extrabold">Latest Wave</span>' : ''}
-                </h2>
-                <span class="text-xs font-bold text-slate-400">(${yearItems.length} threat patterns recorded)</span>
+      setTimeout(() => {
+        if (!isTimeline) {
+          let html = '<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">';
+          list.forEach(item => {
+            html += renderScamCardHtml(item);
+          });
+          html += '</div>';
+          container.innerHTML = html;
+        } else {
+          const yearsMap = {};
+          list.forEach(item => {
+            const yr = item.year || 'Classic';
+            if (!yearsMap[yr]) yearsMap[yr] = [];
+            yearsMap[yr].push(item);
+          });
+          const sortedYears = Object.keys(yearsMap).sort((a, b) => {
+            if (a === 'Classic') return 1;
+            if (b === 'Classic') return -1;
+            return Number(b) - Number(a);
+          });
+          let html = '<div id="scam-timeline-2016-2026" class="space-y-10">';
+          sortedYears.forEach(yr => {
+            const yearItems = yearsMap[yr];
+            const is2026 = String(yr) === '2026';
+            html += `
+              <div class="timeline-year-group">
+                <div class="flex items-center gap-3 pb-3 mb-4 border-b-2 ${is2026 ? 'border-red-500' : 'border-slate-200 dark:border-white/10'}">
+                  <span class="w-3.5 h-3.5 rounded-full ${is2026 ? 'bg-red-600 animate-ping' : 'bg-navy dark:bg-emerald-400'}"></span>
+                  <h2 class="text-xl sm:text-2xl font-extrabold text-navy dark:text-white">
+                    ${yr} ${is2026 ? '<span class="text-xs bg-red-600 text-white px-2.5 py-0.5 rounded-full ml-2 uppercase tracking-wider font-extrabold">Latest Wave</span>' : ''}
+                  </h2>
+                  <span class="text-xs font-bold text-slate-400">(${yearItems.length} threat patterns recorded)</span>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  ${yearItems.map(item => renderScamCardHtml(item)).join('')}
+                </div>
               </div>
-              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                ${yearItems.map(item => renderScamCardHtml(item)).join('')}
-              </div>
-            </div>
-          `;
-        });
-        html += '</div>';
-        container.innerHTML = html;
-      }
+            `;
+          });
+          html += '</div>';
+          container.innerHTML = html;
+        }
+      }, 180);
     }
 
     // SCAM OF THE DAY (Auto-rotates daily based on day of year)
@@ -4955,7 +4999,14 @@
     // ADVANCED RUN CHECK WITH CIRCULAR SCORE, RED FLAGS BREAKDOWN, AND VERIFIED BADGE
     function runCheck() {
       let textToCheck = '';
-      if (currentTab === 'sms') {
+      if (activeToolCategory !== 'message' && activeToolCategory !== 'email') {
+        const singleInput = document.getElementById('singleToolInput');
+        textToCheck = singleInput ? singleInput.value.trim() : '';
+        if (!textToCheck) {
+          if (singleInput) singleInput.focus();
+          return;
+        }
+      } else if (currentTab === 'sms') {
         textToCheck = document.getElementById('messageInput').value.trim();
         if (!textToCheck) {
           document.getElementById('messageInput').focus();
@@ -4980,6 +5031,7 @@
       const loading = document.getElementById('resultLoading');
       const content = document.getElementById('resultContent');
       box.classList.remove('hidden');
+      box.classList.add('result-box-animate');
       loading.classList.remove('hidden');
       content.classList.add('hidden');
       box.scrollIntoView({ behavior: 'smooth' });
