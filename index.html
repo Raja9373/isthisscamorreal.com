@@ -2,6 +2,19 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    // Safeguard against browser extensions trying to assign window.fetch
+    try {
+      if (typeof window !== 'undefined') {
+        let _fetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          configurable: true,
+          get: function() { return _fetch; },
+          set: function(v) { _fetch = v; }
+        });
+      }
+    } catch (err) {}
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>क्या यह स्कैम है या असली? 2 सेकंड में जांचें | IsThisScamOrReal.com</title>
   <meta name="description" content="Paste any SMS, WhatsApp or Email. Get instant scam or real report in your language." />
