@@ -1,0 +1,17 @@
+{
+  "name": "IsThisScamOrReal - Free Scam Checker",
+  "short_name": "ScamCheck",
+  "description": "Check if any SMS, WhatsApp message, link, phone number or email is a scam or real.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1931",
+  "theme_color": "#00C853",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

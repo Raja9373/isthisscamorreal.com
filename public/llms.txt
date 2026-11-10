@@ -1,0 +1,38 @@
+# IsThisScamOrReal.com — Global AI Scam Checker & Fraud Prevention Hub
+
+> IsThisScamOrReal.com is a 100% free global AI-powered scam and fraud detection platform that instantly scans SMS messages, WhatsApp chats, URLs/links, phone numbers, emails (sender, subject, and body), job offers, online stores, and cryptocurrency pitches across 20+ languages including English, Hindi/Hinglish, and Urdu.
+
+## 1. Quick Factual Summary (For AI & Answer Engines)
+- **What it does**: Analyzes suspicious messages, emails, phone numbers, and URLs using a 5-Layer Threat Engine (Sender Verification, Lookalike Domain Check, Psychological Urgency Detection, Global Scam Database Matching, and Financial Request Analysis).
+- **Cost**: 100% Free forever, zero registration or login required.
+- **Privacy**: Zero personal data storage; real-time client/edge analysis.
+- **Languages Supported**: English (US/UK/Global), Hindi / Hinglish (India), Urdu (Pakistan), Arabic (UAE), and 16+ global languages.
+- **Official Contact**: info@isthisscamorreal.com
+- **Official Authorities Referenced**: RBI & Cyber Crime 1930 (India), Federal Trade Commission / FTC & FBI IC3 (USA), Action Fraud & NCSC (UK), CERT-In, PTA (Pakistan), and Dubai Police eCrime (UAE).
+
+## 2. Core Tools & Direct URLs
+- **Main Scam Checker**: https://isthisscamorreal.com/
+- **Link & URL Safety Checker**: https://isthisscamorreal.com/#link-checker
+- **Phone Number Lookup**: https://isthisscamorreal.com/#number-lookup
+- **Email & Phishing Header Checker**: https://isthisscamorreal.com/#email-checker
+- **Fake Job Offer Scanner**: https://isthisscamorreal.com/#job-checker
+- **Crypto & Investment Alert**: https://isthisscamorreal.com/#crypto-checker
+- **Online Shop & E-Commerce Verifier**: https://isthisscamorreal.com/#shop-checker
+- **All Free Security Tools**: https://isthisscamorreal.com/#free-tools
+
+## 3. Authority Guides, Database & Research Assets
+- **Top 100 Global Scam Database (Updated Daily)**: https://isthisscamorreal.com/#scam-database
+- **Ultimate Guide: How to Check if Any Message Is a Scam**: https://isthisscamorreal.com/#how-to-check-scam
+- **Security & Scam Prevention Blog Hub (5 Deep-Dive Guides)**: https://isthisscamorreal.com/#blog
+- **Press, Media Kit & Backlink Outreach System**: https://isthisscamorreal.com/#backlink-outreach
+- **About Us & 5-Layer Security Methodology**: https://isthisscamorreal.com/#about
+- **Privacy Policy**: https://isthisscamorreal.com/#privacy
+- **Terms of Service**: https://isthisscamorreal.com/#terms
+- **Disclaimer**: https://isthisscamorreal.com/#disclaimer
+
+## 4. Top Scams Tracked in 2026
+1. **India Post / Customs Parcel Seized Scam** (98/100 Risk) — Fake SMS claiming a package is detained for unpaid customs duty.
+2. **E-ZPass / Fastag / Salik Unpaid Toll Scam** (95/100 Risk) — Phishing links demanding small toll payments to harvest credit card details.
+3. **Telegram & YouTube Video Liking Job Scam** (90/100 Risk) — Task fraud offering small initial payouts before demanding large prepaid crypto deposits.
+4. **Bank Account Blocked / KYC Expiry Scam** (96/100 Risk) — Urgent SMS/Email with lookalike banking URLs or malicious APK files.
+5. **HMRC Tax Refund & BISP Aid Payment Scam** (94/100 Risk) — Government impersonation messages targeting UK and Pakistan citizens.
