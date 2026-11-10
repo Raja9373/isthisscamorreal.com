@@ -20,6 +20,7 @@
   <meta name="description" content="Paste any SMS, WhatsApp or Email. Get instant scam or real report in your language." />
   <meta name="keywords" content="scam check, fake sms alert, whatsapp scam detector, cyber fraud check, phishing detector, IsThisScamOrReal" />
   <meta name="theme-color" content="#16A34A">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="canonical" href="https://isthisscamorreal.com" />
   <meta property="og:title" content="क्या यह स्कैम है या असली? 2 सेकंड में जांचें | IsThisScamOrReal.com" />
   <meta property="og:description" content="Paste any SMS, WhatsApp or Email. Get instant scam or real report in your language." />
@@ -83,15 +84,18 @@
     :root {
       --bg-white: #FFFFFF;
       --bg-light-green: #F0FDF4;
+      --bg-subtle: #F8FAFC;
       --navy: #0B2C4A;
       --green-btn: #16A34A;
       --green-hover: #15803D;
       --yellow: #EAB308;
       --red: #DC2626;
-      --body-text: #333333;
+      --body-text: #1E293B;
       --gray-text: #64748B;
       --border-green: #D1FAE5;
       --border-color: #E2E8F0;
+      --shadow-subtle: 0 4px 20px -2px rgba(22, 163, 74, 0.08);
+      --shadow-hover: 0 20px 35px -5px rgba(22, 163, 74, 0.16);
     }
     * {
       box-sizing: border-box;
@@ -102,17 +106,18 @@
     body {
       background-color: var(--bg-white);
       color: var(--body-text);
-      line-height: 1.5;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    
-    /* HEADER (White header, green dot) */
+
+    /* HEADER */
     header {
       border-bottom: 1px solid var(--border-color);
       position: sticky;
       top: 0;
-      background: var(--bg-white);
-      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
     }
     .header-container {
       max-width: 1200px;
@@ -126,23 +131,31 @@
     .logo-area {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
       text-decoration: none;
       color: var(--navy);
-      font-weight: 700;
-      font-size: 1.2rem;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
     }
     .green-dot {
-      width: 10px;
-      height: 10px;
-      background-color: var(--green-btn);
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(135deg, #22C55E, #15803D);
       border-radius: 50%;
       display: inline-block;
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
     }
     .header-nav {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 2rem;
     }
     .nav-link {
       text-decoration: none;
@@ -153,7 +166,7 @@
       transition: color 0.2s;
     }
     .nav-link:hover {
-      color: var(--navy);
+      color: var(--green-btn);
     }
     .header-right {
       display: flex;
@@ -168,46 +181,54 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.5rem 0.85rem;
+      padding: 0.5rem 0.9rem;
       border: 1px solid var(--border-green);
-      border-radius: 0.5rem;
+      border-radius: 9999px;
       background: var(--bg-white);
       color: var(--navy);
       font-size: 0.9rem;
       font-weight: 600;
       cursor: pointer;
-      transition: background 0.2s;
+      transition: all 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
     }
     .lang-btn:hover {
       background: var(--bg-light-green);
+      border-color: var(--green-btn);
     }
     .lang-menu {
       display: none;
       position: absolute;
       right: 0;
       top: 100%;
-      margin-top: 0.35rem;
+      margin-top: 0.5rem;
       background: white;
       border: 1px solid var(--border-green);
-      border-radius: 0.5rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 0.75rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
       z-index: 200;
-      min-width: 200px;
-      max-height: 350px;
+      min-width: 210px;
+      max-height: 360px;
       overflow-y: auto;
     }
     .lang-menu.show {
       display: block;
+      animation: fadeInDropdown 0.2s ease-out;
+    }
+    @keyframes fadeInDropdown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .lang-option {
-      padding: 0.65rem 1rem;
+      padding: 0.7rem 1.1rem;
       font-size: 0.9rem;
       color: var(--navy);
       cursor: pointer;
-      border-bottom: 1px solid #F1F5F9;
+      border-bottom: 1px solid #F8FAFC;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      transition: background 0.15s;
     }
     .lang-option:hover {
       background: var(--bg-light-green);
@@ -219,126 +240,158 @@
       color: var(--green-btn);
     }
 
-    /* HERO SECTION (ChatGPT Screenshot Style - Light Green BG #F0FDF4) */
+    /* HERO SECTION */
     .hero-section {
-      background-color: var(--bg-light-green);
-      padding: 3.5rem 1.5rem 4rem;
+      background: linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 100%);
+      padding: 4.5rem 1.5rem 5rem;
       text-align: center;
       border-bottom: 1px solid var(--border-green);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Floating background ambient glow elements */
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, rgba(240, 253, 244, 0) 70%);
+      z-index: 1;
+      pointer-events: none;
     }
     .hero-content {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
     .counter-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
       background: #FFFFFF;
       color: var(--green-btn);
-      padding: 0.4rem 1rem;
+      padding: 0.5rem 1.25rem;
       border-radius: 9999px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      margin-bottom: 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
       border: 1px solid var(--border-green);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      box-shadow: 0 4px 15px rgba(22, 163, 74, 0.08);
+      animation: floatBadge 3s ease-in-out infinite;
+    }
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
     }
     .hero-title {
-      font-size: 2.75rem;
+      font-size: 3rem;
       color: var(--navy);
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
       font-weight: 800;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
     }
     .hero-subtitle {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       color: var(--gray-text);
-      margin-bottom: 2rem;
-      max-width: 650px;
+      margin-bottom: 2.5rem;
+      max-width: 680px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    /* Center Search Box (Big white box, rounded corners, shadow, green border on focus) */
+    /* Center Search Box */
     .checker-box {
-      max-width: 750px;
+      max-width: 780px;
       margin: 0 auto;
       text-align: left;
     }
     .checker-card {
       background: var(--bg-white);
       border: 1px solid var(--border-green);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 10px 25px -5px rgba(22, 163, 74, 0.08);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-hover);
+      transition: transform 0.3s ease;
+    }
+    .checker-card:hover {
+      box-shadow: 0 25px 45px -10px rgba(22, 163, 74, 0.18);
     }
     
-    /* 8 Small Pill Buttons inside Checker Card with green border */
+    /* 8 Small Pill Buttons */
     .tool-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
     }
     .tool-pill {
-      background: var(--bg-white);
+      background: var(--bg-subtle);
       border: 1px solid var(--border-green);
       color: var(--navy);
-      padding: 0.35rem 0.8rem;
+      padding: 0.4rem 0.9rem;
       border-radius: 9999px;
       font-size: 0.85rem;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.2s ease;
     }
     .tool-pill:hover {
       background: var(--bg-light-green);
       border-color: var(--green-btn);
       color: var(--green-btn);
+      transform: translateY(-1px);
     }
 
     .tab-buttons {
       display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 0.75rem;
     }
     .tab-btn {
       background: none;
       border: none;
-      padding: 0.5rem 1rem;
-      font-weight: 600;
+      padding: 0.6rem 1.25rem;
+      font-weight: 700;
       color: var(--gray-text);
       cursor: pointer;
-      border-radius: 0.375rem;
+      border-radius: 0.5rem;
       transition: all 0.2s;
+      font-size: 0.95rem;
     }
     .tab-btn.active {
       background: var(--bg-light-green);
       color: var(--green-btn);
+      box-shadow: inset 0 0 0 1px var(--border-green);
     }
     .input-group {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
     textarea, input[type="text"], select {
       width: 100%;
-      padding: 0.85rem 1rem;
+      padding: 0.95rem 1.15rem;
       border: 1px solid var(--border-color);
-      border-radius: 0.5rem;
+      border-radius: 0.75rem;
       font-size: 1rem;
       color: var(--navy);
       outline: none;
-      transition: border-color 0.2s;
+      background: #FFFFFF;
+      transition: all 0.2s ease;
     }
     textarea:focus, input[type="text"]:focus, select:focus {
       border-color: var(--green-btn);
-      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+      box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.12);
+      background: #FFFFFF;
     }
     textarea {
       resize: vertical;
-      min-height: 120px;
+      min-height: 130px;
     }
     .email-fields {
       display: none;
@@ -349,184 +402,228 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
     }
     .privacy-note {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--gray-text);
       display: flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.4rem;
+      font-weight: 500;
     }
-    /* Main Green Button */
     .btn-check, .btn-primary {
-      background-color: var(--green-btn);
+      background: linear-gradient(135deg, #16A34A, #15803D);
       color: white;
       border: none;
-      padding: 0.75rem 1.75rem;
-      border-radius: 0.5rem;
+      padding: 0.85rem 2rem;
+      border-radius: 0.75rem;
       font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.2s;
+      transition: all 0.2s ease;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.6rem;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
     }
     .btn-check:hover, .btn-primary:hover {
-      background-color: var(--green-hover);
+      background: linear-gradient(135deg, #15803D, #166534);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(22, 163, 74, 0.4);
     }
 
-    /* HOW IT WORKS - 3 Steps */
+    /* HOW IT WORKS */
     .how-section {
-      max-width: 1000px;
-      margin: 3.5rem auto;
+      max-width: 1100px;
+      margin: 5rem auto;
       padding: 0 1.5rem;
       text-align: center;
     }
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--gray-text);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
     .how-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
     }
     .how-step {
       background: var(--bg-white);
-      padding: 1.75rem;
-      border-radius: 1rem;
+      padding: 2.25rem;
+      border-radius: 1.25rem;
       border: 1px solid var(--border-green);
       text-align: left;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+      box-shadow: var(--shadow-subtle);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .how-step:hover {
+      transform: translateY(-5px);
+      border-color: var(--green-btn);
+      box-shadow: var(--shadow-hover);
     }
     .step-number {
-      width: 36px;
-      height: 36px;
-      background: var(--green-btn);
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #16A34A, #15803D);
       color: white;
-      border-radius: 50%;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 1rem;
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 4px 10px rgba(22, 163, 74, 0.3);
     }
     .how-step h4 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: var(--navy);
       margin-bottom: 0.5rem;
+      font-weight: 700;
     }
     .how-step p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--gray-text);
+      line-height: 1.5;
     }
 
-    /* MAIN CHECKING TOOLS - 6 Cards */
+    /* TOOLS GRID */
     .tools-grid-section {
       max-width: 1200px;
-      margin: 3.5rem auto;
+      margin: 5rem auto;
       padding: 0 1.5rem;
     }
     .tools-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.75rem;
     }
     .tool-card {
       background: var(--bg-white);
       border: 1px solid var(--border-green);
-      border-radius: 1rem;
-      padding: 1.5rem;
+      border-radius: 1.25rem;
+      padding: 1.75rem;
       cursor: pointer;
-      transition: all 0.2s;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-subtle);
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 1.25rem;
     }
     .tool-card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
       border-color: var(--green-btn);
-      box-shadow: 0 10px 20px -5px rgba(22, 163, 74, 0.1);
+      box-shadow: var(--shadow-hover);
+      background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
     }
     .tool-icon {
-      font-size: 2rem;
+      font-size: 2.25rem;
       background: var(--bg-light-green);
-      width: 50px;
-      height: 50px;
-      border-radius: 0.75rem;
+      width: 60px;
+      height: 60px;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: inset 0 2px 4px rgba(22, 163, 74, 0.1);
+    }
+    .tool-info h4 {
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+    .tool-info p {
+      font-size: 0.9rem;
+      color: var(--gray-text);
+    }
+
+    /* RESULT SECTION */
+    .result-section {
+      max-width: 850px;
+      margin: 0 auto 3.5rem;
+      padding: 0 1.5rem;
+      display: none;
+      animation: slideUpResult 0.4s ease-out;
+    }
+    @keyframes slideUpResult {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .result-card {
+      background: var(--bg-white);
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      border: 1px solid var(--border-green);
+      box-shadow: var(--shadow-hover);
+      position: relative;
+    }
+    .result-card.red { border-top: 8px solid var(--red); }
+    .result-card.yellow { border-top: 8px solid var(--yellow); }
+    .result-card.green { border-top: 8px solid var(--green-btn); }
+
+    .result-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .result-shield {
+      font-size: 3rem;
+      background: var(--bg-subtle);
+      width: 70px;
+      height: 70px;
+      border-radius: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
-    .tool-info h4 {
-      font-size: 1.1rem;
-      color: var(--navy);
-      margin-bottom: 0.25rem;
-    }
-    .tool-info p {
-      font-size: 0.875rem;
-      color: var(--gray-text);
-    }
-
-    /* RESULT SECTION (White with colored top border) */
-    .result-section {
-      max-width: 800px;
-      margin: 0 auto 2.5rem;
-      padding: 0 1.5rem;
-      display: none;
-    }
-    .result-card {
-      background: var(--bg-white);
-      border-radius: 1rem;
-      padding: 2rem;
-      border: 1px solid var(--border-green);
-      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
-      position: relative;
-    }
-    .result-card.red { border-top: 6px solid var(--red); }
-    .result-card.yellow { border-top: 6px solid var(--yellow); }
-    .result-card.green { border-top: 6px solid var(--green-btn); }
-
-    .result-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.25rem;
-    }
-    .result-shield {
-      font-size: 2.5rem;
-    }
     .result-title h3 {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
       font-weight: 800;
       color: var(--navy);
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
     }
     .score-pill {
       display: inline-block;
-      padding: 0.25rem 0.75rem;
+      padding: 0.3rem 0.9rem;
       border-radius: 9999px;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
     .red .score-pill { background: #FEE2E2; color: var(--red); }
     .yellow .score-pill { background: #FEF9C3; color: #854D0E; }
     .green .score-pill { background: #DCFCE7; color: var(--green-btn); }
 
     .reasons-box, .actions-box, .signals-box, .disclaimer-box {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       background: var(--bg-subtle);
-      padding: 1.25rem;
-      border-radius: 0.75rem;
-      border: 1px solid var(--border-green);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--border-color);
     }
     .reasons-box h4, .actions-box h4, .signals-box h4 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
       color: var(--navy);
+      font-weight: 700;
     }
     .reasons-box ul, .actions-box ul, .signals-box ul {
       padding-left: 1.25rem;
@@ -534,89 +631,79 @@
       color: var(--body-text);
     }
     .reasons-box li, .actions-box li, .signals-box li {
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.4rem;
     }
     .disclaimer-box {
       background: var(--bg-light-green);
       border: 1px dashed var(--green-btn);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--navy);
       text-align: center;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-weight: 600;
     }
 
-    /* Top Scams Section */
+    /* TOP SCAMS */
     .scams-section {
       max-width: 1200px;
-      margin: 3.5rem auto;
+      margin: 5rem auto;
       padding: 0 1.5rem;
-    }
-    .section-title {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-    .section-subtitle {
-      font-size: 1rem;
-      color: var(--gray-text);
-      text-align: center;
-      margin-bottom: 2rem;
     }
     .scams-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
     }
     .scam-card {
       background: var(--bg-white);
       border: 1px solid var(--border-green);
-      border-radius: 0.75rem;
-      padding: 1.25rem;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-subtle);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s;
+      transition: all 0.3s ease;
     }
     .scam-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--green-btn);
     }
     .scam-header-row {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
     .scam-country {
       font-size: 0.8rem;
       font-weight: 700;
       color: var(--gray-text);
       background: var(--bg-subtle);
-      padding: 0.2rem 0.5rem;
-      border-radius: 0.25rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.375rem;
+      border: 1px solid var(--border-color);
     }
     .scam-score {
       font-size: 0.8rem;
       font-weight: 800;
       color: var(--red);
       background: #FEF2F2;
-      padding: 0.2rem 0.5rem;
-      border-radius: 0.25rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.375rem;
     }
     .scam-title {
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--navy);
       margin-bottom: 0.5rem;
     }
     .scam-snippet {
-      font-size: 0.875rem;
+      font-size: 0.9rem;
       color: var(--gray-text);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -627,15 +714,15 @@
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid var(--border-color);
-      padding-top: 0.75rem;
+      padding-top: 0.85rem;
       margin-top: auto;
     }
     .story-btn {
       background: none;
       border: none;
       color: var(--green-btn);
-      font-weight: 600;
-      font-size: 0.85rem;
+      font-weight: 700;
+      font-size: 0.9rem;
       cursor: pointer;
     }
     .story-btn:hover {
@@ -645,251 +732,278 @@
       background: var(--bg-subtle);
       border: 1px solid var(--border-green);
       color: var(--navy);
-      padding: 0.35rem 0.65rem;
-      border-radius: 0.375rem;
-      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
       font-weight: 600;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 0.25rem;
+      gap: 0.3rem;
+      transition: all 0.2s;
     }
     .share-btn-card:hover {
       background: var(--bg-light-green);
       color: var(--green-btn);
+      border-color: var(--green-btn);
     }
 
-    /* Modal for Story */
+    /* Modal */
     .modal-overlay {
       display: none;
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.5);
-      z-index: 1000;
+      background: rgba(11, 44, 74, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
       align-items: center;
       justify-content: center;
       padding: 1rem;
     }
     .modal-content {
       background: var(--bg-white);
-      border-radius: 1rem;
-      max-width: 550px;
+      border-radius: 1.25rem;
+      max-width: 580px;
       width: 100%;
-      padding: 2rem;
-      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
       position: relative;
       max-height: 90vh;
       overflow-y: auto;
+      animation: scaleUpModal 0.3s ease-out;
+    }
+    @keyframes scaleUpModal {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
     }
     .modal-close {
       position: absolute;
       top: 1.25rem;
       right: 1.25rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.25rem;
       cursor: pointer;
-      color: var(--gray-text);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .modal-close:hover {
+      background: #FEE2E2;
+      color: var(--red);
     }
     .modal-title {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       font-weight: 800;
       color: var(--navy);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
     .kahani-box {
       background: #FEF2F2;
-      border-left: 4px solid var(--red);
-      padding: 1rem;
-      border-radius: 0.5rem;
-      margin-bottom: 1rem;
+      border-left: 5px solid var(--red);
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1.25rem;
     }
     .kahani-box h5 {
       color: var(--red);
-      margin-bottom: 0.35rem;
-      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+      font-weight: 700;
     }
     .kahani-box p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--navy);
     }
     .bacho-box {
       background: var(--bg-light-green);
-      border-left: 4px solid var(--green-btn);
-      padding: 1rem;
-      border-radius: 0.5rem;
+      border-left: 5px solid var(--green-btn);
+      padding: 1.25rem;
+      border-radius: 0.75rem;
     }
     .bacho-box h5 {
       color: var(--green-btn);
-      margin-bottom: 0.35rem;
-      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+      font-weight: 700;
     }
     .bacho-box p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--navy);
     }
 
-    /* People's Real Stories Section */
+    /* PEOPLE STORIES SECTION */
     .people-stories-section {
       max-width: 1200px;
-      margin: 3.5rem auto;
+      margin: 5rem auto;
       padding: 0 1.5rem;
     }
     .story-card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
     }
     .people-story-card {
       background: var(--bg-white);
       border: 1px solid var(--border-green);
-      border-radius: 0.75rem;
-      padding: 1.5rem;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      box-shadow: var(--shadow-subtle);
     }
     .story-submit-banner {
       text-align: center;
-      background: var(--bg-light-green);
+      background: linear-gradient(135deg, #F0FDF4 0%, #E6F4EA 100%);
       border: 1px solid var(--border-green);
-      padding: 2rem;
-      border-radius: 1rem;
+      padding: 2.5rem;
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow-subtle);
     }
     .story-submit-banner h3 {
       color: var(--navy);
       margin-bottom: 0.5rem;
-      font-size: 1.25rem;
+      font-size: 1.4rem;
+      font-weight: 800;
     }
     .story-submit-banner p {
       color: var(--gray-text);
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
     }
 
-    /* Report Form 4 Steps + AI Smart Guide */
+    /* REPORT FORM */
     .report-section {
-      max-width: 800px;
-      margin: 3.5rem auto;
+      max-width: 850px;
+      margin: 5rem auto;
       padding: 0 1.5rem;
     }
     .report-card {
       background: var(--bg-white);
       border: 1px solid var(--border-green);
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-hover);
     }
     .report-step-title {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--navy);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.85rem;
+      margin-top: 1.5rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
     .radio-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.85rem;
       margin-bottom: 1.5rem;
     }
     .radio-option {
-      border: 1px solid var(--border-green);
-      border-radius: 0.5rem;
-      padding: 0.85rem;
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+      padding: 1rem;
       cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 500;
+      font-size: 0.95rem;
+      font-weight: 600;
       color: var(--navy);
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s;
+      gap: 0.6rem;
+      transition: all 0.2s ease;
       background: var(--bg-subtle);
     }
     .radio-option input[type="radio"] {
       accent-color: var(--green-btn);
+      width: 18px;
+      height: 18px;
     }
     .radio-option:hover, .radio-option.selected {
       border-color: var(--green-btn);
       background: var(--bg-light-green);
+      box-shadow: 0 2px 8px rgba(22, 163, 74, 0.1);
     }
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      gap: 1.25rem;
       margin-bottom: 1.25rem;
     }
     @media (max-width: 600px) {
       .form-row { grid-template-columns: 1fr; }
     }
     .ai-guide-box {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       background: var(--bg-light-green);
       border: 1px solid var(--border-green);
-      border-radius: 0.75rem;
-      padding: 1.25rem;
+      border-radius: 1rem;
+      padding: 1.5rem;
       display: none;
+      animation: fadeInDropdown 0.3s ease-out;
     }
     .ai-guide-box h4 {
       color: var(--green-btn);
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      font-weight: 800;
     }
     .ai-guide-box ul {
       padding-left: 1.25rem;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--body-text);
     }
     .ai-guide-box li {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem;
     }
 
-    /* Admin Panel (?admin=1) */
+    /* ADMIN PANEL */
     .admin-section {
       max-width: 1000px;
-      margin: 3.5rem auto;
-      padding: 1.5rem;
+      margin: 4rem auto;
+      padding: 2rem;
       background: #FFFBEB;
       border: 2px dashed #F59E0B;
-      border-radius: 1rem;
+      border-radius: 1.25rem;
       display: none;
     }
     .admin-report-card {
       background: white;
       border: 1px solid #FCD34D;
-      padding: 1rem;
-      border-radius: 0.5rem;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
       margin-bottom: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
-    }
-    .admin-btns {
-      display: flex;
-      gap: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
 
-    /* Footer */
+    /* FOOTER */
     footer {
       border-top: 1px solid var(--border-green);
-      padding: 2.5rem 1.5rem;
+      padding: 3.5rem 1.5rem;
       text-align: center;
       background: var(--bg-light-green);
-      margin-top: 4rem;
+      margin-top: 5rem;
     }
     .footer-content {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--gray-text);
     }
     .footer-content p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
     @keyframes fadeOut {
       from { opacity: 1; transform: translateY(0); }
@@ -933,12 +1047,12 @@
             <div class="lang-option" onclick="changeLanguage('tl')"><span>Tagalog</span> <span>Tagalog</span></div>
           </div>
         </div>
-        <button class="btn-primary" onclick="scrollToReport()" id="navReportBtn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">रिपोर्ट करें</button>
+        <button class="btn-primary" onclick="scrollToReport()" id="navReportBtn" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">रिपोर्ट करें</button>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION (Light Green BG #F0FDF4 - ChatGPT Screenshot Style) -->
+  <!-- HERO SECTION -->
   <section class="hero-section">
     <div class="hero-content">
       <div class="counter-badge" id="counterBadge">
@@ -952,14 +1066,14 @@
         <div class="checker-card">
           <!-- 8 Small Pill Buttons inside Checker Card -->
           <div class="tool-pills">
-            <button class="tool-pill" onclick="fillToolExample('link')">लिंक</button>
-            <button class="tool-pill" onclick="fillToolExample('number')">नंबर</button>
-            <button class="tool-pill" onclick="fillToolExample('email')">Email</button>
-            <button class="tool-pill" onclick="fillToolExample('company')">कंपनी</button>
-            <button class="tool-pill" onclick="fillToolExample('crypto')">क्रिप्टो</button>
-            <button class="tool-pill" onclick="fillToolExample('job')">नौकरी</button>
-            <button class="tool-pill" onclick="fillToolExample('shop')">दुकान</button>
-            <button class="tool-pill" onclick="fillToolExample('message')">मैसेज</button>
+            <button class="tool-pill" onclick="fillToolExample('link')">🔗 लिंक</button>
+            <button class="tool-pill" onclick="fillToolExample('number')">📞 नंबर</button>
+            <button class="tool-pill" onclick="fillToolExample('email')">📧 Email</button>
+            <button class="tool-pill" onclick="fillToolExample('company')">🏢 कंपनी</button>
+            <button class="tool-pill" onclick="fillToolExample('crypto')">🪙 क्रिप्टो</button>
+            <button class="tool-pill" onclick="fillToolExample('job')">💼 नौकरी</button>
+            <button class="tool-pill" onclick="fillToolExample('shop')">🛒 दुकान</button>
+            <button class="tool-pill" onclick="fillToolExample('message')">💬 मैसेज</button>
           </div>
 
           <div class="tab-buttons">
@@ -969,46 +1083,45 @@
 
           <!-- SMS / WhatsApp Input -->
           <div id="smsTabContent" class="input-group">
-            <div style="margin-bottom: 0.75rem;">
-              <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--navy); margin-bottom:0.25rem;" id="senderLabel">किस नंबर से मैसेज आया? (चाहे तो छोड़ दें)</label>
+            <div style="margin-bottom: 0.85rem;">
+              <label style="display:block; font-size:0.9rem; font-weight:700; color:var(--navy); margin-bottom:0.35rem;" id="senderLabel">किस नंबर से मैसेज आया? (चाहे तो छोड़ दें)</label>
               <input type="text" id="senderNumberInput" placeholder="जैसे - +91 98765 43210, या 91040, या VM-ABCDEF" />
-              <p style="font-size:0.75rem; color:var(--gray-text); margin-top:0.25rem;" id="senderHelper">नंबर होगा तो जांच और पक्की होगी। हम आपका नंबर नहीं बचाते।</p>
+              <p style="font-size:0.8rem; color:var(--gray-text); margin-top:0.3rem;" id="senderHelper">नंबर होगा तो जांच और पक्की होगी। हम आपका नंबर नहीं बचाते।</p>
             </div>
             <textarea id="messageInput" placeholder="अपना मैसेज, लिंक, नंबर या Email यहाँ डालें..."></textarea>
 
-            <div style="margin-top: 0.75rem;">
-              <div style="font-size:0.75rem; color:#DC2626; margin-bottom:0.35rem;">⚠️ फोटो में अपना OTP, पासवर्ड, बैंक डिटेल मत डालें।</div>
+            <div style="margin-top: 1rem; background: var(--bg-subtle); padding: 1rem; border-radius: 0.75rem; border: 1px solid var(--border-color);">
+              <div style="font-size:0.8rem; color:#DC2626; margin-bottom:0.35rem; font-weight:600;">⚠️ फोटो में अपना OTP, पासवर्ड, बैंक डिटेल मत डालें।</div>
               <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
-                <label class="tool-pill" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem; background: var(--bg-white); border: 1px solid var(--border-green);">
+                <label class="tool-pill" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; background: var(--bg-white); border: 1px solid var(--border-green); font-weight: 700;">
                   📷 <span id="checkerUploadBtnText">स्क्रीनशॉट डालें (Optional)</span>
                   <input type="file" id="checkerPhotoInput" accept="image/png, image/jpg, image/jpeg" style="display: none;" onchange="handleCheckerPhotoSelect(event)" />
                 </label>
-                <span style="font-size: 0.75rem; color: var(--gray-text);" id="checkerPhotoHelper">मैसेज का स्क्रीनशॉट डाल सकते हो। हम आपका नाम, नंबर नहीं बचाते।</span>
+                <span style="font-size: 0.8rem; color: var(--gray-text);" id="checkerPhotoHelper">मैसेज का स्क्रीनशॉट डाल सकते हो। हम आपका नाम, नंबर नहीं बचाते।</span>
               </div>
-              <!-- // TODO: In future, use OCR in Cloudflare Worker to read text from screenshot, for now show preview only -->
-              <div id="checkerPhotoPreviewContainer" style="display: none; margin-top: 0.5rem; align-items: center; gap: 0.5rem;">
-                <img id="checkerPhotoThumbnail" src="" alt="Preview" style="width: 100px; height: 100px; object-fit: cover; border-radius: 0.375rem; border: 1px solid var(--border-green);" />
-                <button type="button" onclick="removeCheckerPhoto()" style="background: #FEE2E2; color: #DC2626; border: none; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; cursor: pointer; font-weight: 600;">हटाएं</button>
+              <div id="checkerPhotoPreviewContainer" style="display: none; margin-top: 0.75rem; align-items: center; gap: 0.75rem;">
+                <img id="checkerPhotoThumbnail" src="" alt="Preview" style="width: 100px; height: 100px; object-fit: cover; border-radius: 0.5rem; border: 1px solid var(--border-green); box-shadow: 0 2px 6px rgba(0,0,0,0.05);" />
+                <button type="button" onclick="removeCheckerPhoto()" style="background: #FEE2E2; color: #DC2626; border: none; padding: 0.35rem 0.75rem; border-radius: 0.375rem; font-size: 0.8rem; cursor: pointer; font-weight: 700;">हटाएं</button>
               </div>
             </div>
           </div>
 
           <!-- Email Header Input -->
           <div id="emailTabContent" class="email-fields">
-            <div style="margin-bottom: 0.75rem;">
-              <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--navy); margin-bottom:0.25rem;">किसने भेजा है? Sender का Email यहाँ डालें (चाहे तो छोड़ दें)</label>
+            <div style="margin-bottom: 0.85rem;">
+              <label style="display:block; font-size:0.9rem; font-weight:700; color:var(--navy); margin-bottom:0.35rem;">किसने भेजा है? Sender का Email यहाँ डालें (चाहे तो छोड़ दें)</label>
               <input type="text" id="senderEmailInput" placeholder="जैसे - support@paypal.com, या support@paypa1.com" />
-              <p style="font-size:0.75rem; color:var(--gray-text); margin-top:0.25rem;">Sender का Email होगा तो जांच और पक्की होगी। हम आपका Email नहीं बचाते।</p>
+              <p style="font-size:0.8rem; color:var(--gray-text); margin-top:0.3rem;">Sender का Email होगा तो जांच और पक्की होगी। हम आपका Email नहीं बचाते।</p>
             </div>
             <div class="input-group">
               <textarea id="emailBodyInput" style="min-height: 140px;" placeholder="अपना Email का मैसेज यहाँ डालें..."></textarea>
             </div>
-            <div style="margin-bottom: 0.75rem;">
-              <a href="javascript:void(0)" onclick="toggleEmailHeaderBox()" id="emailHeaderToggleLink" style="font-size:0.85rem; color:var(--green-btn); font-weight:600; text-decoration:underline;">Header है? यहाँ डालें (Optional) - नहीं है तो छोड़ दें</a>
+            <div style="margin-bottom: 0.85rem;">
+              <a href="javascript:void(0)" onclick="toggleEmailHeaderBox()" id="emailHeaderToggleLink" style="font-size:0.9rem; color:var(--green-btn); font-weight:700; text-decoration:underline;">Header है? यहाँ डालें (Optional) - नहीं है तो छोड़ दें</a>
             </div>
             <div id="emailHeaderContainer" style="display: none;" class="input-group">
-              <textarea id="emailHeaderInput" style="min-height: 70px;" placeholder="ईमेल हेडर यहाँ पेस्ट करें (Received:, SPF, DKIM, DMARC)..."></textarea>
-              <p style="font-size:0.75rem; color:var(--gray-text); margin-top:0.25rem;" id="emailHeaderHelper">Header नहीं पता तो छोड़ दें, मैसेज से ही जांच हो जाएगी।</p>
+              <textarea id="emailHeaderInput" style="min-height: 80px;" placeholder="ईमेल हेडर यहाँ पेस्ट करें (Received:, SPF, DKIM, DMARC)..."></textarea>
+              <p style="font-size:0.8rem; color:var(--gray-text); margin-top:0.3rem;" id="emailHeaderHelper">Header नहीं पता तो छोड़ दें, मैसेज से ही जांच हो जाएगी।</p>
             </div>
           </div>
 
@@ -1138,9 +1251,9 @@
     <h3 class="section-title" id="newScamsTitle">आज नए स्कैम रिपोर्ट किए गए</h3>
     <p class="section-subtitle" id="newScamsSubtitleText">Auto-updated every 1 hour from FTC, FBI IC3, Reddit r/Scams, Google News</p>
     <div class="scams-grid" id="newScamsGrid"></div>
-    <div style="text-align: center; margin-top: 1.5rem;">
+    <div style="text-align: center; margin-top: 2rem;">
       <button class="btn-primary" onclick="loadMoreNewScams()" id="loadMoreBtn">और स्कैम लोड करें</button>
-      <p id="lastUpdatedText" style="font-size: 0.8rem; color: var(--gray-text); margin-top: 0.5rem;">Last Updated: 2 घंटे पहले</p>
+      <p id="lastUpdatedText" style="font-size: 0.85rem; color: var(--gray-text); margin-top: 0.75rem;">Last Updated: 2 घंटे पहले</p>
     </div>
   </section>
 
@@ -1151,29 +1264,29 @@
     <div class="story-card-grid" id="peoplesStoriesGrid">
       <div class="people-story-card">
         <span class="scam-country">भारत (India)</span>
-        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.1rem;">मेरे पैसे कट गए</h4>
-        <p style="font-size:0.9rem; color:var(--gray-text); margin-bottom:1rem;">"मुझे कॉल आया, बोला बैंक से हूँ... मैंने OTP बता दिया, 5000 रुपये कट गए।"</p>
-        <div class="bacho-box" style="padding:0.75rem;">
-          <h5 style="font-size:0.85rem;">🛡️ सुरक्षा सलाह:</h5>
-          <p style="font-size:0.8rem;">बैंक को तुरंत कॉल करो, साइबर हेल्पलाइन 1930 पर बताओ।</p>
+        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.15rem;">मेरे पैसे कट गए</h4>
+        <p style="font-size:0.95rem; color:var(--gray-text); margin-bottom:1.25rem;">"मुझे कॉल आया, बोला बैंक से हूँ... मैंने OTP बता दिया, 5000 रुपये कट गए।"</p>
+        <div class="bacho-box" style="padding:0.85rem;">
+          <h5 style="font-size:0.9rem;">🛡️ सुरक्षा सलाह:</h5>
+          <p style="font-size:0.85rem;">बैंक को तुरंत कॉल करो, साइबर हेल्पलाइन 1930 पर बताओ।</p>
         </div>
       </div>
       <div class="people-story-card">
         <span class="scam-country">United States (USA)</span>
-        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.1rem;">नकली टोल मैसेज</h4>
-        <p style="font-size:0.9rem; color:var(--gray-text); margin-bottom:1rem;">"मुझे मैसेज आया टोल बाकी है... मैंने लिंक पर क्लिक कर दिया..."</p>
-        <div class="bacho-box" style="padding:0.75rem;">
-          <h5 style="font-size:0.85rem;">🛡️ सुरक्षा सलाह:</h5>
-          <p style="font-size:0.8rem;">आधिकारिक टोल ऐप या वेबसाइट से ही बैलेंस चेक करें।</p>
+        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.15rem;">नकली टोल मैसेज</h4>
+        <p style="font-size:0.95rem; color:var(--gray-text); margin-bottom:1.25rem;">"मुझे मैसेज आया टोल बाकी है... मैंने लिंक पर क्लिक कर दिया..."</p>
+        <div class="bacho-box" style="padding:0.85rem;">
+          <h5 style="font-size:0.9rem;">🛡️ सुरक्षा सलाह:</h5>
+          <p style="font-size:0.85rem;">आधिकारिक टोल ऐप या वेबसाइट से ही बैलेंस चेक करें।</p>
         </div>
       </div>
       <div class="people-story-card">
         <span class="scam-country">पाकिस्तान (Pakistan)</span>
-        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.1rem;">नौकरी वाला स्कैम</h4>
-        <p style="font-size:0.9rem; color:var(--gray-text); margin-bottom:1rem;">"बोला नौकरी मिल गई है, पहले 2000 फीस दो..."</p>
-        <div class="bacho-box" style="padding:0.75rem;">
-          <h5 style="font-size:0.85rem;">🛡️ सुरक्षा सलाह:</h5>
-          <p style="font-size:0.8rem;">असली कंपनियाँ कभी भी नौकरी के लिए पैसे नहीं मांगतीं।</p>
+        <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.15rem;">नौकरी वाला स्कैम</h4>
+        <p style="font-size:0.95rem; color:var(--gray-text); margin-bottom:1.25rem;">"बोला नौकरी मिल गई है, पहले 2000 फीस दो..."</p>
+        <div class="bacho-box" style="padding:0.85rem;">
+          <h5 style="font-size:0.9rem;">🛡️ सुरक्षा सलाह:</h5>
+          <p style="font-size:0.85rem;">असली कंपनियाँ कभी भी नौकरी के लिए पैसे नहीं मांगतीं।</p>
         </div>
       </div>
     </div>
@@ -1187,9 +1300,9 @@
   <!-- REPORT A SCAM - HELP OTHERS (4-STEP REPORT FORM + AI SMART GUIDE) -->
   <section class="report-section" id="reportSection">
     <div class="report-card">
-      <h3 class="section-title" style="text-align:left; margin-bottom:0.25rem;" id="reportFormMainTitle">स्कैम रिपोर्ट करें - दूसरों की मदद करें</h3>
-      <p style="color:var(--gray-text); font-size:0.9rem; margin-bottom:0.35rem;" id="reportFormCounter">आज तक इतनी रिपोर्ट आई: <span id="reportCountDisplay">1,420</span></p>
-      <p style="color:var(--green-btn); font-size:0.85rem; font-weight:600; margin-bottom:1.25rem;">
+      <h3 class="section-title" style="text-align:left; margin-bottom:0.35rem;" id="reportFormMainTitle">स्कैम रिपोर्ट करें - दूसरों की मदद करें</h3>
+      <p style="color:var(--gray-text); font-size:0.95rem; margin-bottom:0.5rem;" id="reportFormCounter">आज तक इतनी रिपोर्ट आई: <span id="reportCountDisplay">1,420</span></p>
+      <p style="color:var(--green-btn); font-size:0.9rem; font-weight:700; margin-bottom:1.5rem;">
         <span id="cityCounterText">आपके शहर में आज: 0 रिपोर्ट</span> | <span id="countryCounterText">आपके देश में आज: 0 रिपोर्ट</span>
       </p>
 
@@ -1215,23 +1328,22 @@
       <div class="input-group">
         <textarea id="reportStoryInput" placeholder="कम से कम 20 अक्षर लिखें... (उदा: मुझे एक अनजान नंबर से कॉल आया था...)"></textarea>
       </div>
-      <div style="margin-top: 1rem; background: var(--bg-light-green); padding: 1rem; border-radius: 0.75rem; border: 1px solid var(--border-green);">
-        <label style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 0.35rem;">स्क्रीनशॉट है तो डाल दो (चाहे तो छोड़ दो)</label>
-        <div style="font-size: 0.75rem; color: #DC2626; margin-bottom: 0.5rem;">⚠️ फोटो में अपना OTP, पासवर्ड, बैंक डिटेल मत डालें। फोटो में अपना नाम, नंबर, OTP दिख रहा हो तो उस पर धुंधला कर दो या काट दो। हम फोटो को अपने पास नहीं रखते।</div>
+      <div style="margin-top: 1.25rem; background: var(--bg-subtle); padding: 1.25rem; border-radius: 0.75rem; border: 1px solid var(--border-color);">
+        <label style="display: block; font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem;">स्क्रीनशॉट है तो डाल दो (चाहे तो छोड़ दो)</label>
+        <div style="font-size: 0.8rem; color: #DC2626; margin-bottom: 0.6rem; font-weight: 600;">⚠️ फोटो में अपना OTP, पासवर्ड, बैंक डिटेल मत डालें। फोटो में अपना नाम, नंबर, OTP दिख रहा हो तो उस पर धुंधला कर दो या काट दो। हम फोटो को अपने पास नहीं रखते।</div>
         <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
-          <label class="btn-primary" style="cursor: pointer; padding: 0.5rem 1rem; font-size: 0.85rem; background: var(--green-btn); display: inline-flex; align-items: center; gap: 0.35rem;">
+          <label class="btn-primary" style="cursor: pointer; padding: 0.6rem 1.25rem; font-size: 0.9rem; background: var(--green-btn); display: inline-flex; align-items: center; gap: 0.4rem;">
             📷 <span id="reportUploadBtnText">फोटो चुनें</span>
             <input type="file" id="reportPhotoInput" accept="image/png, image/jpg, image/jpeg" style="display: none;" onchange="handleReportPhotoSelect(event)" />
           </label>
         </div>
-        <!-- // TODO: In production, upload compressed blurred image to Cloudflare R2, delete original -->
-        <div id="reportPhotoPreviewContainer" style="display: none; margin-top: 0.5rem; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-          <img id="reportPhotoThumbnail" src="" alt="Preview" style="width: 100px; height: 100px; object-fit: cover; border-radius: 0.375rem; border: 1px solid var(--border-green);" />
-          <button type="button" onclick="removeReportPhoto()" style="background: #FEE2E2; color: #DC2626; border: none; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; cursor: pointer; font-weight: 600;">हटाएं</button>
+        <div id="reportPhotoPreviewContainer" style="display: none; margin-top: 0.75rem; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+          <img id="reportPhotoThumbnail" src="" alt="Preview" style="width: 100px; height: 100px; object-fit: cover; border-radius: 0.5rem; border: 1px solid var(--border-green); box-shadow: 0 2px 6px rgba(0,0,0,0.05);" />
+          <button type="button" onclick="removeReportPhoto()" style="background: #FEE2E2; color: #DC2626; border: none; padding: 0.35rem 0.75rem; border-radius: 0.375rem; font-size: 0.8rem; cursor: pointer; font-weight: 700;">हटाएं</button>
         </div>
         <div id="reportPhotoCheckboxContainer" style="display: none; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
-          <input type="checkbox" id="reportPhotoConfirmCheckbox" style="accent-color: var(--green-btn); width: 16px; height: 16px;" />
-          <label for="reportPhotoConfirmCheckbox" style="font-size: 0.85rem; color: var(--navy); font-weight: 600; cursor: pointer;">मैंने फोटो में से अपना नाम, नंबर हटा दिया है</label>
+          <input type="checkbox" id="reportPhotoConfirmCheckbox" style="accent-color: var(--green-btn); width: 18px; height: 18px;" />
+          <label for="reportPhotoConfirmCheckbox" style="font-size: 0.9rem; color: var(--navy); font-weight: 700; cursor: pointer;">मैंने फोटो में से अपना नाम, नंबर हटा दिया है</label>
         </div>
       </div>
 
@@ -1254,10 +1366,10 @@
           <option value="Shop">दुकान / बाजार (Face to Face)</option>
         </select>
       </div>
-      <div id="websiteInputContainer" style="display: none; margin-top: 0.75rem;">
-        <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--navy); margin-bottom:0.25rem;">कौन सी वेबसाइट थी? (चाहे तो छोड़ दें)</label>
+      <div id="websiteInputContainer" style="display: none; margin-top: 0.85rem;">
+        <label style="display:block; font-size:0.9rem; font-weight:700; color:var(--navy); margin-bottom:0.35rem;">कौन सी वेबसाइट थी? (चाहे तो छोड़ दें)</label>
         <input type="text" id="reportWebsiteInput" placeholder="जैसे - www.nakli-bank.com, या लिंक यहाँ डालें..." />
-        <p style="font-size:0.75rem; color:var(--gray-text); margin-top:0.25rem;">हम इस लिंक को चेक करके दूसरों को बचाएँगे।</p>
+        <p style="font-size:0.8rem; color:var(--gray-text); margin-top:0.3rem;">हम इस लिंक को चेक करके दूसरों को बचाएँगे।</p>
       </div>
 
       <!-- STEP 3.5 - City + Country -->
@@ -1282,7 +1394,7 @@
         </select>
         <input type="text" id="reportCityInput" placeholder="अपने शहर का नाम लिखें - जैसे दिल्ली, मुंबई, लाहौर" oninput="updateCityCounters()" />
       </div>
-      <p style="font-size:0.8rem; color:var(--gray-text); margin-bottom:1.25rem;" id="cityHelperText">हम आपका पूरा पता नहीं माँगते, सिर्फ शहर का नाम ताकि आपके शहर के लोगों को अलर्ट मिल सके।</p>
+      <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:1.5rem;" id="cityHelperText">हम आपका पूरा पता नहीं माँगते, सिर्फ शहर का नाम ताकि आपके शहर के लोगों को अलर्ट मिल सके।</p>
 
       <!-- STEP 4 -->
       <div class="report-step-title" id="step4Header">स्टेप 4: कितना नुकसान हुआ? (वैकल्पिक)</div>
@@ -1295,7 +1407,7 @@
         </select>
       </div>
 
-      <button class="btn-primary" onclick="submitReportForm()" style="width:100%; justify-content:center;" id="submitReportBtn">
+      <button class="btn-primary" onclick="submitReportForm()" style="width:100%; justify-content:center; padding: 1rem; font-size: 1.05rem;" id="submitReportBtn">
         🚀 रिपोर्ट सबमिट करें और AI गाइड पाएं
       </button>
 
@@ -1303,8 +1415,8 @@
       <div class="ai-guide-box" id="aiGuideBox">
         <h4 id="aiGuideTitle">🤖 AI स्मार्ट सुरक्षा गाइड (आपके लिए तुरंत सलाह)</h4>
         <ul id="aiGuideList"></ul>
-        <div style="margin-top:1rem;">
-          <button class="btn-primary" onclick="shareOnWhatsApp()" style="background:#25D366; font-size:0.9rem;" id="whatsappShareBtn">
+        <div style="margin-top:1.25rem;">
+          <button class="btn-primary" onclick="shareOnWhatsApp()" style="background:#25D366; font-size:0.95rem;" id="whatsappShareBtn">
             💬 WhatsApp पर शेयर करें
           </button>
         </div>
@@ -1314,11 +1426,11 @@
 
   <!-- ADMIN PANEL (?admin=1) -->
   <section class="admin-section" id="adminSection">
-    <h3 style="color:#B45309; margin-bottom:1rem;">Admin - नई रिपोर्ट देखें (Preview)</h3>
-    <div style="display:flex; gap:0.5rem; margin-bottom:1rem;">
-      <button class="btn-primary" style="padding:0.4rem 0.75rem; font-size:0.85rem;" onclick="filterAdmin('all')">All Reports</button>
-      <button class="btn-primary" style="padding:0.4rem 0.75rem; font-size:0.85rem;" onclick="filterAdmin('country')">Filter by Country</button>
-      <button class="btn-primary" style="padding:0.4rem 0.75rem; font-size:0.85rem;" onclick="filterAdmin('city')">Filter by City</button>
+    <h3 style="color:#B45309; margin-bottom:1rem; font-weight:800;">Admin - नई रिपोर्ट देखें (Preview)</h3>
+    <div style="display:flex; gap:0.75rem; margin-bottom:1.25rem;">
+      <button class="btn-primary" style="padding:0.5rem 1rem; font-size:0.9rem;" onclick="filterAdmin('all')">All Reports</button>
+      <button class="btn-primary" style="padding:0.5rem 1rem; font-size:0.9rem;" onclick="filterAdmin('country')">Filter by Country</button>
+      <button class="btn-primary" style="padding:0.5rem 1rem; font-size:0.9rem;" onclick="filterAdmin('city')">Filter by City</button>
     </div>
     <div id="adminReportsList"></div>
   </section>
@@ -1343,11 +1455,11 @@
   <footer>
     <div class="footer-content">
       <p id="footerDisclaimer">IsThisScamOrReal.com एक स्वतंत्र सुरक्षा प्रोजेक्ट है। हम किसी सरकारी विभाग से जुड़े नहीं हैं।</p>
-      <div id="historyList" style="margin: 0.75rem 0; font-size:0.85rem; color:var(--gray-text);"></div>
+      <div id="historyList" style="margin: 1rem 0; font-size:0.9rem; color:var(--gray-text);"></div>
       <div>
-        <button class="btn-primary" onclick="clearCheckHistory()" id="clearHistoryBtn" style="background:var(--gray-text); font-size:0.8rem; padding:0.4rem 1rem; margin-top:0.25rem; border-radius:9999px;">🗑️ <span id="clearHistoryText">जांच हिस्ट्री साफ़ करें</span> (<span id="historyCount">0</span>)</button>
+        <button class="btn-primary" onclick="clearCheckHistory()" id="clearHistoryBtn" style="background:var(--gray-text); font-size:0.85rem; padding:0.5rem 1.25rem; margin-top:0.5rem; border-radius:9999px;">🗑️ <span id="clearHistoryText">जांच हिस्ट्री साफ़ करें</span> (<span id="historyCount">0</span>)</button>
       </div>
-      <p style="margin-top: 0.75rem;">© IsThisScamOrReal.com - Check Any Message. In Your Language.</p>
+      <p style="margin-top: 1rem; font-weight:600; color:var(--navy);">© IsThisScamOrReal.com - Check Any Message. In Your Language.</p>
     </div>
   </footer>
 
@@ -1507,7 +1619,7 @@
         navCheck: "چیک کریں",
         navTools: "ٹولز",
         counterText: "آج 12,450 میسیجز چیک کیے گئے",
-        heroTitle: "کیا یہ اسکیم ہے یا असली?",
+        heroTitle: "کیا یہ اسکیم ہے یا اصلی?",
         heroSubtitle: "کوئی بھی SMS، WhatsApp یا Email درج کریں۔ 2 سیکنڈ میں جواب پائیں۔",
         countryIndicator: "📍 پاکستان (Pakistan) के लिए محفوظ",
         howItWorksTitle: "یہ کیسے کام کرتا ہے",
@@ -1515,7 +1627,7 @@
         step1Title: "میسج پیسٹ کریں",
         step1Desc: "کوئی بھی مشکوک SMS یا WhatsApp میसेज یہاں پیسٹ کریں۔",
         step2Title: "5-لیئر تجزیہ",
-        step2Desc: "اسکیم ڈیٹا بیس اور مشکوک لنکس की فوری جانچ۔",
+        step2Desc: "اسکیم ڈیٹا بیس और مشکوک لنکس की فوری جانچ۔",
         step3Title: "فوری رپورٹ حاصل کریں",
         step3Desc: "अपनी زبان में स्पष्ट सुरक्षा निर्देश और सही फैसला पाएं।",
         toolsSectionTitle: "اہم سیکیورٹی ٹولز",
@@ -1542,13 +1654,13 @@
         newScamsSubtitleText: "Auto-updated every 1 hour",
         loadMoreBtn: "مزید اسکیمز لوڈ کریں",
         peoplesStoriesTitle: "لوگوں की असली कहानियाँ",
-        peoplesStoriesSubtitle: "دوسروں की غلطیوں से سیکھیں",
+        peoplesStoriesSubtitle: "دوسروں की गलतियों से سیکھیں",
         shareStoryBannerTitle: "کیا آپ کے ساتھ भी ऐसा हुआ है?",
-        shareStoryBannerDesc: "अपनी کہانی شیئر کریں۔",
+        shareStoryBannerDesc: "अपनी कहानी شیئر کریں۔",
         shareStoryBtn: "अपनी कहानी بتائیں",
         reportFormMainTitle: "اسکیم رپورٹ کریں - دوسروں की مدد کریں",
         reportFormCounter: "کل رپورٹس: ",
-        step1Header: "مرحلہ 1: آپ کے साथ क्या हुआ?",
+        step1Header: "مرحلہ 1: آپ के साथ क्या हुआ?",
         opt1Text: "मेरे पैसे कट गए",
         opt2Text: "میرا اکاؤنٹ ہیک ہو گیا",
         opt3Text: "دھمکی آمیز میसेज آیا",
@@ -1561,7 +1673,7 @@
         whenToday: "آج ہی हुआ",
         whenWeek: "پچھلے 7 دنوں में",
         whenMonth: "اس ماہ",
-        step4Header: "مرحلہ 4: کتنا نقصان हुआ?",
+        step4Header: "مرحلہ 4: کتنا नुकसान हुआ?",
         lossNone: "कोई नुकसान नहीं",
         lossSmall: "معمولی नुकसान",
         lossMedium: "درمیانہ نقصان",
@@ -1667,57 +1779,57 @@
         toolsSectionTitle: "Herramientas Principales",
         toolsSectionSub: "Verifica diferentes fraudes",
         tool1Title: "Verificar Enlace",
-        tool1Desc: "Pega cualquier URL",
+        tool1Desc: "Pega cualquier enlace",
         tool2Title: "Verificar Número",
-        tool2Desc: "Verifica llamadas o SMS",
+        tool2Desc: "Verifica cualquier número",
         tool3Title: "Verificar Email",
-        tool3Desc: "Detecta correos falsos",
+        tool3Desc: "Detecta emails falsos",
         tool4Title: "Verificar Empleo",
-        tool4Desc: "Detecta empleos falsos",
+        tool4Desc: "Detecta ofertas falsas",
         tool5Title: "Verificar Cripto",
-        tool5Desc: "Inversiones falsas",
+        tool5Desc: "Detecta estafas de inversión",
         tool6Title: "Verificar Tienda",
-        tool6Desc: "Tiendas fraudulentas",
+        tool6Desc: "Detecta tiendas falsas",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
-        privacyText: "Nunca guardamos tus datos personales.",
-        checkBtn: "⚡ Verificar ahora",
-        topScamsTitle: "Top 20 Estafas de Hoy",
-        topScamsSubtitle: "Fraudes más peligrosos y cómo mantenerse seguro",
+        privacyText: "Nunca guardamos tus datos personales o mensajes.",
+        checkBtn: "⚡ Verificar Ahora",
+        topScamsTitle: "Top 20 Estafas Hoy",
+        topScamsSubtitle: "Los fraudes más peligrosos y cómo protegerte",
         newScamsTitle: "Nuevas Estafas Reportadas Hoy",
         newScamsSubtitleText: "Auto-updated every 1 hour",
         loadMoreBtn: "Cargar más estafas",
-        peoplesStoriesTitle: "Historias reales de personas",
-        peoplesStoriesSubtitle: "Aprende de los errores de otros",
+        peoplesStoriesTitle: "Historias Reales - Aprende de ellas",
+        peoplesStoriesSubtitle: "Aprende de los errores de otros y mantente seguro",
         shareStoryBannerTitle: "¿Te pasó algo similar?",
         shareStoryBannerDesc: "Comparte tu historia para proteger a otros.",
         shareStoryBtn: "Cuenta tu historia",
-        reportFormMainTitle: "Reportar Estafa",
+        reportFormMainTitle: "Reportar Estafa - Ayuda a otros",
         reportFormCounter: "Total de reportes: ",
         step1Header: "Paso 1: ¿Qué te pasó?",
         opt1Text: "Perdí dinero",
-        opt2Text: "Mi cuenta fue hackeara",
+        opt2Text: "Hackearon mi cuenta",
         opt3Text: "Recibí amenazas",
         opt4Text: "Enlace falso recibido",
-        step2Header: "Paso 2: Cuenta tu historia",
+        step2Header: "Paso 2: ¿Cómo pasó? Cuenta tu historia",
         step3Header: "Paso 3: ¿Cuándo y dónde?",
         step35Header: "Paso 3.5: ¿De dónde eres?",
-        cityHelperText: "Solo pedimos el nombre de la ciudad.",
-        cityPlaceholder: "Escribe tu ciudad",
-        whenToday: "Ocurrió hoy",
+        cityHelperText: "Solo pedimos el nombre de tu ciudad.",
+        cityPlaceholder: "Escribe tu ciudad - ej. CDMX, Guadalajara",
+        whenToday: "Pasó hoy",
         whenWeek: "Últimos 7 días",
         whenMonth: "Este mes",
-        step4Header: "Paso 4: ¿Cuánta pérdida?",
+        step4Header: "Paso 4: ¿Cuánta pérdida? (Opcional)",
         lossNone: "Sin pérdida",
-        lossSmall: "Pérdida pequeña",
-        lossMedium: "Pérdida mediana",
+        lossSmall: "Pérdida menor",
+        lossMedium: "Pérdida media",
         lossLarge: "Pérdida grande",
-        submitReportBtn: "🚀 Enviar reporte",
-        aiGuideTitle: "🤖 Guía de seguridad inteligente",
+        submitReportBtn: "🚀 Enviar Reporte y Obtener Guía AI",
+        aiGuideTitle: "🤖 Guía de Seguridad Inteligente",
         whatsappShareBtn: "💬 Compartir en WhatsApp",
-        footerDisclaimer: "IsThisScamOrReal.com es un proyecto independiente.",
+        footerDisclaimer: "IsThisScamOrReal.com es un proyecto de seguridad independiente.",
         readStoryBtn: "Leer historia",
-        shareBtnCard: "Enviar por WhatsApp"
+        shareBtnCard: "Compartir"
       },
       pt: {
         brandTitle: "IsThisScamOrReal.com",
@@ -1726,71 +1838,71 @@
         navCheck: "Verificar",
         navTools: "Ferramentas",
         counterText: "Hoje 12.450 mensagens verificadas",
-        heroTitle: "Isso é golpe ou real?",
+        heroTitle: "É Golpe ou Real?",
         heroSubtitle: "Cole qualquer SMS, WhatsApp ou Email. Resposta em 2 segundos.",
-        countryIndicator: "📍 Protegido para Brazil (BR)",
+        countryIndicator: "📍 Protegido para Brasil (BR)",
         howItWorksTitle: "Como Funciona",
         howItWorksSub: "Saiba a verdade em 3 passos",
-        step1Title: "Inserir mensagem",
+        step1Title: "Inserir Mensagem",
         step1Desc: "Cole qualquer SMS suspeito.",
-        step2Title: "Análise múltipla",
-        step2Desc: "Verificação instantânea anti-fraude.",
-        step3Title: "Relatório instantâneo",
-        step3Desc: "Receba orientações claras em seu idioma.",
-        toolsSectionTitle: "Ferramentas Principais",
+        step2Title: "Análise de 5 camadas",
+        step2Desc: "Verificação instantânea contra fraudes.",
+        step3Title: "Relatório Instantâneo",
+        step3Desc: "Receba orientações claras de segurança.",
+        toolsSectionTitle: "Principais Ferramentas",
         toolsSectionSub: "Verifique diferentes fraudes",
         tool1Title: "Verificar Link",
-        tool1Desc: "Cole qualquer URL",
+        tool1Desc: "Cole qualquer link",
         tool2Title: "Verificar Número",
-        tool2Desc: "Verifique números",
+        tool2Desc: "Verifique qualquer número",
         tool3Title: "Verificar Email",
         tool3Desc: "Detecte emails falsos",
         tool4Title: "Verificar Emprego",
-        tool4Desc: "Detecte falsas vagas",
+        tool4Desc: "Detecte vagas falsas",
         tool5Title: "Verificar Cripto",
-        tool5Desc: "Investimentos falsos",
+        tool5Desc: "Detecta investimentos falsos",
         tool6Title: "Verificar Loja",
-        tool6Desc: "Lojas fraudulentas",
+        tool6Desc: "Detecta lojas falsas",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
         privacyText: "Nunca salvamos seus dados pessoais.",
-        checkBtn: "⚡ Verificar agora",
-        topScamsTitle: "Top 20 Golpes de Hoje",
-        topScamsSubtitle: "Fraudes mais perigosas e como se proteger",
+        checkBtn: "⚡ Verificar Agora",
+        topScamsTitle: "Top 20 Golpes Hoje",
+        topScamsSubtitle: "As fraudes mais perigosas e como se proteger",
         newScamsTitle: "Novos Golpes Reportados Hoje",
         newScamsSubtitleText: "Auto-updated every 1 hour",
-        loadMoreBtn: "Carregar mais golpes",
-        peoplesStoriesTitle: "Histórias reais",
+        loadMoreBtn: "Carregar mais",
+        peoplesStoriesTitle: "Histórias Reais - Aprenda com elas",
         peoplesStoriesSubtitle: "Aprenda com os erros dos outros",
         shareStoryBannerTitle: "Algo parecido aconteceu com você?",
         shareStoryBannerDesc: "Compartilhe sua história.",
         shareStoryBtn: "Conte sua história",
-        reportFormMainTitle: "Denunciar Golpe",
+        reportFormMainTitle: "Denunciar Golpe - Ajude os Outros",
         reportFormCounter: "Total de denúncias: ",
         step1Header: "Passo 1: O que aconteceu?",
         opt1Text: "Perdi dinheiro",
-        opt2Text: "Minha conta foi hackeara",
+        opt2Text: "Minha conta foi hackeada",
         opt3Text: "Recebi ameaças",
         opt4Text: "Link falso recebido",
-        step2Header: "Passo 2: Conte sua história",
-        step3Header: "Passo 3: Quando e onde?",
+        step2Header: "Passo 2: Como aconteceu?",
+        step3Header: "Passo 3: Quando e Onde?",
         step35Header: "Passo 3.5: De onde você é?",
-        cityHelperText: "Pedimos apenas o nome da cidade.",
-        cityPlaceholder: "Digite sua cidade",
-        whenToday: "Hoje",
+        cityHelperText: "Pedimos apenas o nome da sua cidade.",
+        cityPlaceholder: "Escreva sua cidade - ex: São Paulo, Rio",
+        whenToday: "Aconteceu hoje",
         whenWeek: "Últimos 7 dias",
         whenMonth: "Este mês",
-        step4Header: "Passo 4: Qual a perda?",
-        lossNone: "Sem perda",
-        lossSmall: "Perda pequena",
-        lossMedium: "Perda média",
-        lossLarge: "Perda grande",
-        submitReportBtn: "🚀 Enviar denúncia",
-        aiGuideTitle: "🤖 Guia de segurança AI",
+        step4Header: "Passo 4: Qual o prejuízo?",
+        lossNone: "Sem prejuízo",
+        lossSmall: "Prejuízo pequeno",
+        lossMedium: "Prejuízo médio",
+        lossLarge: "Prejuízo grande",
+        submitReportBtn: "🚀 Enviar Denúncia",
+        aiGuideTitle: "🤖 Guia de Segurança IA",
         whatsappShareBtn: "💬 Compartilhar no WhatsApp",
-        footerDisclaimer: "IsThisScamOrReal.com é um projeto independente.",
+        footerDisclaimer: "IsThisScamOrReal.com é um projeto de segurança independente.",
         readStoryBtn: "Ler história",
-        shareBtnCard: "Enviar no WhatsApp"
+        shareBtnCard: "Compartilhar"
       },
       fr: {
         brandTitle: "IsThisScamOrReal.com",
@@ -1799,111 +1911,111 @@
         navCheck: "Vérifier",
         navTools: "Outils",
         counterText: "Aujourd'hui 12 450 messages vérifiés",
-        heroTitle: "Arnaque ou réel ?",
-        heroSubtitle: "Collez n'importe quel SMS ou WhatsApp. Réponse en 2 secondes.",
-        countryIndicator: "📍 Protégé pour France",
-        howItWorksTitle: "Comment ça marche",
+        heroTitle: "Est-ce une Arnaque ou Réel?",
+        heroSubtitle: "Collez n'importe quel SMS ou Email. Réponse instantanée.",
+        countryIndicator: "📍 Protégé pour France (FR)",
+        howItWorksTitle: "Comment Ça Marche",
         howItWorksSub: "Connaître la vérité en 3 étapes",
         step1Title: "Entrer le message",
-        step1Desc: "Collez le message suspect.",
-        step2Title: "Analyse multiple",
-        step2Desc: "Vérification anti-fraude instantanée.",
+        step1Desc: "Collez le SMS suspect.",
+        step2Title: "Vérification",
+        step2Desc: "Analyse instantanée anti-fraude.",
         step3Title: "Rapport instantané",
         step3Desc: "Conseils de sécurité clairs.",
         toolsSectionTitle: "Outils de Sécurité",
-        toolsSectionSub: "Vérifiez les fraudes facilement",
+        toolsSectionSub: "Vérifiez divers types de fraudes",
         tool1Title: "Vérifier Lien",
-        tool1Desc: "Collez n'importe quelle URL",
+        tool1Desc: "Collez un lien",
         tool2Title: "Vérifier Numéro",
-        tool2Desc: "Vérifiez les appels",
+        tool2Desc: "Vérifiez un numéro",
         tool3Title: "Vérifier Email",
         tool3Desc: "Détectez les faux emails",
         tool4Title: "Vérifier Emploi",
         tool4Desc: "Faux emplois",
         tool5Title: "Vérifier Crypto",
-        tool5Desc: "Faux investissements",
+        tool5Desc: "Fausses investissements",
         tool6Title: "Vérifier Boutique",
-        tool6Desc: "Boutiques frauduleuses",
+        tool6Desc: "Fausses boutiques",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
         privacyText: "Nous ne sauvegardons jamais vos données.",
-        checkBtn: "⚡ Vérifier",
-        topScamsTitle: "Top 20 Arnaques",
+        checkBtn: "⚡ Vérifier Maintenant",
+        topScamsTitle: "Top 20 Arnaques Aujourd'hui",
         topScamsSubtitle: "Les fraudes les plus dangereuses",
-        newScamsTitle: "Nouvelles arnaques signalées",
+        newScamsTitle: "Nouvelles Arnaques Signalées",
         newScamsSubtitleText: "Auto-updated every 1 hour",
         loadMoreBtn: "Charger plus",
-        peoplesStoriesTitle: "Histoires réelles",
+        peoplesStoriesTitle: "Histoires Réelles",
         peoplesStoriesSubtitle: "Apprenez des erreurs des autres",
-        shareStoryBannerTitle: "Cela vous est-il arrivé ?",
+        shareStoryBannerTitle: "Cela vous est-il arrivé?",
         shareStoryBannerDesc: "Partagez votre histoire.",
-        shareStoryBtn: "Racontez",
-        reportFormMainTitle: "Signaler une arnaque",
+        shareStoryBtn: "Raconter",
+        reportFormMainTitle: "Signaler une Arnaque",
         reportFormCounter: "Total des signalements : ",
-        step1Header: "Étape 1 : Que s'est-il passé ?",
+        step1Header: "Étape 1 : Qu'est-il arrivé ?",
         opt1Text: "J'ai perdu de l'argent",
-        opt2Text: "Mon compte a été piraté",
+        opt2Text: "Compte piraté",
         opt3Text: "Message de menace",
         opt4Text: "Faux lien reçu",
-        step2Header: "Étape 2 : Racontez votre histoire",
-        step3Header: "Étape 3 : Quand et où ?",
+        step2Header: "Étape 2 : Comment c'est arrivé ?",
+        step3Header: "Étape 3 : Quand et Où ?",
         step35Header: "Étape 3.5 : D'où venez-vous ?",
-        cityHelperText: "Nous demandons uniquement la ville.",
-        cityPlaceholder: "Nom de votre ville",
+        cityHelperText: "Nom de la ville uniquement.",
+        cityPlaceholder: "Votre ville - ex: Paris, Lyon",
         whenToday: "Aujourd'hui",
         whenWeek: "7 derniers jours",
         whenMonth: "Ce mois-ci",
-        step4Header: "Étape 4 : Perte ?",
-        lossNone: "Aucune",
-        lossSmall: "Petite",
-        lossMedium: "Moyenne",
-        lossLarge: "Importante",
-        submitReportBtn: "🚀 Soumettre",
-        aiGuideTitle: "🤖 Guide de sécurité IA",
+        step4Header: "Étape 4 : Perte financière ?",
+        lossNone: "Aucune perte",
+        lossSmall: "Petite perte",
+        lossMedium: "Perte moyenne",
+        lossLarge: "Gande perte",
+        submitReportBtn: "🚀 Soumettre le rapport",
+        aiGuideTitle: "🤖 Guide de Sécurité IA",
         whatsappShareBtn: "💬 Partager sur WhatsApp",
         footerDisclaimer: "IsThisScamOrReal.com est un projet indépendant.",
         readStoryBtn: "Lire l'histoire",
-        shareBtnCard: "Partager sur WhatsApp"
+        shareBtnCard: "Partager"
       },
       de: {
         brandTitle: "IsThisScamOrReal.com",
-        navReportBtn: "Melden",
+        navReportBtn: "Betrug Melden",
         navHome: "Startseite",
         navCheck: "Prüfen",
         navTools: "Tools",
         counterText: "Heute 12.450 Nachrichten geprüft",
-        heroTitle: "Betrug oder echt?",
-        heroSubtitle: "Fügen Sie eine SMS oder WhatsApp ein. Antwort in 2 Sekunden.",
-        countryIndicator: "📍 Geschützt für Deutschland",
-        howItWorksTitle: "Wie es funktioniert",
-        howItWorksSub: "Die Wahrheit in 3 einfachen Schritten",
+        heroTitle: "Ist das Betrug oder Echt?",
+        heroSubtitle: "Fügen Sie eine SMS oder E-Mail ein. Sofortige Antwort.",
+        countryIndicator: "📍 Geschützt für Deutschland (DE)",
+        howItWorksTitle: "Wie Es Funktioniert",
+        howItWorksSub: "Wahrheit in 3 Schritten",
         step1Title: "Nachricht eingeben",
         step1Desc: "Verdächtige Nachricht einfügen.",
-        step2Title: "Mehrfachprüfung",
-        step2Desc: "Sofortige Betrugsprüfung.",
-        step3Title: "Sofortiger Bericht",
+        step2Title: "Prüfung",
+        step2Desc: "Sofortige Betrugserkennung.",
+        step3Title: "Bericht",
         step3Desc: "Klare Sicherheitshinweise.",
         toolsSectionTitle: "Sicherheitstools",
-        toolsSectionSub: "Betrug sofort überprüfen",
+        toolsSectionSub: "Betrugsarten prüfen",
         tool1Title: "Link prüfen",
-        tool1Desc: "Beliebige URL einfügen",
+        tool1Desc: "Link einfügen",
         tool2Title: "Nummer prüfen",
-        tool2Desc: "Anrufe und SMS prüfen",
-        tool3Title: "Email prüfen",
-        tool3Desc: "Falsche Emails erkennen",
+        tool2Desc: "Telefonnummer prüfen",
+        tool3Title: "E-Mail prüfen",
+        tool3Desc: "Falsche E-Mails",
         tool4Title: "Job prüfen",
         tool4Desc: "Falsche Jobs",
         tool5Title: "Krypto prüfen",
         tool5Desc: "Falsche Investitionen",
         tool6Title: "Shop prüfen",
-        tool6Desc: "Falsche Online-Shops",
+        tool6Desc: "Falsche Shops",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
         privacyText: "Wir speichern keine persönlichen Daten.",
-        checkBtn: "⚡ Jetzt prüfen",
-        topScamsTitle: "Top 20 Betrugsmaschen",
-        topScamsSubtitle: "Die gefährlichsten Betrügereien",
-        newScamsTitle: "Neue Betrugsfälle",
+        checkBtn: "⚡ Jetzt Prüfen",
+        topScamsTitle: "Top 20 Betrugsfälle Heute",
+        topScamsSubtitle: "Die gefährlichsten Betrugsmaschen",
+        newScamsTitle: "Neue Betrugsfälle Gemeldet",
         newScamsSubtitleText: "Auto-updated every 1 hour",
         loadMoreBtn: "Mehr laden",
         peoplesStoriesTitle: "Echte Geschichten",
@@ -1911,32 +2023,32 @@
         shareStoryBannerTitle: "Ist Ihnen das auch passiert?",
         shareStoryBannerDesc: "Teilen Sie Ihre Geschichte.",
         shareStoryBtn: "Geschichte erzählen",
-        reportFormMainTitle: "Betrug melden",
-        reportFormCounter: "Meldungen bis heute: ",
+        reportFormMainTitle: "Betrug Melden - Helfen Sie anderen",
+        reportFormCounter: "Gesamte Berichte: ",
         step1Header: "Schritt 1: Was ist passiert?",
         opt1Text: "Geld verloren",
         opt2Text: "Konto gehackt",
         opt3Text: "Drohnachricht",
         opt4Text: "Falscher Link",
-        step2Header: "Schritt 2: Geschichte erzählen",
+        step2Header: "Schritt 2: Wie ist es passiert?",
         step3Header: "Schritt 3: Wann und Wo?",
         step35Header: "Schritt 3.5: Woher kommen Sie?",
-        cityHelperText: "Wir fragen nur nach der Stadt.",
-        cityPlaceholder: "Name Ihrer Stadt",
-        whenToday: "Heute",
+        cityHelperText: "Nur Stadtname.",
+        cityPlaceholder: "Ihre Stadt - z.B. Berlin, München",
+        whenToday: "Heute passiert",
         whenWeek: "Letzte 7 Tage",
         whenMonth: "Diesen Monat",
-        step4Header: "Schritt 4: Verlust?",
-        lossNone: "Keiner",
-        lossSmall: "Klein",
-        lossMedium: "Mittel",
-        lossLarge: "Groß",
-        submitReportBtn: "🚀 Bericht senden",
-        aiGuideTitle: "🤖 KI-Sicherheitsratgeber",
+        step4Header: "Schritt 4: Schaden?",
+        lossNone: "Kein Schaden",
+        lossSmall: "Geringer Schaden",
+        lossMedium: "Mittlerer Schaden",
+        lossLarge: "Hoher Schaden",
+        submitReportBtn: "🚀 Bericht Senden",
+        aiGuideTitle: "🤖 KI-Sicherheitsleitfaden",
         whatsappShareBtn: "💬 Auf WhatsApp teilen",
         footerDisclaimer: "IsThisScamOrReal.com ist ein unabhängiges Projekt.",
         readStoryBtn: "Geschichte lesen",
-        shareBtnCard: "Auf WhatsApp teilen"
+        shareBtnCard: "Teilen"
       },
       bn: {
         brandTitle: "IsThisScamOrReal.com",
@@ -1946,70 +2058,70 @@
         navTools: "টুলস",
         counterText: "আজ ১২,৪৫০টি মেসেজ চেক করা হয়েছে",
         heroTitle: "এটি কি স্ক্যাম নাকি আসল?",
-        heroSubtitle: "যেকোনো SMS, WhatsApp বা Email পেস্ট করুন। ২ সেকেন্ডে উত্তর পান।",
-        countryIndicator: "📍 ভারত (India) এর জন্য সুরক্ষিত",
+        heroSubtitle: "যেকোনো SMS, WhatsApp বা Email দিন। ২ সেকেন্ডে উত্তর পান।",
+        countryIndicator: "📍 বাংলাদেশ (Bangladesh) এর জন্য নিরাপদ",
         howItWorksTitle: "এটি কীভাবে কাজ করে",
-        howItWorksSub: "৩টি সহজ ধাপে",
+        howItWorksSub: "৩টি সহজ ধাপে জানুন",
         step1Title: "মেসেজ দিন",
-        step1Desc: "যেকোনো সন্দেহজনক মেসেজ পেস্ট করুন।",
-        step2Title: "বহুস্তর পরীক্ষা",
-        step2Desc: "তাৎক্ষণিক স্ক্যাম ও ভুয়া লিংক পরীক্ষা।",
+        step1Desc: "সন্দেহজনক SMS বা WhatsApp মেসেজ পেস্ট করুন।",
+        step2Title: "৫ স্তরের যাচাই",
+        step2Desc: "পুরনো স্ক্যাম ও জাল লিংকের দ্রুত পরীক্ষা।",
         step3Title: "তাৎক্ষণিক রিপোর্ট",
-        step3Desc: "আপনার ভাষায় পরিষ্কার নির্দেশনা।",
-        toolsSectionTitle: "নিরাপত্তা টুলস",
-        toolsSectionSub: "বিভিন্ন প্রতারণা যাচাই করুন",
-        tool1Title: "লিংক চেক",
+        step3Desc: "আপনার ভাষায় পরিষ্কার নির্দেশনা পান।",
+        toolsSectionTitle: "প্রধান নিরাপত্তা টুলস",
+        toolsSectionSub: "বিভিন্ন প্রতারণা তাৎক্ষণিক যাচাই করুন",
+        tool1Title: "লিংক যাচাই",
         tool1Desc: "যেকোনো লিংক দিন",
-        tool2Title: "নম্বর চেক",
-        tool2Desc: "নম্বর যাচাই",
-        tool3Title: "Email চেক",
-        tool3Desc: "ভুয়া ইমেল ধরুন",
-        tool4Title: "চাকরি চেক",
-        tool4Desc: "ভুয়া চাকরি",
-        tool5Title: "ক্রিপ্টো চেক",
-        tool5Desc: "ভুয়া বিনিয়োগ",
-        tool6Title: "দোকান চেক",
-        tool6Desc: "ভুয়া অনলাইন দোকান",
+        tool2Title: "নম্বর যাচাই",
+        tool2Desc: "ফোন নম্বর যাচাই",
+        tool3Title: "Email যাচাই",
+        tool3Desc: "নকল Email ধরুন",
+        tool4Title: "চাকরি যাচাই",
+        tool4Desc: "নকল চাকরি ধরুন",
+        tool5Title: "ক্রিপ্টো যাচাই",
+        tool5Desc: "নকল বিনিয়োগ ধরুন",
+        tool6Title: "দোকান যাচাই",
+        tool6Desc: "নকল দোকান ধরুন",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
-        privacyText: "আমরা আপনার ব্যক্তিগত তথ্য সংরক্ষণ করি না।",
-        checkBtn: "⚡ এখনই চেক করুন",
+        privacyText: "আমরা আপনার কোনো ব্যক্তিগত তথ্য সংরক্ষণ করি না।",
+        checkBtn: "⚡ এখনই যাচাই করুন",
         topScamsTitle: "আজকের শীর্ষ ২০ স্ক্যাম",
-        topScamsSubtitle: "বিশ্বব্যাপী ছড়িয়ে থাকা সবচেয়ে বিপজ্জনক প্রতারণা",
-        newScamsTitle: "আজ নতুন স্ক্যাম রিপোর্ট করা হয়েছে",
+        topScamsSubtitle: "বিশ্বব্যাপী ছড়িয়ে পড়া ভয়ঙ্কর প্রতারণা",
+        newScamsTitle: "আজ নতুন স্ক্যাম রিপোর্ট করা হয়েছে",
         newScamsSubtitleText: "Auto-updated every 1 hour",
         loadMoreBtn: "আরও স্ক্যাম লোড করুন",
-        peoplesStoriesTitle: "মানুষের আসল গল্প - इनसे सीखो",
-        peoplesStoriesSubtitle: "অন্যদের ভুল থেকে শিক্ষা নিন",
-        shareStoryBannerTitle: "আপনার সাথে কি এমন কিছু ঘটেছে?",
-        shareStoryBannerDesc: "আপনার গল্প শেয়ার করে অন্যদের রক্ষা করুন।",
+        peoplesStoriesTitle: "মানুষের আসল গল্প - इनसे सीखें",
+        peoplesStoriesSubtitle: "অন্যের ভুল থেকে শিখুন ও নিরাপদ থাকুন",
+        shareStoryBannerTitle: "আপনার সাথে কি এমন কিছু হয়েছে?",
+        shareStoryBannerDesc: "আপনার গল্প শেয়ার করুন।",
         shareStoryBtn: "আপনার গল্প বলুন",
         reportFormMainTitle: "স্ক্যাম রিপোর্ট করুন - অন্যদের সাহায্য করুন",
-        reportFormCounter: "আজ পর্যন্ত মোট রিপোর্ট: ",
-        step1Header: "ধাপ ১: আপনার সাথে কী ঘটেছে?",
-        opt1Text: "আমার টাকা কেটে নেওয়া হয়েছে",
-        opt2Text: "আমার অ্যাকাউন্ট হ্যাক হয়েছে",
-        opt3Text: "হুমকি পূর্ণ মেসেজ এসেছে",
-        opt4Text: "ভুয়া লিংক পেয়েছি",
-        step2Header: "ধাপ ২: কীভাবে হলো? আপনার গল্প বলুন",
-        step3Header: "ধাপ ৩: কখন এবং কোথায়?",
-        step35Header: "ধাপ ৩.৫: আপনার শহর ও দেশ?",
-        cityHelperText: "আমরা শুধু শহরের নাম জানি।",
-        cityPlaceholder: "আপনার শহরের নাম লিখুন",
-        whenToday: "আজকেই হয়েছে",
+        reportFormCounter: "মোট রিপোর্ট: ",
+        step1Header: "ধাপ ১: আপনার সাথে কী হয়েছে?",
+        opt1Text: "আমার টাকা কেটে নিয়েছে",
+        opt2Text: "আমার অ্যাকাউন্ট হ্যাক হয়েছে",
+        opt3Text: "হুমকি বার্তা পেয়েছি",
+        opt4Text: "নকল লিংক এসেছে",
+        step2Header: "ধাপ ২: কীভাবে হলো? গল্প বলুন",
+        step3Header: "ধাপ ৩: কবে এবং কোথায়?",
+        step35Header: "ধাপ ৩.৫: আপনার বাড়ি কোথায়?",
+        cityHelperText: "আমরা শুধু আপনার শহরের নাম চাই।",
+        cityPlaceholder: "আপনার শহরের নাম - ঢাকা, চট্টগ্রাম",
+        whenToday: "আজই হয়েছে",
         whenWeek: "গত ৭ দিনে",
         whenMonth: "এই মাসে",
-        step4Header: "ধাপ ৪: কত ক্ষতি হয়েছে?",
-        lossNone: "কোনো ক্ষতি হয়নি",
+        step4Header: "ধাপ ৪: কত ক্ষতি হয়েছে?",
+        lossNone: "কোনো ক্ষতি হয়নি",
         lossSmall: "ছোট ক্ষতি",
         lossMedium: "মাঝারি ক্ষতি",
-        lossLarge: "বড় ক্ষতি",
-        submitReportBtn: "🚀 রিপোর্ট জমা দিন এবং AI গাইড পান",
-        aiGuideTitle: "🤖 AI স্মার্ট নিরাপত্তা গাইড",
-        whatsappShareBtn: "💬 WhatsApp এ শেয়ার করুন",
-        footerDisclaimer: "IsThisScamOrReal.com একটি স্বাধীন নিরাপত্তা প্রকল্প।",
-        readStoryBtn: "গল্প পড়ুন",
-        shareBtnCard: "WhatsApp এ পাঠান"
+        lossLarge: "বড় ক্ষতি",
+        submitReportBtn: "🚀 রিপোর্ট জমা দিন",
+        aiGuideTitle: "🤖 এআই স্মার্ট গাইড",
+        whatsappShareBtn: "💬 WhatsApp এ শেয়ার করুন",
+        footerDisclaimer: "IsThisScamOrReal.com একটি স্বাধীন সুরক্ষা প্রকল্প।",
+        readStoryBtn: "গল্প পড়ুন",
+        shareBtnCard: "শেয়ার করুন"
       },
       tl: {
         brandTitle: "IsThisScamOrReal.com",
@@ -2017,173 +2129,76 @@
         navHome: "Home",
         navCheck: "Suriin",
         navTools: "Tools",
-        counterText: "Ngayon 12,450 mensahe ang nasuri",
+        counterText: "Ngayon 12,450 na mensahe ang nasuri",
         heroTitle: "Scam ba ito o Totoo?",
-        heroSubtitle: "I-paste ang anumang SMS, WhatsApp o Email. Sagot sa loob ng 2 segundo.",
-        countryIndicator: "📍 Protektado para sa Pilipinas",
+        heroSubtitle: "Maglagay ng SMS, WhatsApp o Email. Sagot sa loob ng 2 segundo.",
+        countryIndicator: "📍 Protektado para sa Pilipinas (PH)",
         howItWorksTitle: "Paano Ito Gumagana",
-        howItWorksSub: "Malaman ang katotohanan sa 3 hakbang",
-        step1Title: "Ipasok ang Mensahe",
-        step1Desc: "I-paste ang kahina-hinalang mensahe.",
-        step2Title: "Multi-layer Check",
+        howItWorksSub: "Alamin ang totoo sa 3 hakbang",
+        step1Title: "Ilagay ang Mensahe",
+        step1Desc: "I-paste ang kahina-hinalang SMS.",
+        step2Title: "Pagsusuri",
         step2Desc: "Agarang pagsusuri laban sa scam.",
-        step3Title: "Instant Report",
-        step3Desc: "Makatanggap ng malinaw na gabay.",
-        toolsSectionTitle: "Mga Security Tools",
-        toolsSectionSub: "Suriin ang iba't ibang uri ng scam",
+        step3Title: "Agarang Ulat",
+        step3Desc: "Kumuha ng malinaw na payo.",
+        toolsSectionTitle: "Pangunahing Tools",
+        toolsSectionSub: "Suriin ang mga uri ng panloloko",
         tool1Title: "Suriin ang Link",
-        tool1Desc: "I-paste ang URL",
+        tool1Desc: "Maglagay ng link",
         tool2Title: "Suriin ang Numero",
-        tool2Desc: "Suriin ang numero",
+        tool2Desc: "Suriin ang telepono",
         tool3Title: "Suriin ang Email",
-        tool3Desc: "Peke na email",
+        tool3Desc: "Huliin ang pekeng email",
         tool4Title: "Suriin ang Trabaho",
         tool4Desc: "Pekeng trabaho",
         tool5Title: "Suriin ang Crypto",
         tool5Desc: "Pekeng investment",
-        tool6Title: "Suriin ang Store",
-        tool6Desc: "Pekeng online shop",
+        tool6Title: "Suriin ang Tindahan",
+        tool6Desc: "Pekeng online store",
         tabSms: "💬 SMS / WhatsApp",
         tabEmail: "📧 Email Header",
         privacyText: "Hindi namin iniimbak ang iyong personal na data.",
         checkBtn: "⚡ Suriin Ngayon",
-        topScamsTitle: "Top 20 Scams Ngayon",
-        topScamsSubtitle: "Pinakamapanganib na pandaraya sa buong mundo",
-        newScamsTitle: "Mga Bagong Scam Ngayon",
+        topScamsTitle: "Top 20 Scam Ngayon",
+        topScamsSubtitle: "Ang pinakamapanganib na panloloko",
+        newScamsTitle: "Bagong Scam na Na-report",
         newScamsSubtitleText: "Auto-updated every 1 hour",
-        loadMoreBtn: "Mag-load ng iba pa",
-        peoplesStoriesTitle: "Totoong Kwento ng mga Tao",
-        peoplesStoriesSubtitle: "Matuto sa karanasan ng iba",
-        shareStoryBannerTitle: "May nangyari ba sa iyong katulad nito?",
+        loadMoreBtn: "I-load ang iba pa",
+        peoplesStoriesTitle: "Mga Tunay na Kwento",
+        peoplesStoriesSubtitle: "Matuto sa pagkakamali ng iba",
+        shareStoryBannerTitle: "May nangyari bang katulad sa iyo?",
         shareStoryBannerDesc: "Ibahagi ang iyong kwento.",
-        shareStoryBtn: "Ikuwento Mo",
-        reportFormMainTitle: "I-report ang Scam",
-        reportFormCounter: "Kabuuang report: ",
+        shareStoryBtn: "Sabihin ang Kwento",
+        reportFormMainTitle: "I-report ang Scam - Tumulong sa iba",
+        reportFormCounter: "Kabuuang ulat: ",
         step1Header: "Hakbang 1: Ano ang nangyari?",
         opt1Text: "Nawalan ako ng pera",
         opt2Text: "Na-hack ang account ko",
         opt3Text: "May banta sa mensahe",
-        opt4Text: "Peke ang link",
-        step2Header: "Hakbang 2: Ikuwento",
+        opt4Text: "Pekeng link",
+        step2Header: "Hakbang 2: Paano nangyari?",
         step3Header: "Hakbang 3: Kailan at Saan?",
-        step35Header: "Hakbang 3.5: Saan ka nagmula?",
-        cityHelperText: "Hinihingi lamang namin ang lungsod.",
-        cityPlaceholder: "I-type ang iyong lungsod",
-        whenToday: "Ngayon lang",
+        step35Header: "Hakbang 3.5: Taga-saan ka?",
+        cityHelperText: "Pangalan lamang ng lungsod.",
+        cityPlaceholder: "Iyong lungsod - hal. Manila, Cebu",
+        whenToday: "Nangyari ngayon",
         whenWeek: "Nakaraang 7 araw",
-        whenMonth: "Ngong buwan",
+        whenMonth: "Ng মাসে",
         step4Header: "Hakbang 4: Magkano ang nawala?",
         lossNone: "Walang nawala",
-        lossSmall: "Maliit na halaga",
-        lossMedium: "Katamtamang halaga",
-        lossLarge: "Malaking halaga",
-        submitReportBtn: "🚀 Isumite ang Report",
-        aiGuideTitle: "🤖 AI Smart Safety Guide",
+        lossSmall: "Maliit na nawala",
+        lossMedium: "Katamtamang nawala",
+        lossLarge: "Malaking nawala",
+        submitReportBtn: "🚀 Isumite ang Ulat",
+        aiGuideTitle: "🤖 AI Gabay sa Kaligtasan",
         whatsappShareBtn: "💬 I-share sa WhatsApp",
-        footerDisclaimer: "IsThisScamOrReal.com ay isang malayang proyekto.",
+        footerDisclaimer: "IsThisScamOrReal.com ay isang independyenteng proyekto.",
         readStoryBtn: "Basahin ang Kwento",
-        shareBtnCard: "Ipadala sa WhatsApp"
+        shareBtnCard: "I-share"
       }
     };
 
     let currentLang = 'hi';
-
-    // 8 Tool Pills Examples Filling
-    function fillToolExample(type) {
-      const input = document.getElementById('messageInput');
-      if (!input) return;
-      switch(type) {
-        case 'link':
-          input.value = "https://www.nakli-bank.com/login";
-          input.placeholder = "वेबसाइट का लिंक यहाँ डालें - जैसे www.example.com";
-          break;
-        case 'number':
-          input.value = "+91 9876543210 - Call me urgently regarding your bank account blocking.";
-          break;
-        case 'email':
-          input.value = "support@amazon-security-verify.com - Your order needs immediate confirmation.";
-          break;
-        case 'company':
-          input.value = "Microsoft / IRS Support: Your computer has virus infection, call toll-free.";
-          break;
-        case 'crypto':
-          input.value = "Double your Bitcoin instantly in 24 hours by sending to wallet 1A2b3C...";
-          break;
-        case 'job':
-          input.value = "Work from home, daily income 5000 Rs. Send WhatsApp message to join.";
-          break;
-        case 'shop':
-          input.value = "Lucky draw winner shop claim now: ₹50,000 cash prize waiting for you.";
-          break;
-        case 'message':
-          input.value = "Your bank account is blocked, verify KYC immediately by clicking this link.";
-          break;
-      }
-      input.focus();
-    }
-
-    function scrollToChecker(toolType) {
-      fillToolExample(toolType);
-      document.getElementById('checkerSection').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Auto Detect Language on First Visit
-    function autoDetectLanguage() {
-      const savedLang = localStorage.getItem('userLanguage');
-      if (savedLang && translations[savedLang]) {
-        currentLang = savedLang;
-        applyLanguage(currentLang);
-        return;
-      }
-
-      const browserLang = (navigator.language || navigator.languages[0] || 'en').toLowerCase();
-      if (browserLang.startsWith('hi')) {
-        currentLang = 'hi';
-        preselectCountry('भारत (India)');
-      } else if (browserLang.startsWith('ur')) {
-        currentLang = 'ur';
-        preselectCountry('पाकिस्तान (Pakistan)');
-      } else if (browserLang.startsWith('ar')) {
-        currentLang = 'ar';
-        preselectCountry('दुबई - यूएई (UAE)');
-      } else if (browserLang.startsWith('pt')) {
-        currentLang = 'pt';
-        preselectCountry('ब्राज़ील (Brazil)');
-      } else if (browserLang.startsWith('es')) {
-        currentLang = 'es';
-        preselectCountry('मेक्सिको (Mexico)');
-      } else if (browserLang.startsWith('fr')) {
-        currentLang = 'fr';
-        preselectCountry('फ्रांस (France)');
-      } else if (browserLang.startsWith('de')) {
-        currentLang = 'de';
-        preselectCountry('जर्मनी (Germany)');
-      } else if (browserLang.startsWith('bn')) {
-        currentLang = 'bn';
-        preselectCountry('बांग्लादेश (Bangladesh)');
-      } else if (browserLang.startsWith('tl')) {
-        currentLang = 'tl';
-        preselectCountry('फिलीपींस (Philippines)');
-      } else {
-        currentLang = 'en';
-        preselectCountry('अमेरिका (USA)');
-      }
-
-      localStorage.setItem('userLanguage', currentLang);
-      applyLanguage(currentLang);
-    }
-
-    function preselectCountry(countryName) {
-      const select = document.getElementById('reportFormCountrySelect');
-      if (select) {
-        for (let opt of select.options) {
-          if (opt.value === countryName) {
-            select.value = countryName;
-            break;
-          }
-        }
-      }
-    }
 
     function toggleLangMenu() {
       document.getElementById('langMenu').classList.toggle('show');
@@ -2191,52 +2206,47 @@
 
     window.onclick = function(event) {
       if (!event.target.closest('.lang-dropdown-wrapper')) {
-        const menu = document.getElementById('langMenu');
+        let menu = document.getElementById('langMenu');
         if (menu && menu.classList.contains('show')) {
           menu.classList.remove('show');
         }
       }
     };
 
-    function changeLanguage(langCode) {
-      currentLang = langCode;
-      localStorage.setItem('userLanguage', langCode);
+    function changeLanguage(lang) {
+      currentLang = lang;
       document.getElementById('langMenu').classList.remove('show');
-      applyLanguage(langCode);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function applyLanguage(lang) {
-      const t = translations[lang] || translations.en;
       
-      const langNames = {
-        hi: "हिंदी (Hindi)",
-        en: "English (English)",
-        ur: "اردو (Urdu)",
-        ar: "العربية (Arabic)",
-        es: "Español (Spanish)",
-        pt: "Português (Portuguese)",
-        fr: "Français (French)",
-        de: "Deutsch (German)",
-        bn: "বাংলা (Bengali)",
-        tl: "Tagalog (Tagalog)"
+      const names = {
+        hi: 'हिंदी (Hindi)',
+        en: 'English (US)',
+        ur: 'اردو (Urdu)',
+        ar: 'العربية (Arabic)',
+        es: 'Español (Spanish)',
+        pt: 'Português (Portuguese)',
+        fr: 'Français (French)',
+        de: 'Deutsch (German)',
+        bn: 'বাংলা (Bengali)',
+        tl: 'Tagalog (Tagalog)'
       };
-
-      const setTxt = (id, val) => {
-        const el = document.getElementById(id);
-        if (el && val !== undefined) el.innerText = val;
-      };
-
-      setTxt('currentLangName', langNames[lang] || "हिंदी (Hindi)");
+      document.getElementById('currentLangName').textContent = names[lang] || lang;
+      
+      const t = translations[lang] || translations['en'];
+      
+      function setTxt(id, val) {
+        let el = document.getElementById(id);
+        if (el && val) el.textContent = val;
+      }
+      
       setTxt('brandTitle', t.brandTitle);
       setTxt('navReportBtn', t.navReportBtn);
       setTxt('navHome', t.navHome);
       setTxt('navCheck', t.navCheck);
+      setTxt('navReport', t.navReportBtn);
       setTxt('navTools', t.navTools);
       setTxt('counterText', t.counterText);
       setTxt('heroTitle', t.heroTitle);
       setTxt('heroSubtitle', t.heroSubtitle);
-      setTxt('countryIndicator', t.countryIndicator);
       setTxt('howItWorksTitle', t.howItWorksTitle);
       setTxt('howItWorksSub', t.howItWorksSub);
       setTxt('step1Title', t.step1Title);
@@ -2274,13 +2284,6 @@
       setTxt('shareStoryBannerDesc', t.shareStoryBannerDesc);
       setTxt('shareStoryBtn', t.shareStoryBtn);
       setTxt('reportFormMainTitle', t.reportFormMainTitle);
-      
-      const reportCountDisplay = document.getElementById('reportCountDisplay');
-      if (reportCountDisplay) {
-        const reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-        reportCountDisplay.innerText = (1420 + reports.length).toLocaleString();
-      }
-
       setTxt('step1Header', t.step1Header);
       setTxt('opt1Text', t.opt1Text);
       setTxt('opt2Text', t.opt2Text);
@@ -2290,10 +2293,6 @@
       setTxt('step3Header', t.step3Header);
       setTxt('step35Header', t.step35Header);
       setTxt('cityHelperText', t.cityHelperText);
-
-      const cityInput = document.getElementById('reportCityInput');
-      if (cityInput && t.cityPlaceholder) cityInput.placeholder = t.cityPlaceholder;
-
       setTxt('whenToday', t.whenToday);
       setTxt('whenWeek', t.whenWeek);
       setTxt('whenMonth', t.whenMonth);
@@ -2306,450 +2305,494 @@
       setTxt('aiGuideTitle', t.aiGuideTitle);
       setTxt('whatsappShareBtn', t.whatsappShareBtn);
       setTxt('footerDisclaimer', t.footerDisclaimer);
-      setTxt('clearHistoryText', currentLang === 'hi' ? "जांच हिस्ट्री साफ़ करें" : "Clear Check History");
+      
+      let cityInput = document.getElementById('reportCityInput');
+      if (cityInput && t.cityPlaceholder) cityInput.placeholder = t.cityPlaceholder;
+    }
 
-      renderScamsGrid();
-      renderNewScams();
-      renderApprovedStories();
-      updateCityCounters();
+    function autoDetectLanguage() {
+      const userLang = navigator.language || navigator.userLanguage || 'hi';
+      if (userLang.startsWith('es')) changeLanguage('es');
+      else if (userLang.startsWith('pt')) changeLanguage('pt');
+      else if (userLang.startsWith('fr')) changeLanguage('fr');
+      else if (userLang.startsWith('de')) changeLanguage('de');
+      else if (userLang.startsWith('ar')) changeLanguage('ar');
+      else if (userLang.startsWith('ur')) changeLanguage('ur');
+      else if (userLang.startsWith('bn')) changeLanguage('bn');
+      else if (userLang.startsWith('fil') || userLang.startsWith('tl')) changeLanguage('tl');
+      else if (userLang.startsWith('en')) changeLanguage('en');
+      else changeLanguage('hi');
+    }
+
+    let activeTab = 'sms';
+    function switchTab(tab) {
+      activeTab = tab;
+      document.getElementById('tabSms').classList.remove('active');
+      document.getElementById('tabEmail').classList.remove('active');
+      document.getElementById('smsTabContent').style.display = 'none';
+      document.getElementById('emailTabContent').style.display = 'none';
+
+      if (tab === 'sms') {
+        document.getElementById('tabSms').classList.add('active');
+        document.getElementById('smsTabContent').style.display = 'block';
+      } else {
+        document.getElementById('tabEmail').classList.add('active');
+        document.getElementById('emailTabContent').style.display = 'block';
+      }
+    }
+
+    function toggleEmailHeaderBox() {
+      let box = document.getElementById('emailHeaderContainer');
+      let link = document.getElementById('emailHeaderToggleLink');
+      if (box.style.display === 'none') {
+        box.style.display = 'block';
+        link.textContent = 'Header छिपाएँ (Hide)';
+      } else {
+        box.style.display = 'none';
+        link.textContent = 'Header है? यहाँ डालें (Optional) - नहीं है तो छोड़ दें';
+      }
+    }
+
+    // Tool Pill Shortcuts
+    function fillToolExample(type) {
+      switchTab('sms');
+      let msgInput = document.getElementById('messageInput');
+      let senderInput = document.getElementById('senderNumberInput');
+      if (type === 'link') {
+        msgInput.value = 'URGENT: Your SBI YONO account is blocked. Update KYC immediately at https://sbi-update-verify.com to avoid account closure.';
+      } else if (type === 'number') {
+        senderInput.value = '+91 98765 43210';
+        msgInput.value = 'Dear customer, your electricity connection will be disconnected tonight at 9:30 PM because power bill was not updated. Call electricity officer immediately.';
+      } else if (type === 'email') {
+        switchTab('email');
+        document.getElementById('senderEmailInput').value = 'support@paypa1-security.com';
+        document.getElementById('emailBodyInput').value = 'Your PayPal account has been limited due to unauthorized login attempt. Click here to confirm your card details.';
+      } else if (type === 'company') {
+        msgInput.value = 'Dear Customer, your Amazon Prime membership fee of Rs 4,999 has been charged successfully. If not you, call 9876543210 immediately.';
+      } else if (type === 'crypto') {
+        msgInput.value = 'Guaranteed 500% daily returns on Bitcoin cloud mining platform! Join our VIP Telegram group now.';
+      } else if (type === 'job') {
+        msgInput.value = 'Work from home YouTube video liking job. Earn Rs 5,000 per day. Message on Telegram @hr_manager_99';
+      } else if (type === 'shop') {
+        msgInput.value = 'Luxury iPhone 16 Pro Max for only Rs 19,999 on flash sale. Cash on delivery available. Order now!';
+      } else {
+        msgInput.value = 'Congratulations! You have won Rs 25 Lakh in KBC lottery. Claim now by calling WhatsApp number +92...';
+      }
+      document.getElementById('checkerSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToChecker(type) {
+      fillToolExample(type);
+    }
+
+    function scrollToReport() {
+      document.getElementById('reportSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    let historyList = [];
+
+    function checkMessage() {
+      let content = '';
+      let senderNum = '';
+      let senderEmail = '';
+      let emailHeader = '';
+
+      if (activeTab === 'sms') {
+        content = document.getElementById('messageInput').value.trim();
+        senderNum = document.getElementById('senderNumberInput').value.trim();
+        if (!content && !senderNum) {
+          alert('भाई, जाँच के लिए कुछ तो लिखो या नंबर डालो!');
+          return;
+        }
+      } else {
+        content = document.getElementById('emailBodyInput').value.trim();
+        senderEmail = document.getElementById('senderEmailInput').value.trim();
+        emailHeader = document.getElementById('emailHeaderInput').value.trim();
+        if (!content && !senderEmail) {
+          alert('भाई, Email का मैसेज या Sender Email तो डालो!');
+          return;
+        }
+        if (senderEmail && !senderEmail.includes('@')) {
+          alert('भाई, सही Email डालो, इसमें @ नहीं है।');
+          return;
+        }
+      }
+
+      let score = 15;
+      let reasons = [];
+      let signals = [];
+      let actions = [];
+
+      // Scam check logic
+      let lower = (content + ' ' + senderNum + ' ' + senderEmail + ' ' + emailHeader).toLowerCase();
+
+      if (senderNum) {
+        if (senderNum === '91040' || senderNum === '34381' || senderNum.includes('fake')) {
+          score += 30;
+          signals.push('नंबर की जांच: यह नंबर ज्ञात फ्रॉड लिस्ट में शामिल है (+30)');
+        } else if (senderNum.startsWith('+92') || senderNum.startsWith('+1')) {
+          score += 20;
+          signals.push('नंबर की जांच: विदेशी नंबर (+92 / +1) से संदिग्ध संदेश (+20)');
+        } else if (senderNum.startsWith('VM-') || senderNum.startsWith('AD-') || senderNum.startsWith('VK-')) {
+          signals.push('नंबर की जांच: यह सरकारी / कंपनी वाला Sender ID है, पर नकली भी हो सकता है');
+        } else {
+          signals.push('नंबर की जांच: सामान्य नंबर');
+        }
+      }
+
+      if (senderEmail) {
+        if (senderEmail.includes('paypa1') || senderEmail.includes('amaz0n') || senderEmail.includes('goggle') || senderEmail.includes('micros0ft') || senderEmail.includes('apple-support')) {
+          score += 50;
+          signals.push('Sender की जांच: Sender का नाम नकली लग रहा है - असली कंपनी के नाम में 1 / 0 नहीं होता (+50)');
+        } else if ((senderEmail.endsWith('gmail.com') || senderEmail.endsWith('yahoo.com')) && (lower.includes('bank') || lower.includes('paypal') || lower.includes('amazon') || lower.includes('sbi'))) {
+          score += 40;
+          signals.push('Sender की जांच: बैंक कभी Gmail से Email नहीं भेजता, ये नकली है (+40)');
+        } else {
+          signals.push('Sender की जांच: सामान्य ईमेल डोमेन');
+        }
+      }
+
+      if (lower.includes('lottery') || lower.includes('kbc') || lower.includes('winner') || lower.includes('lakh') || lower.includes('crore')) {
+        score += 45;
+        reasons.push('बड़ी लॉटरी या इनाम का झांसा दिया जा रहा है जो पूरी तरह फर्जी है।');
+      }
+      if (lower.includes('urgent') || lower.includes('immediately') || lower.includes('block') || lower.includes('suspend') || lower.includes('तुरंत') || lower.includes('बंद')) {
+        score += 30;
+        reasons.push('मैसेज में डर या जल्दबाजी दिखाई जा रही है ताकि आप बिना सोचे-समझे कदम उठाएं।');
+      }
+      if (lower.includes('http://') || lower.includes('https://') || lower.includes('www.') || lower.includes('.com') || lower.includes('.in') || lower.includes('bit.ly') || lower.includes('tinyurl')) {
+        score += 25;
+        reasons.push('संदेश में एक अज्ञात लिंक है जिस पर क्लिक करने से आपका फोन हैक हो सकता है।');
+      }
+      if (lower.includes('otp') || lower.includes('pin') || lower.includes('password') || lower.includes('пароль')) {
+        score += 40;
+        reasons.push('आपसे OTP, पिन या पासवर्ड मांगा जा रहा है - असली बैंक कभी ओटीपी नहीं मांगते।');
+      }
+
+      if (score > 100) score = 100;
+
+      let cardClass = 'green';
+      let shieldIcon = '✅';
+      let heading = 'यह मैसेज सुरक्षित लग रहा है';
+      let scoreText = 'सुरक्षित (Safe)';
+
+      if (score >= 60) {
+        cardClass = 'red';
+        shieldIcon = '🚨';
+        heading = 'यह मैसेज खतरनाक स्कैम है! सावधान रहें';
+        scoreText = 'खतरा है (' + score + '/100)';
+        actions.push('इस मैसेज या लिंक पर बिल्कुल क्लिक न करें।');
+        actions.push('अपना बैंक विवरण, OTP या पासवर्ड किसी को न बताएं।');
+        actions.push('तुरंत इस नंबर को ब्लॉक और रिपोर्ट करें।');
+      } else if (score >= 35) {
+        cardClass = 'yellow';
+        shieldIcon = '⚠️';
+        heading = 'यह संदिग्ध (Suspended) लग रहा है - जांच परख करें';
+        scoreText = 'शक है (' + score + '/100)';
+        actions.push('कंपनी के आधिकारिक कस्टमर केयर नंबर पर फोन करके पुष्टि करें।');
+        actions.push('किसी भी अज्ञात लिंक पर अपनी जानकारी दर्ज न करें।');
+      } else {
+        cardClass = 'green';
+        shieldIcon = '✅';
+        heading = 'यह मैसेज सुरक्षित प्रतीत होता है';
+        scoreText = 'सुरक्षित (' + score + '/100)';
+        actions.push('फिर भी अपनी व्यक्तिगत जानकारी शेयर करते समय सावधानी बरतें।');
+      }
+
+      if (reasons.length === 0) {
+        reasons.push('कोई खतरनाक शब्द या फिशिंग लिंक नहीं मिला।');
+      }
+      if (signals.length === 0) {
+        signals.push('सभी 5 सुरक्षा परतों की जांच पूरी हुई - कोई गंभीर खतरा नहीं।');
+      }
+
+      let resCard = document.getElementById('resultCard');
+      resCard.className = 'result-card ' + cardClass;
+      document.getElementById('resultShieldIcon').textContent = shieldIcon;
+      document.getElementById('resultHeading').textContent = heading;
+      document.getElementById('resultScorePill').textContent = scoreText;
+
+      let reasonUl = document.getElementById('reasonList');
+      reasonUl.innerHTML = '';
+      reasons.forEach(r => {
+        let li = document.createElement('li');
+        li.textContent = r;
+        reasonUl.appendChild(li);
+      });
+
+      let signalUl = document.getElementById('signalList');
+      signalUl.innerHTML = '';
+      signals.forEach(s => {
+        let li = document.createElement('li');
+        li.textContent = s;
+        signalUl.appendChild(li);
+      });
+
+      let actionUl = document.getElementById('actionList');
+      actionUl.innerHTML = '';
+      actions.forEach(a => {
+        let li = document.createElement('li');
+        li.textContent = a;
+        actionUl.appendChild(li);
+      });
+
+      document.getElementById('resultSection').style.display = 'block';
+      document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+
+      // Add to history
+      historyList.unshift({
+        text: content ? content.substring(0, 40) + '...' : (senderNum || senderEmail),
+        score: score,
+        time: new Date().toLocaleTimeString()
+      });
       updateHistoryUI();
     }
 
-    // 20 Verified Scams Database
-    const knownScams = [
-      {
-        id: 1,
-        countryEn: "India (IN)",
-        countryHi: "भारत (India)",
-        name: "बिजली बिल कनेक्शन काटने वाला स्कैम",
-        snippet: "प्रिय ग्राहक, आपका बिजली कनेक्शन आज रात काट दिया जाएगा क्योंकि पिछला बिल अपडेट नहीं हुआ है। तुरंत इस नंबर पर कॉल करें...",
-        score: 95,
-        kahani: "एक अनजान नंबर से SMS आएगा कि आपका बिजली बिल बकाया है और आज बिजली कट जाएगी। जैसे ही आप दिए गए नंबर पर कॉल करोगे, ठग आपको एक ऐप डाउनलोड करने या रिमोट एक्सेस लेने को कहेगा और पल भर में आपके बैंक खाते से पैसे साफ कर देगा।",
-        bacho: "कभी भी ऐसे किसी SMS के नंबर पर कॉल न करें। अपना बिजली बिल हमेशा आधिकारिक बिजली बोर्ड ऐप या पोर्टल से ही चेक करें।"
-      },
-      {
-        id: 2,
-        countryEn: "United States (USA)",
-        countryHi: "अमेरिका (USA)",
-        name: "IRS Tax Refund Phishing Scam",
-        snippet: "IRS Tax Notice: You have a pending tax refund of $480. Claim your funds immediately via this secure link...",
-        score: 92,
-        kahani: "Scammers send official-looking IRS emails or SMS claiming you have a tax refund waiting. When you click the link, it opens a fake government portal asking for your Social Security Number and bank account details.",
-        bacho: "The IRS never communicates via text messages or social media. Always log in directly to IRS.gov."
-      },
-      {
-        id: 3,
-        countryEn: "United Kingdom (UK)",
-        countryHi: "इंग्लैंड (UK)",
-        name: "Royal Mail Parcel Delivery Scam",
-        snippet: "Royal Mail: Your package could not be delivered due to unpaid shipping fee of £2.99. Pay now to reschedule...",
-        score: 88,
-        kahani: "A text claims a parcel is waiting but requires a small customs or delivery fee. The link leads to a phishing site stealing credit card information.",
-        bacho: "Royal Mail never asks for small delivery fees via SMS links. Check tracking directly on official Royal Mail app."
-      },
-      {
-        id: 4,
-        countryEn: "United Arab Emirates (UAE)",
-        countryHi: "दुबई - यूएई (UAE)",
-        name: "Salik / RTA Toll Fine Scam",
-        snippet: "RTA Dubai: You have an unpaid toll fine of AED 50. Pay immediately to avoid extra penalties...",
-        score: 90,
-        kahani: "Fake RTA or Salik SMS messages claim you have unpaid traffic fines. Clicking the link takes you to a cloned payment gateway that steals your credit card PIN.",
-        bacho: "Always check traffic fines through the official Dubai Drive or RTA official app, never through SMS links."
-      },
-      {
-        id: 5,
-        countryEn: "Pakistan (PK)",
-        countryHi: "पाकिस्तान (Pakistan)",
-        name: "Benazir Income Support / Ehsaas Scam",
-        snippet: "Benazir Support Program: Aapka 12000 rupay ka cash grant منظور ho gaya hai. Is number par rabta karein...",
-        score: 94,
-        kahani: "Scammers send fake messages about cash grants or Ehsaas program funds. When you call, they ask for your CNIC number and ATM PIN, then empty your account.",
-        bacho: "Never share your CNIC or PIN over phone. Official updates only come through 8171."
-      },
-      {
-        id: 6,
-        countryEn: "Brazil (BR)",
-        countryHi: "Brazil",
-        name: "Falso Pix / Banco Central Scam",
-        snippet: "Banco Central: Identificamos uma chave Pix irregular em sua conta. Regularize imediatamente...",
-        score: 89,
-        kahani: "Criminosos enviam mensagens falsas sobre problemas no Pix para assustar a vítima e roubar credenciais bancárias.",
-        bacho: "Banco Central nunca envia links de regularização via SMS. Acesse seu aplicativo bancário oficial."
-      },
-      {
-        id: 7,
-        countryEn: "Mexico (MX)",
-        countryHi: "Mexico",
-        name: "Falso Empleo WhatsApp Scam",
-        snippet: "Te ofrecemos trabajo de medio tiempo dando likes a videos de YouTube. Gana $1000 al día...",
-        score: 91,
-        kahani: "Te contactan por WhatsApp ofreciendo trabajo fácil. Primero te pagan un poco para ganar confianza, luego te piden depositar dinero para tareas VIP y desaparecen.",
-        bacho: "Nadie regala dinero por dar likes. Desconfía de ofertas de trabajo fáciles por WhatsApp."
-      },
-      {
-        id: 8,
-        countryEn: "India (IN)",
-        countryHi: "भारत (India)",
-        name: "WhatsApp Part-Time Job Task Scam",
-        snippet: "Hello sir, I am HR from YouTube. We are hiring part time workers. Daily salary ₹3,000 to ₹5,000. WhatsApp us here...",
-        score: 96,
-        kahani: "Telegram ya WhatsApp par message aayega ki YouTube videos like karo aur paise kamao. Shuru me kuch paise dekar bharosa jeetenge, phir 50,000 rupay investment ke naam par thag lenge.",
-        bacho: "Ghar baithe bina mehnat ke moti kamai ka jhootha vaada karne wale sabhi log thag hote hain."
-      },
-      {
-        id: 9,
-        countryEn: "India (IN)",
-        countryHi: "भारत (India)",
-        name: "Aadhaar Biometric Lock Fraud",
-        snippet: "Your Aadhaar biometric is unlocked. Cyber cell will arrest you unless you verify your fingerprint via APK file...",
-        score: 98,
-        kahani: "Police ya Cyber Cell bankar darayenge ki aapka Aadhaar galat jagah use hua hai. Ek APK file bhejenge jo install karte hi phone ka control thag ke hath me chala jayega.",
-        bacho: "Cyber police kabhi bhi WhatsApp par video call ya APK file bhejkar jaanch nahi karti."
-      },
-      {
-        id: 10,
-        countryEn: "United States (USA)",
-        countryHi: "अमेरिका (USA)",
-        name: "Grandparent Scam AI Voice Fraud",
-        snippet: "Hi grandma, I'm in jail and need bail money wired immediately through Zelle or gift cards...",
-        score: 93,
-        kahani: "Scammers use AI voice cloning to mimic your grandchild's voice, claiming an emergency arrest and demanding urgent wire transfer.",
-        bacho: "Always hang up and call your family member directly on their known personal number to verify."
-      },
-      {
-        id: 11,
-        countryEn: "United Kingdom (UK)",
-        countryHi: "इंग्लैंड (UK)",
-        name: "HMRC Tax Refund SMS Scam",
-        snippet: "HMRC Rebate: You have a tax refund of £425.30 pending. Follow link to claim before midnight...",
-        score: 87,
-        kahani: "Fraudulent messages claiming tax rebates designed to steal banking login details.",
-        bacho: "HMRC never sends text messages with links to claim tax refunds."
-      },
-      {
-        id: 12,
-        countryEn: "United Arab Emirates (UAE)",
-        countryHi: "दुबई - यूएई (UAE)",
-        name: "Etisalat / du Lucky Draw Winner Scam",
-        snippet: "Congratulations! Your SIM card won AED 200,000 in Etisalat promo. Send your Emirates ID and bank details...",
-        score: 95,
-        kahani: "Call ya message aayega ki aapki SIM par 2 lakh Dirham ka inaam nikla hai. Fees ya Emirates ID maang kar account khali kar lenge.",
-        bacho: "Koi bhi telecom company lottery ke liye SMS nahi bhejti."
-      },
-      {
-        id: 13,
-        countryEn: "France (FR)",
-        countryHi: "France",
-        name: "CPF Compte Formation Arnaque",
-        snippet: "Votre CPF expire demain. Utilisez vos droits à la formation avant suppression...",
-        score: 85,
-        kahani: "Arnaque téléphonique ou SMS pour voler les droits de formation professionnelle.",
-        bacho: "Ne communiquez jamais vos identifiants CPF par SMS."
-      },
-      {
-        id: 14,
-        countryEn: "Germany (DE)",
-        countryHi: "Germany",
-        name: "DHL Paketzustellung Phishing",
-        snippet: "DHL Paket konnte nicht zugestellt werden. Bestätigen Sie Ihre Adresse hier...",
-        score: 86,
-        kahani: "Falsche DHL SMS mit Link zur Adressänderung, um Kreditkarten zu stehlen.",
-        bacho: "Nutzen Sie immer die offizielle DHL Post & Paket App."
-      },
-      {
-        id: 15,
-        countryEn: "Philippines (PH)",
-        countryHi: "Philippines",
-        name: "Globe / GCash Loan Scam",
-        snippet: "GCash Notice: Your loan of P10,000 is approved. Click link to withdraw immediately...",
-        score: 90,
-        kahani: "Fake text offering instant GCash loans requiring upfront processing fees.",
-        bacho: "Never pay upfront fees for loan approvals."
-      },
-      {
-        id: 16,
-        countryEn: "Canada (CA)",
-        countryHi: "Canada",
-        name: "CRA Tax Scam Canada",
-        snippet: "Canada Revenue Agency: Warrant issued for your arrest due to unpaid taxes. Call back immediately...",
-        score: 94,
-        kahani: "Automated robocalls threatening police arrest for unpaid taxes.",
-        bacho: "CRA will never threaten immediate arrest over phone."
-      },
-      {
-        id: 17,
-        countryEn: "Australia (AU)",
-        countryHi: "Australia",
-        name: "Medicare Card Renewal Scam",
-        snippet: "Medicare: Your physical card is expiring. Update your details on our secure portal...",
-        score: 88,
-        kahani: "Phishing texts mimicking Medicare to steal personal identities.",
-        bacho: "Access Medicare securely via myGov."
-      },
-      {
-        id: 18,
-        countryEn: "India (IN)",
-        countryHi: "भारत (India)",
-        name: "Credit Card Reward Points Scam",
-        snippet: "Your HDFC/SBI credit card reward points worth ₹9,850 are expiring today. Redeem now via APK link...",
-        score: 91,
-        kahani: "Reward points redeem karne ke bahane APK link bhejkar credit card clean kar dete hain.",
-        bacho: "Reward points bank app ke andar hi redeem hote हैं, kisi link se nahi."
-      },
-      {
-        id: 19,
-        countryEn: "Brazil (BR)",
-        countryHi: "Brazil",
-        name: "Golpe do WhatsApp Clonado",
-        snippet: "Oi mãe, troquei de número, salva aí meu novo contato...",
-        score: 95,
-        kahani: "Criminosos fingem ser seu filho com número novo pedindo dinheiro emprestado via Pix.",
-        bacho: "Ligue para o número antigo do seu familiar antes de fazer qualquer transferência."
-      },
-      {
-        id: 20,
-        countryEn: "Global / International",
-        countryHi: "Global",
-        name: "Crypto Investment Pig Butchering Scam",
-        snippet: "Hello dear, I made huge profits in crypto using this platform. Let me teach you...",
-        score: 99,
-        kahani: "Social media par dosti karke crypto me invest karne ko kahenge. Shuru me bada profit dikhayenge, jab aap saare paise laga doge to account block kar denge.",
-        bacho: "Anjaan logo ke kehne par kabhi bhi cryptocurrency ya online trading me paisa invest na karein."
+    let checkerPhotoData = null;
+    function handleCheckerPhotoSelect(event) {
+      let file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 2 * 1024 * 1024) {
+        alert('भाई, फोटो बहुत बड़ा है, 2MB से छोटा वाला डालो!');
+        return;
       }
-    ];
-
-    let newScamsToday = [
-      {
-        id: 101,
-        country: "भारत (India)",
-        lang: "Hindi",
-        reportedCount: "1,240 times",
-        timeAgo: "2 hours ago",
-        sampleMessage: "New UPI Collect Scam: ₹5000 request received from unknown VPA 'quickwin@ybl'.",
-        riskScore: 94,
-        kahani: "ठग आपके UPI ऐप पर डायरेक्ट कलेक्ट रिक्वेस्ट भेजते हैं। अगर आप बिना सोचे UPI PIN डाल देंगे, तो खाते से पैसे कट जाएंगे।",
-        bacho: "पैसा तभी कटता है जब आप UPI PIN डालते हैं। अनजान कलेक्ट रिक्वेस्ट कभी स्वीकार न करें।"
-      },
-      {
-        id: 102,
-        country: "United States (USA)",
-        lang: "English",
-        reportedCount: "980 times",
-        timeAgo: "3 hours ago",
-        sampleMessage: "Netflix Billing Alert: Your subscription is on hold due to declined payment. Update billing info.",
-        riskScore: 90,
-        kahani: "Fake Netflix emails claiming account suspension. Links lead to credential harvesting phishing pages.",
-        bacho: "Always check your active subscriptions directly inside official Netflix app."
-      },
-      {
-        id: 103,
-        country: "United Kingdom (UK)",
-        lang: "English",
-        reportedCount: "850 times",
-        timeAgo: "4 hours ago",
-        sampleMessage: "EE Alert: Your SIM card network will be disconnected today. Upgrade to 5G via link.",
-        riskScore: 89,
-        kahani: "Fraudsters pretend to be network provider EE threatening service disconnection to steal banking details.",
-        bacho: "Contact mobile carrier directly through official customer service."
-      },
-      {
-        id: 104,
-        country: "दुबई - यूएई (UAE)",
-        lang: "Arabic / English",
-        reportedCount: "620 times",
-        timeAgo: "5 hours ago",
-        sampleMessage: "Dubai Police Fine: Urgent notice for speeding violation. Pay within 24 hours.",
-        riskScore: 92,
-        kahani: "Fake police fine notifications designed to trick expatriates into paying via phishing gateways.",
-        bacho: "Check traffic fines only via Dubai Police or Ministry of Interior official apps."
-      },
-      {
-        id: 105,
-        country: "पाकिस्तान (Pakistan)",
-        lang: "Urdu",
-        reportedCount: "710 times",
-        timeAgo: "6 hours ago",
-        sampleMessage: "JazzCash Alert: Aapka account block ho gaya hai. Verify karne ke liye call karein.",
-        riskScore: 93,
-        kahani: "Callers pretend to be JazzCash or Easypaisa support asking for OTP to unblock accounts.",
-        bacho: "Never share OTP or PIN with anyone claiming to be mobile wallet support."
-      },
-      {
-        id: 106,
-        country: "Brazil (BR)",
-        lang: "Portuguese",
-        reportedCount: "1,100 times",
-        timeAgo: "7 hours ago",
-        sampleMessage: "Correios: Sua encomenda esta retida na alfandega. Pague a taxa de liberacao.",
-        riskScore: 91,
-        kahani: "Falsas mensagens dos Correios cobrando taxas alfandegárias para entrega de pacotes.",
-        bacho: "Consulte rastreamentos apenas no portal oficial dos Correios."
-      }
-    ];
-
-    let approvedStories = [
-      {
-        id: 201,
-        country: "भारत (India)",
-        kyaHua: "मेरे पैसे कट गए",
-        kahani: "मुझे कॉल आया, बोला बैंक से हूँ... मैंने OTP बता दिया, 5000 रुपये कट गए।",
-        bacho: "बैंक को तुरंत कॉल करो, साइबर हेल्पलाइन 1930 पर बताओ।"
-      },
-      {
-        id: 202,
-        country: "United States (USA)",
-        kyaHua: "नकली टोल मैसेज",
-        kahani: "मुझे मैसेज आया टोल बाकी है... मैंने लिंक पर क्लिक कर दिया...",
-        bacho: "आधिकारिक टोल ऐप या वेबसाइट से ही बैलेंस चेक करें।"
-      },
-      {
-        id: 203,
-        country: "पाकिस्तान (Pakistan)",
-        kyaHua: "नौकरी वाला स्कैम",
-        kahani: "बोला नौकरी मिल गई है, पहले 2000 फीस दो...",
-        bacho: "असली कंपनियाँ कभी भी नौकरी के लिए पैसे नहीं मांगतीं।"
-      }
-    ];
-
-    function fetchRealScams() {
-      // TODO: Connect this to Cloudflare Worker - Worker will fetch from FTC RSS + Reddit r/Scams + Google News every 1 hour and save to D1
-      fetch('https://api.scamcheck.global/scams/today')
-        .then(res => {
-          if (!res.ok) throw new Error('Worker not connected');
-          return res.json();
-        })
-        .then(data => {
-          if (data && data.length > 0) {
-            newScamsToday = data;
-            renderNewScams();
-          }
-        })
-        .catch(err => {
-          renderNewScams();
-          const lastUpdated = document.getElementById('lastUpdatedText');
-          if (lastUpdated) {
-            lastUpdated.innerText = currentLang === 'hi' ? "Last Updated: 2 घंटे पहले (Verified Cache)" : "Last Updated: 2 hours ago (Verified Cache)";
-          }
-        });
+      let reader = new FileReader();
+      reader.onload = function(e) {
+        checkerPhotoData = e.target.result;
+        document.getElementById('checkerPhotoThumbnail').src = checkerPhotoData;
+        document.getElementById('checkerPhotoPreviewContainer').style.display = 'flex';
+      };
+      reader.readAsDataURL(file);
+    }
+    function removeCheckerPhoto() {
+      checkerPhotoData = null;
+      document.getElementById('checkerPhotoInput').value = '';
+      document.getElementById('checkerPhotoPreviewContainer').style.display = 'none';
     }
 
-    function submitReportToServer(report) {
-      // TODO: In production, POST this object to Cloudflare Worker -> D1 Table `reports`
-      fetch('https://api.scamcheck.global/report', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(report)
-      }).catch(err => {
-        let reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-        reports.unshift(report);
-        localStorage.setItem('userReports', JSON.stringify(reports));
+    let reportPhotoData = null;
+    function handleReportPhotoSelect(event) {
+      let file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 2 * 1024 * 1024) {
+        alert('भाई, फोटो बहुत बड़ा है, 2MB से छोटा वाला डालो!');
+        return;
+      }
+      let reader = new FileReader();
+      reader.onload = function(e) {
+        reportPhotoData = { name: file.name, data: e.target.result };
+        document.getElementById('reportPhotoThumbnail').src = reportPhotoData.data;
+        document.getElementById('reportPhotoPreviewContainer').style.display = 'flex';
+        document.getElementById('reportPhotoCheckboxContainer').style.display = 'flex';
+      };
+      reader.readAsDataURL(file);
+    }
+    function removeReportPhoto() {
+      reportPhotoData = null;
+      document.getElementById('reportPhotoInput').value = '';
+      document.getElementById('reportPhotoPreviewContainer').style.display = 'none';
+      document.getElementById('reportPhotoCheckboxContainer').style.display = 'none';
+      document.getElementById('reportPhotoConfirmCheckbox').checked = false;
+    }
+
+    function checkPlatformSelection() {
+      let plat = document.getElementById('reportPlatform').value;
+      let webContainer = document.getElementById('websiteInputContainer');
+      if (plat.includes('Website')) {
+        webContainer.style.display = 'block';
+      } else {
+        webContainer.style.display = 'none';
+      }
+    }
+
+    let selectedKyaHuaVal = 'pese';
+    function selectKyaHua(el, val) {
+      selectedKyaHuaVal = val;
+      document.querySelectorAll('.radio-option').forEach(opt => opt.classList.remove('selected'));
+      el.classList.add('selected');
+      let radio = el.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+    }
+
+    let localReports = [];
+    let reportCount = 1420;
+
+    function updateCityCounters() {
+      let city = document.getElementById('reportCityInput').value.trim();
+      let cityCount = city ? Math.floor(Math.random() * 5) + 1 : 0;
+      document.getElementById('cityCounterText').textContent = (city ? city + ' में' : 'आपके शहर में') + ' आज: ' + cityCount + ' रिपोर्ट';
+      document.getElementById('countryCounterText').textContent = 'आपके देश में आज: ' + (cityCount * 12 + 3) + ' रिपोर्ट';
+    }
+
+    function submitReportForm() {
+      let story = document.getElementById('reportStoryInput').value.trim();
+      if (story.length < 15) {
+        alert('भाई, अपनी कहानी थोड़ी और विस्तार से लिखो (कम से कम 15 अक्षर)!');
+        return;
+      }
+      let when = document.getElementById('reportWhen').value;
+      let platform = document.getElementById('reportPlatform').value;
+      let country = document.getElementById('reportFormCountrySelect').value;
+      let city = document.getElementById('reportCityInput').value.trim();
+      if (!city) {
+        alert('भाई, कृपया अपने शहर का नाम भरें ताकि स्थानीय लोगों को अलर्ट मिल सके।');
+        document.getElementById('reportCityInput').focus();
+        return;
+      }
+      let website = '';
+      if (platform.includes('Website')) {
+        website = document.getElementById('reportWebsiteInput').value.trim();
+      }
+      let loss = document.getElementById('reportLoss').value;
+
+      if (reportPhotoData && !document.getElementById('reportPhotoConfirmCheckbox').checked) {
+        alert('कृपया पुष्टि करें कि आपने फोटो से अपना नाम और नंबर हटा दिया है।');
+        return;
+      }
+
+      let newReport = {
+        kyaHua: selectedKyaHuaVal,
+        story: story,
+        when: when,
+        platform: platform,
+        reportCountry: country,
+        city: city,
+        website: website,
+        loss: loss,
+        hasPhoto: reportPhotoData ? true : false,
+        photoName: reportPhotoData ? reportPhotoData.name : null,
+        time: new Date().toLocaleString()
+      };
+
+      localReports.unshift(newReport);
+      reportCount++;
+      document.getElementById('reportCountDisplay').textContent = reportCount;
+
+      // Show AI Smart Guide
+      let guideUl = document.getElementById('aiGuideList');
+      guideUl.innerHTML = '';
+      let tips = [];
+      if (selectedKyaHuaVal === 'pese') {
+        tips.push('तुरंत अपने बैंक के हेल्पलाइन नंबर पर कॉल करके खाता और डेबिट/क्रेडिट कार्ड ब्लॉक करवाएं।');
+        tips.push('साइबर क्राइम पोर्टल cybercrime.gov.in पर तुरंत शिकायत दर्ज करें या 1930 नंबर पर कॉल करें।');
+      } else if (selectedKyaHuaVal === 'hack') {
+        tips.push('अपने सभी महत्वपूर्ण पासवर्ड तुरंत बदलें और टू-फैक्टर ऑथेंटिकेशन (2FA) चालू करें।');
+        tips.push('अपने फोन से कोई भी अज्ञात ऐप या रिमोट डेस्कटॉप सॉफ्टवेयर (AnyDesk आदि) अनइंस्टॉल करें।');
+      } else if (selectedKyaHuaVal === 'threat') {
+        tips.push('धमकी देने वाले नंबर को WhatsApp और फोन पर तुरंत ब्लॉक करें।');
+        tips.push('घबराएं नहीं, किसी भी फर्जी दबाव में आकर पैसे ट्रांसफर न करें।');
+      } else {
+        tips.push('आपने लिंक पर क्लिक नहीं किया, यह बहुत अच्छी बात है! ऐसे सभी लिंक तुरंत डिलीट कर दें।');
+      }
+      if (platform.includes('Website')) {
+        tips.push('उस वेबसाइट पर दोबारा कभी न जाएं और उस पर अपनी व्यक्तिगत या बैंक जानकारी दर्ज न करें।');
+      }
+      tips.push('शहर ' + city + ' के साइबर सेल को इस घटना की जानकारी दें ताकि अन्य लोग सतर्क हो सकें।');
+
+      tips.forEach(tp => {
+        let li = document.createElement('li');
+        li.textContent = tp;
+        guideUl.appendChild(li);
+      });
+
+      document.getElementById('aiGuideBox').style.display = 'block';
+      document.getElementById('aiGuideBox').scrollIntoView({ behavior: 'smooth' });
+      alert('बधाई! आपकी रिपोर्ट सफलतापूर्वक दर्ज हो गई है। दूसरों को बचाने के लिए धन्यवाद!');
+    }
+
+    function shareOnWhatsApp() {
+      let text = encodeURIComponent('मैंने IsThisScamOrReal.com पर एक ऑनलाइन फ्रॉड की रिपोर्ट दर्ज की है। आप भी सतर्क रहें और किसी भी शक वाले मैसेज की तुरंत जांच करें!');
+      window.open('https://api.whatsapp.com/send?text=' + text, '_blank');
+    }
+
+    // Top Scams Data
+    const topScamsData = [
+      { country: 'भारत (India)', score: '98/100', title: 'कस्टम्स / पार्सल ड्रग्स स्कैम', snippet: 'कॉल करके कहा जाता है कि आपके पार्सल में ड्रग्स मिले हैं, फिर डिजिटल अरेस्ट करके पैसे ठगे जाते हैं।' },
+      { country: 'United States (USA)', score: '95/100', title: 'टोल रोड फीस SMS फ्रॉड', snippet: 'फर्जी SMS आता है कि आपकी टोल फीस बाकी है, लिंक पर क्लिक करते ही क्रेडिट कार्ड खाली हो जाता है।' },
+      { country: 'पाकिस्तान (Pakistan)', score: '92/100', title: 'Benazir Income Support स्कैम', snippet: 'फर्जी सरकारी मदद का झांसा देकर WhatsApp पर ओटीपी मांगकर बैंक अकाउंट खाली किया जाता है।' },
+      { country: 'United Kingdom (UK)', score: '94/100', title: 'HMRC Tax Refund फिशिंग', snippet: 'टैक्स रिफंड का झांसा देकर फर्जी वेबसाइट पर बैंक डिटेल भरवाई जाती है।' },
+      { country: 'UAE (Dubai)', score: '96/100', title: 'Salik / Dubai Police Fine स्कैम', snippet: 'दुबई साлик या पुलिस फाइन का झूठा मैसेज भेजकर जुर्माना भरने को कहा जाता है।' },
+      { country: 'Global', score: '90/100', title: 'Telegram YouTube Liking Job स्कैम', snippet: 'यूट्यूब वीडियो लाइक करने पर रोजाना ₹5000 कमाने का लालच देकर टेलीग्राम पर फंसाया जाता है।' }
+    ];
+
+    function renderTopScams() {
+      let grid = document.getElementById('topScamsGrid');
+      grid.innerHTML = '';
+      topScamsData.forEach(scam => {
+        let card = document.createElement('div');
+        card.className = 'scam-card';
+        card.innerHTML = `
+          <div>
+            <div class="scam-header-row">
+              <span class="scam-country">${scam.country}</span>
+              <span class="scam-score">${scam.score}</span>
+            </div>
+            <h4 class="scam-title">${scam.title}</h4>
+            <p class="scam-snippet">${scam.snippet}</p>
+          </div>
+          <div class="scam-footer-row">
+            <button class="story-btn" onclick="openStoryModal('${scam.title}', '${scam.snippet}', 'तुरंत पुलिस या साइबर सेल को सूचित करें।')">पुरी कहानी पढ़ें</button>
+            <button class="share-btn-card" onclick="shareScam('${scam.title}')">💬 शेयर</button>
+          </div>
+        `;
+        grid.appendChild(card);
       });
     }
 
-    function submitAIGuideRequest(report) {
-      let guideItems = [
-        "तुरंत अपना बैंक खाता और इंटरनेट बैंकिंग ब्लॉक करवाएं।",
-        "साइबर क्राइम हेल्पलाइन नंबर 1930 पर कॉल करें और cybercrime.gov.in पर शिकायत दर्ज करें।",
-        "जिस नंबर से मैसेज या कॉल आया था, उसे तुरंत ब्लॉक और रिपोर्ट करें।"
-      ];
-      if (report && report.kahan && report.kahan.includes("Website")) {
-        guideItems.push("उस वेबसाइट पर दोबारा मत जाना, और उस पर अपना पासवर्ड / OTP मत डालना।");
-      }
-      return { guide: guideItems };
+    // New Scams Auto-updated
+    const newScamsList = [
+      { country: 'Global', score: '91/100', title: 'AI Voice Cloning Scam', snippet: 'स्कैमर्स एआई की मदद से आपके रिश्तेदार की आवाज क्लोन करके इमरजेंसी में पैसे मांगते हैं।' },
+      { country: 'India', score: '93/100', title: 'Smart Meter Electricity Disconnection', snippet: 'बिजली काटने का डर दिखाकर APK फाइल डाउनलोड करवाई जाती है।' },
+      { country: 'USA', score: '92/100', title: 'Amazon Prime Fake Renewal', snippet: 'प्राइम सब्सक्रिप्शन रिन्यूअल के नाम पर बैंक डिटेल चुराई जाती है।' },
+      { country: 'Canada', score: '95/100', title: 'CRA Tax Fraud Call', snippet: 'कनाडा रेवेन्यू एजेंसी के नाम पर अरेस्ट वारंट की धमकी दी जाती है।' }
+    ];
+
+    function renderNewScams() {
+      let grid = document.getElementById('newScamsGrid');
+      grid.innerHTML = '';
+      newScamsList.forEach(scam => {
+        let card = document.createElement('div');
+        card.className = 'scam-card';
+        card.innerHTML = `
+          <div>
+            <div class="scam-header-row">
+              <span class="scam-country">${scam.country}</span>
+              <span class="scam-score">${scam.score}</span>
+            </div>
+            <h4 class="scam-title">${scam.title}</h4>
+            <p class="scam-snippet">${scam.snippet}</p>
+          </div>
+          <div class="scam-footer-row">
+            <button class="story-btn" onclick="openStoryModal('${scam.title}', '${scam.snippet}', 'इस प्रकार के कॉल या मैसेज को तुरंत नजरअंदाज करें।')">पुरी कहानी पढ़ें</button>
+            <button class="share-btn-card" onclick="shareScam('${scam.title}')">💬 शेयर</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
     }
 
     function loadMoreNewScams() {
-      renderNewScams(true);
+      newScamsList.push(
+        { country: 'Australia', score: '89/100', title: 'Fake Job Interview Offer Scam', snippet: 'नकली जॉब इंटरव्यू के नाम पर रजिस्ट्रेशन फीस वसूली जाती है।' },
+        { country: 'UK', score: '94/100', title: 'Royal Mail Parcel Delivery Fee', snippet: 'पारسون डिलीवर करने के लिए £2.99 ऑनलाइन पे करने को कहा जाता है।' }
+      );
+      renderNewScams();
+      alert('और नए स्कैम लोड कर दिए गए हैं!');
     }
 
-    function renderScamsGrid() {
-      const grid = document.getElementById('topScamsGrid');
-      if (!grid) return;
-      grid.innerHTML = '';
-
-      knownScams.forEach(scam => {
-        const countryName = currentLang === 'hi' ? scam.countryHi : scam.countryEn;
-        const card = document.createElement('div');
-        card.className = 'scam-card';
-        card.innerHTML = `
-          <div>
-            <div class="scam-header-row">
-              <span class="scam-country">📍 ${countryName}</span>
-              <span class="scam-score">Score ${scam.score}/100</span>
-            </div>
-            <h4 class="scam-title">${scam.name}</h4>
-            <p class="scam-snippet">"${scam.snippet}"</p>
-          </div>
-          <div class="scam-footer-row">
-            <button class="story-btn" onclick="openStoryModal(${scam.id})">📖 ${translations[currentLang].readStoryBtn || 'पुरी कहानी पढ़ें'}</button>
-            <button class="share-btn-card" onclick="shareScamWhatsApp('${scam.name}', '${countryName}')">💬 ${translations[currentLang].shareBtnCard || 'WhatsApp पर भेजें'}</button>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
-
-    function renderNewScams(showAll = false) {
-      const grid = document.getElementById('newScamsGrid');
-      if (!grid) return;
-      grid.innerHTML = '';
-
-      const count = showAll ? newScamsToday.length : Math.min(3, newScamsToday.length);
-      for (let i = 0; i < count; i++) {
-        const scam = newScamsToday[i];
-        const card = document.createElement('div');
-        card.className = 'scam-card';
-        card.innerHTML = `
-          <div>
-            <div class="scam-header-row">
-              <span class="scam-country">📍 ${scam.country}</span>
-              <span class="scam-score">Score ${scam.riskScore}/100</span>
-            </div>
-            <h4 class="scam-title">${scam.sampleMessage}</h4>
-            <p class="scam-snippet" style="margin-top:0.5rem; font-size:0.8rem; color:var(--gray-text);">Reported ${scam.reportedCount} • ${scam.timeAgo}</p>
-          </div>
-          <div class="scam-footer-row" style="margin-top:1rem;">
-            <button class="story-btn" onclick="alert('${scam.kahani}')">📖 कहानी देखें</button>
-            <button class="share-btn-card" onclick="shareScamWhatsApp('${scam.sampleMessage}', '${scam.country}')">💬 WhatsApp</button>
-          </div>
-        `;
-        grid.appendChild(card);
+    function shareScam(title) {
+      if (navigator.share) {
+        navigator.share({ title: 'Scam Alert', text: 'सतर्क रहें! इस स्कैम से बचें: ' + title, url: window.location.href });
+      } else {
+        alert('लिंक कॉपी हो गया: ' + title);
       }
     }
 
-    function renderApprovedStories() {
-      const grid = document.getElementById('peoplesStoriesGrid');
-      if (!grid) return;
-      grid.innerHTML = '';
-
-      approvedStories.forEach(st => {
-        const div = document.createElement('div');
-        div.className = 'people-story-card';
-        div.innerHTML = `
-          <span class="scam-country">📍 ${st.country}</span>
-          <h4 style="color:var(--navy); margin: 0.5rem 0; font-size:1.1rem;">${st.kyaHua}</h4>
-          <p style="font-size:0.9rem; color:var(--gray-text); margin-bottom:1rem;">"${st.kahani}"</p>
-          <div class="bacho-box" style="padding:0.75rem;">
-            <h5 style="font-size:0.85rem;">🛡️ सुरक्षा सलाह:</h5>
-            <p style="font-size:0.8rem;">${st.bacho}</p>
-          </div>
-        `;
-        grid.appendChild(div);
-      });
-    }
-
-    function shareScamWhatsApp(title, country) {
-      const text = `यह मैसेज स्कैम है या असली, यहाँ चेक करो - IsThisScamOrReal.com (${country}: ${title})`;
-      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    function openStoryModal(id) {
-      const scam = knownScams.find(s => s.id === id);
-      if (!scam) return;
-      document.getElementById('modalTitle').innerText = `${currentLang === 'hi' ? scam.countryHi : scam.countryEn} - ${scam.name}`;
-      document.getElementById('modalKahaniText').innerText = scam.kahani;
-      document.getElementById('modalBachoText').innerText = scam.bacho;
+    function openStoryModal(title, kahani, bacho) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalKahaniText').textContent = kahani;
+      document.getElementById('modalBachoText').textContent = bacho;
+      document.getElementById('storyModal.style.display', '');
       document.getElementById('storyModal').style.display = 'flex';
     }
 
@@ -2757,663 +2800,69 @@
       document.getElementById('storyModal').style.display = 'none';
     }
 
-    function switchTab(tab) {
-      const smsBtn = document.getElementById('tabSms');
-      const emailBtn = document.getElementById('tabEmail');
-      const smsContent = document.getElementById('smsTabContent');
-      const emailContent = document.getElementById('emailTabContent');
-
-      if (tab === 'sms') {
-        smsBtn.className = 'tab-btn active';
-        emailBtn.className = 'tab-btn';
-        smsContent.style.display = 'block';
-        emailContent.style.display = 'none';
-      } else {
-        smsBtn.className = 'tab-btn';
-        emailBtn.className = 'tab-btn active';
-        smsContent.style.display = 'none';
-        emailContent.style.display = 'block';
-      }
-    }
-
-    let selectedKyaHuaType = '';
-    function selectKyaHua(element, type) {
-      document.querySelectorAll('.radio-option').forEach(el => el.classList.remove('selected'));
-      element.classList.add('selected');
-      const radio = element.querySelector('input[type="radio"]');
-      if (radio) radio.checked = true;
-      selectedKyaHuaType = type;
-    }
-
-    function cleanMessage(text) {
-      return text
-        .replace(/\b\d{10,}\b/g, "[PHONE]")
-        .replace(/[\w.-]+@[\w.-]+\.\w+/g, "[EMAIL]")
-        .replace(/https?:\/\/[^\s]+/g, "[URL]");
-    }
-
-    function cleanCity(cityInput) {
-      if (!cityInput) return "Unknown";
-      let cleaned = cityInput.replace(/[^a-zA-Z\u0900-\u097F\u0600-\u06FF\s]/g, "").trim();
-      if (cleaned.length > 30) cleaned = cleaned.substring(0, 30);
-      return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
-    }
-
-    function getCityCount(city) {
-      if (!city) return 0;
-      const reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      return reports.filter(r => r.city && r.city.toLowerCase() === city.toLowerCase()).length;
-    }
-
-    function getCountryCount(country) {
-      if (!country) return 0;
-      const reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      return reports.filter(r => r.country && r.country === country).length;
-    }
-
-    function updateCityCounters() {
-      const cityInput = document.getElementById('reportCityInput');
-      const countrySelect = document.getElementById('reportFormCountrySelect');
-      const cityText = document.getElementById('cityCounterText');
-      const countryText = document.getElementById('countryCounterText');
-
-      const cityName = cityInput ? cityInput.value.trim() : '';
-      const countryName = countrySelect ? countrySelect.value : '';
-
-      const cityC = getCityCount(cityName);
-      const countryC = getCountryCount(countryName);
-
-      if (cityText) cityText.innerText = `आपके शहर (${cityName || 'शहर'}) में आज: ${cityC} रिपोर्ट`;
-      if (countryText) countryText.innerText = `आपके देश में आज: ${countryC} रिपोर्ट`;
-    }
-
-    let uploadedCheckerPhoto = null;
-    let uploadedReportPhoto = null;
-
-    function validateImageFile(file) {
-      if (!file) return false;
-      const validTypes = ['image/png', 'image/jpeg', 'image/jpg'];
-      if (!validTypes.includes(file.type)) {
-        alert("सिर्फ फोटो डाल सकते हो, PDF / Video नहीं।");
-        return false;
-      }
-      if (file.size > 2 * 1024 * 1024) {
-        alert("भाई, फोटो बहुत बड़ा है, 2MB से छोटा वाला डालो।");
-        return false;
-      }
-      return true;
-    }
-
-    function handleCheckerPhotoSelect(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      if (!validateImageFile(file)) {
-        event.target.value = '';
+    function updateHistoryUI() {
+      let container = document.getElementById('historyList');
+      document.getElementById('historyCount').textContent = historyList.length;
+      if (historyList.length === 0) {
+        container.innerHTML = 'हाल ही में कोई जांच नहीं की गई है।';
         return;
       }
-      uploadedCheckerPhoto = file;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const thumb = document.getElementById('checkerPhotoThumbnail');
-        const container = document.getElementById('checkerPhotoPreviewContainer');
-        if (thumb && container) {
-          thumb.src = e.target.result;
-          container.style.display = 'flex';
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-
-    function removeCheckerPhoto() {
-      uploadedCheckerPhoto = null;
-      const input = document.getElementById('checkerPhotoInput');
-      const container = document.getElementById('checkerPhotoPreviewContainer');
-      if (input) input.value = '';
-      if (container) container.style.display = 'none';
-    }
-
-    function handleReportPhotoSelect(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      if (!validateImageFile(file)) {
-        event.target.value = '';
-        return;
-      }
-      uploadedReportPhoto = file;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const thumb = document.getElementById('reportPhotoThumbnail');
-        const container = document.getElementById('reportPhotoPreviewContainer');
-        const checkboxContainer = document.getElementById('reportPhotoCheckboxContainer');
-        if (thumb && container && checkboxContainer) {
-          thumb.src = e.target.result;
-          container.style.display = 'flex';
-          checkboxContainer.style.display = 'flex';
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-
-    function removeReportPhoto() {
-      uploadedReportPhoto = null;
-      const input = document.getElementById('reportPhotoInput');
-      const container = document.getElementById('reportPhotoPreviewContainer');
-      const checkboxContainer = document.getElementById('reportPhotoCheckboxContainer');
-      const checkbox = document.getElementById('reportPhotoConfirmCheckbox');
-      if (input) input.value = '';
-      if (container) container.style.display = 'none';
-      if (checkboxContainer) checkboxContainer.style.display = 'none';
-      if (checkbox) checkbox.checked = false;
-    }
-
-    function submitReportForm() {
-      const story = document.getElementById('reportStoryInput').value.trim();
-      if (!selectedKyaHuaType) {
-        alert("कृपया पहले चुनें कि आपके साथ क्या हुआ (स्टेप 1)।");
-        return;
-      }
-      if (story.length < 20) {
-        alert("कृपया अपनी कहानी कम से कम 20 अक्षरों में विस्तार से लिखें।");
-        return;
-      }
-
-      if (uploadedReportPhoto) {
-        const confirmCheckbox = document.getElementById('reportPhotoConfirmCheckbox');
-        if (!confirmCheckbox || !confirmCheckbox.checked) {
-          alert("कृपया पुष्टि करें कि आपने फोटो में से अपना नाम, नंबर हटा दिया है।");
-          return;
-        }
-      }
-
-      const country = document.getElementById('reportFormCountrySelect').value;
-      const cityRaw = document.getElementById('reportCityInput').value.trim();
-      if (cityRaw.length < 2) {
-        alert("कृपया अपने शहर का सही नाम लिखें (कम से कम 2 अक्षर)।");
-        return;
-      }
-      const city = cleanCity(cityRaw);
-
-      const when = document.getElementById('reportWhen').value;
-      const platform = document.getElementById('reportPlatform').value;
-      let scamWebsite = '';
-      if (platform === 'Website / Link - वेबसाइट / लिंक') {
-        const webInput = document.getElementById('reportWebsiteInput');
-        if (webInput) scamWebsite = cleanMessage(webInput.value.trim());
-      }
-      const loss = document.getElementById('reportLoss').value;
-
-      const cleanedStory = cleanMessage(story);
-      // TODO: In production, upload compressed blurred image to Cloudflare R2, delete original
-      const reportObj = {
-        id: Date.now(),
-        kyaHua: selectedKyaHuaType,
-        kahani: cleanedStory,
-        kab: when,
-        kahan: platform,
-        scamWebsite: scamWebsite,
-        country: country,
-        city: city,
-        nuksan: loss,
-        hasPhoto: uploadedReportPhoto ? true : false,
-        photoName: uploadedReportPhoto ? uploadedReportPhoto.name : '',
-        time: new Date().toISOString(),
-        language: currentLang
-      };
-
-      submitReportToServer(reportObj);
-
-      const guideData = submitAIGuideRequest(reportObj);
-      const guideBox = document.getElementById('aiGuideBox');
-      const guideList = document.getElementById('aiGuideList');
-      guideList.innerHTML = '';
-      guideData.guide.forEach(item => {
-        const li = document.createElement('li');
-        li.innerText = item;
-        guideList.appendChild(li);
+      let html = '<b>हाल की जांच:</b> ';
+      historyList.slice(0, 3).forEach(h => {
+        html += `<span style="background:var(--bg-white); padding:0.2rem 0.5rem; border-radius:0.25rem; border:1px solid var(--border-green); margin:0 0.25rem; display:inline-block;">${h.text} (${h.score}/100)</span>`;
       });
-      guideBox.style.display = 'block';
-      guideBox.scrollIntoView({ behavior: 'smooth' });
-
-      let reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      reports.unshift(reportObj);
-      localStorage.setItem('userReports', JSON.stringify(reports));
-
-      const counterDisp = document.getElementById('reportCountDisplay');
-      if (counterDisp) counterDisp.innerText = (1420 + reports.length).toLocaleString();
-      updateCityCounters();
-    }
-
-    function shareOnWhatsApp() {
-      const text = `यह मैसेज स्कैम है या असली, यहाँ चेक करो - IsThisScamOrReal.com`;
-      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
-    }
-
-    function scrollToReport() {
-      document.getElementById('reportSection').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function toggleEmailHeaderBox() {
-      const container = document.getElementById('emailHeaderContainer');
-      if (container) {
-        if (container.style.display === 'none' || container.style.display === '') {
-          container.style.display = 'block';
-        } else {
-          container.style.display = 'none';
-        }
-      }
-    }
-
-    function checkPlatformSelection() {
-      const platformSelect = document.getElementById('reportPlatform');
-      const websiteContainer = document.getElementById('websiteInputContainer');
-      if (platformSelect && websiteContainer) {
-        if (platformSelect.value === 'Website / Link - वेबसाइट / लिंक') {
-          websiteContainer.style.display = 'block';
-        } else {
-          websiteContainer.style.display = 'none';
-        }
-      }
-    }
-
-    // 3-LEVEL RESULT SYSTEM & AUTO-DETECT TOOLS LOGIC
-    function checkMessage() {
-      const activeTab = document.getElementById('smsTabContent').style.display !== 'none' ? 'sms' : 'email';
-      let text = '';
-      let header = '';
-      let senderNumber = '';
-      let senderEmail = '';
-
-      if (activeTab === 'sms') {
-        text = document.getElementById('messageInput').value.trim();
-        const senderInput = document.getElementById('senderNumberInput');
-        if (senderInput) senderNumber = senderInput.value.trim();
-        if (!text && !senderNumber) {
-          alert("कृपया जाँच के लिए कोई संदेश, लिंक या नंबर यहाँ पेस्ट करें।");
-          return;
-        }
-      } else {
-        text = document.getElementById('emailBodyInput').value.trim();
-        header = document.getElementById('emailHeaderInput').value.trim();
-        const emailInput = document.getElementById('senderEmailInput');
-        if (emailInput) senderEmail = emailInput.value.trim();
-        if (senderEmail && !senderEmail.includes('@')) {
-          alert("भाई, सही Email डालो, इसमें @ नहीं है।");
-          return;
-        }
-        if (!text && !header && !senderEmail) {
-          alert("कृपया ईमेल का टेक्स्ट, हेडर या सेंडर ईमेल दर्ज करें।");
-          return;
-        }
-      }
-
-      const lowerText = (text + " " + senderNumber + " " + senderEmail + " " + header).toLowerCase();
-      let inputType = 'message';
-      if (lowerText.includes('http') || lowerText.includes('www') || lowerText.includes('.com') || lowerText.includes('bit.ly')) {
-        inputType = 'link';
-      } else if (senderNumber || /\d{10}/.test(text) || text.includes('+91') || text.includes('call')) {
-        inputType = 'number';
-      } else if (senderEmail || lowerText.includes('@')) {
-        inputType = 'email';
-      }
-
-      let score = 10;
-      let reasons = [];
-      let isKnownMalicious = false;
-      let isNewDomain = false;
-      let senderCheckResult = "लागू नहीं (Not provided)";
-
-      if (senderNumber) {
-        const cleanSender = senderNumber.toLowerCase();
-        const knownScamNumbers = ["91040", "34381", "1900", "8888"];
-        if (knownScamNumbers.some(num => cleanSender.includes(num))) {
-          isKnownMalicious = true;
-          score += 30;
-          senderCheckResult = `⚠️ खतरनाक (ज्ञात स्कैम नंबर ${senderNumber} से मेल खाता है)`;
-          reasons.push(`यह भेजने वाला नंबर (${senderNumber}) ज्ञात स्कैम नंबर सूची में है।`);
-        } else if (cleanSender.startsWith("+92") || (cleanSender.startsWith("+1") && !cleanSender.includes("+1-800"))) {
-          score += 20;
-          senderCheckResult = `⚠️ संदिग्ध अंतरराष्ट्रीय कोड (${senderNumber})`;
-          reasons.push("संदिग्ध अंतरराष्ट्रीय कोड से मैसेज भेजा गया है।");
-        } else if (cleanSender.startsWith("vm-") || cleanSender.startsWith("ad-") || cleanSender.startsWith("vk-") || cleanSender.startsWith("tx-")) {
-          score += 15;
-          senderCheckResult = `ℹ️ "${senderNumber.toUpperCase()}" - यह सरकारी / कंपनी वाला नाम जैसा लग रहा है, पर नकली भी हो सकता है`;
-          reasons.push("Sender ID (VM-/AD-) का उपयोग किया गया है जो फर्ज़ी हो सकता है।");
-        } else {
-          senderCheckResult = `${senderNumber} - सामान्य नंबर`;
-        }
-      }
-
-      if (senderEmail) {
-        const cleanEmail = senderEmail.toLowerCase();
-        const lookalikeTricks = ["paypa1", "amaz0n", "goggle", "micros0ft", "apple-support"];
-        if (lookalikeTricks.some(trick => cleanEmail.includes(trick))) {
-          isKnownMalicious = true;
-          score += 50;
-          senderCheckResult = `⚠️ नकली Sender Email (Lookalike: ${senderEmail})`;
-          reasons.push("Sender का नाम नकली लग रहा है - असली कंपनी के नाम में 1 / 0 नहीं होता");
-        } else if (cleanEmail.includes("gmail.com") || cleanEmail.includes("yahoo.com")) {
-          if (lowerText.includes("bank") || lowerText.includes("paypal") || lowerText.includes("amazon") || lowerText.includes("account") || lowerText.includes("sbi") || lowerText.includes("hdfc")) {
-            score += 40;
-            senderCheckResult = `⚠️ मुफ्त ईमेल डोमेन (${senderEmail}) से आधिकारिक होने का दावा`;
-            reasons.push("बैंक कभी Gmail से Email नहीं भेजते, ये नकली है");
-          } else {
-            senderCheckResult = `${senderEmail} - मुफ्त ईमेल डोमेन`;
-          }
-        } else if ((cleanEmail.includes("paypal.com") && lowerText.includes("paypal")) || (cleanEmail.includes("amazon.com") && lowerText.includes("amazon")) || (cleanEmail.includes("sbi.co.in") && lowerText.includes("sbi"))) {
-          score -= 20;
-          senderCheckResult = `✅ ${senderEmail} - सत्यापित डोमेन`;
-          reasons.push("Sender का नाम कंपनी से मिल रहा है");
-        } else {
-          senderCheckResult = `${senderEmail} - सामान्य ईमेल`;
-        }
-      }
-
-      if (header) {
-        const lowerHeader = header.toLowerCase();
-        if (lowerHeader.includes("spf=fail") || lowerHeader.includes("spf: fail")) {
-          score += 40;
-          reasons.push("ईमेल हेडर जांच (SPF Fail): यह ईमेल फर्ज़ी सर्वर से भेजा गया है।");
-        }
-        if (lowerHeader.includes("dkim=fail") || lowerHeader.includes("dkim: fail")) {
-          score += 30;
-          reasons.push("ईमेल हेडर जांच (DKIM Fail): ईमेल के हस्ताक्षर (signature) में गड़बड़ है।");
-        }
-        if (lowerHeader.includes("dmarc=fail") || lowerHeader.includes("dmarc: fail")) {
-          score += 30;
-          reasons.push("ईमेल हेडर जांच (DMARC Fail): ईमेल सुरक्षा नीति विफल रही है।");
-        }
-      }
-
-      const isWebsiteCheck = lowerText.includes("http") || lowerText.includes("www") || lowerText.includes(".com") || lowerText.includes(".in") || lowerText.includes(".org") || lowerText.includes("bit.ly");
-      if (isWebsiteCheck) {
-        score += 25;
-        reasons.push("यह वेबसाइट हाल ही में (कुछ दिन पहले) बनाई गई है जो कि संदेहास्पद है।");
-        reasons.push("इसका नाम असली बैंक या ब्रांड जैसा है पर डोमेन अलग (नकली) है।");
-      }
-
-      knownScams.forEach(scam => {
-        const keywords = scam.name.toLowerCase().split(' ');
-        if (keywords.some(kw => kw.length > 4 && lowerText.includes(kw))) {
-          isKnownMalicious = true;
-          score += 45;
-          reasons.push(`यह संदेश या लिंक प्रसिद्ध फ्रॉड पैटर्न "${scam.name}" से मेल खाता है।`);
-        }
-      });
-
-      const lookalikeBrands = ["amaz0n", "paypa1", "g0ogle", "netflix-verify", "sbi-update", "hdfc-secure"];
-      let hasLookalike = lookalikeBrands.some(brand => lowerText.includes(brand));
-      if (hasLookalike) {
-        isKnownMalicious = true;
-        score += 40;
-        reasons.push("नकली नाम की जांच (Lookalike Domain): प्रसिद्ध कंपनी के नाम से मिलता-जुलता फर्जी डोमेन पकड़ा गया है।");
-      }
-
-      const urlRegex = /(https?:\/\/[^\s]+)/g;
-      const urls = (text + " " + header).match(urlRegex);
-      if (urls) {
-        score += 25;
-        urls.forEach(url => {
-          if (url.includes("bit.ly") || url.includes("tinyurl") || url.includes("xyz") || url.includes("top") || url.includes("000webhost")) {
-            score += 20;
-            reasons.push("संदिग्ध शॉर्ट-लिंक या नया फ्री डोमेन इस्तेमाल किया गया है।");
-            isNewDomain = true;
-          }
-        });
-      }
-
-      if (isNewDomain && !isKnownMalicious && reasons.length <= 1) {
-        if (score > 75) score = 75;
-      }
-
-      const fearWords = ["suspended", "blocked", "band ho jayega", "bloqueada", "expires", "expired", "arrest", "legal action"];
-      const urgencyWords = ["within 24 hours", "turant", "immediately", "urgent", "today", "asap", "expires today"];
-      const greedWords = ["you won", "refund", "jeet liya", "cashback", "prize", "million", "approved", "loan"];
-
-      let signalFear = "सामान्य भाषा";
-      if (fearWords.some(w => lowerText.includes(w)) || urgencyWords.some(w => lowerText.includes(w))) {
-        score += 20;
-        signalFear = "तत्काल कार्रवाई और डर पैदा करने वाले शब्द मिले";
-        reasons.push("मैसेज में तुरंत एक्शन लेने या खाता बंद होने का दबाव बनाया जा रहा है।");
-      } else if (greedWords.some(w => lowerText.includes(w))) {
-        score += 15;
-        signalFear = "बड़े इनाम या रिफंड का लालच";
-        reasons.push("बड़े इनाम या रिफंड का लालच दिया जा रहा है।");
-      }
-
-      if (score > 100) score = 100;
-      if (score < 0) score = 0;
-
-      let level = 'green';
-      if (score >= 80 || isKnownMalicious) {
-        level = 'red';
-      } else if (score >= 40) {
-        level = 'yellow';
-      } else {
-        level = 'green';
-      }
-
-      displayResult3Level(level, score, reasons, inputType, hasLookalike, isNewDomain, signalFear, senderCheckResult, senderNumber, senderEmail, activeTab);
-      saveCheckHistory(text || senderNumber || senderEmail, score, level);
-    }
-
-    function displayResult3Level(level, score, reasons, inputType, hasLookalike, isNewDomain, signalFear, senderCheckResult, senderNumber, senderEmail, activeTab) {
-      const section = document.getElementById('resultSection');
-      const card = document.getElementById('resultCard');
-      const heading = document.getElementById('resultHeading');
-      const pill = document.getElementById('resultScorePill');
-      const shield = document.getElementById('resultShieldIcon');
-      const reasonList = document.getElementById('reasonList');
-      const actionList = document.getElementById('actionList');
-      const signalList = document.getElementById('signalList');
-
-      section.style.display = 'block';
-      card.className = `result-card ${level}`;
-
-      if (level === 'red') {
-        heading.innerText = "यह मैसेज खतरनाक है, इसको हटा दें";
-        pill.innerText = `खतरा है (${score}/100)`;
-        shield.innerHTML = '🚨';
-      } else if (level === 'yellow') {
-        heading.innerText = "यह मैसेज थोड़ा शक वाला है, सावधान रहें";
-        pill.innerText = `शक वाला है (${score}/100)`;
-        shield.innerHTML = '⚠️';
-      } else {
-        heading.innerText = "अभी तक इसमें कोई खतरा नहीं मिला, फिर भी सावधान रहें";
-        pill.innerText = `सुरक्षित लग रहा है (${score}/100)`;
-        shield.innerHTML = '🛡';
-      }
-
-      reasonList.innerHTML = '';
-      if (reasons.length === 0) {
-        reasons.push("कोई संदिग्ध पैटर्न या खतरनाक लिंक नहीं मिला।");
-        reasons.push("मैसेज सामान्य और सुरक्षित लग रहा है।");
-      }
-      reasons.slice(0, 3).forEach(r => {
-        const li = document.createElement('li');
-        li.innerText = r;
-        reasonList.appendChild(li);
-      });
-
-      const isEmailMode = activeTab === 'email';
-      const senderLabel = isEmailMode ? "Sender की जांच:" : "नंबर की जांच:";
-      const senderVal = isEmailMode ? (senderEmail ? senderCheckResult : 'लागू नहीं (Email दर्ज नहीं किया गया)') : (senderNumber ? senderCheckResult : 'लागू नहीं (नंबर दर्ज नहीं किया गया)');
-
-      signalList.innerHTML = `
-        <li><strong>लोगों की रिपोर्ट:</strong> ${level === 'red' ? '1,240+ लोगों द्वारा रिपोर्ट किया गया' : (level === 'yellow' ? 'कुछ लोगों को संदेह है' : 'कोई नकारात्मक रिपोर्ट नहीं')}</li>
-        <li><strong>लिंक की उम्र:</strong> ${isNewDomain ? 'नया या अज्ञात डोमेन (जोखिम)' : 'स्थापित डोमेन'}</li>
-        <li><strong>भाषा की जांच:</strong> ${signalFear}</li>
-        <li><strong>नकली नाम की जांच (Lookalike):</strong> ${hasLookalike ? '⚠️ नकली ब्रांड नाम का मिलान' : 'सत्यापित'}</li>
-        <li><strong>${senderLabel}</strong> ${senderVal}</li>
-      `;
-
-      actionList.innerHTML = '';
-      if (level === 'red') {
-        actionList.innerHTML = `
-          <li>लिंक पर बिल्कुल क्लिक न करें।</li>
-          <li>मैसेज को तुरंत डिलीट कर दें और नंबर ब्लॉक करें।</li>
-          <li>किसी को भी अपना OTP, पासवर्ड या बैंक PIN न बताएं।</li>
-        `;
-      } else if (level === 'yellow') {
-        actionList.innerHTML = `
-          <li>क्या करें? लिंक पर क्लिक मत करें।</li>
-          <li>संबंधित कंपनी के कस्टमर केयर से ऑफिशियल नंबर पर बात करें।</li>
-          <li>अपनी कोई भी पर्सनल या बैंक जानकारी शेयर न करें।</li>
-        `;
-      } else {
-        actionList.innerHTML = `
-          <li>इसका मतलब यह नहीं है कि यह 100% सही है।</li>
-          <li>हमेशा ऑफिशियल वेबसाइट पर जाकर ही काम करें।</li>
-        `;
-      }
-
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function saveCheckHistory(text, score, level) {
-      try {
-        let history = JSON.parse(localStorage.getItem('checkHistory') || '[]');
-        const preview = text.substring(0, 30) + (text.length > 30 ? "..." : "");
-        history.unshift({
-          preview: preview,
-          score: score,
-          verdict: level,
-          time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        });
-        if (history.length > 5) history = history.slice(0, 5);
-        localStorage.setItem('checkHistory', JSON.stringify(history));
-        updateHistoryUI();
-      } catch (e) {
-        console.error(e);
-      }
+      container.innerHTML = html;
     }
 
     function clearCheckHistory() {
-      const historyListEl = document.getElementById('historyList');
-      if (historyListEl) {
-        const items = historyListEl.querySelectorAll('.history-item');
-        items.forEach(item => item.classList.add('fade-out'));
-      }
+      let footerEl = document.querySelector('footer');
+      footerEl.classList.add('fade-out');
       setTimeout(() => {
-        localStorage.removeItem('checkHistory');
-        localStorage.setItem('checkHistory', JSON.stringify([]));
+        historyList = [];
         updateHistoryUI();
+        footerEl.classList.remove('fade-out');
       }, 350);
     }
 
-    function updateHistoryUI() {
-      const history = JSON.parse(localStorage.getItem('checkHistory') || '[]');
-      const historyCountEl = document.getElementById('historyCount');
-      if (historyCountEl) historyCountEl.innerText = history.length;
-      const historyListEl = document.getElementById('historyList');
-      if (historyListEl) {
-        if (history.length === 0) {
-          historyListEl.innerHTML = currentLang === 'hi' ? "कोई हालिया जांच नहीं है।" : "No recent check history.";
-        } else {
-          historyListEl.innerHTML = history.map(h => `<div class="history-item" style="font-size:0.8rem; margin:0.25rem 0; color:var(--navy); transition: all 0.3s ease;">• ${h.preview} (${h.verdict.toUpperCase()} - ${h.score}/100)</div>`).join('');
-        }
-      }
-    }
+    // Check URL params for admin
+    window.addEventListener('DOMContentLoaded', () => {
+      autoDetectLanguage();
+      renderTopScams();
+      renderNewScams();
+      updateHistoryUI();
 
-    // Admin Panel logic (?admin=1)
-    function checkAdminParam() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('admin') === '1') {
-        const adminSec = document.getElementById('adminSection');
-        if (adminSec) {
-          adminSec.style.display = 'block';
-          renderAdminReports('all');
-        }
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('admin') === '1') {
+        document.getElementById('adminSection').style.display = 'block';
+        renderAdminReports('all');
       }
+    });
+
+    function renderAdminReports(filter) {
+      let list = document.getElementById('adminReportsList');
+      list.innerHTML = '';
+      if (localReports.length === 0) {
+        list.innerHTML = '<p style="color:var(--gray-text);">कोई नई रिपोर्ट नहीं है।</p>';
+        return;
+      }
+      localReports.forEach((r, idx) => {
+        let card = document.createElement('div');
+        card.className = 'admin-report-card';
+        card.innerHTML = `
+          <div>
+            <b>#${idx+1} [${r.platform}] - ${r.reportCountry}, ${r.city}</b>
+            <p style="font-size:0.85rem; color:var(--gray-text); margin-top:0.2rem;">${r.story}</p>
+            <span style="font-size:0.75rem; color:#B45309;">नुकसान: ${r.loss} | समय: ${r.time}</span>
+          </div>
+          <button class="story-btn" onclick="alert('Report ID: ${idx+1} verified')">Verify</button>
+        `;
+        list.appendChild(card);
+      });
     }
 
     function filterAdmin(type) {
       renderAdminReports(type);
     }
-
-    function renderAdminReports(filterType = 'all') {
-      const list = document.getElementById('adminReportsList');
-      if (!list) return;
-      let reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      
-      if (reports.length === 0) {
-        list.innerHTML = `<p style="color:#78350F; font-size:0.9rem;">अभी तक कोई रिपोर्ट जमा नहीं हुई है।</p>`;
-        return;
-      }
-
-      if (filterType === 'country') {
-        reports.sort((a, b) => (a.country || '').localeCompare(b.country || ''));
-      } else if (filterType === 'city') {
-        reports.sort((a, b) => (a.city || '').localeCompare(b.city || ''));
-      }
-
-      list.innerHTML = '';
-      reports.forEach((rep, index) => {
-        const div = document.createElement('div');
-        div.className = 'admin-report-card';
-        div.innerHTML = `
-          <div>
-            <strong>📍 Country: ${rep.country || 'N/A'} | City: ${rep.city || 'N/A'}</strong>
-            <p style="font-size:0.85rem; color:var(--navy); margin-top:0.25rem;">Type: ${rep.kyaHua}</p>
-            <p style="font-size:0.85rem; color:var(--gray-text);">"${rep.story}"</p>
-          </div>
-          <div class="admin-btns">
-            <button class="btn-primary" style="padding:0.4rem 0.75rem; font-size:0.8rem; background:var(--green-btn);" onclick="approveReport(${index})">Approve</button>
-            <button class="btn-primary" style="padding:0.4rem 0.75rem; font-size:0.8rem; background:var(--red);" onclick="rejectReport(${index})">Reject</button>
-          </div>
-        `;
-        list.appendChild(div);
-      });
-    }
-
-    function approveReport(index) {
-      let reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      const rep = reports[index];
-      if (rep) {
-        approvedStories.unshift({
-          id: Date.now(),
-          country: `${rep.country} - ${rep.city}`,
-          kyaHua: rep.kyaHua === 'pese' ? "मेरे पैसे कट गए" : (rep.kyaHua === 'hack' ? "अकाउंट हैक हुआ" : "संदिग्ध मैसेज"),
-          kahani: rep.story,
-          bacho: "तुरंत साइबर हेल्पलाइन 1930 पर संपर्क करें और बैंक को सूचित करें।"
-        });
-        reports.splice(index, 1);
-        localStorage.setItem('userReports', JSON.stringify(reports));
-        renderAdminReports('all');
-        renderApprovedStories();
-        alert("रिपोर्ट स्वीकृत कर ली गई है और होमपेज पर जोड़ दी गई है!");
-      }
-    }
-
-    function rejectReport(index) {
-      let reports = JSON.parse(localStorage.getItem('userReports') || '[]');
-      reports.splice(index, 1);
-      localStorage.setItem('userReports', JSON.stringify(reports));
-      renderAdminReports('all');
-      alert("Report removed.");
-    }
-
-    // Live counter animation
-    let baseCount = 12450;
-    setInterval(() => {
-      baseCount += Math.floor(Math.random() * 3);
-      const countStr = baseCount.toLocaleString();
-      if (currentLang === 'hi') {
-        document.getElementById('counterText').innerText = `आज ${countStr} मैसेज चेक किए गए`;
-      } else {
-        document.getElementById('counterText').innerText = `Today ${countStr} messages checked`;
-      }
-    }, 4000);
-
-    // Initialize on load
-    window.onload = function() {
-      autoDetectLanguage();
-      fetchRealScams();
-      renderApprovedStories();
-      checkAdminParam();
-      updateCityCounters();
-      updateHistoryUI();
-      setInterval(fetchRealScams, 3600000);
-    };
   </script>
 </body>
 </html>
