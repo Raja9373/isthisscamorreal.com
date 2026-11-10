@@ -525,7 +525,7 @@
 
 
     <!-- MAIN CONTAINER WITH VIEW ROUTING -->
-    <main id="top" class="max-w-[1100px] mx-auto px-4 pb-16">
+    <main id="top" class="max-w-[1100px] mx-auto px-4 pb-16 pt-6 sm:pt-8">
 
       <!-- ================= VIEW 1: HOME ================= -->
       <div id="view-home" class="view-section">
@@ -594,7 +594,7 @@
         </section>
 
         <!-- CHECKER CARD -->
-        <section id="checker" class="bg-white rounded-[24px] card3d mt-6 relative z-10 p-5 sm:p-8">
+        <section id="checker" class="bg-white rounded-[24px] card3d mt-8 relative z-10 p-5 sm:p-8 scroll-mt-28" style="scroll-margin-top: 100px;">
           <div class="flex flex-wrap items-end justify-between gap-3 mb-6">
             <div>
               <p class="text-xs font-extrabold tracking-widest text-vgreen uppercase" data-i18n="instantFree">INSTANT CHECK • FREE</p>
@@ -649,11 +649,7 @@
             </button>
           </div>
 
-          <!-- Tabs -->
-          <div id="checkerTabsContainer" class="flex gap-2 mb-5 bg-[#EEF6F0] light-bg p-1.5 rounded-full w-full sm:w-[360px]">
-            <button onclick="switchTab('sms')" id="tabSmsBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold bg-[#0A1931] text-white shadow" data-i18n="tabSms">SMS / WhatsApp</button>
-            <button onclick="switchTab('email')" id="tabEmailBtn" class="flex-1 py-2.5 rounded-full text-xs font-bold text-slate-600 hover:bg-white/50" data-i18n="tabEmail">Email Header</button>
-          </div>
+          
 
           <!-- SINGLE TOOL INPUT SECTION (For Link, Number, Company, Crypto, Job, Shop) -->
           <div id="singleToolInputSection" class="hidden mb-4">
@@ -4932,8 +4928,10 @@
       runCheck();
     }
 
+        let activeToolCategory = 'message';
     function setCategory(cat) {
       showView('home');
+      activeToolCategory = cat;
       document.querySelectorAll('.tool-pill').forEach(p => {
         p.classList.remove('bg-vgreen', 'text-white', 'border-vgreenDark', 'shadow-md');
         p.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
@@ -4943,30 +4941,68 @@
         btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
         btn.classList.add('bg-vgreen', 'text-white', 'border-vgreenDark', 'shadow-md');
       }
-      let msgInput = document.getElementById('messageInput');
-      if (cat === 'link') {
-        switchTab('sms');
-        msgInput.value = 'URGENT: Your bank account is blocked. Update KYC at https://sbi-update-verify.com';
-      } else if (cat === 'number') {
-        switchTab('sms');
-        msgInput.value = 'Call electricity officer immediately at 91040 to avoid power disconnection tonight.';
-      } else if (cat === 'email') { 
-        switchTab('email'); 
+
+      const smsSec = document.getElementById('smsFormSection');
+      const emailSec = document.getElementById('emailFormSection');
+      const singleSec = document.getElementById('singleToolInputSection');
+      const singleInput = document.getElementById('singleToolInput');
+      const singleLabel = document.getElementById('singleToolLabel');
+
+      if (cat === 'message') {
+        if (smsSec) smsSec.classList.remove('hidden');
+        if (emailSec) emailSec.classList.add('hidden');
+        if (singleSec) singleSec.classList.add('hidden');
+        const msgInput = document.getElementById('messageInput');
+        if (msgInput) msgInput.value = 'Congratulations! You have won $25,000 in KBC lottery. Claim now.';
+      } else if (cat === 'email') {
+        if (smsSec) smsSec.classList.add('hidden');
+        if (emailSec) emailSec.classList.remove('hidden');
+        if (singleSec) singleSec.classList.add('hidden');
         document.getElementById('emailSenderInput').value = 'support@amaz0n-support.com';
         document.getElementById('emailSubjectInput').value = 'Your account will be closed in 24 hours';
-        document.getElementById('emailBodyInput').value = 'PayPal Security Alert: Unusual login detected. Confirm card details here.'; 
-      } else if (cat === 'crypto') {
-        switchTab('sms');
-        msgInput.value = 'Guaranteed 500% daily returns on Bitcoin cloud mining platform! Join VIP group.';
-      } else if (cat === 'job') {
-        switchTab('sms');
-        msgInput.value = 'YouTube video liking job. Earn $500 per day working from home. Message on Telegram.';
-      } else if (cat === 'shop') {
-        switchTab('sms');
-        msgInput.value = 'Luxury iPhone 16 Pro Max for only $199 on flash sale. Cash on delivery available.';
+        document.getElementById('emailBodyInput').value = 'PayPal Security Alert: Unusual login detected. Confirm card details here.';
       } else {
-        switchTab('sms');
-        msgInput.value = 'Congratulations! You have won $25,000 in KBC lottery. Claim now.';
+        if (smsSec) smsSec.classList.add('hidden');
+        if (emailSec) emailSec.classList.add('hidden');
+        if (singleSec) singleSec.classList.remove('hidden');
+
+        if (cat === 'link') {
+          if (singleLabel) singleLabel.textContent = 'Paste Link / URL Here...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. https://sbi-update-verify.com';
+            singleInput.value = 'https://sbi-update-verify.com/login-kyc';
+          }
+        } else if (cat === 'number') {
+          if (singleLabel) singleLabel.textContent = 'Enter Number...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. +91 98765 43210 or 91040';
+            singleInput.value = '+91 98765 43210';
+          }
+        } else if (cat === 'company') {
+          if (singleLabel) singleLabel.textContent = 'Enter Company / Website Name...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. Amaz0n Support or Fake Bank Ltd';
+            singleInput.value = 'Amaz0n Secure Support';
+          }
+        } else if (cat === 'crypto') {
+          if (singleLabel) singleLabel.textContent = 'Enter Coin / Website / Wallet...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. bitcoin-cloud-mining.net or 0x9812...';
+            singleInput.value = 'bitcoin-cloud-mining-vip.net';
+          }
+        } else if (cat === 'job') {
+          if (singleLabel) singleLabel.textContent = 'Paste Job Offer...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. Telegram video liking job or work from home offer';
+            singleInput.value = 'Earn $500 per day liking YouTube videos. Telegram contact @hr_manager.';
+          }
+        } else if (cat === 'shop') {
+          if (singleLabel) singleLabel.textContent = 'Paste Shop Link...';
+          if (singleInput) {
+            singleInput.placeholder = 'e.g. instagram.com/luxury_store_90_off';
+            singleInput.value = 'https://instagram.com/stanley_warehouse_90_off';
+          }
+        }
       }
       document.getElementById('checker').scrollIntoView({ behavior: 'smooth' });
     }
@@ -4997,22 +5033,9 @@
     }
 
     // ADVANCED RUN CHECK WITH CIRCULAR SCORE, RED FLAGS BREAKDOWN, AND VERIFIED BADGE
-    function runCheck() {
+        function runCheck() {
       let textToCheck = '';
-      if (activeToolCategory !== 'message' && activeToolCategory !== 'email') {
-        const singleInput = document.getElementById('singleToolInput');
-        textToCheck = singleInput ? singleInput.value.trim() : '';
-        if (!textToCheck) {
-          if (singleInput) singleInput.focus();
-          return;
-        }
-      } else if (currentTab === 'sms') {
-        textToCheck = document.getElementById('messageInput').value.trim();
-        if (!textToCheck) {
-          document.getElementById('messageInput').focus();
-          return;
-        }
-      } else {
+      if (activeToolCategory === 'email') {
         const sender = document.getElementById('emailSenderInput').value.trim();
         const subject = document.getElementById('emailSubjectInput').value.trim();
         const body = document.getElementById('emailBodyInput').value.trim();
@@ -5025,6 +5048,19 @@
           return;
         }
         textToCheck = `Sender: ${sender} | Subject: ${subject} | Body: ${body}`;
+      } else if (activeToolCategory === 'message') {
+        textToCheck = document.getElementById('messageInput').value.trim();
+        if (!textToCheck) {
+          document.getElementById('messageInput').focus();
+          return;
+        }
+      } else {
+        const singleInput = document.getElementById('singleToolInput');
+        textToCheck = singleInput ? singleInput.value.trim() : '';
+        if (!textToCheck) {
+          if (singleInput) singleInput.focus();
+          return;
+        }
       }
 
       const box = document.getElementById('resultBox');
@@ -5039,12 +5075,9 @@
       setTimeout(() => {
         loading.classList.add('hidden');
         content.classList.remove('hidden');
-
         const lower = textToCheck.toLowerCase();
         let score = 15;
         let redFlags = [];
-
-        // Red flag detectors
         if (lower.includes('otp') || lower.includes('cvv') || lower.includes('pin') || lower.includes('password') || lower.includes('aadhaar')) {
           redFlags.push({ title: 'Asking for OTP / Private Codes', desc: 'Requesting confidential authentication credentials or verification codes.' });
         }
@@ -5060,7 +5093,6 @@
         if (lower.includes('telegram') || lower.includes('apk') || lower.includes('youtube') || lower.includes('liking') || lower.includes('+92') || lower.includes('+84') || lower.includes('+62')) {
           redFlags.push({ title: 'Unaccredited Source / Shady Channel', desc: 'Pushes users to external messaging apps or unverified Android APK installations.' });
         }
-
         if (redFlags.length >= 2) {
           score = 92;
         } else if (redFlags.length === 1) {
@@ -5069,14 +5101,12 @@
           score = 15;
         }
 
-        // SVG circle calculation: Circumference = 2 * PI * 42 ≈ 264
         const circle = document.getElementById('scoreSvgCircle');
         const offset = Math.round(264 - (264 * score / 100));
         if (circle) {
           circle.style.strokeDashoffset = offset;
         }
         document.getElementById('scoreNum').textContent = score;
-
         const heading = document.getElementById('verdictHeading');
         const desc = document.getElementById('verdictDesc');
         const badge = document.getElementById('verifiedSafeBadge');
@@ -5108,7 +5138,6 @@
           if (countBadge) countBadge.textContent = `0 Flags Found`;
         }
 
-        // Render Red Flags Breakdown
         if (redFlagsList) {
           if (redFlags.length > 0) {
             redFlagsList.innerHTML = redFlags.map(f => `
@@ -5127,7 +5156,6 @@
           }
         }
 
-        // Save check to history
         saveCheckToHistory({
           text: textToCheck.slice(0, 80),
           score: score,
